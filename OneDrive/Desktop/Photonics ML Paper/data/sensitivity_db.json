@@ -1,0 +1,1412 @@
+[
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.230796715114119,
+    "ng": 4.178933096700182,
+    "dneff_dw": 0.0016878426028680061,
+    "dneff_dt": 0.004146304043202043,
+    "dneff_da": -0.006482211162303297,
+    "dng_dw": -0.0008224395140700835,
+    "dng_dt": 0.0025778302991028568,
+    "dng_da": 0.00314887666780983,
+    "sens_vector_raw": [
+      0.0016878426028680061,
+      0.004146304043202043,
+      -0.006482211162303297
+    ],
+    "sens_vector_scaled": [
+      0.00843921301434003,
+      0.008292608086404085,
+      -0.006482211162303297
+    ],
+    "sens_vector_unit": [
+      0.6255445280325312,
+      0.6146776485857034,
+      -0.4804845801664277
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "validated: matches published neff~2.44-2.45 @ 500x220nm (Session 1); EIM cross-check +1.3 to +4.0% (expected EIM high-index-contrast bias)",
+    "id": "strip_TE_400"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.3542337937242643,
+    "ng": 4.0922275089174,
+    "dneff_dw": 0.0012341552202002504,
+    "dneff_dt": 0.004132475410416725,
+    "dneff_da": -0.004753567508792633,
+    "dng_dw": -0.0010426964723228237,
+    "dng_dt": 0.001621616744536425,
+    "dng_da": 0.004014747192795376,
+    "sens_vector_raw": [
+      0.0012341552202002504,
+      0.004132475410416725,
+      -0.004753567508792633
+    ],
+    "sens_vector_scaled": [
+      0.006170776101001252,
+      0.00826495082083345,
+      -0.004753567508792633
+    ],
+    "sens_vector_unit": [
+      0.5433396187973469,
+      0.7277326473799338,
+      -0.41855376307297326
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "validated: matches published neff~2.44-2.45 @ 500x220nm (Session 1); EIM cross-check +1.3 to +4.0% (expected EIM high-index-contrast bias)",
+    "id": "strip_TE_450"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.4445751980924464,
+    "ng": 4.00796310048154,
+    "dneff_dw": 0.0010303829953527631,
+    "dneff_dt": 0.0040854973103674475,
+    "dneff_da": -0.00393767606983908,
+    "dng_dw": -0.0009922236952138342,
+    "dng_dt": 0.0012656321325585917,
+    "dng_da": 0.003874834799840965,
+    "sens_vector_raw": [
+      0.0010303829953527631,
+      0.0040854973103674475,
+      -0.00393767606983908
+    ],
+    "sens_vector_scaled": [
+      0.005151914976763816,
+      0.008170994620734895,
+      -0.00393767606983908
+    ],
+    "sens_vector_unit": [
+      0.4938885364795953,
+      0.7833127279892237,
+      -0.37748547482535516
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "validated: matches published neff~2.44-2.45 @ 500x220nm (Session 1); EIM cross-check +1.3 to +4.0% (expected EIM high-index-contrast bias)",
+    "id": "strip_TE_500"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5120797236347774,
+    "ng": 3.9376947719576454,
+    "dneff_dw": 0.0010273928636232554,
+    "dneff_dt": 0.004035849467793229,
+    "dneff_da": -0.003908014750568123,
+    "dng_dw": -0.0009987734829180362,
+    "dng_dt": 0.00113591458230633,
+    "dng_da": 0.003805708916694961,
+    "sens_vector_raw": [
+      0.0010273928636232554,
+      0.004035849467793229,
+      -0.003908014750568123
+    ],
+    "sens_vector_scaled": [
+      0.005136964318116277,
+      0.008071698935586458,
+      -0.003908014750568123
+    ],
+    "sens_vector_unit": [
+      0.49704289677601,
+      0.781002236417893,
+      -0.3781320741153312
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "validated: matches published neff~2.44-2.45 @ 500x220nm (Session 1); EIM cross-check +1.3 to +4.0% (expected EIM high-index-contrast bias)",
+    "id": "strip_TE_550"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5620491665811427,
+    "ng": 3.882272613404659,
+    "dneff_dw": 0.0009886167870387652,
+    "dneff_dt": 0.003992444040992527,
+    "dneff_da": -0.0038551672445035212,
+    "dng_dw": -0.0009773710412084302,
+    "dng_dt": 0.001099377362361098,
+    "dng_da": 0.0037517207311350553,
+    "sens_vector_raw": [
+      0.0009886167870387652,
+      0.003992444040992527,
+      -0.0038551672445035212
+    ],
+    "sens_vector_scaled": [
+      0.004943083935193826,
+      0.007984888081985053,
+      -0.0038551672445035212
+    ],
+    "sens_vector_unit": [
+      0.4869269446290037,
+      0.7865650690823381,
+      -0.37975984871199797
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "validated: matches published neff~2.44-2.45 @ 500x220nm (Session 1); EIM cross-check +1.3 to +4.0% (expected EIM high-index-contrast bias)",
+    "id": "strip_TE_600"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7373943214452319,
+    "ng": 3.4825159609249736,
+    "dneff_dw": 0.0006218573044142417,
+    "dneff_dt": 0.006334530718257569,
+    "dneff_da": -0.0023938457346054376,
+    "dng_dw": 0.002169222987165309,
+    "dng_dt": 0.030886964378401105,
+    "dng_da": -0.008358547945628736,
+    "sens_vector_raw": [
+      0.0006218573044142417,
+      0.006334530718257569,
+      -0.0023938457346054376
+    ],
+    "sens_vector_scaled": [
+      0.0031092865220712085,
+      0.012669061436515139,
+      -0.0023938457346054376
+    ],
+    "sens_vector_unit": [
+      0.23443571687301304,
+      0.9552289500805453,
+      -0.180492513923031
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "EIM cross-check +0.35 to +3.1% (same sign/magnitude as TE's EIM bias, supporting evidence the TM solve is correct); no directly-accessible published TM0@500x220nm reference found (Session 2, search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "strip_TM_400"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.782063381114645,
+    "ng": 3.63383694128128,
+    "dneff_dw": 0.0005182021087545508,
+    "dneff_dt": 0.006896125485030713,
+    "dneff_da": -0.0020179217945105465,
+    "dng_dw": 0.0014351413892633059,
+    "dng_dt": 0.029774923902409878,
+    "dng_da": -0.005596681315220398,
+    "sens_vector_raw": [
+      0.0005182021087545508,
+      0.006896125485030713,
+      -0.0020179217945105465
+    ],
+    "sens_vector_scaled": [
+      0.0025910105437727537,
+      0.013792250970061426,
+      -0.0020179217945105465
+    ],
+    "sens_vector_unit": [
+      0.18275055089143363,
+      0.9728024723286118,
+      -0.14232914662927612
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "EIM cross-check +0.35 to +3.1% (same sign/magnitude as TE's EIM bias, supporting evidence the TM solve is correct); no directly-accessible published TM0@500x220nm reference found (Session 2, search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "strip_TM_450"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.820407087892703,
+    "ng": 3.73867849678522,
+    "dneff_dw": 0.0004967845257771941,
+    "dneff_dt": 0.007305647001375759,
+    "dneff_da": -0.001999980967438364,
+    "dng_dw": 0.0011534607040168065,
+    "dng_dt": 0.02830583163297351,
+    "dng_da": -0.004624760875125311,
+    "sens_vector_raw": [
+      0.0004967845257771941,
+      0.007305647001375759,
+      -0.001999980967438364
+    ],
+    "sens_vector_scaled": [
+      0.0024839226288859706,
+      0.014611294002751518,
+      -0.001999980967438364
+    ],
+    "sens_vector_unit": [
+      0.16609026853395048,
+      0.9770005379088266,
+      -0.13373096733436024
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "EIM cross-check +0.35 to +3.1% (same sign/magnitude as TE's EIM bias, supporting evidence the TM solve is correct); no directly-accessible published TM0@500x220nm reference found (Session 2, search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "strip_TM_500"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8531036150614153,
+    "ng": 3.8104979472126885,
+    "dneff_dw": 0.0005751727217581104,
+    "dneff_dt": 0.007602774649371924,
+    "dneff_da": -0.0022030093499639802,
+    "dng_dw": 0.0011827744000028062,
+    "dng_dt": 0.0268171464921384,
+    "dng_da": -0.004502066740118771,
+    "sens_vector_raw": [
+      0.0005751727217581104,
+      0.007602774649371924,
+      -0.0022030093499639802
+    ],
+    "sens_vector_scaled": [
+      0.002875863608790552,
+      0.015205549298743848,
+      -0.0022030093499639802
+    ],
+    "sens_vector_unit": [
+      0.18398296041228154,
+      0.9727728276565601,
+      -0.1409372060564323
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "EIM cross-check +0.35 to +3.1% (same sign/magnitude as TE's EIM bias, supporting evidence the TM solve is correct); no directly-accessible published TM0@500x220nm reference found (Session 2, search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "strip_TM_550"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8797571896277367,
+    "ng": 3.8566762218956523,
+    "dneff_dw": 0.0006174467276744089,
+    "dneff_dt": 0.0078078624127318474,
+    "dneff_da": -0.0023646469598483932,
+    "dng_dw": 0.0010821089434658315,
+    "dng_dt": 0.0255070713942791,
+    "dng_da": -0.004216966136345146,
+    "sens_vector_raw": [
+      0.0006174467276744089,
+      0.0078078624127318474,
+      -0.0023646469598483932
+    ],
+    "sens_vector_scaled": [
+      0.0030872336383720445,
+      0.015615724825463695,
+      -0.0023646469598483932
+    ],
+    "sens_vector_unit": [
+      0.19184120530949425,
+      0.970363705248449,
+      -0.14693955043453014
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: <=1.5% neff spread across domain half-width 1.4-2.0um, core mesh 30-45pts (Session 1/2)",
+    "validation_status": "EIM cross-check +0.35 to +3.1% (same sign/magnitude as TE's EIM bias, supporting evidence the TM solve is correct); no directly-accessible published TM0@500x220nm reference found (Session 2, search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "strip_TM_600"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 150,
+    "gap_nm": 150.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5234417044614572,
+    "ng": 2.0168404977213568,
+    "dneff_dw": 0.0021912880788469646,
+    "dneff_dt": 0.0008798411667962358,
+    "dneff_da": -0.00832423741109345,
+    "dng_dw": 0.01000940174673195,
+    "dng_dt": 0.003350654928160668,
+    "dng_da": -0.03810096810832597,
+    "sens_vector_raw": [
+      0.0021912880788469646,
+      0.0008798411667962358,
+      -0.00832423741109345
+    ],
+    "sens_vector_scaled": [
+      0.010956440394234823,
+      0.0017596823335924716,
+      -0.00832423741109345
+    ],
+    "sens_vector_unit": [
+      0.7898228775477358,
+      0.12685117741517948,
+      -0.6000738295331642
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "checked: 1.40% neff spread across domain half-width 1.6-2.2um, core mesh 50-70pts (Session 3); dneff_dw, dneff_da at rail=210nm re-verified on a finer grid (70x24 vs 50x20) to rule out a discretization artifact for the width>=195nm nonlinear-sensitivity regime",
+    "validation_status": "large-gap decoupling check: converges to independent (already-validated) strip TE0 solver to within 0.13% at 1000nm gap (Session 3); no directly-accessible published neff reference found for this exact geometry (search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "slot_TE_150"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 165,
+    "gap_nm": 134.99999999999997,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5526052158175718,
+    "ng": 2.1445963216392427,
+    "dneff_dw": 0.004493294155770555,
+    "dneff_dt": 0.0010606414620603077,
+    "dneff_da": -0.017692700660722926,
+    "dng_dw": 0.01716939117785219,
+    "dng_dt": 0.0038231586472313728,
+    "dng_da": -0.06812565036899065,
+    "sens_vector_raw": [
+      0.004493294155770555,
+      0.0010606414620603077,
+      -0.017692700660722926
+    ],
+    "sens_vector_scaled": [
+      0.022466470778852776,
+      0.0021212829241206155,
+      -0.017692700660722926
+    ],
+    "sens_vector_unit": [
+      0.783477676981982,
+      0.073975918780085,
+      -0.6170010479015082
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "checked: 1.40% neff spread across domain half-width 1.6-2.2um, core mesh 50-70pts (Session 3); dneff_dw, dneff_da at rail=210nm re-verified on a finer grid (70x24 vs 50x20) to rule out a discretization artifact for the width>=195nm nonlinear-sensitivity regime",
+    "validation_status": "large-gap decoupling check: converges to independent (already-validated) strip TE0 solver to within 0.13% at 1000nm gap (Session 3); no directly-accessible published neff reference found for this exact geometry (search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "slot_TE_165"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 180,
+    "gap_nm": 120.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.639944946858297,
+    "ng": 2.4589161423353945,
+    "dneff_dw": 0.004758404720420661,
+    "dneff_dt": 0.001568237872323075,
+    "dneff_da": -0.018287700873237167,
+    "dng_dw": 0.01634379034654776,
+    "dng_dt": 0.004461921025337157,
+    "dng_da": -0.06277937341411022,
+    "sens_vector_raw": [
+      0.004758404720420661,
+      0.001568237872323075,
+      -0.018287700873237167
+    ],
+    "sens_vector_scaled": [
+      0.023792023602103307,
+      0.00313647574464615,
+      -0.018287700873237167
+    ],
+    "sens_vector_unit": [
+      0.7885515269512479,
+      0.1039538619769874,
+      -0.6061188694661509
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "checked: 1.40% neff spread across domain half-width 1.6-2.2um, core mesh 50-70pts (Session 3); dneff_dw, dneff_da at rail=210nm re-verified on a finer grid (70x24 vs 50x20) to rule out a discretization artifact for the width>=195nm nonlinear-sensitivity regime",
+    "validation_status": "large-gap decoupling check: converges to independent (already-validated) strip TE0 solver to within 0.13% at 1000nm gap (Session 3); no directly-accessible published neff reference found for this exact geometry (search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "slot_TE_180"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 195,
+    "gap_nm": 104.99999999999999,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7030926629949814,
+    "ng": 2.670584874014571,
+    "dneff_dw": 0.0032490243147685893,
+    "dneff_dt": 0.001865953495680417,
+    "dneff_da": -0.01257396414405021,
+    "dng_dw": 0.010524833607744232,
+    "dng_dt": 0.004684017972679699,
+    "dng_da": -0.04073735184750382,
+    "sens_vector_raw": [
+      0.0032490243147685893,
+      0.001865953495680417,
+      -0.01257396414405021
+    ],
+    "sens_vector_scaled": [
+      0.016245121573842947,
+      0.003731906991360834,
+      -0.01257396414405021
+    ],
+    "sens_vector_unit": [
+      0.778057616149983,
+      0.17873911525949762,
+      -0.602228091861595
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "checked: 1.40% neff spread across domain half-width 1.6-2.2um, core mesh 50-70pts (Session 3); dneff_dw, dneff_da at rail=210nm re-verified on a finer grid (70x24 vs 50x20) to rule out a discretization artifact for the width>=195nm nonlinear-sensitivity regime",
+    "validation_status": "large-gap decoupling check: converges to independent (already-validated) strip TE0 solver to within 0.13% at 1000nm gap (Session 3); no directly-accessible published neff reference found for this exact geometry (search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "slot_TE_195"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 210,
+    "gap_nm": 90.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7921940066701307,
+    "ng": 2.8941851770732723,
+    "dneff_dw": 0.010342623969382393,
+    "dneff_dt": 0.0022373461416482776,
+    "dneff_da": -0.03852193136165305,
+    "dng_dw": 0.02296400814884909,
+    "dng_dt": 0.004497715013707881,
+    "dng_da": -0.08544653109234068,
+    "sens_vector_raw": [
+      0.010342623969382393,
+      0.0022373461416482776,
+      -0.03852193136165305
+    ],
+    "sens_vector_scaled": [
+      0.05171311984691196,
+      0.004474692283296555,
+      -0.03852193136165305
+    ],
+    "sens_vector_unit": [
+      0.8000288863120044,
+      0.0692258191846152,
+      -0.5959543330026161
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "checked: 1.40% neff spread across domain half-width 1.6-2.2um, core mesh 50-70pts (Session 3); dneff_dw, dneff_da at rail=210nm re-verified on a finer grid (70x24 vs 50x20) to rule out a discretization artifact for the width>=195nm nonlinear-sensitivity regime",
+    "validation_status": "large-gap decoupling check: converges to independent (already-validated) strip TE0 solver to within 0.13% at 1000nm gap (Session 3); no directly-accessible published neff reference found for this exact geometry (search attempted, sources paywalled) -- flagged as not independently literature-confirmed",
+    "id": "slot_TE_210"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 150,
+    "gap_nm": 150.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.55022,
+    "ng": 2.25451,
+    "dneff_dw": 0.00199,
+    "dneff_dt": 0.00258,
+    "dneff_da": -0.00746,
+    "dng_dw": 0.0114,
+    "dng_dt": 0.01374,
+    "dng_da": -0.04283,
+    "sens_vector_raw": [
+      0.00199,
+      0.00258,
+      -0.00746
+    ],
+    "sens_vector_scaled": [
+      0.00995,
+      0.00516,
+      -0.00746
+    ],
+    "sens_vector_unit": [
+      0.7390069008249525,
+      0.3832437797242969,
+      -0.5540694954928789
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "assumed same order as slot-TE (1.40%, Session 3); not independently re-checked for TM",
+    "validation_status": "mode confirmed to exist (TEfrac~0.02 at nominal dims, Session 3); no independent cross-check run for slot TM specifically this session",
+    "id": "slot_TM_150"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 165,
+    "gap_nm": 134.99999999999997,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.57221,
+    "ng": 2.37825,
+    "dneff_dw": 0.00144,
+    "dneff_dt": 0.00299,
+    "dneff_da": -0.00549,
+    "dng_dw": 0.00803,
+    "dng_dt": 0.01574,
+    "dng_da": -0.03071,
+    "sens_vector_raw": [
+      0.00144,
+      0.00299,
+      -0.00549
+    ],
+    "sens_vector_scaled": [
+      0.007200000000000001,
+      0.00598,
+      -0.00549
+    ],
+    "sens_vector_unit": [
+      0.6635437434183808,
+      0.5511099424502662,
+      -0.5059521043565153
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "assumed same order as slot-TE (1.40%, Session 3); not independently re-checked for TM",
+    "validation_status": "mode confirmed to exist (TEfrac~0.02 at nominal dims, Session 3); no independent cross-check run for slot TM specifically this session",
+    "id": "slot_TM_165"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 180,
+    "gap_nm": 120.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6003,
+    "ng": 2.53462,
+    "dneff_dw": 0.00208,
+    "dneff_dt": 0.00354,
+    "dneff_da": -0.00799,
+    "dng_dw": 0.01142,
+    "dng_dt": 0.0182,
+    "dng_da": -0.04392,
+    "sens_vector_raw": [
+      0.00208,
+      0.00354,
+      -0.00799
+    ],
+    "sens_vector_scaled": [
+      0.0104,
+      0.00708,
+      -0.00799
+    ],
+    "sens_vector_unit": [
+      0.6978035145996712,
+      0.47504316186208384,
+      -0.5361009693895551
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "assumed same order as slot-TE (1.40%, Session 3); not independently re-checked for TM",
+    "validation_status": "mode confirmed to exist (TEfrac~0.02 at nominal dims, Session 3); no independent cross-check run for slot TM specifically this session",
+    "id": "slot_TM_180"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 195,
+    "gap_nm": 104.99999999999999,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.63414,
+    "ng": 2.71858,
+    "dneff_dw": 0.00187,
+    "dneff_dt": 0.00417,
+    "dneff_da": -0.00728,
+    "dng_dw": 0.00993,
+    "dng_dt": 0.02061,
+    "dng_da": -0.03869,
+    "sens_vector_raw": [
+      0.00187,
+      0.00417,
+      -0.00728
+    ],
+    "sens_vector_scaled": [
+      0.009349999999999999,
+      0.00834,
+      -0.00728
+    ],
+    "sens_vector_unit": [
+      0.6452474021236378,
+      0.5755468806108172,
+      -0.5023958382310251
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "assumed same order as slot-TE (1.40%, Session 3); not independently re-checked for TM",
+    "validation_status": "mode confirmed to exist (TEfrac~0.02 at nominal dims, Session 3); no independent cross-check run for slot TM specifically this session",
+    "id": "slot_TM_195"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 210,
+    "gap_nm": 90.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.65725,
+    "ng": 2.83941,
+    "dneff_dw": 0.00203,
+    "dneff_dt": 0.0046,
+    "dneff_da": -0.00761,
+    "dng_dw": 0.0107,
+    "dng_dt": 0.02198,
+    "dng_da": -0.04022,
+    "sens_vector_raw": [
+      0.00203,
+      0.0046,
+      -0.00761
+    ],
+    "sens_vector_scaled": [
+      0.010150000000000001,
+      0.0092,
+      -0.00761
+    ],
+    "sens_vector_unit": [
+      0.6477006301582633,
+      0.5870784036902484,
+      -0.4856159404437816
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "assumed same order as slot-TE (1.40%, Session 3); not independently re-checked for TM",
+    "validation_status": "mode confirmed to exist (TEfrac~0.02 at nominal dims, Session 3); no independent cross-check run for slot TM specifically this session",
+    "id": "slot_TM_210"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.4596478358454226,
+    "ng": 3.706435589629942,
+    "dneff_dw": 0.0007221023172438113,
+    "dneff_dt": 0.002577800540637609,
+    "dneff_da": -0.0013012798235729761,
+    "dng_dw": 0.0005017212742969513,
+    "dng_dt": 0.003678162327015677,
+    "dng_da": -0.000781828418398689,
+    "sens_vector_raw": [
+      0.0007221023172438113,
+      0.002577800540637609,
+      -0.0013012798235729761
+    ],
+    "sens_vector_scaled": [
+      0.003610511586219056,
+      0.005155601081275218,
+      -0.0013012798235729761
+    ],
+    "sens_vector_unit": [
+      0.5617519457824189,
+      0.8021491885356828,
+      -0.2024634059310761
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: 0.49% neff spread across domain/mesh variation (Session 4)",
+    "validation_status": "validated: exact match to strip solver at slab_h->0 limit (diff=0.0000 @ 500nm, Session 4); no separate literature ref sought (rib is a standard PDK geometry, the limiting-case check is the primary evidence)",
+    "id": "rib_TE_400"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5157036092250045,
+    "ng": 3.7320614431957004,
+    "dneff_dw": 0.0006085148649285444,
+    "dneff_dt": 0.0029009451192617552,
+    "dneff_da": -0.001106256998280486,
+    "dng_dw": 0.00016000140003749052,
+    "dng_dt": 0.003257813935058529,
+    "dng_da": -0.00017829567274851854,
+    "sens_vector_raw": [
+      0.0006085148649285444,
+      0.0029009451192617552,
+      -0.001106256998280486
+    ],
+    "sens_vector_scaled": [
+      0.0030425743246427217,
+      0.0058018902385235105,
+      -0.001106256998280486
+    ],
+    "sens_vector_unit": [
+      0.45794182024139973,
+      0.8732500485365328,
+      -0.16650418014253146
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: 0.49% neff spread across domain/mesh variation (Session 4)",
+    "validation_status": "validated: exact match to strip solver at slab_h->0 limit (diff=0.0000 @ 500nm, Session 4); no separate literature ref sought (rib is a standard PDK geometry, the limiting-case check is the primary evidence)",
+    "id": "rib_TE_450"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.561939180593509,
+    "ng": 3.73727027552043,
+    "dneff_dw": 0.0005586158911092376,
+    "dneff_dt": 0.00312794441639086,
+    "dneff_da": -0.0009336727675504086,
+    "dng_dw": 3.2595665279799844e-06,
+    "dng_dt": 0.002854536721424661,
+    "dng_da": 0.00014418908463298408,
+    "sens_vector_raw": [
+      0.0005586158911092376,
+      0.00312794441639086,
+      -0.0009336727675504086
+    ],
+    "sens_vector_scaled": [
+      0.002793079455546188,
+      0.00625588883278172,
+      -0.0009336727675504086
+    ],
+    "sens_vector_unit": [
+      0.40395001660761237,
+      0.904759939027006,
+      -0.13503272497642202
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: 0.49% neff spread across domain/mesh variation (Session 4)",
+    "validation_status": "validated: exact match to strip solver at slab_h->0 limit (diff=0.0000 @ 500nm, Session 4); no separate literature ref sought (rib is a standard PDK geometry, the limiting-case check is the primary evidence)",
+    "id": "rib_TE_500"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5998113327897703,
+    "ng": 3.7321913828869095,
+    "dneff_dw": 0.0005895898756403284,
+    "dneff_dt": 0.003286493661038725,
+    "dneff_da": -0.0010406926484487489,
+    "dng_dw": -7.521455950216804e-05,
+    "dng_dt": 0.002522909394408357,
+    "dng_da": 0.00027723882020080914,
+    "sens_vector_raw": [
+      0.0005895898756403284,
+      0.003286493661038725,
+      -0.0010406926484487489
+    ],
+    "sens_vector_scaled": [
+      0.002947949378201642,
+      0.00657298732207745,
+      -0.0010406926484487489
+    ],
+    "sens_vector_unit": [
+      0.4050175521126788,
+      0.903060023669574,
+      -0.14298033476867322
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: 0.49% neff spread across domain/mesh variation (Session 4)",
+    "validation_status": "validated: exact match to strip solver at slab_h->0 limit (diff=0.0000 @ 500nm, Session 4); no separate literature ref sought (rib is a standard PDK geometry, the limiting-case check is the primary evidence)",
+    "id": "rib_TE_550"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.6299766162326166,
+    "ng": 3.722402111376184,
+    "dneff_dw": 0.0005967252086859443,
+    "dneff_dt": 0.0033940458295330656,
+    "dneff_da": -0.001203363008517755,
+    "dng_dw": -0.00014837733843440227,
+    "dng_dt": 0.0022720388790328228,
+    "dng_da": 0.0004091480691721383,
+    "sens_vector_raw": [
+      0.0005967252086859443,
+      0.0033940458295330656,
+      -0.001203363008517755
+    ],
+    "sens_vector_scaled": [
+      0.0029836260434297213,
+      0.006788091659066131,
+      -0.001203363008517755
+    ],
+    "sens_vector_unit": [
+      0.3971878219544192,
+      0.9036478774639519,
+      -0.16019471790917236
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "checked: 0.49% neff spread across domain/mesh variation (Session 4)",
+    "validation_status": "validated: exact match to strip solver at slab_h->0 limit (diff=0.0000 @ 500nm, Session 4); no separate literature ref sought (rib is a standard PDK geometry, the limiting-case check is the primary evidence)",
+    "id": "rib_TE_600"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.59182845868231,
+    "ng": 2.3822601881331265,
+    "dneff_dw": 0.0006669929876243375,
+    "dneff_dt": 0.00159363125935863,
+    "dneff_da": -0.002561051568140349,
+    "dng_dw": 0.0023208928953244888,
+    "dng_dt": 0.0061656698191758785,
+    "dng_da": -0.008919396998603002,
+    "sens_vector_raw": [
+      0.0006669929876243375,
+      0.00159363125935863,
+      -0.002561051568140349
+    ],
+    "sens_vector_scaled": [
+      0.0033349649381216873,
+      0.00318726251871726,
+      -0.002561051568140349
+    ],
+    "sens_vector_unit": [
+      0.6320619278836456,
+      0.6040685073547865,
+      -0.4853853703421327
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "inherits strip's grid convergence (same grid, same solver, only core index changed) -- not independently re-checked",
+    "validation_status": "effective-medium approximation (0th-order Rytov, duty_cycle=0.5, period=250nm, n_eff_ordinary=2.6631); validated the EMA implementation itself via exact match to strip at duty_cycle=1 (diff=0.0000 @ 500nm, Session 4); NOT a validated quantitative SWG simulation -- true SWG needs 3D/Bloch-mode simulation this toolchain cannot do; flagged as approximate by design",
+    "id": "swg_TE_400"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.650493082715197,
+    "ng": 2.546840032981649,
+    "dneff_dw": 0.0006622791484945268,
+    "dneff_dt": 0.0019450065030628405,
+    "dneff_da": -0.002550767243906682,
+    "dng_dw": 0.0015748266697909851,
+    "dng_dt": 0.0059266464640377325,
+    "dng_da": -0.006068959868745116,
+    "sens_vector_raw": [
+      0.0006622791484945268,
+      0.0019450065030628405,
+      -0.002550767243906682
+    ],
+    "sens_vector_scaled": [
+      0.0033113957424726337,
+      0.003890013006125681,
+      -0.002550767243906682
+    ],
+    "sens_vector_unit": [
+      0.5799304782008562,
+      0.6812647228825324,
+      -0.44672029034901956
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "inherits strip's grid convergence (same grid, same solver, only core index changed) -- not independently re-checked",
+    "validation_status": "effective-medium approximation (0th-order Rytov, duty_cycle=0.5, period=250nm, n_eff_ordinary=2.6631); validated the EMA implementation itself via exact match to strip at duty_cycle=1 (diff=0.0000 @ 500nm, Session 4); NOT a validated quantitative SWG simulation -- true SWG needs 3D/Bloch-mode simulation this toolchain cannot do; flagged as approximate by design",
+    "id": "swg_TE_450"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7048453638284427,
+    "ng": 2.6486523452252215,
+    "dneff_dw": 0.0006702854597370634,
+    "dneff_dt": 0.002197409135387962,
+    "dneff_da": -0.002579240830784202,
+    "dng_dw": 0.0010485791074509975,
+    "dng_dt": 0.005284797636665117,
+    "dng_da": -0.003991156230662263,
+    "sens_vector_raw": [
+      0.0006702854597370634,
+      0.002197409135387962,
+      -0.002579240830784202
+    ],
+    "sens_vector_scaled": [
+      0.0033514272986853166,
+      0.004394818270775924,
+      -0.002579240830784202
+    ],
+    "sens_vector_unit": [
+      0.5494957165320545,
+      0.7205687605622539,
+      -0.42288901477184415
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "inherits strip's grid convergence (same grid, same solver, only core index changed) -- not independently re-checked",
+    "validation_status": "effective-medium approximation (0th-order Rytov, duty_cycle=0.5, period=250nm, n_eff_ordinary=2.6631); validated the EMA implementation itself via exact match to strip at duty_cycle=1 (diff=0.0000 @ 500nm, Session 4); NOT a validated quantitative SWG simulation -- true SWG needs 3D/Bloch-mode simulation this toolchain cannot do; flagged as approximate by design",
+    "id": "swg_TE_500"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7526134906376367,
+    "ng": 2.7044759648334793,
+    "dneff_dw": 0.0007456182057889338,
+    "dneff_dt": 0.0023670653986616608,
+    "dneff_da": -0.0028418912859677903,
+    "dng_dw": 0.0007709844020517664,
+    "dng_dt": 0.004616906667028076,
+    "dng_da": -0.0029230616764561734,
+    "sens_vector_raw": [
+      0.0007456182057889338,
+      0.0023670653986616608,
+      -0.0028418912859677903
+    ],
+    "sens_vector_scaled": [
+      0.003728091028944669,
+      0.0047341307973233215,
+      -0.0028418912859677903
+    ],
+    "sens_vector_unit": [
+      0.5595753766495726,
+      0.7105789540687356,
+      -0.42655943065658614
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "inherits strip's grid convergence (same grid, same solver, only core index changed) -- not independently re-checked",
+    "validation_status": "effective-medium approximation (0th-order Rytov, duty_cycle=0.5, period=250nm, n_eff_ordinary=2.6631); validated the EMA implementation itself via exact match to strip at duty_cycle=1 (diff=0.0000 @ 500nm, Session 4); NOT a validated quantitative SWG simulation -- true SWG needs 3D/Bloch-mode simulation this toolchain cannot do; flagged as approximate by design",
+    "id": "swg_TE_550"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7923557538452555,
+    "ng": 2.7304918098293314,
+    "dneff_dw": 0.0007808254338637077,
+    "dneff_dt": 0.0024748303127351545,
+    "dneff_da": -0.0030303618664211385,
+    "dng_dw": 0.000495061981898326,
+    "dng_dt": 0.00407500914327541,
+    "dng_da": -0.0019604697889001876,
+    "sens_vector_raw": [
+      0.0007808254338637077,
+      0.0024748303127351545,
+      -0.0030303618664211385
+    ],
+    "sens_vector_scaled": [
+      0.0039041271693185386,
+      0.004949660625470309,
+      -0.0030303618664211385
+    ],
+    "sens_vector_unit": [
+      0.5581629607009055,
+      0.7076401739391684,
+      -0.4332429959375486
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "inherits strip's grid convergence (same grid, same solver, only core index changed) -- not independently re-checked",
+    "validation_status": "effective-medium approximation (0th-order Rytov, duty_cycle=0.5, period=250nm, n_eff_ordinary=2.6631); validated the EMA implementation itself via exact match to strip at duty_cycle=1 (diff=0.0000 @ 500nm, Session 4); NOT a validated quantitative SWG simulation -- true SWG needs 3D/Bloch-mode simulation this toolchain cannot do; flagged as approximate by design",
+    "id": "swg_TE_600"
+  }
+]
