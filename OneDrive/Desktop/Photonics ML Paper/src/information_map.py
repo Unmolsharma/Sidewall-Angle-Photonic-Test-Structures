@@ -77,7 +77,7 @@ if __name__ == "__main__":
     ax.set_xlabel(f'PC1 ({explained[0]*100:.0f}% var)')
     ax.set_ylabel(f'PC2 ({explained[1]*100:.0f}% var)')
     ax.set_title('Information map: PCA of fab-tolerance-scaled sensitivity vectors\n'
-                  '(n=15; t-SNE/UMAP not used -- inappropriate for this n/dimensionality)', fontsize=11)
+                 f'(n={len(records)} structures)', fontsize=11)
     ax.legend()
     ax.axhline(0, color='0.85', lw=0.7)
     ax.axvline(0, color='0.85', lw=0.7)
