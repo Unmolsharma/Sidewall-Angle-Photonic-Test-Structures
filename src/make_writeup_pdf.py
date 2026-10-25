@@ -1,9 +1,10 @@
 """
 Build WRITEUP.pdf from WRITEUP.md (repo root).
 
-Also draws Figure 3 (step-size check, original vs cell-exact averaging) from
-results_etch_depth/data/diag_averaging.json, since it isn't in figures/.
-Figures 1 and 2 are the existing figures/ PNGs, used as they are.
+Also draws Figure 3 (step-size check of the recomputed derivatives, original vs
+cell-exact averaging) from results_corrected/data/step_check.csv into
+figures/corrected_averaging/. Figures 1 and 2 are the existing PNGs in
+figures/corrected_averaging/, used as they are.
 
 Handles only the markdown the writeup uses: #/##/### headings, paragraphs,
 **bold**, `code`, pipe tables and ![caption](path) images.
@@ -12,7 +13,7 @@ Run:  python make_writeup_pdf.py
 """
 import os
 import re
-import json
+import csv
 
 import matplotlib
 matplotlib.use('Agg')
@@ -29,7 +30,7 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Image,
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(REPO, 'WRITEUP.md')
 PDF = os.path.join(REPO, 'WRITEUP.pdf')
-FIG3 = os.path.join(REPO, 'results_etch_depth', 'figures', 'step_check_diag.png')
+FIG3 = os.path.join(REPO, 'figures', 'corrected_averaging', 'fig3_step_check.png')
 
 # Times New Roman from the Windows font folder
 FONT_DIR = os.path.join(os.environ.get('WINDIR', r'C:\Windows'), 'Fonts')
@@ -42,22 +43,27 @@ plt.rcParams['font.family'] = 'Times New Roman'
 
 
 def make_fig3():
-    with open(os.path.join(REPO, 'results_etch_depth', 'data', 'diag_averaging.json')) as f:
-        d = json.load(f)
-    rows = [('w', 'neff', 'Width\n(n_eff)'), ('t', 'neff', 'Thickness\n(n_eff)'),
-            ('a', 'neff', 'Sidewall angle\n(n_eff)'), ('d', 'neff', 'Etch depth\n(n_eff)'),
-            ('d', 'ng', 'Etch depth\n(n_g)')]
-    orig = [100 * d[f'existing|{k}|{o}']['max_rel_dev'] for k, o, _ in rows]
-    fixed = [100 * d[f'cell_exact|{k}|{o}']['max_rel_dev'] for k, o, _ in rows]
-    x = range(len(rows))
+    """Step-size check of this run (results_corrected/data/step_check.csv):
+    share of the 30 derivatives per structure family (5 widths x w,t,a x
+    n_eff,n_g) that pass, original vs cell-exact averaging."""
+    with open(os.path.join(REPO, 'results_corrected', 'data', 'step_check.csv')) as f:
+        rows = [r for r in csv.DictReader(f) if 'slab' not in r['structure']]
+    fams = [('strip_TE', 'Strip TE'), ('strip_TM', 'Strip TM'), ('slot_TE', 'Slot TE'),
+            ('slot_TM', 'Slot TM'), ('rib_TE', 'Rib TE'), ('swg_TE', 'SWG TE')]
+
+    def share(avg, fam):
+        sel = [r for r in rows if r['averaging'] == avg and r['structure'].startswith(fam)]
+        return 100 * sum(r['verdict'] != 'FAIL' for r in sel) / len(sel)
+    orig = [share('original', f) for f, _ in fams]
+    fixed = [share('cell_exact', f) for f, _ in fams]
+    x = range(len(fams))
     fig, ax = plt.subplots(figsize=(7, 3.4), dpi=200)
     ax.bar([i - 0.2 for i in x], orig, 0.38, color='#c0504d', label='Original averaging')
     ax.bar([i + 0.2 for i in x], fixed, 0.38, color='#2f6fad', label='Cell-exact averaging')
-    ax.axhline(2, color='#444444', ls='--', lw=1)
-    ax.text(len(rows) - 0.5, 2.8, '2% limit', ha='right', fontsize=8, color='#444444')
+    ax.set_ylim(0, 105)
     ax.set_xticks(list(x))
-    ax.set_xticklabels([r[2] for r in rows], fontsize=8)
-    ax.set_ylabel('Largest step disagreement (%)', fontsize=9)
+    ax.set_xticklabels([f[1] for f in fams], fontsize=8)
+    ax.set_ylabel('Derivatives passing the step check (%)', fontsize=9)
     ax.spines[['top', 'right']].set_visible(False)
     ax.legend(frameon=False, fontsize=8)
     fig.tight_layout()
