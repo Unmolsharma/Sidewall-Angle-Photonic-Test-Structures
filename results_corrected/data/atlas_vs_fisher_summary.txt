@@ -1,0 +1,5 @@
+n pairs = 435
+Spearman(angle, cond)       = -0.106
+Spearman(angle, lambda_min) = +0.123
+Spearman(angle, det)        = +0.536
+Spearman(angle, trace_inv)  = -0.123

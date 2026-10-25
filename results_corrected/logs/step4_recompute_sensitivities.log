@@ -1,0 +1,111 @@
+6156 mode solves
+  500/6156  317s
+  1000/6156  1921s
+  1500/6156  2591s
+  2000/6156  2882s
+  2500/6156  3082s
+  3000/6156  3262s
+  3500/6156  3690s
+  4000/6156  5061s
+  4500/6156  5741s
+  5000/6156  6021s
+  5500/6156  6177s
+  6000/6156  6320s
+solves done in 6367s
+[cell_exact] 30 database structures   180 derivatives: PASS 122, PASS(near-zero abs) 6, FAIL 52
+[cell_exact] slab sweep               144 derivatives: PASS 121, PASS(near-zero abs) 9, FAIL 14
+[original  ] 30 database structures   180 derivatives: PASS 57, PASS(near-zero abs) 20, FAIL 103
+[original  ] slab sweep               144 derivatives: PASS 73, PASS(near-zero abs) 18, FAIL 53
+
+cell-exact derivatives not passing the plain 2% relative test:
+  FAIL                 strip_TE_400           dng/dt  D(h/2,h,2h)=(2.923e-03, 2.782e-03, 2.579e-03)  rel dev 7.3%  |D|/largest 0.476  dev/abs-floor 1.74
+  FAIL                 strip_TE_400           dng/da  D(h/2,h,2h)=(5.875e-03, 5.842e-03, 5.701e-03)  rel dev 2.4%  |D|/largest 1.000  dev/abs-floor 1.21
+  FAIL                 strip_TE_450           dng/dt  D(h/2,h,2h)=(1.915e-03, 1.810e-03, 1.658e-03)  rel dev 8.4%  |D|/largest 0.267  dev/abs-floor 1.12
+  FAIL                 strip_TE_500           dng/dt  D(h/2,h,2h)=(1.481e-03, 1.401e-03, 1.284e-03)  rel dev 8.3%  |D|/largest 0.237  dev/abs-floor 0.99
+  FAIL                 strip_TE_550           dng/dt  D(h/2,h,2h)=(1.289e-03, 1.225e-03, 1.130e-03)  rel dev 7.7%  |D|/largest 0.255  dev/abs-floor 0.98
+  FAIL                 strip_TE_600           dng/dt  D(h/2,h,2h)=(1.205e-03, 1.152e-03, 1.072e-03)  rel dev 6.9%  |D|/largest 0.298  dev/abs-floor 1.03
+  FAIL                 strip_TM_400           dneff/dt  D(h/2,h,2h)=(7.684e-03, 7.277e-03, 6.737e-03)  rel dev 7.4%  |D|/largest 1.000  dev/abs-floor 3.71
+  FAIL                 strip_TM_400           dng/dt  D(h/2,h,2h)=(3.605e-02, 3.473e-02, 3.296e-02)  rel dev 5.1%  |D|/largest 1.000  dev/abs-floor 2.55
+  FAIL                 strip_TM_450           dneff/dt  D(h/2,h,2h)=(8.408e-03, 7.959e-03, 7.363e-03)  rel dev 7.5%  |D|/largest 1.000  dev/abs-floor 3.74
+  FAIL                 strip_TM_450           dneff/da  D(h/2,h,2h)=(-3.075e-03, -3.057e-03, -2.980e-03)  rel dev 2.5%  |D|/largest 0.384  dev/abs-floor 0.49
+  FAIL                 strip_TM_450           dng/dt  D(h/2,h,2h)=(3.484e-02, 3.361e-02, 3.197e-02)  rel dev 4.9%  |D|/largest 1.000  dev/abs-floor 2.44
+  PASS_NEAR_ZERO_ABS   strip_TM_500           dneff/dw  D(h/2,h,2h)=(6.222e-04, 6.186e-04, 6.030e-04)  rel dev 2.5%  |D|/largest 0.073  dev/abs-floor 0.09
+  FAIL                 strip_TM_500           dneff/dt  D(h/2,h,2h)=(8.946e-03, 8.465e-03, 7.829e-03)  rel dev 7.5%  |D|/largest 1.000  dev/abs-floor 3.76
+  FAIL                 strip_TM_500           dneff/da  D(h/2,h,2h)=(-2.397e-03, -2.377e-03, -2.288e-03)  rel dev 3.7%  |D|/largest 0.281  dev/abs-floor 0.52
+  FAIL                 strip_TM_500           dng/dt  D(h/2,h,2h)=(3.307e-02, 3.196e-02, 3.049e-02)  rel dev 4.6%  |D|/largest 1.000  dev/abs-floor 2.30
+  PASS_NEAR_ZERO_ABS   strip_TM_550           dneff/dw  D(h/2,h,2h)=(4.680e-04, 4.636e-04, 4.449e-04)  rel dev 4.0%  |D|/largest 0.052  dev/abs-floor 0.11
+  FAIL                 strip_TM_550           dneff/dt  D(h/2,h,2h)=(9.341e-03, 8.837e-03, 8.172e-03)  rel dev 7.5%  |D|/largest 1.000  dev/abs-floor 3.77
+  FAIL                 strip_TM_550           dneff/da  D(h/2,h,2h)=(-1.807e-03, -1.784e-03, -1.683e-03)  rel dev 5.7%  |D|/largest 0.202  dev/abs-floor 0.57
+  FAIL                 strip_TM_550           dng/dt  D(h/2,h,2h)=(3.118e-02, 3.021e-02, 2.890e-02)  rel dev 4.3%  |D|/largest 1.000  dev/abs-floor 2.16
+  FAIL                 strip_TM_550           dng/da  D(h/2,h,2h)=(-4.453e-03, -4.485e-03, -4.631e-03)  rel dev 3.2%  |D|/largest 0.148  dev/abs-floor 0.24
+  PASS_NEAR_ZERO_ABS   strip_TM_600           dneff/dw  D(h/2,h,2h)=(3.352e-04, 3.298e-04, 3.067e-04)  rel dev 7.0%  |D|/largest 0.036  dev/abs-floor 0.13
+  FAIL                 strip_TM_600           dneff/dt  D(h/2,h,2h)=(9.630e-03, 9.109e-03, 8.423e-03)  rel dev 7.5%  |D|/largest 1.000  dev/abs-floor 3.77
+  FAIL                 strip_TM_600           dneff/da  D(h/2,h,2h)=(-1.304e-03, -1.280e-03, -1.238e-03)  rel dev 3.2%  |D|/largest 0.140  dev/abs-floor 0.23
+  PASS_NEAR_ZERO_ABS   strip_TM_600           dng/dw  D(h/2,h,2h)=(8.336e-04, 8.401e-04, 8.683e-04)  rel dev 3.4%  |D|/largest 0.029  dev/abs-floor 0.05
+  FAIL                 strip_TM_600           dng/dt  D(h/2,h,2h)=(2.941e-02, 2.854e-02, 2.739e-02)  rel dev 4.0%  |D|/largest 1.000  dev/abs-floor 2.02
+  FAIL                 strip_TM_600           dng/da  D(h/2,h,2h)=(-3.349e-03, -3.434e-03, -3.725e-03)  rel dev 8.5%  |D|/largest 0.120  dev/abs-floor 0.51
+  FAIL                 slot_TE_150            dneff/dw  D(h/2,h,2h)=(3.157e-03, 3.217e-03, 3.503e-03)  rel dev 8.9%  |D|/largest 0.260  dev/abs-floor 1.15
+  FAIL                 slot_TE_150            dneff/da  D(h/2,h,2h)=(-1.212e-02, -1.239e-02, -1.233e-02)  rel dev 2.1%  |D|/largest 1.000  dev/abs-floor 1.07
+  FAIL                 slot_TE_150            dng/dw  D(h/2,h,2h)=(1.379e-02, 1.404e-02, 1.520e-02)  rel dev 8.3%  |D|/largest 0.260  dev/abs-floor 1.07
+  FAIL                 slot_TE_180            dneff/dw  D(h/2,h,2h)=(6.564e-03, 5.982e-03, 5.192e-03)  rel dev 13.2%  |D|/largest 0.257  dev/abs-floor 1.70
+  FAIL                 slot_TE_180            dneff/da  D(h/2,h,2h)=(-2.536e-02, -2.327e-02, -2.044e-02)  rel dev 12.2%  |D|/largest 1.000  dev/abs-floor 6.08
+  FAIL                 slot_TE_180            dng/dw  D(h/2,h,2h)=(2.323e-02, 2.104e-02, 1.819e-02)  rel dev 13.5%  |D|/largest 0.255  dev/abs-floor 1.72
+  FAIL                 slot_TE_180            dng/da  D(h/2,h,2h)=(-9.035e-02, -8.265e-02, -7.248e-02)  rel dev 12.3%  |D|/largest 1.000  dev/abs-floor 6.15
+  FAIL                 slot_TE_195            dneff/dw  D(h/2,h,2h)=(4.727e-03, 4.783e-03, 5.036e-03)  rel dev 5.3%  |D|/largest 0.260  dev/abs-floor 0.69
+  FAIL                 slot_TE_195            dneff/da  D(h/2,h,2h)=(-1.815e-02, -1.838e-02, -1.945e-02)  rel dev 5.8%  |D|/largest 1.000  dev/abs-floor 2.92
+  FAIL                 slot_TE_195            dng/dw  D(h/2,h,2h)=(1.468e-02, 1.487e-02, 1.574e-02)  rel dev 5.9%  |D|/largest 0.261  dev/abs-floor 0.77
+  FAIL                 slot_TE_195            dng/da  D(h/2,h,2h)=(-5.639e-02, -5.707e-02, -6.031e-02)  rel dev 5.7%  |D|/largest 1.000  dev/abs-floor 2.84
+  FAIL                 slot_TE_210            dneff/da  D(h/2,h,2h)=(-1.336e-02, -1.340e-02, -1.648e-02)  rel dev 23.0%  |D|/largest 1.000  dev/abs-floor 11.52
+  FAIL                 slot_TE_210            dng/da  D(h/2,h,2h)=(-4.113e-02, -4.123e-02, -4.669e-02)  rel dev 13.2%  |D|/largest 1.000  dev/abs-floor 6.62
+  FAIL                 slot_TM_150            dneff/dw  D(h/2,h,2h)=(1.279e-03, 1.258e-03, 1.156e-03)  rel dev 8.1%  |D|/largest 0.262  dev/abs-floor 1.06
+  FAIL                 slot_TM_150            dneff/da  D(h/2,h,2h)=(-4.907e-03, -4.808e-03, -4.952e-03)  rel dev 3.0%  |D|/largest 1.000  dev/abs-floor 1.50
+  FAIL                 slot_TM_150            dng/dw  D(h/2,h,2h)=(7.606e-03, 7.518e-03, 7.091e-03)  rel dev 5.7%  |D|/largest 0.261  dev/abs-floor 0.74
+  FAIL                 slot_TM_180            dneff/dw  D(h/2,h,2h)=(1.319e-03, 1.444e-03, 1.607e-03)  rel dev 11.3%  |D|/largest 0.260  dev/abs-floor 1.47
+  FAIL                 slot_TM_180            dneff/da  D(h/2,h,2h)=(-5.069e-03, -5.543e-03, -6.159e-03)  rel dev 11.1%  |D|/largest 1.000  dev/abs-floor 5.55
+  FAIL                 slot_TM_180            dng/dw  D(h/2,h,2h)=(8.393e-03, 8.822e-03, 9.392e-03)  rel dev 6.5%  |D|/largest 0.263  dev/abs-floor 0.85
+  FAIL                 slot_TM_180            dng/da  D(h/2,h,2h)=(-3.203e-02, -3.356e-02, -3.563e-02)  rel dev 6.2%  |D|/largest 1.000  dev/abs-floor 3.08
+  FAIL                 slot_TM_195            dneff/dw  D(h/2,h,2h)=(1.842e-03, 1.831e-03, 1.777e-03)  rel dev 2.9%  |D|/largest 0.261  dev/abs-floor 0.38
+  FAIL                 slot_TM_195            dneff/da  D(h/2,h,2h)=(-7.074e-03, -7.015e-03, -6.744e-03)  rel dev 3.9%  |D|/largest 1.000  dev/abs-floor 1.93
+  FAIL                 slot_TM_195            dng/dw  D(h/2,h,2h)=(9.936e-03, 9.889e-03, 9.680e-03)  rel dev 2.1%  |D|/largest 0.260  dev/abs-floor 0.27
+  FAIL                 slot_TM_210            dneff/da  D(h/2,h,2h)=(-9.690e-03, -9.679e-03, -9.036e-03)  rel dev 6.6%  |D|/largest 1.000  dev/abs-floor 3.32
+  FAIL                 slot_TM_210            dng/da  D(h/2,h,2h)=(-4.705e-02, -4.702e-02, -4.580e-02)  rel dev 2.6%  |D|/largest 1.000  dev/abs-floor 1.30
+  FAIL                 rib_TE_450             dng/dt  D(h/2,h,2h)=(3.104e-03, 3.063e-03, 3.001e-03)  rel dev 2.0%  |D|/largest 1.000  dev/abs-floor 1.01
+  PASS_NEAR_ZERO_ABS   rib_TE_450             dng/da  D(h/2,h,2h)=(-2.025e-04, -2.041e-04, -2.105e-04)  rel dev 3.2%  |D|/largest 0.067  dev/abs-floor 0.11
+  PASS_NEAR_ZERO_ABS   rib_TE_500             dng/dw  D(h/2,h,2h)=(-5.692e-05, -5.620e-05, -5.338e-05)  rel dev 5.0%  |D|/largest 0.021  dev/abs-floor 0.05
+  FAIL                 rib_TE_500             dng/dt  D(h/2,h,2h)=(2.741e-03, 2.701e-03, 2.641e-03)  rel dev 2.2%  |D|/largest 1.000  dev/abs-floor 1.12
+  FAIL                 rib_TE_500             dng/da  D(h/2,h,2h)=(2.777e-04, 2.759e-04, 2.683e-04)  rel dev 2.7%  |D|/largest 0.102  dev/abs-floor 0.14
+  FAIL                 rib_TE_550             dng/dt  D(h/2,h,2h)=(2.437e-03, 2.399e-03, 2.341e-03)  rel dev 2.4%  |D|/largest 1.000  dev/abs-floor 1.20
+  FAIL                 rib_TE_600             dng/dt  D(h/2,h,2h)=(2.197e-03, 2.161e-03, 2.106e-03)  rel dev 2.5%  |D|/largest 1.000  dev/abs-floor 1.27
+  FAIL                 rib_slab50_TE_300      dneff/dt  D(h/2,h,2h)=(1.857e-03, 1.896e-03, 1.949e-03)  rel dev 2.8%  |D|/largest 0.288  dev/abs-floor 0.40
+  PASS_NEAR_ZERO_ABS   rib_slab50_TE_400      dng/dw  D(h/2,h,2h)=(3.335e-04, 3.353e-04, 3.427e-04)  rel dev 2.2%  |D|/largest 0.091  dev/abs-floor 0.10
+  FAIL                 rib_slab50_TE_400      dng/dt  D(h/2,h,2h)=(3.755e-03, 3.683e-03, 3.578e-03)  rel dev 2.9%  |D|/largest 1.000  dev/abs-floor 1.43
+  FAIL                 rib_slab50_TE_400      dng/da  D(h/2,h,2h)=(-5.902e-04, -5.967e-04, -6.238e-04)  rel dev 4.5%  |D|/largest 0.162  dev/abs-floor 0.37
+  FAIL                 rib_slab50_TE_500      dng/dt  D(h/2,h,2h)=(2.383e-03, 2.326e-03, 2.241e-03)  rel dev 3.6%  |D|/largest 1.000  dev/abs-floor 1.82
+  FAIL                 rib_slab50_TE_600      dng/dt  D(h/2,h,2h)=(1.799e-03, 1.754e-03, 1.687e-03)  rel dev 3.8%  |D|/largest 1.000  dev/abs-floor 1.92
+  FAIL                 rib_slab70_TE_300      dneff/dt  D(h/2,h,2h)=(1.578e-03, 1.606e-03, 1.644e-03)  rel dev 2.4%  |D|/largest 0.386  dev/abs-floor 0.46
+  FAIL                 rib_slab70_TE_400      dng/dt  D(h/2,h,2h)=(3.690e-03, 3.638e-03, 3.559e-03)  rel dev 2.2%  |D|/largest 1.000  dev/abs-floor 1.08
+  FAIL                 rib_slab70_TE_500      dng/dt  D(h/2,h,2h)=(2.618e-03, 2.570e-03, 2.498e-03)  rel dev 2.8%  |D|/largest 1.000  dev/abs-floor 1.40
+  FAIL                 rib_slab70_TE_600      dng/dt  D(h/2,h,2h)=(2.019e-03, 1.979e-03, 1.918e-03)  rel dev 3.1%  |D|/largest 1.000  dev/abs-floor 1.55
+  FAIL                 rib_slab90_TE_300      dneff/dt  D(h/2,h,2h)=(1.367e-03, 1.387e-03, 1.415e-03)  rel dev 2.0%  |D|/largest 0.548  dev/abs-floor 0.55
+  PASS_NEAR_ZERO_ABS   rib_slab90_TE_500      dng/dw  D(h/2,h,2h)=(-5.692e-05, -5.620e-05, -5.338e-05)  rel dev 5.0%  |D|/largest 0.021  dev/abs-floor 0.05
+  FAIL                 rib_slab90_TE_500      dng/dt  D(h/2,h,2h)=(2.741e-03, 2.701e-03, 2.641e-03)  rel dev 2.2%  |D|/largest 1.000  dev/abs-floor 1.12
+  FAIL                 rib_slab90_TE_500      dng/da  D(h/2,h,2h)=(2.777e-04, 2.759e-04, 2.683e-04)  rel dev 2.7%  |D|/largest 0.102  dev/abs-floor 0.14
+  FAIL                 rib_slab90_TE_600      dng/dt  D(h/2,h,2h)=(2.197e-03, 2.161e-03, 2.106e-03)  rel dev 2.5%  |D|/largest 1.000  dev/abs-floor 1.27
+  PASS_NEAR_ZERO_ABS   rib_slab110_TE_500     dng/dw  D(h/2,h,2h)=(8.893e-05, 8.955e-05, 9.206e-05)  rel dev 2.8%  |D|/largest 0.033  dev/abs-floor 0.05
+  PASS_NEAR_ZERO_ABS   rib_slab110_TE_500     dng/da  D(h/2,h,2h)=(2.195e-06, 1.387e-06, -1.930e-06)  rel dev 239.1%  |D|/largest 0.001  dev/abs-floor 0.06
+  PASS_NEAR_ZERO_ABS   rib_slab110_TE_600     dng/dw  D(h/2,h,2h)=(-1.113e-04, -1.105e-04, -1.078e-04)  rel dev 2.5%  |D|/largest 0.048  dev/abs-floor 0.06
+  FAIL                 rib_slab110_TE_600     dng/dt  D(h/2,h,2h)=(2.323e-03, 2.292e-03, 2.244e-03)  rel dev 2.1%  |D|/largest 1.000  dev/abs-floor 1.05
+  PASS_NEAR_ZERO_ABS   rib_slab130_TE_600     dng/dw  D(h/2,h,2h)=(-1.569e-05, -1.492e-05, -1.179e-05)  rel dev 21.0%  |D|/largest 0.006  dev/abs-floor 0.07
+  PASS_NEAR_ZERO_ABS   rib_slab130_TE_600     dng/da  D(h/2,h,2h)=(8.896e-05, 8.845e-05, 8.639e-05)  rel dev 2.3%  |D|/largest 0.037  dev/abs-floor 0.04
+  PASS_NEAR_ZERO_ABS   rib_slab150_TE_600     dng/dw  D(h/2,h,2h)=(4.565e-05, 4.638e-05, 4.950e-05)  rel dev 6.7%  |D|/largest 0.019  dev/abs-floor 0.07
+  PASS_NEAR_ZERO_ABS   rib_slab150_TE_600     dng/da  D(h/2,h,2h)=(-3.380e-06, -3.548e-06, -4.230e-06)  rel dev 19.2%  |D|/largest 0.001  dev/abs-floor 0.01
+
+original-averaging rerun vs stored data/sensitivity_db.json (max relative difference):
+  strip_TE  1.61e-09
+  strip_TM  1.76e-09
+  slot_TE   2.97e-09
+  slot_TM   2.40e-03
+  rib_TE    6.35e-07
+  swg_TE    3.75e-09
+
+Total elapsed 6367s

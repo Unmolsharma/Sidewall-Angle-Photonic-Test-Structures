@@ -1,0 +1,70 @@
+
+=== (a) TE ring + TE ring (20 combos, 0 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=9.722e+09  worst=3.060e+10
+  lambda_min:   best=1.664e-04  worst=1.338e-04
+  det(F):       best=6.494e+07  worst=9.851e+05
+  trace(F^-1):  best=6.010e+03  worst=7.475e+03
+  top-3 by cond:      ['stTE600+stTE550', 'stTE550+stTE600', 'stTE500+stTE600']
+  top-3 by lambda_min:['stTE400+stTE600', 'stTE600+stTE400', 'stTE450+stTE400']
+  top-3 by det:       ['stTE400+stTE600', 'stTE600+stTE400', 'stTE400+stTE550']
+  top-3 by trace_inv: ['stTE400+stTE600', 'stTE600+stTE400', 'stTE450+stTE400']
+  Spearman(cond, lambda_min) = -0.612
+  Spearman(cond, det)        = -0.626
+  Spearman(cond, trace_inv)  = -0.615
+  Spearman(det, trace_inv)   = +0.722
+  Spearman(lambda_min, trace_inv) = +0.997
+
+=== (b) TE ring + TM ring (25 combos, 0 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=1.408e+09  worst=4.696e+10
+  lambda_min:   best=1.794e-03  worst=4.664e-05
+  det(F):       best=8.957e+09  worst=3.458e+06
+  trace(F^-1):  best=5.574e+02  worst=2.144e+04
+  top-3 by cond:      ['stTE600+stTM600', 'stTE550+stTM600', 'stTE500+stTM600']
+  top-3 by lambda_min:['stTE400+stTM600', 'stTE450+stTM600', 'stTE500+stTM600']
+  top-3 by det:       ['stTE400+stTM600', 'stTE450+stTM600', 'stTE500+stTM600']
+  top-3 by trace_inv: ['stTE400+stTM600', 'stTE450+stTM600', 'stTE500+stTM600']
+  Spearman(cond, lambda_min) = +0.930
+  Spearman(cond, det)        = +0.706
+  Spearman(cond, trace_inv)  = +0.930
+  Spearman(det, trace_inv)   = +0.898
+  Spearman(lambda_min, trace_inv) = +1.000
+
+=== (c) TE ring + MZI (25 combos, 5 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=6.596e+10  worst=3.879e+11
+  lambda_min:   best=1.048e-04  worst=5.770e-05
+  det(F):       best=2.840e+08  worst=3.403e+06
+  trace(F^-1):  best=9.538e+03  worst=1.733e+04
+  top-3 by cond:      ['stTE400+stTE600', 'stTE450+stTE600', 'stTE550+stTE600']
+  top-3 by lambda_min:['stTE400+stTE600', 'stTE400+stTE550', 'stTE400+stTE500']
+  top-3 by det:       ['stTE400+stTE600', 'stTE400+stTE550', 'stTE600+stTE400']
+  top-3 by trace_inv: ['stTE400+stTE600', 'stTE400+stTE550', 'stTE400+stTE500']
+  Spearman(cond, lambda_min) = +0.782
+  Spearman(cond, det)        = -0.074
+  Spearman(cond, trace_inv)  = +0.782
+  Spearman(det, trace_inv)   = +0.238
+  Spearman(lambda_min, trace_inv) = +1.000
+  [5 exactly-singular combos excluded: ['stTE400+stTE400', 'stTE450+stTE450', 'stTE500+stTE500', 'stTE550+stTE550', 'stTE600+stTE600']]
+
+=== (d) TE ring + slot TE ring (25 combos, 0 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=3.406e+08  worst=7.286e+10
+  lambda_min:   best=4.420e-02  worst=7.193e-05
+  det(F):       best=1.530e+11  worst=4.619e+07
+  trace(F^-1):  best=2.262e+01  worst=1.390e+04
+  top-3 by cond:      ['stTE600+slTE180', 'stTE550+slTE180', 'stTE500+slTE180']
+  top-3 by lambda_min:['stTE400+slTE180', 'stTE450+slTE180', 'stTE500+slTE180']
+  top-3 by det:       ['stTE600+slTE180', 'stTE550+slTE180', 'stTE500+slTE180']
+  top-3 by trace_inv: ['stTE400+slTE180', 'stTE450+slTE180', 'stTE500+slTE180']
+  Spearman(cond, lambda_min) = +0.728
+  Spearman(cond, det)        = +0.632
+  Spearman(cond, trace_inv)  = +0.728
+  Spearman(det, trace_inv)   = +0.843
+  Spearman(lambda_min, trace_inv) = +1.000
+
+=== everything combined: isolating slot's contribution ===
+  strip-only (TE+TM, ring+mzi, all widths), 30 observables:
+    cond=7.499e+07  lambda_min=1.463e+00  det=3.599e+15  trace_inv=6.837e-01
+  + slot TE (ring+mzi, all widths), 90 observables:
+    cond=2.417e+03  lambda_min=1.704e+05  det=4.856e+21  trace_inv=5.887e-06
+  -> adding slot: cond 31023.3x better, lambda_min 116467.6x better, trace_inv 116133.7x better
+
+Saved data/fisher_reanalysis.json

@@ -1,0 +1,20 @@
+=== (a) Fab-tolerance normalization sensitivity sweep ===
+   (sigma_w,sigma_t,sigma_a)  within-mean   cross-mean    PC1%    PC2%    PC3%  slot|a|  stTE|a|  stTM|a|
+                   (5, 2, 1)          9.4         30.1    93.1     4.4    2.51    0.604    0.474    0.146
+                  (10, 2, 1)          8.4         26.4    94.3     4.0    1.68    0.358    0.321    0.136
+                   (2, 2, 1)          9.1         31.1    94.6     4.0    1.48    0.869    0.587    0.150
+                   (5, 5, 1)          8.5         27.7    95.0     4.1    0.96    0.576    0.290    0.061
+                 (5, 2, 0.5)          9.6         29.3    94.5     4.4    1.07    0.355    0.262    0.074
+                   (5, 2, 2)          8.9         29.8    92.2     5.3    2.46    0.835    0.727    0.279
+                   (1, 1, 1)          8.9         30.8    95.6     3.2    1.19    0.962    0.810    0.285
+
+Qualitative check across all configs: is slot's |angle-axis component| always the largest of the three families? YES, in every configuration tested
+
+=== (b) Slot-ring noise-model stress test ===
+strip-only baseline: n_obs=30  cond=7.499e+07  lambda_min=1.463e+00  trace_inv=6.837e-01
+   slot noise vs strip   sigma_neff   sigma_ng  n_obs         cond   lambda_min    trace_inv   lmin improvement
+         same as strip     6.50e-06   1.00e-03     60    5.600e+05    6.939e+02    1.441e-03             474.4x
+              3x worse     1.95e-05   3.00e-03     60    1.195e+06    1.096e+02    9.126e-03              74.9x
+              5x worse     3.25e-05   5.00e-03     60    2.504e+06    4.655e+01    2.148e-02              31.8x
+             10x worse     6.50e-05   1.00e-02     60    8.011e+06    1.390e+01    7.196e-02               9.5x
+   30x worse (extreme)     1.95e-04   3.00e-02     60    3.795e+07    2.895e+00    3.454e-01               2.0x

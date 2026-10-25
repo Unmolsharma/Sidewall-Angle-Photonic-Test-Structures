@@ -1,0 +1,11 @@
+=== Atlas vs Fisher: pairwise correlation (all ring-readout pairs) ===
+n pairs = 435
+Spearman(angle, cond)       = -0.106  (expect negative if angle predicts better conditioning)
+Spearman(angle, lambda_min) = +0.123  (expect positive if angle predicts better worst-direction precision)
+Spearman(angle, det)        = +0.536
+Spearman(angle, trace_inv)  = -0.123  (expect negative -- larger angle -> smaller avg variance)
+
+=== Unoccupied regions: largest empty azimuthal wedge per projection ===
+  width vs thickness: empty from 84.8 to 5.8 deg (width=280.9 deg of 360)
+  width vs sidewall angle: empty from 339.8 to 322.1 deg (width=342.4 deg of 360)
+  thickness vs sidewall angle: empty from 356.0 to 277.4 deg (width=281.4 deg of 360)

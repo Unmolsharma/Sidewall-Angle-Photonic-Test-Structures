@@ -1,0 +1,4 @@
+within-class pairs (same geometry+pol, different width): n=60  angle min/mean/max = 0.5/9.4/29.2 deg
+cross-class pairs (different geometry or polarization): n=375  angle min/mean/max = 0.3/30.1/78.9 deg
+most redundant pair (smallest angle): strip-TE-400 <-> swg-TE-400 = 0.25 deg (cos=1.0000)
+most orthogonal pair (largest angle): strip-TM-600 <-> slot-TE-180 = 78.90 deg (cos=0.1925)

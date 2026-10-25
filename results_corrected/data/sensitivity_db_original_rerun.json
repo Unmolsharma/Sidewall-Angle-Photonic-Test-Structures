@@ -1,0 +1,1412 @@
+[
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.230796715114123,
+    "ng": 4.178933096708377,
+    "dneff_dw": 0.001687842602869205,
+    "dneff_dt": 0.004146304043204818,
+    "dneff_da": -0.006482211162279539,
+    "dng_dw": -0.000822439514254647,
+    "dng_dt": 0.0025778302990024926,
+    "dng_da": 0.0031488766676961433,
+    "sens_vector_raw": [
+      0.001687842602869205,
+      0.004146304043204818,
+      -0.006482211162279539
+    ],
+    "sens_vector_scaled": [
+      0.008439213014346025,
+      0.008292608086409636,
+      -0.006482211162279539
+    ],
+    "sens_vector_unit": [
+      0.6255445280331728,
+      0.6146776485863086,
+      -0.48048458016481804
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TE_400"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.3542337937242532,
+    "ng": 4.092227508910918,
+    "dneff_dw": 0.0012341552201974525,
+    "dneff_dt": 0.004132475410426273,
+    "dneff_da": -0.004753567508814838,
+    "dng_dw": -0.0010426964723601272,
+    "dng_dt": 0.0016216167429630168,
+    "dng_da": 0.004014747193909152,
+    "sens_vector_raw": [
+      0.0012341552201974525,
+      0.004132475410426273,
+      -0.004753567508814838
+    ],
+    "sens_vector_scaled": [
+      0.006170776100987263,
+      0.008264950820852546,
+      -0.004753567508814838
+    ],
+    "sens_vector_unit": [
+      0.5433396187953694,
+      0.7277326473806162,
+      -0.4185537630743538
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TE_450"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.4445751980923958,
+    "ng": 4.007963100475845,
+    "dneff_dw": 0.0010303829953539178,
+    "dneff_dt": 0.004085497310365782,
+    "dneff_da": -0.003937676069842855,
+    "dng_dw": -0.000992223694937433,
+    "dng_dt": 0.0012656321305262175,
+    "dng_da": 0.003874834802659599,
+    "sens_vector_raw": [
+      0.0010303829953539178,
+      0.004085497310365782,
+      -0.003937676069842855
+    ],
+    "sens_vector_scaled": [
+      0.005151914976769589,
+      0.008170994620731564,
+      -0.003937676069842855
+    ],
+    "sens_vector_unit": [
+      0.4938885364800698,
+      0.7833127279887793,
+      -0.37748547482565675
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TE_500"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5120797236347676,
+    "ng": 3.9376947719490314,
+    "dneff_dw": 0.00102739286362592,
+    "dneff_dt": 0.0040358494677966705,
+    "dneff_da": -0.003908014750579447,
+    "dng_dw": -0.000998773483300841,
+    "dng_dt": 0.0011359145815870164,
+    "dng_da": 0.003805708913379613,
+    "sens_vector_raw": [
+      0.00102739286362592,
+      0.0040358494677966705,
+      -0.003908014750579447
+    ],
+    "sens_vector_scaled": [
+      0.0051369643181296,
+      0.008071698935593341,
+      -0.003908014750579447
+    ],
+    "sens_vector_unit": [
+      0.4970428967765161,
+      0.7810022364173288,
+      -0.3781320741158313
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TE_550"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.562049166581154,
+    "ng": 3.8822726133987504,
+    "dneff_dw": 0.0009886167870441832,
+    "dneff_dt": 0.003992444040984977,
+    "dneff_da": -0.0038551672444793184,
+    "dng_dw": -0.000977371040927677,
+    "dng_dt": 0.0010993773640916027,
+    "dng_da": 0.0037517207307118383,
+    "sens_vector_raw": [
+      0.0009886167870441832,
+      0.003992444040984977,
+      -0.0038551672444793184
+    ],
+    "sens_vector_scaled": [
+      0.0049430839352209155,
+      0.007984888081969954,
+      -0.0038551672444793184
+    ],
+    "sens_vector_unit": [
+      0.48692694463205005,
+      0.7865650690814612,
+      -0.37975984870990853
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TE_600"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7373943214452192,
+    "ng": 3.4825159609319476,
+    "dneff_dw": 0.0006218573044163734,
+    "dneff_dt": 0.006334530718264453,
+    "dneff_da": -0.0023938457346285302,
+    "dng_dw": 0.002169222986699371,
+    "dng_dt": 0.030886964381583004,
+    "dng_da": -0.00835854794942037,
+    "sens_vector_raw": [
+      0.0006218573044163734,
+      0.006334530718264453,
+      -0.0023938457346285302
+    ],
+    "sens_vector_scaled": [
+      0.0031092865220818666,
+      0.012669061436528906,
+      -0.0023938457346285302
+    ],
+    "sens_vector_unit": [
+      0.23443571687346634,
+      0.9552289500801561,
+      -0.18049251392450247
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TM_400"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7820633811145965,
+    "ng": 3.6338369412866696,
+    "dneff_dw": 0.0005182021087596356,
+    "dneff_dt": 0.006896125485034821,
+    "dneff_da": -0.0020179217945105465,
+    "dng_dw": 0.001435141389674488,
+    "dng_dt": 0.029774923903678974,
+    "dng_da": -0.005596681316218488,
+    "sens_vector_raw": [
+      0.0005182021087596356,
+      0.006896125485034821,
+      -0.0020179217945105465
+    ],
+    "sens_vector_scaled": [
+      0.002591010543798178,
+      0.013792250970069642,
+      -0.0020179217945105465
+    ],
+    "sens_vector_unit": [
+      0.18275055089306394,
+      0.9728024723283241,
+      -0.14232914662914925
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TM_450"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8204070878926892,
+    "ng": 3.7386784967890954,
+    "dneff_dw": 0.0004967845257719983,
+    "dneff_dt": 0.00730564700137093,
+    "dneff_da": -0.001999980967452908,
+    "dng_dw": 0.0011534607035607713,
+    "dng_dt": 0.02830583163872491,
+    "dng_da": -0.004624760877015355,
+    "sens_vector_raw": [
+      0.0004967845257719983,
+      0.00730564700137093,
+      -0.001999980967452908
+    ],
+    "sens_vector_scaled": [
+      0.0024839226288599914,
+      0.01461129400274186,
+      -0.001999980967452908
+    ],
+    "sens_vector_unit": [
+      0.1660902685323445,
+      0.977000537908952,
+      -0.13373096733543832
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TM_500"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8531036150613835,
+    "ng": 3.8104979472171654,
+    "dneff_dw": 0.0005751727217655489,
+    "dneff_dt": 0.007602774649367872,
+    "dneff_da": -0.0022030093499142422,
+    "dng_dw": 0.0011827744013524822,
+    "dng_dt": 0.026817146489621857,
+    "dng_da": -0.004502066746625344,
+    "sens_vector_raw": [
+      0.0005751727217655489,
+      0.007602774649367872,
+      -0.0022030093499142422
+    ],
+    "sens_vector_scaled": [
+      0.0028758636088277445,
+      0.015205549298735743,
+      -0.0022030093499142422
+    ],
+    "sens_vector_unit": [
+      0.18398296041475568,
+      0.9727728276565426,
+      -0.1409372060533229
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TM_550"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8797571896277934,
+    "ng": 3.8566762218871737,
+    "dneff_dw": 0.000617446727688531,
+    "dneff_dt": 0.007807862412751221,
+    "dneff_da": -0.0023646469598841424,
+    "dng_dw": 0.0010821089453728837,
+    "dng_dt": 0.0255070713902803,
+    "dng_da": -0.00421696612963518,
+    "sens_vector_raw": [
+      0.000617446727688531,
+      0.007807862412751221,
+      -0.0023646469598841424
+    ],
+    "sens_vector_scaled": [
+      0.0030872336384426546,
+      0.015615724825502442,
+      -0.0023646469598841424
+    ],
+    "sens_vector_unit": [
+      0.19184120531320964,
+      0.9703637052474559,
+      -0.14693955043623663
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "strip_TM_600"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 150,
+    "gap_nm": 150.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5234417044614574,
+    "ng": 2.0168404977973493,
+    "dneff_dw": 0.0021912880788111043,
+    "dneff_dt": 0.0008798411667466643,
+    "dneff_da": -0.008324237411097779,
+    "dng_dw": 0.010009401743102941,
+    "dng_dt": 0.0033506549182075185,
+    "dng_da": -0.038100968092223075,
+    "sens_vector_raw": [
+      0.0021912880788111043,
+      0.0008798411667466643,
+      -0.008324237411097779
+    ],
+    "sens_vector_scaled": [
+      0.010956440394055522,
+      0.0017596823334933287,
+      -0.008324237411097779
+    ],
+    "sens_vector_unit": [
+      0.7898228775434416,
+      0.12685117740941876,
+      -0.6000738295400341
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TE_150"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 165,
+    "gap_nm": 134.99999999999997,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5526052158173507,
+    "ng": 2.144596321621469,
+    "dneff_dw": 0.004493294155765515,
+    "dneff_dt": 0.001060641462056533,
+    "dneff_da": -0.017692700660715155,
+    "dng_dw": 0.017169391180996297,
+    "dng_dt": 0.003823158650299363,
+    "dng_da": -0.06812565038460838,
+    "sens_vector_raw": [
+      0.004493294155765515,
+      0.001060641462056533,
+      -0.017692700660715155
+    ],
+    "sens_vector_scaled": [
+      0.022466470778827574,
+      0.002121282924113066,
+      -0.017692700660715155
+    ],
+    "sens_vector_unit": [
+      0.7834776769817888,
+      0.07397591877988646,
+      -0.6170010479017772
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TE_165"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 180,
+    "gap_nm": 120.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6399449468582894,
+    "ng": 2.4589161423584462,
+    "dneff_dw": 0.004758404720421017,
+    "dneff_dt": 0.0015682378723288481,
+    "dneff_da": -0.018287700873249935,
+    "dng_dw": 0.01634379035325941,
+    "dng_dt": 0.004461921031985394,
+    "dng_da": -0.06277937339202722,
+    "sens_vector_raw": [
+      0.004758404720421017,
+      0.0015682378723288481,
+      -0.018287700873249935
+    ],
+    "sens_vector_scaled": [
+      0.023792023602105083,
+      0.0031364757446576963,
+      -0.018287700873249935
+    ],
+    "sens_vector_unit": [
+      0.7885515269510365,
+      0.10395386197733444,
+      -0.6061188694663664
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TE_180"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 195,
+    "gap_nm": 104.99999999999999,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7030926629949859,
+    "ng": 2.6705848740122695,
+    "dneff_dw": 0.0032490243147692333,
+    "dneff_dt": 0.0018659534957595758,
+    "dneff_da": -0.012573964143933525,
+    "dng_dw": 0.010524833607032491,
+    "dng_dt": 0.0046840179770265555,
+    "dng_da": -0.04073735187922267,
+    "sens_vector_raw": [
+      0.0032490243147692333,
+      0.0018659534957595758,
+      -0.012573964143933525
+    ],
+    "sens_vector_scaled": [
+      0.016245121573846166,
+      0.0037319069915191516,
+      -0.012573964143933525
+    ],
+    "sens_vector_unit": [
+      0.7780576161516081,
+      0.1787391152674181,
+      -0.6022280918571448
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TE_195"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 210,
+    "gap_nm": 90.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7921940066703423,
+    "ng": 2.8941851770704896,
+    "dneff_dw": 0.010342623969379506,
+    "dneff_dt": 0.0022373461416381746,
+    "dneff_da": -0.038521931361513495,
+    "dng_dw": 0.022964008151778525,
+    "dng_dt": 0.0044977150263976196,
+    "dng_da": -0.08544653107156841,
+    "sens_vector_raw": [
+      0.010342623969379506,
+      0.0022373461416381746,
+      -0.038521931361513495
+    ],
+    "sens_vector_scaled": [
+      0.051713119846897526,
+      0.004474692283276349,
+      -0.038521931361513495
+    ],
+    "sens_vector_unit": [
+      0.8000288863129706,
+      0.06922581918440553,
+      -0.5959543330013432
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TE_210"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 150,
+    "gap_nm": 150.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.550215263698173,
+    "ng": 2.254506529029416,
+    "dneff_dw": 0.001985216038744486,
+    "dneff_dt": 0.0025833255836242297,
+    "dneff_da": -0.007459477925396696,
+    "dng_dw": 0.01139781116228411,
+    "dng_dt": 0.01374485023968186,
+    "dng_da": -0.0428298260797384,
+    "sens_vector_raw": [
+      0.001985216038744486,
+      0.0025833255836242297,
+      -0.007459477925396696
+    ],
+    "sens_vector_scaled": [
+      0.00992608019372243,
+      0.005166651167248459,
+      -0.007459477925396696
+    ],
+    "sens_vector_unit": [
+      0.7380746976104523,
+      0.384177280809931,
+      -0.554665266315394
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TM_150"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 165,
+    "gap_nm": 134.99999999999997,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5722070835597552,
+    "ng": 2.3782504859645597,
+    "dneff_dw": 0.0014394664660315915,
+    "dneff_dt": 0.002991653525986959,
+    "dneff_da": -0.005489539771422414,
+    "dng_dw": 0.008031210332215499,
+    "dng_dt": 0.015735446175955237,
+    "dng_da": -0.0307085244205354,
+    "sens_vector_raw": [
+      0.0014394664660315915,
+      0.002991653525986959,
+      -0.005489539771422414
+    ],
+    "sens_vector_scaled": [
+      0.007197332330157957,
+      0.005983307051973918,
+      -0.005489539771422414
+    ],
+    "sens_vector_unit": [
+      0.6633088717042676,
+      0.5514238425638885,
+      -0.505918063099636
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TM_165"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 180,
+    "gap_nm": 120.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6002987494710206,
+    "ng": 2.5346241769934714,
+    "dneff_dw": 0.0020801143391180775,
+    "dneff_dt": 0.003544986310977216,
+    "dneff_da": -0.007993737884884333,
+    "dng_dw": 0.011424735405654075,
+    "dng_dt": 0.01820224943023796,
+    "dng_da": -0.04391665950402257,
+    "sens_vector_raw": [
+      0.0020801143391180775,
+      0.003544986310977216,
+      -0.007993737884884333
+    ],
+    "sens_vector_scaled": [
+      0.010400571695590388,
+      0.007089972621954432,
+      -0.007993737884884333
+    ],
+    "sens_vector_unit": [
+      0.697507609357111,
+      0.4754844251536197,
+      -0.5360948575814356
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TM_180"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 195,
+    "gap_nm": 104.99999999999999,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.634137499453128,
+    "ng": 2.7185814104761175,
+    "dneff_dw": 0.001870121823199411,
+    "dneff_dt": 0.0041742838619516776,
+    "dneff_da": -0.0072794482162643614,
+    "dng_dw": 0.009932215184543392,
+    "dng_dt": 0.020606315758963767,
+    "dng_da": -0.03868854070099692,
+    "sens_vector_raw": [
+      0.001870121823199411,
+      0.0041742838619516776,
+      -0.0072794482162643614
+    ],
+    "sens_vector_scaled": [
+      0.009350609115997055,
+      0.008348567723903355,
+      -0.0072794482162643614
+    ],
+    "sens_vector_unit": [
+      0.6450646921718997,
+      0.5759374819425048,
+      -0.502182795211962
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TM_195"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 210,
+    "gap_nm": 90.0,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6572500290860865,
+    "ng": 2.8394105750614447,
+    "dneff_dw": 0.002026774421731914,
+    "dneff_dt": 0.004603158384511419,
+    "dneff_da": -0.007611510825993206,
+    "dng_dw": 0.010700484892255124,
+    "dng_dt": 0.021977518123498352,
+    "dng_da": -0.04021541907502657,
+    "sens_vector_raw": [
+      0.002026774421731914,
+      0.004603158384511419,
+      -0.007611510825993206
+    ],
+    "sens_vector_scaled": [
+      0.01013387210865957,
+      0.009206316769022838,
+      -0.007611510825993206
+    ],
+    "sens_vector_unit": [
+      0.6469189648914702,
+      0.5877063427305299,
+      -0.48589824817347704
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.6,
+      "half_y": 1.2,
+      "n_core": 50,
+      "n_clad": 20,
+      "n_modes": 6
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "slot_TM_210"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.459647835845435,
+    "ng": 3.706435589619492,
+    "dneff_dw": 0.0007221023172476304,
+    "dneff_dt": 0.0025778005406329463,
+    "dneff_da": -0.001301279823572754,
+    "dng_dw": 0.0005017212750510591,
+    "dng_dt": 0.0036781623274068087,
+    "dng_da": -0.0007818284265208586,
+    "sens_vector_raw": [
+      0.0007221023172476304,
+      0.0025778005406329463,
+      -0.001301279823572754
+    ],
+    "sens_vector_scaled": [
+      0.003610511586238152,
+      0.0051556010812658926,
+      -0.001301279823572754
+    ],
+    "sens_vector_unit": [
+      0.5617519457851102,
+      0.8021491885338323,
+      -0.2024634059309407
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "rib_TE_400"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5157036092249583,
+    "ng": 3.7320614431889085,
+    "dneff_dw": 0.0006085148649277005,
+    "dneff_dt": 0.0029009451192840707,
+    "dneff_da": -0.0011062569982733805,
+    "dng_dw": 0.00016000139945844262,
+    "dng_dt": 0.0032578139349259683,
+    "dng_da": -0.00017829568265348428,
+    "sens_vector_raw": [
+      0.0006085148649277005,
+      0.0029009451192840707,
+      -0.0011062569982733805
+    ],
+    "sens_vector_scaled": [
+      0.003042574324638503,
+      0.0058018902385681415,
+      -0.0011062569982733805
+    ],
+    "sens_vector_unit": [
+      0.45794182023829316,
+      0.8732500485385373,
+      -0.16650418014056337
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "rib_TE_450"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.561939180593505,
+    "ng": 3.737270275512992,
+    "dneff_dw": 0.0005586158911108363,
+    "dneff_dt": 0.0031279444163899717,
+    "dneff_da": -0.0009336727675595125,
+    "dng_dw": 3.259564457680497e-06,
+    "dng_dt": 0.002854536721544232,
+    "dng_da": 0.00014418908754931792,
+    "sens_vector_raw": [
+      0.0005586158911108363,
+      0.0031279444163899717,
+      -0.0009336727675595125
+    ],
+    "sens_vector_scaled": [
+      0.0027930794555541816,
+      0.006255888832779943,
+      -0.0009336727675595125
+    ],
+    "sens_vector_unit": [
+      0.40395001660860186,
+      0.9047599390263761,
+      -0.13503272497768298
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "rib_TE_500"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.599811332789767,
+    "ng": 3.7321913828715565,
+    "dneff_dw": 0.0005895898756365092,
+    "dneff_dt": 0.0032864936610307316,
+    "dneff_da": -0.0010406926484527457,
+    "dng_dw": -7.521456011172489e-05,
+    "dng_dt": 0.0025229093941078196,
+    "dng_da": 0.00027723881844154974,
+    "sens_vector_raw": [
+      0.0005895898756365092,
+      0.0032864936610307316,
+      -0.0010406926484527457
+    ],
+    "sens_vector_scaled": [
+      0.002947949378182546,
+      0.006572987322061463,
+      -0.0010406926484527457
+    ],
+    "sens_vector_unit": [
+      0.4050175521112572,
+      0.9030600236700574,
+      -0.14298033476964667
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "rib_TE_550"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.629976616232569,
+    "ng": 3.7224021113768937,
+    "dneff_dw": 0.0005967252086826136,
+    "dneff_dt": 0.0033940458295318443,
+    "dneff_da": -0.0012033630084848923,
+    "dng_dw": -0.0001483773399245436,
+    "dng_dt": 0.0022720388817505377,
+    "dng_da": 0.0004091480649373036,
+    "sens_vector_raw": [
+      0.0005967252086826136,
+      0.0033940458295318443,
+      -0.0012033630084848923
+    ],
+    "sens_vector_scaled": [
+      0.002983626043413068,
+      0.006788091659063689,
+      -0.0012033630084848923
+    ],
+    "sens_vector_unit": [
+      0.397187821952947,
+      0.9036478774653212,
+      -0.16019471790509798
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "rib_TE_600"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5918284586823856,
+    "ng": 2.3822601881351297,
+    "dneff_dw": 0.00066699298763655,
+    "dneff_dt": 0.001593631259341477,
+    "dneff_da": -0.002561051568184758,
+    "dng_dw": 0.002320892895949278,
+    "dng_dt": 0.0061656698226606466,
+    "dng_da": -0.008919396987875139,
+    "sens_vector_raw": [
+      0.00066699298763655,
+      0.001593631259341477,
+      -0.002561051568184758
+    ],
+    "sens_vector_scaled": [
+      0.0033349649381827495,
+      0.003187262518682954,
+      -0.002561051568184758
+    ],
+    "sens_vector_unit": [
+      0.6320619278904955,
+      0.6040685073437707,
+      -0.4853853703469223
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "swg_TE_400"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6504930827151443,
+    "ng": 2.5468400329849694,
+    "dneff_dw": 0.0006622791484990565,
+    "dneff_dt": 0.0019450065030879315,
+    "dneff_da": -0.002550767243896468,
+    "dng_dw": 0.0015748266703668357,
+    "dng_dt": 0.005926646462815266,
+    "dng_da": -0.0060689598776833,
+    "sens_vector_raw": [
+      0.0006622791484990565,
+      0.0019450065030879315,
+      -0.002550767243896468
+    ],
+    "sens_vector_scaled": [
+      0.0033113957424952822,
+      0.003890013006175863,
+      -0.002550767243896468
+    ],
+    "sens_vector_unit": [
+      0.57993047820048,
+      0.6812647228862193,
+      -0.44672029034388555
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "swg_TE_450"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7048453638283982,
+    "ng": 2.6486523452192228,
+    "dneff_dw": 0.0006702854597334218,
+    "dneff_dt": 0.0021974091354123315,
+    "dneff_da": -0.0025792408307871995,
+    "dng_dw": 0.0010485791083181262,
+    "dng_dt": 0.0052847976385481665,
+    "dng_da": -0.003991156235380489,
+    "sens_vector_raw": [
+      0.0006702854597334218,
+      0.0021974091354123315,
+      -0.0025792408307871995
+    ],
+    "sens_vector_scaled": [
+      0.003351427298667109,
+      0.004394818270824663,
+      -0.0025792408307871995
+    ],
+    "sens_vector_unit": [
+      0.5494957165266923,
+      0.7205687605671282,
+      -0.4228890147705064
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "swg_TE_500"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7526134906376285,
+    "ng": 2.7044759648635512,
+    "dneff_dw": 0.0007456182057780092,
+    "dneff_dt": 0.002367065398681756,
+    "dneff_da": -0.0028418912859542456,
+    "dng_dw": 0.0007709844049421655,
+    "dng_dt": 0.004616906673828303,
+    "dng_da": -0.0029230616738784576,
+    "sens_vector_raw": [
+      0.0007456182057780092,
+      0.002367065398681756,
+      -0.0028418912859542456
+    ],
+    "sens_vector_scaled": [
+      0.003728091028890046,
+      0.004734130797363512,
+      -0.0028418912859542456
+    ],
+    "sens_vector_unit": [
+      0.5595753766420277,
+      0.7105789540755982,
+      -0.42655943065505153
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "swg_TE_550"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7923557538452943,
+    "ng": 2.730491809829336,
+    "dneff_dw": 0.0007808254338645071,
+    "dneff_dt": 0.0024748303127375415,
+    "dneff_da": -0.0030303618664017096,
+    "dng_dw": 0.0004950619820849767,
+    "dng_dt": 0.004075009141178421,
+    "dng_da": -0.0019604697904811452,
+    "sens_vector_raw": [
+      0.0007808254338645071,
+      0.0024748303127375415,
+      -0.0030303618664017096
+    ],
+    "sens_vector_scaled": [
+      0.0039041271693225355,
+      0.004949660625475083,
+      -0.0030303618664017096
+    ],
+    "sens_vector_unit": [
+      0.5581629607017011,
+      0.707640173940135,
+      -0.43324299593494486
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "half_x": 1.4,
+      "half_y": 1.2,
+      "n_core": 30,
+      "n_clad": 18,
+      "n_modes": 4
+    },
+    "convergence_status": "original averaging; recomputed 2026-10-25 (see results_corrected/data/validation.json)",
+    "validation_status": "original averaging; step-size check in results_corrected/data/step_check.csv",
+    "id": "swg_TE_600"
+  }
+]

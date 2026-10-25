@@ -1,0 +1,1352 @@
+[
+  {
+    "probe_id": "strip_TE_400_ring",
+    "raw_id": "strip_TE_400",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 400,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        422.41462575185636,
+        561.5568671839374,
+        -1621.311570423744
+      ],
+      [
+        -1.5305800007620718,
+        2.7817353811725454,
+        5.842345211416244
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TE_400_mzi",
+    "raw_id": "strip_TE_400",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 400,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        1113.0136068001214,
+        1479.637294886028,
+        -4271.968177077661
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TE_450_ring",
+    "raw_id": "strip_TE_450",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 450,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        309.6030041147831,
+        566.2495480256435,
+        -1188.1422860976745
+      ],
+      [
+        -1.7760905206670508,
+        1.8101580721998634,
+        6.788278741214793
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TE_450_mzi",
+    "raw_id": "strip_TE_450",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 450,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        815.7680517633762,
+        1492.0019653088216,
+        -3130.617290742572
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TE_500_ring",
+    "raw_id": "strip_TE_500",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 500,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        230.61309648813204,
+        563.811498392011,
+        -884.802429397087
+      ],
+      [
+        -1.5436007520076345,
+        1.4005409245130274,
+        5.898292173518449
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TE_500_mzi",
+    "raw_id": "strip_TE_500",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 500,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        607.6387952731113,
+        1485.5779869452476,
+        -2331.35190689934
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TE_550_ring",
+    "raw_id": "strip_TE_550",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 550,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        175.68615260189065,
+        559.4348962645324,
+        -673.828934756452
+      ],
+      [
+        -1.258364027093739,
+        1.224583355616815,
+        4.804059036469743
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TE_550_mzi",
+    "raw_id": "strip_TE_550",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 550,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        462.91266081098166,
+        1474.0461473202258,
+        -1775.4611874640243
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TE_600_ring",
+    "raw_id": "strip_TE_600",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 600,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        137.06211161688813,
+        554.832827194963,
+        -525.4287739659114
+      ],
+      [
+        -1.0143498820359031,
+        1.1516226360687165,
+        3.8664477173095957
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TE_600_mzi",
+    "raw_id": "strip_TE_600",
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 600,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        361.1427869828749,
+        1461.9202284206426,
+        -1384.4439542959997
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TM_400_ring",
+    "raw_id": "strip_TM_400",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 400,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        152.54154353989009,
+        1119.4732489459784,
+        -585.8800282919715
+      ],
+      [
+        3.8118348272016878,
+        34.72920823395986,
+        -14.68033083049991
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TM_400_mzi",
+    "raw_id": "strip_TM_400",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 400,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        401.92929697923626,
+        2949.6823323952763,
+        -1543.7260068368705
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TM_450_ring",
+    "raw_id": "strip_TM_450",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 450,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        122.45639387862444,
+        1224.407694036414,
+        -470.3552611421499
+      ],
+      [
+        2.5343736979014153,
+        33.61346845178659,
+        -9.778338628115835
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TM_450_mzi",
+    "raw_id": "strip_TM_450",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 450,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        322.6584126531871,
+        3226.1724397152916,
+        -1239.331627661892
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TM_500_ring",
+    "raw_id": "strip_TM_500",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 500,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        95.16260234104533,
+        1302.3540253175572,
+        -365.61959700845205
+      ],
+      [
+        1.6797895919397732,
+        31.964379737798865,
+        -6.506848947836152
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TM_500_mzi",
+    "raw_id": "strip_TM_500",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 500,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        250.7424336351286,
+        3431.551993421905,
+        -963.3652851363082
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TM_550_ring",
+    "raw_id": "strip_TM_550",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 550,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        71.32628733536978,
+        1359.6010906332242,
+        -274.4112946229458
+      ],
+      [
+        1.1463156035077304,
+        30.206056118599943,
+        -4.4851873101605655
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TM_550_mzi",
+    "raw_id": "strip_TM_550",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 550,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        187.93650476827236,
+        3582.3913790901997,
+        -723.0419738221702
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "strip_TM_600_ring",
+    "raw_id": "strip_TM_600",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 600,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        50.74601687366381,
+        1401.4376528069977,
+        -196.89966580448672
+      ],
+      [
+        0.8400648955602108,
+        28.54344758949823,
+        -3.4341907031105734
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "strip_TM_600_mzi",
+    "raw_id": "strip_TM_600",
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 600,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        133.70987609807722,
+        3692.6258741157185,
+        -518.8078107492639
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TE_150_ring",
+    "raw_id": "slot_TE_150",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 150,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        494.9703522608587,
+        137.2148894016515,
+        -1905.7174300004788
+      ],
+      [
+        14.042200437129203,
+        3.451557712825404,
+        -54.1093899400249
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TE_150_mzi",
+    "raw_id": "slot_TE_150",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 150,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        1304.1895413740037,
+        361.54533874811204,
+        -5021.344671793408
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TE_165_ring",
+    "raw_id": "slot_TE_165",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 165,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        345.3522662487133,
+        182.04145036258515,
+        -1326.2715782025314
+      ],
+      [
+        9.990563131416597,
+        4.254081859586645,
+        -38.40629097657766
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TE_165_mzi",
+    "raw_id": "slot_TE_165",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 165,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        909.9632163301982,
+        479.65813421955295,
+        -3494.571974690205
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TE_180_ring",
+    "raw_id": "slot_TE_180",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 180,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        920.2600066869512,
+        232.58004144539774,
+        -3579.8387036075032
+      ],
+      [
+        21.038456447525046,
+        5.134657630301298,
+        -82.65389208829643
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TE_180_mzi",
+    "raw_id": "slot_TE_180",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 180,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        2424.778515690507,
+        612.8214673867177,
+        -9432.460299339784
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TE_195_ring",
+    "raw_id": "slot_TE_195",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 195,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        735.813051075968,
+        297.839871807964,
+        -2827.581423391619
+      ],
+      [
+        14.87055592465456,
+        4.98711031753285,
+        -57.06999581084382
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TE_195_mzi",
+    "raw_id": "slot_TE_195",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 195,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        1938.7821537925665,
+        784.7735607635053,
+        -7450.349506645358
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TE_210_ring",
+    "raw_id": "slot_TE_210",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 210,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        536.589314257591,
+        350.7428827339565,
+        -2061.032357041308
+      ],
+      [
+        10.733792436752587,
+        5.2365664736467865,
+        -41.23114044138587
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TE_210_mzi",
+    "raw_id": "slot_TE_210",
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 210,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        1413.850685139589,
+        924.166866325597,
+        -5430.581513031856
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TM_150_ring",
+    "raw_id": "slot_TM_150",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 150,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        193.56060287605965,
+        303.66590222970973,
+        -739.6801425776538
+      ],
+      [
+        7.518301813096251,
+        11.313433300487175,
+        -28.83478751818025
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TM_150_mzi",
+    "raw_id": "slot_TM_150",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 150,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        510.0097667263178,
+        800.124476043706,
+        -1948.9714919397873
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TM_165_ring",
+    "raw_id": "slot_TM_165",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 165,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        314.7098755027774,
+        368.9858940965501,
+        -1207.8297308914223
+      ],
+      [
+        11.100723192897853,
+        13.451052732681879,
+        -42.64202441571263
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TM_165_mzi",
+    "raw_id": "slot_TM_165",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 165,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        829.2240662962508,
+        972.2350880152119,
+        -3182.491427201663
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TM_180_ring",
+    "raw_id": "slot_TM_180",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 180,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        222.10734347510606,
+        485.19729882372354,
+        -852.7684105326288
+      ],
+      [
+        8.822485230709365,
+        16.3640697038534,
+        -33.56325201466337
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TM_180_mzi",
+    "raw_id": "slot_TM_180",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 180,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        585.2271213810707,
+        1278.4386776671533,
+        -2246.9459779777912
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TM_195_ring",
+    "raw_id": "slot_TM_195",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 195,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        281.6179112900424,
+        482.11848799888213,
+        -1079.2491699166492
+      ],
+      [
+        9.888812846298745,
+        17.0939594030417,
+        -38.001539817609675
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TM_195_mzi",
+    "raw_id": "slot_TM_195",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 195,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        742.0305739332446,
+        1270.3263677898315,
+        -2843.6965436670557
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "slot_TM_210_ring",
+    "raw_id": "slot_TM_210",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 210,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        387.76601864130527,
+        576.5048387830122,
+        -1489.0206142598772
+      ],
+      [
+        12.23300081732841,
+        18.973565584178065,
+        -47.018157641133925
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "slot_TM_210_mzi",
+    "raw_id": "slot_TM_210",
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 210,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        1021.7185407212088,
+        1519.0234684926343,
+        -3923.3968320279796
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "rib_TE_400_ring",
+    "raw_id": "rib_TE_400",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 400,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        180.6393632743896,
+        353.6223257346508,
+        -333.13638941564386
+      ],
+      [
+        0.7522565982421625,
+        3.429772338546244,
+        -1.1349006230227943
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "rib_TE_400_mzi",
+    "raw_id": "rib_TE_400",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 400,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        475.9637971584183,
+        931.7538650808457,
+        -877.7757959490968
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "rib_TE_450_ring",
+    "raw_id": "rib_TE_450",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 450,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        153.0323509662355,
+        399.4692745174201,
+        -283.4276213234784
+      ],
+      [
+        0.22384179386927272,
+        3.0625089235418734,
+        -0.2040574098722825
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "rib_TE_450_mzi",
+    "raw_id": "rib_TE_450",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 450,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        403.22251769305194,
+        1052.5552642621954,
+        -746.798950236484
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "rib_TE_500_ring",
+    "raw_id": "rib_TE_500",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 500,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        127.49251530336664,
+        432.1396215700371,
+        -236.86921804723693
+      ],
+      [
+        -0.05620461914146446,
+        2.7010860972163098,
+        0.2759108472627503
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "rib_TE_500_mzi",
+    "raw_id": "rib_TE_500",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 500,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        335.9280092284924,
+        1138.6378442479695,
+        -624.1229508789586
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "rib_TE_550_ring",
+    "raw_id": "rib_TE_550",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 550,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        105.79788447395882,
+        455.24301199571477,
+        -197.07131674796287
+      ],
+      [
+        -0.18805472647258623,
+        2.3985834730788635,
+        0.488078234492928
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "rib_TE_550_mzi",
+    "raw_id": "rib_TE_550",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 550,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        278.76517007570953,
+        1199.5126017477264,
+        -519.2600911014629
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "rib_TE_600_ring",
+    "raw_id": "rib_TE_600",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 600,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        88.10302414549764,
+        471.65364538451007,
+        -164.52195045574697
+      ],
+      [
+        -0.23953001745575797,
+        2.1611005632367064,
+        0.5571486499735823
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "rib_TE_600_mzi",
+    "raw_id": "rib_TE_600",
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 600,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        232.14126286380736,
+        1242.7527197370766,
+        -433.4962814050646
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "swg_TE_400_ring",
+    "raw_id": "swg_TE_400",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 400,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        168.89794759193433,
+        221.7954039691691,
+        -648.3012323490638
+      ],
+      [
+        3.755101356665946,
+        5.604844649607643,
+        -14.42698970705858
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "swg_TE_400_mzi",
+    "raw_id": "swg_TE_400",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 400,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        445.02652694811565,
+        584.4051969176637,
+        -1708.198648722153
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "swg_TE_450_ring",
+    "raw_id": "swg_TE_450",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 450,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        168.51247451366697,
+        270.07159942257135,
+        -646.7805510817109
+      ],
+      [
+        2.553941642273383,
+        5.4087056434491965,
+        -9.812261769812203
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "swg_TE_450_mzi",
+    "raw_id": "swg_TE_450",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 450,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        444.01085003966807,
+        711.6073796748092,
+        -1704.1918297367606
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "swg_TE_500_ring",
+    "raw_id": "swg_TE_500",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 500,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        156.46799414067866,
+        305.19281838253386,
+        -600.485774298669
+      ],
+      [
+        1.500007185814889,
+        4.856037461535734,
+        -5.7656896544151515
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "swg_TE_500_mzi",
+    "raw_id": "swg_TE_500",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 500,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        412.27503947649865,
+        804.1477232300722,
+        -1582.2104556506067
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "swg_TE_550_ring",
+    "raw_id": "swg_TE_550",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 550,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        139.96406434144683,
+        329.1893198220055,
+        -537.0781824890395
+      ],
+      [
+        0.7711440064521735,
+        4.269078926183889,
+        -2.9681407661257264
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "swg_TE_550_mzi",
+    "raw_id": "swg_TE_550",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 550,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        368.7890962530039,
+        867.3757247941569,
+        -1415.1387962994854
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  },
+  {
+    "probe_id": "swg_TE_600_ring",
+    "raw_id": "swg_TE_600",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 600,
+    "readout": "ring",
+    "n_observables": 2,
+    "fisher_rows": [
+      [
+        123.36250191209771,
+        345.18245191119166,
+        -473.3033983209422
+      ],
+      [
+        0.3155123510949043,
+        3.771803100799387,
+        -1.2197133208500244
+      ]
+    ],
+    "noise_model": {
+      "sigma_neff": 6.5e-06,
+      "sigma_ng": 0.001
+    }
+  },
+  {
+    "probe_id": "swg_TE_600_mzi",
+    "raw_id": "swg_TE_600",
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 600,
+    "readout": "mzi",
+    "n_observables": 1,
+    "fisher_rows": [
+      [
+        325.045902358809,
+        909.5157752219391,
+        -1247.0996276189692
+      ]
+    ],
+    "noise_model": {
+      "sigma_phase": 0.001,
+      "L_um": 100.0
+    }
+  }
+]

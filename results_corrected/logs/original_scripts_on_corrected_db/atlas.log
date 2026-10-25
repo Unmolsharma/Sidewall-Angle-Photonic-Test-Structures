@@ -1,0 +1,8 @@
+=== Sensitivity atlas: numeric summary ===
+within-class pairs (same geometry+pol, different width): n=60  angle min/mean/max = 0.5/9.4/29.2 deg
+cross-class pairs (different geometry or polarization): n=375  angle min/mean/max = 0.3/30.1/78.9 deg
+most redundant pair (smallest angle): strip-TE-400 <-> swg-TE-400 = 0.25 deg (cos=1.0000)
+most orthogonal pair (largest angle): strip-TM-600 <-> slot-TE-180 = 78.90 deg (cos=0.1925)
+
+Figure saved: figures/fig1_sensitivity_atlas.png
+Clustering leaf order: ['strip-TM-550', 'strip-TM-600', 'strip-TM-450', 'strip-TM-500', 'strip-TM-400', 'rib-TE-550', 'rib-TE-600', 'slot-TE-150', 'slot-TE-180', 'slot-TE-210', 'slot-TE-165', 'slot-TE-195', 'slot-TM-165', 'strip-TE-400', 'swg-TE-400', 'slot-TM-210', 'slot-TM-150', 'swg-TE-450', 'swg-TE-500', 'strip-TE-450', 'slot-TM-195', 'slot-TM-180', 'strip-TE-500', 'swg-TE-550', 'strip-TE-550', 'swg-TE-600', 'rib-TE-400', 'strip-TE-600', 'rib-TE-450', 'rib-TE-500']

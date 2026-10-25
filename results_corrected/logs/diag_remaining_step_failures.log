@@ -1,0 +1,9 @@
+strip TM 500 nm: D(h/2), D(h), D(2h) and max relative deviation
+  cell_exact M0 30/18 (production)    dneff/da: -2.3968e-03 -2.3765e-03 -2.2877e-03  dev 3.7%
+  cell_exact M0 30/18 (production)    dneff/dt: 8.9463e-03 8.4653e-03 7.8288e-03  dev 7.5%
+  cell_exact M2 60/24                 dneff/da: -3.6825e-03 -3.5065e-03 -2.7882e-03  dev 20.5%
+  cell_exact M2 60/24                 dneff/dt: 8.6568e-03 7.9364e-03 7.2202e-03  dev 9.1%
+  cell_exact M3 90/36                 dneff/da: -1.1238e-03 -2.1136e-03 -2.7274e-03  dev 46.8%
+  cell_exact M3 90/36                 dneff/dt: 8.2704e-03 7.5172e-03 6.9123e-03  dev 10.0%
+  tensor     M0 30/18 (production)    dneff/da: -2.0720e-03 -2.0583e-03 -1.9983e-03  dev 2.9%
+  tensor     M0 30/18 (production)    dneff/dt: 6.5055e-03 6.7752e-03 6.8989e-03  dev 4.0%
