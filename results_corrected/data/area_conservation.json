@@ -1,0 +1,159 @@
+{
+ "grid": {
+  "original_window_nm": [
+   42.85641339869281,
+   36.700878267973856
+  ],
+  "core_cell_nm": [
+   26.666666666666668,
+   20.0
+  ]
+ },
+ "total_area": {
+  "strip {'w': 0.5, 't': 0.22, 'a': 0.0}": {
+   "true": 0.11,
+   "cell_exact": 0.11,
+   "original": 0.11055405854084754,
+   "cell_exact_rel_err": 0.0,
+   "original_rel_err": 0.005036895825886759
+  },
+  "strip {'w': 0.4137, 't': 0.2213, 'a': 1.7}": {
+   "true": 0.09009830481311201,
+   "cell_exact": 0.09009830481311203,
+   "original": 0.08960610386454161,
+   "cell_exact_rel_err": 1.5402939973843793e-16,
+   "original_rel_err": -0.0054629324002416855
+  },
+  "strip {'w': 0.6, 't': 0.219, 'a': -1.0}": {
+   "true": 0.13223716236902222,
+   "cell_exact": 0.13223716236902225,
+   "original": 0.13289450739595488,
+   "cell_exact_rel_err": 2.09892401790761e-16,
+   "original_rel_err": 0.004970955328716607
+  },
+  "rib {'w': 0.5, 't': 0.22, 'a': 0.0, 's': 0.09}": {
+   "true": 0.317,
+   "cell_exact": 0.31699999999999995,
+   "original": 0.3173273982286826,
+   "cell_exact_rel_err": -1.7511404173898368e-16,
+   "original_rel_err": 0.00103280198322589
+  },
+  "rib {'w': 0.4321, 't': 0.2207, 'a': 2.0, 's': 0.0613}": {
+   "true": 0.23962946051727665,
+   "cell_exact": 0.23962946051727663,
+   "original": 0.23992717346951267,
+   "cell_exact_rel_err": -1.1582705880868855e-16,
+   "original_rel_err": 0.0012423887763773247
+  },
+  "slot {'w': 0.18, 't': 0.22, 'a': 0.0}": {
+   "true": 0.07919999999999999,
+   "cell_exact": 0.07919999999999999,
+   "original": 0.07949616142194396,
+   "cell_exact_rel_err": 0.0,
+   "original_rel_err": 0.003739411893231932
+  },
+  "slot {'w': 0.1953, 't': 0.218, 'a': 1.0}": {
+   "true": 0.08349173098870277,
+   "cell_exact": 0.08349173098870277,
+   "original": 0.08425411387823425,
+   "cell_exact_rel_err": 0.0,
+   "original_rel_err": 0.00913123827357993
+  }
+ },
+ "supersample": {
+  "strip w500 t220 a3": {
+   "n_partial_cells": 24,
+   "max_abs_fill_error": 1.834292938831389e-05
+  },
+  "rib w450 t221 a-1 slab91": {
+   "n_partial_cells": 79,
+   "max_abs_fill_error": 3.802275782938125e-05
+  }
+ },
+ "rates": {
+  "strip width (vertical sidewall)": {
+   "original": {
+    "min": 0.6222328130584563,
+    "max": 1.2444656261171172,
+    "at_nominal": 0.6222328130585194
+   },
+   "cell_exact": {
+    "min": 0.9999999999999369,
+    "max": 1.000000000000063,
+    "at_nominal": 1.0
+   }
+  },
+  "strip thickness (horizontal top)": {
+   "original": {
+    "min": 0.5476909236272194,
+    "max": 1.0953818472545498,
+    "at_nominal": 1.095381847254522
+   },
+   "cell_exact": {
+    "min": 0.9999999999999722,
+    "max": 1.0000000000000278,
+    "at_nominal": 1.0
+   }
+  },
+  "strip sidewall angle (+-1 deg at 0)": {
+   "original": {
+    "min": 0.7018587501609955,
+    "max": 0.7018587501609955,
+    "at_nominal": 0.7018587501609955
+   },
+   "cell_exact": {
+    "min": 1.0,
+    "max": 1.0,
+    "at_nominal": 1.0
+   }
+  },
+  "rib slab height": {
+   "original": {
+    "min": 0.544349383332432,
+    "max": 1.0886987666649386,
+    "at_nominal": 0.5443493833324562
+   },
+   "cell_exact": {
+    "min": 0.9999999999999759,
+    "max": 1.0000000000000482,
+    "at_nominal": 0.9999999999999759
+   }
+  },
+  "rib width": {
+   "original": {
+    "min": 0.6222328130581797,
+    "max": 1.244465626117745,
+    "at_nominal": 0.6222328130588725
+   },
+   "cell_exact": {
+    "min": 0.999999999999573,
+    "max": 1.000000000000854,
+    "at_nominal": 1.0
+   }
+  },
+  "rib sidewall angle (+-1 deg at 0)": {
+   "original": {
+    "min": 0.6365971758300341,
+    "max": 0.6365971758300341,
+    "at_nominal": 0.6365971758300341
+   },
+   "cell_exact": {
+    "min": 1.0,
+    "max": 1.0,
+    "at_nominal": 1.0
+   }
+  },
+  "slot rail width (gap co-varies)": {
+   "original": {
+    "min": 0.5619697113340858,
+    "max": 1.1239394226682977,
+    "at_nominal": 1.1239394226682662
+   },
+   "cell_exact": {
+    "min": 0.9999999999999685,
+    "max": 1.000000000000063,
+    "at_nominal": 1.0000000000000315
+   }
+  }
+ }
+}

@@ -1,0 +1,26 @@
+production grid: original averaging window = 42.9 x 36.7 nm (mean spacing); core cells = 26.7 x 20.0 nm
+
+(a) total silicon area, modelled vs analytic (um^2)
+  strip {'w': 0.5, 't': 0.22, 'a': 0.0}                true=0.1100000000  cell-exact err=+0.00e+00  original err=+5.04e-03
+  strip {'w': 0.4137, 't': 0.2213, 'a': 1.7}           true=0.0900983048  cell-exact err=+1.54e-16  original err=-5.46e-03
+  strip {'w': 0.6, 't': 0.219, 'a': -1.0}              true=0.1322371624  cell-exact err=+2.10e-16  original err=+4.97e-03
+  rib {'w': 0.5, 't': 0.22, 'a': 0.0, 's': 0.09}       true=0.3170000000  cell-exact err=-1.75e-16  original err=+1.03e-03
+  rib {'w': 0.4321, 't': 0.2207, 'a': 2.0, 's': 0.0613} true=0.2396294605  cell-exact err=-1.16e-16  original err=+1.24e-03
+  slot {'w': 0.18, 't': 0.22, 'a': 0.0}                true=0.0792000000  cell-exact err=+0.00e+00  original err=+3.74e-03
+  slot {'w': 0.1953, 't': 0.218, 'a': 1.0}             true=0.0834917310  cell-exact err=+0.00e+00  original err=+9.13e-03
+
+    per-cell fill vs 400x400 brute-force sampling (boundary cells only):
+  strip w500 t220 a3           24 partial cells, max |fill error| = 1.83e-05 (sampling resolution 1/400 = 2.5e-3)
+  rib w450 t221 a-1 slab91     79 partial cells, max |fill error| = 3.80e-05 (sampling resolution 1/400 = 2.5e-3)
+
+(b) rate of modelled Si change per unit of true Si change (ideal 1.000),
+    swept over boundary positions spanning several cells, dh = 0.5 nm (1 deg for a)
+  strip width (vertical sidewall)      original: 0.622..1.244 (nominal 0.622)   cell-exact: 1.000000..1.000000
+  strip thickness (horizontal top)     original: 0.548..1.095 (nominal 1.095)   cell-exact: 1.000000..1.000000
+  strip sidewall angle (+-1 deg at 0)  original: 0.702..0.702 (nominal 0.702)   cell-exact: 1.000000..1.000000
+  rib slab height                      original: 0.544..1.089 (nominal 0.544)   cell-exact: 1.000000..1.000000
+  rib width                            original: 0.622..1.244 (nominal 0.622)   cell-exact: 1.000000..1.000000
+  rib sidewall angle (+-1 deg at 0)    original: 0.637..0.637 (nominal 0.637)   cell-exact: 1.000000..1.000000
+  slot rail width (gap co-varies)      original: 0.562..1.124 (nominal 1.124)   cell-exact: 1.000000..1.000000
+
+Saved C:\Users\unmol\OneDrive\Desktop\Photonics ML Paper\results_corrected\data\area_conservation.json
