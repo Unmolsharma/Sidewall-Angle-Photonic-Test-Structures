@@ -1,0 +1,15 @@
+serial, BLAS threads=default: strip_TE 1.34s, strip_TM 1.41s, slot_TE 5.29s, slot_TM 5.04s, rib_TE 0.60s, swg_TE 1.30s
+serial, BLAS threads=1: strip_TE 1.30s, strip_TM 1.37s, slot_TE 4.52s, slot_TM 5.05s, rib_TE 0.62s, swg_TE 1.29s
+Pool(4), 32 solves each: strip_TE 0.490s/solve (latency 1.96s), strip_TM 0.470s/solve (latency 1.88s), slot_TE 1.869s/solve (latency 7.48s), slot_TM 1.791s/solve (latency 7.16s), rib_TE 0.216s/solve (latency 0.86s), swg_TE 0.490s/solve (latency 1.96s)
+Pool(8), 32 solves each: strip_TE 0.262s/solve (latency 2.10s), strip_TM 0.283s/solve (latency 2.27s), slot_TE 1.293s/solve (latency 10.34s), slot_TM 3.857s/solve (latency 30.85s), rib_TE 0.757s/solve (latency 6.06s), swg_TE 1.739s/solve (latency 13.91s)
+Pool(16), 32 solves each: strip_TE 2.033s/solve (latency 32.52s), strip_TM 1.669s/solve (latency 26.70s), slot_TE 6.621s/solve (latency 105.93s), slot_TM 6.705s/solve (latency 107.28s), rib_TE 0.710s/solve (latency 11.37s), swg_TE 1.791s/solve (latency 28.65s)
+
+Phase 2 core recompute (3078 solves: 30 structures + slab sweep, all steps, n_eff and n_g):
+  serial_threads_default   84.9 min
+  serial_threads_1         81.3 min
+  pool_4                   30.2 min
+  pool_8                   56.2 min
+  pool_16                  109.0 min
+fastest: pool_4
+
+[exited with code 0]

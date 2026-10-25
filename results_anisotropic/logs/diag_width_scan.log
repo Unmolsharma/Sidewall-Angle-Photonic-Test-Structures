@@ -1,0 +1,4 @@
+cell_exact   fit residual rms 4.91e-05, max 1.91e-04;  local slope dn/dw (per nm): min 1.350e-03 max 1.960e-03 mean 1.536e-03 (spread 40% of mean)
+   slope by 2.5 nm window: 1.90e-03 1.78e-03 1.70e-03 1.64e-03 1.60e-03 1.57e-03 1.54e-03 1.51e-03 1.49e-03 1.46e-03 1.44e-03 1.43e-03 1.41e-03 1.39e-03 1.37e-03 1.36e-03
+anisotropic  fit residual rms 6.28e-05, max 2.04e-04;  local slope dn/dw (per nm): min 8.580e-04 max 1.677e-03 mean 1.350e-03 (spread 61% of mean)
+   slope by 2.5 nm window: 9.12e-04 1.03e-03 1.12e-03 1.19e-03 1.24e-03 1.29e-03 1.33e-03 1.36e-03 1.39e-03 1.43e-03 1.46e-03 1.49e-03 1.53e-03 1.57e-03 1.61e-03 1.66e-03

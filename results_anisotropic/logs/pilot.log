@@ -1,0 +1,77 @@
+  pilot 200/720 solves  1316s
+  pilot 400/720 solves  2552s
+  pilot 600/720 solves  3353s
+  pilot 720/720 solves  4470s
+
+=== cell_exact: step check 15 pass, 1 near-zero pass, 8 fail / 24
+  PASS               strip_TE_500         dneff/dw  D(h/2,h,2h)=(+1.4979e-03, +1.4990e-03, +1.5040e-03)  rel dev   0.3%
+  PASS               strip_TE_500         dneff/dt  D(h/2,h,2h)=(+3.6478e-03, +3.6648e-03, +3.6872e-03)  rel dev   0.6%
+  PASS               strip_TE_500         dneff/da  D(h/2,h,2h)=(-5.7516e-03, -5.7512e-03, -5.7494e-03)  rel dev   0.0%
+  PASS               strip_TE_500         dng  /dw  D(h/2,h,2h)=(-1.5445e-03, -1.5436e-03, -1.5405e-03)  rel dev   0.2%
+  FAIL               strip_TE_500         dng  /dt  D(h/2,h,2h)=(+1.4809e-03, +1.4005e-03, +1.2836e-03)  rel dev   8.3%
+  PASS               strip_TE_500         dng  /da  D(h/2,h,2h)=(+5.9209e-03, +5.8983e-03, +5.7979e-03)  rel dev   1.7%
+  PASS               rib_TE_500           dneff/dw  D(h/2,h,2h)=(+8.2816e-04, +8.2870e-04, +8.3109e-04)  rel dev   0.3%
+  PASS               rib_TE_500           dneff/dt  D(h/2,h,2h)=(+2.7986e-03, +2.8089e-03, +2.8220e-03)  rel dev   0.5%
+  PASS               rib_TE_500           dneff/da  D(h/2,h,2h)=(-1.5398e-03, -1.5396e-03, -1.5392e-03)  rel dev   0.0%
+  PASS_NEAR_ZERO_ABS rib_TE_500           dng  /dw  D(h/2,h,2h)=(-5.6918e-05, -5.6205e-05, -5.3380e-05)  rel dev   5.0%
+  FAIL               rib_TE_500           dng  /dt  D(h/2,h,2h)=(+2.7413e-03, +2.7011e-03, +2.6408e-03)  rel dev   2.2%
+  FAIL               rib_TE_500           dng  /da  D(h/2,h,2h)=(+2.7774e-04, +2.7591e-04, +2.6835e-04)  rel dev   2.7%
+  PASS               rib_slab90_TE_300    dneff/dw  D(h/2,h,2h)=(+1.3960e-03, +1.3967e-03, +1.3995e-03)  rel dev   0.2%
+  FAIL               rib_slab90_TE_300    dneff/dt  D(h/2,h,2h)=(+1.3671e-03, +1.3875e-03, +1.4154e-03)  rel dev   2.0%
+  PASS               rib_slab90_TE_300    dneff/da  D(h/2,h,2h)=(-2.5337e-03, -2.5339e-03, -2.5347e-03)  rel dev   0.0%
+  PASS               rib_slab90_TE_300    dng  /dw  D(h/2,h,2h)=(+2.7342e-03, +2.7357e-03, +2.7418e-03)  rel dev   0.2%
+  PASS               rib_slab90_TE_300    dng  /dt  D(h/2,h,2h)=(+3.4278e-03, +3.4132e-03, +3.3879e-03)  rel dev   0.7%
+  PASS               rib_slab90_TE_300    dng  /da  D(h/2,h,2h)=(-4.6495e-03, -4.6504e-03, -4.6539e-03)  rel dev   0.1%
+  FAIL               slot_TE_180          dneff/dw  D(h/2,h,2h)=(+6.5636e-03, +5.9817e-03, +5.1925e-03)  rel dev  13.2%
+  PASS               slot_TE_180          dneff/dt  D(h/2,h,2h)=(+1.5169e-03, +1.5118e-03, +1.4890e-03)  rel dev   1.5%
+  FAIL               slot_TE_180          dneff/da  D(h/2,h,2h)=(-2.5361e-02, -2.3269e-02, -2.0439e-02)  rel dev  12.2%
+  FAIL               slot_TE_180          dng  /dw  D(h/2,h,2h)=(+2.3227e-02, +2.1038e-02, +1.8190e-02)  rel dev  13.5%
+  PASS               slot_TE_180          dng  /dt  D(h/2,h,2h)=(+5.1498e-03, +5.1347e-03, +5.0678e-03)  rel dev   1.3%
+  FAIL               slot_TE_180          dng  /da  D(h/2,h,2h)=(-9.0348e-02, -8.2654e-02, -7.2483e-02)  rel dev  12.3%
+
+=== anisotropic: step check 14 pass, 1 near-zero pass, 9 fail / 24
+  PASS               strip_TE_500         dneff/dw  D(h/2,h,2h)=(+1.3784e-03, +1.3776e-03, +1.3740e-03)  rel dev   0.3%
+  FAIL               strip_TE_500         dneff/dt  D(h/2,h,2h)=(+3.4196e-03, +3.5607e-03, +3.6509e-03)  rel dev   4.0%
+  PASS               strip_TE_500         dneff/da  D(h/2,h,2h)=(-5.2919e-03, -5.2830e-03, -5.2416e-03)  rel dev   0.8%
+  FAIL               strip_TE_500         dng  /dw  D(h/2,h,2h)=(-1.7186e-03, -1.7093e-03, -1.6702e-03)  rel dev   2.3%
+  FAIL               strip_TE_500         dng  /dt  D(h/2,h,2h)=(+2.0638e-03, +1.6932e-03, +1.4046e-03)  rel dev  21.9%
+  FAIL               strip_TE_500         dng  /da  D(h/2,h,2h)=(+6.5892e-03, +6.5322e-03, +6.2802e-03)  rel dev   3.9%
+  PASS               rib_TE_500           dneff/dw  D(h/2,h,2h)=(+6.9048e-04, +6.9093e-04, +6.9269e-04)  rel dev   0.3%
+  FAIL               rib_TE_500           dneff/dt  D(h/2,h,2h)=(+2.5801e-03, +2.6998e-03, +2.7709e-03)  rel dev   4.4%
+  PASS               rib_TE_500           dneff/da  D(h/2,h,2h)=(-1.3422e-03, -1.3410e-03, -1.3357e-03)  rel dev   0.4%
+  PASS_NEAR_ZERO_ABS rib_TE_500           dng  /dw  D(h/2,h,2h)=(-1.4412e-04, -1.4120e-04, -1.2897e-04)  rel dev   8.7%
+  FAIL               rib_TE_500           dng  /dt  D(h/2,h,2h)=(+3.1060e-03, +2.9143e-03, +2.7685e-03)  rel dev   6.6%
+  FAIL               rib_TE_500           dng  /da  D(h/2,h,2h)=(+4.7020e-04, +4.6554e-04, +4.4625e-04)  rel dev   4.1%
+  PASS               rib_slab90_TE_300    dneff/dw  D(h/2,h,2h)=(+1.6320e-03, +1.6378e-03, +1.6619e-03)  rel dev   1.5%
+  FAIL               rib_slab90_TE_300    dneff/dt  D(h/2,h,2h)=(+7.5874e-04, +1.0665e-03, +1.2396e-03)  rel dev  28.9%
+  PASS               rib_slab90_TE_300    dneff/da  D(h/2,h,2h)=(-2.9854e-03, -2.9876e-03, -2.9965e-03)  rel dev   0.3%
+  PASS               rib_slab90_TE_300    dng  /dw  D(h/2,h,2h)=(+3.1311e-03, +3.1428e-03, +3.1911e-03)  rel dev   1.5%
+  FAIL               rib_slab90_TE_300    dng  /dt  D(h/2,h,2h)=(+3.0572e-03, +3.2456e-03, +3.3199e-03)  rel dev   5.8%
+  PASS               rib_slab90_TE_300    dng  /da  D(h/2,h,2h)=(-5.3154e-03, -5.3201e-03, -5.3391e-03)  rel dev   0.4%
+  PASS               slot_TE_180          dneff/dw  D(h/2,h,2h)=(+3.6256e-03, +3.6730e-03, +3.7176e-03)  rel dev   1.3%
+  PASS               slot_TE_180          dneff/dt  D(h/2,h,2h)=(+1.5446e-03, +1.5481e-03, +1.5726e-03)  rel dev   1.6%
+  PASS               slot_TE_180          dneff/da  D(h/2,h,2h)=(-1.4039e-02, -1.4287e-02, -1.4486e-02)  rel dev   1.7%
+  PASS               slot_TE_180          dng  /dw  D(h/2,h,2h)=(+1.4825e-02, +1.4926e-02, +1.4916e-02)  rel dev   0.7%
+  PASS               slot_TE_180          dng  /dt  D(h/2,h,2h)=(+5.3101e-03, +5.3206e-03, +5.3913e-03)  rel dev   1.3%
+  PASS               slot_TE_180          dng  /da  D(h/2,h,2h)=(-5.7199e-02, -5.7786e-02, -5.7903e-02)  rel dev   1.0%
+
+=== mesh check (step h): production vs finest, % ===
+  derivative                          cell-exact  anisotropic   anisotropic values per mesh
+  strip_TE_500|dneff/dw                    -6.5%        -6.4%   30/18: +1.3776e-03  45/18: +1.6266e-03  60/24: +1.8070e-03  90/36: +1.4711e-03
+  strip_TE_500|dng/dw                      +0.5%       -24.3%   30/18: -1.7093e-03  45/18: -1.8531e-03  60/24: -2.0087e-03  90/36: -1.3749e-03
+  strip_TE_500|dneff/da                    +9.5%        +7.4%   30/18: -5.2830e-03  45/18: -6.2761e-03  60/24: -6.8696e-03  90/36: -5.7035e-03
+  strip_TE_500|dng/da                      -9.7%       +12.9%   30/18: +6.5322e-03  45/18: +7.2112e-03  60/24: +7.4355e-03  90/36: +5.7851e-03
+  rib_TE_500|dneff/dw                      -3.6%       -10.8%   30/18: +6.9093e-04  45/18: +8.5881e-04  60/24: +1.0277e-03  90/36: +7.7464e-04
+  rib_TE_500|dng/dw                      -321.0%      -358.4%   30/18: -1.4120e-04  45/18: -1.1602e-04  60/24: -1.5659e-04  90/36: +5.4639e-05
+  rib_TE_500|dneff/da                      +8.0%       -22.2%   30/18: -1.3410e-03  45/18: -1.6057e-03  60/24: -1.8392e-03  90/36: -1.0976e-03
+  rib_TE_500|dng/da                     +1111.5%      +220.0%   30/18: +4.6554e-04  45/18: +4.2674e-04  60/24: +4.8253e-04  90/36: -3.8800e-04
+  rib_slab90_TE_300|dneff/dw               -8.6%        -0.7%   30/18: +1.6378e-03  45/18: +1.8733e-03  60/24: +1.2129e-03  90/36: +1.6499e-03
+  rib_slab90_TE_300|dng/dw                 -5.0%        -0.9%   30/18: +3.1428e-03  45/18: +3.8015e-03  60/24: +2.5028e-03  90/36: +3.1723e-03
+  rib_slab90_TE_300|dneff/da               -4.2%        +5.1%   30/18: -2.9876e-03  45/18: -3.8097e-03  60/24: -2.0393e-03  90/36: -3.1492e-03
+  rib_slab90_TE_300|dng/da                 -2.7%        +6.5%   30/18: -5.3201e-03  45/18: -7.2770e-03  60/24: -4.2911e-03  90/36: -5.6890e-03
+  slot_TE_180|dneff/dw                    +21.4%        -0.3%   50/20: +3.6730e-03  70/28: +4.3679e-03  100/40: +3.6827e-03
+  slot_TE_180|dng/dw                      +14.5%        -0.2%   50/20: +1.4926e-02  70/28: +1.7495e-02  100/40: +1.4958e-02
+  slot_TE_180|dneff/da                    -19.5%        +0.3%   50/20: -1.4287e-02  70/28: -1.6179e-02  100/40: -1.4336e-02
+  slot_TE_180|dng/da                      -13.3%        +0.2%   50/20: -5.7786e-02  70/28: -6.5530e-02  100/40: -5.7921e-02
+
+Elapsed 4470s
