@@ -1,0 +1,147 @@
+423 solves
+
+================ averaging = original ================
+1. strip TE0 500x220 = 2.44458, n_g = 4.0080  (published ~2.44-2.45; pass |n-2.445|<=0.01: True);  TM0 = 1.82041
+   strip TE 400nm  FD=2.2308  EIM=2.3210  EIM-FD=+4.04%
+   strip TE 500nm  FD=2.4446  EIM=2.4946  EIM-FD=+2.05%
+   strip TE 600nm  FD=2.5620  EIM=2.5966  EIM-FD=+1.35%
+   strip TM 400nm  FD=1.7374  EIM=1.7903  EIM-FD=+3.05%
+   strip TM 500nm  FD=1.8204  EIM=1.8459  EIM-FD=+1.40%
+   strip TM 600nm  FD=1.8798  EIM=1.8864  EIM-FD=+0.35%
+2. rib EIM (ours) 500nm/90nm slab = 2.6033  vs published 2.602 (+0.05%)
+   rib 400nm  FD=2.4596  EIM=2.5176  EIM-FD=+2.35%
+   rib 450nm  FD=2.5157  EIM=2.5644  EIM-FD=+1.94%
+   rib 500nm  FD=2.5619  EIM=2.6033  EIM-FD=+1.61%
+   rib 550nm  FD=2.5998  EIM=2.6355  EIM-FD=+1.37%
+   rib 600nm  FD=2.6300  EIM=2.6622  EIM-FD=+1.22%
+3. rib(slab=0) = 2.4445751981  strip = 2.4445751981  diff = +1.15e-14  (pass <1e-9: True)
+4. mesh/domain convergence (spread as % of mean), n_eff and n_g
+   strip TE 500   neff 2.44458 2.43132 2.44576  spread 0.59% (<= 1.5%: True)
+   strip TE 500   ng   4.00796 4.00266 4.03222  spread 0.74% (<= 1.5%: True)
+   strip TM 500   neff 1.82041 1.82044 1.80400  spread 0.91% (<= 1.5%: True)
+   strip TM 500   ng   3.73868 3.72246 3.72187  spread 0.45% (<= 1.5%: True)
+   rib TE 500     neff 2.56194 2.55329 2.56588  spread 0.49% (<= 1.0%: True)
+   rib TE 500     ng   3.73727 3.72632 3.75299  spread 0.71% (<= 1.0%: True)
+   rib TE 200     neff 2.17800 2.18137 2.18697 2.18839  spread 0.48% (<= 1.0%: True)
+   rib TE 200     ng   3.16177 3.16985 3.19504 3.19688  spread 1.10% (<= 1.0%: False)
+   rib TE 250     neff 2.24186 2.24991 2.25073 2.25633  spread 0.64% (<= 1.0%: True)
+   rib TE 250     ng   3.35067 3.36547 3.38212 3.39216  spread 1.23% (<= 1.0%: False)
+   rib TE 300     neff 2.31844 2.32405 2.32942 2.33178  spread 0.57% (<= 1.0%: True)
+   rib TE 300     ng   3.52688 3.52874 3.55449 3.56048  spread 0.95% (<= 1.0%: True)
+   rib TE 350     neff 2.39322 2.39412 2.40111 2.40493  spread 0.49% (<= 1.0%: True)
+   rib TE 350     ng   3.64426 3.63468 3.66577 3.67106  spread 1.00% (<= 1.0%: True)
+   rib TE 390     neff 2.45223 2.44135 2.45330 2.45661  spread 0.62% (<= 1.0%: True)
+   rib TE 390     ng   3.70123 3.68305 3.71666 3.72087  spread 1.02% (<= 1.0%: False)
+   slot TE 180    neff 1.63994 1.64616 1.62323 1.63330  spread 1.40% (<= 1.5%: True)
+   slot TE 180    ng   2.45892 2.46767 2.41327 2.43860  spread 2.23% (<= 1.5%: False)
+   (info) strip TE 500 core-mesh refinement 30/18, 60/24, 90/36: n_eff 2.44458 2.44892 2.45043  n_g 4.0080 4.0391 4.0478
+
+================ averaging = cell_exact ================
+1. strip TE0 500x220 = 2.45402, n_g = 4.0262  (published ~2.44-2.45; pass |n-2.445|<=0.01: True);  TM0 = 1.77788
+   strip TE 400nm  FD=2.2455  EIM=2.3210  EIM-FD=+3.36%
+   strip TE 500nm  FD=2.4540  EIM=2.4946  EIM-FD=+1.65%
+   strip TE 600nm  FD=2.5717  EIM=2.5966  EIM-FD=+0.97%
+   strip TM 400nm  FD=1.7016  EIM=1.7903  EIM-FD=+5.21%
+   strip TM 500nm  FD=1.7779  EIM=1.8459  EIM-FD=+3.83%
+   strip TM 600nm  FD=1.8356  EIM=1.8864  EIM-FD=+2.76%
+2. rib EIM (ours) 500nm/90nm slab = 2.6033  vs published 2.602 (+0.05%)
+   rib 400nm  FD=2.4714  EIM=2.5176  EIM-FD=+1.87%
+   rib 450nm  FD=2.5262  EIM=2.5644  EIM-FD=+1.51%
+   rib 500nm  FD=2.5716  EIM=2.6033  EIM-FD=+1.23%
+   rib 550nm  FD=2.6089  EIM=2.6355  EIM-FD=+1.02%
+   rib 600nm  FD=2.6397  EIM=2.6622  EIM-FD=+0.85%
+3. rib(slab=0) = 2.4540152176  strip = 2.4540152176  diff = -2.66e-15  (pass <1e-9: True)
+4. mesh/domain convergence (spread as % of mean), n_eff and n_g
+   strip TE 500   neff 2.45402 2.45233 2.45100  spread 0.12% (<= 1.5%: True)
+   strip TE 500   ng   4.02620 4.02694 4.03761  spread 0.28% (<= 1.5%: True)
+   strip TM 500   neff 1.77788 1.77639 1.78413  spread 0.43% (<= 1.5%: True)
+   strip TM 500   ng   3.66239 3.65515 3.68134  spread 0.71% (<= 1.5%: True)
+   rib TE 500     neff 2.57161 2.56949 2.57033  spread 0.08% (<= 1.0%: True)
+   rib TE 500     ng   3.75686 3.75818 3.75967  spread 0.07% (<= 1.0%: True)
+   rib TE 200     neff 2.18870 2.18647 2.18803 2.18944  spread 0.14% (<= 1.0%: True)
+   rib TE 200     ng   3.19595 3.18882 3.19441 3.19952  spread 0.33% (<= 1.0%: True)
+   rib TE 250     neff 2.25731 2.25490 2.25604 2.25543  spread 0.11% (<= 1.0%: True)
+   rib TE 250     ng   3.39159 3.38830 3.39078 3.39229  spread 0.12% (<= 1.0%: True)
+   rib TE 300     neff 2.33322 2.33084 2.32851 2.33005  spread 0.20% (<= 1.0%: True)
+   rib TE 300     ng   3.55956 3.55831 3.55659 3.56345  spread 0.19% (<= 1.0%: True)
+   rib TE 350     neff 2.40651 2.40422 2.40451 2.40311  spread 0.14% (<= 1.0%: True)
+   rib TE 350     ng   3.66978 3.66975 3.67211 3.67720  spread 0.20% (<= 1.0%: True)
+   rib TE 390     neff 2.45919 2.45696 2.45732 2.45647  spread 0.11% (<= 1.0%: True)
+   rib TE 390     ng   3.71993 3.72051 3.72271 3.72930  spread 0.25% (<= 1.0%: True)
+   slot TE 180    neff 1.58483 1.58490 1.59155 1.59194  spread 0.45% (<= 1.5%: True)
+   slot TE 180    ng   2.29222 2.28040 2.31609 2.30716  spread 1.55% (<= 1.5%: False)
+   (info) strip TE 500 core-mesh refinement 30/18, 60/24, 90/36: n_eff 2.45402 2.45244 2.45204  n_g 4.0262 4.0434 4.0488
+
+================ averaging = anisotropic ================
+1. strip TE0 500x220 = 2.44459, n_g = 4.0343  (published ~2.44-2.45; pass |n-2.445|<=0.01: True);  TM0 = 1.77605
+   strip TE 400nm  FD=2.2265  EIM=2.3210  EIM-FD=+4.24%
+   strip TE 500nm  FD=2.4446  EIM=2.4946  EIM-FD=+2.05%
+   strip TE 600nm  FD=2.5672  EIM=2.5966  EIM-FD=+1.15%
+   strip TM 400nm  FD=1.6990  EIM=1.7903  EIM-FD=+5.37%
+   strip TM 500nm  FD=1.7761  EIM=1.8459  EIM-FD=+3.93%
+   strip TM 600nm  FD=1.8345  EIM=1.8864  EIM-FD=+2.83%
+2. rib EIM (ours) 500nm/90nm slab = 2.6033  vs published 2.602 (+0.05%)
+   rib 400nm  FD=2.4568  EIM=2.5176  EIM-FD=+2.47%
+   rib 450nm  FD=2.5148  EIM=2.5644  EIM-FD=+1.97%
+   rib 500nm  FD=2.5630  EIM=2.6033  EIM-FD=+1.57%
+   rib 550nm  FD=2.6025  EIM=2.6355  EIM-FD=+1.27%
+   rib 600nm  FD=2.6351  EIM=2.6622  EIM-FD=+1.03%
+3. rib(slab=0) = 2.4445861287  strip = 2.4445861287  diff = +1.78e-14  (pass <1e-9: True)
+4. mesh/domain convergence (spread as % of mean), n_eff and n_g
+   strip TE 500   neff 2.44459 2.44292 2.44463  spread 0.07% (<= 1.5%: True)
+   strip TE 500   ng   4.03433 4.03498 4.04396  spread 0.24% (<= 1.5%: True)
+   strip TM 500   neff 1.77605 1.77457 1.77077  spread 0.30% (<= 1.5%: True)
+   strip TM 500   ng   3.66032 3.65302 3.64503  spread 0.42% (<= 1.5%: True)
+   rib TE 500     neff 2.56297 2.56086 2.56421  spread 0.13% (<= 1.0%: True)
+   rib TE 500     ng   3.75890 3.76019 3.76167  spread 0.07% (<= 1.0%: True)
+   rib TE 200     neff 2.17418 2.17207 2.18052 2.18300  spread 0.50% (<= 1.0%: True)
+   rib TE 200     ng   3.15174 3.14318 3.17577 3.18215  spread 1.23% (<= 1.0%: False)
+   rib TE 250     neff 2.23858 2.23618 2.24285 2.24808  spread 0.53% (<= 1.0%: True)
+   rib TE 250     ng   3.34510 3.34109 3.36197 3.37686  spread 1.07% (<= 1.0%: False)
+   rib TE 300     neff 2.31366 2.31126 2.32323 2.32366  spread 0.54% (<= 1.0%: True)
+   rib TE 300     ng   3.52600 3.52435 3.54920 3.55529  spread 0.87% (<= 1.0%: True)
+   rib TE 350     neff 2.38886 2.38655 2.39388 2.39921  spread 0.53% (<= 1.0%: True)
+   rib TE 350     ng   3.65199 3.65174 3.66528 3.67524  spread 0.64% (<= 1.0%: True)
+   rib TE 390     neff 2.44619 2.44396 2.44753 2.45160  spread 0.31% (<= 1.0%: True)
+   rib TE 390     ng   3.71533 3.71581 3.71968 3.72676  spread 0.31% (<= 1.0%: True)
+   slot TE 180    neff 1.58320 1.58329 1.57641 1.57696  spread 0.44% (<= 1.5%: True)
+   slot TE 180    ng   2.28659 2.27454 2.26191 2.25094  spread 1.57% (<= 1.5%: False)
+   (info) strip TE 500 core-mesh refinement 30/18, 60/24, 90/36: n_eff 2.44459 2.44954 2.45031  n_g 4.0343 4.0459 4.0512
+
+5. reproduction of earlier runs
+   original   vs results_corrected/data/validation.json: 46 values, max |diff| = 2.8e-13  (pass <1e-9: True)
+   cell_exact vs results_corrected/data/validation.json: 46 values, max |diff| = 1.3e-13  (pass <1e-9: True)
+   original strip TE 500 = 2.4445751981 vs data/sensitivity_db.json 2.4445751981  |diff| = 3.2e-14
+   original strip TM 500 = 1.8204070879 vs data/sensitivity_db.json 1.8204070879  |diff| = 1.4e-14
+
+================ VERDICT ================
+  [PASS] strip TE0 500x220 within 0.01 of 2.445: 2.4446
+  [PASS] rib FD below EIM by 0.5-5% at every width: 1.03..2.47%
+  [PASS] rib with zero slab reproduces strip (|diff|<1e-9): +1.8e-14
+  [PASS] convergence strip TE 500 neff <= 1.5%: 0.07%
+  [PASS] convergence strip TE 500 ng <= 1.5%: 0.24%
+  [PASS] convergence strip TM 500 neff <= 1.5%: 0.30%
+  [PASS] convergence strip TM 500 ng <= 1.5%: 0.42%
+  [PASS] convergence rib TE 500 neff <= 1.0%: 0.13%
+  [PASS] convergence rib TE 500 ng <= 1.0%: 0.07%
+  [PASS] convergence rib TE 200 neff <= 1.0%: 0.50%
+  [FAIL] convergence rib TE 200 ng <= 1.0%: 1.23%
+  [PASS] convergence rib TE 250 neff <= 1.0%: 0.53%
+  [FAIL] convergence rib TE 250 ng <= 1.0%: 1.07%
+  [PASS] convergence rib TE 300 neff <= 1.0%: 0.54%
+  [PASS] convergence rib TE 300 ng <= 1.0%: 0.87%
+  [PASS] convergence rib TE 350 neff <= 1.0%: 0.53%
+  [PASS] convergence rib TE 350 ng <= 1.0%: 0.64%
+  [PASS] convergence rib TE 390 neff <= 1.0%: 0.31%
+  [PASS] convergence rib TE 390 ng <= 1.0%: 0.31%
+  [PASS] convergence slot TE 180 neff <= 1.5%: 0.44%
+  [FAIL] convergence slot TE 180 ng <= 1.5%: 1.57%
+  [PASS] original averaging reproduces the previous run (46 n_eff values, |diff|<1e-9): 2.8e-13
+  [PASS] cell_exact averaging reproduces the previous run (46 n_eff values, |diff|<1e-9): 1.3e-13
+  [PASS] original averaging reproduces stored strip TE 500 n_eff (|diff|<1e-9): 3.2e-14
+  [PASS] original averaging reproduces stored strip TM 500 n_eff (|diff|<1e-9): 1.4e-14
+  ALL PASSED: False
+
+Elapsed 1637s
+
+[exited with code 0]
