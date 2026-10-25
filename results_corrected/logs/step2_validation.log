@@ -1,0 +1,71 @@
+
+================ averaging = original ================
+1. strip TE0 500x220 = 2.4446  (published ~2.44-2.45; pass |n-2.445|<=0.01: True)
+   strip TE 400nm  FD=2.2308  EIM=2.3210  EIM-FD=+4.04%
+   strip TE 500nm  FD=2.4446  EIM=2.4946  EIM-FD=+2.05%
+   strip TE 600nm  FD=2.5620  EIM=2.5966  EIM-FD=+1.35%
+   strip TM 400nm  FD=1.7374  EIM=1.7903  EIM-FD=+3.05%
+   strip TM 500nm  FD=1.8204  EIM=1.8459  EIM-FD=+1.40%
+   strip TM 600nm  FD=1.8798  EIM=1.8864  EIM-FD=+0.35%
+2. rib EIM (ours) 500nm/90nm slab = 2.6033  vs published 2.602 (+0.05%)
+   rib 400nm  FD=2.4596  EIM=2.5176  EIM-FD=+2.35%
+   rib 450nm  FD=2.5157  EIM=2.5644  EIM-FD=+1.94%
+   rib 500nm  FD=2.5619  EIM=2.6033  EIM-FD=+1.61%
+   rib 550nm  FD=2.5998  EIM=2.6355  EIM-FD=+1.37%
+   rib 600nm  FD=2.6300  EIM=2.6622  EIM-FD=+1.22%
+3. rib(slab=0) = 2.4445751981  strip = 2.4445751981  diff = +0.00e+00  (pass <1e-9: True)
+4. mesh/domain convergence (n_eff spread as % of mean)
+   strip TE 500                 2.44458 2.43132 2.44576  spread 0.59% (<= 1.5%: True)
+   strip TM 500                 1.82041 1.82044 1.80400  spread 0.91% (<= 1.5%: True)
+   rib TE 500                   2.56194 2.55329 2.56588  spread 0.49% (<= 1.0%: True)
+   rib TE 200                   2.17800 2.18137 2.18697 2.18839  spread 0.48% (<= 1.0%: True)
+   rib TE 250                   2.24186 2.24991 2.25073 2.25633  spread 0.64% (<= 1.0%: True)
+   rib TE 300                   2.31844 2.32405 2.32942 2.33178  spread 0.57% (<= 1.0%: True)
+   rib TE 350                   2.39322 2.39412 2.40111 2.40493  spread 0.49% (<= 1.0%: True)
+   rib TE 390                   2.45223 2.44135 2.45330 2.45661  spread 0.62% (<= 1.0%: True)
+   slot TE 180                  1.63994 1.64616 1.62323 1.63330  spread 1.40% (<= 1.5%: True)
+   (info) strip TE 500 core-mesh refinement 30/18, 60/24, 90/36: 2.44458 2.44892 2.45043
+
+================ averaging = cell_exact ================
+1. strip TE0 500x220 = 2.4540  (published ~2.44-2.45; pass |n-2.445|<=0.01: True)
+   strip TE 400nm  FD=2.2455  EIM=2.3210  EIM-FD=+3.36%
+   strip TE 500nm  FD=2.4540  EIM=2.4946  EIM-FD=+1.65%
+   strip TE 600nm  FD=2.5717  EIM=2.5966  EIM-FD=+0.97%
+   strip TM 400nm  FD=1.7016  EIM=1.7903  EIM-FD=+5.21%
+   strip TM 500nm  FD=1.7779  EIM=1.8459  EIM-FD=+3.83%
+   strip TM 600nm  FD=1.8356  EIM=1.8864  EIM-FD=+2.76%
+2. rib EIM (ours) 500nm/90nm slab = 2.6033  vs published 2.602 (+0.05%)
+   rib 400nm  FD=2.4714  EIM=2.5176  EIM-FD=+1.87%
+   rib 450nm  FD=2.5262  EIM=2.5644  EIM-FD=+1.51%
+   rib 500nm  FD=2.5716  EIM=2.6033  EIM-FD=+1.23%
+   rib 550nm  FD=2.6089  EIM=2.6355  EIM-FD=+1.02%
+   rib 600nm  FD=2.6397  EIM=2.6622  EIM-FD=+0.85%
+3. rib(slab=0) = 2.4540152176  strip = 2.4540152176  diff = +4.44e-16  (pass <1e-9: True)
+4. mesh/domain convergence (n_eff spread as % of mean)
+   strip TE 500                 2.45402 2.45233 2.45100  spread 0.12% (<= 1.5%: True)
+   strip TM 500                 1.77788 1.77639 1.78413  spread 0.43% (<= 1.5%: True)
+   rib TE 500                   2.57161 2.56949 2.57033  spread 0.08% (<= 1.0%: True)
+   rib TE 200                   2.18870 2.18647 2.18803 2.18944  spread 0.14% (<= 1.0%: True)
+   rib TE 250                   2.25731 2.25490 2.25604 2.25543  spread 0.11% (<= 1.0%: True)
+   rib TE 300                   2.33322 2.33084 2.32851 2.33005  spread 0.20% (<= 1.0%: True)
+   rib TE 350                   2.40651 2.40422 2.40451 2.40311  spread 0.14% (<= 1.0%: True)
+   rib TE 390                   2.45919 2.45696 2.45732 2.45647  spread 0.11% (<= 1.0%: True)
+   slot TE 180                  1.58483 1.58490 1.59155 1.59194  spread 0.45% (<= 1.5%: True)
+   (info) strip TE 500 core-mesh refinement 30/18, 60/24, 90/36: 2.45402 2.45244 2.45204
+
+================ VERDICT (cell-exact) ================
+  [PASS] strip TE0 500x220 within 0.01 of 2.445: 2.4540
+  [PASS] rib FD below EIM by 0.5-5% at every width: 0.85..1.87%
+  [PASS] rib with zero slab reproduces strip (|diff|<1e-9): +4.4e-16
+  [PASS] convergence strip TE 500 <= 1.5%: 0.12%
+  [PASS] convergence strip TM 500 <= 1.5%: 0.43%
+  [PASS] convergence rib TE 500 <= 1.0%: 0.08%
+  [PASS] convergence rib TE 200 <= 1.0%: 0.14%
+  [PASS] convergence rib TE 250 <= 1.0%: 0.11%
+  [PASS] convergence rib TE 300 <= 1.0%: 0.20%
+  [PASS] convergence rib TE 350 <= 1.0%: 0.14%
+  [PASS] convergence rib TE 390 <= 1.0%: 0.11%
+  [PASS] convergence slot TE 180 <= 1.5%: 0.45%
+  ALL PASSED: True
+
+Elapsed 231s
