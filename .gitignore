@@ -3,4 +3,4 @@ __pycache__/
 .claude/
 mailmap.txt
 .ipynb_checkpoints/
-cache/
+/cache/
