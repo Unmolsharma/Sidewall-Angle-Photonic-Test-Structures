@@ -86,7 +86,7 @@ def original_scripts(D, logs, fig):
             f.write(r.stdout + (('\n--- stderr ---\n' + r.stderr) if r.stderr.strip() else ''))
         print(f"  {s:20s} exit {r.returncode}")
         if r.returncode:  # an original script failing is reported, not hidden; the rest still run
-            failed[s] = r.stderr.strip().splitlines()[-1]
+            failed[s] = (r.stderr.strip().splitlines() or [f'exit code {r.returncode}'])[-1]
     with open(os.path.join(logs, 'failed_scripts.json'), 'w') as f:
         json.dump(failed, f, indent=1)
     os.makedirs(fig, exist_ok=True)

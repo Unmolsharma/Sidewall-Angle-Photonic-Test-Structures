@@ -133,6 +133,10 @@ if __name__ == "__main__":
         dets = [m['det'] for _, m, _ in well_posed]
         trinvs = [m['trace_inv'] for _, m, _ in well_posed]
         print(f"\n=== {name} ({len(landscape)} combos, {len(degenerate)} exactly rank-deficient excluded from ranking) ===")
+        if not well_posed:
+            # every combo is numerically singular: nothing to rank, report and move on
+            print(f"  all {len(landscape)} combos rank-deficient (cond >= {RANK_DEFICIENT_COND_THRESHOLD:.0e}); no ranking")
+            continue
         print(f"  cond(F):      best={min(conds):.3e}  worst={max(conds):.3e}")
         print(f"  lambda_min:   best={max(lmins):.3e}  worst={min(lmins):.3e}")
         print(f"  det(F):       best={max(dets):.3e}  worst={min(dets):.3e}")
