@@ -87,24 +87,51 @@ Numbers are filled in only from files in this repo; nothing is estimated.
    missing), 130 and 150 nm (not started). To finish, run
    `C:/Users/unmol/.venvs/femwell/Scripts/python.exe src/femwell_batch.py full r12` (resumes from the
    cache, ~170 rib solves, about 15 min), then rerun the post-processing in item 16.
+   **Resolved 26 Oct: see item 19.**
 15. **Partial slab dropped.** Slab 110 nm had 3 of 4 widths. Its gain would come from fewer rib
    widths than the other slabs, so the whole slab is left out rather than compared with an unlike set
-   (`data/skipped.json`). The slab sweep below covers 50, 70 and 90 nm only.
+   (`data/skipped.json`). **Superseded by item 19: all six slabs are now complete and nothing is
+   skipped.**
 16. **Post-processing run on the complete units** (light, < 1 GB): `src/femwell_postprocess.py
    database r12`, `src/downstream_analysis.py --data ../results_femwell/data --slab
    rib_slab_sweep_db_femwell.json --fig ../figures/femwell --label femwell`, `src/femwell_impact.py`,
-   `src/femwell_comparison_table.py`.
+   `src/femwell_comparison_table.py`. Since 26 Oct also `src/femwell_crosscheck_ratios.py` (writes
+   `data/crosscheck_and_ratios.json`; until then this was an ad hoc command, so its slab entries
+   stopped at 90 nm) and `src/femwell_script_consistency.py` (item 20).
 17. **Mode-search fallbacks.** 23 solves used the 6-mode fallback (22 slot TE at 165/195/210 nm, 1
    slot TM 180): the EMpy guess was more than 3% from the femwell value. All returned TE-like modes
    where TE was requested (te_fraction 0.97-0.98) and every slot derivative passes the step check, so
    the mode choice is consistent within each structure.
-18. **One original script fails on the femwell data.** `fisher_reanalysis.py` crashes
-   (`min() iterable argument is empty`): with femwell derivatives **every** two-TE-ring Fisher matrix
-   has condition number >= 1e12, the script's own "exactly rank-deficient" threshold, so its ranked
-   list is empty. This is a result, not a data error: the width/angle degeneracy (R = 1.000) is
-   resolved precisely enough that two strip rings are numerically singular. The script was not
-   modified; the failure is recorded in `logs/original_scripts_on_femwell_db/failed_scripts.json`, and
-   the same ring-pair numbers come from `writeup_numbers` (`COMPARISON.md`). The other 8 scripts ran.
+18. **One original script failed on the femwell data (fixed 26 Oct).** `fisher_reanalysis.py`
+   crashed (`min() iterable argument is empty`) in section (c), TE ring + MZI: with femwell
+   derivatives **all 25** ring + MZI combinations have condition number >= 1e12, the script's own
+   "exactly rank-deficient" threshold, so its ranked list was empty. (The overnight report said this
+   was the two-TE-ring case; that was wrong. Two TE rings: 8 of 20 combinations are above the
+   threshold, the other 12 rank normally, cond 3.0e11-9.7e11.) This is a result, not a data error: a
+   ring and an MZI of a symmetric strip see width and angle through the same exact degeneracy
+   (R = 1.000). Fix: when every combination is rank-deficient the script now says so and skips the
+   ranking; output on the cell-exact database is byte-identical to before. All 9 original scripts now
+   run (`logs/original_scripts_on_femwell_db/failed_scripts.json` is empty).
+
+19. **Slab sweep finished (26 Oct, on your instruction).** Resumed from the cache with
+   `femwell_batch.py full r12 2 25`: at most 2 workers, and, overriding the battery rule for this
+   run only, solving on battery down to 25% charge (it would have paused and logged below that; it
+   never got there). The runner also now drops to 1 worker, and logs it, whenever free RAM falls
+   below the per-worker estimate + 2 GB; free RAM stayed at 6.1-9.6 GB, so that never triggered.
+   9.4 GB free at start. 169 solves (slab 110 nm at 600 nm, all of 130 and 150 nm), 0 failed,
+   11:25-15:46 including a laptop sleep; on battery a rib solve took ~105 s per worker, against
+   ~19 s on AC. The cache had no truncated lines after the sleep. Windows reported AC = 0 (battery)
+   throughout, including after the charger was said to be connected. All 1,026 solves are cached;
+   `data/skipped.json` is empty. Database structures are unaffected: every number outside the slab
+   sweep is identical to the earlier run.
+20. **Cross-script consistency.** `src/femwell_script_consistency.py` reads the same quantity from
+   every output that reports it, plus an independent Fisher computation from `probe_db.json`:
+   strip-baseline and two-ring angle CRBs, rib/slot CRBs and improvement factors (writeup_numbers vs
+   angle_crb.log, printed digits), ring-pair condition numbers (writeup_numbers vs
+   fisher_reanalysis.json), R for all 30 structures (robustness_checks vs crosscheck_and_ratios vs
+   sensitivity_db), the 6b "true" rib changes, and the slab list. **84 checks, 0 disagree**
+   (`data/script_consistency.json`). The same pipeline run on the committed cell-exact database
+   reproduces all 330 numbers in `results_corrected/data/writeup_numbers_corrected.json` exactly.
 
 ## femwell mesh validation (r12 vs r8)
 
@@ -128,9 +155,10 @@ Source: `data/meshcheck_r12_vs_r8.json`, `logs/meshcheck_r12_vs_r8.log`.
 | Rib TE | 0 | 5 |
 | SWG TE | 0 | 0 |
 | **Total, 30 structures** | **1 / 180** | 52 / 180 (original averaging: 103 / 180) |
-| Slab sweep | 0 / 72 (50/70/90 nm) | 14 / 144 (all six slabs) |
+| Slab sweep | **1 / 144** (all six slabs; slab 110 nm, 600 nm, dn_g/da, 2.04%, a near-zero entry at 10.5% of the largest) | 14 / 144 (all six slabs) |
 
-All 179 passes are plain 2% passes; none needed the near-zero rule.
+All 179 database passes are plain 2% passes. In the slab sweep, one pass (slab 150 nm, 600 nm,
+dn_g/da, 0.8% of the largest derivative) needed the near-zero rule.
 Source: `data/step_check.csv`, `logs/postprocess_r12.log`, `figures/femwell/fig3_step_check.png`.
 
 ## Angle/width ratios (femwell r12)
@@ -149,6 +177,9 @@ R = 1 means a tilt is exactly a width change. Source: `data/crosscheck_and_ratio
 | Rib TE, 90 nm slab, 300 nm | -1.7020 | 0.7501 | |
 | Rib TE, 70 nm slab (300-600 nm) | -2.0529 .. -2.1797 | 0.7841 .. 0.8325 | |
 | Rib TE, 50 nm slab (300-600 nm) | -2.4665 .. -2.5911 | 0.8312 .. 0.8732 | |
+| Rib TE, 110 nm slab (300-600 nm) | -1.4013 .. -1.4822 | 0.7298 .. 0.7719 | |
+| Rib TE, 130 nm slab (300-600 nm) | -1.1214 .. -1.1759 | 0.7138 .. 0.7485 | |
+| Rib TE, 150 nm slab (300-600 nm) | -0.8698 .. -0.8969 | 0.7119 .. 0.7340 | |
 | **Strip TE 500, air top cladding** | -3.7570 | **0.9783** | 0.9534 |
 
 The femwell ratios confirm the symmetry mechanism to 0.1-0.2% for every top-bottom-symmetric
@@ -230,8 +261,24 @@ Full numbers: `COMPARISON.md` (original | cell-exact | femwell, each with its h/
   strip rings + one rib). Cell-exact gave 0.000651° and 0.00905°.
 - Directions cluster cleanly by type; within-type mean angle 7.3° vs cross-type 44.2° (15 structures).
 - Same-width ring + MZI is exactly singular (condition number 1.4e16).
-- Slab ranking among the slabs computed: 70 > 90 > 50 nm at h (1.59e6x, 1.42e6x, 1.30e6x) and the
-  same order at h/2 and 2h; cell-exact had the same order. 110-150 nm not computed (item 14).
+- Slab-thickness ranking, all six slabs (smallest-eigenvalue gain of two strip TE rings + the 4-width
+  rib set): **70 > 90 > 50 > 110 > 130 > 150 nm** at h, h/2 and 2h, and the same order as cell-exact.
+
+  | Slab (nm) | femwell gain at h | h/2 .. 2h | cell-exact gain at h | R (n_eff), 300-600 nm |
+  |---|---|---|---|---|
+  | 50 | 1.30e6x | 4.01e5 .. 4.09e5x | 1.18e5x | 0.831 .. 0.873 |
+  | 70 | **1.59e6x** | 4.91e5 .. 4.99e5x | 1.47e5x | 0.784 .. 0.832 |
+  | 90 | 1.42e6x | 4.36e5 .. 4.45e5x | 1.34e5x | 0.750 .. 0.799 |
+  | 110 | 1.02e6x | 3.12e5 .. 3.22e5x | 9.89e4x | 0.730 .. 0.772 |
+  | 130 | 6.27e5x | 1.93e5 .. 1.98e5x | 6.23e4x | 0.714 .. 0.749 |
+  | 150 | 3.25e5x | 1.00e5 .. 1.02e5x | 3.34e4x | 0.712 .. 0.734 |
+
+  The absolute gains are not meaningful: the denominator is the near-singular two-ring baseline,
+  which is why h and h/2..2h differ by ~3x. The order is what holds. Thicker slabs break the
+  width/angle symmetry more (R falls from ~0.85 at 50 nm to ~0.72 at 150 nm), yet they help less,
+  because the rib's derivatives shrink as the etch gets shallower (500 nm rib: dn_eff/da -3.12e-3
+  per degree at 50 nm vs -3.00e-4 at 150 nm; dn_eff/dw 1.21e-3 vs 3.42e-4 per nm). 70 nm balances
+  the two.
 
 **Changed vs cell-exact:**
 - Two TE rings: condition numbers 3.0e11-4.6e13 (cell-exact 9.7e9-3.1e10); best/worst spread 153x
@@ -266,9 +313,10 @@ to those interfaces. Strip TM R = 0.9999-1.0017: TM is as degenerate as TE.
 ## Surprising or worth checking
 
 1. The supervising session stopped the batch for low memory although the runner logged 7.8-8.3 GB free; Chrome and
-   other apps were also running. Nothing was lost, but the slab sweep is incomplete (item 14).
-2. With femwell derivatives, two strip TE rings are rank-deficient by the analysis code's own threshold
-   (>= 1e12). This is what an exact width/angle degeneracy looks like numerically.
+   other apps were also running. Nothing was lost, and the slab sweep was finished later (item 19).
+2. With femwell derivatives, every strip TE ring + MZI pair and 8 of 20 strip TE ring pairs are
+   rank-deficient by the analysis code's own threshold (>= 1e12). This is what an exact width/angle
+   degeneracy looks like numerically (item 18).
 3. Rib n_g derivatives with respect to width and angle are both near zero (-4.7e-5 and +1.9e-4 at
    500 nm), so the rib's n_g ratios (0.59-1.74) are meaningless; only n_eff ratios are quoted.
 4. The third-strip-ring gain jumped from 1.7x (cell-exact) to 14.7x. This comes from arithmetic on
@@ -279,8 +327,8 @@ to those interfaces. Strip TM R = 0.9999-1.0017: TM is as degenerate as TE.
 
 ## Files
 
-- `data/`: sensitivity_db (30 structures, femwell r12), probe_db, rib_slab_sweep_db_femwell (50/70/90
-  nm), step_check.csv, writeup_numbers_femwell.json, robustness_checks.json (h/2 and 2h variants, R),
+- `data/`: sensitivity_db (30 structures, femwell r12), probe_db, rib_slab_sweep_db_femwell (50-150
+  nm, all six slabs), step_check.csv, script_consistency.json, fisher_reanalysis.json, writeup_numbers_femwell.json, robustness_checks.json (h/2 and 2h variants, R),
   meshcheck_r12_vs_r8.json, crosscheck_and_ratios.json, impact_sidewall_angle.json, skipped.json, and
   the original scripts' outputs (atlas_*, ...).
 - `COMPARISON.md`: every writeup number, original | cell-exact | femwell, with step ranges.
