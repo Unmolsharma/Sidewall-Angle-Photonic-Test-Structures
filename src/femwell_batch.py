@@ -175,6 +175,14 @@ def on_ac():
     return s.ACLineStatus == 1, s.BatteryLifePercent
 
 
+BATTERY_FLOOR = None  # None: pause whenever on battery; a percentage: run on battery down to it
+
+
+def power_ok():
+    ac, pct = on_ac()
+    return (ac or (BATTERY_FLOOR is not None and pct >= BATTERY_FLOOR)), pct
+
+
 class _MemStatus(ctypes.Structure):
     _fields_ = [('dwLength', ctypes.c_ulong), ('dwMemoryLoad', ctypes.c_ulong),
                 ('ullTotalPhys', ctypes.c_ulonglong), ('ullAvailPhys', ctypes.c_ulonglong),
@@ -219,25 +227,32 @@ def run(tasks, cache, logpath, workers, gb_per_worker):
     failed = {}
     t0 = time.time()
     n_done = 0
+    tight = False
     with Pool(workers, maxtasksperchild=20) as pool:
         inflight = {}
         while todo or inflight:
-            while todo and len(inflight) < workers:
-                ac, pct = on_ac()
+            while todo and len(inflight) < (1 if tight else workers):
+                ac, pct = power_ok()
                 waited = False
                 while not ac:
                     if not waited:
-                        log(f'on battery ({pct}%): pausing new solves, re-checking every 5 min '
+                        log(f'on battery ({pct}%{f", floor {BATTERY_FLOOR}%" if BATTERY_FLOOR is not None else ""}): '
+                            f'pausing new solves, re-checking every 5 min '
                             f'({len(inflight)} in flight finish meanwhile)', logpath)
                         waited = True
                     # let in-flight solves finish and be recorded while waiting
                     for k in [k for k, r in inflight.items() if r.ready()]:
                         n_done += _collect(k, inflight.pop(k), cache, failed, logpath)
                     time.sleep(300)
-                    ac, pct = on_ac()
+                    ac, pct = power_ok()
                 if waited:
-                    log(f'AC power back ({pct}%), resuming', logpath)
-                if free_gb() < gb_per_worker + 2 and inflight:
+                    log(f'power OK again ({pct}%), resuming', logpath)
+                fg = free_gb()
+                if (fg < gb_per_worker + 2) != tight:
+                    tight = not tight
+                    log(f'free RAM {fg:.1f} GB: ' + ('tight, dropping to 1 worker' if tight else
+                                                     f'recovered, back to {workers} workers'), logpath)
+                if tight and inflight:
                     break  # wait for a worker to finish before adding load
                 t = todo.pop(0)
                 inflight[key_of(t)] = pool.apply_async(solve, (t,))
@@ -329,8 +344,13 @@ if __name__ == '__main__':
                 f'(3 wavelengths, {rs[0]["n_elements"]} elements), n_eff {rs[0]["n"][0]:.5f}, '
                 f'te_fraction {rs[0]["te_fraction"][0]:.3f}', logpath)
     elif what == 'full':
+        # optional third argument caps the worker count (e.g. 2 to keep memory low when resuming)
+        cap = int(sys.argv[3]) if len(sys.argv) > 3 else 4
+        # optional fourth argument: run on battery while charge >= this percent
+        if len(sys.argv) > 4:
+            BATTERY_FLOOR = int(sys.argv[4])
         logpath = os.path.join(OUT, 'logs', f'full_{mesh}.log')
         failed = run(full_tasks(mesh), os.path.join(OUT, 'cache', f'solves_{mesh}.jsonl'), logpath,
-                     choose_workers(gbw, logpath=logpath), gbw)
+                     choose_workers(gbw, max_workers=cap, logpath=logpath), gbw)
         with open(os.path.join(OUT, 'logs', f'full_{mesh}_failed.json'), 'w') as f:
             json.dump(failed, f, indent=1)
