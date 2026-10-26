@@ -78,8 +78,8 @@ Numbers are filled in only from files in this repo; nothing is estimated.
    2.57161, SWG 1.69958 / 1.70697; te_fraction 0.98 / 0.05 / 0.97 / 0.04 / 0.99 / 0.97. All the
    requested polarization; slot TM differs most (2.0%), as expected for a mode whose dominant field is
    normal to the silicon walls.
-14. **Batch stopped by Claude Code for low system memory (00:08, 26 Oct).** The femwell batch was
-   killed by the Claude Code session itself ("system is running low on memory while the session was
+14. **Batch stopped for low system memory (00:08, 26 Oct).** The femwell batch was
+   stopped by the session that was supervising the run ("system is running low on memory while the session was
    idle"), after 857 of 1,026 geometry solves (its own log showed 7.8-8.3 GB free just before).
    The instruction that comes with that event is not to restart the command automatically, so **I did
    not restart it.** Every finished solve was cached; no work was lost. Complete: all 30 database
@@ -265,7 +265,7 @@ to those interfaces. Strip TM R = 0.9999-1.0017: TM is as degenerate as TE.
 
 ## Surprising or worth checking
 
-1. Claude Code stopped the batch for low memory although the runner logged 7.8-8.3 GB free; Chrome and
+1. The supervising session stopped the batch for low memory although the runner logged 7.8-8.3 GB free; Chrome and
    other apps were also running. Nothing was lost, but the slab sweep is incomplete (item 14).
 2. With femwell derivatives, two strip TE rings are rank-deficient by the analysis code's own threshold
    (>= 1e12). This is what an exact width/angle degeneracy looks like numerically.
