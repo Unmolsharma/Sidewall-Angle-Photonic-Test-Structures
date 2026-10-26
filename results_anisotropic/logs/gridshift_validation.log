@@ -1,0 +1,48 @@
+  gridshift: 2496 tasks, 0 cached
+  gridshift 200/2496 solves  10666s
+  gridshift 400/2496 solves  10851s
+  gridshift 600/2496 solves  11279s
+  gridshift 800/2496 solves  11499s
+  gridshift 1000/2496 solves  11582s
+  gridshift 1200/2496 solves  11861s
+  gridshift 1400/2496 solves  12208s
+  gridshift 1600/2496 solves  12592s
+  gridshift 1800/2496 solves  12869s
+  gridshift 2000/2496 solves  12932s
+  gridshift 2200/2496 solves  12955s
+  gridshift 2400/2496 solves  12989s
+  gridshift 2496/2496 solves  13014s
+
+cell_exact|strip_TE_500: n_eff over shifts 2.44463..2.45402
+  dneff/dw  per-shift spread   4.8%   N1: +1.4990e-03  N2: +1.4935e-03  N4: +1.5277e-03  N8: +1.5314e-03   45/18 N8: +1.5449e-03
+  dng  /dw  per-shift spread  18.8%   N1: -1.5436e-03  N2: -1.4356e-03  N4: -1.5257e-03  N8: -1.5336e-03   45/18 N8: -1.5879e-03
+  dneff/dt  per-shift spread  32.3%   N1: +3.6648e-03  N2: +3.7096e-03  N4: +3.7203e-03  N8: +3.7219e-03   45/18 N8: +3.7153e-03
+  dng  /dt  per-shift spread  85.6%   N1: +1.4005e-03  N2: +1.1500e-03  N4: +1.0998e-03  N8: +1.0930e-03   45/18 N8: +9.8744e-04
+  dneff/da  per-shift spread   4.7%   N1: -5.7512e-03  N2: -5.7420e-03  N4: -5.8632e-03  N8: -5.8832e-03   45/18 N8: -5.9596e-03
+  dng  /da  per-shift spread  18.0%   N1: +5.8983e-03  N2: +5.5119e-03  N4: +5.8345e-03  N8: +5.8826e-03   45/18 N8: +6.1889e-03
+
+cell_exact|rib_TE_500: n_eff over shifts 2.56108..2.57161
+  dneff/dw  per-shift spread  10.1%   N1: +8.2870e-04  N2: +8.0115e-04  N4: +8.2824e-04  N8: +8.2950e-04   45/18 N8: +8.3298e-04
+  dng  /dw  per-shift spread 352.7%   N1: -5.6205e-05  N2: -7.2343e-06  N4: -2.7845e-05  N8: -2.7772e-05   45/18 N8: -3.8274e-05
+  dneff/dt  per-shift spread  32.7%   N1: +2.8089e-03  N2: +2.8350e-03  N4: +2.8413e-03  N8: +2.8420e-03   45/18 N8: +2.8213e-03
+  dng  /dt  per-shift spread  51.9%   N1: +2.7011e-03  N2: +2.5952e-03  N4: +2.5671e-03  N8: +2.5647e-03   45/18 N8: +2.5119e-03
+  dneff/da  per-shift spread  12.3%   N1: -1.5396e-03  N2: -1.4707e-03  N4: -1.5289e-03  N8: -1.5378e-03   45/18 N8: -1.5314e-03
+  dng  /da  per-shift spread 121.1%   N1: +2.7591e-04  N2: +1.4459e-04  N4: +2.0676e-04  N8: +2.1691e-04   45/18 N8: +2.2901e-04
+
+anisotropic|strip_TE_500: n_eff over shifts 2.43863..2.44459
+  dneff/dw  per-shift spread  50.5%   N1: +1.3776e-03  N2: +1.7712e-03  N4: +1.5760e-03  N8: +1.5759e-03   45/18 N8: +1.5737e-03
+  dng  /dw  per-shift spread  17.2%   N1: -1.7093e-03  N2: -1.6620e-03  N4: -1.5791e-03  N8: -1.5627e-03   45/18 N8: -1.6208e-03
+  dneff/dt  per-shift spread  35.2%   N1: +3.5607e-03  N2: +3.6662e-03  N4: +3.7149e-03  N8: +3.7295e-03   45/18 N8: +3.7060e-03
+  dng  /dt  per-shift spread  85.8%   N1: +1.6932e-03  N2: +1.2826e-03  N4: +1.1330e-03  N8: +1.0955e-03   45/18 N8: +1.0205e-03
+  dneff/da  per-shift spread  50.6%   N1: -5.2830e-03  N2: -6.7757e-03  N4: -6.0465e-03  N8: -6.0496e-03   45/18 N8: -6.0543e-03
+  dng  /da  per-shift spread  16.9%   N1: +6.5322e-03  N2: +6.2754e-03  N4: +6.0004e-03  N8: +5.9593e-03   45/18 N8: +6.2629e-03
+
+anisotropic|rib_TE_500: n_eff over shifts 2.55617..2.56297
+  dneff/dw  per-shift spread  71.0%   N1: +6.9093e-04  N2: +9.9014e-04  N4: +8.5157e-04  N8: +8.5707e-04   45/18 N8: +8.5237e-04
+  dng  /dw  per-shift spread 3203.2%   N1: -1.4120e-04  N2: +3.4600e-06  N4: -1.8559e-05  N8: -9.0320e-06   45/18 N8: -3.1789e-05
+  dneff/dt  per-shift spread  34.2%   N1: +2.6998e-03  N2: +2.7820e-03  N4: +2.8195e-03  N8: +2.8327e-03   45/18 N8: +2.8046e-03
+  dng  /dt  per-shift spread  48.9%   N1: +2.9143e-03  N2: +2.7092e-03  N4: +2.6372e-03  N8: +2.6163e-03   45/18 N8: +2.5631e-03
+  dneff/da  per-shift spread  67.0%   N1: -1.3410e-03  N2: -1.8326e-03  N4: -1.5674e-03  N8: -1.5703e-03   45/18 N8: -1.5337e-03
+  dng  /da  per-shift spread 332.2%   N1: +4.6554e-04  N2: +2.2038e-04  N4: +1.9899e-04  N8: +1.8011e-04   45/18 N8: +1.6538e-04
+
+Elapsed 13014s

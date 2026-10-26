@@ -1,0 +1,12 @@
+strip_TE_500_oxide|refine1     y_c - pivot = 110.07 nm of h = 220 nm   R = 1.0007   (dn/da)/(dn/dw) = -3.843 nm/deg   weight in lower half 46.3%
+strip_TE_500_oxide|refine2     y_c - pivot = 110.02 nm of h = 220 nm   R = 1.0002   (dn/da)/(dn/dw) = -3.841 nm/deg   weight in lower half 50.0%
+strip_TE_500_oxide|refine3     y_c - pivot = 110.03 nm of h = 220 nm   R = 1.0003   (dn/da)/(dn/dw) = -3.841 nm/deg   weight in lower half 49.2%
+strip_TE_500_air|refine1       y_c - pivot =  99.76 nm of h = 220 nm   R = 0.9069   (dn/da)/(dn/dw) = -3.483 nm/deg   weight in lower half 53.1%
+strip_TE_500_air|refine2       y_c - pivot = 100.60 nm of h = 220 nm   R = 0.9145   (dn/da)/(dn/dw) = -3.512 nm/deg   weight in lower half 54.4%
+strip_TE_500_air|refine3       y_c - pivot =  95.14 nm of h = 220 nm   R = 0.8649   (dn/da)/(dn/dw) = -3.321 nm/deg   weight in lower half 56.6%
+strip_TM_500_oxide|refine1     y_c - pivot = 110.04 nm of h = 220 nm   R = 1.0003   (dn/da)/(dn/dw) = -3.841 nm/deg   weight in lower half 49.7%
+strip_TM_500_oxide|refine2     y_c - pivot = 110.00 nm of h = 220 nm   R = 1.0000   (dn/da)/(dn/dw) = -3.840 nm/deg   weight in lower half 50.0%
+strip_TM_500_oxide|refine3     y_c - pivot = 109.99 nm of h = 220 nm   R = 1.0000   (dn/da)/(dn/dw) = -3.840 nm/deg   weight in lower half 49.9%
+rib_TE_500_oxide|refine1       y_c - pivot =  42.15 nm of h = 130 nm   R = 0.6485   (dn/da)/(dn/dw) = -1.472 nm/deg   weight in lower half 68.5%
+rib_TE_500_oxide|refine2       y_c - pivot =  46.53 nm of h = 130 nm   R = 0.7158   (dn/da)/(dn/dw) = -1.624 nm/deg   weight in lower half 64.9%
+rib_TE_500_oxide|refine3       y_c - pivot =  40.79 nm of h = 130 nm   R = 0.6276   (dn/da)/(dn/dw) = -1.424 nm/deg   weight in lower half 70.4%

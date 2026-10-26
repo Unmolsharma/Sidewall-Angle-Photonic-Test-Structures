@@ -1,0 +1,19 @@
+  strip r20 domain 1.4x1.2              2170 el  n_eff 2.4487309  n_g 4.060668
+  strip r12 domain 1.4x1.2              4086 el  n_eff 2.4487112  n_g 4.060731
+  strip r8 domain 1.4x1.2               7428 el  n_eff 2.4487058  n_g 4.060749
+  strip r6 domain 1.4x1.2              11668 el  n_eff 2.4487012  n_g 4.060762
+  strip r4 domain 1.4x1.2              22802 el  n_eff 2.4486981  n_g 4.060771
+  strip r12_max0.1 domain 1.4x1.2       6774 el  n_eff 2.4487142  n_g 4.060730
+  strip r8 domain 1.0x0.9               7018 el  n_eff 2.4487071  n_g 4.060675
+  strip r8 domain 2.0x1.8               8706 el  n_eff 2.4487066  n_g 4.060750
+  rib r20 domain 1.4x1.2                6100 el  n_eff 2.5707715  n_g 3.769784
+  rib r12 domain 1.4x1.2               12800 el  n_eff 2.5707041  n_g 3.769824
+  rib r8 domain 1.4x1.2                23258 el  n_eff 2.5706819  n_g 3.769836
+  rib r6 domain 1.4x1.2                37228 el  n_eff 2.5706647  n_g 3.769845
+  rib r4 domain 1.4x1.2                73966 el  n_eff 2.5706571  n_g 3.769849
+  rib r12_max0.1 domain 1.4x1.2        18030 el  n_eff 2.5707046  n_g 3.769825
+  rib r8 domain 1.0x0.9                16374 el  n_eff 2.5706620  n_g 3.770137
+  rib r8 domain 2.0x1.8                37300 el  n_eff 2.5706822  n_g 3.769832
+  strip: highest TE n_eff from a 4-mode solve (r8) 2.4487058
+  rib: highest TE n_eff from a 4-mode solve (r8) 2.5706819
+  (1043s)
