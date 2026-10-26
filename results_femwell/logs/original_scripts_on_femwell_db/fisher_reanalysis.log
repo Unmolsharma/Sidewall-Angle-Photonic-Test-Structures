@@ -32,10 +32,28 @@
   [5 exactly-singular combos excluded: ['stTE450+stTM500', 'stTE450+stTM550', 'stTE500+stTM500', 'stTE500+stTM550', 'stTE550+stTM500']]
 
 === (c) TE ring + MZI (25 combos, 25 exactly rank-deficient excluded from ranking) ===
+  all 25 combos rank-deficient (cond >= 1e+12); no ranking
 
---- stderr ---
-Traceback (most recent call last):
-  File "C:\Users\unmol\Photonics ML Paper\src\fisher_reanalysis.py", line 136, in <module>
-    print(f"  cond(F):      best={min(conds):.3e}  worst={max(conds):.3e}")
-                                  ^^^^^^^^^^
-ValueError: min() iterable argument is empty
+=== (d) TE ring + slot TE ring (25 combos, 0 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=5.637e+10  worst=4.812e+11
+  lambda_min:   best=8.053e-05  worst=9.198e-06
+  det(F):       best=1.844e+08  worst=2.955e+06
+  trace(F^-1):  best=1.242e+04  worst=1.087e+05
+  top-3 by cond:      ['stTE600+slTE165', 'stTE450+slTE165', 'stTE550+slTE165']
+  top-3 by lambda_min:['stTE450+slTE165', 'stTE450+slTE210', 'stTE400+slTE165']
+  top-3 by det:       ['stTE600+slTE210', 'stTE450+slTE210', 'stTE550+slTE210']
+  top-3 by trace_inv: ['stTE450+slTE165', 'stTE450+slTE210', 'stTE400+slTE165']
+  Spearman(cond, lambda_min) = +0.226
+  Spearman(cond, det)        = -0.041
+  Spearman(cond, trace_inv)  = +0.226
+  Spearman(det, trace_inv)   = +0.647
+  Spearman(lambda_min, trace_inv) = +1.000
+
+=== everything combined: isolating slot's contribution ===
+  strip-only (TE+TM, ring+mzi, all widths), 30 observables:
+    cond=6.039e+08  lambda_min=1.698e-01  det=3.029e+14  trace_inv=5.888e+00
+  + slot TE (ring+mzi, all widths), 90 observables:
+    cond=1.991e+03  lambda_min=1.896e+05  det=3.661e+21  trace_inv=5.298e-06
+  -> adding slot: cond 303233.1x better, lambda_min 1116058.6x better, trace_inv 1111382.3x better
+
+Saved data/fisher_reanalysis.json

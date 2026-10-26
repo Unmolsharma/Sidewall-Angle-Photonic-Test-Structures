@@ -1,0 +1,85 @@
+OK  strip baseline angle CRB (deg)                   writeup_numbers vs probe_db recompute      rel diff 0.0e+00
+OK  strip baseline angle CRB (deg)                   probe_db recompute vs angle_crb.log        rel diff 7.4e-05
+OK  two strip TE rings 550+600 angle CRB (deg)       writeup_numbers vs probe_db recompute      rel diff 0.0e+00
+OK  two strip TE rings 550+600 angle CRB (deg)       probe_db recompute vs angle_crb.log        rel diff 6.6e-07
+OK  strip baseline +rib x1.0: improvement factor     writeup_numbers vs angle_crb.log           rel diff 4.4e-06
+OK  strip baseline +rib x0.2: improvement factor     writeup_numbers vs angle_crb.log           rel diff 6.7e-06
+OK  strip baseline +slot x4.0: improvement factor    writeup_numbers vs angle_crb.log           rel diff 6.2e-03
+OK  strip x1.0 alone angle CRB (deg)                 writeup_numbers vs angle_crb.log           rel diff 2.0e-05
+OK  rib x1.0 alone angle CRB (deg)                   writeup_numbers vs angle_crb.log           rel diff 1.5e-04
+OK  rib x0.2 alone angle CRB (deg)                   writeup_numbers vs angle_crb.log           rel diff 6.9e-04
+OK  slot x4.0 alone angle CRB (deg)                  writeup_numbers vs angle_crb.log           rel diff 1.7e-05
+OK  two rings + rib 400 (cons.): improvement factor  writeup_numbers vs angle_crb.log           rel diff 4.7e-07
+OK  TE+TE ring pairs: best cond                      writeup_numbers vs fisher_reanalysis.json  rel diff 0.0e+00
+OK  TE+TE ring pairs: worst cond                     writeup_numbers vs fisher_reanalysis.json  rel diff 0.0e+00
+OK  TE 550+600 pair lambda_min                       writeup_numbers vs probe_db recompute      rel diff 0.0e+00
+OK  R_neff strip_TE_400                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TE_400                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TE_450                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TE_450                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TE_500                              robustness_checks vs sensitivity_db        rel diff 2.2e-16
+OK  R_neff strip_TE_500                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TE_550                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TE_550                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TE_600                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TE_600                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TM_400                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TM_400                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TM_450                              robustness_checks vs sensitivity_db        rel diff 1.1e-16
+OK  R_neff strip_TM_450                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TM_500                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TM_500                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TM_550                              robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff strip_TM_550                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff strip_TM_600                              robustness_checks vs sensitivity_db        rel diff 2.2e-16
+OK  R_neff strip_TM_600                              crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TE_150                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TE_150                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TE_165                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TE_165                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TE_180                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TE_180                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TE_195                               robustness_checks vs sensitivity_db        rel diff 2.2e-16
+OK  R_neff slot_TE_195                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TE_210                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TE_210                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TM_150                               robustness_checks vs sensitivity_db        rel diff 1.1e-16
+OK  R_neff slot_TM_150                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TM_165                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TM_165                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TM_180                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TM_180                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TM_195                               robustness_checks vs sensitivity_db        rel diff 1.1e-16
+OK  R_neff slot_TM_195                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff slot_TM_210                               robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff slot_TM_210                               crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff rib_TE_400                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff rib_TE_400                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff rib_TE_450                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff rib_TE_450                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff rib_TE_500                                robustness_checks vs sensitivity_db        rel diff 1.4e-16
+OK  R_neff rib_TE_500                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff rib_TE_550                                robustness_checks vs sensitivity_db        rel diff 1.4e-16
+OK  R_neff rib_TE_550                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff rib_TE_600                                robustness_checks vs sensitivity_db        rel diff 1.4e-16
+OK  R_neff rib_TE_600                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff swg_TE_400                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff swg_TE_400                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff swg_TE_450                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff swg_TE_450                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff swg_TE_500                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff swg_TE_500                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff swg_TE_550                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff swg_TE_550                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  R_neff swg_TE_600                                robustness_checks vs sensitivity_db        rel diff 0.0e+00
+OK  R_neff swg_TE_600                                crosscheck_and_ratios vs sensitivity_db    rel diff 0.0e+00
+OK  impact da=1 width_only true dneff                femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=1 width_only true dng                  femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=1 width_and_thickness true dneff       femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=1 width_and_thickness true dng         femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=2 width_only true dneff                femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=2 width_only true dng                  femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=2 width_and_thickness true dneff       femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  impact da=2 width_and_thickness true dng         femwell_impact vs sensitivity_db           rel diff 0.0e+00
+OK  slab sweep slabs                                 [50, 70, 90, 110, 130, 150] vs [50, 70, 90, 110, 130, 150]
+84 checks, 0 disagree

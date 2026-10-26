@@ -1,0 +1,701 @@
+{
+ "n_checks": 84,
+ "n_disagree": 0,
+ "checks": [
+  {
+   "quantity": "strip baseline angle CRB (deg)",
+   "sources": "writeup_numbers vs probe_db recompute",
+   "a": 0.6115547818910639,
+   "b": 0.6115547818910639,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "strip baseline angle CRB (deg)",
+   "sources": "probe_db recompute vs angle_crb.log",
+   "a": 0.6115547818910639,
+   "b": 0.6116,
+   "printed": "0.6116",
+   "rel_diff": 7.39341218706604e-05,
+   "agree": true
+  },
+  {
+   "quantity": "two strip TE rings 550+600 angle CRB (deg)",
+   "sources": "writeup_numbers vs probe_db recompute",
+   "a": 118.23107806881411,
+   "b": 118.23107806881411,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "two strip TE rings 550+600 angle CRB (deg)",
+   "sources": "probe_db recompute vs angle_crb.log",
+   "a": 118.23107806881411,
+   "b": 118.231,
+   "printed": "118.231",
+   "rel_diff": 6.603074838163609e-07,
+   "agree": true
+  },
+  {
+   "quantity": "strip baseline +rib x1.0: improvement factor",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 1008.7955524249195,
+   "b": 1008.8,
+   "printed": "1008.8",
+   "rel_diff": 4.408777835509744e-06,
+   "agree": true
+  },
+  {
+   "quantity": "strip baseline +rib x0.2: improvement factor",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 2269.815262915196,
+   "b": 2269.8,
+   "printed": "2269.8",
+   "rel_diff": 6.72434364074483e-06,
+   "agree": true
+  },
+  {
+   "quantity": "strip baseline +slot x4.0: improvement factor",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 1.9875240654548423,
+   "b": 2.0,
+   "printed": "2.0",
+   "rel_diff": 0.006237967272578859,
+   "agree": true
+  },
+  {
+   "quantity": "strip x1.0 alone angle CRB (deg)",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 1.331026750075842,
+   "b": 1.331,
+   "printed": "1.3310",
+   "rel_diff": 2.0097727905307025e-05,
+   "agree": true
+  },
+  {
+   "quantity": "rib x1.0 alone angle CRB (deg)",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 0.23983509468642955,
+   "b": 0.2398,
+   "printed": "0.2398",
+   "rel_diff": 0.0001463498183049942,
+   "agree": true
+  },
+  {
+   "quantity": "rib x0.2 alone angle CRB (deg)",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 0.047967018939246556,
+   "b": 0.048,
+   "printed": "0.0480",
+   "rel_diff": 0.000687105432363444,
+   "agree": true
+  },
+  {
+   "quantity": "slot x4.0 alone angle CRB (deg)",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 0.7790129953633224,
+   "b": 0.779,
+   "printed": "0.7790",
+   "rel_diff": 1.668210952802607e-05,
+   "agree": true
+  },
+  {
+   "quantity": "two rings + rib 400 (cons.): improvement factor",
+   "sources": "writeup_numbers vs angle_crb.log",
+   "a": 14352.493246962302,
+   "b": 14352.5,
+   "printed": "14352.5",
+   "rel_diff": 4.7051299064397616e-07,
+   "agree": true
+  },
+  {
+   "quantity": "TE+TE ring pairs: best cond",
+   "sources": "writeup_numbers vs fisher_reanalysis.json",
+   "a": 300536248418.13324,
+   "b": 300536248418.13324,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "TE+TE ring pairs: worst cond",
+   "sources": "writeup_numbers vs fisher_reanalysis.json",
+   "a": 45943721835393.63,
+   "b": 45943721835393.63,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "TE 550+600 pair lambda_min",
+   "sources": "writeup_numbers vs probe_db recompute",
+   "a": 4.53252334773412e-06,
+   "b": 4.53252334773412e-06,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_400",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0000790478332584,
+   "b": 1.0000790478332584,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_400",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0000790478332584,
+   "b": 1.0000790478332584,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_450",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.9998799015651852,
+   "b": 0.9998799015651852,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_450",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.9998799015651852,
+   "b": 0.9998799015651852,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_500",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0001346313732582,
+   "b": 1.000134631373258,
+   "rel_diff": 2.2201471477909713e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_500",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.000134631373258,
+   "b": 1.000134631373258,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_550",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0001862135520934,
+   "b": 1.0001862135520934,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_550",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0001862135520934,
+   "b": 1.0001862135520934,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_600",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.9998912826676412,
+   "b": 0.9998912826676412,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TE_600",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.9998912826676412,
+   "b": 0.9998912826676412,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_400",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.000835962180136,
+   "b": 1.000835962180136,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_400",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.000835962180136,
+   "b": 1.000835962180136,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_450",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.999885315347207,
+   "b": 0.9998853153472069,
+   "rel_diff": 1.1103503647712189e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_450",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.9998853153472069,
+   "b": 0.9998853153472069,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_500",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0012161486079483,
+   "b": 1.0012161486079483,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_500",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0012161486079483,
+   "b": 1.0012161486079483,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_550",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0016606242957946,
+   "b": 1.0016606242957946,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_550",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0016606242957946,
+   "b": 1.0016606242957946,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_600",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0012033042530557,
+   "b": 1.001203304253056,
+   "rel_diff": 2.2177773882866564e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff strip_TM_600",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.001203304253056,
+   "b": 1.001203304253056,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_150",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.000843916959478,
+   "b": 1.000843916959478,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_150",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.000843916959478,
+   "b": 1.000843916959478,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_165",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0015179542418737,
+   "b": 1.0015179542418737,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_165",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0015179542418737,
+   "b": 1.0015179542418737,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_180",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.00026975818227,
+   "b": 1.00026975818227,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_180",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.00026975818227,
+   "b": 1.00026975818227,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_195",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0004551928598564,
+   "b": 1.0004551928598566,
+   "rel_diff": 2.2194357779312884e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_195",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0004551928598566,
+   "b": 1.0004551928598566,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_210",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.000854388973756,
+   "b": 1.000854388973756,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TE_210",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.000854388973756,
+   "b": 1.000854388973756,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_150",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.9991516034033362,
+   "b": 0.9991516034033361,
+   "rel_diff": 1.1111657338520862e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_150",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.9991516034033361,
+   "b": 0.9991516034033361,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_165",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0004659040841568,
+   "b": 1.0004659040841568,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_165",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0004659040841568,
+   "b": 1.0004659040841568,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_180",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.9990758068463719,
+   "b": 0.9990758068463719,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_180",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.9990758068463719,
+   "b": 0.9990758068463719,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_195",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.9991955832127861,
+   "b": 0.999195583212786,
+   "rel_diff": 1.111116825652267e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_195",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.999195583212786,
+   "b": 0.999195583212786,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_210",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0002241911888599,
+   "b": 1.0002241911888599,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff slot_TM_210",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0002241911888599,
+   "b": 1.0002241911888599,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_400",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.775946397077391,
+   "b": 0.775946397077391,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_400",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.775946397077391,
+   "b": 0.775946397077391,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_450",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.7846247580898611,
+   "b": 0.7846247580898611,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_450",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.7846247580898611,
+   "b": 0.7846247580898611,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_500",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.7899855952629963,
+   "b": 0.7899855952629962,
+   "rel_diff": 1.4053712261114701e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_500",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.7899855952629962,
+   "b": 0.7899855952629962,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_550",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.7960616823245182,
+   "b": 0.7960616823245181,
+   "rel_diff": 1.3946444720003105e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_550",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.7960616823245181,
+   "b": 0.7960616823245181,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_600",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.7987308926342895,
+   "b": 0.7987308926342894,
+   "rel_diff": 1.3899838291762283e-16,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff rib_TE_600",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.7987308926342894,
+   "b": 0.7987308926342894,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_400",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0005308551400283,
+   "b": 1.0005308551400283,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_400",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0005308551400283,
+   "b": 1.0005308551400283,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_450",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.000114495680164,
+   "b": 1.000114495680164,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_450",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.000114495680164,
+   "b": 1.000114495680164,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_500",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.0003362536887577,
+   "b": 1.0003362536887577,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_500",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.0003362536887577,
+   "b": 1.0003362536887577,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_550",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 1.000328685186809,
+   "b": 1.000328685186809,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_550",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 1.000328685186809,
+   "b": 1.000328685186809,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_600",
+   "sources": "robustness_checks vs sensitivity_db",
+   "a": 0.9999517539264524,
+   "b": 0.9999517539264524,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "R_neff swg_TE_600",
+   "sources": "crosscheck_and_ratios vs sensitivity_db",
+   "a": 0.9999517539264524,
+   "b": 0.9999517539264524,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=1 width_only true dneff",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": -0.001513414973423055,
+   "b": -0.001513414973423055,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=1 width_only true dng",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": 0.0001870960732541782,
+   "b": 0.0001870960732541782,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=1 width_and_thickness true dneff",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": -0.001513414973423055,
+   "b": -0.001513414973423055,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=1 width_and_thickness true dng",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": 0.0001870960732541782,
+   "b": 0.0001870960732541782,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=2 width_only true dneff",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": -0.00302682994684611,
+   "b": -0.00302682994684611,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=2 width_only true dng",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": 0.0003741921465083564,
+   "b": 0.0003741921465083564,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=2 width_and_thickness true dneff",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": -0.00302682994684611,
+   "b": -0.00302682994684611,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "impact da=2 width_and_thickness true dng",
+   "sources": "femwell_impact vs sensitivity_db",
+   "a": 0.0003741921465083564,
+   "b": 0.0003741921465083564,
+   "rel_diff": 0.0,
+   "agree": true
+  },
+  {
+   "quantity": "slab sweep slabs",
+   "sources": "writeup_numbers vs rib_slab_sweep_db_femwell.json",
+   "a": [
+    50,
+    70,
+    90,
+    110,
+    130,
+    150
+   ],
+   "b": [
+    50,
+    70,
+    90,
+    110,
+    130,
+    150
+   ],
+   "agree": true
+  }
+ ]
+}
