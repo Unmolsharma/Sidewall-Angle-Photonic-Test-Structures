@@ -1,0 +1,12 @@
+{
+ "rib_slab110_TE_600": "'rib|TE|600|110|oxide|r12|w|-2.5000'",
+ "rib_slab130_TE_300": "'rib|TE|300|130|oxide|r12|nom|+0.0000'",
+ "rib_slab130_TE_400": "'rib|TE|400|130|oxide|r12|nom|+0.0000'",
+ "rib_slab130_TE_500": "'rib|TE|500|130|oxide|r12|nom|+0.0000'",
+ "rib_slab130_TE_600": "'rib|TE|600|130|oxide|r12|nom|+0.0000'",
+ "rib_slab150_TE_300": "'rib|TE|300|150|oxide|r12|nom|+0.0000'",
+ "rib_slab150_TE_400": "'rib|TE|400|150|oxide|r12|nom|+0.0000'",
+ "rib_slab150_TE_500": "'rib|TE|500|150|oxide|r12|nom|+0.0000'",
+ "rib_slab150_TE_600": "'rib|TE|600|150|oxide|r12|nom|+0.0000'",
+ "rib_slab110_TE (whole slab)": "only widths [300, 400, 500] complete; slab dropped"
+}

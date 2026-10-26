@@ -1,0 +1,37 @@
+==============================================================================
+Task 2b: rib isolated Fisher contribution under SOURCED noise multipliers
+==============================================================================
+
+  rib noise multiplier: same as strip [Session 4 default, unjustified]
+    n_obs=45  cond(F)=5.977e+02  lambda_min=1.873e+05
+    lambda_min improvement over strip-only baseline: 1102586.3x
+
+  rib noise multiplier: optimistic (0.2x, sourced wide-rib literature)
+    n_obs=45  cond(F)=2.045e+02  lambda_min=1.702e+06
+    lambda_min improvement over strip-only baseline: 10020120.0x
+
+  rib noise multiplier: conservative (1.0x, no benefit assumed)
+    n_obs=45  cond(F)=5.977e+02  lambda_min=1.873e+05
+    lambda_min improvement over strip-only baseline: 1102586.3x
+
+  Session 4's reported number was 571.7x, using the SAME (1.0x, unjustified)
+  assumption as the first row above -- reproduced here as a consistency check.
+
+==============================================================================
+Task 2c: resolving slot's Session-4 2-86x range with the SOURCED multiplier
+==============================================================================
+  slot noise multiplier: Session 4: same as strip [optimistic, unsourced]
+    lambda_min improvement over strip-only baseline: 33.3x
+  slot noise multiplier: Session 4: 3x worse [unsourced round number]
+    lambda_min improvement over strip-only baseline: 6.7x
+  slot noise multiplier: SOURCED: 4x worse (this session, 3.5-5x band, central est.)
+    lambda_min improvement over strip-only baseline: 4.6x
+  slot noise multiplier: Session 4: 5x worse [unsourced round number]
+    lambda_min improvement over strip-only baseline: 3.4x
+  slot noise multiplier: Session 4: 10x worse [unsourced round number]
+    lambda_min improvement over strip-only baseline: 1.7x
+
+  RESOLVED (sourced): slot gives a 4.6x lambda_min improvement under the literature-sourced 4x noise multiplier.
+  This single number replaces Session 4's open 2-86x range as the number to
+  cite going forward, superseding the round-number bracket (which is retained
+  above only as a consistency cross-check against the sourced result).

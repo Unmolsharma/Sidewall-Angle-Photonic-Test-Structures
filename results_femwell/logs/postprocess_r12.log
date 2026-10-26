@@ -1,0 +1,5 @@
+30 database structures, 12 slab-sweep structures, skipped 10: {'rib_slab110_TE_600': "'rib|TE|600|110|oxide|r12|w|-2.5000'", 'rib_slab130_TE_300': "'rib|TE|300|130|oxide|r12|nom|+0.0000'", 'rib_slab130_TE_400': "'rib|TE|400|130|oxide|r12|nom|+0.0000'", 'rib_slab130_TE_500': "'rib|TE|500|130|oxide|r12|nom|+0.0000'", 'rib_slab130_TE_600': "'rib|TE|600|130|oxide|r12|nom|+0.0000'", 'rib_slab150_TE_300': "'rib|TE|300|150|oxide|r12|nom|+0.0000'", 'rib_slab150_TE_400': "'rib|TE|400|150|oxide|r12|nom|+0.0000'", 'rib_slab150_TE_500': "'rib|TE|500|150|oxide|r12|nom|+0.0000'", 'rib_slab150_TE_600': "'rib|TE|600|150|oxide|r12|nom|+0.0000'", 'rib_slab110_TE (whole slab)': 'only widths [300, 400, 500] complete; slab dropped'}
+23 solves needed the 6-mode fallback
+[femwell] 30 database structures   180 derivatives: PASS 179, near-zero PASS 0, FAIL 1
+[femwell] slab sweep               72 derivatives: PASS 72, near-zero PASS 0, FAIL 0
+  FAIL                 strip_TM_600           dng/da  D(h/2,h,2h)=(-3.8807e-03, -3.9012e-03, -3.9835e-03)  rel dev 2.11%  |D|/largest 0.139

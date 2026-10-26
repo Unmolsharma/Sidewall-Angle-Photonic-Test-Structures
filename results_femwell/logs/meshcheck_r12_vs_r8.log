@@ -1,0 +1,30 @@
+
+strip TE 500 oxide: n_eff r12 2.448711 r8 2.448706; n_g r12 4.06073 r8 4.06075  (r12 from femwell_crosscheck r12)
+  dneff/dw  r12 +1.58609e-03  r8 +1.58637e-03  diff -0.02%  OK
+  dneff/dt  r12 +3.72376e-03  r8 +3.72270e-03  diff +0.03%  OK
+  dneff/da  r12 -6.09159e-03  r8 -6.09123e-03  diff -0.01%  OK
+  dng  /dw  r12 -1.72216e-03  r8 -1.72288e-03  diff +0.04%  OK
+  dng  /dt  r12 +8.11514e-04  r8 +8.13997e-04  diff -0.30%  OK
+  dng  /da  r12 +6.61596e-03  r8 +6.61539e-03  diff +0.01%  OK
+  (dn_eff/da)/(dn_eff/dw): r12 -3.8406  r8 -3.8397 nm/deg;  R r12 1.0001  r8 0.9999
+  r8 step check failures: none
+
+rib TE 500 oxide: n_eff r12 2.570704 r8 2.570682; n_g r12 3.76982 r8 3.76984  (r12 from femwell_crosscheck r12)
+  dneff/dw  r12 +8.44256e-04  r8 +8.44621e-04  diff -0.04%  OK
+  dneff/dt  r12 +2.79557e-03  r8 +2.79661e-03  diff -0.04%  OK
+  dneff/da  r12 -1.51341e-03  r8 -1.51422e-03  diff +0.05%  OK
+  dng  /dw  r12 -4.73387e-05  r8 -4.73327e-05  diff -0.01%  (near-zero: 0.00% of largest)  OK
+  dng  /dt  r12 +2.46699e-03  r8 +2.46686e-03  diff +0.01%  OK
+  dng  /da  r12 +1.87096e-04  r8 +1.87500e-04  diff -0.22%  (near-zero: 0.02% of largest)  OK
+  (dn_eff/da)/(dn_eff/dw): r12 -1.7926  r8 -1.7928 nm/deg;  R r12 0.7900  r8 0.7901
+  r8 step check failures: none
+
+strip TE 500 air: n_eff r12 2.388615 r8 2.388605; n_g r12 4.22685 r8 4.22689  (r12 from femwell_crosscheck r12)
+  dneff/dw  r12 +1.88891e-03  r8 +1.88912e-03  diff -0.01%  OK
+  dneff/da  r12 -7.09659e-03  r8 -7.09647e-03  diff -0.00%  OK
+  dng  /dw  r12 -2.87684e-03  r8 -2.87751e-03  diff +0.02%  OK
+  dng  /da  r12 +1.05330e-02  r8 +1.05334e-02  diff -0.00%  OK
+  (dn_eff/da)/(dn_eff/dw): r12 -3.7570  r8 -3.7565 nm/deg;  R r12 0.9783  r8 0.9782
+  r8 step check failures: none
+
+all r12 vs r8 derivatives within 2% (near-zero rule applied): True

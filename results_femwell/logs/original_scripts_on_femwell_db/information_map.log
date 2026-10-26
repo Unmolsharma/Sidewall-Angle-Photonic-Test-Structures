@@ -1,0 +1,31 @@
+=== PCA of fab-tolerance-scaled sensitivity vectors (3D -> 2D) ===
+Variance explained: PC1=84.2%  PC2=15.4%  PC3=0.4%  (PC1+PC2=99.6%)
+PC1 loadings (width, thickness, angle): [-0.756  0.249  0.605]
+PC2 loadings (width, thickness, angle): [ 0.163  0.967 -0.194]
+
+Per-family centroid in PC space:
+      rib-TE: PC1=+0.0052  PC2=-0.0025  (n=5)
+     slot-TE: PC1=-0.0139  PC2=-0.0007  (n=5)
+     slot-TM: PC1=-0.0007  PC2=-0.0003  (n=5)
+    strip-TE: PC1=-0.0008  PC2=+0.0012  (n=5)
+    strip-TM: PC1=+0.0073  PC2=+0.0057  (n=5)
+      swg-TE: PC1=+0.0029  PC2=-0.0035  (n=5)
+
+Inter-family centroid distances vs intra-family spread (occupancy check):
+  rib-TE <-> slot-TE: centroid dist=0.0192, avg intra-family spread=0.0021, ratio=9.0x
+  rib-TE <-> slot-TM: centroid dist=0.0064, avg intra-family spread=0.0007, ratio=9.2x
+  rib-TE <-> strip-TE: centroid dist=0.0071, avg intra-family spread=0.0013, ratio=5.5x
+  rib-TE <-> strip-TM: centroid dist=0.0085, avg intra-family spread=0.0007, ratio=12.7x
+  rib-TE <-> swg-TE: centroid dist=0.0029, avg intra-family spread=0.0006, ratio=5.2x
+  slot-TE <-> slot-TM: centroid dist=0.0132, avg intra-family spread=0.0022, ratio=6.0x
+  slot-TE <-> strip-TE: centroid dist=0.0132, avg intra-family spread=0.0028, ratio=4.7x
+  slot-TE <-> strip-TM: centroid dist=0.0221, avg intra-family spread=0.0022, ratio=10.2x
+  slot-TE <-> swg-TE: centroid dist=0.0170, avg intra-family spread=0.0020, ratio=8.3x
+  slot-TM <-> strip-TE: centroid dist=0.0015, avg intra-family spread=0.0014, ratio=1.1x
+  slot-TM <-> strip-TM: centroid dist=0.0099, avg intra-family spread=0.0007, ratio=13.7x
+  slot-TM <-> swg-TE: centroid dist=0.0048, avg intra-family spread=0.0006, ratio=7.7x
+  strip-TE <-> strip-TM: centroid dist=0.0093, avg intra-family spread=0.0013, ratio=7.0x
+  strip-TE <-> swg-TE: centroid dist=0.0060, avg intra-family spread=0.0012, ratio=4.9x
+  strip-TM <-> swg-TE: centroid dist=0.0102, avg intra-family spread=0.0006, ratio=17.2x
+
+Figure saved: figures/fig2_information_map.png

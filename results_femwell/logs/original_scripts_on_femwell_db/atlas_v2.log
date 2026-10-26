@@ -1,0 +1,18 @@
+=== Atlas v2 (6D: noise-weighted dneff-row + dng-row) numeric summary ===
+within-class pairs (v2, 6D neff+ng direction): n=60  angle min/mean/max = 0.3/8.2/26.5 deg
+cross-class pairs (v2, 6D neff+ng direction): n=375  angle min/mean/max = 0.8/29.7/70.9 deg
+
+=== v1 (dneff-only) vs v2 (dneff+dng noise-weighted) pairwise angle, sample ===
+pair                                       v1 angle   v2 angle
+strip-TE-400<->strip-TE-450                     6.9        5.9
+strip-TE-400<->strip-TE-500                    14.4       12.6
+strip-TE-400<->strip-TE-550                    21.8       19.6
+strip-TE-400<->strip-TE-600                    28.8       26.5
+strip-TE-400<->strip-TM-400                    42.1       40.9
+strip-TE-400<->strip-TM-450                    46.8       46.3
+strip-TE-400<->strip-TM-500                    50.5       50.6
+strip-TE-400<->strip-TM-550                    53.4       54.2
+strip-TE-400<->strip-TM-600                    55.8       57.0
+strip-TE-400<->slot-TE-150                     17.0       14.1
+strip-TE-400<->slot-TE-165                     16.8       13.8
+strip-TE-400<->slot-TE-180                     16.5       13.6

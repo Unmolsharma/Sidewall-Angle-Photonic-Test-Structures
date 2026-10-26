@@ -1,0 +1,9 @@
+[2026-10-25 23:20:43] free RAM 12.7 GB, ~2.0 GB per worker -> 4 workers
+[2026-10-25 23:20:43] 12 tasks, 0 cached, 12 to run, 4 workers
+[2026-10-25 23:21:17] finished: 12 solved this run, 0 failed
+[2026-10-25 23:21:17] timing strip TE 500: 6 s per geometry (3 wavelengths, 4086 elements), n_eff 2.44871, te_fraction 0.983
+[2026-10-25 23:21:17] timing strip TM 500: 6 s per geometry (3 wavelengths, 4086 elements), n_eff 1.76824, te_fraction 0.045
+[2026-10-25 23:21:17] timing slot TE 180: 5 s per geometry (3 wavelengths, 3996 elements), n_eff 1.57381, te_fraction 0.971
+[2026-10-25 23:21:17] timing slot TM 180: 5 s per geometry (3 wavelengths, 3996 elements), n_eff 1.57092, te_fraction 0.035
+[2026-10-25 23:21:17] timing rib TE 500: 19 s per geometry (3 wavelengths, 12800 elements), n_eff 2.57070, te_fraction 0.986
+[2026-10-25 23:21:17] timing swg TE 500: 5 s per geometry (3 wavelengths, 4086 elements), n_eff 1.69958, te_fraction 0.974

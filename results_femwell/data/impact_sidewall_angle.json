@@ -1,0 +1,96 @@
+{
+ "assumptions": {
+  "sigma_neff": 6.5e-06,
+  "sigma_ng": 0.001,
+  "strip_widths_nm": [
+   400,
+   450,
+   500,
+   550,
+   600
+  ],
+  "rib": "rib_TE_500 (90 nm slab)",
+  "wavelength_um": 1.55,
+  "n_g_rib": 3.7698243857314715
+ },
+ "da=1deg": {
+  "width_only": {
+   "effective_dw_nm": -3.8402522062503226,
+   "effective_dt_nm": 0.0,
+   "strip_fit_chi2": 0.07117224443229168,
+   "strip_fit_chi2_without_fit": 6360386.862775445,
+   "rib": {
+    "neff": {
+     "predicted": -0.0032421550514676266,
+     "true": -0.001513414973423055,
+     "error": -0.0017287400780445716
+    },
+    "ng": {
+     "predicted": 0.00018179241713835932,
+     "true": 0.0001870960732541782,
+     "error": -5.3036561158188885e-06
+    }
+   },
+   "resonance_error_pm": -710.7883144665808
+  },
+  "width_and_thickness": {
+   "effective_dw_nm": -3.8402679384960114,
+   "effective_dt_nm": 8.648649579171701e-06,
+   "strip_fit_chi2": 0.07115614106765178,
+   "strip_fit_chi2_without_fit": 6360386.862775445,
+   "rib": {
+    "neff": {
+     "predicted": -0.003242144155558829,
+     "true": -0.001513414973423055,
+     "error": -0.001728729182135774
+    },
+    "ng": {
+     "predicted": 0.00018181449804250462,
+     "true": 0.0001870960732541782,
+     "error": -5.281575211673586e-06
+    }
+   },
+   "resonance_error_pm": -710.7838345075938
+  }
+ },
+ "da=2deg": {
+  "width_only": {
+   "effective_dw_nm": -7.680504412500645,
+   "effective_dt_nm": 0.0,
+   "strip_fit_chi2": 0.28468897772916674,
+   "strip_fit_chi2_without_fit": 25441547.45110178,
+   "rib": {
+    "neff": {
+     "predicted": -0.006484310102935253,
+     "true": -0.00302682994684611,
+     "error": -0.003457480156089143
+    },
+    "ng": {
+     "predicted": 0.00036358483427671864,
+     "true": 0.0003741921465083564,
+     "error": -1.0607312231637777e-05
+    }
+   },
+   "resonance_error_pm": -1421.5766289331616
+  },
+  "width_and_thickness": {
+   "effective_dw_nm": -7.680535876992023,
+   "effective_dt_nm": 1.7297299158343402e-05,
+   "strip_fit_chi2": 0.2846245642706071,
+   "strip_fit_chi2_without_fit": 25441547.45110178,
+   "rib": {
+    "neff": {
+     "predicted": -0.006484288311117658,
+     "true": -0.00302682994684611,
+     "error": -0.003457458364271548
+    },
+    "ng": {
+     "predicted": 0.00036362899608500924,
+     "true": 0.0003741921465083564,
+     "error": -1.0563150423347173e-05
+    }
+   },
+   "resonance_error_pm": -1421.5676690151877
+  }
+ }
+}

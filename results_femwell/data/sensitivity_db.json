@@ -1,0 +1,1472 @@
+[
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.22967562361452,
+    "ng": 4.258521566805231,
+    "dneff_dw": 0.0029657001835134977,
+    "dneff_dt": 0.003830822889214436,
+    "dneff_da": -0.011389527883726602,
+    "dng_dw": -0.0018936962743016038,
+    "dng_dt": 0.0019016374859250895,
+    "dng_da": 0.007281863014059642,
+    "sens_vector_raw": [
+      0.0029657001835134977,
+      0.003830822889214436,
+      -0.011389527883726602
+    ],
+    "sens_vector_scaled": [
+      0.014828500917567489,
+      0.007661645778428872,
+      -0.011389527883726602
+    ],
+    "sens_vector_unit": [
+      0.7338445071590244,
+      0.3791655475866187,
+      -0.5636539069640769
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TE_400"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.3562614575854433,
+    "ng": 4.155583341815515,
+    "dneff_dw": 0.0021479384588043438,
+    "dneff_dt": 0.003786692008612813,
+    "dneff_da": -0.008247338545832372,
+    "dng_dw": -0.0020498539883565315,
+    "dng_dt": 0.001078965689876421,
+    "dng_da": 0.007871581864226318,
+    "sens_vector_raw": [
+      0.0021479384588043438,
+      0.003786692008612813,
+      -0.008247338545832372
+    ],
+    "sens_vector_scaled": [
+      0.010739692294021719,
+      0.007573384017225626,
+      -0.008247338545832372
+    ],
+    "sens_vector_unit": [
+      0.6922127649319343,
+      0.48813252250935196,
+      -0.5315713767067821
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TE_450"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.4487111925482514,
+    "ng": 4.060731233699023,
+    "dneff_dw": 0.0015860899803854522,
+    "dneff_dt": 0.0037237587003727812,
+    "dneff_da": -0.006091586798014248,
+    "dng_dw": -0.0017221567377177394,
+    "dng_dt": 0.0008115144873359625,
+    "dng_da": 0.0066159573148767414,
+    "sens_vector_raw": [
+      0.0015860899803854522,
+      0.0037237587003727812,
+      -0.006091586798014248
+    ],
+    "sens_vector_scaled": [
+      0.007930449901927261,
+      0.0074475174007455625,
+      -0.006091586798014248
+    ],
+    "sens_vector_unit": [
+      0.6360357649695837,
+      0.597303745145194,
+      -0.4885557713455872
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TE_500"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.517750791510244,
+    "ng": 3.983482045211625,
+    "dneff_dw": 0.0011989885493555175,
+    "dneff_dt": 0.003664764228911488,
+    "dneff_da": -0.004605110429297898,
+    "dng_dw": -0.001375110664274315,
+    "dng_dt": 0.0007386221489966704,
+    "dng_da": 0.0052831002331286125,
+    "sens_vector_raw": [
+      0.0011989885493555175,
+      0.003664764228911488,
+      -0.004605110429297898
+    ],
+    "sens_vector_scaled": [
+      0.005994942746777587,
+      0.007329528457822976,
+      -0.004605110429297898
+    ],
+    "sens_vector_unit": [
+      0.5693524744305231,
+      0.6961009204155572,
+      -0.4373571406258904
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TE_550"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.570506742842722,
+    "ng": 3.9220904327185457,
+    "dneff_dw": 0.0009267799058501946,
+    "dneff_dt": 0.0036164536766045696,
+    "dneff_da": -0.003558553836227274,
+    "dng_dw": -0.0010917978293286889,
+    "dng_dt": 0.0007305743236843965,
+    "dng_da": 0.004192070720639762,
+    "sens_vector_raw": [
+      0.0009267799058501946,
+      0.0036164536766045696,
+      -0.003558553836227274
+    ],
+    "sens_vector_scaled": [
+      0.004633899529250973,
+      0.007232907353209139,
+      -0.003558553836227274
+    ],
+    "sens_vector_unit": [
+      0.4983803397693157,
+      0.7779061245194984,
+      -0.38272587888262277
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TE_600"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.688225212859622,
+    "ng": 3.369533243719668,
+    "dneff_dw": 0.0009082631933172048,
+    "dneff_dt": 0.005983597899811233,
+    "dneff_da": -0.003490750160178857,
+    "dng_dw": 0.004046933466926994,
+    "dng_dt": 0.033498271758220954,
+    "dng_da": -0.015566083548273602,
+    "sens_vector_raw": [
+      0.0009082631933172048,
+      0.005983597899811233,
+      -0.003490750160178857
+    ],
+    "sens_vector_scaled": [
+      0.004541315966586024,
+      0.011967195799622465,
+      -0.003490750160178857
+    ],
+    "sens_vector_unit": [
+      0.342292533815649,
+      0.9020032525946842,
+      -0.2631082545316152
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TM_400"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7309456790299553,
+    "ng": 3.5422654847350525,
+    "dneff_dw": 0.0007994455557109204,
+    "dneff_dt": 0.006593034043436974,
+    "dneff_da": -0.0030696102203717768,
+    "dng_dw": 0.0029105845842300583,
+    "dng_dt": 0.03259099599246251,
+    "dng_da": -0.01119010625555994,
+    "sens_vector_raw": [
+      0.0007994455557109204,
+      0.006593034043436974,
+      -0.0030696102203717768
+    ],
+    "sens_vector_scaled": [
+      0.003997227778554602,
+      0.013186068086873948,
+      -0.0030696102203717768
+    ],
+    "sens_vector_unit": [
+      0.283161994889511,
+      0.9340957161010937,
+      -0.21744994323240832
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TM_450"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.768236590194517,
+    "ng": 3.6653307763465737,
+    "dneff_dw": 0.0006930160481194658,
+    "dneff_dt": 0.007045538430114795,
+    "dneff_da": -0.0026644973142172512,
+    "dng_dw": 0.002056915128289116,
+    "dng_dt": 0.03112290277216867,
+    "dng_da": -0.007911285267899304,
+    "sens_vector_raw": [
+      0.0006930160481194658,
+      0.007045538430114795,
+      -0.0026644973142172512
+    ],
+    "sens_vector_scaled": [
+      0.003465080240597329,
+      0.01409107686022959,
+      -0.0026644973142172512
+    ],
+    "sens_vector_unit": [
+      0.2348654967296168,
+      0.9551027787057886,
+      -0.1806014411748474
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TM_500"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8004360934149577,
+    "ng": 3.751918860680595,
+    "dneff_dw": 0.0005960812158218864,
+    "dneff_dt": 0.007373578852675533,
+    "dneff_da": -0.0022928211936369403,
+    "dng_dw": 0.0014421200534952216,
+    "dng_dt": 0.02952860018228909,
+    "dng_da": -0.005550588623624453,
+    "sens_vector_raw": [
+      0.0005960812158218864,
+      0.007373578852675533,
+      -0.0022928211936369403
+    ],
+    "sens_vector_scaled": [
+      0.0029804060791094322,
+      0.014747157705351066,
+      -0.0022928211936369403
+    ],
+    "sens_vector_unit": [
+      0.19583432210678575,
+      0.9689953501545145,
+      -0.15065500212042582
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TM_550"
+  },
+  {
+    "geometry": "strip",
+    "polarization": "TM",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.8281080234550395,
+    "ng": 3.812504070872108,
+    "dneff_dw": 0.0005121014989118988,
+    "dneff_dt": 0.0076193319372259705,
+    "dneff_da": -0.0019688946127800477,
+    "dng_dw": 0.001007400228777744,
+    "dng_dt": 0.02801825833787175,
+    "dng_da": -0.003901198360386271,
+    "sens_vector_raw": [
+      0.0005121014989118988,
+      0.0076193319372259705,
+      -0.0019688946127800477
+    ],
+    "sens_vector_scaled": [
+      0.002560507494559494,
+      0.015238663874451941,
+      -0.0019688946127800477
+    ],
+    "sens_vector_unit": [
+      0.16437518037943588,
+      0.978266272770884,
+      -0.1263958054453959
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "strip_TM_600"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 150,
+    "gap_nm": 150,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.4909901047308982,
+    "ng": 1.805056710357158,
+    "dneff_dw": 0.0019158644714337037,
+    "dneff_dt": 0.0005537106112488144,
+    "dneff_da": -0.007363347337332016,
+    "dng_dw": 0.011211872028091752,
+    "dng_dt": 0.0029483238855115834,
+    "dng_da": -0.04307979023364006,
+    "sens_vector_raw": [
+      0.0019158644714337037,
+      0.0005537106112488144,
+      -0.007363347337332016
+    ],
+    "sens_vector_scaled": [
+      0.009579322357168518,
+      0.0011074212224976288,
+      -0.007363347337332016
+    ],
+    "sens_vector_unit": [
+      0.7895289789822022,
+      0.09127379938806184,
+      -0.6068880332422028
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TE_150"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 165,
+    "gap_nm": 135,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.525724136148545,
+    "ng": 1.9994289185415879,
+    "dneff_dw": 0.002744763251235538,
+    "dneff_dt": 0.0008366663884612491,
+    "dneff_da": -0.010556204116072387,
+    "dng_dw": 0.01447800742896479,
+    "dng_dt": 0.003970382072538137,
+    "dng_da": -0.055653541356463054,
+    "sens_vector_raw": [
+      0.002744763251235538,
+      0.0008366663884612491,
+      -0.010556204116072387
+    ],
+    "sens_vector_scaled": [
+      0.01372381625617769,
+      0.0016733327769224982,
+      -0.010556204116072387
+    ],
+    "sens_vector_unit": [
+      0.7889640431648617,
+      0.0961976879169291,
+      -0.606862211241062
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TE_165"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 180,
+    "gap_nm": 120,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5738052386305676,
+    "ng": 2.2334203945934115,
+    "dneff_dw": 0.0036765045824780794,
+    "dneff_dt": 0.0011700794376194867,
+    "dneff_da": -0.014122006262495268,
+    "dng_dw": 0.016433505797617976,
+    "dng_dt": 0.004646123787522494,
+    "dng_da": -0.06309481980567067,
+    "sens_vector_raw": [
+      0.0036765045824780794,
+      0.0011700794376194867,
+      -0.014122006262495268
+    ],
+    "sens_vector_scaled": [
+      0.018382522912390398,
+      0.0023401588752389735,
+      -0.014122006262495268
+    ],
+    "sens_vector_unit": [
+      0.7889970405723673,
+      0.10044205769971828,
+      -0.6061312259016958
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TE_180"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 195,
+    "gap_nm": 105,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6360391539048587,
+    "ng": 2.486644484684339,
+    "dneff_dw": 0.0046172045987079805,
+    "dneff_dt": 0.001537538690022211,
+    "dneff_da": -0.017738664172094798,
+    "dng_dw": 0.017094416137078648,
+    "dng_dt": 0.0050174153705691005,
+    "dng_da": -0.06564376595895904,
+    "sens_vector_raw": [
+      0.0046172045987079805,
+      0.001537538690022211,
+      -0.017738664172094798
+    ],
+    "sens_vector_scaled": [
+      0.0230860229935399,
+      0.003075077380044422,
+      -0.017738664172094798
+    ],
+    "sens_vector_unit": [
+      0.7885663659672154,
+      0.1050376929507594,
+      -0.605912674834288
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TE_195"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TE",
+    "width_nm": 210,
+    "gap_nm": 90,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.712127647256558,
+    "ng": 2.7414051629901888,
+    "dneff_dw": 0.0055145862770494825,
+    "dneff_dt": 0.0019092081065163469,
+    "dneff_da": -0.021194734623022238,
+    "dng_dw": 0.01665265320060052,
+    "dng_dt": 0.0051276027688972325,
+    "dng_da": -0.06397226564327596,
+    "sens_vector_raw": [
+      0.0055145862770494825,
+      0.0019092081065163469,
+      -0.021194734623022238
+    ],
+    "sens_vector_scaled": [
+      0.027572931385247412,
+      0.0038184162130326937,
+      -0.021194734623022238
+    ],
+    "sens_vector_unit": [
+      0.7880993044389256,
+      0.10913932651932214,
+      -0.6057954223579032
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TE_210"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 150,
+    "gap_nm": 150,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5235912295414982,
+    "ng": 2.145186262834194,
+    "dneff_dw": 0.0014587107301285319,
+    "dneff_dt": 0.002087327187987875,
+    "dneff_da": -0.005596863519418904,
+    "dng_dw": 0.009116837731955573,
+    "dng_dt": 0.012671963023700439,
+    "dng_da": -0.035010212884990066,
+    "sens_vector_raw": [
+      0.0014587107301285319,
+      0.002087327187987875,
+      -0.005596863519418904
+    ],
+    "sens_vector_scaled": [
+      0.007293553650642659,
+      0.00417465437597575,
+      -0.005596863519418904
+    ],
+    "sens_vector_unit": [
+      0.722351643745937,
+      0.41345667626528537,
+      -0.5543118974270768
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TM_150"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 165,
+    "gap_nm": 135,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.546384773276567,
+    "ng": 2.2865789090035094,
+    "dneff_dw": 0.0015781475492626206,
+    "dneff_dt": 0.0025350020864671197,
+    "dneff_da": -0.006063090449632491,
+    "dng_dw": 0.009705700288554508,
+    "dng_dt": 0.015146141418871495,
+    "dng_da": -0.037304560654811914,
+    "sens_vector_raw": [
+      0.0015781475492626206,
+      0.0025350020864671197,
+      -0.006063090449632491
+    ],
+    "sens_vector_scaled": [
+      0.007890737746313103,
+      0.005070004172934239,
+      -0.006063090449632491
+    ],
+    "sens_vector_unit": [
+      0.7065332145657099,
+      0.45396596127383876,
+      -0.5428864731416357
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TM_165"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 180,
+    "gap_nm": 120,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5709163605039638,
+    "ng": 2.4358308757086116,
+    "dneff_dw": 0.0016915376161877882,
+    "dneff_dt": 0.003010284453169587,
+    "dneff_da": -0.006489694482797792,
+    "dng_dw": 0.010169773030588835,
+    "dng_dt": 0.017562983547421473,
+    "dng_da": -0.039050635415218915,
+    "sens_vector_raw": [
+      0.0016915376161877882,
+      0.003010284453169587,
+      -0.006489694482797792
+    ],
+    "sens_vector_scaled": [
+      0.008457688080938941,
+      0.006020568906339174,
+      -0.006489694482797792
+    ],
+    "sens_vector_unit": [
+      0.6908071559944576,
+      0.4917481046658681,
+      -0.530065349541333
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TM_180"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 195,
+    "gap_nm": 105,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5970774363791198,
+    "ng": 2.5910522660104642,
+    "dneff_dw": 0.001795330454837929,
+    "dneff_dt": 0.003514413554042084,
+    "dneff_da": -0.006888728254655141,
+    "dng_dw": 0.010504108907416843,
+    "dng_dt": 0.01987093245681082,
+    "dng_da": -0.04033655311497997,
+    "sens_vector_raw": [
+      0.001795330454837929,
+      0.003514413554042084,
+      -0.006888728254655141
+    ],
+    "sens_vector_scaled": [
+      0.008976652274189645,
+      0.007028827108084168,
+      -0.006888728254655141
+    ],
+    "sens_vector_unit": [
+      0.6738907994023007,
+      0.5276646319860927,
+      -0.5171472001586294
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TM_195"
+  },
+  {
+    "geometry": "slot",
+    "polarization": "TM",
+    "width_nm": 210,
+    "gap_nm": 90,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6247399726988538,
+    "ng": 2.750498600836762,
+    "dneff_dw": 0.0018920459013028967,
+    "dneff_dt": 0.004037719545326668,
+    "dneff_da": -0.007267301391724046,
+    "dng_dw": 0.010739818361852383,
+    "dng_dt": 0.021952140345730675,
+    "dng_da": -0.041264724733481195,
+    "sens_vector_raw": [
+      0.0018920459013028967,
+      0.004037719545326668,
+      -0.007267301391724046
+    ],
+    "sens_vector_scaled": [
+      0.009460229506514484,
+      0.008075439090653336,
+      -0.007267301391724046
+    ],
+    "sens_vector_unit": [
+      0.6567033879986844,
+      0.5605750057921115,
+      -0.5044762859364388
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.6,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "slot_TM_210"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.4677690081308272,
+    "ng": 3.741325022549054,
+    "dneff_dw": 0.0012284065486821926,
+    "dneff_dt": 0.00229348365119586,
+    "dneff_da": -0.0021629110772694027,
+    "dng_dw": 0.0007950811834584126,
+    "dng_dt": 0.0032498052520837373,
+    "dng_da": -0.0012962129210305484,
+    "sens_vector_raw": [
+      0.0012284065486821926,
+      0.00229348365119586,
+      -0.0021629110772694027
+    ],
+    "sens_vector_scaled": [
+      0.006142032743410963,
+      0.00458696730239172,
+      -0.0021629110772694027
+    ],
+    "sens_vector_unit": [
+      0.7711168706110854,
+      0.5758822884183066,
+      -0.2715480836703897
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "rib_TE_400"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5240687105895,
+    "ng": 3.765833360202153,
+    "dneff_dw": 0.0010257955418031984,
+    "dneff_dt": 0.0025878297660669736,
+    "dneff_da": -0.001826365252662887,
+    "dng_dw": 0.00024127002486888925,
+    "dng_dt": 0.0028490515526219395,
+    "dng_da": -0.0003208245257668718,
+    "sens_vector_raw": [
+      0.0010257955418031984,
+      0.0025878297660669736,
+      -0.001826365252662887
+    ],
+    "sens_vector_scaled": [
+      0.005128977709015992,
+      0.005175659532133947,
+      -0.001826365252662887
+    ],
+    "sens_vector_unit": [
+      0.6827753140478253,
+      0.6889896511434338,
+      -0.24312780824937108
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "rib_TE_450"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.5707040750000463,
+    "ng": 3.7698243857314715,
+    "dneff_dw": 0.0008442557616894942,
+    "dneff_dt": 0.002795574921068522,
+    "dneff_da": -0.001513414973423055,
+    "dng_dw": -4.7338666153873274e-05,
+    "dng_dt": 0.002466993306120102,
+    "dng_da": 0.0001870960732541782,
+    "sens_vector_raw": [
+      0.0008442557616894942,
+      0.002795574921068522,
+      -0.001513414973423055
+    ],
+    "sens_vector_scaled": [
+      0.004221278808447471,
+      0.005591149842137044,
+      -0.001513414973423055
+    ],
+    "sens_vector_unit": [
+      0.5889613816775584,
+      0.7800885669057255,
+      -0.21115472686026435
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "rib_TE_500"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.6090273254670495,
+    "ng": 3.763589407328353,
+    "dneff_dw": 0.0006935983503634002,
+    "dneff_dt": 0.002941093144584128,
+    "dneff_da": -0.0012529091835815631,
+    "dng_dw": -0.00018335045737951638,
+    "dng_dt": 0.0021543396538689086,
+    "dng_da": 0.00042536437421647477,
+    "sens_vector_raw": [
+      0.0006935983503634002,
+      0.002941093144584128,
+      -0.0012529091835815631
+    ],
+    "sens_vector_scaled": [
+      0.003467991751817001,
+      0.005882186289168256,
+      -0.0012529091835815631
+    ],
+    "sens_vector_unit": [
+      0.4995381560885862,
+      0.8472847408362943,
+      -0.18047215452138024
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "rib_TE_550"
+  },
+  {
+    "geometry": "rib",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 2.6405489308520664,
+    "ng": 3.752819628292789,
+    "dneff_dw": 0.0005718456975761565,
+    "dneff_dt": 0.0030433281446927696,
+    "dneff_da": -0.0010364399886375608,
+    "dng_dw": -0.00023792542726988052,
+    "dng_dt": 0.0019118883368567374,
+    "dng_da": 0.0005145042485565909,
+    "sens_vector_raw": [
+      0.0005718456975761565,
+      0.0030433281446927696,
+      -0.0010364399886375608
+    ],
+    "sens_vector_scaled": [
+      0.0028592284878807828,
+      0.006086656289385539,
+      -0.0010364399886375608
+    ],
+    "sens_vector_unit": [
+      0.4202168551713634,
+      0.8945474540687484,
+      -0.15232415123351245
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "rib_TE_600"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 400,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.5857901027454784,
+    "ng": 2.3643942565704905,
+    "dneff_dw": 0.0011696577026703236,
+    "dneff_dt": 0.001423804941021234,
+    "dneff_da": -0.004494003650824863,
+    "dng_dw": 0.004498939154133375,
+    "dng_dt": 0.006152802245996125,
+    "dng_da": -0.01727034201215316,
+    "sens_vector_raw": [
+      0.0011696577026703236,
+      0.001423804941021234,
+      -0.004494003650824863
+    ],
+    "sens_vector_scaled": [
+      0.005848288513351618,
+      0.002847609882042468,
+      -0.004494003650824863
+    ],
+    "sens_vector_unit": [
+      0.739712521047588,
+      0.360175918133438,
+      -0.5684177110208272
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "swg_TE_400"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 450,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6443766224231913,
+    "ng": 2.5503224754298945,
+    "dneff_dw": 0.0011524663512095135,
+    "dneff_dt": 0.0017673468810808224,
+    "dneff_da": -0.004426109209716644,
+    "dng_dw": 0.002942967200966695,
+    "dng_dt": 0.00577797767675281,
+    "dng_da": -0.011294683223239677,
+    "sens_vector_raw": [
+      0.0011524663512095135,
+      0.0017673468810808224,
+      -0.004426109209716644
+    ],
+    "sens_vector_scaled": [
+      0.005762331756047567,
+      0.0035346937621616448,
+      -0.004426109209716644
+    ],
+    "sens_vector_unit": [
+      0.7131458344638516,
+      0.4374534891965232,
+      -0.5477750118220474
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "swg_TE_450"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 500,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.6995754043461055,
+    "ng": 2.6638585521105154,
+    "dneff_dw": 0.001045945359310374,
+    "dneff_dt": 0.002009952748946442,
+    "dneff_da": -0.004017900294446375,
+    "dng_dw": 0.0016753094641051014,
+    "dng_dt": 0.005040870850968049,
+    "dng_da": -0.006429277572940428,
+    "sens_vector_raw": [
+      0.001045945359310374,
+      0.002009952748946442,
+      -0.004017900294446375
+    ],
+    "sens_vector_scaled": [
+      0.00522972679655187,
+      0.004019905497892884,
+      -0.004017900294446375
+    ],
+    "sens_vector_unit": [
+      0.6771144927227751,
+      0.5204738943139241,
+      -0.5202142722787187
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "swg_TE_500"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 550,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7484977620639763,
+    "ng": 2.725334886179749,
+    "dneff_dw": 0.0009089644084441462,
+    "dneff_dt": 0.002169106178851521,
+    "dneff_da": -0.0034916744932905752,
+    "dng_dw": 0.0008535626391692919,
+    "dng_dt": 0.004324556144904568,
+    "dng_da": -0.0032753184079281628,
+    "sens_vector_raw": [
+      0.0009089644084441462,
+      0.002169106178851521,
+      -0.0034916744932905752
+    ],
+    "sens_vector_scaled": [
+      0.004544822042220731,
+      0.004338212357703042,
+      -0.0034916744932905752
+    ],
+    "sens_vector_unit": [
+      0.6322794454247814,
+      0.6035357332326091,
+      -0.48576467718917926
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "swg_TE_550"
+  },
+  {
+    "geometry": "swg",
+    "polarization": "TE",
+    "width_nm": 600,
+    "gap_nm": null,
+    "thickness_nm": 220.0,
+    "angle_deg": 0.0,
+    "wavelength_um": 1.55,
+    "neff": 1.7905359343728835,
+    "ng": 2.754824816122331,
+    "dneff_dw": 0.0007742821128866373,
+    "dneff_dt": 0.002272921637721248,
+    "dneff_da": -0.002973188350117839,
+    "dng_dw": 0.0003725543352866012,
+    "dng_dt": 0.00374693574086149,
+    "dng_da": -0.0014289354049685787,
+    "sens_vector_raw": [
+      0.0007742821128866373,
+      0.002272921637721248,
+      -0.002973188350117839
+    ],
+    "sens_vector_scaled": [
+      0.0038714105644331864,
+      0.004545843275442496,
+      -0.002973188350117839
+    ],
+    "sens_vector_unit": [
+      0.5803988062170108,
+      0.6815092241973926,
+      -0.4457380431102295
+    ],
+    "sim_settings": {
+      "fd_steps": {
+        "dw_nm": 5.0,
+        "dt_nm": 2.0,
+        "da_deg": 1.0
+      },
+      "solver": "femwell 0.1.12 (FEM, order 2, conforming mesh)",
+      "mesh": "r12",
+      "core_resolution_um": 0.012,
+      "distance_um": 0.3,
+      "max_element_um": 0.2,
+      "half_x": 1.4,
+      "half_y": 1.2
+    },
+    "convergence_status": "femwell r12; mesh check in results_femwell/data/meshcheck_r12_vs_r8.json",
+    "validation_status": "femwell; step-size check in results_femwell/data/step_check.csv",
+    "id": "swg_TE_600"
+  }
+]

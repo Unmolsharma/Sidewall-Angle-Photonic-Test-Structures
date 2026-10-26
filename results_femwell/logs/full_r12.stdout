@@ -1,0 +1,58 @@
+[2026-10-25 23:21:38] free RAM 12.8 GB, ~2.0 GB per worker -> 4 workers
+[2026-10-25 23:21:38] 1026 tasks, 12 cached, 1014 to run, 4 workers
+[2026-10-25 23:22:21] 25 solved, 986 queued, 3 in flight, 0.7 min elapsed, ~28 min left, free RAM 11.0 GB
+[2026-10-25 23:23:02] 50 solved, 962 queued, 2 in flight, 1.4 min elapsed, ~27 min left, free RAM 11.3 GB
+[2026-10-25 23:23:50] 75 solved, 936 queued, 3 in flight, 2.2 min elapsed, ~27 min left, free RAM 11.2 GB
+[2026-10-25 23:24:38] 100 solved, 911 queued, 3 in flight, 3.0 min elapsed, ~27 min left, free RAM 11.4 GB
+[2026-10-25 23:25:23] 125 solved, 886 queued, 3 in flight, 3.8 min elapsed, ~27 min left, free RAM 11.2 GB
+[2026-10-25 23:26:09] 150 solved, 861 queued, 3 in flight, 4.5 min elapsed, ~26 min left, free RAM 11.3 GB
+[2026-10-25 23:26:57] 175 solved, 836 queued, 3 in flight, 5.3 min elapsed, ~25 min left, free RAM 11.1 GB
+[2026-10-25 23:27:38] 200 solved, 811 queued, 3 in flight, 6.0 min elapsed, ~24 min left, free RAM 11.2 GB
+[2026-10-25 23:28:12] note slot|TE|165|None|oxide|r12|w|-10.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:28:21] 225 solved, 786 queued, 3 in flight, 6.7 min elapsed, ~23 min left, free RAM 11.1 GB
+[2026-10-25 23:28:23] note slot|TE|165|None|oxide|r12|a|+2.0000: ['wl 1.555: fallback to 6 modes without guess']
+[2026-10-25 23:29:05] note slot|TE|195|None|oxide|r12|nom|+0.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:07] note slot|TE|195|None|oxide|r12|w|-2.5000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:14] note slot|TE|195|None|oxide|r12|w|-5.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:23] note slot|TE|195|None|oxide|r12|w|-10.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:29] note slot|TE|195|None|oxide|r12|t|+1.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:32] note slot|TE|195|None|oxide|r12|t|-1.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:32] 250 solved, 761 queued, 3 in flight, 7.9 min elapsed, ~24 min left, free RAM 10.8 GB
+[2026-10-25 23:29:39] note slot|TE|195|None|oxide|r12|t|+2.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:47] note slot|TE|195|None|oxide|r12|t|+4.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess']
+[2026-10-25 23:29:48] note slot|TE|195|None|oxide|r12|t|-2.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:29:55] note slot|TE|195|None|oxide|r12|t|-4.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:30:00] note slot|TE|195|None|oxide|r12|a|-0.5000: ['wl 1.555: fallback to 6 modes without guess']
+[2026-10-25 23:30:03] note slot|TE|195|None|oxide|r12|a|+0.5000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:30:12] note slot|TE|195|None|oxide|r12|a|+1.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:30:23] note slot|TE|195|None|oxide|r12|a|+2.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:30:28] note slot|TE|210|None|oxide|r12|w|-2.5000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess']
+[2026-10-25 23:30:40] note slot|TE|210|None|oxide|r12|w|-5.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:30:46] note slot|TE|210|None|oxide|r12|w|-10.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:30:54] 275 solved, 736 queued, 3 in flight, 9.3 min elapsed, ~25 min left, free RAM 10.9 GB
+[2026-10-25 23:30:55] note slot|TE|210|None|oxide|r12|a|+0.5000: ['wl 1.555: fallback to 6 modes without guess']
+[2026-10-25 23:31:10] note slot|TE|210|None|oxide|r12|a|+1.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:31:17] note slot|TE|210|None|oxide|r12|a|+2.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-10-25 23:31:40] 300 solved, 711 queued, 3 in flight, 10.0 min elapsed, ~24 min left, free RAM 11.4 GB
+[2026-10-25 23:32:19] 325 solved, 686 queued, 3 in flight, 10.7 min elapsed, ~23 min left, free RAM 12.1 GB
+[2026-10-25 23:32:24] note slot|TM|180|None|oxide|r12|w|-10.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess']
+[2026-10-25 23:33:00] 350 solved, 661 queued, 3 in flight, 11.4 min elapsed, ~21 min left, free RAM 11.7 GB
+[2026-10-25 23:34:03] 375 solved, 636 queued, 3 in flight, 12.4 min elapsed, ~21 min left, free RAM 9.7 GB
+[2026-10-25 23:36:14] 400 solved, 611 queued, 3 in flight, 14.6 min elapsed, ~22 min left, free RAM 8.8 GB
+[2026-10-25 23:38:44] 425 solved, 586 queued, 3 in flight, 17.1 min elapsed, ~24 min left, free RAM 8.9 GB
+[2026-10-25 23:41:02] 450 solved, 562 queued, 2 in flight, 19.4 min elapsed, ~24 min left, free RAM 6.8 GB
+[2026-10-25 23:42:37] 475 solved, 536 queued, 3 in flight, 21.0 min elapsed, ~24 min left, free RAM 10.9 GB
+[2026-10-25 23:43:15] 500 solved, 511 queued, 3 in flight, 21.6 min elapsed, ~22 min left, free RAM 11.9 GB
+[2026-10-25 23:44:02] 525 solved, 486 queued, 3 in flight, 22.4 min elapsed, ~21 min left, free RAM 11.1 GB
+[2026-10-25 23:44:52] 550 solved, 461 queued, 3 in flight, 23.2 min elapsed, ~19 min left, free RAM 11.0 GB
+[2026-10-25 23:46:26] 575 solved, 436 queued, 3 in flight, 24.8 min elapsed, ~19 min left, free RAM 10.6 GB
+[2026-10-25 23:48:18] 600 solved, 411 queued, 3 in flight, 26.7 min elapsed, ~18 min left, free RAM 9.2 GB
+[2026-10-25 23:50:21] 625 solved, 386 queued, 3 in flight, 28.7 min elapsed, ~18 min left, free RAM 8.2 GB
+[2026-10-25 23:52:16] 650 solved, 361 queued, 3 in flight, 30.6 min elapsed, ~17 min left, free RAM 10.2 GB
+[2026-10-25 23:54:17] 675 solved, 336 queued, 3 in flight, 32.7 min elapsed, ~16 min left, free RAM 9.6 GB
+[2026-10-25 23:56:18] 700 solved, 311 queued, 3 in flight, 34.7 min elapsed, ~15 min left, free RAM 7.5 GB
+[2026-10-25 23:58:34] 725 solved, 286 queued, 3 in flight, 36.9 min elapsed, ~15 min left, free RAM 8.9 GB
+[2026-10-26 00:00:47] 750 solved, 261 queued, 3 in flight, 39.2 min elapsed, ~14 min left, free RAM 9.1 GB
+[2026-10-26 00:03:06] 775 solved, 237 queued, 2 in flight, 41.5 min elapsed, ~13 min left, free RAM 7.8 GB
+[2026-10-26 00:05:26] 800 solved, 211 queued, 3 in flight, 43.8 min elapsed, ~12 min left, free RAM 8.0 GB
+[2026-10-26 00:07:58] 825 solved, 186 queued, 3 in flight, 46.3 min elapsed, ~10 min left, free RAM 8.3 GB

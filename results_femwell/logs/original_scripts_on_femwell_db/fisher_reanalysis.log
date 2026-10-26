@@ -1,0 +1,41 @@
+
+=== (a) TE ring + TE ring (20 combos, 8 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=3.005e+11  worst=9.686e+11
+  lambda_min:   best=1.103e-05  worst=3.974e-06
+  det(F):       best=2.496e+06  worst=3.558e+04
+  trace(F^-1):  best=9.069e+04  worst=2.517e+05
+  top-3 by cond:      ['stTE450+stTE500', 'stTE500+stTE450', 'stTE550+stTE600']
+  top-3 by lambda_min:['stTE450+stTE500', 'stTE500+stTE450', 'stTE550+stTE400']
+  top-3 by det:       ['stTE550+stTE400', 'stTE400+stTE550', 'stTE400+stTE600']
+  top-3 by trace_inv: ['stTE450+stTE500', 'stTE500+stTE450', 'stTE400+stTE550']
+  Spearman(cond, lambda_min) = +0.776
+  Spearman(cond, det)        = -0.510
+  Spearman(cond, trace_inv)  = +0.762
+  Spearman(det, trace_inv)   = +0.035
+  Spearman(lambda_min, trace_inv) = +0.986
+  [8 exactly-singular combos excluded: ['stTE400+stTE450', 'stTE450+stTE400', 'stTE450+stTE600', 'stTE500+stTE550', 'stTE500+stTE600']...]
+
+=== (b) TE ring + TM ring (25 combos, 5 exactly rank-deficient excluded from ranking) ===
+  cond(F):      best=5.800e+10  worst=9.752e+11
+  lambda_min:   best=4.339e-05  worst=2.140e-06
+  det(F):       best=1.631e+08  worst=1.555e+05
+  trace(F^-1):  best=2.305e+04  worst=4.672e+05
+  top-3 by cond:      ['stTE550+stTM600', 'stTE600+stTM600', 'stTE500+stTM600']
+  top-3 by lambda_min:['stTE400+stTM600', 'stTE500+stTM600', 'stTE550+stTM600']
+  top-3 by det:       ['stTE400+stTM600', 'stTE450+stTM600', 'stTE400+stTM450']
+  top-3 by trace_inv: ['stTE400+stTM600', 'stTE500+stTM600', 'stTE550+stTM600']
+  Spearman(cond, lambda_min) = +0.941
+  Spearman(cond, det)        = +0.583
+  Spearman(cond, trace_inv)  = +0.941
+  Spearman(det, trace_inv)   = +0.792
+  Spearman(lambda_min, trace_inv) = +1.000
+  [5 exactly-singular combos excluded: ['stTE450+stTM500', 'stTE450+stTM550', 'stTE500+stTM500', 'stTE500+stTM550', 'stTE550+stTM500']]
+
+=== (c) TE ring + MZI (25 combos, 25 exactly rank-deficient excluded from ranking) ===
+
+--- stderr ---
+Traceback (most recent call last):
+  File "C:\Users\unmol\Photonics ML Paper\src\fisher_reanalysis.py", line 136, in <module>
+    print(f"  cond(F):      best={min(conds):.3e}  worst={max(conds):.3e}")
+                                  ^^^^^^^^^^
+ValueError: min() iterable argument is empty

@@ -1,0 +1,5 @@
+[2026-10-25 23:09:46] free RAM 12.2 GB, ~3.5 GB per worker -> 2 workers
+[2026-10-25 23:09:46] 51 tasks, 0 cached, 51 to run, 2 workers
+[2026-10-25 23:14:12] 25 solved, 25 queued, 1 in flight, 4.4 min elapsed, ~4 min left, free RAM 9.2 GB
+[2026-10-25 23:20:17] 50 solved, 0 queued, 1 in flight, 10.5 min elapsed, ~0 min left, free RAM 11.4 GB
+[2026-10-25 23:20:21] finished: 51 solved this run, 0 failed
