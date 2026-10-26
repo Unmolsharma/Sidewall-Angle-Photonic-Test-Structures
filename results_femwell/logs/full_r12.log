@@ -56,3 +56,15 @@
 [2026-10-26 00:03:06] 775 solved, 237 queued, 2 in flight, 41.5 min elapsed, ~13 min left, free RAM 7.8 GB
 [2026-10-26 00:05:26] 800 solved, 211 queued, 3 in flight, 43.8 min elapsed, ~12 min left, free RAM 8.0 GB
 [2026-10-26 00:07:58] 825 solved, 186 queued, 3 in flight, 46.3 min elapsed, ~10 min left, free RAM 8.3 GB
+[2026-10-26 11:21:51] free RAM 9.4 GB, ~2.0 GB per worker -> 2 workers
+[2026-10-26 11:21:51] 1026 tasks, 857 cached, 169 to run, 2 workers
+[2026-10-26 11:21:51] on battery (97%): pausing new solves, re-checking every 5 min (0 in flight finish meanwhile)
+[2026-10-26 11:25:04] free RAM 9.0 GB, ~2.0 GB per worker -> 2 workers
+[2026-10-26 11:25:04] 1026 tasks, 857 cached, 169 to run, 2 workers
+[2026-10-26 12:02:32] 25 solved, 143 queued, 1 in flight, 37.5 min elapsed, ~214 min left, free RAM 8.8 GB
+[2026-10-26 12:39:58] 50 solved, 118 queued, 1 in flight, 74.9 min elapsed, ~177 min left, free RAM 9.3 GB
+[2026-10-26 13:35:10] 75 solved, 93 queued, 1 in flight, 130.1 min elapsed, ~161 min left, free RAM 8.3 GB
+[2026-10-26 14:03:11] 100 solved, 68 queued, 1 in flight, 158.1 min elapsed, ~108 min left, free RAM 8.7 GB
+[2026-10-26 14:51:33] 125 solved, 43 queued, 1 in flight, 206.5 min elapsed, ~71 min left, free RAM 6.8 GB
+[2026-10-26 15:21:21] 150 solved, 18 queued, 1 in flight, 236.3 min elapsed, ~28 min left, free RAM 9.4 GB
+[2026-10-26 15:45:57] finished: 169 solved this run, 0 failed
