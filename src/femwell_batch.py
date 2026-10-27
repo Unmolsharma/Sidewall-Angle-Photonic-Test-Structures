@@ -54,7 +54,7 @@ from femwell.mesh import mesh_from_OrderedDict
 N_SI, N_OX, N_AIR, WL0 = 3.48, 1.44, 1.0, 1.55
 SLAB0, RAIL0, GAP0, GAP_MIN, DUTY = 0.09, 0.180, 0.120, 0.02, 0.5
 N_SWG = float(np.sqrt(DUTY * N_SI ** 2 + (1 - DUTY) * N_OX ** 2))
-H = dict(w=5.0, t=2.0, a=1.0)
+H = dict(w=5.0, t=2.0, a=1.0, s=2.0, nsi=0.002, nox=0.002)  # s: rib slab (nm, rib top fixed); nsi/nox: index
 FACTORS = (0.5, 1.0, 2.0)
 DLAM = 0.005
 WLS = (WL0, WL0 + DLAM, WL0 - DLAM)
@@ -92,7 +92,7 @@ def shapes(geom, w, t, a, slab):
     raise ValueError(geom)
 
 
-def build(geom, w, t, a, slab, clad, mesh):
+def build(geom, w, t, a, slab, clad, mesh, n_si=N_SI, n_ox=N_OX):
     hx, hy = (1.6, 1.2) if geom == 'slot' else (1.4, 1.2)
     dom = box(-hx, -hy, hx, hy)
     cores = [s.intersection(dom) for s in shapes(geom, w, t, a, slab)]
@@ -108,11 +108,11 @@ def build(geom, w, t, a, slab, clad, mesh):
         default_resolution_max=rmax))
     basis0 = Basis(m, ElementTriP0())
     eps = basis0.zeros()
-    n_core = N_SWG if geom == 'swg' else N_SI
+    n_core = float(np.sqrt(DUTY * n_si ** 2 + (1 - DUTY) * n_ox ** 2)) if geom == 'swg' else n_si
     for i in range(len(cores)):
         eps[basis0.get_dofs(elements=f'core{i}')] = n_core ** 2
-    eps[basis0.get_dofs(elements='box')] = N_OX ** 2
-    eps[basis0.get_dofs(elements='clad')] = (N_OX if clad == 'oxide' else N_AIR) ** 2
+    eps[basis0.get_dofs(elements='box')] = n_ox ** 2
+    eps[basis0.get_dofs(elements='clad')] = (n_ox if clad == 'oxide' else N_AIR) ** 2
     return basis0, eps
 
 
@@ -133,7 +133,14 @@ def solve(task):
     elif p == 'a':
         a += d
     slab = (slab_nm if slab_nm is not None else SLAB0 * 1000) / 1000
-    basis0, eps = build(geom, w, t, a, slab, clad, mesh)
+    n_si, n_ox = N_SI, N_OX
+    if p == 's':        # rib slab thickness, rib top held fixed
+        slab += d / 1000
+    elif p == 'nsi':    # silicon index (oxide-clad: one oxide index for BOX and top cladding)
+        n_si += d
+    elif p == 'nox':
+        n_ox += d
+    basis0, eps = build(geom, w, t, a, slab, clad, mesh, n_si, n_ox)
     ns, tes, notes = [], [], []
     for wl in WLS:
         m = pick(compute_modes(basis0, eps, wavelength=wl, num_modes=2, order=2, n_guess=guess), pol)
@@ -153,7 +160,7 @@ def key_of(task):
 
 def unit_tasks(geom, pol, W, slab_nm, clad, mesh, guess, params='wta'):
     out = [(geom, pol, W, slab_nm, clad, mesh, 'nom', 0.0, guess)]
-    for p in params:
+    for p in ([params] if isinstance(params, str) and params in H else params):
         for f in FACTORS:
             for s in (1, -1):
                 out.append((geom, pol, W, slab_nm, clad, mesh, p, s * f * H[p], guess))
