@@ -1,0 +1,8 @@
+[2026-10-26 20:46:01] free RAM 9.7 GB, ~2.0 GB per worker -> 2 workers
+[2026-10-26 20:46:01] 5 tasks, 0 cached, 5 to run, 2 workers
+[2026-10-26 20:50:29] finished: 5 solved this run, 0 failed
+[2026-10-26 20:50:29] timing strip|TE|500|None|oxide|r12|nsi|+0.0020: 29.4 s (3 wavelengths, 4086 elements), n_eff 2.450849
+[2026-10-26 20:50:29] timing strip|TE|500|None|oxide|r12|nox|+0.0020: 29.3 s (3 wavelengths, 4086 elements), n_eff 2.449187
+[2026-10-26 20:50:29] timing rib|TE|500|90|oxide|r12|nsi|+0.0020: 129.7 s (3 wavelengths, 12800 elements), n_eff 2.572719
+[2026-10-26 20:50:29] timing rib|TE|500|90|oxide|r12|nox|+0.0020: 130.5 s (3 wavelengths, 12800 elements), n_eff 2.571071
+[2026-10-26 20:50:29] timing rib|TE|500|90|oxide|r12|s|+2.0000: 103.3 s (3 wavelengths, 12842 elements), n_eff 2.574310
