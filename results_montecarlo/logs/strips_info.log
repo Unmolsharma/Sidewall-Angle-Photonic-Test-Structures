@@ -1,0 +1,54 @@
+perturbation +-0.1%:
+  strip TE 5 widths                    nominal 1.33  median 0.279  5-95% 0.149..0.744
+  best strips-only (C, 8)              nominal 0.614  median 0.265  5-95% 0.141..0.512
+  strip TE 5 + rib70 500 (C)           nominal 1.33  median 0.279  5-95% 0.149..0.744
+  strip TE 5 + rib70 500 + 300 (C)     nominal 0.4  median 0.233  5-95% 0.14..0.364
+  strip TE 5 + rib70 500 + 300 (E, realistic) nominal 0.414  median 0.28  5-95% 0.173..0.411
+  best one-etch set (C, none, 8)       nominal 0.145  median 0.135  5-95% 0.106..0.151
+  best one-etch set (D, realistic, 8)  nominal 0.167  median 0.162  5-95% 0.136..0.199
+perturbation +-0.3%:
+  strip TE 5 widths                    nominal 1.33  median 0.093  5-95% 0.0491..0.238
+  best strips-only (C, 8)              nominal 0.614  median 0.0943  5-95% 0.0475..0.183
+  strip TE 5 + rib70 500 (C)           nominal 1.33  median 0.093  5-95% 0.0491..0.238
+  strip TE 5 + rib70 500 + 300 (C)     nominal 0.4  median 0.0906  5-95% 0.0488..0.209
+  strip TE 5 + rib70 500 + 300 (E, realistic) nominal 0.414  median 0.12  5-95% 0.0627..0.27
+  best one-etch set (C, none, 8)       nominal 0.145  median 0.0927  5-95% 0.0477..0.145
+  best one-etch set (D, realistic, 8)  nominal 0.167  median 0.135  5-95% 0.0871..0.269
+perturbation +-1.0%:
+  strip TE 5 widths                    nominal 1.33  median 0.0275  5-95% 0.0148..0.073
+  best strips-only (C, 8)              nominal 0.614  median 0.0285  5-95% 0.0142..0.0573
+  strip TE 5 + rib70 500 (C)           nominal 1.33  median 0.0275  5-95% 0.0148..0.073
+  strip TE 5 + rib70 500 + 300 (C)     nominal 0.4  median 0.0274  5-95% 0.0148..0.0718
+  strip TE 5 + rib70 500 + 300 (E, realistic) nominal 0.414  median 0.042  5-95% 0.0212..0.112
+  best one-etch set (C, none, 8)       nominal 0.145  median 0.0353  5-95% 0.0151..0.0962
+  best one-etch set (D, realistic, 8)  nominal 0.167  median 0.0703  5-95% 0.033..0.218
+perturbation +-3.0%:
+  strip TE 5 widths                    nominal 1.33  median 0.00906  5-95% 0.00494..0.0245
+  best strips-only (C, 8)              nominal 0.614  median 0.00944  5-95% 0.00477..0.0191
+  strip TE 5 + rib70 500 (C)           nominal 1.33  median 0.00906  5-95% 0.00494..0.0245
+  strip TE 5 + rib70 500 + 300 (C)     nominal 0.4  median 0.00905  5-95% 0.00494..0.0244
+  strip TE 5 + rib70 500 + 300 (E, realistic) nominal 0.414  median 0.0169  5-95% 0.00706..0.0518
+  best one-etch set (C, none, 8)       nominal 0.145  median 0.012  5-95% 0.00504..0.0394
+  best one-etch set (D, realistic, 8)  nominal 0.167  median 0.0276  5-95% 0.0123..0.106
+R - R_exact vs step (h/2, h, 2h):
+  strip_TE_400   neff: +2.9e-04 +1.8e-04 -2.7e-04  ng: +1.3e-03 +1.5e-03 +1.9e-03
+  strip_TE_450   neff: -1.4e-05 -1.9e-05 -2.1e-05  ng: +3.7e-05 +9.0e-05 +3.9e-04
+  strip_TE_500   neff: -1.1e-04 +2.4e-04 +6.2e-05  ng: -4.0e-04 +5.1e-04 -3.9e-05
+  strip_TE_550   neff: +4.3e-04 +2.9e-04 +7.2e-05  ng: +1.1e-03 +5.8e-04 -1.7e-04
+  strip_TE_600   neff: -7.4e-06 -7.2e-06 +1.8e-04  ng: +1.7e-04 -3.1e-05 +5.8e-05
+  strip_TM_400   neff: +1.3e-03 +9.4e-04 +3.1e-06  ng: +1.7e-03 +1.7e-03 +1.8e-03
+  strip_TM_450   neff: +2.3e-04 -1.3e-05 +1.2e-03  ng: +1.1e-03 +1.3e-03 +2.2e-03
+  strip_TM_500   neff: -3.1e-04 +1.3e-03 +9.3e-04  ng: +1.1e-03 +1.7e-03 +2.6e-03
+  strip_TM_550   neff: +2.8e-03 +1.8e-03 +1.3e-03  ng: +1.7e-03 +2.4e-03 +5.4e-03
+  strip_TM_600   neff: +1.4e-03 +1.3e-03 +5.3e-03  ng: +3.2e-03 +8.5e-03 +2.9e-02
+R - R_exact (strips, h): {'strip_TE_400': {'neff': '+1.8e-04', 'ng': '+1.5e-03'}, 'strip_TE_450': {'neff': '-1.9e-05', 'ng': '+9.0e-05'}, 'strip_TE_500': {'neff': '+2.4e-04', 'ng': '+5.1e-04'}, 'strip_TE_550': {'neff': '+2.9e-04', 'ng': '+5.8e-04'}, 'strip_TE_600': {'neff': '-7.2e-06', 'ng': '-3.1e-05'}, 'strip_TM_400': {'neff': '+9.4e-04', 'ng': '+1.7e-03'}, 'strip_TM_450': {'neff': '-1.3e-05', 'ng': '+1.3e-03'}, 'strip_TM_500': {'neff': '+1.3e-03', 'ng': '+1.7e-03'}, 'strip_TM_550': {'neff': '+1.8e-03', 'ng': '+2.4e-03'}, 'strip_TM_600': {'neff': '+1.3e-03', 'ng': '+8.5e-03'}}
+nominal: {'strip TE 5 widths': 1.3310267874456307, 'best strips-only (C, 8)': 0.6135201593226559, 'strip TE 5 + rib70 500 (C)': 1.3310267874448378, 'strip TE 5 + rib70 500 + 300 (C)': 0.39972786045306363, 'strip TE 5 + rib70 500 + 300 (E, realistic)': 0.41388627468144934, 'best one-etch set (C, none, 8)': 0.14483594067449135, 'best one-etch set (D, realistic, 8)': 0.16703864453321088}
+exact symmetry: {'strip TE 5 widths': inf, 'best strips-only (C, 8)': inf, 'strip TE 5 + rib70 500 (C)': inf, 'strip TE 5 + rib70 500 + 300 (C)': 0.4191647919649886, 'strip TE 5 + rib70 500 + 300 (E, realistic)': 0.4283155983481892, 'best one-etch set (C, none, 8)': 0.14660174660228303, 'best one-etch set (D, realistic, 8)': 0.16859878015817917}
+strips-only subsets: {'all': 0.6135201593226559, 'TE structures only': 2.0908190814848835, 'TM structures only': 0.7417253877734464, 'n_eff + MZI phase only (no n_g)': 0.6136211120226223, 'n_g only': 45.395125398702916}
+strip TE 5 widths {'strip TE neff': '0.13', 'strip TE ng': '0.00', 'strip TE phase': '0.87'}
+best strips-only (C, 8) {'strip TE neff': '0.04', 'strip TE ng': '0.00', 'strip TE phase': '0.27', 'strip TM neff': '0.09', 'strip TM ng': '0.00', 'strip TM phase': '0.61'}
+strip TE 5 + rib70 500 (C) {'rib neff': '0.00', 'rib ng': '0.00', 'rib phase': '0.00', 'strip TE neff': '0.13', 'strip TE ng': '0.00', 'strip TE phase': '0.87'}
+strip TE 5 + rib70 500 + 300 (C) {'rib neff': '0.00', 'rib ng': '0.91', 'rib phase': '0.00', 'strip TE neff': '0.01', 'strip TE ng': '0.00', 'strip TE phase': '0.08'}
+strip TE 5 + rib70 500 + 300 (E, realistic) {'prior prior': '0.02', 'rib neff': '0.00', 'rib ng': '0.87', 'rib phase': '0.00', 'strip TE neff': '0.01', 'strip TE ng': '0.01', 'strip TE phase': '0.09'}
+best one-etch set (C, none, 8) {'rib neff': '0.11', 'rib ng': '0.09', 'rib phase': '0.75', 'strip TE neff': '0.00', 'strip TE ng': '0.00', 'strip TE phase': '0.02', 'strip TM neff': '0.00', 'strip TM ng': '0.00', 'strip TM phase': '0.02'}
+best one-etch set (D, realistic, 8) {'prior prior': '0.09', 'rib neff': '0.08', 'rib ng': '0.11', 'rib phase': '0.54', 'strip TE neff': '0.02', 'strip TE ng': '0.00', 'strip TE phase': '0.11', 'strip TM neff': '0.00', 'strip TM ng': '0.05', 'strip TM phase': '0.00'}
