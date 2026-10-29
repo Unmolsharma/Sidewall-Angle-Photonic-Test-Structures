@@ -1,0 +1,10 @@
+[2026-10-27 14:06:38] free RAM 9.7 GB, ~2.0 GB per worker -> 2 workers
+[2026-10-27 14:06:38] 144 tasks, 0 cached, 144 to run, 2 workers
+[2026-10-27 17:19:43] on battery (5%, floor 25%): pausing new solves, re-checking every 5 min (1 in flight finish meanwhile)
+[2026-10-27 17:25:00] power OK again (4%), resuming
+[2026-10-27 17:25:39] 25 solved, 118 queued, 1 in flight, 199.0 min elapsed, ~939 min left, free RAM 6.8 GB
+[2026-10-27 17:50:50] 50 solved, 93 queued, 1 in flight, 224.2 min elapsed, ~417 min left, free RAM 7.0 GB
+[2026-10-27 18:04:01] 75 solved, 68 queued, 1 in flight, 237.4 min elapsed, ~215 min left, free RAM 4.7 GB
+[2026-10-27 18:17:13] 100 solved, 43 queued, 1 in flight, 250.6 min elapsed, ~108 min left, free RAM 7.8 GB
+[2026-10-27 18:37:27] 125 solved, 18 queued, 1 in flight, 270.8 min elapsed, ~39 min left, free RAM 9.7 GB
+[2026-10-27 20:56:05] finished: 144 solved this run, 0 failed
