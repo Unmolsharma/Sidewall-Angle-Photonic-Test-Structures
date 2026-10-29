@@ -1,0 +1,20 @@
+[2026-10-28 20:14:54] free RAM 8.5 GB, ~2.0 GB per worker -> 2 workers
+[2026-10-28 20:14:54] 448 tasks, 0 cached, 448 to run, 2 workers
+[2026-10-28 20:20:59] 25 solved, 422 queued, 1 in flight, 6.1 min elapsed, ~103 min left, free RAM 7.7 GB
+[2026-10-28 20:26:12] 50 solved, 397 queued, 1 in flight, 11.3 min elapsed, ~90 min left, free RAM 8.4 GB
+[2026-10-28 20:30:20] 75 solved, 372 queued, 1 in flight, 15.4 min elapsed, ~77 min left, free RAM 8.4 GB
+[2026-10-28 20:34:43] 100 solved, 347 queued, 1 in flight, 19.8 min elapsed, ~69 min left, free RAM 8.2 GB
+[2026-10-28 20:46:21] 125 solved, 322 queued, 1 in flight, 31.5 min elapsed, ~81 min left, free RAM 8.9 GB
+[2026-10-28 20:58:49] 150 solved, 297 queued, 1 in flight, 43.9 min elapsed, ~87 min left, free RAM 8.0 GB
+[2026-10-28 21:11:47] 175 solved, 272 queued, 1 in flight, 56.9 min elapsed, ~88 min left, free RAM 9.4 GB
+[2026-10-28 21:24:54] 200 solved, 247 queued, 1 in flight, 70.0 min elapsed, ~86 min left, free RAM 10.2 GB
+[2026-10-28 21:38:15] 225 solved, 222 queued, 1 in flight, 83.4 min elapsed, ~82 min left, free RAM 7.6 GB
+[2026-10-28 21:52:09] 250 solved, 197 queued, 1 in flight, 97.2 min elapsed, ~77 min left, free RAM 7.7 GB
+[2026-10-28 21:58:05] 275 solved, 172 queued, 1 in flight, 103.2 min elapsed, ~65 min left, free RAM 9.4 GB
+[2026-10-28 22:01:59] 300 solved, 147 queued, 1 in flight, 107.1 min elapsed, ~52 min left, free RAM 9.3 GB
+[2026-10-28 22:06:23] 325 solved, 122 queued, 1 in flight, 111.5 min elapsed, ~42 min left, free RAM 8.0 GB
+[2026-10-28 22:14:28] 350 solved, 97 queued, 1 in flight, 119.6 min elapsed, ~33 min left, free RAM 7.2 GB
+[2026-10-28 22:24:43] 375 solved, 72 queued, 1 in flight, 129.8 min elapsed, ~25 min left, free RAM 6.3 GB
+[2026-10-28 22:36:00] 400 solved, 47 queued, 1 in flight, 141.1 min elapsed, ~17 min left, free RAM 6.2 GB
+[2026-10-28 22:47:27] 425 solved, 22 queued, 1 in flight, 152.6 min elapsed, ~8 min left, free RAM 7.1 GB
+[2026-10-28 22:57:55] finished: 448 solved this run, 0 failed
