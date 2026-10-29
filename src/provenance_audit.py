@@ -13,8 +13,10 @@ Method
   accepting |value|, value x 100 for percentages and value - 1 or 1 - value as a relative change).
   * HEADLINE_NUMBERS.md: the pool of a table row is the files cited in that row (backticked paths);
     a row without its own citation uses the paths cited in the section text above the table.
-  * SUMMARY.md: the pool is every data/log/generated-table file (.json .csv .log .md) in that results
-    folder, excluding caches and the summaries themselves, plus files cited with ../ paths.
+  * SUMMARY.md: the pool of a section is the files cited in it and in its parent sections; a section
+    with none uses every data/ and logs/ folder of that results folder.
+  Files holding more than MAX_VALUES values are left out, and the chance-match rate of the pools (share
+  of random 3-digit numbers that would 'trace') is reported with the results.
   A match by coincidence is possible, most of all in large pools, so TRACED means "a matching value
   exists in the pool", not proof; UNTRACED means no file in the pool holds it (derived ratios, values
   quoted from other folders, hand calculations, typos).
@@ -211,8 +213,11 @@ def audit_summary(path):
     text = open(path, encoding='utf-8').read()
     folder = os.path.dirname(path)
     rows, rates = [], []
+    stack = []                                # (heading level, cited paths) of the enclosing sections
     for start, lines in sections(text):
-        cited = resolve([q for line in lines for q in PATH.findall(line)], folder)
+        level = len(lines[0]) - len(lines[0].lstrip('#')) if lines[0].startswith('#') else 0
+        stack = [(lv, q) for lv, q in stack if lv < level] + [(level, [q for line in lines for q in PATH.findall(line)])]
+        cited = resolve([q for _, qs in stack for q in qs], folder)   # a subsection inherits its parents' citations
         pool = cited or folder_pool(folder)
         toks = [(start + k, line, t, pc) for k, line in enumerate(lines) for t, pc in tokens(line)]
         if toks:

@@ -3,8 +3,8 @@
   "headline": 0.050797546012269934,
   "results_etchdepth_femwell/SUMMARY.md": 0.37286713286713286,
   "results_femwell/SUMMARY.md": 0.1998802395209581,
-  "results_montecarlo/SUMMARY.md": 0.45652733118971056,
-  "results_priors_search/SUMMARY.md": 0.30546125461254614
+  "results_montecarlo/SUMMARY.md": 0.21813504823151125,
+  "results_priors_search/SUMMARY.md": 0.27933579335793357
  },
  "headline": [
   {
@@ -6317,14 +6317,14 @@
    {
     "line": 19,
     "number": "0.13",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- Rib 300 nm, 50 nm slab: all 25 solves done. Derivatives agree with the remeshed ones within 0.13%,"
    },
    {
     "line": 20,
     "number": "0.367",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "and the two-width number goes 0.367 → 0.372° (+1.3%)."
    },
@@ -6338,14 +6338,14 @@
    {
     "line": 20,
     "number": "+1.3",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "and the two-width number goes 0.367 → 0.372° (+1.3%)."
    },
    {
     "line": 22,
     "number": "0.162",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "the best-set (0.162°) fixed-mesh check is still open."
    },
@@ -6359,7 +6359,7 @@
    {
     "line": 29,
     "number": "0.1",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- One verified source: Janz et al., arXiv:2306.15643, with 0.1 pm (laser repeatability) and 1 pm"
    },
@@ -6380,21 +6380,21 @@
    {
     "line": 33,
     "number": "0.162",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- 1 pm reproduces the placeholders closely: 0.139° and 0.389° vs 0.162° and 0.367°."
    },
    {
     "line": 33,
     "number": "0.367",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- 1 pm reproduces the placeholders closely: 0.139° and 0.389° vs 0.162° and 0.367°."
    },
    {
     "line": 34,
     "number": "0.1",
-    "source": "results_montecarlo/robustness/data/robustness.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- 0.1 pm gives 0.0139° and 0.0408°."
    },
@@ -6436,833 +6436,833 @@
    {
     "line": 76,
     "number": "0.359",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| **50** | **0.359 [0.359–0.369]** | **0.367 [0.367–0.377]** |"
    },
    {
     "line": 76,
     "number": "0.359",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| **50** | **0.359 [0.359–0.369]** | **0.367 [0.367–0.377]** |"
    },
    {
     "line": 76,
     "number": "0.369",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| **50** | **0.359 [0.359–0.369]** | **0.367 [0.367–0.377]** |"
    },
    {
     "line": 76,
     "number": "0.367",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| **50** | **0.359 [0.359–0.369]** | **0.367 [0.367–0.377]** |"
    },
    {
     "line": 76,
     "number": "0.367",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| **50** | **0.359 [0.359–0.369]** | **0.367 [0.367–0.377]** |"
    },
    {
     "line": 76,
     "number": "0.377",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| **50** | **0.359 [0.359–0.369]** | **0.367 [0.367–0.377]** |"
    },
    {
     "line": 77,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 70 | 0.419 [0.419–0.435] | 0.425 [0.425–0.441] |"
    },
    {
     "line": 77,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 70 | 0.419 [0.419–0.435] | 0.425 [0.425–0.441] |"
    },
    {
     "line": 77,
     "number": "0.435",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 70 | 0.419 [0.419–0.435] | 0.425 [0.425–0.441] |"
    },
    {
     "line": 77,
     "number": "0.425",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 70 | 0.419 [0.419–0.435] | 0.425 [0.425–0.441] |"
    },
    {
     "line": 77,
     "number": "0.425",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 70 | 0.419 [0.419–0.435] | 0.425 [0.425–0.441] |"
    },
    {
     "line": 77,
     "number": "0.441",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 70 | 0.419 [0.419–0.435] | 0.425 [0.425–0.441] |"
    },
    {
     "line": 78,
     "number": "0.555",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 90 | 0.555 [0.555–0.597] | 0.561 [0.561–0.603] |"
    },
    {
     "line": 78,
     "number": "0.555",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 90 | 0.555 [0.555–0.597] | 0.561 [0.561–0.603] |"
    },
    {
     "line": 78,
     "number": "0.597",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 90 | 0.555 [0.555–0.597] | 0.561 [0.561–0.603] |"
    },
    {
     "line": 78,
     "number": "0.561",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 90 | 0.555 [0.555–0.597] | 0.561 [0.561–0.603] |"
    },
    {
     "line": 78,
     "number": "0.561",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 90 | 0.555 [0.555–0.597] | 0.561 [0.561–0.603] |"
    },
    {
     "line": 78,
     "number": "0.603",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 90 | 0.555 [0.555–0.597] | 0.561 [0.561–0.603] |"
    },
    {
     "line": 79,
     "number": "0.796",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 110 | 0.796 [0.743–0.865] | 0.802 [0.749–0.871] |"
    },
    {
     "line": 79,
     "number": "0.743",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 110 | 0.796 [0.743–0.865] | 0.802 [0.749–0.871] |"
    },
    {
     "line": 79,
     "number": "0.865",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 110 | 0.796 [0.743–0.865] | 0.802 [0.749–0.871] |"
    },
    {
     "line": 79,
     "number": "0.802",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 110 | 0.796 [0.743–0.865] | 0.802 [0.749–0.871] |"
    },
    {
     "line": 79,
     "number": "0.749",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 110 | 0.796 [0.743–0.865] | 0.802 [0.749–0.871] |"
    },
    {
     "line": 79,
     "number": "0.871",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 110 | 0.796 [0.743–0.865] | 0.802 [0.749–0.871] |"
    },
    {
     "line": 80,
     "number": "1.21",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 130 | 1.21 [1.06–1.3] | 1.22 [1.06–1.31] |"
    },
    {
     "line": 80,
     "number": "1.06",
-    "source": "results_montecarlo/sym_search/data/search.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 130 | 1.21 [1.06–1.3] | 1.22 [1.06–1.31] |"
    },
    {
     "line": 80,
     "number": "1.3",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 130 | 1.21 [1.06–1.3] | 1.22 [1.06–1.31] |"
    },
    {
     "line": 80,
     "number": "1.22",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 130 | 1.21 [1.06–1.3] | 1.22 [1.06–1.31] |"
    },
    {
     "line": 80,
     "number": "1.06",
-    "source": "results_montecarlo/sym_search/data/search.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 130 | 1.21 [1.06–1.3] | 1.22 [1.06–1.31] |"
    },
    {
     "line": 80,
     "number": "1.31",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 130 | 1.21 [1.06–1.3] | 1.22 [1.06–1.31] |"
    },
    {
     "line": 81,
     "number": "3.81",
-    "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 150 | 3.81 [2.51–3.81] | 3.83 [2.52–3.83] |"
    },
    {
     "line": 81,
     "number": "2.51",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 150 | 3.81 [2.51–3.81] | 3.83 [2.52–3.83] |"
    },
    {
     "line": 81,
     "number": "3.81",
-    "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 150 | 3.81 [2.51–3.81] | 3.83 [2.52–3.83] |"
    },
    {
     "line": 81,
     "number": "3.83",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 150 | 3.81 [2.51–3.81] | 3.83 [2.52–3.83] |"
    },
    {
     "line": 81,
     "number": "2.52",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 150 | 3.81 [2.51–3.81] | 3.83 [2.52–3.83] |"
    },
    {
     "line": 81,
     "number": "3.83",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| 150 | 3.81 [2.51–3.81] | 3.83 [2.52–3.83] |"
    },
    {
     "line": 87,
     "number": "0.162",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "Table S3, stage D, realistic priors, 8 structures: **0.162° [0.118–0.171]** at the 90 nm slab, from"
    },
    {
     "line": 87,
     "number": "0.118",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "Table S3, stage D, realistic priors, 8 structures: **0.162° [0.118–0.171]** at the 90 nm slab, from"
    },
    {
     "line": 87,
     "number": "0.171",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "Table S3, stage D, realistic priors, 8 structures: **0.162° [0.118–0.171]** at the 90 nm slab, from"
    },
    {
     "line": 89,
     "number": "0.144",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "Stage C without priors gives 0.144 [0.105–0.153]."
    },
    {
     "line": 89,
     "number": "0.105",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "Stage C without priors gives 0.144 [0.105–0.153]."
    },
    {
     "line": 89,
     "number": "0.153",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "Stage C without priors gives 0.144 [0.105–0.153]."
    },
    {
     "line": 95,
     "number": "0.359",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.359 | 0.187 | 0.162 | 0.795 | 1.21 | 3.81 |"
    },
    {
     "line": 95,
     "number": "0.187",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.359 | 0.187 | 0.162 | 0.795 | 1.21 | 3.81 |"
    },
    {
     "line": 95,
     "number": "0.162",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| CRB (°) | 0.359 | 0.187 | 0.162 | 0.795 | 1.21 | 3.81 |"
    },
    {
     "line": 95,
     "number": "0.795",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.359 | 0.187 | 0.162 | 0.795 | 1.21 | 3.81 |"
    },
    {
     "line": 95,
     "number": "1.21",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.359 | 0.187 | 0.162 | 0.795 | 1.21 | 3.81 |"
    },
    {
     "line": 95,
     "number": "3.81",
-    "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.359 | 0.187 | 0.162 | 0.795 | 1.21 | 3.81 |"
    },
    {
     "line": 98,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "give 0.419 and 0.555, so for the same two widths the 50 nm slab is best."
    },
    {
     "line": 98,
     "number": "0.555",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "give 0.419 and 0.555, so for the same two widths the 50 nm slab is best."
    },
    {
     "line": 104,
     "number": "0.413",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.413 (slab 50) | 0.329 | 0.174 | 0.167 | 0.162 (slab 90) |"
    },
    {
     "line": 104,
     "number": "0.329",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.413 (slab 50) | 0.329 | 0.174 | 0.167 | 0.162 (slab 90) |"
    },
    {
     "line": 104,
     "number": "0.174",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.413 (slab 50) | 0.329 | 0.174 | 0.167 | 0.162 (slab 90) |"
    },
    {
     "line": 104,
     "number": "0.167",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| CRB (°) | 0.413 (slab 50) | 0.329 | 0.174 | 0.167 | 0.162 (slab 90) |"
    },
    {
     "line": 104,
     "number": "0.162",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| CRB (°) | 0.413 (slab 50) | 0.329 | 0.174 | 0.167 | 0.162 (slab 90) |"
    },
    {
     "line": 112,
     "number": "29.4",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With realistic priors, 24–43°: 29.4 (slab 50), 25.1 (70), 24.3 (90), 26.3 (110), 32.1 (130),"
    },
    {
     "line": 112,
     "number": "25.1",
-    "source": "results_montecarlo/logs/sym_search.log",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With realistic priors, 24–43°: 29.4 (slab 50), 25.1 (70), 24.3 (90), 26.3 (110), 32.1 (130),"
    },
    {
     "line": 112,
     "number": "24.3",
-    "source": "results_montecarlo/sym_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With realistic priors, 24–43°: 29.4 (slab 50), 25.1 (70), 24.3 (90), 26.3 (110), 32.1 (130),"
    },
    {
     "line": 112,
     "number": "26.3",
-    "source": "results_montecarlo/sym_search/data/search.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With realistic priors, 24–43°: 29.4 (slab 50), 25.1 (70), 24.3 (90), 26.3 (110), 32.1 (130),"
    },
    {
     "line": 112,
     "number": "32.1",
-    "source": "results_montecarlo/sym_search/data/search.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With realistic priors, 24–43°: 29.4 (slab 50), 25.1 (70), 24.3 (90), 26.3 (110), 32.1 (130),"
    },
    {
     "line": 113,
     "number": "43.1",
-    "source": "results_montecarlo/sym_search/data/search.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "43.1 (150). The priors set the angle, not the data."
    },
    {
     "line": 121,
     "number": "0.334",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/logs/sym_search.log",
+    "pool": "section",
     "context": "| B, none (shared angle) | 0.334 | 0.00433 |"
    },
    {
     "line": 121,
     "number": "0.00433",
     "source": "results_montecarlo/logs/sym_search.log",
-    "pool": "folder",
+    "pool": "section",
     "context": "| B, none (shared angle) | 0.334 | 0.00433 |"
    },
    {
     "line": 122,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| C, none | ∞ | 0.419 |"
    },
    {
     "line": 123,
     "number": "25.1",
-    "source": "results_montecarlo/logs/sym_search.log",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| C, realistic | 25.1 | 0.419 |"
    },
    {
     "line": 123,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| C, realistic | 25.1 | 0.419 |"
    },
    {
     "line": 124,
     "number": "1.24",
     "source": "results_montecarlo/logs/sym_search.log",
-    "pool": "folder",
+    "pool": "section",
     "context": "| C, ar − a ≤ 1° | 1.24 | 0.404 |"
    },
    {
     "line": 124,
     "number": "0.404",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/logs/sym_search.log",
+    "pool": "section",
     "context": "| C, ar − a ≤ 1° | 1.24 | 0.404 |"
    },
    {
     "line": 125,
     "number": "0.451",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| D, none | ∞ | 0.451 |"
    },
    {
     "line": 126,
     "number": "25.1",
-    "source": "results_montecarlo/logs/sym_search.log",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| D, realistic | 25.1 | 0.425 |"
    },
    {
     "line": 126,
     "number": "0.425",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/sym_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| D, realistic | 25.1 | 0.425 |"
    },
    {
     "line": 127,
     "number": "2.41",
-    "source": "results_montecarlo/data/surrogate_accuracy.csv",
-    "pool": "folder",
+    "source": "results_montecarlo/logs/sym_search.log",
+    "pool": "section",
     "context": "| D, realistic + ar − a ≤ 2° | 2.41 | 0.421 |"
    },
    {
     "line": 127,
     "number": "0.421",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/logs/sym_search.log",
+    "pool": "section",
     "context": "| D, realistic + ar − a ≤ 2° | 2.41 | 0.421 |"
    },
    {
     "line": 128,
     "number": "25.2",
     "source": "results_montecarlo/logs/sym_search.log",
-    "pool": "folder",
+    "pool": "section",
     "context": "| E, realistic | 25.2 | 0.428 |"
    },
    {
     "line": 128,
     "number": "0.428",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| E, realistic | 25.2 | 0.428 |"
    },
    {
     "line": 157,
     "number": "0.25",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "- **Box:** ±6 marginal CRB σ (floors 1 nm, 0.25°, 1e-4). Case c uses a wide box: w ±12 nm, strip"
    },
    {
     "line": 157,
     "number": "1e-4",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "- **Box:** ±6 marginal CRB σ (floors 1 nm, 0.25°, 1e-4). Case c uses a wide box: w ±12 nm, strip"
    },
    {
     "line": 163,
     "number": "2.47e-6",
     "source": "results_montecarlo/data/surrogate_accuracy.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "noise is 2.47e-6):"
    },
    {
     "line": 167,
     "number": "0.04",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| strips (7 structures) | 0.04–0.37 | ≤ 1.8e-6 | ≤ 0.004 |"
    },
    {
     "line": 167,
     "number": "0.37",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| strips (7 structures) | 0.04–0.37 | ≤ 1.8e-6 | ≤ 0.004 |"
    },
    {
     "line": 167,
     "number": "1.8e-6",
     "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| strips (7 structures) | 0.04–0.37 | ≤ 1.8e-6 | ≤ 0.004 |"
    },
    {
     "line": 167,
     "number": "0.004",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| strips (7 structures) | 0.04–0.37 | ≤ 1.8e-6 | ≤ 0.004 |"
    },
    {
     "line": 168,
     "number": "1.26",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 400/500/600, slab 90 | 1.26–2.50 | ≤ 1.2e-5 | ≤ 0.004 |"
    },
    {
     "line": 168,
     "number": "2.50",
-    "source": "results_montecarlo/data/surrogate_accuracy.csv",
-    "pool": "folder",
+    "source": "results_montecarlo/data/surrogate_accuracy.json",
+    "pool": "section",
     "context": "| rib 400/500/600, slab 90 | 1.26–2.50 | ≤ 1.2e-5 | ≤ 0.004 |"
    },
    {
     "line": 168,
     "number": "1.2e-5",
     "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 400/500/600, slab 90 | 1.26–2.50 | ≤ 1.2e-5 | ≤ 0.004 |"
    },
    {
     "line": 168,
     "number": "0.004",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 400/500/600, slab 90 | 1.26–2.50 | ≤ 1.2e-5 | ≤ 0.004 |"
    },
    {
     "line": 169,
     "number": "1.26",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 500, slab 50 | 1.26 | 4.7e-6 | 0.013 |"
    },
    {
     "line": 169,
     "number": "4.7e-6",
     "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 500, slab 50 | 1.26 | 4.7e-6 | 0.013 |"
    },
    {
     "line": 169,
     "number": "0.013",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| rib 500, slab 50 | 1.26 | 4.7e-6 | 0.013 |"
    },
    {
     "line": 170,
     "number": "5.32",
-    "source": "results_montecarlo/data/surrogate_accuracy.csv",
-    "pool": "folder",
+    "source": "results_montecarlo/data/surrogate_accuracy.json",
+    "pool": "section",
     "context": "| rib 500, slab 50, wide box | 5.32 | 2.8e-5 | 0.044 |"
    },
    {
     "line": 170,
     "number": "2.8e-5",
     "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 500, slab 50, wide box | 5.32 | 2.8e-5 | 0.044 |"
    },
    {
     "line": 170,
     "number": "0.044",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| rib 500, slab 50, wide box | 5.32 | 2.8e-5 | 0.044 |"
    },
    {
     "line": 171,
     "number": "8.06",
-    "source": "results_montecarlo/data/surrogate_accuracy.csv",
-    "pool": "folder",
+    "source": "results_montecarlo/data/surrogate_accuracy.json",
+    "pool": "section",
     "context": "| **rib 300, slab 90** | **8.06** | 4.5e-5 | 0.035 |"
    },
    {
     "line": 171,
     "number": "4.5e-5",
     "source": "results_montecarlo/data/surrogates.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| **rib 300, slab 90** | **8.06** | 4.5e-5 | 0.035 |"
    },
    {
     "line": 171,
     "number": "0.035",
-    "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/surrogate_accuracy.json",
+    "pool": "section",
     "context": "| **rib 300, slab 90** | **8.06** | 4.5e-5 | 0.035 |"
    },
    {
     "line": 172,
     "number": "30.1",
-    "source": "results_montecarlo/data/surrogate_accuracy.csv",
-    "pool": "folder",
+    "source": "results_montecarlo/data/surrogate_accuracy.json",
+    "pool": "section",
     "context": "| **rib 300, slab 50** | **30.1** | 1.1e-4 | 0.26 |"
    },
    {
     "line": 172,
     "number": "1.1e-4",
-    "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| **rib 300, slab 50** | **30.1** | 1.1e-4 | 0.26 |"
    },
    {
     "line": 172,
     "number": "0.26",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| **rib 300, slab 50** | **30.1** | 1.1e-4 | 0.26 |"
    },
    {
     "line": 176,
     "number": "0.961",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "- the mode is the same in every solve (TE fraction 0.961–0.962);"
    },
    {
     "line": 176,
     "number": "0.962",
     "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "- the mode is the same in every solve (TE fraction 0.961–0.962);"
    },
    {
     "line": 179,
     "number": "1e-4",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "So they are remeshing noise of the weakly confined 300 nm rib, up to ~1e-4 in n_eff, far above"
    },
    {
     "line": 196,
     "number": "0.1",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- A set is *at bound* if any parameter ends within 0.1% of the box edge."
    },
    {
     "line": 200,
     "number": "0.162",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "| CRB, femwell derivatives | 0.162 | 0.367 | 29.4 |"
    },
    {
     "line": 200,
     "number": "0.367",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "| CRB, femwell derivatives | 0.162 | 0.367 | 29.4 |"
    },
    {
     "line": 200,
     "number": "29.4",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| CRB, femwell derivatives | 0.162 | 0.367 | 29.4 |"
    },
    {
     "line": 201,
     "number": "0.146",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| CRB, surrogate at nominal | 0.146 | 0.372 | 32.0 |"
    },
    {
     "line": 201,
     "number": "0.372",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| CRB, surrogate at nominal | 0.146 | 0.372 | 32.0 |"
    },
    {
     "line": 201,
     "number": "32.0",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| CRB, surrogate at nominal | 0.146 | 0.372 | 32.0 |"
    },
    {
     "line": 202,
     "number": "0.163",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 202,
     "number": "0.155",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 202,
     "number": "0.172",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 202,
     "number": "0.374",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 202,
     "number": "0.363",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 202,
     "number": "0.385",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 202,
     "number": "2.47",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| **MC std of fitted strip angle** [95% bootstrap] | **0.163 [0.155–0.172]** | **0.374 [0.363–0.385]** | 2.47 (box-limited) |"
    },
    {
     "line": 203,
     "number": "1.01",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| MC std / CRB (femwell; surrogate) | 1.01; 1.12 | 1.02; 1.01 | – |"
    },
    {
     "line": 203,
     "number": "1.12",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| MC std / CRB (femwell; surrogate) | 1.01; 1.12 | 1.02; 1.01 | – |"
    },
    {
     "line": 203,
     "number": "1.02",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| MC std / CRB (femwell; surrogate) | 1.01; 1.12 | 1.02; 1.01 | – |"
    },
    {
     "line": 203,
     "number": "1.01",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| MC std / CRB (femwell; surrogate) | 1.01; 1.12 | 1.02; 1.01 | – |"
    },
@@ -7276,252 +7276,252 @@
    {
     "line": 204,
     "number": "0.143",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| robust std (1.4826·MAD) | 0.143 | 0.364 | 3.75 |"
    },
    {
     "line": 204,
     "number": "0.364",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| robust std (1.4826·MAD) | 0.143 | 0.364 | 3.75 |"
    },
    {
     "line": 204,
     "number": "3.75",
-    "source": null,
+    "source": "results_montecarlo/data/surrogates.json",
     "pool": "section",
     "context": "| robust std (1.4826·MAD) | 0.143 | 0.364 | 3.75 |"
    },
    {
     "line": 205,
     "number": "−0.232",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| 5–95% of fitted angle | −0.232 to +0.271 | −0.622 to +0.599 | −3.00 to +2.49 |"
    },
    {
     "line": 205,
     "number": "+0.271",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| 5–95% of fitted angle | −0.232 to +0.271 | −0.622 to +0.599 | −3.00 to +2.49 |"
    },
    {
     "line": 205,
     "number": "−0.622",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| 5–95% of fitted angle | −0.232 to +0.271 | −0.622 to +0.599 | −3.00 to +2.49 |"
    },
    {
     "line": 205,
     "number": "+0.599",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| 5–95% of fitted angle | −0.232 to +0.271 | −0.622 to +0.599 | −3.00 to +2.49 |"
    },
    {
     "line": 205,
     "number": "−3.00",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| 5–95% of fitted angle | −0.232 to +0.271 | −0.622 to +0.599 | −3.00 to +2.49 |"
    },
    {
     "line": 205,
     "number": "+2.49",
-    "source": null,
+    "source": "results_montecarlo/data/surrogate_accuracy.json",
     "pool": "section",
     "context": "| 5–95% of fitted angle | −0.232 to +0.271 | −0.622 to +0.599 | −3.00 to +2.49 |"
    },
    {
     "line": 206,
     "number": "+0.0097",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| bias ± SE | +0.0097 ± 0.0037 | −0.015 ± 0.008 | −0.17 ± 0.06 |"
    },
    {
     "line": 206,
     "number": "0.0037",
-    "source": null,
+    "source": "results_montecarlo/data/surrogates.json",
     "pool": "section",
     "context": "| bias ± SE | +0.0097 ± 0.0037 | −0.015 ± 0.008 | −0.17 ± 0.06 |"
    },
    {
     "line": 206,
     "number": "−0.015",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "| bias ± SE | +0.0097 ± 0.0037 | −0.015 ± 0.008 | −0.17 ± 0.06 |"
    },
    {
     "line": 206,
     "number": "0.008",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| bias ± SE | +0.0097 ± 0.0037 | −0.015 ± 0.008 | −0.17 ± 0.06 |"
    },
    {
     "line": 206,
     "number": "−0.17",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "| bias ± SE | +0.0097 ± 0.0037 | −0.015 ± 0.008 | −0.17 ± 0.06 |"
    },
    {
     "line": 206,
     "number": "0.06",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| bias ± SE | +0.0097 ± 0.0037 | −0.015 ± 0.008 | −0.17 ± 0.06 |"
    },
    {
     "line": 208,
     "number": "20.1",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| mean χ² (dof) | 20.1 (20) | 16.6 (17) | 15.1 (14) |"
    },
    {
     "line": 208,
     "number": "16.6",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| mean χ² (dof) | 20.1 (20) | 16.6 (17) | 15.1 (14) |"
    },
    {
     "line": 208,
     "number": "15.1",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "| mean χ² (dof) | 20.1 (20) | 16.6 (17) | 15.1 (14) |"
    },
    {
     "line": 209,
     "number": "+0.021",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| fit to noise-free femwell nominal | +0.021 | +0.005 | +0.001 |"
    },
    {
     "line": 209,
     "number": "+0.005",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "| fit to noise-free femwell nominal | +0.021 | +0.005 | +0.001 |"
    },
    {
     "line": 209,
     "number": "+0.001",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "| fit to noise-free femwell nominal | +0.021 | +0.005 | +0.001 |"
    },
    {
     "line": 212,
     "number": "1.01",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "- The spread is 1.01–1.02 × CRB."
    },
    {
     "line": 212,
     "number": "1.02",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- The spread is 1.01–1.02 × CRB."
    },
    {
     "line": 213,
     "number": "0.05",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- There are no failed, ambiguous or at-bound fits, and the bias is under 0.05 σ."
    },
    {
     "line": 214,
     "number": "1.43",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°."
    },
    {
     "line": 214,
     "number": "1.42",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°."
    },
    {
     "line": 214,
     "number": "0.528",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°."
    },
    {
     "line": 214,
     "number": "0.524",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "- All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°."
    },
    {
     "line": 216,
     "number": "1.01",
-    "source": null,
+    "source": "results_montecarlo/data/mc_results.json",
     "pool": "section",
     "context": "**(a) matches the femwell CRB (1.01×) but is 12% above the surrogate's own CRB.**"
    },
    {
     "line": 217,
     "number": "0.143",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- Its robust std (0.143) sits at that CRB. The core is Gaussian at the CRB, and a small tail inflates"
    },
    {
     "line": 218,
     "number": "1.35",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "the std: 11 at-bound sets, and 1.35% of sets beyond 3 CRB."
    },
    {
     "line": 221,
     "number": "+0.010",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- The bias, +0.010°, is 2.7 SE but only 0.06 σ."
    },
    {
     "line": 221,
     "number": "2.7",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- The bias, +0.010°, is 2.7 SE but only 0.06 σ."
    },
    {
     "line": 221,
     "number": "0.06",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- The bias, +0.010°, is 2.7 SE but only 0.06 σ."
    },
    {
     "line": 222,
     "number": "+0.021",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- The model error at nominal (+0.021°) is 0.13 σ."
    },
    {
     "line": 222,
     "number": "0.13",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- The model error at nominal (+0.021°) is 0.13 σ."
    },
@@ -7535,7 +7535,7 @@
    {
     "line": 227,
     "number": "1.000",
-    "source": "results_montecarlo/data/mc_valley.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "- The fitted width and angle lie on the line w − 3.84·a = const (correlation 1.000, slope 3.84"
    },
@@ -7549,70 +7549,70 @@
    {
     "line": 230,
     "number": "2.47",
-    "source": null,
+    "source": "results_montecarlo/data/mc_design.json",
     "pool": "section",
     "context": "- Its 2.47° spread is set by the ±3° box, not by information."
    },
    {
     "line": 233,
     "number": "0.16",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "nonlinear-fit spread well (within about 1–12%). The 0.16° and 0.37° figures stand, at the"
    },
    {
     "line": 233,
     "number": "0.37",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "nonlinear-fit spread well (within about 1–12%). The 0.16° and 0.37° figures stand, at the"
    },
    {
     "line": 254,
     "number": "6.5e-6",
-    "source": null,
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "conservative rib noise. Noise values are the usual placeholders (σ_neff 6.5e-6, σ_ng 1e-3, σ_phase"
    },
    {
     "line": 254,
     "number": "1e-3",
-    "source": "results_montecarlo/data/strips_info.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "conservative rib noise. Noise values are the usual placeholders (σ_neff 6.5e-6, σ_ng 1e-3, σ_phase"
    },
    {
     "line": 255,
     "number": "1e-3",
-    "source": "results_montecarlo/data/strips_info.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "1e-3 rad; none sourced)."
    },
    {
     "line": 267,
     "number": "0.99990",
-    "source": "results_femwell/data/atlas_cosine_similarity.csv",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "Equivalently, R = (π/180)/tan 1° = 0.99990 exactly. The finite strips-only numbers reported so far"
    },
    {
     "line": 269,
     "number": "1.33",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "- strip TE alone: 1.33°;"
    },
    {
     "line": 270,
     "number": "0.61",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "- best strips-only set: 0.61°;"
    },
    {
     "line": 271,
     "number": "0.61",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "- the 0.61-1.39° strip-alone baselines in `results_priors_search`;"
    },
@@ -7661,7 +7661,7 @@
    {
     "line": 284,
     "number": "−1.1e-4",
-    "source": "results_montecarlo/data/strips_info.json",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
     "pool": "section",
     "context": "The sign and size change erratically with step size (for example strip TE 500 n_eff: −1.1e-4,"
    },
@@ -7689,756 +7689,756 @@
    {
     "line": 295,
     "number": "1.33",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | C, none | 1.33 | **∞** |"
    },
    {
     "line": 296,
     "number": "0.614",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only set (8 structures) | C, none | 0.614 | **∞** |"
    },
    {
     "line": 297,
     "number": "1.33",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 nm | C, none | 1.33 | **∞** |"
    },
    {
     "line": 298,
     "number": "0.400",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 nm | C, none | 0.400 | 0.419 |"
    },
    {
     "line": 298,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 nm | C, none | 0.400 | 0.419 |"
    },
    {
     "line": 299,
     "number": "0.414",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 nm | E, realistic | 0.414 | 0.428 |"
    },
    {
     "line": 299,
     "number": "0.428",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 nm | E, realistic | 0.414 | 0.428 |"
    },
    {
     "line": 300,
     "number": "0.145",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (8) | C, none | 0.145 | 0.147 |"
    },
    {
     "line": 300,
     "number": "0.147",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best one-etch set (8) | C, none | 0.145 | 0.147 |"
    },
    {
     "line": 301,
     "number": "0.167",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (8) | D, realistic | 0.167 | 0.169 |"
    },
    {
     "line": 301,
     "number": "0.169",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (8) | D, realistic | 0.167 | 0.169 |"
    },
    {
     "line": 322,
     "number": "0.614",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| All | 0.614 |"
    },
    {
     "line": 323,
     "number": "2.09",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| TE structures only | 2.09 |"
    },
    {
     "line": 324,
     "number": "0.742",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| TM structures only | 0.742 |"
    },
    {
     "line": 325,
     "number": "0.614",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| n_eff + MZI phase only | 0.614 |"
    },
    {
     "line": 326,
     "number": "45.4",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| n_g only | 45.4 |"
    },
    {
     "line": 341,
     "number": "0.1",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Set | Nominal | ±0.1% | ±0.3% | ±1% | ±3% |"
    },
    {
     "line": 341,
     "number": "0.3",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Set | Nominal | ±0.1% | ±0.3% | ±1% | ±3% |"
    },
    {
     "line": 343,
     "number": "1.33",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.279",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.149",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.744",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.093",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.049",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.238",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.0275",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.015",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.073",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.0091",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.0049",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 343,
     "number": "0.0245",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Strip TE, 5 widths | 1.33 | 0.279<br>0.149-0.744 | 0.093<br>0.049-0.238 | 0.0275<br>0.015-0.073 | 0.0091<br>0.0049-0.0245 |"
    },
    {
     "line": 344,
     "number": "0.614",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.265",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.141",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.512",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.094",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.048",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.183",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.0285",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.014",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.057",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.0094",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.0048",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 344,
     "number": "0.019",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best strips-only (8) | 0.614 | 0.265<br>0.141-0.512 | 0.094<br>0.048-0.183 | 0.0285<br>0.014-0.057 | 0.0094<br>0.0048-0.019 |"
    },
    {
     "line": 345,
     "number": "0.400",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.233",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.140",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.364",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.091",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.049",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.209",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.0274",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.015",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.072",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.0091",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.0049",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 345,
     "number": "0.0244",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (C) | 0.400 | 0.233<br>0.140-0.364 | 0.091<br>0.049-0.209 | 0.0274<br>0.015-0.072 | 0.0091<br>0.0049-0.0244 |"
    },
    {
     "line": 346,
     "number": "0.414",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.280",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.173",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.411",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.120",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.063",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.270",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.042",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.021",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.112",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.017",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.007",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 346,
     "number": "0.052",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Strip TE 5 + rib70 500 + 300 (E, realistic) | 0.414 | 0.280<br>0.173-0.411 | 0.120<br>0.063-0.270 | 0.042<br>0.021-0.112 | 0.017<br>0.007-"
    },
    {
     "line": 347,
     "number": "0.145",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.135",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.106",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.151",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.093",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.048",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.145",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.035",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.015",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.096",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.012",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.005",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 347,
     "number": "0.039",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (C, 8) | 0.145 | 0.135<br>0.106-0.151 | 0.093<br>0.048-0.145 | 0.035<br>0.015-0.096 | 0.012<br>0.005-0.039 |"
    },
    {
     "line": 348,
     "number": "0.167",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.162",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.136",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.199",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.135",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.087",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.269",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.070",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.033",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.218",
     "source": "results_montecarlo/data/strips_info.json",
-    "pool": "folder",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.028",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.012",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 348,
     "number": "0.106",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "| Best one-etch set (D, realistic, 8) | 0.167 | 0.162<br>0.136-0.199 | 0.135<br>0.087-0.269 | 0.070<br>0.033-0.218 | 0.028<br>0.012-0.106 |"
    },
    {
     "line": 353,
     "number": "0.1",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "- **Strips-only sets:** a 0.1% error already moves the result 2-5x, and at ±1% it is 20-50x. The"
    },
    {
     "line": 355,
     "number": "0.1",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "- **Best 8-structure rib sets:** move 3-7% (median) at ±0.1%. The mesh check suggests the"
    },
    {
     "line": 356,
     "number": "0.1",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "derivatives are accurate to about 0.1-0.3%. At ±1% and above they inherit the same fake strip"
    },
    {
     "line": 356,
     "number": "0.3",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "derivatives are accurate to about 0.1-0.3%. At ±1% and above they inherit the same fake strip"
    },
    {
     "line": 358,
     "number": "0.1",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "- **Strip TE 5 + two rib widths:** moves 30-40% already at ±0.1% (0.400 → 0.233 in C, 0.414 →"
    },
    {
     "line": 358,
     "number": "0.400",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "- **Strip TE 5 + two rib widths:** moves 30-40% already at ±0.1% (0.400 → 0.233 in C, 0.414 →"
    },
    {
     "line": 358,
     "number": "0.233",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "- **Strip TE 5 + two rib widths:** moves 30-40% already at ±0.1% (0.400 → 0.233 in C, 0.414 →"
    },
    {
     "line": 358,
     "number": "0.414",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "- **Strip TE 5 + two rib widths:** moves 30-40% already at ±0.1% (0.400 → 0.233 in C, 0.414 →"
    },
    {
     "line": 359,
     "number": "0.280",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "0.280 in E). Its real angle information is small, so even a little fake strip information competes"
    },
    {
     "line": 360,
     "number": "0.419",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/data/strips_info.json",
+    "pool": "section",
     "context": "with it. Its trustworthy value is the symmetrized one, 0.419° / 0.428°."
    },
    {
     "line": 360,
     "number": "0.428",
-    "source": "results_montecarlo/data/mc_design.json",
-    "pool": "folder",
+    "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+    "pool": "section",
     "context": "with it. Its trustworthy value is the symmetrized one, 0.419° / 0.428°."
    },
    {
     "line": 367,
     "number": "1.33",
-    "source": "results_femwell/data/crosscheck_and_ratios.json",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "- strip-alone angle CRBs: 1.33°, 1.39°, 0.61°, 0.612° (strip baseline in `results_femwell`);"
    },
@@ -8452,14 +8452,14 @@
    {
     "line": 367,
     "number": "0.61",
-    "source": "results_femwell/COMPARISON.md",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "- strip-alone angle CRBs: 1.33°, 1.39°, 0.61°, 0.612° (strip baseline in `results_femwell`);"
    },
    {
     "line": 367,
     "number": "0.612",
-    "source": "results_femwell/COMPARISON.md",
+    "source": "results_montecarlo/data/strips_info.json",
     "pool": "section",
     "context": "- strip-alone angle CRBs: 1.33°, 1.39°, 0.61°, 0.612° (strip baseline in `results_femwell`);"
    }
@@ -8468,1484 +8468,1484 @@
    {
     "line": 23,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| Strip alone | 1.39° | – |"
    },
    {
     "line": 24,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| Strip + one rib (70 nm slab, 500 nm) | 1.38° | 1.0x |"
    },
    {
     "line": 25,
     "number": "0.41",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| Strip + the same rib at 500 + 300 nm | 0.41° | 3.3x |"
    },
    {
     "line": 27,
     "number": "0.12",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "Source: T2. With the optimistic rib noise (0.2x), two rib widths give 0.12°."
    },
    {
     "line": 31,
     "number": "0.93",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "most 1°, one rib gives 0.93° (1.5x); at 2° it gives 1.21° (1.16x); at 5° almost nothing (T1)."
    },
    {
     "line": 31,
     "number": "1.21",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "most 1°, one rib gives 0.93° (1.5x); at 2° it gives 1.21° (1.16x); at 5° almost nothing (T1)."
    },
    {
     "line": 34,
     "number": "1e-3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- n_Si, n_ox to 1e-3 or 1e-4;"
    },
    {
     "line": 34,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- n_Si, n_ox to 1e-3 or 1e-4;"
    },
    {
     "line": 37,
     "number": "0.01",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "rib needs the depth to about 0.01 nm (Stage B, 0.0096° vs 0.0018° with depth known). At 0.3 nm"
    },
    {
     "line": 37,
     "number": "0.0096",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "rib needs the depth to about 0.01 nm (Stage B, 0.0096° vs 0.0018° with depth known). At 0.3 nm"
    },
    {
     "line": 37,
     "number": "0.0018",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "rib needs the depth to about 0.01 nm (Stage B, 0.0096° vs 0.0018° with depth known). At 0.3 nm"
    },
    {
     "line": 37,
     "number": "0.3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "rib needs the depth to about 0.01 nm (Stage B, 0.0096° vs 0.0018° with depth known). At 0.3 nm"
    },
    {
     "line": 38,
     "number": "0.21",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "it gives 0.21°, and at 1-5 nm nothing (T4). With a separate rib angle (Stage C), no depth prior"
    },
    {
     "line": 39,
     "number": "1.28",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "helps a single rib at all (1.28° even at 0.01 nm)."
    },
    {
     "line": 39,
     "number": "0.01",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "helps a single rib at all (1.28° even at 0.01 nm)."
    },
    {
     "line": 44,
     "number": "0.145",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With a separate rib angle (Stage C), the best 5-8 structure sets reach 0.145-0.151° using one"
    },
    {
     "line": 44,
     "number": "0.151",
-    "source": "results_priors_search/data/search.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With a separate rib angle (Stage C), the best 5-8 structure sets reach 0.145-0.151° using one"
    },
    {
     "line": 46,
     "number": "0.61",
-    "source": "results_priors_search/data/search.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- The best strips-only set of the same size gives 0.61-0.68°, so a well-chosen set of rib widths"
    },
    {
     "line": 46,
     "number": "0.68",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- The best strips-only set of the same size gives 0.61-0.68°, so a well-chosen set of rib widths"
    },
    {
     "line": 48,
     "number": "0.167",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With index unknowns (Stage D) and realistic priors, 0.167-0.176° at 6-8 structures (T5)."
    },
    {
     "line": 48,
     "number": "0.176",
-    "source": "results_priors_search/data/search.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "- With index unknowns (Stage D) and realistic priors, 0.167-0.176° at 6-8 structures (T5)."
    },
    {
     "line": 56,
     "number": "0.01",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| Etch depth d (per partial etch) | 1, 2, 5 nm (sweep 0.01-5 nm in T4) | 2 nm | **assumption** (separate thickness measurement on a pad; no "
    },
    {
     "line": 57,
     "number": "1e-3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madiso"
    },
    {
     "line": 57,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madiso"
    },
    {
     "line": 57,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madiso"
    },
    {
     "line": 57,
     "number": "8.67e-5",
     "source": null,
-    "pool": "folder",
+    "pool": "section",
     "context": "| n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madiso"
    },
    {
     "line": 57,
     "number": "1.5",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madiso"
    },
    {
     "line": 58,
     "number": "1e-3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_ox (BOX and cladding, one parameter) | 1e-3, 1e-4 | 1e-3 | **assumption.** Bulk fused silica is known to ±1e-5 (Leviton, Frey, arXiv:080"
    },
    {
     "line": 58,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_ox (BOX and cladding, one parameter) | 1e-3, 1e-4 | 1e-3 | **assumption.** Bulk fused silica is known to ±1e-5 (Leviton, Frey, arXiv:080"
    },
    {
     "line": 58,
     "number": "1e-3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_ox (BOX and cladding, one parameter) | 1e-3, 1e-4 | 1e-3 | **assumption.** Bulk fused silica is known to ±1e-5 (Leviton, Frey, arXiv:080"
    },
    {
     "line": 58,
     "number": "1e-5",
-    "source": "results_priors_search/data/search.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| n_ox (BOX and cladding, one parameter) | 1e-3, 1e-4 | 1e-3 | **assumption.** Bulk fused silica is known to ±1e-5 (Leviton, Frey, arXiv:080"
    },
    {
     "line": 58,
     "number": "0805.0091",
     "source": null,
-    "pool": "folder",
+    "pool": "section",
     "context": "| n_ox (BOX and cladding, one parameter) | 1e-3, 1e-4 | 1e-3 | **assumption.** Bulk fused silica is known to ±1e-5 (Leviton, Frey, arXiv:080"
    },
    {
     "line": 61,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| \"all optimistic\" | d 1 nm, n_Si and n_ox 1e-4, T 0.1 K, ar − a 1° | – | upper bound on what priors can give |"
    },
    {
     "line": 61,
     "number": "0.1",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| \"all optimistic\" | d 1 nm, n_Si and n_ox 1e-4, T 0.1 K, ar − a 1° | – | upper bound on what priors can give |"
    },
    {
     "line": 70,
     "number": "1.33",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | none | 1.33 | 0.324 | 4.11x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 70,
     "number": "0.324",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | none | 1.33 | 0.324 | 4.11x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 70,
     "number": "0.00433",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | none | 1.33 | 0.324 | 4.11x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 70,
     "number": "0.00227",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | none | 1.33 | 0.324 | 4.11x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 71,
     "number": "1.33",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | realistic | 1.33 | 0.319 | 4.17x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 71,
     "number": "0.319",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | realistic | 1.33 | 0.319 | 4.17x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 71,
     "number": "0.00433",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | realistic | 1.33 | 0.319 | 4.17x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 71,
     "number": "0.00227",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | realistic | 1.33 | 0.319 | 4.17x | 0.00433 | 307.5x | 0.00227 |"
    },
    {
     "line": 72,
     "number": "1.33",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | none | 1.33 | 1.33 | 1.00x | 0.4 | 3.3x | 0.084 |"
    },
    {
     "line": 72,
     "number": "1.33",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | none | 1.33 | 1.33 | 1.00x | 0.4 | 3.3x | 0.084 |"
    },
    {
     "line": 72,
     "number": "0.4",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | none | 1.33 | 1.33 | 1.00x | 0.4 | 3.3x | 0.084 |"
    },
    {
     "line": 72,
     "number": "0.084",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | none | 1.33 | 1.33 | 1.00x | 0.4 | 3.3x | 0.084 |"
    },
    {
     "line": 73,
     "number": "1.33",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | realistic + ar-a 2 deg | 1.33 | 1.16 | 1.14x | 0.396 | 3.4x | 0.0839 |"
    },
    {
     "line": 73,
     "number": "1.16",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | realistic + ar-a 2 deg | 1.33 | 1.16 | 1.14x | 0.396 | 3.4x | 0.0839 |"
    },
    {
     "line": 73,
     "number": "0.396",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | realistic + ar-a 2 deg | 1.33 | 1.16 | 1.14x | 0.396 | 3.4x | 0.0839 |"
    },
    {
     "line": 73,
     "number": "0.0839",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | realistic + ar-a 2 deg | 1.33 | 1.16 | 1.14x | 0.396 | 3.4x | 0.0839 |"
    },
    {
     "line": 74,
     "number": "1.33",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | all optimistic | 1.33 | 0.907 | 1.47x | 0.386 | 3.4x | 0.0838 |"
    },
    {
     "line": 74,
     "number": "0.907",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | all optimistic | 1.33 | 0.907 | 1.47x | 0.386 | 3.4x | 0.0838 |"
    },
    {
     "line": 74,
     "number": "0.386",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | all optimistic | 1.33 | 0.907 | 1.47x | 0.386 | 3.4x | 0.0838 |"
    },
    {
     "line": 74,
     "number": "0.0838",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | all optimistic | 1.33 | 0.907 | 1.47x | 0.386 | 3.4x | 0.0838 |"
    },
    {
     "line": 75,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic | 1.38 | 1.38 | 1.00x | 0.412 | 3.4x | 0.113 |"
    },
    {
     "line": 75,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic | 1.38 | 1.38 | 1.00x | 0.412 | 3.4x | 0.113 |"
    },
    {
     "line": 75,
     "number": "0.412",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic | 1.38 | 1.38 | 1.00x | 0.412 | 3.4x | 0.113 |"
    },
    {
     "line": 75,
     "number": "0.113",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic | 1.38 | 1.38 | 1.00x | 0.412 | 3.4x | 0.113 |"
    },
    {
     "line": 76,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic + ar-a 2 deg | 1.38 | 1.2 | 1.15x | 0.408 | 3.4x | 0.113 |"
    },
    {
     "line": 76,
     "number": "1.2",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic + ar-a 2 deg | 1.38 | 1.2 | 1.15x | 0.408 | 3.4x | 0.113 |"
    },
    {
     "line": 76,
     "number": "0.408",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic + ar-a 2 deg | 1.38 | 1.2 | 1.15x | 0.408 | 3.4x | 0.113 |"
    },
    {
     "line": 76,
     "number": "0.113",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| D | realistic + ar-a 2 deg | 1.38 | 1.2 | 1.15x | 0.408 | 3.4x | 0.113 |"
    },
    {
     "line": 77,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | none | 1.39 | 1.39 | 1.00x | 0.431 | 3.2x | 0.138 |"
    },
    {
     "line": 77,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | none | 1.39 | 1.39 | 1.00x | 0.431 | 3.2x | 0.138 |"
    },
    {
     "line": 77,
     "number": "0.431",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | none | 1.39 | 1.39 | 1.00x | 0.431 | 3.2x | 0.138 |"
    },
    {
     "line": 77,
     "number": "0.138",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | none | 1.39 | 1.39 | 1.00x | 0.431 | 3.2x | 0.138 |"
    },
    {
     "line": 78,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic | 1.39 | 1.38 | 1.00x | 0.414 | 3.3x | 0.12 |"
    },
    {
     "line": 78,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic | 1.39 | 1.38 | 1.00x | 0.414 | 3.3x | 0.12 |"
    },
    {
     "line": 78,
     "number": "0.414",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic | 1.39 | 1.38 | 1.00x | 0.414 | 3.3x | 0.12 |"
    },
    {
     "line": 78,
     "number": "0.12",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic | 1.39 | 1.38 | 1.00x | 0.414 | 3.3x | 0.12 |"
    },
    {
     "line": 79,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic + ar-a 2 deg | 1.39 | 1.2 | 1.15x | 0.41 | 3.4x | 0.12 |"
    },
    {
     "line": 79,
     "number": "1.2",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic + ar-a 2 deg | 1.39 | 1.2 | 1.15x | 0.41 | 3.4x | 0.12 |"
    },
    {
     "line": 79,
     "number": "0.41",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic + ar-a 2 deg | 1.39 | 1.2 | 1.15x | 0.41 | 3.4x | 0.12 |"
    },
    {
     "line": 79,
     "number": "0.12",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | realistic + ar-a 2 deg | 1.39 | 1.2 | 1.15x | 0.41 | 3.4x | 0.12 |"
    },
    {
     "line": 80,
     "number": "1.34",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | all optimistic | 1.34 | 0.912 | 1.47x | 0.389 | 3.4x | 0.0957 |"
    },
    {
     "line": 80,
     "number": "0.912",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | all optimistic | 1.34 | 0.912 | 1.47x | 0.389 | 3.4x | 0.0957 |"
    },
    {
     "line": 80,
     "number": "0.389",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | all optimistic | 1.34 | 0.912 | 1.47x | 0.389 | 3.4x | 0.0957 |"
    },
    {
     "line": 80,
     "number": "0.0957",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| E | all optimistic | 1.34 | 0.912 | 1.47x | 0.389 | 3.4x | 0.0957 |"
    },
    {
     "line": 92,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 1 nm | 1.38 | 1.01x | 0.428 | 1.01x | 1.38 | 1.01x | 0.428 | 1.01x |"
    },
    {
     "line": 92,
     "number": "0.428",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 1 nm | 1.38 | 1.01x | 0.428 | 1.01x | 1.38 | 1.01x | 0.428 | 1.01x |"
    },
    {
     "line": 92,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 1 nm | 1.38 | 1.01x | 0.428 | 1.01x | 1.38 | 1.01x | 0.428 | 1.01x |"
    },
    {
     "line": 92,
     "number": "0.428",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 1 nm | 1.38 | 1.01x | 0.428 | 1.01x | 1.38 | 1.01x | 0.428 | 1.01x |"
    },
    {
     "line": 93,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 2 nm | 1.39 | 1.00x | 0.43 | 1.00x | 1.39 | 1.00x | 0.43 | 1.00x |"
    },
    {
     "line": 93,
     "number": "0.43",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 2 nm | 1.39 | 1.00x | 0.43 | 1.00x | 1.39 | 1.00x | 0.43 | 1.00x |"
    },
    {
     "line": 93,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 2 nm | 1.39 | 1.00x | 0.43 | 1.00x | 1.39 | 1.00x | 0.43 | 1.00x |"
    },
    {
     "line": 93,
     "number": "0.43",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| d 2 nm | 1.39 | 1.00x | 0.43 | 1.00x | 1.39 | 1.00x | 0.43 | 1.00x |"
    },
    {
     "line": 94,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si 1e-4 | 1.39 | 1.00x | 0.412 | 1.04x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 94,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si 1e-4 | 1.39 | 1.00x | 0.412 | 1.04x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 94,
     "number": "0.412",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si 1e-4 | 1.39 | 1.00x | 0.412 | 1.04x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 94,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si 1e-4 | 1.39 | 1.00x | 0.412 | 1.04x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 94,
     "number": "0.431",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si 1e-4 | 1.39 | 1.00x | 0.412 | 1.04x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 95,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_ox 1e-4 | 1.34 | 1.04x | 0.43 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 95,
     "number": "1.34",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_ox 1e-4 | 1.34 | 1.04x | 0.43 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 95,
     "number": "0.43",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_ox 1e-4 | 1.34 | 1.04x | 0.43 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 95,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_ox 1e-4 | 1.34 | 1.04x | 0.43 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 95,
     "number": "0.431",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_ox 1e-4 | 1.34 | 1.04x | 0.43 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 96,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si, n_ox 1e-4 | 1.34 | 1.04x | 0.403 | 1.07x | 1.34 | 1.04x | 0.429 | 1.01x |"
    },
    {
     "line": 96,
     "number": "1.34",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si, n_ox 1e-4 | 1.34 | 1.04x | 0.403 | 1.07x | 1.34 | 1.04x | 0.429 | 1.01x |"
    },
    {
     "line": 96,
     "number": "0.403",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si, n_ox 1e-4 | 1.34 | 1.04x | 0.403 | 1.07x | 1.34 | 1.04x | 0.429 | 1.01x |"
    },
    {
     "line": 96,
     "number": "1.34",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si, n_ox 1e-4 | 1.34 | 1.04x | 0.403 | 1.07x | 1.34 | 1.04x | 0.429 | 1.01x |"
    },
    {
     "line": 96,
     "number": "0.429",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| n_Si, n_ox 1e-4 | 1.34 | 1.04x | 0.403 | 1.07x | 1.34 | 1.04x | 0.429 | 1.01x |"
    },
    {
     "line": 97,
     "number": "0.927",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| **ar-a 1 deg** | **0.927** | **1.50x** | 0.415 | 1.04x | **0.927** | **1.50x** | 0.415 | 1.04x |"
    },
    {
     "line": 97,
     "number": "0.415",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| **ar-a 1 deg** | **0.927** | **1.50x** | 0.415 | 1.04x | **0.927** | **1.50x** | 0.415 | 1.04x |"
    },
    {
     "line": 97,
     "number": "0.927",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| **ar-a 1 deg** | **0.927** | **1.50x** | 0.415 | 1.04x | **0.927** | **1.50x** | 0.415 | 1.04x |"
    },
    {
     "line": 97,
     "number": "0.415",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| **ar-a 1 deg** | **0.927** | **1.50x** | 0.415 | 1.04x | **0.927** | **1.50x** | 0.415 | 1.04x |"
    },
    {
     "line": 98,
     "number": "1.21",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 2 deg | 1.21 | 1.16x | 0.427 | 1.01x | 1.21 | 1.16x | 0.427 | 1.01x |"
    },
    {
     "line": 98,
     "number": "0.427",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 2 deg | 1.21 | 1.16x | 0.427 | 1.01x | 1.21 | 1.16x | 0.427 | 1.01x |"
    },
    {
     "line": 98,
     "number": "1.21",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 2 deg | 1.21 | 1.16x | 0.427 | 1.01x | 1.21 | 1.16x | 0.427 | 1.01x |"
    },
    {
     "line": 98,
     "number": "0.427",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 2 deg | 1.21 | 1.16x | 0.427 | 1.01x | 1.21 | 1.16x | 0.427 | 1.01x |"
    },
    {
     "line": 99,
     "number": "1.36",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 5 deg | 1.36 | 1.03x | 0.43 | 1.00x | 1.36 | 1.03x | 0.43 | 1.00x |"
    },
    {
     "line": 99,
     "number": "0.43",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 5 deg | 1.36 | 1.03x | 0.43 | 1.00x | 1.36 | 1.03x | 0.43 | 1.00x |"
    },
    {
     "line": 99,
     "number": "1.36",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 5 deg | 1.36 | 1.03x | 0.43 | 1.00x | 1.36 | 1.03x | 0.43 | 1.00x |"
    },
    {
     "line": 99,
     "number": "0.43",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| ar-a 5 deg | 1.36 | 1.03x | 0.43 | 1.00x | 1.36 | 1.03x | 0.43 | 1.00x |"
    },
    {
     "line": 100,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| T 1 K | 1.39 | 1.00x | 0.431 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 100,
     "number": "0.431",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| T 1 K | 1.39 | 1.00x | 0.431 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 100,
     "number": "1.39",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| T 1 K | 1.39 | 1.00x | 0.431 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 100,
     "number": "0.431",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| T 1 K | 1.39 | 1.00x | 0.431 | 1.00x | 1.39 | 1.00x | 0.431 | 1.00x |"
    },
    {
     "line": 101,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| realistic | 1.38 | 1.01x | 0.412 | 1.05x | 1.38 | 1.01x | 0.414 | 1.04x |"
    },
    {
     "line": 101,
     "number": "0.412",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| realistic | 1.38 | 1.01x | 0.412 | 1.05x | 1.38 | 1.01x | 0.414 | 1.04x |"
    },
    {
     "line": 101,
     "number": "1.38",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| realistic | 1.38 | 1.01x | 0.412 | 1.05x | 1.38 | 1.01x | 0.414 | 1.04x |"
    },
    {
     "line": 101,
     "number": "0.414",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| realistic | 1.38 | 1.01x | 0.412 | 1.05x | 1.38 | 1.01x | 0.414 | 1.04x |"
    },
    {
     "line": 102,
     "number": "0.912",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| all optimistic | 0.912 | 1.53x | 0.389 | 1.11x | 0.912 | 1.53x | 0.389 | 1.11x |"
    },
    {
     "line": 102,
     "number": "0.389",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| all optimistic | 0.912 | 1.53x | 0.389 | 1.11x | 0.912 | 1.53x | 0.389 | 1.11x |"
    },
    {
     "line": 102,
     "number": "0.912",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| all optimistic | 0.912 | 1.53x | 0.389 | 1.11x | 0.912 | 1.53x | 0.389 | 1.11x |"
    },
    {
     "line": 102,
     "number": "0.389",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| all optimistic | 0.912 | 1.53x | 0.389 | 1.11x | 0.912 | 1.53x | 0.389 | 1.11x |"
    },
    {
     "line": 105,
     "number": "1.16",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "`data/summary_tables.md`. The strip-alone step range is wide in D–E (1.16–5.94° with no priors)."
    },
    {
     "line": 105,
     "number": "5.94",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "`data/summary_tables.md`. The strip-alone step range is wide in D–E (1.16–5.94° with no priors)."
    },
    {
     "line": 106,
     "number": "1e-4",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "n_ox at 1e-4 narrows it to 0.87–2.08°, which is the one place an index prior noticeably helps"
    },
    {
     "line": 106,
     "number": "0.87",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "n_ox at 1e-4 narrows it to 0.87–2.08°, which is the one place an index prior noticeably helps"
    },
    {
     "line": 106,
     "number": "2.08",
-    "source": "results_priors_search/data/priors_table.csv",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "n_ox at 1e-4 narrows it to 0.87–2.08°, which is the one place an index prior noticeably helps"
    },
    {
     "line": 111,
     "number": "0.01",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Stage | Set | 0.01 nm | 0.03 | 0.1 | 0.3 | 1 | 2 | 5 | free | depth known (A*) |"
    },
    {
     "line": 111,
     "number": "0.03",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Stage | Set | 0.01 nm | 0.03 | 0.1 | 0.3 | 1 | 2 | 5 | free | depth known (A*) |"
    },
    {
     "line": 111,
     "number": "0.1",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Stage | Set | 0.01 nm | 0.03 | 0.1 | 0.3 | 1 | 2 | 5 | free | depth known (A*) |"
    },
    {
     "line": 111,
     "number": "0.3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Stage | Set | 0.01 nm | 0.03 | 0.1 | 0.3 | 1 | 2 | 5 | free | depth known (A*) |"
    },
    {
     "line": 113,
     "number": "0.00959",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.0282",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.0904",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.213",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.306",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.319",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.323",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.324",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 113,
     "number": "0.00184",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 nm) | 0.00959 | 0.0282 | 0.0904 | 0.213 | 0.306 | 0.319 | 0.323 | 0.324 | 0.00184 |"
    },
    {
     "line": 114,
     "number": "0.00417",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00431",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00433",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00433",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00433",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00433",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00433",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.00433",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 114,
     "number": "0.000977",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| B | strip + rib70 (500 + 300 nm) | 0.00417 | 0.00431 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.00433 | 0.000977 |"
    },
    {
     "line": 115,
     "number": "1.28",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.28",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.28",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.3",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.32",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.33",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.33",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "1.33",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 115,
     "number": "0.00184",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 nm) | 1.28 | 1.28 | 1.28 | 1.3 | 1.32 | 1.33 | 1.33 | 1.33 | 0.00184 |"
    },
    {
     "line": 116,
     "number": "0.0618",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.167",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.335",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.391",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.399",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.4",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.4",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.4",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 116,
     "number": "0.000977",
-    "source": "results_priors_search/data/d_prior_sweep.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| C | strip + rib70 (500 + 300 nm) | 0.0618 | 0.167 | 0.335 | 0.391 | 0.399 | 0.4 | 0.4 | 0.4 | 0.000977 |"
    },
    {
     "line": 138,
     "number": "0.786",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "0.629",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "1.08",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "0.786",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "0.629",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "1.08",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "0.1",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 138,
     "number": "0.786",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | 0.786 [0.629–1.08] | 0.786 [0.629–1.08] | TM 400 + TM 450 + TM 550 | 0.1 | 0.786 |"
    },
    {
     "line": 139,
     "number": "0.735",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "0.51",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "1.38",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "0.399",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "0.399",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "0.453",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "0.34",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 139,
     "number": "0.399",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 0.735 [0.51–1.38] | 0.399 [0.399–0.453] | TM 400 + TM 450 + rib 300 s70 + rib 600 s70 | 0.34 | 0.399 |"
    },
    {
     "line": 140,
     "number": "0.677",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "0.495",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "0.874",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "0.151",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "0.112",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "0.177",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "2.2",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 140,
     "number": "0.151",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 0.677 [0.495–0.874] | 0.151 [0.112–0.177] | TE 400 + TM 450 + rib 300/400/600 s90 | 2.2 | 0.151 |"
    },
    {
     "line": 141,
     "number": "0.638",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "0.457",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "0.873",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "0.146",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "0.107",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "0.167",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "2.4",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 141,
     "number": "0.146",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 0.638 [0.457–0.873] | 0.146 [0.107–0.167] | TE 400 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.146 |"
    },
    {
     "line": 142,
     "number": "0.614",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.345",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.614",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.145",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.106",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.166",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "2.4",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.117",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.096",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
    {
     "line": 142,
     "number": "0.125",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | 0.614 [0.345–0.614] | 0.145 [0.106–0.166] | TE 400/450/600 + TM 450 + rib 300/400/500/600 s90 | 2.4 | 0.117 [0.096–0.125] (two etches;"
    },
@@ -9959,358 +9959,358 @@
    {
     "line": 148,
     "number": "1.6",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "1.6",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "3.55",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "0.425",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "0.425",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "0.451",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "0.3",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 148,
     "number": "0.425",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | 1.6 [1.6–3.55] | 0.425 [0.425–0.451] | TE 400 + TM 500 + rib 300 s70 + rib 400 s70 | 0.3 | 0.425 |"
    },
    {
     "line": 149,
     "number": "1.38",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "1.1",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "4.24",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "0.318",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "0.241",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "0.335",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "0.44",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 149,
     "number": "0.318",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | 1.38 [1.1–4.24] | 0.318 [0.241–0.335] | TE 500 + TE 600 + rib 300/400/500 s90 | 0.44 | 0.318 |"
    },
    {
     "line": 150,
     "number": "1.35",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "0.874",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "2.15",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "0.176",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "0.13",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "0.205",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "1.6",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 150,
     "number": "0.176",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | 1.35 [0.874–2.15] | 0.176 [0.13–0.205] | TE 400 + TE 600 + TM 500 + rib 300/400/600 s90 | 1.6 | 0.176 |"
    },
    {
     "line": 151,
     "number": "0.167",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | n/a (pool has 6 strips) | 0.167 [0.122–0.188] | TE 400/550/600 + TM 500 + rib 300/400/500/600 s90 | 1.8 | 0.163 |"
    },
    {
     "line": 151,
     "number": "0.122",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | n/a (pool has 6 strips) | 0.167 [0.122–0.188] | TE 400/550/600 + TM 500 + rib 300/400/500/600 s90 | 1.8 | 0.163 |"
    },
    {
     "line": 151,
     "number": "0.188",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | n/a (pool has 6 strips) | 0.167 [0.122–0.188] | TE 400/550/600 + TM 500 + rib 300/400/500/600 s90 | 1.8 | 0.163 |"
    },
    {
     "line": 151,
     "number": "1.8",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | n/a (pool has 6 strips) | 0.167 [0.122–0.188] | TE 400/550/600 + TM 500 + rib 300/400/500/600 s90 | 1.8 | 0.163 |"
    },
    {
     "line": 151,
     "number": "0.163",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | n/a (pool has 6 strips) | 0.167 [0.122–0.188] | TE 400/550/600 + TM 500 + rib 300/400/500/600 s90 | 1.8 | 0.163 |"
    },
    {
     "line": 159,
     "number": "−6e-10",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 1 | rib 300 s70 | ∞ | −6e-10 (numerically 0) |"
    },
    {
     "line": 160,
     "number": "1.5e-7",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 2 | TE 400 | 597° | 1.5e-7 |"
    },
    {
     "line": 161,
     "number": "1.56",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | rib 400 s70 | 1.56° | 0.023 |"
    },
    {
     "line": 161,
     "number": "0.023",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 3 | rib 400 s70 | 1.56° | 0.023 |"
    },
    {
     "line": 162,
     "number": "0.425",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | TM 500 | 0.425° | 0.30 |"
    },
    {
     "line": 162,
     "number": "0.30",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 4 | TM 500 | 0.425° | 0.30 |"
    },
    {
     "line": 163,
     "number": "0.408",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | rib 500 s70 | 0.408° | 0.32 |"
    },
    {
     "line": 163,
     "number": "0.32",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 5 | rib 500 s70 | 0.408° | 0.32 |"
    },
    {
     "line": 164,
     "number": "0.233",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | TE 600 | 0.233° | 1.0 |"
    },
    {
     "line": 164,
     "number": "1.0",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 6 | TE 600 | 0.233° | 1.0 |"
    },
    {
     "line": 165,
     "number": "0.196",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 7 | rib 600 s70 | 0.196° | 1.4 |"
    },
    {
     "line": 165,
     "number": "1.4",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 7 | rib 600 s70 | 0.196° | 1.4 |"
    },
    {
     "line": 166,
     "number": "0.195",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | TE 550 | 0.195° | 1.4 |"
    },
    {
     "line": 166,
     "number": "1.4",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| 8 | TE 550 | 0.195° | 1.4 |"
    },
    {
     "line": 172,
     "number": "0.195",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "- Greedy selection ends worse than exhaustive search (0.195° vs 0.167° at 8 structures). Its first"
    },
    {
     "line": 172,
     "number": "0.167",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "- Greedy selection ends worse than exhaustive search (0.195° vs 0.167° at 8 structures). Its first"
    },
    {
     "line": 177,
     "number": "0.786",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "- Three TM strips (400/450/550 nm) give 0.786°, better than the five TE strips (1.33°)."
    },
    {
     "line": 177,
     "number": "1.33",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "- Three TM strips (400/450/550 nm) give 0.786°, better than the five TE strips (1.33°)."
    },
    {
     "line": 179,
     "number": "0.345",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "(0.345–0.614° at k = 8)."
    },
    {
     "line": 179,
     "number": "0.614",
-    "source": "results_priors_search/data/search.json",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "(0.345–0.614° at k = 8)."
    },
    {
     "line": 186,
     "number": "1.7",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": null,
+    "pool": "section",
     "context": "| slab, n_Si, n_ox for rib TE at 50/110/130/150 nm slabs | lets the search choose the partial-etch depth | 288 | ~1.7 h (65 s each) |"
    },
    {
     "line": 187,
     "number": "1.8",
-    "source": "results_priors_search/data/d_prior_sweep.json",
-    "pool": "folder",
+    "source": "results_priors_search/data/summary_tables.md",
+    "pool": "section",
     "context": "| rib TM (all derivatives) at 70/90 nm slabs | a second polarization of the rib, which could pin the rib angle without more widths | 8 × 37 "
    },
    {
@@ -10330,35 +10330,35 @@
    {
     "line": 196,
     "number": "1e-3",
-    "source": "results_etch_depth/STOP_REPORT.md",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| σ_ng (ring) | 1e-3 | **placeholder**, no source |"
    },
    {
     "line": 197,
     "number": "1e-3",
-    "source": "results_etch_depth/STOP_REPORT.md",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| σ_phase (MZI, L = 100 µm) | 1e-3 rad | **placeholder**, assumed in code |"
    },
    {
     "line": 198,
     "number": "1.0",
-    "source": "results_etch_depth/STOP_REPORT.md",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Rib multiplier | 1.0 / 0.2 | 0.2 from wide-rib literature; may not hold for narrow ribs |"
    },
    {
     "line": 198,
     "number": "0.2",
-    "source": "results_etch_depth/STOP_REPORT.md",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Rib multiplier | 1.0 / 0.2 | 0.2 from wide-rib literature; may not hold for narrow ribs |"
    },
    {
     "line": 198,
     "number": "0.2",
-    "source": "results_etch_depth/STOP_REPORT.md",
+    "source": "results_priors_search/data/summary_tables.md",
     "pool": "section",
     "context": "| Rib multiplier | 1.0 / 0.2 | 0.2 from wide-rib literature; may not hold for narrow ribs |"
    }

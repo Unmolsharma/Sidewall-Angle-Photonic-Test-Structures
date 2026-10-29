@@ -1,6 +1,6 @@
 headline: 163 audited, 0 untraced, chance-match rate 5%
 results_etchdepth_femwell/SUMMARY.md: 286 numbers, 49 untraced, chance-match rate 37%
 results_femwell/SUMMARY.md: 334 numbers, 60 untraced, chance-match rate 20%
-results_montecarlo/SUMMARY.md: 311 numbers, 60 untraced, chance-match rate 46%
-results_priors_search/SUMMARY.md: 271 numbers, 2 untraced, chance-match rate 31%
+results_montecarlo/SUMMARY.md: 311 numbers, 2 untraced, chance-match rate 22%
+results_priors_search/SUMMARY.md: 271 numbers, 3 untraced, chance-match rate 28%
 citations: 4 identifiers, 2 verified; 17 named-only lines

@@ -128,81 +128,24 @@ Chance-match rate of the pools: 20% (each section is checked against the files i
 | 280 | 3.42e-4 | per degree at 50 nm vs -3.00e-4 at 150 nm; dn_eff/dw 1.21e-3 vs 3.42e-4 per nm). 70 nm balances |
 | 299 | 1.2 | - SWG gain 1.5x (1.2-1.6x) vs 1.0x: still a negative control. |
 
-## results_montecarlo/SUMMARY.md: 311 numbers, 251 traced, **60 untraced**
+## results_montecarlo/SUMMARY.md: 311 numbers, 309 traced, **2 untraced**
 
-Chance-match rate of the pools: 46% (each section is checked against the files it cites; a section citing no file uses the folder data/ and logs/).
+Chance-match rate of the pools: 22% (each section is checked against the files it cites; a section citing no file uses the folder data/ and logs/).
 
 | line | number | context |
 |---|---|---|
 | 29 | 2306.15643 | - One verified source: Janz et al., arXiv:2306.15643, with 0.1 pm (laser repeatability) and 1 pm |
-| 196 | 0.1 | - A set is *at bound* if any parameter ends within 0.1% of the box edge. |
-| 200 | 0.162 | / CRB, femwell derivatives / 0.162 / 0.367 / 29.4 / |
-| 200 | 0.367 | / CRB, femwell derivatives / 0.162 / 0.367 / 29.4 / |
-| 200 | 29.4 | / CRB, femwell derivatives / 0.162 / 0.367 / 29.4 / |
-| 201 | 0.146 | / CRB, surrogate at nominal / 0.146 / 0.372 / 32.0 / |
-| 201 | 0.372 | / CRB, surrogate at nominal / 0.146 / 0.372 / 32.0 / |
-| 201 | 32.0 | / CRB, surrogate at nominal / 0.146 / 0.372 / 32.0 / |
-| 202 | 0.163 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 202 | 0.155 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 202 | 0.172 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 202 | 0.374 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 202 | 0.363 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 202 | 0.385 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 202 | 2.47 | / **MC std of fitted strip angle** [95% bootstrap] / **0.163 [0.155–0.172]** / **0.374 [0.363–0.385]** / 2.47 (box-limited) / |
-| 203 | 1.01 | / MC std / CRB (femwell; surrogate) / 1.01; 1.12 / 1.02; 1.01 / – / |
-| 203 | 1.12 | / MC std / CRB (femwell; surrogate) / 1.01; 1.12 / 1.02; 1.01 / – / |
-| 203 | 1.02 | / MC std / CRB (femwell; surrogate) / 1.01; 1.12 / 1.02; 1.01 / – / |
-| 203 | 1.01 | / MC std / CRB (femwell; surrogate) / 1.01; 1.12 / 1.02; 1.01 / – / |
 | 204 | 1.4826 | / robust std (1.4826·MAD) / 0.143 / 0.364 / 3.75 / |
-| 204 | 0.143 | / robust std (1.4826·MAD) / 0.143 / 0.364 / 3.75 / |
-| 204 | 0.364 | / robust std (1.4826·MAD) / 0.143 / 0.364 / 3.75 / |
-| 204 | 3.75 | / robust std (1.4826·MAD) / 0.143 / 0.364 / 3.75 / |
-| 205 | −0.232 | / 5–95% of fitted angle / −0.232 to +0.271 / −0.622 to +0.599 / −3.00 to +2.49 / |
-| 205 | +0.271 | / 5–95% of fitted angle / −0.232 to +0.271 / −0.622 to +0.599 / −3.00 to +2.49 / |
-| 205 | −0.622 | / 5–95% of fitted angle / −0.232 to +0.271 / −0.622 to +0.599 / −3.00 to +2.49 / |
-| 205 | +0.599 | / 5–95% of fitted angle / −0.232 to +0.271 / −0.622 to +0.599 / −3.00 to +2.49 / |
-| 205 | −3.00 | / 5–95% of fitted angle / −0.232 to +0.271 / −0.622 to +0.599 / −3.00 to +2.49 / |
-| 205 | +2.49 | / 5–95% of fitted angle / −0.232 to +0.271 / −0.622 to +0.599 / −3.00 to +2.49 / |
-| 206 | +0.0097 | / bias ± SE / +0.0097 ± 0.0037 / −0.015 ± 0.008 / −0.17 ± 0.06 / |
-| 206 | 0.0037 | / bias ± SE / +0.0097 ± 0.0037 / −0.015 ± 0.008 / −0.17 ± 0.06 / |
-| 206 | −0.015 | / bias ± SE / +0.0097 ± 0.0037 / −0.015 ± 0.008 / −0.17 ± 0.06 / |
-| 206 | 0.008 | / bias ± SE / +0.0097 ± 0.0037 / −0.015 ± 0.008 / −0.17 ± 0.06 / |
-| 206 | −0.17 | / bias ± SE / +0.0097 ± 0.0037 / −0.015 ± 0.008 / −0.17 ± 0.06 / |
-| 206 | 0.06 | / bias ± SE / +0.0097 ± 0.0037 / −0.015 ± 0.008 / −0.17 ± 0.06 / |
-| 208 | 20.1 | / mean χ² (dof) / 20.1 (20) / 16.6 (17) / 15.1 (14) / |
-| 208 | 16.6 | / mean χ² (dof) / 20.1 (20) / 16.6 (17) / 15.1 (14) / |
-| 208 | 15.1 | / mean χ² (dof) / 20.1 (20) / 16.6 (17) / 15.1 (14) / |
-| 209 | +0.021 | / fit to noise-free femwell nominal / +0.021 / +0.005 / +0.001 / |
-| 209 | +0.005 | / fit to noise-free femwell nominal / +0.021 / +0.005 / +0.001 / |
-| 209 | +0.001 | / fit to noise-free femwell nominal / +0.021 / +0.005 / +0.001 / |
-| 212 | 1.01 | - The spread is 1.01–1.02 × CRB. |
-| 212 | 1.02 | - The spread is 1.01–1.02 × CRB. |
-| 213 | 0.05 | - There are no failed, ambiguous or at-bound fits, and the bias is under 0.05 σ. |
-| 214 | 1.43 | - All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°. |
-| 214 | 1.42 | - All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°. |
-| 214 | 0.528 | - All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°. |
-| 214 | 0.524 | - All other parameters also match their CRBs, e.g. width 1.43 vs 1.42 nm, rib angle 0.528 vs 0.524°. |
-| 216 | 1.01 | **(a) matches the femwell CRB (1.01×) but is 12% above the surrogate's own CRB.** |
-| 217 | 0.143 | - Its robust std (0.143) sits at that CRB. The core is Gaussian at the CRB, and a small tail inflates |
-| 218 | 1.35 | the std: 11 at-bound sets, and 1.35% of sets beyond 3 CRB. |
-| 221 | +0.010 | - The bias, +0.010°, is 2.7 SE but only 0.06 σ. |
-| 221 | 2.7 | - The bias, +0.010°, is 2.7 SE but only 0.06 σ. |
-| 221 | 0.06 | - The bias, +0.010°, is 2.7 SE but only 0.06 σ. |
-| 222 | +0.021 | - The model error at nominal (+0.021°) is 0.13 σ. |
-| 222 | 0.13 | - The model error at nominal (+0.021°) is 0.13 σ. |
-| 230 | 2.47 | - Its 2.47° spread is set by the ±3° box, not by information. |
-| 233 | 0.16 | nonlinear-fit spread well (within about 1–12%). The 0.16° and 0.37° figures stand, at the |
-| 233 | 0.37 | nonlinear-fit spread well (within about 1–12%). The 0.16° and 0.37° figures stand, at the |
-| 254 | 6.5e-6 | conservative rib noise. Noise values are the usual placeholders (σ_neff 6.5e-6, σ_ng 1e-3, σ_phase |
 
-## results_priors_search/SUMMARY.md: 271 numbers, 269 traced, **2 untraced**
+## results_priors_search/SUMMARY.md: 271 numbers, 268 traced, **3 untraced**
 
-Chance-match rate of the pools: 31% (each section is checked against the files it cites; a section citing no file uses the folder data/ and logs/).
+Chance-match rate of the pools: 28% (each section is checked against the files it cites; a section citing no file uses the folder data/ and logs/).
 
 | line | number | context |
 |---|---|---|
 | 57 | 8.67e-5 | / n_Si / 1e-3, 1e-4 / 1e-4 / **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madiso |
 | 58 | 0805.0091 | / n_ox (BOX and cladding, one parameter) / 1e-3, 1e-4 / 1e-3 / **assumption.** Bulk fused silica is known to ±1e-5 (Leviton, Frey, arXiv:080 |
+| 186 | 1.7 | / slab, n_Si, n_ox for rib TE at 50/110/130/150 nm slabs / lets the search choose the partial-etch depth / 288 / ~1.7 h (65 s each) / |
 
 ## Citations (DOI / arXiv identifiers)
 
