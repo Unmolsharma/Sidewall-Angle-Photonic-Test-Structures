@@ -4,6 +4,7 @@ Extra femwell solves for the etch-depth / nuisance-parameter study.
 Runs in the femwell virtual environment, from src/:
     C:/Users/unmol/.venvs/femwell/Scripts/python.exe etchdepth_femwell_batch.py time
     C:/Users/unmol/.venvs/femwell/Scripts/python.exe etchdepth_femwell_batch.py full [max_workers]
+    (also: striptm, ribslab — the later strip TM and extra rib-slab units)
 
 Structures: strip TE 400-600 nm, strip TM 500 nm, rib TE 300-600 nm at 70 and 90 nm slab.
 New derivatives (central differences at h/2, h, 2h, same mesh r12 and conventions as femwell_batch.py):
@@ -24,6 +25,8 @@ STRIPS = [('strip', 'TE', w, None) for w in (400, 450, 500, 550, 600)] + [('stri
 RIBS = [('rib', 'TE', w, s) for s in (70, 90) for w in (300, 400, 500, 600)]
 # added later: index derivatives for the other strip TM widths (structure search pool)
 STRIPS_TM_EXTRA = [('strip', 'TM', w, None) for w in (400, 450, 550, 600)]
+# added later: slab / index derivatives for two rib widths at the other slabs (best slab for a two-width set)
+RIBS_SLAB_EXTRA = [('rib', 'TE', w, s) for s in (50, 110, 130, 150) for w in (300, 500)]
 
 
 def guesses(units):
@@ -44,6 +47,8 @@ if __name__ == '__main__':
     os.makedirs(os.path.join(OUT, 'cache'), exist_ok=True)
     os.makedirs(os.path.join(OUT, 'logs'), exist_ok=True)
     what = sys.argv[1]
+    if len(sys.argv) > 3:   # optional: run on battery while charge >= this percent (striptm, ribslab, full)
+        fb.BATTERY_FLOOR = int(sys.argv[3])
     if what == 'time':
         logpath = os.path.join(OUT, 'logs', 'timing_r12.log')
         sample = [t for t in tasks() if t[7] == fb.H[t[6]] and
@@ -65,4 +70,10 @@ if __name__ == '__main__':
         logpath = os.path.join(OUT, 'logs', 'striptm_r12.log')
         failed = fb.run(tasks(STRIPS_TM_EXTRA), CACHE, logpath, fb.choose_workers(2.0, max_workers=cap, logpath=logpath), 2.0)
         with open(os.path.join(OUT, 'logs', 'striptm_r12_failed.json'), 'w') as f:
+            json.dump(failed, f, indent=1)
+    elif what == 'ribslab':
+        cap = int(sys.argv[2]) if len(sys.argv) > 2 else 4
+        logpath = os.path.join(OUT, 'logs', 'ribslab_r12.log')
+        failed = fb.run(tasks(RIBS_SLAB_EXTRA), CACHE, logpath, fb.choose_workers(2.0, max_workers=cap, logpath=logpath), 2.0)
+        with open(os.path.join(OUT, 'logs', 'ribslab_r12_failed.json'), 'w') as f:
             json.dump(failed, f, indent=1)

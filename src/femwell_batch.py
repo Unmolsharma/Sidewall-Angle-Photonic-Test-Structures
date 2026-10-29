@@ -227,9 +227,11 @@ def load_cache(path):
     return done
 
 
-def run(tasks, cache, logpath, workers, gb_per_worker):
+def run(tasks, cache, logpath, workers, gb_per_worker, solver=None, keyer=None):
+    # solver/keyer: optional replacements for solve/key_of (other task formats, e.g. the Monte Carlo design)
+    solver, keyer = solver or solve, keyer or key_of
     done = load_cache(cache)
-    todo = [t for t in dict.fromkeys(tasks) if key_of(t) not in done]
+    todo = [t for t in dict.fromkeys(tasks) if keyer(t) not in done]
     log(f'{len(tasks)} tasks, {len(tasks) - len(todo)} cached, {len(todo)} to run, {workers} workers', logpath)
     failed = {}
     t0 = time.time()
@@ -262,7 +264,7 @@ def run(tasks, cache, logpath, workers, gb_per_worker):
                 if tight and inflight:
                     break  # wait for a worker to finish before adding load
                 t = todo.pop(0)
-                inflight[key_of(t)] = pool.apply_async(solve, (t,))
+                inflight[keyer(t)] = pool.apply_async(solver, (t,))
             for k in [k for k, r in inflight.items() if r.ready()]:
                 n_done += _collect(k, inflight.pop(k), cache, failed, logpath)
                 if n_done % 25 == 0:
