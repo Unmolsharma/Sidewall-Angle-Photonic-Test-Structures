@@ -118,6 +118,8 @@ def step_check(Dall):
         for k, obs in enumerate(('neff', 'ng')):
             for grp in (GEO, MAT):
                 ps = [p for p in grp if p in Du[1.0]]
+                if not ps:                        # e.g. structures without index solves
+                    continue
                 big = max(abs(Du[1.0][p][k]) for p in ps)
                 for p in ps:
                     v = [Du[f][p][k] for f in FACTORS]
