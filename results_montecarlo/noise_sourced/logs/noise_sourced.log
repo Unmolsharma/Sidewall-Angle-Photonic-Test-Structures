@@ -1,0 +1,15 @@
+placeholder                    sigma_neff 6.5e-06  sigma_ng 0.001  sigma_phase 0.001 rad
+sourced optimistic (0.1 pm)    sigma_neff 2.75e-07  sigma_ng 0.000107  sigma_phase 0.000111 rad
+sourced conservative (1 pm)    sigma_neff 2.75e-06  sigma_ng 0.00107  sigma_phase 0.00111 rad
+best one-etch set (8), D realistic               placeholder                    0.1616 [0.1184-0.1713]
+best one-etch set (8), D realistic               sourced optimistic (0.1 pm)    0.0139 [0.01007-0.01473]
+best one-etch set (8), D realistic               sourced conservative (1 pm)    0.139 [0.1007-0.1473]
+best one-etch set (8), C none                    placeholder                    0.1443 [0.1053-0.1533]
+best one-etch set (8), C none                    sourced optimistic (0.1 pm)    0.01237 [0.00894-0.01314]
+best one-etch set (8), C none                    sourced conservative (1 pm)    0.1237 [0.0894-0.1314]
+two-width rib 300 + 500, slab 50, D realistic    placeholder                    0.3668 [0.3668-0.3768]
+two-width rib 300 + 500, slab 50, D realistic    sourced optimistic (0.1 pm)    0.04077 [0.04077-0.04175]
+two-width rib 300 + 500, slab 50, D realistic    sourced conservative (1 pm)    0.3891 [0.3891-0.3997]
+strip + rib70 500 + 300, E realistic             placeholder                    0.4283 [0.4283-0.4439]
+strip + rib70 500 + 300, E realistic             sourced optimistic (0.1 pm)    0.04792 [0.04792-0.04961]
+strip + rib70 500 + 300, E realistic             sourced conservative (1 pm)    0.4552 [0.4552-0.4718]

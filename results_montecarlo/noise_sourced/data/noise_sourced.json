@@ -1,0 +1,149 @@
+{
+ "source": {
+  "authors": "S. Janz, S. Dedyulin, D.-X. Xu, M. Vachon, S. Wang, R. Cheriton, J. Weber",
+  "title": "Measurement Accuracy in Silicon Photonic Ring Resonator Thermometers: Identifying and Mitigating Intrinsic Impairments",
+  "venue": "arXiv:2306.15643 [physics.optics]",
+  "year": 2023,
+  "doi": "10.48550/arXiv.2306.15643",
+  "journal_version": "UNVERIFIED"
+ },
+ "assumptions": {
+  "lambda_um": 1.55,
+  "L_um": 100,
+  "n_g": 4.26,
+  "rib_noise_mult": 1.0
+ },
+ "noise": {
+  "placeholder": {
+   "SIGMA_NEFF": 6.5e-06,
+   "SIGMA_NG": 0.001,
+   "SIGMA_PHASE": 0.001
+  },
+  "sourced optimistic (0.1 pm)": {
+   "SIGMA_NEFF": 2.748387096774194e-07,
+   "SIGMA_NG": 0.00010682448301570025,
+   "SIGMA_PHASE": 0.00011141048661221659
+  },
+  "sourced conservative (1 pm)": {
+   "SIGMA_NEFF": 2.7483870967741936e-06,
+   "SIGMA_NG": 0.0010682448301570023,
+   "SIGMA_PHASE": 0.0011141048661221658
+  }
+ },
+ "sets": {
+  "best one-etch set (8), D realistic": {
+   "units": [
+    "strip_TE_400",
+    "strip_TE_600",
+    "strip_TM_400",
+    "strip_TM_600",
+    "rib_TE_300_slab90",
+    "rib_TE_400_slab90",
+    "rib_TE_500_slab90",
+    "rib_TE_600_slab90"
+   ],
+   "stage": "D",
+   "prior": "realistic",
+   "placeholder": {
+    "a_deg_h": 0.1615813022328454,
+    "a_deg_min": 0.11840246858452007,
+    "a_deg_max": 0.1712520433626361
+   },
+   "sourced optimistic (0.1 pm)": {
+    "a_deg_h": 0.013904072601920966,
+    "a_deg_min": 0.010073676366755291,
+    "a_deg_max": 0.014730585969628847
+   },
+   "sourced conservative (1 pm)": {
+    "a_deg_h": 0.138992939553791,
+    "a_deg_min": 0.10070374771058008,
+    "a_deg_max": 0.147256589544792
+   }
+  },
+  "best one-etch set (8), C none": {
+   "units": [
+    "strip_TE_400",
+    "strip_TM_500",
+    "strip_TM_550",
+    "strip_TM_600",
+    "rib_TE_300_slab90",
+    "rib_TE_400_slab90",
+    "rib_TE_500_slab90",
+    "rib_TE_600_slab90"
+   ],
+   "stage": "C",
+   "prior": "none",
+   "placeholder": {
+    "a_deg_h": 0.14431436448024282,
+    "a_deg_min": 0.10528704791708775,
+    "a_deg_max": 0.15331388129707066
+   },
+   "sourced optimistic (0.1 pm)": {
+    "a_deg_h": 0.012366886074561958,
+    "a_deg_min": 0.008939623804091672,
+    "a_deg_max": 0.013135056946816296
+   },
+   "sourced conservative (1 pm)": {
+    "a_deg_h": 0.12366886074561582,
+    "a_deg_min": 0.08939623804091311,
+    "a_deg_max": 0.13135056946816456
+   }
+  },
+  "two-width rib 300 + 500, slab 50, D realistic": {
+   "units": [
+    "strip_TE_400",
+    "strip_TE_450",
+    "strip_TE_500",
+    "strip_TE_550",
+    "strip_TE_600",
+    "rib_TE_300_slab50",
+    "rib_TE_500_slab50"
+   ],
+   "stage": "D",
+   "prior": "realistic",
+   "placeholder": {
+    "a_deg_h": 0.36682677911892186,
+    "a_deg_min": 0.36682677911892186,
+    "a_deg_max": 0.37683608111250544
+   },
+   "sourced optimistic (0.1 pm)": {
+    "a_deg_h": 0.04077013021121746,
+    "a_deg_min": 0.04077013021121746,
+    "a_deg_max": 0.04175203771611141
+   },
+   "sourced conservative (1 pm)": {
+    "a_deg_h": 0.38910445940026206,
+    "a_deg_min": 0.38910445940026206,
+    "a_deg_max": 0.3997219117967939
+   }
+  },
+  "strip + rib70 500 + 300, E realistic": {
+   "units": [
+    "strip_TE_400",
+    "strip_TE_450",
+    "strip_TE_500",
+    "strip_TE_550",
+    "strip_TE_600",
+    "rib_TE_500_slab70",
+    "rib_TE_300_slab70"
+   ],
+   "stage": "E",
+   "prior": "realistic",
+   "placeholder": {
+    "a_deg_h": 0.4283155983481892,
+    "a_deg_min": 0.4283155983481892,
+    "a_deg_max": 0.4439384123349101
+   },
+   "sourced optimistic (0.1 pm)": {
+    "a_deg_h": 0.04792184779470424,
+    "a_deg_min": 0.04792184779470424,
+    "a_deg_max": 0.04961226992613514
+   },
+   "sourced conservative (1 pm)": {
+    "a_deg_h": 0.4551971989041112,
+    "a_deg_min": 0.4551971989041112,
+    "a_deg_max": 0.47181609710066413
+   }
+  }
+ }
+}
