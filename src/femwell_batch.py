@@ -31,8 +31,9 @@ structure), keep the highest-n_eff mode of the requested polarization
 6 modes and no guess. Every solve is appended to a JSON-lines cache as soon
 as it finishes, so a restart resumes.
 
-Safety: before each new solve is submitted the AC-power state is checked; on
-battery the runner waits and re-checks every 5 minutes (logged). The worker
+Safety: the AC-power state is checked every POWER_CHECK_S (60 s) while solves run. On battery (or
+below BATTERY_FLOOR) the running solves are stopped and re-queued, and the runner waits, re-checking
+every 5 minutes (logged). The worker
 count is chosen from free RAM.
 """
 import ctypes
@@ -227,6 +228,9 @@ def load_cache(path):
     return done
 
 
+POWER_CHECK_S = 60   # power is re-checked this often while solves run, not only when one is submitted
+
+
 def run(tasks, cache, logpath, workers, gb_per_worker, solver=None, keyer=None):
     # solver/keyer: optional replacements for solve/key_of (other task formats, e.g. the Monte Carlo design)
     solver, keyer = solver or solve, keyer or key_of
@@ -237,25 +241,18 @@ def run(tasks, cache, logpath, workers, gb_per_worker, solver=None, keyer=None):
     t0 = time.time()
     n_done = 0
     tight = False
-    with Pool(workers, maxtasksperchild=20) as pool:
-        inflight = {}
+    inflight = {}                     # key -> (task, AsyncResult)
+    pool = Pool(workers, maxtasksperchild=20)
+    last_check = 0.0
+    try:
         while todo or inflight:
+            if time.time() - last_check >= POWER_CHECK_S:
+                last_check = time.time()
+                ok, pct = power_ok()
+                if not ok:
+                    n_done += _collect_ready(inflight, cache, failed, logpath)
+                    pool = _pause(pool, inflight, todo, pct, workers, logpath)
             while todo and len(inflight) < (1 if tight else workers):
-                ac, pct = power_ok()
-                waited = False
-                while not ac:
-                    if not waited:
-                        log(f'on battery ({pct}%{f", floor {BATTERY_FLOOR}%" if BATTERY_FLOOR is not None else ""}): '
-                            f'pausing new solves, re-checking every 5 min '
-                            f'({len(inflight)} in flight finish meanwhile)', logpath)
-                        waited = True
-                    # let in-flight solves finish and be recorded while waiting
-                    for k in [k for k, r in inflight.items() if r.ready()]:
-                        n_done += _collect(k, inflight.pop(k), cache, failed, logpath)
-                    time.sleep(300)
-                    ac, pct = power_ok()
-                if waited:
-                    log(f'power OK again ({pct}%), resuming', logpath)
                 fg = free_gb()
                 if (fg < gb_per_worker + 2) != tight:
                     tight = not tight
@@ -264,17 +261,44 @@ def run(tasks, cache, logpath, workers, gb_per_worker, solver=None, keyer=None):
                 if tight and inflight:
                     break  # wait for a worker to finish before adding load
                 t = todo.pop(0)
-                inflight[keyer(t)] = pool.apply_async(solver, (t,))
-            for k in [k for k, r in inflight.items() if r.ready()]:
-                n_done += _collect(k, inflight.pop(k), cache, failed, logpath)
-                if n_done % 25 == 0:
+                inflight[keyer(t)] = (t, pool.apply_async(solver, (t,)))
+            for k in [k for k, (_, r) in inflight.items() if r.ready()]:
+                n_done += _collect(k, inflight.pop(k)[1], cache, failed, logpath)
+                if n_done and n_done % 25 == 0:
                     el = time.time() - t0
                     log(f'{n_done} solved, {len(todo)} queued, {len(inflight)} in flight, '
                         f'{el/60:.1f} min elapsed, ~{el/n_done*len(todo)/60:.0f} min left, free RAM {free_gb():.1f} GB',
                         logpath)
             time.sleep(1)
+    finally:
+        pool.terminate()
+        pool.join()
     log(f'finished: {n_done} solved this run, {len(failed)} failed', logpath)
     return failed
+
+
+def _collect_ready(inflight, cache, failed, logpath):
+    n = 0
+    for k in [k for k, (_, r) in inflight.items() if r.ready()]:
+        n += _collect(k, inflight.pop(k)[1], cache, failed, logpath)
+    return n
+
+
+def _pause(pool, inflight, todo, pct, workers, logpath):
+    """Power below the limit: stop the running solves (they are re-queued, not lost), wait for power, and
+    return a fresh pool. Applies to solves already in flight, so a long solve cannot drain the battery."""
+    log(f'on battery ({pct}%{f", floor {BATTERY_FLOOR}%" if BATTERY_FLOOR is not None else ""}): stopping '
+        f'{len(inflight)} running solve(s) and re-queueing them; re-checking every 5 min', logpath)
+    pool.terminate()
+    pool.join()
+    todo[:0] = [t for t, _ in inflight.values()]
+    inflight.clear()
+    ok, pct = power_ok()
+    while not ok:
+        time.sleep(300)
+        ok, pct = power_ok()
+    log(f'power OK again ({pct}%), resuming', logpath)
+    return Pool(workers, maxtasksperchild=20)
 
 
 def _collect(k, r, cache, failed, logpath):
