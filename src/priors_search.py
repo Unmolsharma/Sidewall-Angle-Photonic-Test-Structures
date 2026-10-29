@@ -48,8 +48,9 @@ PRIORS = {
 REALISTIC = 'realistic'
 
 
-def derivatives(rows):
-    """Like ed.derivatives, but keeps whatever parameters a structure has solves for."""
+def derivatives(rows, strip_symmetry=True):
+    """Like ed.derivatives, but keeps whatever parameters a structure has solves for. Strip angle columns
+    are symmetry-imposed by default (ed.impose_strip_symmetry)."""
     out = {}
     for u in STRIP_UNITS + RIB_UNITS:
         uid = f'{u[0]}_{u[1]}_{u[2]}' + (f'_slab{u[3]}' if u[3] else '')
@@ -71,7 +72,7 @@ def derivatives(rows):
             if 's' in D:
                 D['t_d'] = D['t'] + D['s']
             out[uid][f] = D
-    return out
+    return ed.impose_strip_symmetry(out) if strip_symmetry else out
 
 
 def eligible(Dall, stage):

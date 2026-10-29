@@ -140,7 +140,7 @@ def perturbed(Dall, p, rng):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    Dall = ps.derivatives(ed.load())
+    Dall = ps.derivatives(ed.load(), strip_symmetry=False)   # this script studies the raw residuals
     sets = sets_from_search()
     res = dict(R_exact=R_EXACT, R_minus_exact=r_check(Dall))
     res['nominal'] = {n: crb(it, Dall, st, pr) for n, (st, pr, it) in sets.items()}

@@ -68,7 +68,28 @@ def nng(rows, u, p, d):
     return np.array([n0, n0 - WL0 * (npl - nmi) / (2 * DLAM)])
 
 
-def derivatives(rows):
+T_STRIP = 220.0  # nm
+
+
+def impose_strip_symmetry(Dall):
+    """Replace every strip's angle column by its exact first-order value, -t (pi/180) x width column.
+    An oxide-clad strip is mirror-symmetric about mid-height, so a wall tilt about the bottom edge acts
+    at first order exactly like a width change of -t tan(a); the finite-difference residual R - 1 is
+    numerical noise and otherwise passes for angle information (results_montecarlo/SUMMARY.md, step 2).
+    Default for every CRB that includes strips from 2026-10-27; results committed before then used the
+    computed columns (strip_symmetry=False)."""
+    out = {}
+    for uid, Du in Dall.items():
+        out[uid] = {}
+        for f, D in Du.items():
+            if uid.startswith('strip') and isinstance(D, dict) and 'a' in D:
+                D = dict(D)
+                D['a'] = -T_STRIP * np.radians(1.0) * np.asarray(D['w'])
+            out[uid][f] = D
+    return out
+
+
+def derivatives(rows, strip_symmetry=True):
     """D[uid][f][p] = array([dn_eff, dn_g]) per unit of the study parameter."""
     out = {}
     for u in STRIPS + RIBS:
@@ -85,7 +106,7 @@ def derivatives(rows):
             if 's' in D:
                 D['t_d'] = D['t'] + D['s']        # thickness at fixed etch depth (slab moves with t)
             out[uid][f] = D
-    return out
+    return impose_strip_symmetry(out) if strip_symmetry else out
 
 
 def step_check(Dall):
@@ -140,7 +161,8 @@ def rows_for(items, Dall, f, stage, rib_mult):
             rows.append({p: v[1] / (fv.SIGMA_NG * m) for p, v in c.items()})
         if 'mzi' in readouts:
             rows.append({p: k * v[0] / (fv.SIGMA_PHASE * m) for p, v in c.items()})
-    order = ['w', 't', 'a', 'd70', 'd90', 'ar70', 'ar90', 'nsi', 'nox', 'T']
+    slabs = (50, 70, 90, 110, 130, 150)
+    order = ['w', 't', 'a'] + [f'd{s}' for s in slabs] + [f'ar{s}' for s in slabs] + ['nsi', 'nox', 'T']
     params = [p for p in order if any(p in r for r in rows)]
     J = np.array([[r.get(p, 0.0) for p in params] for r in rows])
     return params, J
