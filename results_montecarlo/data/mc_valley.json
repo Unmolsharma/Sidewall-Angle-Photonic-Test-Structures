@@ -1,0 +1,20 @@
+{
+ "a": {
+  "n": 2000,
+  "corr_w_a": 0.9999952706341051,
+  "slope_w_per_a_nm_per_deg": 3.8340607951883614,
+  "expected_slope_strip_symmetry": 3.839724354387525
+ },
+ "b": {
+  "n": 2000,
+  "corr_w_a": 0.9998892690139232,
+  "slope_w_per_a_nm_per_deg": 3.8286527933511865,
+  "expected_slope_strip_symmetry": 3.839724354387525
+ },
+ "c": {
+  "n": 1994,
+  "corr_w_a": 0.9999975525462572,
+  "slope_w_per_a_nm_per_deg": 3.8419566318890506,
+  "expected_slope_strip_symmetry": 3.839724354387525
+ }
+}

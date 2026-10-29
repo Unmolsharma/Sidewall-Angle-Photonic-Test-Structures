@@ -514,5 +514,21 @@ def run_mc():
         w.writerows(fits)
 
 
+def valley():
+    """Width/angle relation of the fitted values per case (from data/mc_fits.csv): correlation and slope of
+    fitted width against fitted strip angle. Writes data/mc_valley.json."""
+    out = {}
+    with open(os.path.join(OUT, 'mc_fits.csv'), newline='') as f:
+        fits = list(csv.DictReader(f))
+    for name in sorted({r['case'] for r in fits}):
+        r = [x for x in fits if x['case'] == name and x['a_hat'] and x['hat_w']]
+        a, w = np.array([float(x['a_hat']) for x in r]), np.array([float(x['hat_w']) for x in r])
+        out[name] = dict(n=len(r), corr_w_a=float(np.corrcoef(w, a)[0, 1]), slope_w_per_a_nm_per_deg=float(np.polyfit(a, w, 1)[0]),
+                         expected_slope_strip_symmetry=float(T0 * np.pi / 180))
+        print(name, out[name])
+    with open(os.path.join(OUT, 'mc_valley.json'), 'w') as f:
+        json.dump(out, f, indent=1)
+
+
 if __name__ == '__main__':
-    {'plan': plan, 'fit': fit_surrogates, 'mc': run_mc}[sys.argv[1]]()
+    {'plan': plan, 'fit': fit_surrogates, 'mc': run_mc, 'valley': valley}[sys.argv[1]]()
