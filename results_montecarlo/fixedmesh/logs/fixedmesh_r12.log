@@ -1,0 +1,5 @@
+[2026-10-29 16:33:54] free RAM 6.1 GB, ~2.0 GB per worker -> 1 workers
+[2026-10-29 16:33:54] 50 tasks, 0 cached, 50 to run, 1 workers
+[2026-10-29 17:05:16] 25 solved, 25 queued, 0 in flight, 31.4 min elapsed, ~31 min left, free RAM 7.6 GB
+[2026-10-29 17:36:30] on battery (24%, floor 25%): stopping 1 running solve(s) and re-queueing them; re-checking every 5 min
+[2026-10-29 17:53:32] stopped by hand while paused at the battery floor (43 of 50 solved); resume with: fixedmesh_rib.py 2 25
