@@ -1,9 +1,44 @@
 # Strip symmetry, symmetry-imposed search, and the Monte Carlo check
 
-Status: steps 1–3 done. Step 2 (strips-only angle information) is kept unchanged further down.
-Headline numbers with sources, and retired numbers with reasons, are in `HEADLINE_NUMBERS.md`.
-Noise values are the usual **placeholders** throughout (σ_neff 6.5e-6, σ_ng 1e-3, σ_phase 1e-3 rad,
-L = 100 µm; none sourced).
+Status: steps 1–3 done, plus the final cleanup (next section). Step 2 (strips-only angle information)
+is kept unchanged further down. Headline numbers with sources, and retired numbers with reasons, are
+in `HEADLINE_NUMBERS.md`. Noise values in steps 1–3 are the **placeholders** (σ_neff 6.5e-6, σ_ng 1e-3,
+σ_phase 1e-3 rad, L = 100 µm). A sourced recompute is in `HEADLINE_NUMBERS.md` and
+`noise_sourced/data/noise_sourced.json`.
+
+## Final cleanup (2026-10-29)
+
+1. **Robustness to the rib 300 nm derivatives.**
+   - Code and output: `src/robustness_rib300.py`, writing `robustness/data/robustness.json` (log
+     `robustness/logs/robustness.log`).
+   - Random ±0.3/1/3/5% errors on that structure's derivatives make both headline numbers fragile at a
+     few percent (table in `HEADLINE_NUMBERS.md`).
+   - **Fixed mesh:** `src/fixedmesh_rib.py` reuses the nominal mesh with its nodes moved onto each
+     stencil geometry. Solves are in `fixedmesh/cache/solves_r12.jsonl` (log
+     `fixedmesh/logs/fixedmesh_r12.log`).
+   - Rib 300 nm, 50 nm slab: all 25 solves done. Derivatives agree with the remeshed ones within 0.13%,
+     and the two-width number goes 0.367 → 0.372° (+1.3%).
+   - Rib 300 nm, 90 nm slab: 18 of 25 done. The run paused at the battery floor and was stopped, so
+     the best-set (0.162°) fixed-mesh check is still open.
+2. **Slots and SWG are dropped from the main results** (mirror-symmetric, so blind like strips; not
+   rechecked). See `HEADLINE_NUMBERS.md`.
+3. **Slab range:** 30/40 nm slabs need ~148 solves (~70 min), over the 1 h limit; not run. 50 nm is
+   the edge of the tested range, and the two-width optimum sits on it.
+4. **Noise sourcing:** `src/noise_sourced.py`, writing `noise_sourced/data/noise_sourced.json` (log
+   `noise_sourced/logs/noise_sourced.log`).
+   - One verified source: Janz et al., arXiv:2306.15643, with 0.1 pm (laser repeatability) and 1 pm
+     ("routinely measured") resonance-wavelength levels.
+   - σ_ng and σ_phase are derived from those by our conversion; no separately published value was
+     found and verified.
+   - 1 pm reproduces the placeholders closely: 0.139° and 0.389° vs 0.162° and 0.367°.
+   - 0.1 pm gives 0.0139° and 0.0408°.
+5. **Battery floor:** `src/femwell_batch.py` now re-checks power every 60 s while solves run. Below
+   the floor it stops the running solves, re-queues them and waits.
+   - Tested with dummy solves before use.
+   - It worked in production: `[2026-10-29 17:36:30] on battery (24%, floor 25%): stopping 1 running
+     solve(s) and re-queueing them` (`fixedmesh/logs/fixedmesh_r12.log`).
+6. **Provenance audit:** `src/provenance_audit.py` (new; no such script existed), writing
+   `provenance/AUDIT.md` and `provenance/audit.json`. Results are in the audit file.
 
 ## Strip symmetry is now the default
 
@@ -190,7 +225,8 @@ with the step check passing at 2%. How far the smooth model sits from femwell at
 - The data do not determine the angle (CRB ~30°).
 - Fits wander to the box edge: 1163 of 2000 end at a bound, 11 are ambiguous, 6 failed.
 - The fitted width and angle lie on the line w − 3.84·a = const (correlation 1.000, slope 3.84
-  nm/deg, from `data/mc_fits.csv`), i.e. constant mid-height width.
+  nm/deg; `data/mc_valley.json`, from `python montecarlo.py valley` on `data/mc_fits.csv`), i.e.
+  constant mid-height width.
 - Its 2.47° spread is set by the ±3° box, not by information.
 
 **Conclusion:** for the sets that are identifiable, the linearized CRB predicts the real
