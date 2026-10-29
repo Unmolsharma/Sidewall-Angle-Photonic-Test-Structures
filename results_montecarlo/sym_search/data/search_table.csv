@@ -1,0 +1,225 @@
+search,kind,k,slab,set,a_deg_h,a_deg_min,a_deg_max
+C|none,"one etch, best over slabs",1,50,strip_TE_400,inf,inf,inf
+C|none,"one etch, best over slabs",2,50,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, best over slabs",3,70,strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.7816524359565972,0.7816524359565972,0.8150059262983339
+C|none,"one etch, best over slabs",4,50,strip_TE_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35926274919515827,0.35926274919515827,0.36913166515647006
+C|none,"one etch, best over slabs",5,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.1509195104861959,0.11075665283933349,0.16298105849075442
+C|none,"one etch, best over slabs",6,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1456240772520269,0.10627118703952321,0.15468101471701817
+C|none,"one etch, best over slabs",7,90,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1446254505918183,0.10552036455799624,0.15363855169999213
+C|none,"one etch, best over slabs",8,90,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.14431436448024282,0.10528704791708775,0.15331388129707066
+C|none,"one etch, per slab",1,50,strip_TE_400,inf,inf,inf
+C|none,"one etch, per slab",2,50,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, per slab",3,50,strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,1.1270501118084608,1.1270501118084608,1.1490758580086327
+C|none,"one etch, per slab",4,50,strip_TE_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35926274919515827,0.35926274919515827,0.36913166515647006
+C|none,"one etch, per slab",5,50,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35925285611624047,0.35925285611624047,0.3691215384167558
+C|none,"one etch, per slab",6,50,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3592498225527086,0.3592498225527086,0.3691184372092864
+C|none,"one etch, per slab",7,50,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3592485648989964,0.3592485648989964,0.36911714660719686
+C|none,"one etch, per slab",8,50,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.359248052312248,0.359248052312248,0.36911661963111064
+C|none,"one etch, per slab",1,70,strip_TE_400,inf,inf,inf
+C|none,"one etch, per slab",2,70,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, per slab",3,70,strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.7816524359565972,0.7816524359565972,0.8150059262983339
+C|none,"one etch, per slab",4,70,strip_TE_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.4109179021377178,0.4109179021377178,0.4355023500301047
+C|none,"one etch, per slab",5,70,strip_TE_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_600_slab70,0.17528222176728792,0.15291113348480406,0.17528222176728792
+C|none,"one etch, per slab",6,70,strip_TE_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.1660564203478113,0.14048885927166813,0.16685569206759643
+C|none,"one etch, per slab",7,70,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.16467963409887673,0.139291376398702,0.16543600479696172
+C|none,"one etch, per slab",8,70,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.1642488280114337,0.1389172168054415,0.1649926821387629
+C|none,"one etch, per slab",1,90,strip_TE_400,inf,inf,inf
+C|none,"one etch, per slab",2,90,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, per slab",3,90,strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90,0.8729939061987885,0.8729939061987885,0.9582050577070397
+C|none,"one etch, per slab",4,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_600_slab90,0.5445820603057816,0.5445820603057816,0.5868518616591946
+C|none,"one etch, per slab",5,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.1509195104861959,0.11075665283933349,0.16298105849075442
+C|none,"one etch, per slab",6,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1456240772520269,0.10627118703952321,0.15468101471701817
+C|none,"one etch, per slab",7,90,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1446254505918183,0.10552036455799624,0.15363855169999213
+C|none,"one etch, per slab",8,90,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.14431436448024282,0.10528704791708775,0.15331388129707066
+C|none,"one etch, per slab",1,110,strip_TE_400,inf,inf,inf
+C|none,"one etch, per slab",2,110,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, per slab",3,110,strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,1.2692480063344809,1.1967998042311792,1.367343218367705
+C|none,"one etch, per slab",4,110,strip_TE_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7960857020356159,0.7433854196085209,0.8646133518294654
+C|none,"one etch, per slab",5,110,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7960826481681617,0.7433826149314327,0.8646099541814951
+C|none,"one etch, per slab",6,110,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7960817138739634,0.7433817591520536,0.8646089142462442
+C|none,"one etch, per slab",7,110,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7960813283957264,0.7433814056936502,0.8646084835667134
+C|none,"one etch, per slab",8,110,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7960811729057865,0.7433812637173565,0.8646083087213119
+C|none,"one etch, per slab",1,130,strip_TE_400,inf,inf,inf
+C|none,"one etch, per slab",2,130,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, per slab",3,130,strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.6213559706984686,1.4247217801895407,1.7401086097803382
+C|none,"one etch, per slab",4,130,strip_TE_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2079489472038323,1.0575320249819793,1.302298538414736
+C|none,"one etch, per slab",5,130,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.207946473492289,1.0575300288779101,1.3022958148737165
+C|none,"one etch, per slab",6,130,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2079457157217042,1.0575294197620546,1.3022949803767057
+C|none,"one etch, per slab",7,130,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.207945402220753,1.0575291681354704,1.3022946339937336
+C|none,"one etch, per slab",8,130,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.207945275017102,1.0575290670219404,1.3022944926831537
+C|none,"one etch, per slab",1,150,strip_TE_400,inf,inf,inf
+C|none,"one etch, per slab",2,150,strip_TE_400 + strip_TE_450,inf,inf,inf
+C|none,"one etch, per slab",3,150,strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,4.40914956377403,2.9487571349442407,4.40914956377403
+C|none,"one etch, per slab",4,150,strip_TE_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808992210757902,2.508005122092564,3.808992210757902
+C|none,"one etch, per slab",5,150,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808987709522727,2.5080022250701464,3.808987709522727
+C|none,"one etch, per slab",6,150,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808986321187373,2.5080013352221355,3.808986321187373
+C|none,"one etch, per slab",7,150,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8089857384182224,2.5080009625783366,3.8089857384182224
+C|none,"one etch, per slab",8,150,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8089854945377346,2.508000808363681,3.8089854945377346
+C|realistic,"one etch, best over slabs",1,50,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, best over slabs",2,70,strip_TM_600 + rib_TE_600_slab70,16.77958583746879,16.67173357363825,16.77958583746879
+C|realistic,"one etch, best over slabs",3,70,strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.7809084802035202,0.7809084802035202,0.8142517037753426
+C|realistic,"one etch, best over slabs",4,50,strip_TE_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3590856580632908,0.3590856580632908,0.3689489663595006
+C|realistic,"one etch, best over slabs",5,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.15091211136978913,0.11075430835200731,0.16297334327843285
+C|realistic,"one etch, best over slabs",6,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.14561726290337648,0.10626902597173896,0.15467420868286538
+C|realistic,"one etch, best over slabs",7,90,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1446187638401353,0.10551824320164059,0.1536318703241546
+C|realistic,"one etch, best over slabs",8,90,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1443077171783168,0.10528493881279621,0.15330723845827937
+C|realistic,"one etch, per slab",1,50,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, per slab",2,50,strip_TM_600 + rib_TE_500_slab50,29.428585232841616,29.390575251877284,29.428585232841616
+C|realistic,"one etch, per slab",3,50,strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,1.125981309080465,1.125981309080465,1.1479796551420065
+C|realistic,"one etch, per slab",4,50,strip_TE_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3590856580632908,0.3590856580632908,0.3689489663595006
+C|realistic,"one etch, per slab",5,50,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35907576974372296,0.35907576974372296,0.36893884453927445
+C|realistic,"one etch, per slab",6,50,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3590727376554655,0.3590727376554655,0.3689357448545434
+C|realistic,"one etch, per slab",7,50,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3590714806274225,0.3590714806274225,0.36893445490021015
+C|realistic,"one etch, per slab",8,50,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35907096830798124,0.35907096830798124,0.36893392820098997
+C|realistic,"one etch, per slab",1,70,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, per slab",2,70,strip_TM_600 + rib_TE_600_slab70,16.77958583746879,16.67173357363825,16.77958583746879
+C|realistic,"one etch, per slab",3,70,strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.7809084802035202,0.7809084802035202,0.8142517037753426
+C|realistic,"one etch, per slab",4,70,strip_TE_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.4107111561016179,0.4107111561016179,0.4352905617903885
+C|realistic,"one etch, per slab",5,70,strip_TE_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_600_slab70,0.17526502081587894,0.1529011131687056,0.17526502081587894
+C|realistic,"one etch, per slab",6,70,strip_TE_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.16604149302275462,0.14048082747077933,0.16684154986274125
+C|realistic,"one etch, per slab",7,70,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.16466505218913413,0.13928353256654089,0.16542219757569768
+C|realistic,"one etch, per slab",8,70,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.1642343531386818,0.1389094311330626,0.16497897848239076
+C|realistic,"one etch, per slab",1,90,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, per slab",2,90,strip_TM_600 + rib_TE_600_slab90,16.94608769782377,16.933270217169284,17.05112960600415
+C|realistic,"one etch, per slab",3,90,strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90,0.8721547558305375,0.8721547558305375,0.9573366864897246
+C|realistic,"one etch, per slab",4,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_600_slab90,0.5441757005967092,0.5441757005967092,0.5864290140386457
+C|realistic,"one etch, per slab",5,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.15091211136978913,0.11075430835200731,0.16297334327843285
+C|realistic,"one etch, per slab",6,90,strip_TE_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.14561726290337648,0.10626902597173896,0.15467420868286538
+C|realistic,"one etch, per slab",7,90,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1446187638401353,0.10551824320164059,0.1536318703241546
+C|realistic,"one etch, per slab",8,90,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1443077171783168,0.10528493881279621,0.15330723845827937
+C|realistic,"one etch, per slab",1,110,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, per slab",2,110,strip_TE_400 + rib_TE_500_slab110,26.301043995304518,26.09848267009226,26.301043995304518
+C|realistic,"one etch, per slab",3,110,strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,1.2681332364889097,1.195711021911175,1.3662609092445654
+C|realistic,"one etch, per slab",4,110,strip_TE_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954215723056111,0.7427485707828413,0.863944208477039
+C|realistic,"one etch, per slab",5,110,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954185216320853,0.7427457692566816,0.8639408137979604
+C|realistic,"one etch, per slab",6,110,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954175883264999,0.7427449144508709,0.8639397747815835
+C|realistic,"one etch, per slab",7,110,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954172032662538,0.7427445614050605,0.863939344491543
+C|realistic,"one etch, per slab",8,110,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954170479537341,0.7427444196036861,0.8639391698121003
+C|realistic,"one etch, per slab",1,130,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, per slab",2,130,strip_TM_600 + rib_TE_500_slab130,32.1336165446406,31.867928739960345,32.1336165446406
+C|realistic,"one etch, per slab",3,130,strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.6196519306514838,1.4229935535046438,1.7384467627891644
+C|realistic,"one etch, per slab",4,130,strip_TE_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.206725781635217,1.0563369356333419,1.3010786583727763
+C|realistic,"one etch, per slab",5,130,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067233115286014,1.0563349433786604,1.3010759381923243
+C|realistic,"one etch, per slab",6,130,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067225548733265,1.056334335450718,1.3010751047347744
+C|realistic,"one etch, per slab",7,130,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067222418435035,1.0563340843263156,1.3010747587918707
+C|realistic,"one etch, per slab",8,130,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067221148395004,1.0563339834246215,1.3010746176683698
+C|realistic,"one etch, per slab",1,150,strip_TE_400,inf,inf,inf
+C|realistic,"one etch, per slab",2,150,strip_TM_600 + rib_TE_500_slab150,43.078798531397425,43.078798531397425,44.257522562445125
+C|realistic,"one etch, per slab",3,150,strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,4.4083999814093335,2.946210860626162,4.4083999814093335
+C|realistic,"one etch, per slab",4,150,strip_TE_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8081167723129954,2.505813764115035,3.8081167723129954
+C|realistic,"one etch, per slab",5,150,strip_TE_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808112269981797,2.505810869979621,3.808112269981797
+C|realistic,"one etch, per slab",6,150,strip_TE_400 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8081108813083446,2.5058099810247487,3.8081108813083446
+C|realistic,"one etch, per slab",7,150,strip_TE_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808110298397236,2.505809608760493,3.808110298397236
+C|realistic,"one etch, per slab",8,150,strip_TE_400 + strip_TM_400 + strip_TM_450 + strip_TM_500 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8081100544572974,2.5058094547077827,3.8081100544572974
+D|none,"one etch, best over slabs",1,50,strip_TE_400,inf,inf,inf
+D|none,"one etch, best over slabs",2,50,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, best over slabs",3,50,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, best over slabs",4,50,strip_TE_400 + strip_TE_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.49022688351955224,0.49022688351955224,0.5042151215591821
+D|none,"one etch, best over slabs",5,50,strip_TE_450 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35978414566795724,0.35978414566795724,0.36968245973608105
+D|none,"one etch, best over slabs",6,90,strip_TE_450 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.1846765834632623,0.13737843260662255,0.20021446919610894
+D|none,"one etch, best over slabs",7,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.16843216151780566,0.12434161096337375,0.18204149557120564
+D|none,"one etch, best over slabs",8,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.16165724717746321,0.1184566652714754,0.17133042425411066
+D|none,"one etch, per slab",1,50,strip_TE_400,inf,inf,inf
+D|none,"one etch, per slab",2,50,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, per slab",3,50,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, per slab",4,50,strip_TE_400 + strip_TE_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.49022688351955224,0.49022688351955224,0.5042151215591821
+D|none,"one etch, per slab",5,50,strip_TE_450 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35978414566795724,0.35978414566795724,0.36968245973608105
+D|none,"one etch, per slab",6,50,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.359413627915507,0.359413627915507,0.3692867468001788
+D|none,"one etch, per slab",7,50,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35935760845422443,0.35935760845422443,0.3692291344707544
+D|none,"one etch, per slab",8,50,strip_TE_400 + strip_TE_500 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3593500515471279,0.3593500515471279,0.3692213382417619
+D|none,"one etch, per slab",1,70,strip_TE_400,inf,inf,inf
+D|none,"one etch, per slab",2,70,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, per slab",3,70,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, per slab",4,70,strip_TE_400 + strip_TE_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.5076021895114067,0.5076021895114067,0.5368754351155158
+D|none,"one etch, per slab",5,70,strip_TE_450 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab70 + rib_TE_400_slab70,0.4109704086499908,0.4109704086499908,0.43555880534043784
+D|none,"one etch, per slab",6,70,strip_TE_450 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_600_slab70,0.21965969555906964,0.19573811691734608,0.21965969555906964
+D|none,"one etch, per slab",7,70,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_600_slab70,0.19822923037790105,0.17460473476420948,0.19822923037790105
+D|none,"one etch, per slab",8,70,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.18718940395901107,0.1589660802990184,0.18885769333224972
+D|none,"one etch, per slab",1,90,strip_TE_400,inf,inf,inf
+D|none,"one etch, per slab",2,90,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, per slab",3,90,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, per slab",4,90,strip_TE_400 + strip_TE_600 + rib_TE_300_slab90 + rib_TE_500_slab90,0.656960685617864,0.656960685617864,0.7064679959219202
+D|none,"one etch, per slab",5,90,strip_TE_400 + strip_TE_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90,0.5160093880115889,0.43602705413202,0.5345307723380752
+D|none,"one etch, per slab",6,90,strip_TE_450 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.1846765834632623,0.13737843260662255,0.20021446919610894
+D|none,"one etch, per slab",7,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.16843216151780566,0.12434161096337375,0.18204149557120564
+D|none,"one etch, per slab",8,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.16165724717746321,0.1184566652714754,0.17133042425411066
+D|none,"one etch, per slab",1,110,strip_TE_400,inf,inf,inf
+D|none,"one etch, per slab",2,110,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, per slab",3,110,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, per slab",4,110,strip_TE_400 + strip_TE_500 + rib_TE_300_slab110 + rib_TE_500_slab110,0.936036115513731,0.8760765035788409,1.018429235568623
+D|none,"one etch, per slab",5,110,strip_TE_400 + strip_TE_600 + strip_TM_500 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7961153739751048,0.7434108577279329,0.864644648173038
+D|none,"one etch, per slab",6,110,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_450 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7961079278339365,0.7434080655264298,0.864639758598247
+D|none,"one etch, per slab",7,110,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7961000384357503,0.7433984385861988,0.8646292889640124
+D|none,"one etch, per slab",8,110,strip_TE_400 + strip_TE_500 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7960986504358815,0.7433971793749882,0.8646277226650667
+D|none,"one etch, per slab",1,130,strip_TE_400,inf,inf,inf
+D|none,"one etch, per slab",2,130,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, per slab",3,130,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, per slab",4,130,strip_TE_450 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.3763683606174055,1.1885946157149545,1.4871429364312243
+D|none,"one etch, per slab",5,130,strip_TE_400 + strip_TE_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2079824396623073,1.0575637051938591,1.3023385193076484
+D|none,"one etch, per slab",6,130,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2079603845352187,1.0575406250120194,1.302311198255241
+D|none,"one etch, per slab",7,130,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2079551917611895,1.0575367124605324,1.302305446508653
+D|none,"one etch, per slab",8,130,strip_TE_400 + strip_TE_500 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2079544441258734,1.0575361568892079,1.3023046120331485
+D|none,"one etch, per slab",1,150,strip_TE_400,inf,inf,inf
+D|none,"one etch, per slab",2,150,strip_TE_400 + strip_TE_450,inf,inf,inf
+D|none,"one etch, per slab",3,150,strip_TE_400 + strip_TE_450 + strip_TE_500,inf,inf,inf
+D|none,"one etch, per slab",4,150,strip_TE_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.9524314707862143,2.6068815765399918,3.9524314707862143
+D|none,"one etch, per slab",5,150,strip_TE_400 + strip_TE_450 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8104884678519415,2.508803153813523,3.8104884678519415
+D|none,"one etch, per slab",6,150,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.809006001132493,2.50801366522396,3.809006001132493
+D|none,"one etch, per slab",7,150,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.809002459746463,2.508011254682907,3.809002459746463
+D|none,"one etch, per slab",8,150,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808999035110482,2.5080092102527667,3.808999035110482
+D|realistic,"one etch, best over slabs",1,50,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, best over slabs",2,70,strip_TM_600 + rib_TE_600_slab70,16.831149009178887,16.723030418653288,16.831149009178887
+D|realistic,"one etch, best over slabs",3,70,strip_TE_550 + rib_TE_300_slab70 + rib_TE_400_slab70,1.2690845854222703,1.2690845854222703,1.3328243375225433
+D|realistic,"one etch, best over slabs",4,50,strip_TM_400 + strip_TM_550 + rib_TE_300_slab50 + rib_TE_500_slab50,0.4134505284279288,0.4134505284279288,0.4248419929649682
+D|realistic,"one etch, best over slabs",5,90,strip_TE_500 + strip_TE_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90,0.3287159393838118,0.23796347761874262,0.3295934984127628
+D|realistic,"one etch, best over slabs",6,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.1744984208802273,0.12919496576400644,0.18887065058172786
+D|realistic,"one etch, best over slabs",7,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.166789997147081,0.12254276230990166,0.17686248804118546
+D|realistic,"one etch, best over slabs",8,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1615813022328454,0.11840246858452007,0.1712520433626361
+D|realistic,"one etch, per slab",1,50,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, per slab",2,50,strip_TM_450 + rib_TE_500_slab50,29.449790795592833,29.411801143871646,29.449790795592833
+D|realistic,"one etch, per slab",3,50,strip_TE_550 + rib_TE_300_slab50 + rib_TE_500_slab50,1.765845708059129,1.765845708059129,1.7998378080877901
+D|realistic,"one etch, per slab",4,50,strip_TM_400 + strip_TM_550 + rib_TE_300_slab50 + rib_TE_500_slab50,0.4134505284279288,0.4134505284279288,0.4248419929649682
+D|realistic,"one etch, per slab",5,50,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3594073909633124,0.3594073909633124,0.3692861008998988
+D|realistic,"one etch, per slab",6,50,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35923593712587765,0.35923593712587765,0.36910343012897195
+D|realistic,"one etch, per slab",7,50,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.35918023649034464,0.35918023649034464,0.3690461466839044
+D|realistic,"one etch, per slab",8,50,strip_TE_400 + strip_TE_500 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab50 + rib_TE_500_slab50,0.3591727071507064,0.3591727071507064,0.36903837921690597
+D|realistic,"one etch, per slab",1,70,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, per slab",2,70,strip_TM_600 + rib_TE_600_slab70,16.831149009178887,16.723030418653288,16.831149009178887
+D|realistic,"one etch, per slab",3,70,strip_TE_550 + rib_TE_300_slab70 + rib_TE_400_slab70,1.2690845854222703,1.2690845854222703,1.3328243375225433
+D|realistic,"one etch, per slab",4,70,strip_TM_500 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70,0.41610100236389436,0.41610100236389436,0.4410530187743372
+D|realistic,"one etch, per slab",5,70,strip_TE_500 + strip_TE_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70,0.3784021051759914,0.3198052412118516,0.40494146677010656
+D|realistic,"one etch, per slab",6,70,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_600_slab70,0.2070092807013252,0.18310823671707935,0.2070092807013252
+D|realistic,"one etch, per slab",7,70,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.19464868280158576,0.16553612096595616,0.1968331690233371
+D|realistic,"one etch, per slab",8,70,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab70 + rib_TE_400_slab70 + rib_TE_500_slab70 + rib_TE_600_slab70,0.18708404203488554,0.15888010396557198,0.18874890399976924
+D|realistic,"one etch, per slab",1,90,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, per slab",2,90,strip_TM_600 + rib_TE_600_slab90,16.967844892464377,16.95500551427052,17.073056758008466
+D|realistic,"one etch, per slab",3,90,strip_TE_600 + rib_TE_300_slab90 + rib_TE_400_slab90,1.411398597640333,1.411398597640333,1.573293815591255
+D|realistic,"one etch, per slab",4,90,strip_TM_500 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90,0.553091529497874,0.553091529497874,0.6213736911624358
+D|realistic,"one etch, per slab",5,90,strip_TE_500 + strip_TE_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90,0.3287159393838118,0.23796347761874262,0.3295934984127628
+D|realistic,"one etch, per slab",6,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_600_slab90,0.1744984208802273,0.12919496576400644,0.18887065058172786
+D|realistic,"one etch, per slab",7,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.166789997147081,0.12254276230990166,0.17686248804118546
+D|realistic,"one etch, per slab",8,90,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab90 + rib_TE_400_slab90 + rib_TE_500_slab90 + rib_TE_600_slab90,0.1615813022328454,0.11840246858452007,0.1712520433626361
+D|realistic,"one etch, per slab",1,110,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, per slab",2,110,strip_TE_600 + rib_TE_500_slab110,26.349890495112263,26.146969901935858,26.349890495112263
+D|realistic,"one etch, per slab",3,110,strip_TE_600 + rib_TE_300_slab110 + rib_TE_500_slab110,2.097167349296345,1.9709805850365771,2.2655078869309673
+D|realistic,"one etch, per slab",4,110,strip_TM_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.8054358277896307,0.7517570490042483,0.8752928451558045
+D|realistic,"one etch, per slab",5,110,strip_TE_400 + strip_TE_600 + strip_TM_500 + rib_TE_300_slab110 + rib_TE_500_slab110,0.795448359559305,0.742772353718229,0.8639733531204274
+D|realistic,"one etch, per slab",6,110,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_450 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954394825580747,0.7427658226446229,0.8639648267827923
+D|realistic,"one etch, per slab",7,110,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.7954359631930437,0.7427616407516345,0.8639602030283587
+D|realistic,"one etch, per slab",8,110,strip_TE_400 + strip_TE_500 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab110 + rib_TE_500_slab110,0.795434574962425,0.7427603812710072,0.8639586364786218
+D|realistic,"one etch, per slab",1,130,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, per slab",2,130,strip_TE_600 + rib_TE_500_slab130,32.200791699786016,31.934505234646466,32.200791699786016
+D|realistic,"one etch, per slab",3,130,strip_TE_600 + rib_TE_300_slab130 + rib_TE_500_slab130,2.613213739862431,2.259373618638875,2.8107439126839076
+D|realistic,"one etch, per slab",4,130,strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.211788682788451,1.060008171939316,1.306770962312197
+D|realistic,"one etch, per slab",5,130,strip_TE_400 + strip_TE_550 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.206749369113287,1.0563569968085513,1.3011058828231534
+D|realistic,"one etch, per slab",6,130,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067372880918052,1.0563455919578741,1.3010913916412004
+D|realistic,"one etch, per slab",7,130,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067320720367034,1.0563416587307342,1.3010856151019856
+D|realistic,"one etch, per slab",8,130,strip_TE_400 + strip_TE_500 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab130 + rib_TE_500_slab130,1.2067313210533424,1.0563411003278549,1.3010847769495504
+D|realistic,"one etch, per slab",1,150,strip_TE_400,inf,inf,inf
+D|realistic,"one etch, per slab",2,150,strip_TE_600 + rib_TE_500_slab150,43.187060559855,43.187060559855,44.36898549567431
+D|realistic,"one etch, per slab",3,150,strip_TE_600 + rib_TE_300_slab150 + rib_TE_500_slab150,6.672801590213986,4.517915670713233,6.672801590213986
+D|realistic,"one etch, per slab",4,150,strip_TM_400 + strip_TM_550 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8120262423809472,2.5082980191604918,3.8120262423809472
+D|realistic,"one etch, per slab",5,150,strip_TE_400 + strip_TE_450 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808727210772716,2.5061466811476834,3.808727210772716
+D|realistic,"one etch, per slab",6,150,strip_TE_400 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.808130539775464,2.5058222823267844,3.808130539775464
+D|realistic,"one etch, per slab",7,150,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8081269541103766,2.5058198279138186,3.8081269541103766
+D|realistic,"one etch, per slab",8,150,strip_TE_400 + strip_TE_550 + strip_TE_600 + strip_TM_400 + strip_TM_550 + strip_TM_600 + rib_TE_300_slab150 + rib_TE_500_slab150,3.8081235632106396,2.5058178191428113,3.8081235632106396

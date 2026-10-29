@@ -1,0 +1,538 @@
+{
+ "C|none": {
+  "rib_TE_300_slab50 + rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": 0.35935629534310165,
+   "a_deg_min": 0.35935629534310165,
+   "a_deg_max": 0.36922752344310306
+  },
+  "rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab70 + rib_TE_400_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.41093493785073815,
+   "a_deg_min": 0.41093493785073815,
+   "a_deg_max": 0.43552030290633015
+  },
+  "rib_TE_300_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.41916479196499035,
+   "a_deg_min": 0.41916479196499035,
+   "a_deg_max": 0.43467246447788377
+  },
+  "rib_TE_300_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.41283609090606005,
+   "a_deg_min": 0.41283609090606005,
+   "a_deg_max": 0.4279275219942781
+  },
+  "rib_TE_400_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.6772532305750967,
+   "a_deg_min": 0.6704923404525014,
+   "a_deg_max": 0.7028033404247543
+  },
+  "rib_TE_400_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.6988124690708025,
+   "a_deg_min": 0.6988124690708025,
+   "a_deg_max": 0.7118807375916153
+  },
+  "rib_TE_500_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 1.082769008192898,
+   "a_deg_min": 1.067085862329545,
+   "a_deg_max": 1.1076849023422661
+  },
+  "rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab90 + rib_TE_400_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.550215534046836,
+   "a_deg_min": 0.550215534046836,
+   "a_deg_max": 0.6180064170246907
+  },
+  "rib_TE_300_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5551764926583082,
+   "a_deg_min": 0.5551764926583082,
+   "a_deg_max": 0.5966627289654229
+  },
+  "rib_TE_300_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5446799519325504,
+   "a_deg_min": 0.5446799519325504,
+   "a_deg_max": 0.5869586491910685
+  },
+  "rib_TE_400_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.783470319454257,
+   "a_deg_min": 0.7814372453061195,
+   "a_deg_max": 0.8183230448043639
+  },
+  "rib_TE_400_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.8056407745761931,
+   "a_deg_min": 0.7901301132871673,
+   "a_deg_max": 0.8539999789773727
+  },
+  "rib_TE_500_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 1.1537632174596844,
+   "a_deg_min": 1.1003486194168,
+   "a_deg_max": 1.2430798406989298
+  },
+  "rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab110 + rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": 0.7961147505642676,
+   "a_deg_min": 0.74341221588451,
+   "a_deg_max": 0.8646454921792759
+  },
+  "rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab130 + rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": 1.2079724004193126,
+   "a_deg_min": 1.0575510920454176,
+   "a_deg_max": 1.302324231529433
+  },
+  "rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab150 + rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": 3.80903413267609,
+   "a_deg_min": 2.508032338529558,
+   "a_deg_max": 3.80903413267609
+  },
+  "rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  }
+ },
+ "C|realistic": {
+  "rib_TE_300_slab50 + rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": 0.35917916046406184,
+   "a_deg_min": 0.35917916046406184,
+   "a_deg_max": 0.3690447793411304
+  },
+  "rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": 29.42765927333725,
+   "a_deg_min": 29.389657013868163,
+   "a_deg_max": 29.42765927333725
+  },
+  "rib_TE_300_slab70 + rib_TE_400_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.41072816599060835,
+   "a_deg_min": 0.41072816599060835,
+   "a_deg_max": 0.4353084882896478
+  },
+  "rib_TE_300_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.4189189369144107,
+   "a_deg_min": 0.4189189369144107,
+   "a_deg_max": 0.43442469290103447
+  },
+  "rib_TE_300_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.4125823476703869,
+   "a_deg_min": 0.4125823476703869,
+   "a_deg_max": 0.42767134860666417
+  },
+  "rib_TE_400_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.6758825409063659,
+   "a_deg_min": 0.6691582584541395,
+   "a_deg_max": 0.7014030968286662
+  },
+  "rib_TE_400_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.6971263559624186,
+   "a_deg_min": 0.6971263559624186,
+   "a_deg_max": 0.7101734211723036
+  },
+  "rib_TE_500_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 1.0751058423912123,
+   "a_deg_min": 1.0594579297140552,
+   "a_deg_max": 1.1001043896775835
+  },
+  "rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 25.118240393832355,
+   "a_deg_min": 24.512490399377512,
+   "a_deg_max": 25.118240393832355
+  },
+  "rib_TE_300_slab90 + rib_TE_400_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.549900557576022,
+   "a_deg_min": 0.549900557576022,
+   "a_deg_max": 0.6176752316829502
+  },
+  "rib_TE_300_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5547921973547213,
+   "a_deg_min": 0.5547921973547213,
+   "a_deg_max": 0.5962675334571141
+  },
+  "rib_TE_300_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5442735849841832,
+   "a_deg_min": 0.5442735849841832,
+   "a_deg_max": 0.5865357991827556
+  },
+  "rib_TE_400_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.781897488500456,
+   "a_deg_min": 0.7798754551115682,
+   "a_deg_max": 0.8167641385619788
+  },
+  "rib_TE_400_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.8036667750643754,
+   "a_deg_min": 0.788180874296324,
+   "a_deg_max": 0.8520255600803475
+  },
+  "rib_TE_500_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 1.1463555684381046,
+   "a_deg_min": 1.093001827075024,
+   "a_deg_max": 1.2357375703416509
+  },
+  "rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 24.33394315954702,
+   "a_deg_min": 24.066764725558595,
+   "a_deg_max": 24.33394315954702
+  },
+  "rib_TE_300_slab110 + rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": 0.7954505913651797,
+   "a_deg_min": 0.7427753379061646,
+   "a_deg_max": 0.8639763215499041
+  },
+  "rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": 26.29872615674092,
+   "a_deg_min": 26.096168669397954,
+   "a_deg_max": 26.29872615674092
+  },
+  "rib_TE_300_slab130 + rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": 1.2067492015486294,
+   "a_deg_min": 1.0563559669670373,
+   "a_deg_max": 1.3011043205618005
+  },
+  "rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": 32.12800304165975,
+   "a_deg_min": 31.86232664665337,
+   "a_deg_max": 32.12800304165975
+  },
+  "rib_TE_300_slab150 + rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": 3.8081587044350655,
+   "a_deg_min": 2.505840953929526,
+   "a_deg_max": 3.8081587044350655
+  },
+  "rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": 43.0683288324336,
+   "a_deg_min": 43.0683288324336,
+   "a_deg_max": 44.24683581042803
+  }
+ },
+ "D|none": {
+  "rib_TE_300_slab50 + rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": 0.3874840408499129,
+   "a_deg_min": 0.3874840408499129,
+   "a_deg_max": 0.3967559648582747
+  },
+  "rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab70 + rib_TE_400_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.4471468091488953,
+   "a_deg_min": 0.4471468091488953,
+   "a_deg_max": 0.47297174824599814
+  },
+  "rib_TE_300_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.4507827946391859,
+   "a_deg_min": 0.4507827946391859,
+   "a_deg_max": 0.4666799008425783
+  },
+  "rib_TE_300_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.44108842192390946,
+   "a_deg_min": 0.44108842192390946,
+   "a_deg_max": 0.4562210003755556
+  },
+  "rib_TE_400_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.765795795405131,
+   "a_deg_min": 0.7582224110972399,
+   "a_deg_max": 0.7951921652289498
+  },
+  "rib_TE_400_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.7770503592348913,
+   "a_deg_min": 0.7770503592348913,
+   "a_deg_max": 0.7913357858358094
+  },
+  "rib_TE_500_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 1.2427767489036048,
+   "a_deg_min": 1.2249417563910938,
+   "a_deg_max": 1.271662542232312
+  },
+  "rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab90 + rib_TE_400_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.595719068060546,
+   "a_deg_min": 0.595719068060546,
+   "a_deg_max": 0.6686268190703275
+  },
+  "rib_TE_300_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5961583386068542,
+   "a_deg_min": 0.5961583386068542,
+   "a_deg_max": 0.6402416249351242
+  },
+  "rib_TE_300_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5801670769389294,
+   "a_deg_min": 0.5801670769389294,
+   "a_deg_max": 0.6258282240429355
+  },
+  "rib_TE_400_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.8806970349032841,
+   "a_deg_min": 0.8779884950060497,
+   "a_deg_max": 0.9203052749352728
+  },
+  "rib_TE_400_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.892768062835817,
+   "a_deg_min": 0.874790354730121,
+   "a_deg_max": 0.9470946214176654
+  },
+  "rib_TE_500_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 1.3181346430972987,
+   "a_deg_min": 1.2576564423582577,
+   "a_deg_max": 1.4231094577988992
+  },
+  "rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab110 + rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": 0.8597033257442916,
+   "a_deg_min": 0.802610212992616,
+   "a_deg_max": 0.9340006415245362
+  },
+  "rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab130 + rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": 1.3133916909985106,
+   "a_deg_min": 1.1496108028247674,
+   "a_deg_max": 1.4175305987321543
+  },
+  "rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  },
+  "rib_TE_300_slab150 + rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": 4.209626599296244,
+   "a_deg_min": 2.759349262773043,
+   "a_deg_max": 4.209626599296244
+  },
+  "rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": Infinity,
+   "a_deg_min": Infinity,
+   "a_deg_max": Infinity
+  }
+ },
+ "D|realistic": {
+  "rib_TE_300_slab50 + rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": 0.36682677911892186,
+   "a_deg_min": 0.36682677911892186,
+   "a_deg_max": 0.37683608111250544
+  },
+  "rib_TE_500_slab50": {
+   "slab": 50,
+   "a_deg_h": 29.44058485871438,
+   "a_deg_min": 29.40246559755189,
+   "a_deg_max": 29.44058485871438
+  },
+  "rib_TE_300_slab70 + rib_TE_400_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.4165871062170595,
+   "a_deg_min": 0.4165871062170595,
+   "a_deg_max": 0.44140722599055765
+  },
+  "rib_TE_300_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.4253452313145339,
+   "a_deg_min": 0.4253452313145339,
+   "a_deg_max": 0.4410131802846547
+  },
+  "rib_TE_300_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.42058703759744054,
+   "a_deg_min": 0.42058703759744054,
+   "a_deg_max": 0.4358849536222672
+  },
+  "rib_TE_400_slab70 + rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.6842273656490029,
+   "a_deg_min": 0.6773484658795932,
+   "a_deg_max": 0.7099939225174986
+  },
+  "rib_TE_400_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 0.70718316382277,
+   "a_deg_min": 0.70718316382277,
+   "a_deg_max": 0.7203340296553148
+  },
+  "rib_TE_500_slab70 + rib_TE_600_slab70": {
+   "slab": 70,
+   "a_deg_h": 1.0883428784507754,
+   "a_deg_min": 1.0723786790360341,
+   "a_deg_max": 1.1135110790035827
+  },
+  "rib_TE_500_slab70": {
+   "slab": 70,
+   "a_deg_h": 25.127852390747073,
+   "a_deg_min": 24.521809225245704,
+   "a_deg_max": 25.127852390747073
+  },
+  "rib_TE_300_slab90 + rib_TE_400_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5558275665284167,
+   "a_deg_min": 0.5558275665284167,
+   "a_deg_max": 0.6242609384408747
+  },
+  "rib_TE_300_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5609632864268451,
+   "a_deg_min": 0.5609632864268451,
+   "a_deg_max": 0.6028509036892976
+  },
+  "rib_TE_300_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.5513312586251911,
+   "a_deg_min": 0.5513312586251911,
+   "a_deg_max": 0.5941196813262412
+  },
+  "rib_TE_400_slab90 + rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.7900724778558942,
+   "a_deg_min": 0.7879165520364548,
+   "a_deg_max": 0.8252040813810356
+  },
+  "rib_TE_400_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 0.8128428872673288,
+   "a_deg_min": 0.7971066918893627,
+   "a_deg_max": 0.8617256299198461
+  },
+  "rib_TE_500_slab90 + rib_TE_600_slab90": {
+   "slab": 90,
+   "a_deg_h": 1.1584788662623406,
+   "a_deg_min": 1.1046541756726695,
+   "a_deg_max": 1.2488695050050969
+  },
+  "rib_TE_500_slab90": {
+   "slab": 90,
+   "a_deg_h": 24.342226905583978,
+   "a_deg_min": 24.074895859190644,
+   "a_deg_max": 24.342226905583978
+  },
+  "rib_TE_300_slab110 + rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": 0.8022458725655919,
+   "a_deg_min": 0.7490473417786605,
+   "a_deg_max": 0.8712884414081744
+  },
+  "rib_TE_500_slab110": {
+   "slab": 110,
+   "a_deg_h": 26.306758470102878,
+   "a_deg_min": 26.104080770556102,
+   "a_deg_max": 26.306758470102878
+  },
+  "rib_TE_300_slab130 + rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": 1.2151704907557428,
+   "a_deg_min": 1.0635923197682626,
+   "a_deg_max": 1.3101279908087136
+  },
+  "rib_TE_500_slab130": {
+   "slab": 130,
+   "a_deg_h": 32.13679662737542,
+   "a_deg_min": 31.87098242223906,
+   "a_deg_max": 32.13679662737542
+  },
+  "rib_TE_300_slab150 + rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": 3.8326908564664968,
+   "a_deg_min": 2.521331629230117,
+   "a_deg_max": 3.8326908564664968
+  },
+  "rib_TE_500_slab150": {
+   "slab": 150,
+   "a_deg_h": 43.07888901499648,
+   "a_deg_min": 43.07888901499648,
+   "a_deg_max": 44.25757614181452
+  }
+ }
+}

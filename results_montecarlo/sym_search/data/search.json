@@ -1,0 +1,7962 @@
+{
+ "C|none": {
+  "one_etch_per_slab": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 1.1270501118084608,
+     "a_deg_min": 1.1270501118084608,
+     "a_deg_max": 1.1490758580086327
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35926274919515827,
+     "a_deg_min": 0.35926274919515827,
+     "a_deg_max": 0.36913166515647006
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35925285611624047,
+     "a_deg_min": 0.35925285611624047,
+     "a_deg_max": 0.3691215384167558
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3592498225527086,
+     "a_deg_min": 0.3592498225527086,
+     "a_deg_max": 0.3691184372092864
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3592485648989964,
+     "a_deg_min": 0.3592485648989964,
+     "a_deg_max": 0.36911714660719686
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.359248052312248,
+     "a_deg_min": 0.359248052312248,
+     "a_deg_max": 0.36911661963111064
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.1270501118083918,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.359262749195131,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.3592528561162313,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.3592498225526928,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.35924856489899565,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.3592480523123037,
+      "rank": 5
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.7816524359565972,
+     "a_deg_min": 0.7816524359565972,
+     "a_deg_max": 0.8150059262983339
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.4109179021377178,
+     "a_deg_min": 0.4109179021377178,
+     "a_deg_max": 0.4355023500301047
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.17528222176728792,
+     "a_deg_min": 0.15291113348480406,
+     "a_deg_max": 0.17528222176728792
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.1660564203478113,
+     "a_deg_min": 0.14048885927166813,
+     "a_deg_max": 0.16685569206759643
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.16467963409887673,
+     "a_deg_min": 0.139291376398702,
+     "a_deg_max": 0.16543600479696172
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.1642488280114337,
+     "a_deg_min": 0.1389172168054415,
+     "a_deg_max": 0.1649926821387629
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70",
+     "rib_TE_500_slab70",
+     "rib_TE_600_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_400_slab70",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.7816524359564848,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.41091790213776097,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_600_slab70",
+      "a_deg": 0.1752822217673014,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": 0.1660564203478058,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.16467963409888745,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.1642488280114382,
+      "rank": 5
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90"
+     ],
+     "a_deg_h": 0.8729939061987885,
+     "a_deg_min": 0.8729939061987885,
+     "a_deg_max": 0.9582050577070397
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.5445820603057816,
+     "a_deg_min": 0.5445820603057816,
+     "a_deg_max": 0.5868518616591946
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1509195104861959,
+     "a_deg_min": 0.11075665283933349,
+     "a_deg_max": 0.16298105849075442
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1456240772520269,
+     "a_deg_min": 0.10627118703952321,
+     "a_deg_max": 0.15468101471701817
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1446254505918183,
+     "a_deg_min": 0.10552036455799624,
+     "a_deg_max": 0.15363855169999213
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.14431436448024282,
+     "a_deg_min": 0.10528704791708775,
+     "a_deg_max": 0.15331388129707066
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_400_slab90",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.8729939061987723,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.5502023764365743,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_600_slab90",
+      "a_deg": 0.1509195104861995,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": 0.14562407725202486,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.14462545059182114,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.14431436448023485,
+      "rank": 5
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 1.2692480063344809,
+     "a_deg_min": 1.1967998042311792,
+     "a_deg_max": 1.367343218367705
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960857020356159,
+     "a_deg_min": 0.7433854196085209,
+     "a_deg_max": 0.8646133518294654
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960826481681617,
+     "a_deg_min": 0.7433826149314327,
+     "a_deg_max": 0.8646099541814951
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960817138739634,
+     "a_deg_min": 0.7433817591520536,
+     "a_deg_max": 0.8646089142462442
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960813283957264,
+     "a_deg_min": 0.7433814056936502,
+     "a_deg_max": 0.8646084835667134
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960811729057865,
+     "a_deg_min": 0.7433812637173565,
+     "a_deg_max": 0.8646083087213119
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.2692480063342437,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.7960857020356582,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.7960826481683325,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.7960817138740697,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.7960813283958074,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.7960811729057836,
+      "rank": 5
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.6213559706984686,
+     "a_deg_min": 1.4247217801895407,
+     "a_deg_max": 1.7401086097803382
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079489472038323,
+     "a_deg_min": 1.0575320249819793,
+     "a_deg_max": 1.302298538414736
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.207946473492289,
+     "a_deg_min": 1.0575300288779101,
+     "a_deg_max": 1.3022958148737165
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079457157217042,
+     "a_deg_min": 1.0575294197620546,
+     "a_deg_max": 1.3022949803767057
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.207945402220753,
+     "a_deg_min": 1.0575291681354704,
+     "a_deg_max": 1.3022946339937336
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.207945275017102,
+     "a_deg_min": 1.0575290670219404,
+     "a_deg_max": 1.3022944926831537
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.6213559706985243,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 1.207948947203831,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 1.207946473492262,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 1.2079457157214775,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 1.2079454022208023,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2079452750170256,
+      "rank": 5
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 4.40914956377403,
+     "a_deg_min": 2.9487571349442407,
+     "a_deg_max": 4.40914956377403
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808992210757902,
+     "a_deg_min": 2.508005122092564,
+     "a_deg_max": 3.808992210757902
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808987709522727,
+     "a_deg_min": 2.5080022250701464,
+     "a_deg_max": 3.808987709522727
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808986321187373,
+     "a_deg_min": 2.5080013352221355,
+     "a_deg_max": 3.808986321187373
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8089857384182224,
+     "a_deg_min": 2.5080009625783366,
+     "a_deg_max": 3.8089857384182224
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8089854945377346,
+     "a_deg_min": 2.508000808363681,
+     "a_deg_max": 3.8089854945377346
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 4.40914956377211,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 3.8089922107594023,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.808987709523773,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 3.808986321185826,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 3.8089857384176513,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.808985494537306,
+      "rank": 5
+     }
+    ]
+   }
+  },
+  "one_etch_per_slab_300_500": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 1.1270501118084608,
+     "a_deg_min": 1.1270501118084608,
+     "a_deg_max": 1.1490758580086327
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35926274919515827,
+     "a_deg_min": 0.35926274919515827,
+     "a_deg_max": 0.36913166515647006
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35925285611624047,
+     "a_deg_min": 0.35925285611624047,
+     "a_deg_max": 0.3691215384167558
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3592498225527086,
+     "a_deg_min": 0.3592498225527086,
+     "a_deg_max": 0.3691184372092864
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3592485648989964,
+     "a_deg_min": 0.3592485648989964,
+     "a_deg_max": 0.36911714660719686
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.359248052312248,
+     "a_deg_min": 0.359248052312248,
+     "a_deg_max": 0.36911661963111064
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.1270501118083918,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.359262749195131,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.3592528561162313,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.3592498225526928,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.35924856489899565,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.3592480523123037,
+      "rank": 5
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 1.0425970359664503,
+     "a_deg_min": 1.0425970359664503,
+     "a_deg_max": 1.0720174224206633
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41910914745843525,
+     "a_deg_min": 0.41910914745843525,
+     "a_deg_max": 0.43461492046779815
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41910329636166016,
+     "a_deg_min": 0.41910329636166016,
+     "a_deg_max": 0.43460884715250586
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41910150617425745,
+     "a_deg_min": 0.41910150617425745,
+     "a_deg_max": 0.43460698946124415
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41910076747442204,
+     "a_deg_min": 0.41910076747442204,
+     "a_deg_max": 0.4346062211803075
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41910046942806994,
+     "a_deg_min": 0.41910046942806994,
+     "a_deg_max": 0.4346059102093446
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_500_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.0425970359664503,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.41910914745845423,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.41910329636169574,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.41910150617426084,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.4191007674744311,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.41910046942810625,
+      "rank": 5
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 1.0948439546340927,
+     "a_deg_min": 1.0948439546340927,
+     "a_deg_max": 1.1594063615763193
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551381073258648,
+     "a_deg_min": 0.5551381073258648,
+     "a_deg_max": 0.5966214175548105
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551340775164728,
+     "a_deg_min": 0.5551340775164728,
+     "a_deg_max": 0.5966170775182251
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551328453251964,
+     "a_deg_min": 0.5551328453251964,
+     "a_deg_max": 0.5966157513075391
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551323375398175,
+     "a_deg_min": 0.5551323375398175,
+     "a_deg_max": 0.5966152018633675
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551321332397079,
+     "a_deg_min": 0.5551321332397079,
+     "a_deg_max": 0.5966149796831544
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_500_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.0948439546339321,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.5551381073259498,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.5551340775165009,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.5551328453251356,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.5551323375398629,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.5551321332397218,
+      "rank": 5
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 1.2692480063344809,
+     "a_deg_min": 1.1967998042311792,
+     "a_deg_max": 1.367343218367705
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960857020356159,
+     "a_deg_min": 0.7433854196085209,
+     "a_deg_max": 0.8646133518294654
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960826481681617,
+     "a_deg_min": 0.7433826149314327,
+     "a_deg_max": 0.8646099541814951
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960817138739634,
+     "a_deg_min": 0.7433817591520536,
+     "a_deg_max": 0.8646089142462442
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960813283957264,
+     "a_deg_min": 0.7433814056936502,
+     "a_deg_max": 0.8646084835667134
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960811729057865,
+     "a_deg_min": 0.7433812637173565,
+     "a_deg_max": 0.8646083087213119
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.2692480063342437,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.7960857020356582,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.7960826481683325,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.7960817138740697,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.7960813283958074,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.7960811729057836,
+      "rank": 5
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.6213559706984686,
+     "a_deg_min": 1.4247217801895407,
+     "a_deg_max": 1.7401086097803382
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079489472038323,
+     "a_deg_min": 1.0575320249819793,
+     "a_deg_max": 1.302298538414736
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.207946473492289,
+     "a_deg_min": 1.0575300288779101,
+     "a_deg_max": 1.3022958148737165
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079457157217042,
+     "a_deg_min": 1.0575294197620546,
+     "a_deg_max": 1.3022949803767057
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.207945402220753,
+     "a_deg_min": 1.0575291681354704,
+     "a_deg_max": 1.3022946339937336
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.207945275017102,
+     "a_deg_min": 1.0575290670219404,
+     "a_deg_max": 1.3022944926831537
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.6213559706985243,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 1.207948947203831,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 1.207946473492262,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 1.2079457157214775,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 1.2079454022208023,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2079452750170256,
+      "rank": 5
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 4.40914956377403,
+     "a_deg_min": 2.9487571349442407,
+     "a_deg_max": 4.40914956377403
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808992210757902,
+     "a_deg_min": 2.508005122092564,
+     "a_deg_max": 3.808992210757902
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808987709522727,
+     "a_deg_min": 2.5080022250701464,
+     "a_deg_max": 3.808987709522727
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808986321187373,
+     "a_deg_min": 2.5080013352221355,
+     "a_deg_max": 3.808986321187373
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8089857384182224,
+     "a_deg_min": 2.5080009625783366,
+     "a_deg_max": 3.8089857384182224
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8089854945377346,
+     "a_deg_min": 2.508000808363681,
+     "a_deg_max": 3.8089854945377346
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 4.40914956377211,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 3.8089922107594023,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.808987709523773,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 3.808986321185826,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 3.8089857384176513,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.808985494537306,
+      "rank": 5
+     }
+    ]
+   }
+  },
+  "one_etch_overall": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "2": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "3": {
+    "set": [
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70"
+    ],
+    "a_deg_h": 0.7816524359565972,
+    "a_deg_min": 0.7816524359565972,
+    "a_deg_max": 0.8150059262983339,
+    "slab": 70
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "a_deg_h": 0.35926274919515827,
+    "a_deg_min": 0.35926274919515827,
+    "a_deg_max": 0.36913166515647006,
+    "slab": 50
+   },
+   "5": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1509195104861959,
+    "a_deg_min": 0.11075665283933349,
+    "a_deg_max": 0.16298105849075442,
+    "slab": 90
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1456240772520269,
+    "a_deg_min": 0.10627118703952321,
+    "a_deg_max": 0.15468101471701817,
+    "slab": 90
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1446254505918183,
+    "a_deg_min": 0.10552036455799624,
+    "a_deg_max": 0.15363855169999213,
+    "slab": 90
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.14431436448024282,
+    "a_deg_min": 0.10528704791708775,
+    "a_deg_max": 0.15331388129707066,
+    "slab": 90
+   }
+  },
+  "strips_only": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "2": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "3": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500"
+    ],
+    "a_deg_h": Infinity
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550"
+    ],
+    "a_deg_h": Infinity
+   },
+   "5": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600"
+    ],
+    "a_deg_h": Infinity
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500"
+    ],
+    "a_deg_h": Infinity
+   }
+  }
+ },
+ "C|realistic": {
+  "one_etch_per_slab": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 29.428585232841616,
+     "a_deg_min": 29.390575251877284,
+     "a_deg_max": 29.428585232841616
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 1.125981309080465,
+     "a_deg_min": 1.125981309080465,
+     "a_deg_max": 1.1479796551420065
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3590856580632908,
+     "a_deg_min": 0.3590856580632908,
+     "a_deg_max": 0.3689489663595006
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35907576974372296,
+     "a_deg_min": 0.35907576974372296,
+     "a_deg_max": 0.36893884453927445
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3590727376554655,
+     "a_deg_min": 0.3590727376554655,
+     "a_deg_max": 0.3689357448545434
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3590714806274225,
+     "a_deg_min": 0.3590714806274225,
+     "a_deg_max": 0.36893445490021015
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35907096830798124,
+     "a_deg_min": 0.35907096830798124,
+     "a_deg_max": 0.36893392820098997
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 138.9768365086997,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": 1.125981309080376,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.3590856580632452,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.3590757697437038,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.3590727376554855,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.3590714806274628,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.35907096830799123,
+      "rank": 5
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 16.77958583746879,
+     "a_deg_min": 16.67173357363825,
+     "a_deg_max": 16.77958583746879
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.7809084802035202,
+     "a_deg_min": 0.7809084802035202,
+     "a_deg_max": 0.8142517037753426
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.4107111561016179,
+     "a_deg_min": 0.4107111561016179,
+     "a_deg_max": 0.4352905617903885
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.17526502081587894,
+     "a_deg_min": 0.1529011131687056,
+     "a_deg_max": 0.17526502081587894
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.16604149302275462,
+     "a_deg_min": 0.14048082747077933,
+     "a_deg_max": 0.16684154986274125
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.16466505218913413,
+     "a_deg_min": 0.13928353256654089,
+     "a_deg_max": 0.16542219757569768
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.1642343531386818,
+     "a_deg_min": 0.1389094311330626,
+     "a_deg_max": 0.16497897848239076
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70",
+     "rib_TE_500_slab70",
+     "rib_TE_600_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1419.814484040896,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_400_slab70",
+      "a_deg": 0.7809084802034287,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.4107111561016818,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_600_slab70",
+      "a_deg": 0.17526502081587855,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": 0.16604149302275237,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.16466505218913743,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.1642343531386842,
+      "rank": 5
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 16.94608769782377,
+     "a_deg_min": 16.933270217169284,
+     "a_deg_max": 17.05112960600415
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90"
+     ],
+     "a_deg_h": 0.8721547558305375,
+     "a_deg_min": 0.8721547558305375,
+     "a_deg_max": 0.9573366864897246
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.5441757005967092,
+     "a_deg_min": 0.5441757005967092,
+     "a_deg_max": 0.5864290140386457
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.15091211136978913,
+     "a_deg_min": 0.11075430835200731,
+     "a_deg_max": 0.16297334327843285
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.14561726290337648,
+     "a_deg_min": 0.10626902597173896,
+     "a_deg_max": 0.15467420868286538
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1446187638401353,
+     "a_deg_min": 0.10551824320164059,
+     "a_deg_max": 0.1536318703241546
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1443077171783168,
+     "a_deg_min": 0.10528493881279621,
+     "a_deg_max": 0.15330723845827937
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 114.36908258568833,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_400_slab90",
+      "a_deg": 0.8721547558304826,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.5498874262859731,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_600_slab90",
+      "a_deg": 0.15091211136979185,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": 0.14561726290337298,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.14461876384014116,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.14430771717831378,
+      "rank": 5
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 26.301043995304518,
+     "a_deg_min": 26.09848267009226,
+     "a_deg_max": 26.301043995304518
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 1.2681332364889097,
+     "a_deg_min": 1.195711021911175,
+     "a_deg_max": 1.3662609092445654
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954215723056111,
+     "a_deg_min": 0.7427485707828413,
+     "a_deg_max": 0.863944208477039
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954185216320853,
+     "a_deg_min": 0.7427457692566816,
+     "a_deg_max": 0.8639408137979604
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954175883264999,
+     "a_deg_min": 0.7427449144508709,
+     "a_deg_max": 0.8639397747815835
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954172032662538,
+     "a_deg_min": 0.7427445614050605,
+     "a_deg_max": 0.863939344491543
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954170479537341,
+     "a_deg_min": 0.7427444196036861,
+     "a_deg_max": 0.8639391698121003
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 76.8012430739953,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": 1.2681332364888265,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.7954215723056715,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.7954185216320021,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.7954175883265088,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.795417203266273,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.7954170479537043,
+      "rank": 5
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 32.1336165446406,
+     "a_deg_min": 31.867928739960345,
+     "a_deg_max": 32.1336165446406
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.6196519306514838,
+     "a_deg_min": 1.4229935535046438,
+     "a_deg_max": 1.7384467627891644
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.206725781635217,
+     "a_deg_min": 1.0563369356333419,
+     "a_deg_max": 1.3010786583727763
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067233115286014,
+     "a_deg_min": 1.0563349433786604,
+     "a_deg_max": 1.3010759381923243
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067225548733265,
+     "a_deg_min": 1.056334335450718,
+     "a_deg_max": 1.3010751047347744
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067222418435035,
+     "a_deg_min": 1.0563340843263156,
+     "a_deg_max": 1.3010747587918707
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067221148395004,
+     "a_deg_min": 1.0563339834246215,
+     "a_deg_max": 1.3010746176683698
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 67.82093779700239,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": 1.6196519306515431,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 1.206725781634947,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 1.2067233115286415,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 1.206722554873474,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 1.2067222418438288,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2067221148396106,
+      "rank": 5
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 43.078798531397425,
+     "a_deg_min": 43.078798531397425,
+     "a_deg_max": 44.257522562445125
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 4.4083999814093335,
+     "a_deg_min": 2.946210860626162,
+     "a_deg_max": 4.4083999814093335
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081167723129954,
+     "a_deg_min": 2.505813764115035,
+     "a_deg_max": 3.8081167723129954
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808112269981797,
+     "a_deg_min": 2.505810869979621,
+     "a_deg_max": 3.808112269981797
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081108813083446,
+     "a_deg_min": 2.5058099810247487,
+     "a_deg_max": 3.8081108813083446
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808110298397236,
+     "a_deg_min": 2.505809608760493,
+     "a_deg_max": 3.808110298397236
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081100544572974,
+     "a_deg_min": 2.5058094547077827,
+     "a_deg_max": 3.8081100544572974
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 71.23919855219712,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": 4.408399981406581,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 3.8081167723132494,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.8081122699815753,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 3.808110881307543,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 3.808110298396683,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.8081100544575226,
+      "rank": 5
+     }
+    ]
+   }
+  },
+  "one_etch_per_slab_300_500": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 29.428585232841616,
+     "a_deg_min": 29.390575251877284,
+     "a_deg_max": 29.428585232841616
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 1.125981309080465,
+     "a_deg_min": 1.125981309080465,
+     "a_deg_max": 1.1479796551420065
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3590856580632908,
+     "a_deg_min": 0.3590856580632908,
+     "a_deg_max": 0.3689489663595006
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35907576974372296,
+     "a_deg_min": 0.35907576974372296,
+     "a_deg_max": 0.36893884453927445
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3590727376554655,
+     "a_deg_min": 0.3590727376554655,
+     "a_deg_max": 0.3689357448545434
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3590714806274225,
+     "a_deg_min": 0.3590714806274225,
+     "a_deg_max": 0.36893445490021015
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35907096830798124,
+     "a_deg_min": 0.35907096830798124,
+     "a_deg_max": 0.36893392820098997
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 138.9768365086997,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": 1.125981309080376,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.3590856580632452,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.3590757697437038,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.3590727376554855,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.3590714806274628,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.35907096830799123,
+      "rank": 5
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_550",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 25.11824034509907,
+     "a_deg_min": 24.51249111898995,
+     "a_deg_max": 25.11824034509907
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 1.0417280474847468,
+     "a_deg_min": 1.0417280474847468,
+     "a_deg_max": 1.0711638393488216
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4188633261489279,
+     "a_deg_min": 0.4188633261489279,
+     "a_deg_max": 0.4343671818202787
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41885747871770385,
+     "a_deg_min": 0.41885747871770385,
+     "a_deg_max": 0.4343611120932393
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4188556896659082,
+     "a_deg_min": 0.4188556896659082,
+     "a_deg_max": 0.4343592555130345
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4188549514471004,
+     "a_deg_min": 0.4188549514471004,
+     "a_deg_max": 0.4343584877034753
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4188546536056832,
+     "a_deg_min": 0.4188546536056832,
+     "a_deg_max": 0.4343581769337013
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_500_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1419.814484040896,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": 1.0417280474847601,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.4188633261489086,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.4188574787177068,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.41885568966588815,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.4188549514470806,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.4188546536056997,
+      "rank": 5
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_550",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 24.333951028922,
+     "a_deg_min": 24.066772149982626,
+     "a_deg_max": 24.333951028922
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 1.0939725020242375,
+     "a_deg_min": 1.0939725020242375,
+     "a_deg_max": 1.1585410448037752
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547538411309222,
+     "a_deg_min": 0.5547538411309222,
+     "a_deg_max": 0.5962262505483584
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547498144806864,
+     "a_deg_min": 0.5547498144806864,
+     "a_deg_max": 0.5962219136024348
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547485832677626,
+     "a_deg_min": 0.5547485832677626,
+     "a_deg_max": 0.5962205883478866
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547480758964678,
+     "a_deg_min": 0.5547480758964678,
+     "a_deg_max": 0.5962200393099595
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547478717724676,
+     "a_deg_min": 0.5547478717724676,
+     "a_deg_max": 0.5962198173029095
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_500_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 114.36908258568833,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": 1.0939725020240325,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.5547538411310182,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.554749814480728,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.5547485832677634,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.5547480758964511,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.5547478717725136,
+      "rank": 5
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 26.301043995304518,
+     "a_deg_min": 26.09848267009226,
+     "a_deg_max": 26.301043995304518
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 1.2681332364889097,
+     "a_deg_min": 1.195711021911175,
+     "a_deg_max": 1.3662609092445654
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954215723056111,
+     "a_deg_min": 0.7427485707828413,
+     "a_deg_max": 0.863944208477039
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954185216320853,
+     "a_deg_min": 0.7427457692566816,
+     "a_deg_max": 0.8639408137979604
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954175883264999,
+     "a_deg_min": 0.7427449144508709,
+     "a_deg_max": 0.8639397747815835
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954172032662538,
+     "a_deg_min": 0.7427445614050605,
+     "a_deg_max": 0.863939344491543
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954170479537341,
+     "a_deg_min": 0.7427444196036861,
+     "a_deg_max": 0.8639391698121003
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 76.8012430739953,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": 1.2681332364888265,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.7954215723056715,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.7954185216320021,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.7954175883265088,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.795417203266273,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.7954170479537043,
+      "rank": 5
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 32.1336165446406,
+     "a_deg_min": 31.867928739960345,
+     "a_deg_max": 32.1336165446406
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.6196519306514838,
+     "a_deg_min": 1.4229935535046438,
+     "a_deg_max": 1.7384467627891644
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.206725781635217,
+     "a_deg_min": 1.0563369356333419,
+     "a_deg_max": 1.3010786583727763
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067233115286014,
+     "a_deg_min": 1.0563349433786604,
+     "a_deg_max": 1.3010759381923243
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067225548733265,
+     "a_deg_min": 1.056334335450718,
+     "a_deg_max": 1.3010751047347744
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067222418435035,
+     "a_deg_min": 1.0563340843263156,
+     "a_deg_max": 1.3010747587918707
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067221148395004,
+     "a_deg_min": 1.0563339834246215,
+     "a_deg_max": 1.3010746176683698
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 67.82093779700239,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": 1.6196519306515431,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 1.206725781634947,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 1.2067233115286415,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 1.206722554873474,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 1.2067222418438288,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2067221148396106,
+      "rank": 5
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 43.078798531397425,
+     "a_deg_min": 43.078798531397425,
+     "a_deg_max": 44.257522562445125
+    },
+    "3": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 4.4083999814093335,
+     "a_deg_min": 2.946210860626162,
+     "a_deg_max": 4.4083999814093335
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081167723129954,
+     "a_deg_min": 2.505813764115035,
+     "a_deg_max": 3.8081167723129954
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808112269981797,
+     "a_deg_min": 2.505810869979621,
+     "a_deg_max": 3.808112269981797
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081108813083446,
+     "a_deg_min": 2.5058099810247487,
+     "a_deg_max": 3.8081108813083446
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808110298397236,
+     "a_deg_min": 2.505809608760493,
+     "a_deg_max": 3.808110298397236
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_400",
+      "strip_TM_450",
+      "strip_TM_500",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081100544572974,
+     "a_deg_min": 2.5058094547077827,
+     "a_deg_max": 3.8081100544572974
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 3
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 71.23919855219712,
+      "rank": 5
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": 4.408399981406581,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 3.8081167723132494,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.8081122699815753,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 3.808110881307543,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 3.808110298396683,
+      "rank": 5
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.8081100544575226,
+      "rank": 5
+     }
+    ]
+   }
+  },
+  "one_etch_overall": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "2": {
+    "set": [
+     "strip_TM_600",
+     "rib_TE_600_slab70"
+    ],
+    "a_deg_h": 16.77958583746879,
+    "a_deg_min": 16.67173357363825,
+    "a_deg_max": 16.77958583746879,
+    "slab": 70
+   },
+   "3": {
+    "set": [
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70"
+    ],
+    "a_deg_h": 0.7809084802035202,
+    "a_deg_min": 0.7809084802035202,
+    "a_deg_max": 0.8142517037753426,
+    "slab": 70
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "a_deg_h": 0.3590856580632908,
+    "a_deg_min": 0.3590856580632908,
+    "a_deg_max": 0.3689489663595006,
+    "slab": 50
+   },
+   "5": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.15091211136978913,
+    "a_deg_min": 0.11075430835200731,
+    "a_deg_max": 0.16297334327843285,
+    "slab": 90
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.14561726290337648,
+    "a_deg_min": 0.10626902597173896,
+    "a_deg_max": 0.15467420868286538,
+    "slab": 90
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1446187638401353,
+    "a_deg_min": 0.10551824320164059,
+    "a_deg_max": 0.1536318703241546,
+    "slab": 90
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1443077171783168,
+    "a_deg_min": 0.10528493881279621,
+    "a_deg_max": 0.15330723845827937,
+    "slab": 90
+   }
+  },
+  "strips_only": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "2": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "3": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500"
+    ],
+    "a_deg_h": Infinity
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550"
+    ],
+    "a_deg_h": Infinity
+   },
+   "5": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600"
+    ],
+    "a_deg_h": Infinity
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500"
+    ],
+    "a_deg_h": Infinity
+   }
+  }
+ },
+ "D|none": {
+  "one_etch_per_slab": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.49022688351955224,
+     "a_deg_min": 0.49022688351955224,
+     "a_deg_max": 0.5042151215591821
+    },
+    "5": {
+     "set": [
+      "strip_TE_450",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35978414566795724,
+     "a_deg_min": 0.35978414566795724,
+     "a_deg_max": 0.36968245973608105
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.359413627915507,
+     "a_deg_min": 0.359413627915507,
+     "a_deg_max": 0.3692867468001788
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35935760845422443,
+     "a_deg_min": 0.35935760845422443,
+     "a_deg_max": 0.3692291344707544
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3593500515471279,
+     "a_deg_min": 0.3593500515471279,
+     "a_deg_max": 0.3692213382417619
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.4902268835196554,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.35990330098035833,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.35941362791556725,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.35935760845427145,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.35935005154707617,
+      "rank": 7
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.5076021895114067,
+     "a_deg_min": 0.5076021895114067,
+     "a_deg_max": 0.5368754351155158
+    },
+    "5": {
+     "set": [
+      "strip_TE_450",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.4109704086499908,
+     "a_deg_min": 0.4109704086499908,
+     "a_deg_max": 0.43555880534043784
+    },
+    "6": {
+     "set": [
+      "strip_TE_450",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.21965969555906964,
+     "a_deg_min": 0.19573811691734608,
+     "a_deg_max": 0.21965969555906964
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.19822923037790105,
+     "a_deg_min": 0.17460473476420948,
+     "a_deg_max": 0.19822923037790105
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.18718940395901107,
+     "a_deg_min": 0.1589660802990184,
+     "a_deg_max": 0.18885769333224972
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70",
+     "rib_TE_500_slab70",
+     "rib_TE_600_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_400_slab70",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.5848189107896579,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 0.41301600427527485,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.24731130232973036,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_600_slab70",
+      "a_deg": 0.2244269728637292,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.187205834377097,
+      "rank": 7
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.656960685617864,
+     "a_deg_min": 0.656960685617864,
+     "a_deg_max": 0.7064679959219202
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5160093880115889,
+     "a_deg_min": 0.43602705413202,
+     "a_deg_max": 0.5345307723380752
+    },
+    "6": {
+     "set": [
+      "strip_TE_450",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1846765834632623,
+     "a_deg_min": 0.13737843260662255,
+     "a_deg_max": 0.20021446919610894
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.16843216151780566,
+     "a_deg_min": 0.12434161096337375,
+     "a_deg_max": 0.18204149557120564
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.16165724717746321,
+     "a_deg_min": 0.1184566652714754,
+     "a_deg_max": 0.17133042425411066
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_400_slab90",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_450",
+      "a_deg": 0.8192152480284344,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.5494789933194681,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.22442868371450672,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_600_slab90",
+      "a_deg": 0.18415519478623874,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.17121464387811958,
+      "rank": 7
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.936036115513731,
+     "a_deg_min": 0.8760765035788409,
+     "a_deg_max": 1.018429235568623
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_500",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7961153739751048,
+     "a_deg_min": 0.7434108577279329,
+     "a_deg_max": 0.864644648173038
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_450",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7961079278339365,
+     "a_deg_min": 0.7434080655264298,
+     "a_deg_max": 0.864639758598247
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7961000384357503,
+     "a_deg_min": 0.7433984385861988,
+     "a_deg_max": 0.8646292889640124
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960986504358815,
+     "a_deg_min": 0.7433971793749882,
+     "a_deg_max": 0.8646277226650667
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.9360361155138759,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.796163008518855,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.7961093077805081,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.7961025241560583,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.7960988122642882,
+      "rank": 7
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_450",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.3763683606174055,
+     "a_deg_min": 1.1885946157149545,
+     "a_deg_max": 1.4871429364312243
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079824396623073,
+     "a_deg_min": 1.0575637051938591,
+     "a_deg_max": 1.3023385193076484
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079603845352187,
+     "a_deg_min": 1.0575406250120194,
+     "a_deg_max": 1.302311198255241
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079551917611895,
+     "a_deg_min": 1.0575367124605324,
+     "a_deg_max": 1.302305446508653
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079544441258734,
+     "a_deg_min": 1.0575361568892079,
+     "a_deg_max": 1.3023046120331485
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.3766397760129054,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 1.2079824396624894,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2079664862892772,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 1.2079551917612226,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 1.2079544441257666,
+      "rank": 7
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.9524314707862143,
+     "a_deg_min": 2.6068815765399918,
+     "a_deg_max": 3.9524314707862143
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8104884678519415,
+     "a_deg_min": 2.508803153813523,
+     "a_deg_max": 3.8104884678519415
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.809006001132493,
+     "a_deg_min": 2.50801366522396,
+     "a_deg_max": 3.809006001132493
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.809002459746463,
+     "a_deg_min": 2.508011254682907,
+     "a_deg_max": 3.809002459746463
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808999035110482,
+     "a_deg_min": 2.5080092102527667,
+     "a_deg_max": 3.808999035110482
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 3.9524314707881674,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_450",
+      "a_deg": 3.810488467851969,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.809074637679309,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 3.8090056069101355,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.8090022066048093,
+      "rank": 7
+     }
+    ]
+   }
+  },
+  "one_etch_per_slab_300_500": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.49022688351955224,
+     "a_deg_min": 0.49022688351955224,
+     "a_deg_max": 0.5042151215591821
+    },
+    "5": {
+     "set": [
+      "strip_TE_450",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35978414566795724,
+     "a_deg_min": 0.35978414566795724,
+     "a_deg_max": 0.36968245973608105
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.359413627915507,
+     "a_deg_min": 0.359413627915507,
+     "a_deg_max": 0.3692867468001788
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35935760845422443,
+     "a_deg_min": 0.35935760845422443,
+     "a_deg_max": 0.3692291344707544
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3593500515471279,
+     "a_deg_min": 0.3593500515471279,
+     "a_deg_max": 0.3692213382417619
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.4902268835196554,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.35990330098035833,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.35941362791556725,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.35935760845427145,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.35935005154707617,
+      "rank": 7
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.5237877969286607,
+     "a_deg_min": 0.5237877969286607,
+     "a_deg_max": 0.5425268972065332
+    },
+    "5": {
+     "set": [
+      "strip_TE_450",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41931091894668,
+     "a_deg_min": 0.41931091894668,
+     "a_deg_max": 0.4348259007989079
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4191889787659857,
+     "a_deg_min": 0.4191889787659857,
+     "a_deg_max": 0.43469763491216185
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41915906712232226,
+     "a_deg_min": 0.41915906712232226,
+     "a_deg_max": 0.43466662343401086
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4191550890154277,
+     "a_deg_min": 0.4191550890154277,
+     "a_deg_max": 0.43466247782888945
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_500_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.5237877969285881,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.4193405343664857,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.41918897876606676,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.4191590671224097,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.41915508901541826,
+      "rank": 7
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.656960685617864,
+     "a_deg_min": 0.656960685617864,
+     "a_deg_max": 0.7064679959219202
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.555190508253319,
+     "a_deg_min": 0.555190508253319,
+     "a_deg_max": 0.5966767285213607
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551788690872262,
+     "a_deg_min": 0.5551788690872262,
+     "a_deg_max": 0.5966635281956293
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551662438605965,
+     "a_deg_min": 0.5551662438605965,
+     "a_deg_max": 0.5966515595329767
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5551638909986696,
+     "a_deg_min": 0.5551638909986696,
+     "a_deg_max": 0.5966490064491272
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_500_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.6569606856178406,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.5551905082533027,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.555178869087172,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.5551662438606202,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.5551638909987444,
+      "rank": 7
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.936036115513731,
+     "a_deg_min": 0.8760765035788409,
+     "a_deg_max": 1.018429235568623
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_500",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7961153739751048,
+     "a_deg_min": 0.7434108577279329,
+     "a_deg_max": 0.864644648173038
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_450",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7961079278339365,
+     "a_deg_min": 0.7434080655264298,
+     "a_deg_max": 0.864639758598247
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7961000384357503,
+     "a_deg_min": 0.7433984385861988,
+     "a_deg_max": 0.8646292889640124
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7960986504358815,
+     "a_deg_min": 0.7433971793749882,
+     "a_deg_max": 0.8646277226650667
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.9360361155138759,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_450",
+      "a_deg": 0.796163008518855,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 0.7961093077805081,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.7961025241560583,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_500",
+      "a_deg": 0.7960988122642882,
+      "rank": 7
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_450",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.3763683606174055,
+     "a_deg_min": 1.1885946157149545,
+     "a_deg_max": 1.4871429364312243
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079824396623073,
+     "a_deg_min": 1.0575637051938591,
+     "a_deg_max": 1.3023385193076484
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079603845352187,
+     "a_deg_min": 1.0575406250120194,
+     "a_deg_max": 1.302311198255241
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079551917611895,
+     "a_deg_min": 1.0575367124605324,
+     "a_deg_max": 1.302305446508653
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2079544441258734,
+     "a_deg_min": 1.0575361568892079,
+     "a_deg_max": 1.3023046120331485
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.3766397760129054,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 1.2079824396624894,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2079664862892772,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 1.2079551917612226,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 1.2079544441257666,
+      "rank": 7
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "3": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TE_500"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "4": {
+     "set": [
+      "strip_TE_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.9524314707862143,
+     "a_deg_min": 2.6068815765399918,
+     "a_deg_max": 3.9524314707862143
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8104884678519415,
+     "a_deg_min": 2.508803153813523,
+     "a_deg_max": 3.8104884678519415
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.809006001132493,
+     "a_deg_min": 2.50801366522396,
+     "a_deg_max": 3.809006001132493
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.809002459746463,
+     "a_deg_min": 2.508011254682907,
+     "a_deg_max": 3.809002459746463
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808999035110482,
+     "a_deg_min": 2.5080092102527667,
+     "a_deg_max": 3.808999035110482
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 2
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": Infinity,
+      "rank": 4
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": Infinity,
+      "rank": 6
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 3.9524314707881674,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_450",
+      "a_deg": 3.810488467851969,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.809074637679309,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 3.8090056069101355,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.8090022066048093,
+      "rank": 7
+     }
+    ]
+   }
+  },
+  "one_etch_overall": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "2": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "3": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "a_deg_h": 0.49022688351955224,
+    "a_deg_min": 0.49022688351955224,
+    "a_deg_max": 0.5042151215591821,
+    "slab": 50
+   },
+   "5": {
+    "set": [
+     "strip_TE_450",
+     "strip_TE_600",
+     "strip_TM_400",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "a_deg_h": 0.35978414566795724,
+    "a_deg_min": 0.35978414566795724,
+    "a_deg_max": 0.36968245973608105,
+    "slab": 50
+   },
+   "6": {
+    "set": [
+     "strip_TE_450",
+     "strip_TE_600",
+     "strip_TM_400",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1846765834632623,
+    "a_deg_min": 0.13737843260662255,
+    "a_deg_max": 0.20021446919610894,
+    "slab": 90
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.16843216151780566,
+    "a_deg_min": 0.12434161096337375,
+    "a_deg_max": 0.18204149557120564,
+    "slab": 90
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.16165724717746321,
+    "a_deg_min": 0.1184566652714754,
+    "a_deg_max": 0.17133042425411066,
+    "slab": 90
+   }
+  },
+  "strips_only": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "2": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "3": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500"
+    ],
+    "a_deg_h": Infinity
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550"
+    ],
+    "a_deg_h": Infinity
+   },
+   "5": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600"
+    ],
+    "a_deg_h": Infinity
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500"
+    ],
+    "a_deg_h": Infinity
+   }
+  }
+ },
+ "D|realistic": {
+  "one_etch_per_slab": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_450",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 29.449790795592833,
+     "a_deg_min": 29.411801143871646,
+     "a_deg_max": 29.449790795592833
+    },
+    "3": {
+     "set": [
+      "strip_TE_550",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 1.765845708059129,
+     "a_deg_min": 1.765845708059129,
+     "a_deg_max": 1.7998378080877901
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_550",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.4134505284279288,
+     "a_deg_min": 0.4134505284279288,
+     "a_deg_max": 0.4248419929649682
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3594073909633124,
+     "a_deg_min": 0.3594073909633124,
+     "a_deg_max": 0.3692861008998988
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35923593712587765,
+     "a_deg_min": 0.35923593712587765,
+     "a_deg_max": 0.36910343012897195
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35918023649034464,
+     "a_deg_min": 0.35918023649034464,
+     "a_deg_max": 0.3690461466839044
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3591727071507064,
+     "a_deg_min": 0.3591727071507064,
+     "a_deg_max": 0.36903837921690597
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 139.8284779499604,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": 1.7659502510418061,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.4297809481318118,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.3594073909632775,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.3592359371258911,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.3591802364903199,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.35917270715075295,
+      "rank": 7
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 16.831149009178887,
+     "a_deg_min": 16.723030418653288,
+     "a_deg_max": 16.831149009178887
+    },
+    "3": {
+     "set": [
+      "strip_TE_550",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 1.2690845854222703,
+     "a_deg_min": 1.2690845854222703,
+     "a_deg_max": 1.3328243375225433
+    },
+    "4": {
+     "set": [
+      "strip_TM_500",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70"
+     ],
+     "a_deg_h": 0.41610100236389436,
+     "a_deg_min": 0.41610100236389436,
+     "a_deg_max": 0.4410530187743372
+    },
+    "5": {
+     "set": [
+      "strip_TE_500",
+      "strip_TE_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.3784021051759914,
+     "a_deg_min": 0.3198052412118516,
+     "a_deg_max": 0.40494146677010656
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.2070092807013252,
+     "a_deg_min": 0.18310823671707935,
+     "a_deg_max": 0.2070092807013252
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.19464868280158576,
+     "a_deg_min": 0.16553612096595616,
+     "a_deg_max": 0.1968331690233371
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_400_slab70",
+      "rib_TE_500_slab70",
+      "rib_TE_600_slab70"
+     ],
+     "a_deg_h": 0.18708404203488554,
+     "a_deg_min": 0.15888010396557198,
+     "a_deg_max": 0.18874890399976924
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70",
+     "rib_TE_500_slab70",
+     "rib_TE_600_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 1428.154508765885,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_400_slab70",
+      "a_deg": 1.272077750297725,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.43733546248051364,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_450",
+      "a_deg": 0.41100665385066676,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_600_slab70",
+      "a_deg": 0.2180165896947475,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": 0.20462970646230505,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.19863027216094684,
+      "rank": 7
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_600",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 16.967844892464377,
+     "a_deg_min": 16.95500551427052,
+     "a_deg_max": 17.073056758008466
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90"
+     ],
+     "a_deg_h": 1.411398597640333,
+     "a_deg_min": 1.411398597640333,
+     "a_deg_max": 1.573293815591255
+    },
+    "4": {
+     "set": [
+      "strip_TM_500",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90"
+     ],
+     "a_deg_h": 0.553091529497874,
+     "a_deg_min": 0.553091529497874,
+     "a_deg_max": 0.6213736911624358
+    },
+    "5": {
+     "set": [
+      "strip_TE_500",
+      "strip_TE_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.3287159393838118,
+     "a_deg_min": 0.23796347761874262,
+     "a_deg_max": 0.3295934984127628
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1744984208802273,
+     "a_deg_min": 0.12919496576400644,
+     "a_deg_max": 0.18887065058172786
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.166789997147081,
+     "a_deg_min": 0.12254276230990166,
+     "a_deg_max": 0.17686248804118546
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_400_slab90",
+      "rib_TE_500_slab90",
+      "rib_TE_600_slab90"
+     ],
+     "a_deg_h": 0.1615813022328454,
+     "a_deg_min": 0.11840246858452007,
+     "a_deg_max": 0.1712520433626361
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 115.02896214295467,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_400_slab90",
+      "a_deg": 1.4113985976402565,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.5680797952249588,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": 0.5396825887639161,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.2205097375177996,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_600_slab90",
+      "a_deg": 0.17467320243443693,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.16158130223285133,
+      "rank": 7
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 26.349890495112263,
+     "a_deg_min": 26.146969901935858,
+     "a_deg_max": 26.349890495112263
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 2.097167349296345,
+     "a_deg_min": 1.9709805850365771,
+     "a_deg_max": 2.2655078869309673
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.8054358277896307,
+     "a_deg_min": 0.7517570490042483,
+     "a_deg_max": 0.8752928451558045
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_500",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.795448359559305,
+     "a_deg_min": 0.742772353718229,
+     "a_deg_max": 0.8639733531204274
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_450",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954394825580747,
+     "a_deg_min": 0.7427658226446229,
+     "a_deg_max": 0.8639648267827923
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954359631930437,
+     "a_deg_min": 0.7427616407516345,
+     "a_deg_max": 0.8639602030283587
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.795434574962425,
+     "a_deg_min": 0.7427603812710072,
+     "a_deg_max": 0.8639586364786218
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 77.23785711552783,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": 2.0971673492971283,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.840634138897648,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_450",
+      "a_deg": 0.7954867570478099,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.7954688269808731,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.7954456318919988,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.7954359494505202,
+      "rank": 7
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 32.200791699786016,
+     "a_deg_min": 31.934505234646466,
+     "a_deg_max": 32.200791699786016
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 2.613213739862431,
+     "a_deg_min": 2.259373618638875,
+     "a_deg_max": 2.8107439126839076
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.211788682788451,
+     "a_deg_min": 1.060008171939316,
+     "a_deg_max": 1.306770962312197
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.206749369113287,
+     "a_deg_min": 1.0563569968085513,
+     "a_deg_max": 1.3011058828231534
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067372880918052,
+     "a_deg_min": 1.0563455919578741,
+     "a_deg_max": 1.3010913916412004
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067320720367034,
+     "a_deg_min": 1.0563416587307342,
+     "a_deg_max": 1.3010856151019856
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067313210533424,
+     "a_deg_min": 1.0563411003278549,
+     "a_deg_max": 1.3010847769495504
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 68.20266183662419,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": 2.6132137398625273,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.2375232487757204,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 1.206750912090392,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2067372880918645,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 1.2067320720369632,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 1.2067313210533386,
+      "rank": 7
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 43.187060559855,
+     "a_deg_min": 43.187060559855,
+     "a_deg_max": 44.36898549567431
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 6.672801590213986,
+     "a_deg_min": 4.517915670713233,
+     "a_deg_max": 6.672801590213986
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_550",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8120262423809472,
+     "a_deg_min": 2.5082980191604918,
+     "a_deg_max": 3.8120262423809472
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808727210772716,
+     "a_deg_min": 2.5061466811476834,
+     "a_deg_max": 3.808727210772716
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808130539775464,
+     "a_deg_min": 2.5058222823267844,
+     "a_deg_max": 3.808130539775464
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081269541103766,
+     "a_deg_min": 2.5058198279138186,
+     "a_deg_max": 3.8081269541103766
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081235632106396,
+     "a_deg_min": 2.5058178191428113,
+     "a_deg_max": 3.8081235632106396
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 71.6385010487187,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": 6.67280159021192,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 3.8479368747513,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 3.8089537233339623,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.8081305397731784,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 3.808126954108418,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.8081235632117894,
+      "rank": 7
+     }
+    ]
+   }
+  },
+  "one_etch_per_slab_300_500": {
+   "50": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_450",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 29.449790795592833,
+     "a_deg_min": 29.411801143871646,
+     "a_deg_max": 29.449790795592833
+    },
+    "3": {
+     "set": [
+      "strip_TE_550",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 1.765845708059129,
+     "a_deg_min": 1.765845708059129,
+     "a_deg_max": 1.7998378080877901
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_550",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.4134505284279288,
+     "a_deg_min": 0.4134505284279288,
+     "a_deg_max": 0.4248419929649682
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3594073909633124,
+     "a_deg_min": 0.3594073909633124,
+     "a_deg_max": 0.3692861008998988
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35923593712587765,
+     "a_deg_min": 0.35923593712587765,
+     "a_deg_max": 0.36910343012897195
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.35918023649034464,
+     "a_deg_min": 0.35918023649034464,
+     "a_deg_max": 0.3690461466839044
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab50",
+      "rib_TE_500_slab50"
+     ],
+     "a_deg_h": 0.3591727071507064,
+     "a_deg_min": 0.3591727071507064,
+     "a_deg_max": 0.36903837921690597
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab50",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 139.8284779499604,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab50",
+      "a_deg": 1.7659502510418061,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.4297809481318118,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.3594073909632775,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.3592359371258911,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.3591802364903199,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.35917270715075295,
+      "rank": 7
+     }
+    ]
+   },
+   "70": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TM_400",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 25.13735118370975,
+     "a_deg_min": 24.531662536642692,
+     "a_deg_max": 25.13735118370975
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 1.6719099024289048,
+     "a_deg_min": 1.6719099024289048,
+     "a_deg_max": 1.7191844712884419
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_550",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4481354374736512,
+     "a_deg_min": 0.4481354374736512,
+     "a_deg_max": 0.46480489575166895
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4189951252606367,
+     "a_deg_min": 0.4189951252606367,
+     "a_deg_max": 0.434504005676001
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.41894291630709757,
+     "a_deg_min": 0.41894291630709757,
+     "a_deg_max": 0.43444964528011953
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.418913154269048,
+     "a_deg_min": 0.418913154269048,
+     "a_deg_max": 0.4344187889663716
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab70",
+      "rib_TE_500_slab70"
+     ],
+     "a_deg_h": 0.4189091885297136,
+     "a_deg_min": 0.4189091885297136,
+     "a_deg_max": 0.43441465629089665
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab70",
+     "rib_TE_500_slab70"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab70",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 1428.154508765885,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab70",
+      "a_deg": 1.6719099024287052,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.477376826083512,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.4189951252606207,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.41894291630713226,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.41891315426904124,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.4189091885297244,
+      "rank": 7
+     }
+    ]
+   },
+   "90": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_400",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 24.370980800441508,
+     "a_deg_min": 24.10335147685536,
+     "a_deg_max": 24.370980800441508
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 1.8016647355059792,
+     "a_deg_min": 1.8016647355059792,
+     "a_deg_max": 1.9105186428686298
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5721163480665766,
+     "a_deg_min": 0.5721163480665766,
+     "a_deg_max": 0.6150741922676615
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5548014702595144,
+     "a_deg_min": 0.5548014702595144,
+     "a_deg_max": 0.5962770807349682
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547864530262111,
+     "a_deg_min": 0.5547864530262111,
+     "a_deg_max": 0.5962605831618553
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.554781982489232,
+     "a_deg_min": 0.554781982489232,
+     "a_deg_max": 0.5962563969911094
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab90",
+      "rib_TE_500_slab90"
+     ],
+     "a_deg_h": 0.5547796343746662,
+     "a_deg_min": 0.5547796343746662,
+     "a_deg_max": 0.5962538490190201
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_500_slab90"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab90",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 115.02896214295467,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab90",
+      "a_deg": 1.8016647355060476,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.6083366400050161,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.5548014702596009,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.5547864530261604,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.5547819824892813,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 0.554779634374578,
+      "rank": 7
+     }
+    ]
+   },
+   "110": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 26.349890495112263,
+     "a_deg_min": 26.146969901935858,
+     "a_deg_max": 26.349890495112263
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 2.097167349296345,
+     "a_deg_min": 1.9709805850365771,
+     "a_deg_max": 2.2655078869309673
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.8054358277896307,
+     "a_deg_min": 0.7517570490042483,
+     "a_deg_max": 0.8752928451558045
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_500",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.795448359559305,
+     "a_deg_min": 0.742772353718229,
+     "a_deg_max": 0.8639733531204274
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_450",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954394825580747,
+     "a_deg_min": 0.7427658226446229,
+     "a_deg_max": 0.8639648267827923
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.7954359631930437,
+     "a_deg_min": 0.7427616407516345,
+     "a_deg_max": 0.8639602030283587
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab110",
+      "rib_TE_500_slab110"
+     ],
+     "a_deg_h": 0.795434574962425,
+     "a_deg_min": 0.7427603812710072,
+     "a_deg_max": 0.8639586364786218
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab110",
+     "rib_TE_500_slab110"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab110",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 77.23785711552783,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab110",
+      "a_deg": 2.0971673492971283,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 0.840634138897648,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_450",
+      "a_deg": 0.7954867570478099,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 0.7954688269808731,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 0.7954456318919988,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 0.7954359494505202,
+      "rank": 7
+     }
+    ]
+   },
+   "130": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 32.200791699786016,
+     "a_deg_min": 31.934505234646466,
+     "a_deg_max": 32.200791699786016
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 2.613213739862431,
+     "a_deg_min": 2.259373618638875,
+     "a_deg_max": 2.8107439126839076
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.211788682788451,
+     "a_deg_min": 1.060008171939316,
+     "a_deg_max": 1.306770962312197
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.206749369113287,
+     "a_deg_min": 1.0563569968085513,
+     "a_deg_max": 1.3011058828231534
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067372880918052,
+     "a_deg_min": 1.0563455919578741,
+     "a_deg_max": 1.3010913916412004
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067320720367034,
+     "a_deg_min": 1.0563416587307342,
+     "a_deg_max": 1.3010856151019856
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_500",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab130",
+      "rib_TE_500_slab130"
+     ],
+     "a_deg_h": 1.2067313210533424,
+     "a_deg_min": 1.0563411003278549,
+     "a_deg_max": 1.3010847769495504
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab130",
+     "rib_TE_500_slab130"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab130",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 68.20266183662419,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab130",
+      "a_deg": 2.6132137398625273,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 1.2375232487757204,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 1.206750912090392,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 1.2067372880918645,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 1.2067320720369632,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_500",
+      "a_deg": 1.2067313210533386,
+      "rank": 7
+     }
+    ]
+   },
+   "150": {
+    "1": {
+     "set": [
+      "strip_TE_400"
+     ],
+     "a_deg_h": Infinity,
+     "a_deg_min": Infinity,
+     "a_deg_max": Infinity
+    },
+    "2": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 43.187060559855,
+     "a_deg_min": 43.187060559855,
+     "a_deg_max": 44.36898549567431
+    },
+    "3": {
+     "set": [
+      "strip_TE_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 6.672801590213986,
+     "a_deg_min": 4.517915670713233,
+     "a_deg_max": 6.672801590213986
+    },
+    "4": {
+     "set": [
+      "strip_TM_400",
+      "strip_TM_550",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8120262423809472,
+     "a_deg_min": 2.5082980191604918,
+     "a_deg_max": 3.8120262423809472
+    },
+    "5": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_450",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808727210772716,
+     "a_deg_min": 2.5061466811476834,
+     "a_deg_max": 3.808727210772716
+    },
+    "6": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.808130539775464,
+     "a_deg_min": 2.5058222823267844,
+     "a_deg_max": 3.808130539775464
+    },
+    "7": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081269541103766,
+     "a_deg_min": 2.5058198279138186,
+     "a_deg_max": 3.8081269541103766
+    },
+    "8": {
+     "set": [
+      "strip_TE_400",
+      "strip_TE_550",
+      "strip_TE_600",
+      "strip_TM_400",
+      "strip_TM_550",
+      "strip_TM_600",
+      "rib_TE_300_slab150",
+      "rib_TE_500_slab150"
+     ],
+     "a_deg_h": 3.8081235632106396,
+     "a_deg_min": 2.5058178191428113,
+     "a_deg_max": 3.8081235632106396
+    },
+    "pool": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500",
+     "strip_TM_550",
+     "strip_TM_600",
+     "rib_TE_300_slab150",
+     "rib_TE_500_slab150"
+    ],
+    "greedy": [
+     {
+      "added": "rib_TE_300_slab150",
+      "a_deg": Infinity,
+      "rank": 5
+     },
+     {
+      "added": "strip_TE_600",
+      "a_deg": 71.6385010487187,
+      "rank": 7
+     },
+     {
+      "added": "rib_TE_500_slab150",
+      "a_deg": 6.67280159021192,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_600",
+      "a_deg": 3.8479368747513,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_400",
+      "a_deg": 3.8089537233339623,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_400",
+      "a_deg": 3.8081305397731784,
+      "rank": 7
+     },
+     {
+      "added": "strip_TE_550",
+      "a_deg": 3.808126954108418,
+      "rank": 7
+     },
+     {
+      "added": "strip_TM_550",
+      "a_deg": 3.8081235632117894,
+      "rank": 7
+     }
+    ]
+   }
+  },
+  "one_etch_overall": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity,
+    "a_deg_min": Infinity,
+    "a_deg_max": Infinity,
+    "slab": 50
+   },
+   "2": {
+    "set": [
+     "strip_TM_600",
+     "rib_TE_600_slab70"
+    ],
+    "a_deg_h": 16.831149009178887,
+    "a_deg_min": 16.723030418653288,
+    "a_deg_max": 16.831149009178887,
+    "slab": 70
+   },
+   "3": {
+    "set": [
+     "strip_TE_550",
+     "rib_TE_300_slab70",
+     "rib_TE_400_slab70"
+    ],
+    "a_deg_h": 1.2690845854222703,
+    "a_deg_min": 1.2690845854222703,
+    "a_deg_max": 1.3328243375225433,
+    "slab": 70
+   },
+   "4": {
+    "set": [
+     "strip_TM_400",
+     "strip_TM_550",
+     "rib_TE_300_slab50",
+     "rib_TE_500_slab50"
+    ],
+    "a_deg_h": 0.4134505284279288,
+    "a_deg_min": 0.4134505284279288,
+    "a_deg_max": 0.4248419929649682,
+    "slab": 50
+   },
+   "5": {
+    "set": [
+     "strip_TE_500",
+     "strip_TE_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90"
+    ],
+    "a_deg_h": 0.3287159393838118,
+    "a_deg_min": 0.23796347761874262,
+    "a_deg_max": 0.3295934984127628,
+    "slab": 90
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_600",
+     "strip_TM_400",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1744984208802273,
+    "a_deg_min": 0.12919496576400644,
+    "a_deg_max": 0.18887065058172786,
+    "slab": 90
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_600",
+     "strip_TM_400",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.166789997147081,
+    "a_deg_min": 0.12254276230990166,
+    "a_deg_max": 0.17686248804118546,
+    "slab": 90
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_600",
+     "rib_TE_300_slab90",
+     "rib_TE_400_slab90",
+     "rib_TE_500_slab90",
+     "rib_TE_600_slab90"
+    ],
+    "a_deg_h": 0.1615813022328454,
+    "a_deg_min": 0.11840246858452007,
+    "a_deg_max": 0.1712520433626361,
+    "slab": 90
+   }
+  },
+  "strips_only": {
+   "1": {
+    "set": [
+     "strip_TE_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "2": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "3": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500"
+    ],
+    "a_deg_h": Infinity
+   },
+   "4": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550"
+    ],
+    "a_deg_h": Infinity
+   },
+   "5": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600"
+    ],
+    "a_deg_h": Infinity
+   },
+   "6": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400"
+    ],
+    "a_deg_h": Infinity
+   },
+   "7": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450"
+    ],
+    "a_deg_h": Infinity
+   },
+   "8": {
+    "set": [
+     "strip_TE_400",
+     "strip_TE_450",
+     "strip_TE_500",
+     "strip_TE_550",
+     "strip_TE_600",
+     "strip_TM_400",
+     "strip_TM_450",
+     "strip_TM_500"
+    ],
+    "a_deg_h": Infinity
+   }
+  }
+ }
+}
