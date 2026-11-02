@@ -1,0 +1,14 @@
+[2026-11-01 22:05:13] free RAM 5.2 GB, ~2.0 GB per worker -> 1 workers
+[2026-11-01 22:05:13] 148 tasks, 0 cached, 148 to run, 2 workers
+[2026-11-01 22:08:43] note rib|TE|300|30|oxide|r12|nom|+0.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-11-01 22:08:47] note rib|TE|300|30|oxide|r12|w|+2.5000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-11-01 22:12:15] note rib|TE|300|30|oxide|r12|w|-2.5000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-11-01 22:12:22] note rib|TE|300|30|oxide|r12|w|+5.0000: ['wl 1.55: fallback to 6 modes without guess', 'wl 1.555: fallback to 6 modes without guess', 'wl 1.5450000000000002: fallback to 6 modes without guess']
+[2026-11-01 21:14:17] free RAM 6.9 GB, ~2.0 GB per worker -> 1 workers
+[2026-11-01 21:14:17] 148 tasks, 4 cached, 144 to run, 2 workers
+[2026-11-01 21:25:07] 25 solved, 118 queued, 1 in flight, 10.8 min elapsed, ~51 min left, free RAM 6.6 GB
+[2026-11-01 21:35:26] 50 solved, 93 queued, 1 in flight, 21.2 min elapsed, ~39 min left, free RAM 7.8 GB
+[2026-11-01 21:45:38] 75 solved, 68 queued, 1 in flight, 31.4 min elapsed, ~28 min left, free RAM 7.9 GB
+[2026-11-01 21:55:00] 100 solved, 43 queued, 1 in flight, 40.7 min elapsed, ~18 min left, free RAM 7.3 GB
+[2026-11-01 22:05:41] 125 solved, 18 queued, 1 in flight, 51.4 min elapsed, ~7 min left, free RAM 7.5 GB
+[2026-11-01 22:13:22] finished: 144 solved this run, 0 failed

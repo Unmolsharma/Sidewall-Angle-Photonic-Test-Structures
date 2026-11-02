@@ -4,7 +4,7 @@ Extra femwell solves for the etch-depth / nuisance-parameter study.
 Runs in the femwell virtual environment, from src/:
     C:/Users/unmol/.venvs/femwell/Scripts/python.exe etchdepth_femwell_batch.py time
     C:/Users/unmol/.venvs/femwell/Scripts/python.exe etchdepth_femwell_batch.py full [max_workers]
-    (also: striptm, ribslab — the later strip TM and extra rib-slab units)
+    (also: striptm, ribslab, ribthin — the later strip TM, extra rib-slab and 30/40 nm slab units)
 
 Structures: strip TE 400-600 nm, strip TM 500 nm, rib TE 300-600 nm at 70 and 90 nm slab.
 New derivatives (central differences at h/2, h, 2h, same mesh r12 and conventions as femwell_batch.py):
@@ -27,6 +27,21 @@ RIBS = [('rib', 'TE', w, s) for s in (70, 90) for w in (300, 400, 500, 600)]
 STRIPS_TM_EXTRA = [('strip', 'TM', w, None) for w in (400, 450, 550, 600)]
 # added later: slab / index derivatives for two rib widths at the other slabs (best slab for a two-width set)
 RIBS_SLAB_EXTRA = [('rib', 'TE', w, s) for s in (50, 110, 130, 150) for w in (300, 500)]
+# added later: thinner slabs, full stencil (no earlier w, t, a solves exist for these)
+RIBS_THIN = [('rib', 'TE', w, s) for s in (30, 40) for w in (300, 500)]
+
+
+def thin_tasks():
+    """Nominal + w, t, a, s, nsi, nox for the 30/40 nm slabs. Mode-search guess: linear extrapolation of the
+    same width's n_eff from the 50 and 70 nm slabs (only steers the mode search; a 6-mode search without guess
+    is the fallback if the mode is > 3% away, as in femwell_batch.solve)."""
+    rows = fb.load_cache(os.path.join(fb.OUT, 'cache', 'solves_r12.jsonl'))
+    out = []
+    for u in RIBS_THIN:
+        n50, n70 = (rows[f'rib|TE|{u[2]}|{s}|oxide|r12|nom|+0.0000']['n'][0] for s in (50, 70))
+        g = n50 - (n70 - n50) * (50 - u[3]) / 20
+        out += fb.unit_tasks(*u, 'oxide', 'r12', g, params=['w', 't', 'a', 's', 'nsi', 'nox'])
+    return out
 
 
 def guesses(units):
@@ -70,6 +85,13 @@ if __name__ == '__main__':
         logpath = os.path.join(OUT, 'logs', 'striptm_r12.log')
         failed = fb.run(tasks(STRIPS_TM_EXTRA), CACHE, logpath, fb.choose_workers(2.0, max_workers=cap, logpath=logpath), 2.0)
         with open(os.path.join(OUT, 'logs', 'striptm_r12_failed.json'), 'w') as f:
+            json.dump(failed, f, indent=1)
+    elif what == 'ribthin':
+        # 2 workers even when the free-RAM rule says 1; the runner still drops to 1 worker if RAM gets tight
+        cap = int(sys.argv[2]) if len(sys.argv) > 2 else 2
+        logpath = os.path.join(OUT, 'logs', 'ribthin_r12.log')
+        failed = fb.run(thin_tasks(), CACHE, logpath, max(cap, fb.choose_workers(2.0, max_workers=cap, logpath=logpath)), 2.0)
+        with open(os.path.join(OUT, 'logs', 'ribthin_r12_failed.json'), 'w') as f:
             json.dump(failed, f, indent=1)
     elif what == 'ribslab':
         cap = int(sys.argv[2]) if len(sys.argv) > 2 else 4
