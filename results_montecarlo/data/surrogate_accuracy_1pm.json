@@ -1,0 +1,121 @@
+{
+ "noise": "1pm",
+ "sigma_phase_as_neff": 2.7483870967741928e-06,
+ "SIGMA_NEFF": 2.7483870967741936e-06,
+ "SIGMA_NG": 0.0010682448301570023,
+ "SIGMA_PHASE": 0.0011141048661221658,
+ "rows": [
+  {
+   "surrogate": "strip_TE_400|narrow",
+   "basis": "quad",
+   "neff_rms_test_over_sigma_phase": 0.06438547227121802,
+   "neff_max_test_over_sigma_phase": 0.10868775178767373,
+   "neff_rms_test_over_sigma_neff": 0.06438547227121799,
+   "ng_rms_test_over_sigma_ng": 0.0005762014964311083
+  },
+  {
+   "surrogate": "strip_TE_600|narrow",
+   "basis": "quad",
+   "neff_rms_test_over_sigma_phase": 0.051134338363540255,
+   "neff_max_test_over_sigma_phase": 0.08947069295663779,
+   "neff_rms_test_over_sigma_neff": 0.05113433836354024,
+   "ng_rms_test_over_sigma_ng": 0.00011237472891021561
+  },
+  {
+   "surrogate": "strip_TM_400|narrow",
+   "basis": "quad",
+   "neff_rms_test_over_sigma_phase": 0.0727633623798144,
+   "neff_max_test_over_sigma_phase": 0.14618483051607994,
+   "neff_rms_test_over_sigma_neff": 0.07276336237981439,
+   "ng_rms_test_over_sigma_ng": 0.0036986472795796084
+  },
+  {
+   "surrogate": "strip_TM_600|narrow",
+   "basis": "quad",
+   "neff_rms_test_over_sigma_phase": 0.20205549369995424,
+   "neff_max_test_over_sigma_phase": 0.44427952006939375,
+   "neff_rms_test_over_sigma_neff": 0.20205549369995418,
+   "ng_rms_test_over_sigma_ng": 0.0007698645362616388
+  },
+  {
+   "surrogate": "rib_TE_300_slab90|narrow",
+   "basis": "full",
+   "neff_rms_test_over_sigma_phase": 7.23404693489289,
+   "neff_max_test_over_sigma_phase": 16.43896578849816,
+   "neff_rms_test_over_sigma_neff": 7.234046934892888,
+   "ng_rms_test_over_sigma_ng": 0.03261490782515683
+  },
+  {
+   "surrogate": "rib_TE_400_slab90|narrow",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 2.2423094337383085,
+   "neff_max_test_over_sigma_phase": 4.419051703046022,
+   "neff_rms_test_over_sigma_neff": 2.242309433738308,
+   "ng_rms_test_over_sigma_ng": 0.003577884345031912
+  },
+  {
+   "surrogate": "rib_TE_500_slab90|narrow",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 1.5903446347692134,
+   "neff_max_test_over_sigma_phase": 2.5042518433689986,
+   "neff_rms_test_over_sigma_neff": 1.5903446347692127,
+   "ng_rms_test_over_sigma_ng": 0.0017313117312025156
+  },
+  {
+   "surrogate": "rib_TE_600_slab90|narrow",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 1.1279644524264703,
+   "neff_max_test_over_sigma_phase": 2.0878292311077407,
+   "neff_rms_test_over_sigma_neff": 1.1279644524264698,
+   "ng_rms_test_over_sigma_ng": 0.0019666631568250044
+  },
+  {
+   "surrogate": "strip_TE_450|narrow",
+   "basis": "quad",
+   "neff_rms_test_over_sigma_phase": 0.032208432529464585,
+   "neff_max_test_over_sigma_phase": 0.041160807511462685,
+   "neff_rms_test_over_sigma_neff": 0.03220843252946458,
+   "ng_rms_test_over_sigma_ng": 0.0002435538165385863
+  },
+  {
+   "surrogate": "strip_TE_500|narrow",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 0.33007981230712785,
+   "neff_max_test_over_sigma_phase": 0.5527755295751302,
+   "neff_rms_test_over_sigma_neff": 0.33007981230712774,
+   "ng_rms_test_over_sigma_ng": 0.002323852431585335
+  },
+  {
+   "surrogate": "strip_TE_550|narrow",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 0.31039172974368384,
+   "neff_max_test_over_sigma_phase": 0.6551765733333209,
+   "neff_rms_test_over_sigma_neff": 0.31039172974368373,
+   "ng_rms_test_over_sigma_ng": 0.001879465725586366
+  },
+  {
+   "surrogate": "rib_TE_300_slab50|narrow",
+   "basis": "full",
+   "neff_rms_test_over_sigma_phase": 27.010156468934625,
+   "neff_max_test_over_sigma_phase": 40.85565189183192,
+   "neff_rms_test_over_sigma_neff": 27.010156468934614,
+   "ng_rms_test_over_sigma_ng": 0.2468504261638884
+  },
+  {
+   "surrogate": "rib_TE_500_slab50|narrow",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 1.127316489401969,
+   "neff_max_test_over_sigma_phase": 1.7055162564648016,
+   "neff_rms_test_over_sigma_neff": 1.1273164894019685,
+   "ng_rms_test_over_sigma_ng": 0.012121841584091167
+  },
+  {
+   "surrogate": "rib_TE_500_slab50|wide",
+   "basis": "reduced",
+   "neff_rms_test_over_sigma_phase": 4.777093494387812,
+   "neff_max_test_over_sigma_phase": 9.98988583053545,
+   "neff_rms_test_over_sigma_neff": 4.7770934943878105,
+   "ng_rms_test_over_sigma_ng": 0.04075520707437791
+  }
+ ]
+}

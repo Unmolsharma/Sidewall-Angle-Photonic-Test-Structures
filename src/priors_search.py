@@ -30,7 +30,7 @@ import etchdepth_femwell_analysis as ed
 OUT = os.path.join(ed.REPO, 'results_priors_search')
 FACTORS = ed.FACTORS
 STRIP_UNITS = [('strip', pol, w, None) for pol in ('TE', 'TM') for w in (400, 450, 500, 550, 600)]
-RIB_UNITS = [('rib', 'TE', w, s) for s in (50, 70, 90, 110, 130, 150) for w in (300, 400, 500, 600)]
+RIB_UNITS = [('rib', 'TE', w, s) for s in (30, 40, 50, 70, 90, 110, 130, 150) for w in (300, 400, 500, 600)]  # only units with solves are used
 
 # prior options; sigma in parameter units (n in 1e-3, so 1e-3 -> 1.0 and 1e-4 -> 0.1)
 PRIORS = {

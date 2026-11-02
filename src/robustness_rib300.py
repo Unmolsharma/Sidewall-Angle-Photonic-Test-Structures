@@ -12,8 +12,10 @@ noise; see results_montecarlo/SUMMARY.md, step 3):
 2. Fixed mesh: the rib 300 nm geometric derivatives (w, t, a, slab) are replaced by those from
    src/fixedmesh_rib.py (nominal mesh reused across the stencil, no remeshing), if those solves exist.
 
-Run from src/ (main environment):  python robustness_rib300.py
-Writes results_montecarlo/robustness/data/robustness.json (log logs/robustness.log)
+Run from src/ (main environment):  python robustness_rib300.py [noise]
+  noise: placeholder (default) or 1pm / 0.1pm (montecarlo.set_noise)
+Writes results_montecarlo/robustness/data/robustness.json, or robustness_<noise>.json for a sourced level
+(log logs/robustness.log)
 """
 import copy
 import json
@@ -77,6 +79,10 @@ def fixed_rows(rows):
 
 
 def main():
+    import sys
+    import montecarlo
+    noise = sys.argv[1] if len(sys.argv) > 1 else 'placeholder'
+    print('noise', noise, montecarlo.set_noise(noise))
     os.makedirs(OUT, exist_ok=True)
     rows = ed.load()
     Dall = ps.derivatives(rows)                # strip symmetry imposed (default)
@@ -116,7 +122,8 @@ def main():
             for k, d in dev.items():
                 print(f'    d/d{k} fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: ' +
                       '; '.join(f'{x[0]:+.2%}, {x[1]:+.2%}' for x in d.values()))
-    with open(os.path.join(OUT, 'robustness.json'), 'w') as f:
+    res['noise'] = noise
+    with open(os.path.join(OUT, 'robustness.json' if noise == 'placeholder' else f'robustness_{noise}.json'), 'w') as f:
         json.dump(res, f, indent=1)
 
 

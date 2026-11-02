@@ -2,7 +2,12 @@
 Priors table and structure search rerun with strip symmetry imposed (the default from 2026-10-27), with
 the strip TM index derivatives and the extra rib slabs (300 and 500 nm at 50/110/130/150 nm).
 
-Run from src/ (main environment):  python sym_search.py
+Run from src/ (main environment):  python sym_search.py [noise] [out_dir]
+  noise: placeholder (default), 1pm or 0.1pm (sourced levels, montecarlo.set_noise)
+  out_dir (must end in /data; priors_search writes to its parent + /data): default
+  results_montecarlo/sym_search/data, the committed placeholder run made before the 30/40 nm slabs existed
+  (reproduce it with SYM_SEARCH_SLABS=50,70,90,110,130,150);
+  the 2026-11-01 runs with 30/40 nm slabs use results_final/sym_search_{placeholder,1pm}/data
 Reads   femwell caches (via priors_search / etchdepth_femwell_analysis)
 Writes  results_montecarlo/sym_search/data/{priors.json, priors_table.csv, d_prior_sweep.json,
         search.json, search_table.csv, slab_pairs.json, summary_tables.md}
@@ -28,7 +33,9 @@ import etchdepth_femwell_analysis as ed
 import priors_search as ps
 
 OUT = os.path.join(ed.REPO, 'results_montecarlo', 'sym_search', 'data')
-SLABS = (50, 70, 90, 110, 130, 150)
+SLABS = (30, 40, 50, 70, 90, 110, 130, 150)   # 30 and 40 nm: rib 300 and 500 nm only (added 2026-11-01)
+if os.environ.get('SYM_SEARCH_SLABS'):          # e.g. 50,70,90,110,130,150 reproduces the committed run
+    SLABS = tuple(int(x) for x in os.environ['SYM_SEARCH_SLABS'].split(','))
 STRIP5 = [f'strip_TE_{w}' for w in (400, 450, 500, 550, 600)]
 RM = ('ring', 'mzi')
 
@@ -139,6 +146,13 @@ def tables(search, pairs):
 
 
 def main():
+    global OUT
+    import sys
+    noise = sys.argv[1] if len(sys.argv) > 1 else 'placeholder'
+    if len(sys.argv) > 2:
+        OUT = os.path.abspath(sys.argv[2])
+    import montecarlo
+    print('noise', noise, montecarlo.set_noise(noise), '->', OUT)
     os.makedirs(OUT, exist_ok=True)
     Dall = ps.derivatives(ed.load())             # strip symmetry imposed (default)
     ps.OUT = os.path.dirname(OUT)                # priors_search writes to <ps.OUT>/data/

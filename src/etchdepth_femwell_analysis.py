@@ -163,7 +163,7 @@ def rows_for(items, Dall, f, stage, rib_mult):
             rows.append({p: v[1] / (fv.SIGMA_NG * m) for p, v in c.items()})
         if 'mzi' in readouts:
             rows.append({p: k * v[0] / (fv.SIGMA_PHASE * m) for p, v in c.items()})
-    slabs = (50, 70, 90, 110, 130, 150)
+    slabs = (30, 40, 50, 70, 90, 110, 130, 150)
     order = ['w', 't', 'a'] + [f'd{s}' for s in slabs] + [f'ar{s}' for s in slabs] + ['nsi', 'nox', 'T']
     params = [p for p in order if any(p in r for r in rows)]
     J = np.array([[r.get(p, 0.0) for p in params] for r in rows])

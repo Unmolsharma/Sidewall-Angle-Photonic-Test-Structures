@@ -6,6 +6,10 @@ Run from src/ (main environment):
     (femwell venv) montecarlo_batch.py   solves the design points
     python montecarlo.py fit      surrogates + held-out accuracy -> data/surrogate_accuracy.{json,csv}
     python montecarlo.py mc       noisy measurement sets and fits -> data/mc_results.json, mc_fits.csv
+    python montecarlo.py mc1pm    cases a, b at the sourced 1 pm noise -> data/mc_results_1pm.json, mc_fits_1pm.csv
+    python montecarlo.py surrcheck  held-out surrogate error in units of the 1 pm noise -> data/surrogate_accuracy_1pm.json
+    python montecarlo.py valley   fitted width vs angle per case -> data/mc_valley.json
+    Environment: MC_NPROC worker processes (default 2).
 Reads   results_montecarlo/sym_search/data/{search.json, slab_pairs.json} (sym_search.py), femwell caches,
         results_montecarlo/cache/solves_r12.jsonl
 Writes  results_montecarlo/data/...
@@ -389,7 +393,20 @@ class Model:
         return np.vstack([Jm, Jp])
 
 
-NPROC, CHUNK = 2, 100
+NPROC, CHUNK = int(os.environ.get('MC_NPROC', 2)), 100
+NOISE_SIGMA_LAMBDA = {'placeholder': None, '1pm': 1e-12, '0.1pm': 1e-13}   # resonance-wavelength noise (m)
+
+
+def set_noise(label):
+    """Set the measurement noise: the placeholders, or the sourced levels of noise_sourced.py (sigma_neff,
+    sigma_ng, sigma_phase derived from a resonance-wavelength precision). Returns the three sigmas."""
+    global SIG_PH_NEFF
+    if NOISE_SIGMA_LAMBDA[label] is not None:
+        import noise_sourced
+        for k, v in noise_sourced.sigmas(NOISE_SIGMA_LAMBDA[label]).items():
+            setattr(fv, k, v)
+    SIG_PH_NEFF = fv.SIGMA_PHASE / KPH
+    return dict(SIGMA_NEFF=fv.SIGMA_NEFF, SIGMA_NG=fv.SIGMA_NG, SIGMA_PHASE=fv.SIGMA_PHASE)
 
 
 class Case:
@@ -444,16 +461,18 @@ class Case:
 
 
 def _chunk(args):
-    name, ci, k0, k1, out = args
+    name, ci, k0, k1, out, noise = args
+    set_noise(noise)
     c = Case(name, out)
     rng = np.random.default_rng([SEED, ord(name), ci])     # reproducible, independent per chunk
     return [dict(set=k, **c.one_set(rng)) for k in range(k0, k1)]
 
 
-def run_mc():
+def run_mc(noise='placeholder', cases=None, tag=''):
     from multiprocessing import Pool
+    sig = set_noise(noise)
     design = json.load(open(os.path.join(OUT, 'mc_design.json')))
-    jobs = [(name, ci, k0, min(k0 + CHUNK, NSETS), OUT) for name in design['cases']
+    jobs = [(name, ci, k0, min(k0 + CHUNK, NSETS), OUT, noise) for name in (cases or design['cases'])
             for ci, k0 in enumerate(range(0, NSETS, CHUNK))]
     with Pool(NPROC) as pool:
         parts = pool.map(_chunk, jobs)
@@ -495,6 +514,7 @@ def run_mc():
                    params_crb_fd={p: ed.marginal_std(c.Jfd, i) for i, p in enumerate(params)})
         res['std_over_crb_surrogate'] = res['a_std_all'] / c.crb_sur if np.isfinite(c.crb_sur) else None
         res['std_over_crb_fd'] = res['a_std_all'] / c.crb_fd if np.isfinite(c.crb_fd) else None
+        res['noise'] = dict(level=noise, **sig)
         results[name] = res
         for o in out:
             fits.append(dict(case=name, **{k: o.get(k) for k in ['set', 'status', 'chi2', 'a_hat', 'n_converged'] +
@@ -504,11 +524,11 @@ def run_mc():
               f"+- {res['a_bias_se']:.2g}; ok {res['n_ok']}, failed {res['n_failed']}, at bound {res['n_at_bound']}, "
               f"ambiguous {res['n_ambiguous']}; chi2 mean {res['chi2_mean']:.2f} (dof {res['dof']}); "
               f"fit to femwell nominal: a = {a_modelerr:+.4g}")
-    with open(os.path.join(OUT, 'mc_results.json'), 'w') as f:
+    with open(os.path.join(OUT, f'mc_results{tag}.json'), 'w') as f:
         json.dump(results, f, indent=1)
     head = ['case', 'set', 'status', 'chi2', 'a_hat', 'n_converged']
     keys = head + sorted({k for r in fits for k in r} - set(head))
-    with open(os.path.join(OUT, 'mc_fits.csv'), 'w', newline='') as f:
+    with open(os.path.join(OUT, f'mc_fits{tag}.csv'), 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=keys)
         w.writeheader()
         w.writerows(fits)
@@ -530,5 +550,22 @@ def valley():
         json.dump(out, f, indent=1)
 
 
+def surrogate_check(noise='1pm'):
+    """Held-out surrogate errors of data/surrogate_accuracy.json re-expressed in units of another noise level."""
+    sig = set_noise(noise)
+    acc = json.load(open(os.path.join(OUT, 'surrogate_accuracy.json')))
+    rows = [dict(surrogate=r['surrogate'], basis=r['basis'],
+                 neff_rms_test_over_sigma_phase=r['neff_rms_test'] / SIG_PH_NEFF,
+                 neff_max_test_over_sigma_phase=r['neff_max_test'] / SIG_PH_NEFF,
+                 neff_rms_test_over_sigma_neff=r['neff_rms_test'] / fv.SIGMA_NEFF,
+                 ng_rms_test_over_sigma_ng=r['ng_rms_test'] / fv.SIGMA_NG) for r in acc['rows']]
+    for r in rows:
+        print(f"{r['surrogate']:28s} n_eff rms {r['neff_rms_test_over_sigma_phase']:.2f} sigma_phase, "
+              f"n_g rms {r['ng_rms_test_over_sigma_ng']:.3f} sigma_ng")
+    with open(os.path.join(OUT, f'surrogate_accuracy_{noise}.json'), 'w') as f:
+        json.dump(dict(noise=noise, sigma_phase_as_neff=SIG_PH_NEFF, **sig, rows=rows), f, indent=1)
+
+
 if __name__ == '__main__':
-    {'plan': plan, 'fit': fit_surrogates, 'mc': run_mc, 'valley': valley}[sys.argv[1]]()
+    {'plan': plan, 'fit': fit_surrogates, 'mc': run_mc, 'valley': valley,
+     'mc1pm': lambda: run_mc('1pm', ('a', 'b'), '_1pm'), 'surrcheck': surrogate_check}[sys.argv[1]]()
