@@ -1287,7 +1287,7 @@
       "results_final/data/crosschecks.json"
      ],
      "retired": false,
-     "context": "| 1.0015 | Slot R: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.slot_max` | `uncommitted` |"
+     "context": "| 1.0015 | Slot R: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.slot_max` | `6fc942a` |"
     },
     {
      "line": 155,
@@ -1297,7 +1297,7 @@
       "results_final/data/crosschecks.json"
      ],
      "retired": false,
-     "context": "| 0.9988 | SWG R: min | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.swg_min` | `uncommitted` |"
+     "context": "| 0.9988 | SWG R: min | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.swg_min` | `6fc942a` |"
     },
     {
      "line": 156,
@@ -1307,7 +1307,7 @@
       "results_final/data/crosschecks.json"
      ],
      "retired": false,
-     "context": "| 1.0005 | SWG R: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.swg_max` | `uncommitted` |"
+     "context": "| 1.0005 | SWG R: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.swg_max` | `6fc942a` |"
     },
     {
      "line": 157,
