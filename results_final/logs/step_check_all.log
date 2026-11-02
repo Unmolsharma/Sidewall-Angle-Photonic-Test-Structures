@@ -1,0 +1,4 @@
+428 derivatives: {'PASS': 422, 'FAIL': 3, 'PASS_NEAR_ZERO_ABS': 3}
+FAIL strip_TM_600 a ng: max rel dev 0.0211, 0.139 of largest
+FAIL rib_TE_300_slab110 s ng: max rel dev 0.0225, 0.143 of largest
+FAIL rib_TE_600_slab110 a ng: max rel dev 0.0204, 0.105 of largest

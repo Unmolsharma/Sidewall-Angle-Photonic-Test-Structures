@@ -1,0 +1,23 @@
+{
+ "noise": "1pm",
+ "sigma_neff": 2.7483870967741936e-06,
+ "sigma_phase_as_neff": 2.7483870967741928e-06,
+ "combined_sigma_neff": 1.94340315345464e-06,
+ "sets": {
+  "best": {
+   "ring_and_mzi": 0.138992939553791,
+   "ring_only": 0.19005629941888472,
+   "ring_with_combined_neff_noise": 0.1389929395537914,
+   "rel_diff_combined_vs_both": 2.886579864025407e-15
+  },
+  "two": {
+   "ring_and_mzi": 0.38910445940026206,
+   "ring_only": 0.39324669622170144,
+   "ring_with_combined_neff_noise": 0.3891044594003017,
+   "rel_diff_combined_vs_both": 1.0191847366058937e-13
+  }
+ }
+}
+greedy: 32 cases, worse 7, equal 25, max ratio 1.12
+EMpy vs femwell: {'dneff_dw': 0.0582, 'dneff_dt': 0.0474, 'dneff_da': 0.0591, 'dng_dw': 0.133, 'dng_dt': 0.082, 'dng_da': 0.14} {'PASS': 373, 'FAIL': 222, 'PASS_NEAR_ZERO_ABS': 53}
+two-width trend: {'noise': '1pm', 'stage': 'D realistic', 'a_deg_by_slab': {'30': 0.41403086010095796, '40': 0.4027257027535949, '50': 0.38910445940026206, '70': 0.4521460016915199, '90': 0.5972046443308687, '110': 0.8549052259140861, '130': 1.295715157656939, '150': 4.088610030865424}, 'best_slab': 50, 'monotonic_increasing_with_slab': False}

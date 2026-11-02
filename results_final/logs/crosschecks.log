@@ -1,0 +1,18 @@
+1. t tan(1)/1 = 3.84011 nm/deg; femwell 3.8396-3.8725 (max rel dev 0.84%)
+2. closed-form R vs femwell: strips max 0.78%, ribs max 5.38%, median 1.25%
+   strip_TE_400         closed 1.0011  femwell 1.0001  (+0.10%)
+   strip_TE_500         closed 0.9939  femwell 1.0001  (-0.62%)
+   strip_TE_600         closed 0.9960  femwell 0.9999  (-0.39%)
+   strip_TM_500         closed 0.9934  femwell 1.0012  (-0.78%)
+   rib_TE_300_slab50    closed 0.8290  femwell 0.8312  (-0.27%)
+   rib_TE_400_slab50    closed 0.8573  femwell 0.8561  (+0.13%)
+   rib_TE_500_slab50    closed 0.8673  femwell 0.8682  (-0.11%)
+   rib_TE_600_slab50    closed 0.8819  femwell 0.8732  (+1.00%)
+   rib_TE_300_slab90    closed 0.7206  femwell 0.7501  (-3.92%)
+   rib_TE_400_slab90    closed 0.7516  femwell 0.7759  (-3.13%)
+   rib_TE_500_slab90    closed 0.8018  femwell 0.7900  (+1.50%)
+   rib_TE_600_slab90    closed 0.7557  femwell 0.7987  (-5.38%)
+3. impact (placeholder): dw -3.8403 nm, resonance error -710.8 pm
+3. impact (1pm): dw -3.8403 nm, resonance error -710.8 pm
+4. mesh r12 vs r8: max |rel diff| 0.305%
+5. slot R 0.9991-1.0015, SWG 0.9988-1.0005, air strip (r8) [0.9782245025354422, 0.953256463337093]

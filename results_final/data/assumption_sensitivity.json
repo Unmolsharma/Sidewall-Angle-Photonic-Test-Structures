@@ -1,0 +1,285 @@
+{
+ "base": {
+  "sigma_lambda_pm": 1.0,
+  "L_um": 100,
+  "n_g": 4.26,
+  "phase_mult": 1.0,
+  "rib_mult": 1.0,
+  "priors": {
+   "d": 2.0,
+   "nsi": 0.1,
+   "nox": 1.0,
+   "T": 1.0
+  },
+  "stage": "D"
+ },
+ "sets": {
+  "best": [
+   "strip_TE_400",
+   "strip_TE_600",
+   "strip_TM_400",
+   "strip_TM_600",
+   "rib_TE_300_slab90",
+   "rib_TE_400_slab90",
+   "rib_TE_500_slab90",
+   "rib_TE_600_slab90"
+  ],
+  "two": [
+   "strip_TE_400",
+   "strip_TE_450",
+   "strip_TE_500",
+   "strip_TE_550",
+   "strip_TE_600",
+   "rib_TE_300_slab50",
+   "rib_TE_500_slab50"
+  ]
+ },
+ "two_width_pair": "rib_TE_300_slab50 + rib_TE_500_slab50",
+ "results": {
+  "best": {
+   "base": 0.138992939553791,
+   "variations": [
+    {
+     "assumption": "sigma_lambda",
+     "level": "0.1 pm (best case)",
+     "a_deg": 0.013904072601920966,
+     "rel_change": -0.8999656195015574
+    },
+    {
+     "assumption": "sigma_lambda",
+     "level": "0.5 pm",
+     "a_deg": 0.06951454804109537,
+     "rel_change": -0.49986993393867407
+    },
+    {
+     "assumption": "sigma_lambda",
+     "level": "2 pm",
+     "a_deg": 0.27770216541763826,
+     "rel_change": 0.9979587906345853
+    },
+    {
+     "assumption": "L (sigma_ng, sigma_phase conversion)",
+     "level": "50 um",
+     "a_deg": 0.08615932098201333,
+     "rel_change": -0.38011728323315863
+    },
+    {
+     "assumption": "L (sigma_ng, sigma_phase conversion)",
+     "level": "200 um",
+     "a_deg": 0.1795322297193537,
+     "rel_change": 0.29166438450547183
+    },
+    {
+     "assumption": "n_g in the conversion",
+     "level": "3.37",
+     "a_deg": 0.10776791311700333,
+     "rel_change": -0.22465188906018796
+    },
+    {
+     "assumption": "MZI fringe precision",
+     "level": "sigma_phase x0.5",
+     "a_deg": 0.08980482698417831,
+     "rel_change": -0.3538892891072113
+    },
+    {
+     "assumption": "MZI fringe precision",
+     "level": "sigma_phase x2",
+     "a_deg": 0.17224984023731618,
+     "rel_change": 0.23927043193913167
+    },
+    {
+     "assumption": "rib noise factor",
+     "level": "0.5",
+     "a_deg": 0.0876756416495057,
+     "rel_change": -0.36920794731753437
+    },
+    {
+     "assumption": "rib noise factor",
+     "level": "2",
+     "a_deg": 0.2543158726229144,
+     "rel_change": 0.8297035334265508
+    },
+    {
+     "assumption": "d prior",
+     "level": "1 nm",
+     "a_deg": 0.13897654428640893,
+     "rel_change": -0.0001179575555039225
+    },
+    {
+     "assumption": "d prior",
+     "level": "4 nm",
+     "a_deg": 0.13899703929666896,
+     "rel_change": 2.9496051318300687e-05
+    },
+    {
+     "assumption": "n_Si prior",
+     "level": "0.5e-4",
+     "a_deg": 0.13886790548925187,
+     "rel_change": -0.0008995713375119507
+    },
+    {
+     "assumption": "n_Si prior",
+     "level": "2e-4",
+     "a_deg": 0.1390248710449134,
+     "rel_change": 0.0002297346269883871
+    },
+    {
+     "assumption": "n_ox prior",
+     "level": "0.5e-3",
+     "a_deg": 0.13899245365027654,
+     "rel_change": -3.4958863091016923e-06
+    },
+    {
+     "assumption": "n_ox prior",
+     "level": "2e-3",
+     "a_deg": 0.1389930610754201,
+     "rel_change": 8.743007342548736e-07
+    },
+    {
+     "assumption": "derivative step",
+     "level": "h/2",
+     "a_deg": 0.10070374771058008,
+     "rel_change": -0.2754758044986364
+    },
+    {
+     "assumption": "derivative step",
+     "level": "2h",
+     "a_deg": 0.147256589544792,
+     "rel_change": 0.05945373928726028
+    },
+    {
+     "assumption": "strip symmetry",
+     "level": "not imposed (raw femwell)",
+     "a_deg": 0.13639835792017133,
+     "rel_change": -0.018667003100654278
+    }
+   ]
+  },
+  "two": {
+   "base": 0.38910445940026206,
+   "variations": [
+    {
+     "assumption": "sigma_lambda",
+     "level": "0.1 pm (best case)",
+     "a_deg": 0.04077013021121746,
+     "rel_change": -0.8952206040659167
+    },
+    {
+     "assumption": "sigma_lambda",
+     "level": "0.5 pm",
+     "a_deg": 0.19581988958715726,
+     "rel_change": -0.49674210907533645
+    },
+    {
+     "assumption": "sigma_lambda",
+     "level": "2 pm",
+     "a_deg": 0.7748408964198518,
+     "rel_change": 0.9913441691573939
+    },
+    {
+     "assumption": "L (sigma_ng, sigma_phase conversion)",
+     "level": "50 um",
+     "a_deg": 0.1970646078513862,
+     "rel_change": -0.49354317821202165
+    },
+    {
+     "assumption": "L (sigma_ng, sigma_phase conversion)",
+     "level": "200 um",
+     "a_deg": 0.769767146807655,
+     "rel_change": 0.9783046125817199
+    },
+    {
+     "assumption": "n_g in the conversion",
+     "level": "3.37",
+     "a_deg": 0.24600464803595404,
+     "rel_change": -0.3677670813253384
+    },
+    {
+     "assumption": "MZI fringe precision",
+     "level": "sigma_phase x0.5",
+     "a_deg": 0.38632134228724907,
+     "rel_change": -0.007152621990770047
+    },
+    {
+     "assumption": "MZI fringe precision",
+     "level": "sigma_phase x2",
+     "a_deg": 0.39165776390425194,
+     "rel_change": 0.0065620026764159345
+    },
+    {
+     "assumption": "rib noise factor",
+     "level": "0.5",
+     "a_deg": 0.20288202868436406,
+     "rel_change": -0.4785923836568926
+    },
+    {
+     "assumption": "rib noise factor",
+     "level": "2",
+     "a_deg": 0.7684234399638038,
+     "rel_change": 0.9748512806771659
+    },
+    {
+     "assumption": "d prior",
+     "level": "1 nm",
+     "a_deg": 0.3883824043243976,
+     "rel_change": -0.0018556844015034102
+    },
+    {
+     "assumption": "d prior",
+     "level": "4 nm",
+     "a_deg": 0.38928570835174287,
+     "rel_change": 0.0004658105223469544
+    },
+    {
+     "assumption": "n_Si prior",
+     "level": "0.5e-4",
+     "a_deg": 0.3884611935869806,
+     "rel_change": -0.0016531956849658025
+    },
+    {
+     "assumption": "n_Si prior",
+     "level": "2e-4",
+     "a_deg": 0.3913622661964309,
+     "rel_change": 0.005802572398293293
+    },
+    {
+     "assumption": "n_ox prior",
+     "level": "0.5e-3",
+     "a_deg": 0.3887776884608355,
+     "rel_change": -0.0008398026070691733
+    },
+    {
+     "assumption": "n_ox prior",
+     "level": "2e-3",
+     "a_deg": 0.3891948000356244,
+     "rel_change": 0.00023217579027901003
+    },
+    {
+     "assumption": "derivative step",
+     "level": "h/2",
+     "a_deg": 0.3997219117967939,
+     "rel_change": 0.027286894662931438
+    },
+    {
+     "assumption": "derivative step",
+     "level": "2h",
+     "a_deg": 0.3971353901662888,
+     "rel_change": 0.020639523839960816
+    },
+    {
+     "assumption": "strip symmetry",
+     "level": "not imposed (raw femwell)",
+     "a_deg": 0.3740333211352895,
+     "rel_change": -0.03873288496411009
+    }
+   ]
+  }
+ },
+ "not_evaluated": [
+  "wavelength step of the n_g central difference (5 nm)",
+  "nominal n_Si 3.48 / n_ox 1.44",
+  "trapezoid wall shape (no corner rounding)",
+  "pivot location of the angle (bottom of wall)",
+  "material dispersion (none modelled)"
+ ]
+}

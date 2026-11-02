@@ -1,0 +1,169 @@
+{
+ "sources": {
+  "janz2023": {
+   "authors": "S. Janz, S. Dedyulin, D.-X. Xu, M. Vachon, S. Wang, R. Cheriton, J. Weber",
+   "title": "Measurement Accuracy in Silicon Photonic Ring Resonator Thermometers: Identifying and Mitigating Intrinsic Impairments",
+   "venue": "arXiv:2306.15643 [physics.optics], v1, submitted 27 Jun 2023",
+   "doi": "10.48550/arXiv.2306.15643",
+   "journal_version": "UNVERIFIED (none listed on the arXiv page)",
+   "url": "https://arxiv.org/pdf/2306.15643",
+   "status": "VERIFIED (full text read)",
+   "quotes": [
+    {
+     "use": "sigma_lambda = 0.1 pm (best case)",
+     "page": 9,
+     "text": "so the resonance wavelength uncertainty in Fig. 6 is dominated by the ±0.1 pm repeatability of the laser, and by the 0.1 pm wavelength step size used to acquire the spectra."
+    },
+    {
+     "use": "context of the 0.1 pm figure (temperature bath)",
+     "page": 9,
+     "text": "The temperature bath stability of ±0.7 mK is much better than that for the bench-top stage used for the Ring A and B"
+    },
+    {
+     "use": "sigma_lambda = 1 pm (primary)",
+     "page": 1,
+     "text": "Wavelength changes down to 1 pm or less can be routinely measured using calibrated tunable lasers used in optical communication component testing"
+    },
+    {
+     "use": "resonance temperature coefficient ~80 pm/K",
+     "page": 1,
+     "text": "In silicon waveguides this temperature dependence is approximately 80 pm/K, with the exact value depending on the specific device geometry and operating wavelength."
+    },
+    {
+     "use": "laser run-to-run reproducibility",
+     "page": 5,
+     "text": "reproducibility from run to run was within ±0.1 pm"
+    },
+    {
+     "use": "ring length L = 100 um used in the paper",
+     "page": 1,
+     "text": "For a ring with L = 100 m cavity length",
+     "note": "the micro sign of \"100 um\" is lost in the PDF text extraction"
+    }
+   ]
+  },
+  "frey2006": {
+   "authors": "Bradley J. Frey, Douglas B. Leviton, Timothy J. Madison",
+   "title": "Temperature dependent refractive index of silicon and germanium",
+   "venue": "arXiv:physics/0606168 (to be published in Proc. SPIE 6273, per the arXiv comments)",
+   "doi": "10.48550/arXiv.physics/0606168; related DOI 10.1117/12.672850",
+   "url": "https://arxiv.org/pdf/physics/0606168",
+   "status": "VERIFIED (full text read; page numbers are PDF pages)",
+   "quotes": [
+    {
+     "use": "n_Si absolute uncertainty at 1.5 um, 295 K (basis of the 1e-4 n_Si prior)",
+     "page": 3,
+     "text": "Table 1: Uncertainty in absolute refractive index measurements of silicon for selected wavelengths and temperatures | wavelength 30 K 75 K 100 K 200 K 295 K | 1.5 microns 8.61E-05 1.35E-04 1.20E-04 9.16E-05 8.67E-05"
+    },
+    {
+     "use": "n_Si at 1.5 um, 295 K (nominal 3.48 is a rounded assumption)",
+     "page": 3,
+     "text": "Table 2: Measured absolute refractive index of silicon for selected wavelengths and temperatures | wavelength 30 K 40 K 50 K 60 K 70 K 80 K 90 K 100 K 150 K 200 K 250 K 295 K | 1.5 microns 3.45309 3.45319 3.45340 3.45373 3.45417 3.45471 3.45535 3.45609 3.46100 3.46760 3.47540 3.48314"
+    },
+    {
+     "use": "dn/dT of Si at 1.5 and 2.0 um, 295 K (DNDT_SI = 1.86e-4 by linear interpolation to 1.55 um)",
+     "page": 5,
+     "text": "Table 4: Measured thermo-optic coefficient (dn/dT) of silicon for selected wavelengths and temperatures | wavelength 30 K 40 K 50 K 60 K 70 K 80 K 90 K 100 K 150 K 200 K 250 K 295 K | 1.5 microns 5.86E-06 1.61E-05 2.64E-05 3.67E-05 4.70E-05 5.72E-05 6.75E-05 7.78E-05 1.19E-04 1.42E-04 1.66E-04 1.87E-04 | 2.0 microns 5.39E-06 1.53E-05 2.53E-05 3.52E-05 4.51E-05 5.51E-05 6.50E-05 7.50E-05 1.14E-04 1.36E-04 1.58E-04 1.78E-04"
+    }
+   ]
+  },
+  "leviton2008": {
+   "authors": "Douglas B. Leviton, Bradley J. Frey",
+   "title": "Temperature-dependent absolute refractive index measurements of synthetic fused silica",
+   "venue": "arXiv:0805.0091 [physics.optics], submitted 1 May 2008",
+   "doi": "10.48550/arXiv.0805.0091",
+   "journal_version": "UNVERIFIED (none listed)",
+   "url": "https://arxiv.org/pdf/0805.0091",
+   "status": "VERIFIED (full text read; page numbers are PDF pages)",
+   "quotes": [
+    {
+     "use": "dn/dT of fused silica at 1.5 and 1.6 um, 295 K (DNDT_OX = 8.4e-6 by interpolation to 1.55 um, rounded)",
+     "page": 7,
+     "text": "Table 6 – thermo-optic coefficient, dn/dT, of Corning 7980 fused silica at selected wavelengths and temperatures in units of 1/K | wavelength 30 K 40 K 50 K 60 K 80 K 100 K 120 K 160 K 200 K 240 K 275 K 295 K 300 K | 1.5 microns 9.92E-07 1.34E-06 1.69E-06 2.04E-06 2.73E-06 3.43E-06 4.19E-06 5.22E-06 6.18E-06 7.13E-06 7.97E-06 8.45E-06 8.57E-06 | 1.6 microns 9.31E-07 1.30E-06 1.66E-06 2.02E-06 2.75E-06 3.48E-06 4.27E-06 5.23E-06 6.14E-06 7.05E-06 7.84E-06 8.29E-06 8.41E-06"
+    },
+    {
+     "use": "n of fused silica at 1.5 um, 295 K (nominal 1.44 is a rounded assumption; deposited cladding differs)",
+     "page": 7,
+     "text": "Table 4 – absolute refractive index, n, of Corning 7980 fused silica at selected wavelengths and temperatures | wavelength 30 K 40 K 50 K 60 K 80 K 100 K 120 K 160 K 200 K 240 K 275 K 295 K 300 K | 1.5 microns 1.44369 1.44370 1.44372 1.44374 1.44379 1.44385 1.44392 1.44411 1.44433 1.44460 1.44486 1.44502 1.44507"
+    },
+    {
+     "use": "absolute index uncertainty of bulk fused silica (abstract)",
+     "page": 1,
+     "text": "with an absolute uncertainty of ±1 x 10-5."
+    }
+   ]
+  },
+  "johnson2002": {
+   "authors": "Steven G. Johnson, M. Ibanescu, M. A. Skorobogatiy, O. Weisberg, J. D. Joannopoulos, Y. Fink",
+   "title": "Perturbation theory for Maxwell's equations with shifting material boundaries",
+   "venue": "Phys. Rev. E 65, 066611 (2002)",
+   "doi": "10.1103/PhysRevE.65.066611",
+   "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.65.066611; https://math.mit.edu/~stevenj/papers/JohnsonIb02.pdf",
+   "status": "VERIFIED bibliographically (APS page and PDF page 1); used only as the method behind the field-centroid cross-check, no number taken from it",
+   "quotes": [
+    {
+     "use": "title page",
+     "page": 1,
+     "text": "PHYSICAL REVIEW E, VOLUME 65, 066611 Perturbation theory for Maxwell's equations with shifting material boundaries"
+    }
+   ]
+  },
+  "jiao_pikus2025": {
+   "authors": "Lihong (Heidi) Jiao, Fedor Pikus",
+   "title": "Silicon Waveguides and Temperature-Dependent Performance",
+   "venue": "in: Advanced Optoelectronics and Photonic Technologies - Fundamentals, Devices, and Emerging Applications [Working Title], eds. D. G. Popescu, M. S. Nazir, IntechOpen (online first, published 26 August 2025)",
+   "doi": "10.5772/intechopen.1011647",
+   "url": "https://www.intechopen.com/online-first/1224995",
+   "status": "VERIFIED (HTML page read by a fetch agent, Section 2.3 quoted verbatim); values are the authors' own EIM calculation, not a measurement",
+   "quotes": [
+    {
+     "use": "published EIM n_eff: rib 2.602, strip 2.494 (validation only, not a headline input)",
+     "section": "2.3",
+     "text": "The effective index (neff = 2.602) in the rib waveguide is higher than that in the strip waveguide (neff = 2.494) due to reduced confinement in the rib waveguide with identical core width."
+    },
+    {
+     "use": "geometry of the 2.602 value",
+     "section": "2.3",
+     "text": "shows the effective index for a rib waveguide with the following parameters: total height (H) = 220 nm, slab height (h) = 90 nm, width (W) = 500 nm."
+    },
+    {
+     "use": "material indices of the EIM calculation",
+     "section": "2.3",
+     "text": "For these calculations, the material indices used are n1 = 3.48, n2 = n3 = 1.44 at wavelength of 1.55 μm."
+    }
+   ]
+  }
+ },
+ "unverified": [
+  {
+   "item": "published strip n_eff ~2.44-2.45 (500 x 220 nm, TE)",
+   "where": "src/fullvector_sensitivity.py, src/validate_*.py, notes/progress.md",
+   "status": "UNVERIFIED: no source is named anywhere in the repo; not used for any headline number"
+  },
+  {
+   "item": "Baehr-Jones et al., Opt. Express 19, 11529 (2011) and \"Low-loss silicon slot waveguides and couplers ...\" Opt. Express 19, 26275 (2011): slot/strip loss ratio",
+   "where": "src/noise_sourcing.py",
+   "status": "UNVERIFIED (not fetched); only used for slot results, which are dropped"
+  },
+  {
+   "item": "\"Record low-loss hybrid rib/wire waveguides for silicon photonic circuits\" (rib/strip loss ratio 0.2x)",
+   "where": "src/noise_sourcing.py",
+   "status": "UNVERIFIED (no full citation in the repo; not fetched); the 0.2x optimistic rib noise factor is therefore treated as an ASSUMPTION"
+  },
+  {
+   "item": "Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603",
+   "where": "searched 2026-10-29",
+   "status": "UNVERIFIED (full text not readable: HTTP 403); no value taken"
+  },
+  {
+   "item": "Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008",
+   "where": "searched 2026-10-29",
+   "status": "UNVERIFIED (full text not readable); no value taken"
+  },
+  {
+   "item": "Farjadpour et al., Opt. Lett. 31, 2972 (2006); Kottke et al., PRE 77, 036611 (2008); Fallahkhair & Li (2008)",
+   "where": "src/anisotropic_averaging.py, notes",
+   "status": "UNVERIFIED (method references of the retired EMpy work; not fetched)"
+  }
+ ]
+}

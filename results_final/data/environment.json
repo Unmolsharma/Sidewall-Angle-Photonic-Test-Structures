@@ -1,0 +1,125 @@
+{
+ "git_head_when_recorded": "04cdf3a655610927d4f274c0a164023811da3fc2",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+ "main": {
+  "python": "3.12.4",
+  "executable": "C:\\Python312\\python.exe",
+  "packages": {
+   "numpy": "2.2.3",
+   "scipy": "1.16.2",
+   "ElectroMagneticPython": "2.2.3",
+   "matplotlib": "3.10.7"
+  }
+ },
+ "femwell_env": {
+  "python": "3.12.4",
+  "executable": "C:\\Users\\unmol\\.venvs\\femwell\\Scripts\\python.exe",
+  "packages": {
+   "femwell": "0.1.12",
+   "scikit-fem": "12.0.2",
+   "numpy": "2.5.4",
+   "scipy": "1.18.1",
+   "gmsh": "4.15.2",
+   "shapely": "2.2.0",
+   "meshio": "5.3.5"
+  },
+  "constants": {
+   "MESH": {
+    "r12": [
+     0.012,
+     0.3,
+     0.2
+    ],
+    "r8": [
+     0.008,
+     0.3,
+     0.2
+    ]
+   },
+   "WLS": [
+    1.55,
+    1.555,
+    1.5450000000000002
+   ],
+   "DLAM_um": 0.005,
+   "H": {
+    "w": 5.0,
+    "t": 2.0,
+    "a": 1.0,
+    "s": 2.0,
+    "nsi": 0.002,
+    "nox": 0.002
+   },
+   "FACTORS": [
+    0.5,
+    1.0,
+    2.0
+   ],
+   "N_SI": 3.48,
+   "N_OX": 1.44,
+   "N_AIR": 1.0,
+   "WL0_um": 1.55,
+   "SLAB0_um": 0.09,
+   "POWER_CHECK_S": 60
+  },
+  "solver_source": "def solve(task):\n    \"\"\"task = (geom, pol, W_nm, slab_nm, clad, mesh, param, delta, guess) -> dict\"\"\"\n    geom, pol, W, slab_nm, clad, mesh, p, d, guess = task\n    t0 = time.time()\n    w, t, a = W / 1000, 0.22, 0.0\n    if p == 'w':\n        w += d / 1000\n    elif p == 't':\n        t += d / 1000\n    elif p == 'a':\n        a += d\n    slab = (slab_nm if slab_nm is not None else SLAB0 * 1000) / 1000\n    n_si, n_ox = N_SI, N_OX\n    if p == 's':        # rib slab thickness, rib top held fixed\n        slab += d / 1000\n    elif p == 'nsi':    # silicon index (oxide-clad: one oxide index for BOX and top cladding)\n        n_si += d\n    elif p == 'nox':\n        n_ox += d\n    basis0, eps = build(geom, w, t, a, slab, clad, mesh, n_si, n_ox)\n    ns, tes, notes = [], [], []\n    for wl in WLS:\n        m = pick(compute_modes(basis0, eps, wavelength=wl, num_modes=2, order=2, n_guess=guess), pol)\n        if m is None or abs(m.n_eff.real - guess) > 0.03 * guess:\n            notes.append(f'wl {wl}: fallback to 6 modes without guess')\n            m = pick(compute_modes(basis0, eps, wavelength=wl, num_modes=6, order=2), pol)\n        ns.append(float(m.n_eff.real))\n        tes.append(float(m.te_fraction))\n    return dict(key=key_of(task), n=ns, te_fraction=tes, n_elements=int(basis0.mesh.nelements),\n                seconds=time.time() - t0, notes=notes)\ndef build(geom, w, t, a, slab, clad, mesh, n_si=N_SI, n_ox=N_OX):\n    hx, hy = (1.6, 1.2) if geom == 'slot' else (1.4, 1.2)\n    dom = box(-hx, -hy, hx, hy)\n    cores = [s.intersection(dom) for s in shapes(geom, w, t, a, slab)]\n    union = cores[0]\n    for c in cores[1:]:\n        union = union.union(c)\n    polys = OrderedDict((f'core{i}', c) for i, c in enumerate(cores))\n    polys['box'] = box(-hx, -hy, hx, 0).difference(union)\n    polys['clad'] = box(-hx, 0, hx, hy).difference(union)\n    res, dist, rmax = MESH[mesh]\n    m = from_meshio(mesh_from_OrderedDict(\n        polys, {f'core{i}': dict(resolution=res, distance=dist) for i in range(len(cores))},\n        default_resolution_max=rmax))\n    basis0 = Basis(m, ElementTriP0())\n    eps = basis0.zeros()\n    n_core = float(np.sqrt(DUTY * n_si ** 2 + (1 - DUTY) * n_ox ** 2)) if geom == 'swg' else n_si\n    for i in range(len(cores)):\n        eps[basis0.get_dofs(elements=f'core{i}')] = n_core ** 2\n    eps[basis0.get_dofs(elements='box')] = n_ox ** 2\n    eps[basis0.get_dofs(elements='clad')] = (n_ox if clad == 'oxide' else N_AIR) ** 2\n    return basis0, eps\ndef pick(modes, pol):\n    ok = [m for m in modes if (m.te_fraction > 0.5) == (pol == 'TE')]\n    return max(ok, key=lambda m: m.n_eff.real) if ok else None\n"
+ },
+ "analysis_constants": {
+  "T_STRIP_nm": 220.0,
+  "H_steps": {
+   "w": 5.0,
+   "t": 2.0,
+   "a": 1.0,
+   "s": 2.0,
+   "nsi": 0.002,
+   "nox": 0.002
+  },
+  "FACTORS": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "WL0_um": 1.55,
+  "DLAM_um": 0.005,
+  "DNDT_SI": 0.000186,
+  "DNDT_OX": 8.4e-06,
+  "placeholder_noise": {
+   "SIGMA_NEFF": 6.5e-06,
+   "SIGMA_NG": 0.001,
+   "SIGMA_PHASE": 0.001,
+   "L_MZI_um": 100.0
+  },
+  "sourced_noise_levels_m": {
+   "primary_1pm": 1e-12,
+   "best_case_0p1pm": 1e-13
+  },
+  "noise_conversion": {
+   "n_g": 4.26,
+   "L_m": 0.0001,
+   "lambda_m": 1.55e-06
+  },
+  "montecarlo": {
+   "NSETS": 2000,
+   "NSTART": 5,
+   "K_BOX": 6.0,
+   "N_TRAIN": {
+    "strip": 20,
+    "rib": 30
+   },
+   "N_TEST": {
+    "strip": 6,
+    "rib": 8
+   },
+   "CHUNK": 100
+  }
+ },
+ "seeds": {
+  "montecarlo_SEED": 20261027,
+  "montecarlo_note": "LHS design: qmc.LatinHypercube(seed=SEED); noise sets: default_rng([SEED, ord(case), chunk]); bootstrap: default_rng(SEED)",
+  "robustness_rib300_SEED": 20261029,
+  "robustness_note": "default_rng([SEED, int(1000 p), len(set name)])",
+  "strips_angle_info": "default_rng(20261027) (in strips_angle_info.main, perturbation draws)",
+  "provenance_audit": "chance-match test default_rng(1)"
+ }
+}

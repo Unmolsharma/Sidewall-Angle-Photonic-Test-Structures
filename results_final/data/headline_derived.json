@@ -1,0 +1,124 @@
+[
+ {
+  "meaning": "best set (case a): largest relative difference, fixed-mesh vs remeshed rib 300 nm derivative (any parameter, n_eff or n_g, h/2, h, 2h)",
+  "value": 0.007753093723063653,
+  "formula": "max |rib300_derivative_rel_diff_fixed_vs_remeshed|",
+  "inputs": [
+   "results_montecarlo/robustness/data/robustness_1pm.json"
+  ]
+ },
+ {
+  "meaning": "two-width set, 50 nm slab (case b): largest relative difference, fixed-mesh vs remeshed rib 300 nm derivative (any parameter, n_eff or n_g, h/2, h, 2h)",
+  "value": 0.0013479928829513987,
+  "formula": "max |rib300_derivative_rel_diff_fixed_vs_remeshed|",
+  "inputs": [
+   "results_montecarlo/robustness/data/robustness_1pm.json"
+  ]
+ },
+ {
+  "meaning": "SIGMA_NEFF at 1 pm",
+  "value": 2.7483870967741936e-06,
+  "formula": "sigma_neff = n_g sigma_lambda / lambda, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_g 4.26",
+  "inputs": [
+   "results_montecarlo/noise_sourced/data/noise_sourced.json"
+  ]
+ },
+ {
+  "meaning": "SIGMA_NG at 1 pm",
+  "value": 0.0010682448301570023,
+  "formula": "sigma_ng = sqrt(2) sigma_lambda n_g^2 L / lambda^2, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_g 4.26",
+  "inputs": [
+   "results_montecarlo/noise_sourced/data/noise_sourced.json"
+  ]
+ },
+ {
+  "meaning": "SIGMA_PHASE at 1 pm",
+  "value": 0.0011141048661221658,
+  "formula": "sigma_phase = 2 pi n_g L sigma_lambda / lambda^2 (MZI fringe read like a ring resonance), sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_g 4.26",
+  "inputs": [
+   "results_montecarlo/noise_sourced/data/noise_sourced.json"
+  ]
+ },
+ {
+  "meaning": "SIGMA_NEFF at 0.1 pm",
+  "value": 2.748387096774194e-07,
+  "formula": "same formula, sigma_lambda 0.1 pm",
+  "inputs": [
+   "results_montecarlo/noise_sourced/data/noise_sourced.json"
+  ]
+ },
+ {
+  "meaning": "Temperature stability needed for the 0.1 pm case (mK)",
+  "value": 1.25,
+  "formula": "sigma_lambda / (pm per K), both quoted above",
+  "inputs": [
+   "results_final/data/citations.json"
+  ]
+ },
+ {
+  "meaning": "Strip width equivalent of 1 deg: 220 nm tan(1 deg) / 1 deg (nm)",
+  "value": 3.8401142842078686,
+  "formula": "220 nm \u00d7 tan(1\u00b0)",
+  "inputs": [
+   "results_final/data/crosschecks.json"
+  ]
+ },
+ {
+  "meaning": "Derivatives checked (all structures with solves)",
+  "value": 428,
+  "formula": "count of rows",
+  "inputs": [
+   "results_montecarlo/sym_search/data/step_check_all.csv"
+  ]
+ },
+ {
+  "meaning": "Verdict FAIL",
+  "value": 3,
+  "formula": "count of rows with this verdict",
+  "inputs": [
+   "results_montecarlo/sym_search/data/step_check_all.csv"
+  ]
+ },
+ {
+  "meaning": "Verdict PASS",
+  "value": 422,
+  "formula": "count of rows with this verdict",
+  "inputs": [
+   "results_montecarlo/sym_search/data/step_check_all.csv"
+  ]
+ },
+ {
+  "meaning": "Verdict PASS_NEAR_ZERO_ABS",
+  "value": 3,
+  "formula": "count of rows with this verdict",
+  "inputs": [
+   "results_montecarlo/sym_search/data/step_check_all.csv"
+  ]
+ },
+ {
+  "meaning": "Largest relative spread among the FAIL rows",
+  "value": 0.022474138248448836,
+  "formula": "max of max_rel_dev over FAIL rows",
+  "inputs": [
+   "results_montecarlo/sym_search/data/step_check_all.csv"
+  ]
+ },
+ {
+  "meaning": "dn/dT of Si interpolated to the wavelength (code: DNDT_SI)",
+  "value": 0.0001861,
+  "formula": "linear interpolation of the Table 4 values above to lambda",
+  "inputs": [
+   "results_final/data/citations.json",
+   "results_final/data/environment.json"
+  ]
+ },
+ {
+  "meaning": "dn/dT of SiO2 interpolated to the wavelength (code: DNDT_OX)",
+  "value": 8.37e-06,
+  "formula": "linear interpolation of the Table 6 values above to lambda",
+  "inputs": [
+   "results_final/data/citations.json",
+   "results_final/data/environment.json"
+  ]
+ }
+]

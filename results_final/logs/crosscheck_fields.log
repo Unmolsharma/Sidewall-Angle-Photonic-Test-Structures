@@ -1,0 +1,12 @@
+strip_TE_400 {'n_eff': 2.229675623614494, 'te_fraction': 0.9659675291980677, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 1.0011, 'without_Ez': 1.0013}
+strip_TE_500 {'n_eff': 2.448711192548242, 'te_fraction': 0.9834503795076095, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9939, 'without_Ez': 0.992}
+strip_TE_600 {'n_eff': 2.570506742842664, 'te_fraction': 0.9911275220072723, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 69, 'delta_um': 0.006, 'with_Ez': 0.996, 'without_Ez': 0.9946}
+strip_TM_500 {'n_eff': 1.7682365901945505, 'te_fraction': 0.044656736236619816, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9934, 'without_Ez': 0.9922}
+rib_TE_300_slab50 {'n_eff': 2.104432726508626, 'te_fraction': 0.9611985861497846, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.829, 'without_Ez': 0.7071}
+rib_TE_400_slab50 {'n_eff': 2.3489981858579236, 'te_fraction': 0.9733287902318583, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8573, 'without_Ez': 0.7291}
+rib_TE_500_slab50 {'n_eff': 2.5058267769035023, 'te_fraction': 0.9847749841347105, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8673, 'without_Ez': 0.7383}
+rib_TE_600_slab50 {'n_eff': 2.602070008808007, 'te_fraction': 0.9910678016290606, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 53, 'delta_um': 0.006, 'with_Ez': 0.8819, 'without_Ez': 0.7583}
+rib_TE_300_slab90 {'n_eff': 2.3273647539735536, 'te_fraction': 0.9743568043190348, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7206, 'without_Ez': 0.6058}
+rib_TE_400_slab90 {'n_eff': 2.467769008130768, 'te_fraction': 0.9791784104857373, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7516, 'without_Ez': 0.6223}
+rib_TE_500_slab90 {'n_eff': 2.5707040750000445, 'te_fraction': 0.9861633616721166, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 43, 'delta_um': 0.006, 'with_Ez': 0.8018, 'without_Ez': 0.6689}
+rib_TE_600_slab90 {'n_eff': 2.6405489308520846, 'te_fraction': 0.9910336866714556, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7557, 'without_Ez': 0.6032}
