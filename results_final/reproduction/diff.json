@@ -1,0 +1,2573 @@
+{
+ "tree": "results_final/reproduction/tree",
+ "rel_tol": 1e-09,
+ "mc_seed": 20261027,
+ "frozen": {
+  "results_priors_search/data/search.json": "input of strips_angle_info.py; written by the pre-symmetry priors_search.py run, whose structure pool has since grown, so it cannot be regenerated as committed (its numbers are retired)",
+  "results_corrected/data/sensitivity_db.json": "EMpy database of an earlier session (EMpy is not rerun); input of claims_checks.py",
+  "results_corrected/data/step_check.csv": "EMpy step check of an earlier session; input of claims_checks.py",
+  "results_femwell/data/sensitivity_db.json": "femwell database of an earlier session (femwell_postprocess.py also reads EMpy-era files); input of claims_checks.py",
+  "results_final/data/citations.json": "quotes extracted from the fetched PDFs, which are not in the repository (copyright)"
+ },
+ "caches": [
+  "results_femwell/cache/solves_r12.jsonl",
+  "results_femwell/cache/solves_r8.jsonl",
+  "results_etchdepth_femwell/cache/solves_r12.jsonl",
+  "results_montecarlo/cache/solves_r12.jsonl",
+  "results_montecarlo/fixedmesh/cache/solves_r12.jsonl"
+ ],
+ "steps": [
+  {
+   "cmd": "step_check_all.py",
+   "exit": 0,
+   "seconds": 1.5397558212280273
+  },
+  {
+   "cmd": "SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py",
+   "exit": 0,
+   "seconds": 101.03550505638123
+  },
+  {
+   "cmd": "sym_search.py placeholder ../results_final/sym_search_placeholder/data",
+   "exit": 0,
+   "seconds": 131.1203978061676
+  },
+  {
+   "cmd": "sym_search.py 1pm ../results_final/sym_search_1pm/data",
+   "exit": 0,
+   "seconds": 127.18260860443115
+  },
+  {
+   "cmd": "strips_angle_info.py",
+   "exit": 0,
+   "seconds": 36.84684419631958
+  },
+  {
+   "cmd": "montecarlo.py plan",
+   "exit": 0,
+   "seconds": 1.7477798461914062
+  },
+  {
+   "cmd": "montecarlo.py fit",
+   "exit": 0,
+   "seconds": 1.7955245971679688
+  },
+  {
+   "cmd": "montecarlo.py surrcheck",
+   "exit": 0,
+   "seconds": 1.6410408020019531
+  },
+  {
+   "cmd": "montecarlo.py mc",
+   "exit": 0,
+   "seconds": 869.0241074562073
+  },
+  {
+   "cmd": "montecarlo.py mc1pm",
+   "exit": 0,
+   "seconds": 234.12105131149292
+  },
+  {
+   "cmd": "montecarlo.py valley",
+   "exit": 0,
+   "seconds": 1.8178253173828125
+  },
+  {
+   "cmd": "robustness_rib300.py",
+   "exit": 0,
+   "seconds": 81.5891478061676
+  },
+  {
+   "cmd": "robustness_rib300.py 1pm",
+   "exit": 0,
+   "seconds": 72.67836308479309
+  },
+  {
+   "cmd": "noise_sourced.py",
+   "exit": 0,
+   "seconds": 1.7302279472351074
+  },
+  {
+   "cmd": "crosscheck_fields.py",
+   "exit": 0,
+   "seconds": 174.30447268486023
+  },
+  {
+   "cmd": "crosschecks.py",
+   "exit": 0,
+   "seconds": 1.4048781394958496
+  },
+  {
+   "cmd": "assumption_sensitivity.py",
+   "exit": 0,
+   "seconds": 1.373335599899292
+  },
+  {
+   "cmd": "claims_checks.py",
+   "exit": 0,
+   "seconds": 1.6677320003509521
+  },
+  {
+   "cmd": "record_environment.py",
+   "exit": 0,
+   "seconds": 3.3130507469177246
+  },
+  {
+   "cmd": "make_headline_numbers.py",
+   "exit": 0,
+   "seconds": 1.3194513320922852
+  },
+  {
+   "cmd": "make_final_docs.py",
+   "exit": 0,
+   "seconds": 0.13180756568908691
+  }
+ ],
+ "files": [
+  {
+   "file": "results_montecarlo/sym_search/data/step_check_all.csv",
+   "n_numbers": 2140,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/priors.json",
+   "n_numbers": 9690,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/priors_table.csv",
+   "n_numbers": 2940,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/d_prior_sweep.json",
+   "n_numbers": 102,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/search.json",
+   "n_numbers": 2080,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/search_table.csv",
+   "n_numbers": 1120,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/slab_pairs.json",
+   "n_numbers": 352,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/sym_search/data/summary_tables.md",
+   "n_numbers": 437,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/priors.json",
+   "n_numbers": 9690,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/priors_table.csv",
+   "n_numbers": 2940,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/d_prior_sweep.json",
+   "n_numbers": 102,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/search.json",
+   "n_numbers": 2720,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/search_table.csv",
+   "n_numbers": 1440,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/slab_pairs.json",
+   "n_numbers": 416,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_placeholder/data/summary_tables.md",
+   "n_numbers": 525,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/priors.json",
+   "n_numbers": 9690,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/priors_table.csv",
+   "n_numbers": 2940,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/d_prior_sweep.json",
+   "n_numbers": 102,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/search.json",
+   "n_numbers": 2720,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/search_table.csv",
+   "n_numbers": 1440,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/slab_pairs.json",
+   "n_numbers": 416,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/sym_search_1pm/data/summary_tables.md",
+   "n_numbers": 525,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "n_numbers": 337,
+   "max_rel_diff": 0.7149991472410677,
+   "result": "160 numbers differ"
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "n_numbers": 264000,
+   "max_rel_diff": 0.984161704689667,
+   "result": "55996 numbers differ"
+  },
+  {
+   "file": "results_montecarlo/data/mc_design.json",
+   "n_numbers": 4990,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/surrogates.json",
+   "n_numbers": 812,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/surrogate_accuracy.json",
+   "n_numbers": 255,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/surrogate_accuracy.csv",
+   "n_numbers": 252,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/surrogate_accuracy_1pm.json",
+   "n_numbers": 60,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/mc_results.json",
+   "n_numbers": 159,
+   "max_rel_diff": 0.0,
+   "result": "identical; keys only in rerun: .a.noise.SIGMA_NEFF, .a.noise.SIGMA_NG, .a.noise.SIGMA_PHASE, .b.noise.SIGMA_NEFF, .b.noise.SIGMA_NG, .b.noise.SIGMA_PHASE, .c.noise.SIGMA_NEFF, .c.noise.SIGMA_NG, .c.noise.SIGMA_PHASE"
+  },
+  {
+   "file": "results_montecarlo/data/mc_fits.csv",
+   "n_numbers": 65940,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/mc_results_1pm.json",
+   "n_numbers": 112,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/mc_fits_1pm.csv",
+   "n_numbers": 44000,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/mc_valley.json",
+   "n_numbers": 12,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/robustness/data/robustness.json",
+   "n_numbers": 128,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/robustness/data/robustness_1pm.json",
+   "n_numbers": 128,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/noise_sourced/data/noise_sourced.json",
+   "n_numbers": 52,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/data/crosscheck_fields.json",
+   "n_numbers": 120,
+   "max_rel_diff": 1.2714852413330364e-13,
+   "result": "within tolerance"
+  },
+  {
+   "file": "results_final/data/crosschecks.json",
+   "n_numbers": 175,
+   "max_rel_diff": 3.552706903186835e-11,
+   "result": "within tolerance"
+  },
+  {
+   "file": "results_final/data/assumption_sensitivity.json",
+   "n_numbers": 120,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/data/claims_checks.json",
+   "n_numbers": 355,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/HEADLINE_NUMBERS.md",
+   "n_numbers": 645,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/CLAIMS.md",
+   "n_numbers": 101,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/ASSUMPTIONS.md",
+   "n_numbers": 133,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  }
+ ],
+ "differences": [
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 widths.median",
+   "committed": 0.27943468236425983,
+   "rerun": 0.27919640312155053
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 widths.p05",
+   "committed": 0.14899324657895158,
+   "rerun": 0.14568931058196471
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 widths.p95",
+   "committed": 0.7437328305958689,
+   "rerun": 0.7479519709021035
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 widths.min",
+   "committed": 0.10428976582652214,
+   "rerun": 0.09367662520904312
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 widths.max",
+   "committed": 4.6747756297365175,
+   "rerun": 6.781312104962452
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 widths.frac_better_than_nominal_by_2x",
+   "committed": 0.9355,
+   "rerun": 0.9335
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best strips-only (C, 8).median",
+   "committed": 0.2646442522431813,
+   "rerun": 0.26538540005892813
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best strips-only (C, 8).p05",
+   "committed": 0.1413417286704172,
+   "rerun": 0.141240858769318
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best strips-only (C, 8).p95",
+   "committed": 0.5118287752991199,
+   "rerun": 0.5098062111080423
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best strips-only (C, 8).min",
+   "committed": 0.09466511743500418,
+   "rerun": 0.0905761278919729
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best strips-only (C, 8).max",
+   "committed": 1.5414140749352787,
+   "rerun": 1.196179738544809
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best strips-only (C, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.6555,
+   "rerun": 0.6475
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 (C).median",
+   "committed": 0.2794346823642687,
+   "rerun": 0.2791964031215747
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 (C).p05",
+   "committed": 0.14899324657895016,
+   "rerun": 0.14568931058195342
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 (C).p95",
+   "committed": 0.7437328305957457,
+   "rerun": 0.7479519709019367
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 (C).min",
+   "committed": 0.10428976582651363,
+   "rerun": 0.09367662520904106
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 (C).max",
+   "committed": 4.674775629719622,
+   "rerun": 6.781312104977303
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 (C).frac_better_than_nominal_by_2x",
+   "committed": 0.9355,
+   "rerun": 0.9335
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (C).median",
+   "committed": 0.2326489790986383,
+   "rerun": 0.23279939296273744
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (C).p05",
+   "committed": 0.1403680879693422,
+   "rerun": 0.13745816509987685
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (C).p95",
+   "committed": 0.36422710712872924,
+   "rerun": 0.36605839260127493
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (C).min",
+   "committed": 0.10089704299536628,
+   "rerun": 0.0913062627244703
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (C).max",
+   "committed": 0.4280822446847397,
+   "rerun": 0.41577736557217176
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (C).frac_better_than_nominal_by_2x",
+   "committed": 0.318,
+   "rerun": 0.317
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (E, realistic).median",
+   "committed": 0.27962364401281314,
+   "rerun": 0.28111187440278307
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (E, realistic).p05",
+   "committed": 0.1726616947839187,
+   "rerun": 0.17107242451316784
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (E, realistic).p95",
+   "committed": 0.4113045080370052,
+   "rerun": 0.4103755154303214
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (E, realistic).min",
+   "committed": 0.12872587282258077,
+   "rerun": 0.10693198292268404
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (E, realistic).max",
+   "committed": 0.4536307930426749,
+   "rerun": 0.47304625563051483
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.strip TE 5 + rib70 500 + 300 (E, realistic).frac_better_than_nominal_by_2x",
+   "committed": 0.1505,
+   "rerun": 0.1475
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (C, none, 8).median",
+   "committed": 0.1346308836477379,
+   "rerun": 0.13481007242098822
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (C, none, 8).p05",
+   "committed": 0.10602041073337666,
+   "rerun": 0.10528815326431729
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (C, none, 8).p95",
+   "committed": 0.1506349915831895,
+   "rerun": 0.15051458497696157
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (C, none, 8).min",
+   "committed": 0.0801616908472218,
+   "rerun": 0.07807251709492152
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (C, none, 8).max",
+   "committed": 0.16485964929240124,
+   "rerun": 0.16182238352279718
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (D, realistic, 8).median",
+   "committed": 0.16210319406705212,
+   "rerun": 0.16226477166213116
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (D, realistic, 8).p05",
+   "committed": 0.13646445878299857,
+   "rerun": 0.1363890577421024
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (D, realistic, 8).p95",
+   "committed": 0.19859425439471176,
+   "rerun": 0.20206580346814018
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (D, realistic, 8).min",
+   "committed": 0.12022486634656285,
+   "rerun": 0.12352746309008765
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.001.best one-etch set (D, realistic, 8).max",
+   "committed": 0.23446679275363916,
+   "rerun": 0.2330824823119332
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 widths.median",
+   "committed": 0.092963317660549,
+   "rerun": 0.09064513216800407
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 widths.p05",
+   "committed": 0.04914194370560128,
+   "rerun": 0.04810550637041973
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 widths.p95",
+   "committed": 0.23838324117274243,
+   "rerun": 0.241712604929368
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 widths.min",
+   "committed": 0.033272770580628525,
+   "rerun": 0.03417557581655646
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 widths.max",
+   "committed": 1.5698322957480344,
+   "rerun": 1.2988175454380624
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best strips-only (C, 8).median",
+   "committed": 0.09427944021279877,
+   "rerun": 0.09244062206621531
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best strips-only (C, 8).p05",
+   "committed": 0.0474530114090054,
+   "rerun": 0.04665434820594546
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best strips-only (C, 8).p95",
+   "committed": 0.1827143156027394,
+   "rerun": 0.1851171854089628
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best strips-only (C, 8).min",
+   "committed": 0.032492211617365985,
+   "rerun": 0.0312876569003926
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best strips-only (C, 8).max",
+   "committed": 0.6235557733227584,
+   "rerun": 0.5178628086285982
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best strips-only (C, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.997,
+   "rerun": 0.994
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 (C).median",
+   "committed": 0.09296331766054829,
+   "rerun": 0.09064513216800694
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 (C).p05",
+   "committed": 0.049141943705601314,
+   "rerun": 0.04810550637041953
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 (C).p95",
+   "committed": 0.2383832411727508,
+   "rerun": 0.24171260492933958
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 (C).min",
+   "committed": 0.0332727705806289,
+   "rerun": 0.03417557581655734
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 (C).max",
+   "committed": 1.5698322957480275,
+   "rerun": 1.2988175454378574
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (C).median",
+   "committed": 0.09061145354720433,
+   "rerun": 0.08858492499766568
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (C).p05",
+   "committed": 0.0488402430023291,
+   "rerun": 0.04776579467929464
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (C).p95",
+   "committed": 0.20879954790565378,
+   "rerun": 0.20925762667193787
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (C).min",
+   "committed": 0.03315346123359408,
+   "rerun": 0.034036851898259265
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (C).max",
+   "committed": 0.396079136234804,
+   "rerun": 0.39164740888513344
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (C).frac_better_than_nominal_by_2x",
+   "committed": 0.9435,
+   "rerun": 0.9425
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (E, realistic).median",
+   "committed": 0.11969635819328495,
+   "rerun": 0.12093199664685989
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (E, realistic).p05",
+   "committed": 0.0626978145936347,
+   "rerun": 0.06287853942054197
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (E, realistic).p95",
+   "committed": 0.2702150910409941,
+   "rerun": 0.2684373166979093
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (E, realistic).min",
+   "committed": 0.0429682168586306,
+   "rerun": 0.03918048132209518
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (E, realistic).max",
+   "committed": 0.46602687632039447,
+   "rerun": 0.4741373223763536
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.strip TE 5 + rib70 500 + 300 (E, realistic).frac_better_than_nominal_by_2x",
+   "committed": 0.871,
+   "rerun": 0.858
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (C, none, 8).median",
+   "committed": 0.09271352483823657,
+   "rerun": 0.09030259773146154
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (C, none, 8).p05",
+   "committed": 0.04768636888805867,
+   "rerun": 0.04698071712600518
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (C, none, 8).p95",
+   "committed": 0.14464076864246717,
+   "rerun": 0.1473980734821098
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (C, none, 8).min",
+   "committed": 0.03282559733796529,
+   "rerun": 0.03242679029718408
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (C, none, 8).max",
+   "committed": 0.22259013122431717,
+   "rerun": 0.2106049047532543
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (C, none, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.2765,
+   "rerun": 0.286
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (D, realistic, 8).median",
+   "committed": 0.13536733514337632,
+   "rerun": 0.1382596149435832
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (D, realistic, 8).p05",
+   "committed": 0.0871422887162984,
+   "rerun": 0.08691856556717238
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (D, realistic, 8).p95",
+   "committed": 0.26928443171253524,
+   "rerun": 0.26212909643699256
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (D, realistic, 8).min",
+   "committed": 0.0645787557015584,
+   "rerun": 0.05784427015280925
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (D, realistic, 8).max",
+   "committed": 0.420177473767863,
+   "rerun": 0.42040440190400413
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.003.best one-etch set (D, realistic, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.033,
+   "rerun": 0.0335
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 widths.median",
+   "committed": 0.02749200920831096,
+   "rerun": 0.028068408514818545
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 widths.p05",
+   "committed": 0.01476349452271826,
+   "rerun": 0.01467259104060969
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 widths.p95",
+   "committed": 0.07298196741508216,
+   "rerun": 0.0731684002115262
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 widths.min",
+   "committed": 0.009342206463471517,
+   "rerun": 0.00967144041983455
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 widths.max",
+   "committed": 0.9249755322244223,
+   "rerun": 0.26361881546513016
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 widths.frac_better_than_nominal_by_2x",
+   "committed": 0.9995,
+   "rerun": 1.0
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best strips-only (C, 8).median",
+   "committed": 0.028500553144731683,
+   "rerun": 0.028331835567283893
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best strips-only (C, 8).p05",
+   "committed": 0.014242304298779068,
+   "rerun": 0.014221634728236827
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best strips-only (C, 8).p95",
+   "committed": 0.05726790712594533,
+   "rerun": 0.05466950896842694
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best strips-only (C, 8).min",
+   "committed": 0.009482328173220108,
+   "rerun": 0.00954233104823437
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best strips-only (C, 8).max",
+   "committed": 0.1277414668997201,
+   "rerun": 0.11388842285439703
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 (C).median",
+   "committed": 0.02749200920831111,
+   "rerun": 0.028068408514818732
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 (C).p05",
+   "committed": 0.01476349452271843,
+   "rerun": 0.014672591040609667
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 (C).p95",
+   "committed": 0.0729819674150828,
+   "rerun": 0.07316840021152757
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 (C).min",
+   "committed": 0.009342206463471408,
+   "rerun": 0.009671440419834414
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 (C).max",
+   "committed": 0.9249755322244274,
+   "rerun": 0.26361881546510896
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 (C).frac_better_than_nominal_by_2x",
+   "committed": 0.9995,
+   "rerun": 1.0
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (C).median",
+   "committed": 0.02744665801901116,
+   "rerun": 0.027992830217605687
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (C).p05",
+   "committed": 0.014750086894171621,
+   "rerun": 0.014667973893629638
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (C).p95",
+   "committed": 0.07176021652929401,
+   "rerun": 0.07183807268263091
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (C).min",
+   "committed": 0.009338654143234208,
+   "rerun": 0.009667274664733974
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (C).max",
+   "committed": 0.3353455087741432,
+   "rerun": 0.21199505354171597
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (C).frac_better_than_nominal_by_2x",
+   "committed": 0.9985,
+   "rerun": 0.9995
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (E, realistic).median",
+   "committed": 0.04202389068767527,
+   "rerun": 0.041825840832278284
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (E, realistic).p05",
+   "committed": 0.021185276684829103,
+   "rerun": 0.020538227464544926
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (E, realistic).p95",
+   "committed": 0.11221184525654858,
+   "rerun": 0.11526190427470938
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (E, realistic).min",
+   "committed": 0.012620395071972188,
+   "rerun": 0.013145143528448587
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (E, realistic).max",
+   "committed": 0.41141763777435536,
+   "rerun": 0.4025938272085336
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.strip TE 5 + rib70 500 + 300 (E, realistic).frac_better_than_nominal_by_2x",
+   "committed": 0.9895,
+   "rerun": 0.9975
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (C, none, 8).median",
+   "committed": 0.035298081469055456,
+   "rerun": 0.03495423619650222
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (C, none, 8).p05",
+   "committed": 0.015062050855206609,
+   "rerun": 0.014951943325072655
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (C, none, 8).p95",
+   "committed": 0.09620507290948577,
+   "rerun": 0.09490666018371235
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (C, none, 8).min",
+   "committed": 0.009724608892462096,
+   "rerun": 0.009864785484329633
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (C, none, 8).max",
+   "committed": 0.3475321822152815,
+   "rerun": 0.3086133237818388
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (C, none, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.8745,
+   "rerun": 0.89
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (D, realistic, 8).median",
+   "committed": 0.07028381304847876,
+   "rerun": 0.06863134487876976
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (D, realistic, 8).p05",
+   "committed": 0.032982327035656775,
+   "rerun": 0.03360810208764574
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (D, realistic, 8).p95",
+   "committed": 0.21776038247489363,
+   "rerun": 0.2171152921890877
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (D, realistic, 8).min",
+   "committed": 0.02174217879214558,
+   "rerun": 0.02162516943826802
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (D, realistic, 8).max",
+   "committed": 0.4012777141153833,
+   "rerun": 0.4138985737896535
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.01.best one-etch set (D, realistic, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.6125,
+   "rerun": 0.624
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 widths.median",
+   "committed": 0.009057584826988575,
+   "rerun": 0.009358096380456673
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 widths.p05",
+   "committed": 0.004943971558040333,
+   "rerun": 0.004954452876923098
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 widths.p95",
+   "committed": 0.0245354899079964,
+   "rerun": 0.02396393655693135
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 widths.min",
+   "committed": 0.00319314329580927,
+   "rerun": 0.0035732803428046946
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 widths.max",
+   "committed": 0.42558891212188865,
+   "rerun": 0.15600332191360397
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best strips-only (C, 8).median",
+   "committed": 0.009442360928509436,
+   "rerun": 0.009550634018977822
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best strips-only (C, 8).p05",
+   "committed": 0.0047730673327552086,
+   "rerun": 0.004743609013437271
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best strips-only (C, 8).p95",
+   "committed": 0.019063166001357525,
+   "rerun": 0.018685526324698238
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best strips-only (C, 8).min",
+   "committed": 0.003082200200246601,
+   "rerun": 0.0033035295510338487
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best strips-only (C, 8).max",
+   "committed": 0.054757978115693225,
+   "rerun": 0.039480538338807776
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 (C).median",
+   "committed": 0.00905758482698851,
+   "rerun": 0.009358096380456652
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 (C).p05",
+   "committed": 0.0049439715580403675,
+   "rerun": 0.004954452876923085
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 (C).p95",
+   "committed": 0.024535489907996397,
+   "rerun": 0.023963936556931173
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 (C).min",
+   "committed": 0.0031931432958092762,
+   "rerun": 0.0035732803428046955
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 (C).max",
+   "committed": 0.42558891212193145,
+   "rerun": 0.1560033219135919
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (C).median",
+   "committed": 0.009054482549395913,
+   "rerun": 0.009354641538338846
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (C).p05",
+   "committed": 0.004942894839495559,
+   "rerun": 0.004954263850450124
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (C).p95",
+   "committed": 0.024372128803786298,
+   "rerun": 0.023901585423432237
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (C).min",
+   "committed": 0.003193138392567705,
+   "rerun": 0.0035728009491772764
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (C).max",
+   "committed": 0.29903574005029027,
+   "rerun": 0.1542732681306642
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (C).frac_better_than_nominal_by_2x",
+   "committed": 0.9995,
+   "rerun": 1.0
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (E, realistic).median",
+   "committed": 0.016898570488128165,
+   "rerun": 0.016603959425354513
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (E, realistic).p05",
+   "committed": 0.0070627033989878055,
+   "rerun": 0.0071395784700390725
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (E, realistic).p95",
+   "committed": 0.051843966373770686,
+   "rerun": 0.05091457283646822
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (E, realistic).min",
+   "committed": 0.004063659021059312,
+   "rerun": 0.0039170610790038125
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (E, realistic).max",
+   "committed": 0.32972329424145796,
+   "rerun": 0.49248809974231955
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.strip TE 5 + rib70 500 + 300 (E, realistic).frac_better_than_nominal_by_2x",
+   "committed": 0.9985,
+   "rerun": 0.9995
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (C, none, 8).median",
+   "committed": 0.01196621314913086,
+   "rerun": 0.012254840524586932
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (C, none, 8).p05",
+   "committed": 0.0050398515665695245,
+   "rerun": 0.005026313672108397
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (C, none, 8).p95",
+   "committed": 0.03943908463832635,
+   "rerun": 0.041817035775552215
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (C, none, 8).min",
+   "committed": 0.0031878759186574246,
+   "rerun": 0.0035331991051397752
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (C, none, 8).max",
+   "committed": 0.184005369132116,
+   "rerun": 0.18525925760242345
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (C, none, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.987,
+   "rerun": 0.988
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (D, realistic, 8).median",
+   "committed": 0.02763418586107304,
+   "rerun": 0.027713102472739247
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (D, realistic, 8).p05",
+   "committed": 0.012270954394998741,
+   "rerun": 0.011832825443362414
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (D, realistic, 8).p95",
+   "committed": 0.10585400935946322,
+   "rerun": 0.09248271587821438
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (D, realistic, 8).min",
+   "committed": 0.006795525471048697,
+   "rerun": 0.007310330063144556
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (D, realistic, 8).max",
+   "committed": 0.41169655471401195,
+   "rerun": 0.3872805230601202
+  },
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "where": ".perturbation.0.03.best one-etch set (D, realistic, 8).frac_better_than_nominal_by_2x",
+   "committed": 0.927,
+   "rerun": 0.9305
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r2c3",
+   "committed": 0.32757620691066563,
+   "rerun": 0.3531144115505728
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r6c3",
+   "committed": 0.13342631164447274,
+   "rerun": 0.13637063022976048
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r7c3",
+   "committed": 0.16115466990661625,
+   "rerun": 0.16148420311678913
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r8c3",
+   "committed": 0.4294162563046124,
+   "rerun": 0.15291511334121793
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r9c3",
+   "committed": 0.30324412606360607,
+   "rerun": 0.17111622831101442
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r10c3",
+   "committed": 0.42941625630442715,
+   "rerun": 0.15291511334120275
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r11c3",
+   "committed": 0.3012078024160154,
+   "rerun": 0.14292304949495716
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r12c3",
+   "committed": 0.3349406996186496,
+   "rerun": 0.33628349000998964
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r13c3",
+   "committed": 0.13986081518212728,
+   "rerun": 0.11154217255258231
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r14c3",
+   "committed": 0.17361835712390974,
+   "rerun": 0.12689273057958014
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r15c3",
+   "committed": 0.2663475971552074,
+   "rerun": 0.3187963359276529
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r16c3",
+   "committed": 0.24509082776727065,
+   "rerun": 0.29004633520667344
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r17c3",
+   "committed": 0.2663475971552236,
+   "rerun": 0.3187963359275547
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r18c3",
+   "committed": 0.22408642466172835,
+   "rerun": 0.25431594474755814
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r19c3",
+   "committed": 0.29525126891433834,
+   "rerun": 0.2793988439402301
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r20c3",
+   "committed": 0.12786892581397896,
+   "rerun": 0.13742358380427047
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r21c3",
+   "committed": 0.15340406425162023,
+   "rerun": 0.17039045926556043
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r22c3",
+   "committed": 0.5853674020697834,
+   "rerun": 0.3818133968434516
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r23c3",
+   "committed": 0.36057885664971673,
+   "rerun": 0.4205884947487399
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r24c3",
+   "committed": 0.5853674020697701,
+   "rerun": 0.3818133968435176
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r25c3",
+   "committed": 0.3401246414066802,
+   "rerun": 0.2807076228339838
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r26c3",
+   "committed": 0.36909780580406065,
+   "rerun": 0.32772753387580844
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r27c3",
+   "committed": 0.15026970595386294,
+   "rerun": 0.13911341543438444
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r28c3",
+   "committed": 0.16338089694754943,
+   "rerun": 0.15624376635695983
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r29c3",
+   "committed": 0.14118141286151908,
+   "rerun": 0.39424578285078626
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r30c3",
+   "committed": 0.12090200801638544,
+   "rerun": 0.35923690055859886
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r31c3",
+   "committed": 0.14118141286153835,
+   "rerun": 0.39424578285080747
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r32c3",
+   "committed": 0.13347058873077547,
+   "rerun": 0.28848439544928967
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r33c3",
+   "committed": 0.16935295999350863,
+   "rerun": 0.28982179755749166
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r34c3",
+   "committed": 0.09748825200904332,
+   "rerun": 0.15046322979126076
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r35c3",
+   "committed": 0.14190876556262352,
+   "rerun": 0.18536669874195477
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r36c3",
+   "committed": 0.5090864169385605,
+   "rerun": 0.3609409648185123
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r37c3",
+   "committed": 0.25969445470603775,
+   "rerun": 0.3302710148509592
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r38c3",
+   "committed": 0.5090864169386173,
+   "rerun": 0.3609409648185751
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r39c3",
+   "committed": 0.33007378238256724,
+   "rerun": 0.27132959128806516
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r40c3",
+   "committed": 0.3823746181328665,
+   "rerun": 0.34754806433322194
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r41c3",
+   "committed": 0.13791367267274873,
+   "rerun": 0.14395830166489007
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r42c3",
+   "committed": 0.20778136508711578,
+   "rerun": 0.1560402282529993
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r43c3",
+   "committed": 0.3465000840838812,
+   "rerun": 0.24970940200253872
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r44c3",
+   "committed": 0.3010404669212933,
+   "rerun": 0.43155101076012586
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r45c3",
+   "committed": 0.34650008408394,
+   "rerun": 0.24970940200252895
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r46c3",
+   "committed": 0.26412653608782244,
+   "rerun": 0.21460326268262836
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r47c3",
+   "committed": 0.2768652783713066,
+   "rerun": 0.25502525764247974
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r48c3",
+   "committed": 0.13567036790473044,
+   "rerun": 0.14929512962954783
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r49c3",
+   "committed": 0.13911357390775125,
+   "rerun": 0.15439522073530063
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r50c3",
+   "committed": 0.4196034466320355,
+   "rerun": 0.12187538410161665
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r51c3",
+   "committed": 0.33798165785408557,
+   "rerun": 0.12129668357844413
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r52c3",
+   "committed": 0.41960344663213084,
+   "rerun": 0.12187538410160258
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r53c3",
+   "committed": 0.298116907304575,
+   "rerun": 0.11684007131991397
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r54c3",
+   "committed": 0.3252990484670978,
+   "rerun": 0.1796836803811136
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r55c3",
+   "committed": 0.13993763607443874,
+   "rerun": 0.09727326476847803
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r56c3",
+   "committed": 0.177761409899152,
+   "rerun": 0.1416711149779298
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r57c3",
+   "committed": 0.34305261866861975,
+   "rerun": 0.2137046592037107
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r58c3",
+   "committed": 0.33514966446990013,
+   "rerun": 0.19402678870805343
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r59c3",
+   "committed": 0.343052618668587,
+   "rerun": 0.21370465920369472
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r60c3",
+   "committed": 0.26624368235466633,
+   "rerun": 0.18956950826746155
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r61c3",
+   "committed": 0.3402411146320925,
+   "rerun": 0.2764923108815856
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r62c3",
+   "committed": 0.1346724104048936,
+   "rerun": 0.11938107393814978
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r63c3",
+   "committed": 0.16515049641186869,
+   "rerun": 0.14082865014105722
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r64c3",
+   "committed": 0.2986116294408102,
+   "rerun": 0.26064400787185965
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r65c3",
+   "committed": 0.30934298264531723,
+   "rerun": 0.19464460258102093
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r66c3",
+   "committed": 0.29861162944078684,
+   "rerun": 0.26064400787189607
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r67c3",
+   "committed": 0.24438705108048514,
+   "rerun": 0.22236746531499313
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r68c3",
+   "committed": 0.3120566688208555,
+   "rerun": 0.30004035176452004
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r69c3",
+   "committed": 0.14015338812892475,
+   "rerun": 0.1292686307143373
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r70c3",
+   "committed": 0.1813582108765328,
+   "rerun": 0.17665143957633822
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r71c3",
+   "committed": 0.28381978933576063,
+   "rerun": 0.3186801284914046
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r72c3",
+   "committed": 0.24277197377880427,
+   "rerun": 0.39457842317161007
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r73c3",
+   "committed": 0.28381978933566543,
+   "rerun": 0.3186801284913753
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r74c3",
+   "committed": 0.23366735850518175,
+   "rerun": 0.255148425870391
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r75c3",
+   "committed": 0.3528706808783958,
+   "rerun": 0.28491191888320705
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r76c3",
+   "committed": 0.1268593874576186,
+   "rerun": 0.15326514725496568
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r77c3",
+   "committed": 0.14734856178192848,
+   "rerun": 0.172912542275189
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r78c3",
+   "committed": 0.661622051963626,
+   "rerun": 0.162737854872927
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r79c3",
+   "committed": 0.260198310800265,
+   "rerun": 0.17128850326204556
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r80c3",
+   "committed": 0.6616220519638092,
+   "rerun": 0.1627378548729143
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r81c3",
+   "committed": 0.348795797624045,
+   "rerun": 0.15192612756824964
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r82c3",
+   "committed": 0.36997885077717413,
+   "rerun": 0.1863362457389683
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r83c3",
+   "committed": 0.13262695398862084,
+   "rerun": 0.11549412438280286
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r84c3",
+   "committed": 0.1428130111894722,
+   "rerun": 0.1771644787802475
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r85c3",
+   "committed": 0.26762789459820746,
+   "rerun": 0.09367662520904312
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r86c3",
+   "committed": 0.5117861137130998,
+   "rerun": 0.09749175346169689
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r87c3",
+   "committed": 0.2676278945982226,
+   "rerun": 0.09367662520904106
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r88c3",
+   "committed": 0.22569018004811836,
+   "rerun": 0.0913062627244703
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r89c3",
+   "committed": 0.24767503189879705,
+   "rerun": 0.10693198292268404
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r90c3",
+   "committed": 0.14401699279890337,
+   "rerun": 0.08195201050357644
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r91c3",
+   "committed": 0.1607228284142293,
+   "rerun": 0.13036526901365414
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r92c3",
+   "committed": 0.2491947600042272,
+   "rerun": 0.3385088749710788
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r93c3",
+   "committed": 0.22556007630654723,
+   "rerun": 0.2349213516983215
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r94c3",
+   "committed": 0.24919476000423957,
+   "rerun": 0.33850887497107846
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r95c3",
+   "committed": 0.2140845716318993,
+   "rerun": 0.2652174422053056
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r96c3",
+   "committed": 0.2499794532500671,
+   "rerun": 0.29827879029773324
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r97c3",
+   "committed": 0.13091595265166886,
+   "rerun": 0.1332719774479849
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r98c3",
+   "committed": 0.1544033939902654,
+   "rerun": 0.18253135819227148
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r99c3",
+   "committed": 0.1888641189780955,
+   "rerun": 0.489571976298166
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r100c3",
+   "committed": 0.20939347322674923,
+   "rerun": 0.24380913524718983
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r101c3",
+   "committed": 0.18886411897809552,
+   "rerun": 0.48957197629828336
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r102c3",
+   "committed": 0.17170638073409908,
+   "rerun": 0.3210398498544497
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r103c3",
+   "committed": 0.4322356513096788,
+   "rerun": 0.42212657658394576
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r104c3",
+   "committed": 0.12067396057607889,
+   "rerun": 0.1323194950339921
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r105c3",
+   "committed": 0.15575305589785546,
+   "rerun": 0.19175712889509292
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r106c3",
+   "committed": 0.49536987929294535,
+   "rerun": 0.28812109821211945
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r107c3",
+   "committed": 0.2958875551862332,
+   "rerun": 0.2515701153005168
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r108c3",
+   "committed": 0.49536987929293735,
+   "rerun": 0.2881210982120714
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r109c3",
+   "committed": 0.317563838539534,
+   "rerun": 0.23883526226837548
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r110c3",
+   "committed": 0.3207853607279686,
+   "rerun": 0.2981687332879898
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r111c3",
+   "committed": 0.13314727880610797,
+   "rerun": 0.14161452749742695
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r112c3",
+   "committed": 0.15729185972374055,
+   "rerun": 0.1886540037976874
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r113c3",
+   "committed": 0.1552602425213832,
+   "rerun": 0.20799547274458766
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r114c3",
+   "committed": 0.37638973053816327,
+   "rerun": 0.2112457804730231
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r115c3",
+   "committed": 0.1552602425213748,
+   "rerun": 0.207995472744603
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r116c3",
+   "committed": 0.14619995767597674,
+   "rerun": 0.186075713622901
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r117c3",
+   "committed": 0.14904689291800774,
+   "rerun": 0.2094992995167772
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r118c3",
+   "committed": 0.15165682062185348,
+   "rerun": 0.12228627809562959
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r119c3",
+   "committed": 0.18530588283494692,
+   "rerun": 0.15654938652580935
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r120c3",
+   "committed": 0.2947690376501651,
+   "rerun": 0.24100563505030986
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r121c3",
+   "committed": 0.25631015399823787,
+   "rerun": 0.2385898046946358
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r122c3",
+   "committed": 0.2947690376501686,
+   "rerun": 0.24100563505028882
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r123c3",
+   "committed": 0.2401414231833938,
+   "rerun": 0.2085597163929974
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r124c3",
+   "committed": 0.24328385411901163,
+   "rerun": 0.21652322833974594
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r125c3",
+   "committed": 0.13568698042160404,
+   "rerun": 0.12586908534542313
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r126c3",
+   "committed": 0.14713358841581695,
+   "rerun": 0.15374751282625843
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r127c3",
+   "committed": 0.3193275859804555,
+   "rerun": 0.16456542313496636
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r128c3",
+   "committed": 0.20465461730976792,
+   "rerun": 0.17501339585031217
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r129c3",
+   "committed": 0.319327585980339,
+   "rerun": 0.16456542313493466
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r130c3",
+   "committed": 0.2526060907325582,
+   "rerun": 0.15336828697080113
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r131c3",
+   "committed": 0.3226175493093825,
+   "rerun": 0.195644861732084
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r132c3",
+   "committed": 0.12431418681276585,
+   "rerun": 0.11443654796379181
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r133c3",
+   "committed": 0.14941683657349286,
+   "rerun": 0.17180710864100346
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r134c3",
+   "committed": 0.3277110615753927,
+   "rerun": 0.23999970008986346
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r135c3",
+   "committed": 0.46082495469564,
+   "rerun": 0.31412035435892244
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r136c3",
+   "committed": 0.3277110615753949,
+   "rerun": 0.23999970008985402
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r137c3",
+   "committed": 0.2584016812077176,
+   "rerun": 0.21031889385613195
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r138c3",
+   "committed": 0.261158316967139,
+   "rerun": 0.21213894679662368
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r139c3",
+   "committed": 0.15392721074749044,
+   "rerun": 0.1423877582822475
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r140c3",
+   "committed": 0.17783472135102907,
+   "rerun": 0.2089788379055883
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r141c3",
+   "committed": 0.5202150141331019,
+   "rerun": 0.4814726062960986
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r142c3",
+   "committed": 0.30029873853231626,
+   "rerun": 0.5955374035971552
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r143c3",
+   "committed": 0.5202150141330207,
+   "rerun": 0.4814726062960575
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r144c3",
+   "committed": 0.3287577431478296,
+   "rerun": 0.31954831883935825
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r145c3",
+   "committed": 0.3391177686272729,
+   "rerun": 0.3200118889027159
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r146c3",
+   "committed": 0.1405707550233566,
+   "rerun": 0.15132313202833098
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r147c3",
+   "committed": 0.17729296766187447,
+   "rerun": 0.18135433715964944
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r148c3",
+   "committed": 0.30504373785494376,
+   "rerun": 0.1831062673653773
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r149c3",
+   "committed": 0.1783970600231781,
+   "rerun": 0.15136892524975312
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r150c3",
+   "committed": 0.30504373785491945,
+   "rerun": 0.18310626736538033
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r151c3",
+   "committed": 0.24406028676046213,
+   "rerun": 0.16722424278440065
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r152c3",
+   "committed": 0.297895025900501,
+   "rerun": 0.2138283577453191
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r153c3",
+   "committed": 0.11708037695564812,
+   "rerun": 0.10797057769745223
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r154c3",
+   "committed": 0.13829709165916299,
+   "rerun": 0.1426437225235002
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r155c3",
+   "committed": 0.30739976871218216,
+   "rerun": 0.3919574341678135
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r156c3",
+   "committed": 0.28283852613445615,
+   "rerun": 0.30428735110672506
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r157c3",
+   "committed": 0.30739976871223224,
+   "rerun": 0.3919574341678081
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r158c3",
+   "committed": 0.2459114023591329,
+   "rerun": 0.28569855282721773
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r159c3",
+   "committed": 0.3061835873677222,
+   "rerun": 0.3010168584928848
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r160c3",
+   "committed": 0.12945787192820038,
+   "rerun": 0.13317221374713417
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r161c3",
+   "committed": 0.14052007725402416,
+   "rerun": 0.15858415182346763
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r162c3",
+   "committed": 0.4972606564119709,
+   "rerun": 0.4688334406601529
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r163c3",
+   "committed": 0.26756492864725256,
+   "rerun": 0.41809060830210143
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r164c3",
+   "committed": 0.49726065641191136,
+   "rerun": 0.46883344066012783
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r165c3",
+   "committed": 0.3249972256270432,
+   "rerun": 0.31208136092122296
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r166c3",
+   "committed": 0.32918286659286633,
+   "rerun": 0.32096635691233616
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r167c3",
+   "committed": 0.13869162387660947,
+   "rerun": 0.144532715244112
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r168c3",
+   "committed": 0.19395954260792253,
+   "rerun": 0.17096363410520177
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r169c3",
+   "committed": 0.3150297741745081,
+   "rerun": 0.6109765155525876
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r170c3",
+   "committed": 0.210737462079166,
+   "rerun": 0.21632957227545546
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r171c3",
+   "committed": 0.3150297741744685,
+   "rerun": 0.6109765155526206
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r172c3",
+   "committed": 0.2506335095943081,
+   "rerun": 0.33873205835856046
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r173c3",
+   "committed": 0.31288947675213075,
+   "rerun": 0.4160504310099087
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r174c3",
+   "committed": 0.12746553410871572,
+   "rerun": 0.13011521002481416
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r175c3",
+   "committed": 0.1517550881908235,
+   "rerun": 0.14190802678888895
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r176c3",
+   "committed": 0.1831062673653773,
+   "rerun": 0.5909535303254159
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r177c3",
+   "committed": 0.14014058907825755,
+   "rerun": 0.27470946128361845
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r178c3",
+   "committed": 0.18310626736538033,
+   "rerun": 0.5909535303255031
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r179c3",
+   "committed": 0.16722424278440065,
+   "rerun": 0.337146718311394
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r180c3",
+   "committed": 0.2138283577453191,
+   "rerun": 0.34341402851649644
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r181c3",
+   "committed": 0.10748584647008715,
+   "rerun": 0.13156636576747624
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r182c3",
+   "committed": 0.14261482959332908,
+   "rerun": 0.14891182046166385
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r183c3",
+   "committed": 0.7004766681102753,
+   "rerun": 0.3383020945505257
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r184c3",
+   "committed": 0.21379484244794775,
+   "rerun": 0.27283988296270417
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r185c3",
+   "committed": 0.7004766681102502,
+   "rerun": 0.33830209455055754
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r186c3",
+   "committed": 0.3519806650785808,
+   "rerun": 0.26449062348363234
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r187c3",
+   "committed": 0.36909870683902274,
+   "rerun": 0.2799936070826517
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r188c3",
+   "committed": 0.12576228765589129,
+   "rerun": 0.13204773914166829
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r189c3",
+   "committed": 0.13795641582975754,
+   "rerun": 0.18506887517925158
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r190c3",
+   "committed": 0.1644496010716032,
+   "rerun": 0.40245011156271054
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r191c3",
+   "committed": 0.17583728045817296,
+   "rerun": 0.3485269564531486
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r192c3",
+   "committed": 0.1644496010715989,
+   "rerun": 0.40245011156272
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r193c3",
+   "committed": 0.152588620765284,
+   "rerun": 0.2877979761938383
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r194c3",
+   "committed": 0.2820929942254094,
+   "rerun": 0.3332614505891504
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r195c3",
+   "committed": 0.11507619452448793,
+   "rerun": 0.14297333646409774
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r196c3",
+   "committed": 0.15232253589228498,
+   "rerun": 0.1452275819796534
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r197c3",
+   "committed": 0.2135016023232078,
+   "rerun": 0.15353249167070127
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r198c3",
+   "committed": 0.20327019417352224,
+   "rerun": 0.16585113238145927
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r199c3",
+   "committed": 0.21350160232323417,
+   "rerun": 0.1535324916706847
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r200c3",
+   "committed": 0.18980748949454712,
+   "rerun": 0.14417985407511782
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r201c3",
+   "committed": 0.2268053589730637,
+   "rerun": 0.2081669985346043
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r202c3",
+   "committed": 0.12340563340636475,
+   "rerun": 0.11426453258896932
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r203c3",
+   "committed": 0.1551768241428054,
+   "rerun": 0.16231255179328027
+  },
+  {
+   "file": "results_montecarlo/data/strips_info_perturbation.csv",
+   "where": "r204c3",
+   "committed": 0.28039802207792036,
+   "rerun": 0.2841367470908365
+  }
+ ],
+ "n_files": 44,
+ "n_exact": 40,
+ "n_within_tol": 2,
+ "n_differ": 2,
+ "n_missing": 0,
+ "minutes": 0.059797823429107666,
+ "sampling_notes": [
+  {
+   "file": "results_montecarlo/data/strips_info.json",
+   "seed": 20261027,
+   "max_abs_rel_diff": {
+    "nominal": 0.0,
+    "median": 0.03317789004555838,
+    "p05": 0.03570455382141213,
+    "p95": 0.12631825248906792
+   },
+   "cause": "The perturbation draws (default_rng(20261027)) perturb every strip derivative entry in the cache. strips_info.json was committed (3e828dd) before the strip TM index solves were added (6b84f2d), so the rerun draws more entries and the random sequence differs. Deterministic values reproduce exactly; the sampled statistics agree within sampling error (see max_abs_rel_diff)."
+  }
+ ]
+}

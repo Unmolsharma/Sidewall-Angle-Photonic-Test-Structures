@@ -56,11 +56,11 @@ ASSUMPTIONS = [
      'noise_sourced.json', 'ASSUMPTION (our conversion; L and n_g chosen, not measured)'),
     ('MZI fringe read as precisely as a ring resonance', 'noise_sourced.json', 'UNVERIFIED'),
     ('Rib noise multiplier 1.0x (conservative) / 0.2x (optimistic)', 'all rib rows',
-     '0.2x from a wide-rib loss ratio quoted in src/noise_sourcing.py (citation UNVERIFIED)'),
+     '0.2x from a wide-rib loss ratio quoted in src/noise_sourcing.py (citation UNVERIFIED; not used for headlines)'),
     ('Etch-depth prior 2 nm', 'realistic priors', 'ASSUMPTION (no verified source)'),
     ('n_ox prior 1e-3', 'realistic priors', 'ASSUMPTION'),
-    ('n_Si prior 1e-4', 'realistic priors', 'quoted from Frey et al. (arXiv:physics/0606168) in '
-                                            'results_priors_search/SUMMARY.md; citation UNVERIFIED in this audit'),
+    ('n_Si prior 1e-4', 'realistic priors', 'ASSUMED; basis: bulk-Si uncertainty 8.67e-5 (Frey et al., '
+                                            'arXiv:physics/0606168, Table 1; VERIFIED, results_final/CITATIONS.md)'),
     ('Temperature prior 1 K', 'stage E realistic', 'ASSUMPTION'),
     ('Rib-strip angle link 1, 2, 5 deg', 'priors table', 'ASSUMPTION (scenarios)'),
     ('n_Si 3.48, n_ox 1.44, no dispersion; lambda 1.55 um; t 220 nm', 'all solves', 'ASSUMPTION (nominal values)'),

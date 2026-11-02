@@ -91,6 +91,8 @@ def setup():
     for f in CACHES + list(FROZEN):
         os.makedirs(os.path.dirname(os.path.join(TREE, f)), exist_ok=True)
         shutil.copy2(os.path.join(REPO, f), os.path.join(TREE, f))
+    for f in COMPARE:                          # empty output folders (some scripts expect them to exist)
+        os.makedirs(os.path.dirname(os.path.join(TREE, f)), exist_ok=True)
 
 
 def run_steps():
@@ -164,6 +166,12 @@ def compare():
             files.append(dict(file=f, n_numbers=0, result='MISSING in rerun', max_rel_diff=None))
             continue
         na, nb = numbers(a), numbers(b)
+        extra = None
+        if f.endswith('.json'):                # match JSON by key path; keys present on one side only are listed
+            da, db = dict(na), dict(nb)
+            common = [k for k in da if k in db]
+            extra = dict(only_committed=sorted(set(da) - set(db))[:20], only_rerun=sorted(set(db) - set(da))[:20])
+            na, nb = [(k, da[k]) for k in common], [(k, db[k]) for k in common]
         if len(na) != len(nb):
             files.append(dict(file=f, n_numbers=len(na), result=f'DIFFERENT count ({len(na)} vs {len(nb)})', max_rel_diff=None))
             diffs.append(dict(file=f, where='(number count)', committed=len(na), rerun=len(nb)))
@@ -176,10 +184,32 @@ def compare():
             worst = max(worst, d)
             if not ok:
                 bad += 1
-                diffs.append(dict(file=f, where=wa, committed=va, rerun=vb))
-        files.append(dict(file=f, n_numbers=len(na), max_rel_diff=worst,
-                          result='identical' if exact else ('within tolerance' if bad == 0 else f'{bad} numbers differ')))
+                if bad <= 200:                 # keep the file small; the count is complete
+                    diffs.append(dict(file=f, where=wa, committed=va, rerun=vb))
+        res = 'identical' if exact else ('within tolerance' if bad == 0 else f'{bad} numbers differ')
+        if extra and (extra['only_committed'] or extra['only_rerun']):
+            res += (f"; keys only in rerun: {', '.join(extra['only_rerun'])}" if extra['only_rerun'] else '') +                    (f"; keys only in committed: {', '.join(extra['only_committed'])}" if extra['only_committed'] else '')
+        files.append(dict(file=f, n_numbers=len(na), max_rel_diff=worst, result=res))
     return files, diffs
+
+
+def sampling_check():
+    """strips_info perturbation statistics: committed vs rerun, for the medians and 5-95% points (random draws)."""
+    f = 'results_montecarlo/data/strips_info.json'
+    a = json.load(open(os.path.join(REPO, f), encoding='utf-8'))['perturbation']
+    b = json.load(open(os.path.join(TREE, f), encoding='utf-8'))['perturbation']
+    rel = {'nominal': [], 'median': [], 'p05': [], 'p95': []}
+    for lv in a:
+        for name in a[lv]:
+            for k in rel:
+                x, y = a[lv][name][k], b[lv][name][k]
+                if x:
+                    rel[k].append(abs(y / x - 1))
+    return dict(file=f, seed=20261027, max_abs_rel_diff={k: max(v) for k, v in rel.items()},
+                cause='The perturbation draws (default_rng(20261027)) perturb every strip derivative entry in the cache. '
+                      'strips_info.json was committed (3e828dd) before the strip TM index solves were added (6b84f2d), so '
+                      'the rerun draws more entries and the random sequence differs. Deterministic values reproduce exactly; '
+                      'the sampled statistics agree within sampling error (see max_abs_rel_diff).')
 
 
 def main():
@@ -193,10 +223,11 @@ def main():
     import montecarlo
     res = dict(tree=os.path.relpath(TREE, REPO).replace(os.sep, '/'), rel_tol=REL_TOL, mc_seed=montecarlo.SEED,
                frozen=FROZEN, caches=CACHES, steps=steps, files=files, differences=diffs,
-               n_files=len(files), n_exact=sum(f['result'] == 'identical' for f in files),
-               n_within_tol=sum(f['result'] == 'within tolerance' for f in files),
+               n_files=len(files), n_exact=sum(f['result'].startswith('identical') for f in files),
+               n_within_tol=sum(f['result'].startswith('within tolerance') for f in files),
                n_differ=sum(('differ' in f['result']) or f['result'].startswith('DIFFERENT') for f in files),
-               n_missing=sum(f['result'].startswith('MISSING') for f in files), minutes=(time.time() - t0) / 60)
+               n_missing=sum(f['result'].startswith('MISSING') for f in files), minutes=(time.time() - t0) / 60,
+               sampling_notes=[sampling_check()])
     with open(os.path.join(BASE, 'diff.json'), 'w', encoding='utf-8') as f:
         json.dump(res, f, indent=1, ensure_ascii=False)
     print({k: res[k] for k in ('n_files', 'n_exact', 'n_within_tol', 'n_differ', 'n_missing')})

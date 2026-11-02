@@ -73,5 +73,5 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `src/noise_sourcing.py`: with optical lithography and atomic layer deposition," Opt. Express
 - `src/perturbation_derivatives.py`: Formula (Johnson et al., PRE 65, 066611 (2002), moving dielectric boundaries in
 - `src/provenance_audit.py`: '10.48550/arXiv.2306.15643': 'Janz et al. 2023 (arXiv:2306.15643 v1): full text read on 2026-10-29; '
-- `src/provenance_audit.py`: ('n_Si prior 1e-4', 'realistic priors', 'quoted from Frey et al. (arXiv:physics/0606168) in '
+- `src/provenance_audit.py`: ('n_Si prior 1e-4', 'realistic priors', 'ASSUMED; basis: bulk-Si uncertainty 8.67e-5 (Frey et al., '
 - `src/provenance_audit.py`: if re.search(r'et al\.|Opt\. Express|Proc\. SPIE|Photonics Research|J\. Lightwave', line):

@@ -13816,7 +13816,7 @@
   },
   {
    "file": "src/provenance_audit.py",
-   "line": "('n_Si prior 1e-4', 'realistic priors', 'quoted from Frey et al. (arXiv:physics/0606168) in '"
+   "line": "('n_Si prior 1e-4', 'realistic priors', 'ASSUMED; basis: bulk-Si uncertainty 8.67e-5 (Frey et al., '"
   },
   {
    "file": "src/provenance_audit.py",
@@ -13842,7 +13842,7 @@
   {
    "item": "Rib noise multiplier 1.0x (conservative) / 0.2x (optimistic)",
    "used_in": "all rib rows",
-   "status": "0.2x from a wide-rib loss ratio quoted in src/noise_sourcing.py (citation UNVERIFIED)"
+   "status": "0.2x from a wide-rib loss ratio quoted in src/noise_sourcing.py (citation UNVERIFIED; not used for headlines)"
   },
   {
    "item": "Etch-depth prior 2 nm",
@@ -13857,7 +13857,7 @@
   {
    "item": "n_Si prior 1e-4",
    "used_in": "realistic priors",
-   "status": "quoted from Frey et al. (arXiv:physics/0606168) in results_priors_search/SUMMARY.md; citation UNVERIFIED in this audit"
+   "status": "ASSUMED; basis: bulk-Si uncertainty 8.67e-5 (Frey et al., arXiv:physics/0606168, Table 1; VERIFIED, results_final/CITATIONS.md)"
   },
   {
    "item": "Temperature prior 1 K",

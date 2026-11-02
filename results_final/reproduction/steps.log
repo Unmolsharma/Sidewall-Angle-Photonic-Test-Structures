@@ -1,0 +1,391 @@
+### step_check_all.py (exit 0, 2 s)
+428 derivatives: {'PASS': 422, 'FAIL': 3, 'PASS_NEAR_ZERO_ABS': 3}
+FAIL strip_TM_600 a ng: max rel dev 0.0211, 0.139 of largest
+FAIL rib_TE_300_slab110 s ng: max rel dev 0.0225, 0.143 of largest
+FAIL rib_TE_600_slab110 a ng: max rel dev 0.0204, 0.105 of largest
+
+
+### SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py (exit 0, 101 s)
+trip + rib70 (500 + 300 nm)   sigma_d 0.1: 0.004329 [0.004296..0.004329]
+  B strip + rib70 (500 + 300 nm)   sigma_d 0.3: 0.00433 [0.004297..0.00433]
+  B strip + rib70 (500 + 300 nm)   sigma_d 1.0: 0.004331 [0.004297..0.004331]
+  B strip + rib70 (500 + 300 nm)   sigma_d 2.0: 0.004331 [0.004297..0.004331]
+  B strip + rib70 (500 + 300 nm)   sigma_d 5.0: 0.004331 [0.004297..0.004331]
+  B strip + rib70 (500 + 300 nm)   sigma_d None: 0.004331 [0.004297..0.004331]
+  C strip + rib70 (500 nm)         sigma_d 0.01: 4.711 [4.6..4.711]
+  C strip + rib70 (500 nm)         sigma_d 0.03: 4.723 [4.612..4.723]
+  C strip + rib70 (500 nm)         sigma_d 0.1: 4.868 [4.753..4.868]
+  C strip + rib70 (500 nm)         sigma_d 0.3: 5.989 [5.847..5.989]
+  C strip + rib70 (500 nm)         sigma_d 1.0: 13.2 [12.89..13.2]
+  C strip + rib70 (500 nm)         sigma_d 2.0: 25.12 [24.51..25.12]
+  C strip + rib70 (500 nm)         sigma_d 5.0: 61.86 [60.37..61.86]
+  C strip + rib70 (500 nm)         sigma_d None: inf [inf..inf]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.01: 0.06187 [0.06187..0.06506]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.03: 0.1685 [0.1685..0.1768]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.1: 0.3458 [0.3458..0.3602]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.3: 0.4086 [0.4086..0.4241]
+  C strip + rib70 (500 + 300 nm)   sigma_d 1.0: 0.4182 [0.4182..0.4337]
+  C strip + rib70 (500 + 300 nm)   sigma_d 2.0: 0.4189 [0.4189..0.4344]
+  C strip + rib70 (500 + 300 nm)   sigma_d 5.0: 0.4191 [0.4191..0.4346]
+  C strip + rib70 (500 + 300 nm)   sigma_d None: 0.4192 [0.4192..0.4347]
+C|none: best one-etch 8 -> 0.1443 at slab 90: ['strip_TE_400', 'strip_TM_500', 'strip_TM_550', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+C|none: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+C|realistic: best one-etch 8 -> 0.1443 at slab 90: ['strip_TE_400', 'strip_TM_500', 'strip_TM_550', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+C|realistic: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+D|none: best one-etch 8 -> 0.1617 at slab 90: ['strip_TE_400', 'strip_TE_600', 'strip_TM_400', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+D|none: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+D|realistic: best one-etch 8 -> 0.1616 at slab 90: ['strip_TE_400', 'strip_TE_600', 'strip_TM_400', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+D|realistic: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+C|none {'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3594, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4192, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5552, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.7961, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.208, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.809}
+C|realistic {'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3592, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4189, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5548, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.7955, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2067, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.8082}
+D|none {'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3875, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4508, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5962, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8597, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.3134, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.2096}
+D|realistic {'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3668, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4253, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.561, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8022, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2152, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.8327}
+
+
+### sym_search.py placeholder ../results_final/sym_search_placeholder/data (exit 0, 131 s)
+p + rib70 (500 + 300 nm)   sigma_d None: 0.004331 [0.004297..0.004331]
+  C strip + rib70 (500 nm)         sigma_d 0.01: 4.711 [4.6..4.711]
+  C strip + rib70 (500 nm)         sigma_d 0.03: 4.723 [4.612..4.723]
+  C strip + rib70 (500 nm)         sigma_d 0.1: 4.868 [4.753..4.868]
+  C strip + rib70 (500 nm)         sigma_d 0.3: 5.989 [5.847..5.989]
+  C strip + rib70 (500 nm)         sigma_d 1.0: 13.2 [12.89..13.2]
+  C strip + rib70 (500 nm)         sigma_d 2.0: 25.12 [24.51..25.12]
+  C strip + rib70 (500 nm)         sigma_d 5.0: 61.86 [60.37..61.86]
+  C strip + rib70 (500 nm)         sigma_d None: inf [inf..inf]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.01: 0.06187 [0.06187..0.06506]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.03: 0.1685 [0.1685..0.1768]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.1: 0.3458 [0.3458..0.3602]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.3: 0.4086 [0.4086..0.4241]
+  C strip + rib70 (500 + 300 nm)   sigma_d 1.0: 0.4182 [0.4182..0.4337]
+  C strip + rib70 (500 + 300 nm)   sigma_d 2.0: 0.4189 [0.4189..0.4344]
+  C strip + rib70 (500 + 300 nm)   sigma_d 5.0: 0.4191 [0.4191..0.4346]
+  C strip + rib70 (500 + 300 nm)   sigma_d None: 0.4192 [0.4192..0.4347]
+C|none: best one-etch 8 -> 0.1443 at slab 90: ['strip_TE_400', 'strip_TM_500', 'strip_TM_550', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+C|none: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+C|realistic: best one-etch 8 -> 0.1443 at slab 90: ['strip_TE_400', 'strip_TM_500', 'strip_TM_550', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+C|realistic: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+D|none: best one-etch 8 -> 0.1617 at slab 90: ['strip_TE_400', 'strip_TE_600', 'strip_TM_400', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+D|none: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+D|realistic: best one-etch 8 -> 0.1616 at slab 90: ['strip_TE_400', 'strip_TE_600', 'strip_TM_400', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+D|realistic: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+C|none {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.3807, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.3711, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3594, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4192, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5552, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.7961, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.208, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.809}
+C|realistic {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.3805, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.371, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3592, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4189, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5548, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.7955, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2067, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.8082}
+D|none {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.4117, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.4005, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3875, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4508, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5962, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8597, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.3134, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.2096}
+D|realistic {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.3914, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.3802, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3668, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4253, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.561, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8022, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2152, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.8327}
+
+
+### sym_search.py 1pm ../results_final/sym_search_1pm/data (exit 0, 127 s)
+B strip + rib70 (500 + 300 nm)   sigma_d None: 0.00365 [0.003622..0.00365]
+  C strip + rib70 (500 nm)         sigma_d 0.01: 5.032 [4.913..5.032]
+  C strip + rib70 (500 nm)         sigma_d 0.03: 5.044 [4.925..5.044]
+  C strip + rib70 (500 nm)         sigma_d 0.1: 5.179 [5.057..5.179]
+  C strip + rib70 (500 nm)         sigma_d 0.3: 6.245 [6.097..6.245]
+  C strip + rib70 (500 nm)         sigma_d 1.0: 13.32 [13..13.32]
+  C strip + rib70 (500 nm)         sigma_d 2.0: 25.18 [24.57..25.18]
+  C strip + rib70 (500 nm)         sigma_d 5.0: 61.89 [60.39..61.89]
+  C strip + rib70 (500 nm)         sigma_d None: inf [inf..inf]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.01: 0.06154 [0.06154..0.06472]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.03: 0.17 [0.17..0.1785]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.1: 0.3612 [0.3612..0.3764]
+  C strip + rib70 (500 + 300 nm)   sigma_d 0.3: 0.4349 [0.4349..0.4514]
+  C strip + rib70 (500 + 300 nm)   sigma_d 1.0: 0.4465 [0.4465..0.463]
+  C strip + rib70 (500 + 300 nm)   sigma_d 2.0: 0.4474 [0.4474..0.4639]
+  C strip + rib70 (500 + 300 nm)   sigma_d 5.0: 0.4476 [0.4476..0.4642]
+  C strip + rib70 (500 + 300 nm)   sigma_d None: 0.4477 [0.4477..0.4642]
+C|none: best one-etch 8 -> 0.1237 at slab 90: ['strip_TE_400', 'strip_TM_500', 'strip_TM_550', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+C|none: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+C|realistic: best one-etch 8 -> 0.1237 at slab 90: ['strip_TE_400', 'strip_TM_500', 'strip_TM_550', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+C|realistic: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+D|none: best one-etch 8 -> 0.139 at slab 90: ['strip_TE_400', 'strip_TE_600', 'strip_TM_400', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+D|none: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+D|realistic: best one-etch 8 -> 0.139 at slab 90: ['strip_TE_400', 'strip_TE_600', 'strip_TM_400', 'strip_TM_600', 'rib_TE_300_slab90', 'rib_TE_400_slab90', 'rib_TE_500_slab90', 'rib_TE_600_slab90']
+D|realistic: strips only best -> {1: inf, 2: inf, 3: inf, 4: inf, 5: inf, 6: inf, 7: inf, 8: inf}
+C|none {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.4064, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.3963, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3837, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4477, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.593, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8504, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2903, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.0688}
+C|realistic {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.4062, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.3961, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3835, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4474, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5925, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8496, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2888, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.0677}
+D|none {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.4379, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.4264, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.4129, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4809, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.6365, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.9182, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.4028, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.4953}
+D|realistic {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.414, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.4027, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3891, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4521, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5972, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8549, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2957, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.0886}
+
+
+### strips_angle_info.py (exit 0, 37 s)
+  5-95% 0.00495..0.0239
+  strip TE 5 + rib70 500 + 300 (E, realistic) nominal 0.414  median 0.0166  5-95% 0.00714..0.0509
+  best one-etch set (C, none, 8)       nominal 0.145  median 0.0123  5-95% 0.00503..0.0418
+  best one-etch set (D, realistic, 8)  nominal 0.167  median 0.0277  5-95% 0.0118..0.0925
+R - R_exact vs step (h/2, h, 2h):
+  strip_TE_400   neff: +2.9e-04 +1.8e-04 -2.7e-04  ng: +1.3e-03 +1.5e-03 +1.9e-03
+  strip_TE_450   neff: -1.4e-05 -1.9e-05 -2.1e-05  ng: +3.7e-05 +9.0e-05 +3.9e-04
+  strip_TE_500   neff: -1.1e-04 +2.4e-04 +6.2e-05  ng: -4.0e-04 +5.1e-04 -3.9e-05
+  strip_TE_550   neff: +4.3e-04 +2.9e-04 +7.2e-05  ng: +1.1e-03 +5.8e-04 -1.7e-04
+  strip_TE_600   neff: -7.4e-06 -7.2e-06 +1.8e-04  ng: +1.7e-04 -3.1e-05 +5.8e-05
+  strip_TM_400   neff: +1.3e-03 +9.4e-04 +3.1e-06  ng: +1.7e-03 +1.7e-03 +1.8e-03
+  strip_TM_450   neff: +2.3e-04 -1.3e-05 +1.2e-03  ng: +1.1e-03 +1.3e-03 +2.2e-03
+  strip_TM_500   neff: -3.1e-04 +1.3e-03 +9.3e-04  ng: +1.1e-03 +1.7e-03 +2.6e-03
+  strip_TM_550   neff: +2.8e-03 +1.8e-03 +1.3e-03  ng: +1.7e-03 +2.4e-03 +5.4e-03
+  strip_TM_600   neff: +1.4e-03 +1.3e-03 +5.3e-03  ng: +3.2e-03 +8.5e-03 +2.9e-02
+R - R_exact (strips, h): {'strip_TE_400': {'neff': '+1.8e-04', 'ng': '+1.5e-03'}, 'strip_TE_450': {'neff': '-1.9e-05', 'ng': '+9.0e-05'}, 'strip_TE_500': {'neff': '+2.4e-04', 'ng': '+5.1e-04'}, 'strip_TE_550': {'neff': '+2.9e-04', 'ng': '+5.8e-04'}, 'strip_TE_600': {'neff': '-7.2e-06', 'ng': '-3.1e-05'}, 'strip_TM_400': {'neff': '+9.4e-04', 'ng': '+1.7e-03'}, 'strip_TM_450': {'neff': '-1.3e-05', 'ng': '+1.3e-03'}, 'strip_TM_500': {'neff': '+1.3e-03', 'ng': '+1.7e-03'}, 'strip_TM_550': {'neff': '+1.8e-03', 'ng': '+2.4e-03'}, 'strip_TM_600': {'neff': '+1.3e-03', 'ng': '+8.5e-03'}}
+nominal: {'strip TE 5 widths': 1.3310267874456307, 'best strips-only (C, 8)': 0.6135201593226559, 'strip TE 5 + rib70 500 (C)': 1.3310267874448378, 'strip TE 5 + rib70 500 + 300 (C)': 0.39972786045306363, 'strip TE 5 + rib70 500 + 300 (E, realistic)': 0.41388627468144934, 'best one-etch set (C, none, 8)': 0.14483594067449135, 'best one-etch set (D, realistic, 8)': 0.16703864453321088}
+exact symmetry: {'strip TE 5 widths': inf, 'best strips-only (C, 8)': inf, 'strip TE 5 + rib70 500 (C)': inf, 'strip TE 5 + rib70 500 + 300 (C)': 0.4191647919649886, 'strip TE 5 + rib70 500 + 300 (E, realistic)': 0.4283155983481892, 'best one-etch set (C, none, 8)': 0.14660174660228303, 'best one-etch set (D, realistic, 8)': 0.16859878015817917}
+strips-only subsets: {'all': 0.6135201593226559, 'TE structures only': 2.0908190814848835, 'TM structures only': 0.7417253877734464, 'n_eff + MZI phase only (no n_g)': 0.6136211120226223, 'n_g only': 45.395125398702916}
+strip TE 5 widths {'strip TE neff': '0.13', 'strip TE ng': '0.00', 'strip TE phase': '0.87'}
+best strips-only (C, 8) {'strip TE neff': '0.04', 'strip TE ng': '0.00', 'strip TE phase': '0.27', 'strip TM neff': '0.09', 'strip TM ng': '0.00', 'strip TM phase': '0.61'}
+strip TE 5 + rib70 500 (C) {'rib neff': '0.00', 'rib ng': '0.00', 'rib phase': '0.00', 'strip TE neff': '0.13', 'strip TE ng': '0.00', 'strip TE phase': '0.87'}
+strip TE 5 + rib70 500 + 300 (C) {'rib neff': '0.00', 'rib ng': '0.91', 'rib phase': '0.00', 'strip TE neff': '0.01', 'strip TE ng': '0.00', 'strip TE phase': '0.08'}
+strip TE 5 + rib70 500 + 300 (E, realistic) {'prior prior': '0.02', 'rib neff': '0.00', 'rib ng': '0.87', 'rib phase': '0.00', 'strip TE neff': '0.01', 'strip TE ng': '0.01', 'strip TE phase': '0.09'}
+best one-etch set (C, none, 8) {'rib neff': '0.11', 'rib ng': '0.09', 'rib phase': '0.75', 'strip TE neff': '0.00', 'strip TE ng': '0.00', 'strip TE phase': '0.02', 'strip TM neff': '0.00', 'strip TM ng': '0.00', 'strip TM phase': '0.02'}
+best one-etch set (D, realistic, 8) {'prior prior': '0.09', 'rib neff': '0.08', 'rib ng': '0.11', 'rib phase': '0.54', 'strip TE neff': '0.02', 'strip TE ng': '0.00', 'strip TE phase': '0.11', 'strip TM neff': '0.00', 'strip TM ng': '0.05', 'strip TM phase': '0.00'}
+
+
+### montecarlo.py plan (exit 0, 2 s)
+designs: [('strip_TE_400', 'narrow', [1.0, 1.0, 0.0006, 0.0012]), ('strip_TE_600', 'narrow', [1.0, 1.0, 0.0006, 0.0012]), ('strip_TM_400', 'narrow', [1.0, 1.0, 0.0001, 0.0001]), ('strip_TM_600', 'narrow', [1.0, 1.0, 0.0001, 0.0001]), ('rib_TE_300_slab90', 'narrow', [3.7178, 1.0, 1.9339, 1.0, 0.0001, 0.0001]), ('rib_TE_400_slab90', 'narrow', [3.7178, 1.0, 1.9339, 1.0, 0.0001, 0.0001]), ('rib_TE_500_slab90', 'narrow', [3.7178, 1.0, 1.9339, 1.0, 0.0001, 0.0001]), ('rib_TE_600_slab90', 'narrow', [3.7178, 1.0, 1.9339, 1.0, 0.0001, 0.0001]), ('strip_TE_450', 'narrow', [1.0, 1.0, 0.0006, 0.0012]), ('strip_TE_500', 'narrow', [1.0, 1.0, 0.0006, 0.0012]), ('strip_TE_550', 'narrow', [1.0, 1.0, 0.0006, 0.0012]), ('rib_TE_300_slab50', 'narrow', [8.4273, 1.0, 3.1014, 1.0, 0.0006, 0.0012]), ('rib_TE_500_slab50', 'narrow', [8.4273, 1.0, 3.1014, 1.0, 0.0006, 0.0012]), ('rib_TE_500_slab50', 'wide', [12.0, 1.0, 5.0, 1.0, 0.0006, 0.0012])]
+strip: 182 solves, per-solve median 6.3 s, mean 14.8 s (one worker)
+rib: 266 solves, per-solve median 47.4 s, mean 104.5 s (one worker)
+total 448 solves; worker-hours 3.82 (median) .. 8.47 (mean); with 4 workers ~0.95 .. 2.12 h if per-solve times hold under load
+
+
+### montecarlo.py fit (exit 0, 2 s)
+strip_TE_400|narrow          quad    train  25 (axis 5) test  6: n_eff rms 1.77e-07 (= 0.07 sigma_phase), max 2.99e-07; n_g rms 6.16e-07 (= 0.001 sigma_ng)
+strip_TE_600|narrow          quad    train  25 (axis 5) test  6: n_eff rms 1.41e-07 (= 0.06 sigma_phase), max 2.46e-07; n_g rms 1.20e-07 (= 0.000 sigma_ng)
+strip_TM_400|narrow          quad    train  23 (axis 3) test  6: n_eff rms 2.00e-07 (= 0.08 sigma_phase), max 4.02e-07; n_g rms 3.95e-06 (= 0.004 sigma_ng)
+strip_TM_600|narrow          quad    train  23 (axis 3) test  6: n_eff rms 5.55e-07 (= 0.23 sigma_phase), max 1.22e-06; n_g rms 8.22e-07 (= 0.001 sigma_ng)
+rib_TE_300_slab90|narrow     full    train  41 (axis 11) test  8: n_eff rms 1.99e-05 (= 8.06 sigma_phase), max 4.52e-05; n_g rms 3.48e-05 (= 0.035 sigma_ng)
+rib_TE_400_slab90|narrow     reduced train  41 (axis 11) test  8: n_eff rms 6.16e-06 (= 2.50 sigma_phase), max 1.21e-05; n_g rms 3.82e-06 (= 0.004 sigma_ng)
+rib_TE_500_slab90|narrow     reduced train  41 (axis 11) test  8: n_eff rms 4.37e-06 (= 1.77 sigma_phase), max 6.88e-06; n_g rms 1.85e-06 (= 0.002 sigma_ng)
+rib_TE_600_slab90|narrow     reduced train  41 (axis 11) test  8: n_eff rms 3.10e-06 (= 1.26 sigma_phase), max 5.74e-06; n_g rms 2.10e-06 (= 0.002 sigma_ng)
+strip_TE_450|narrow          quad    train  25 (axis 5) test  6: n_eff rms 8.85e-08 (= 0.04 sigma_phase), max 1.13e-07; n_g rms 2.60e-07 (= 0.000 sigma_ng)
+strip_TE_500|narrow          reduced train  25 (axis 5) test  6: n_eff rms 9.07e-07 (= 0.37 sigma_phase), max 1.52e-06; n_g rms 2.48e-06 (= 0.002 sigma_ng)
+strip_TE_550|narrow          reduced train  25 (axis 5) test  6: n_eff rms 8.53e-07 (= 0.35 sigma_phase), max 1.80e-06; n_g rms 2.01e-06 (= 0.002 sigma_ng)
+rib_TE_300_slab50|narrow     full    train  47 (axis 17) test  8: n_eff rms 7.42e-05 (= 30.09 sigma_phase), max 1.12e-04; n_g rms 2.64e-04 (= 0.264 sigma_ng)
+rib_TE_500_slab50|narrow     reduced train  47 (axis 17) test  8: n_eff rms 3.10e-06 (= 1.26 sigma_phase), max 4.69e-06; n_g rms 1.29e-05 (= 0.013 sigma_ng)
+rib_TE_500_slab50|wide       reduced train  49 (axis 19) test  8: n_eff rms 1.31e-05 (= 5.32 sigma_phase), max 2.75e-05; n_g rms 4.35e-05 (= 0.044 sigma_ng)
+
+
+### montecarlo.py surrcheck (exit 0, 2 s)
+strip_TE_400|narrow          n_eff rms 0.06 sigma_phase, n_g rms 0.001 sigma_ng
+strip_TE_600|narrow          n_eff rms 0.05 sigma_phase, n_g rms 0.000 sigma_ng
+strip_TM_400|narrow          n_eff rms 0.07 sigma_phase, n_g rms 0.004 sigma_ng
+strip_TM_600|narrow          n_eff rms 0.20 sigma_phase, n_g rms 0.001 sigma_ng
+rib_TE_300_slab90|narrow     n_eff rms 7.23 sigma_phase, n_g rms 0.033 sigma_ng
+rib_TE_400_slab90|narrow     n_eff rms 2.24 sigma_phase, n_g rms 0.004 sigma_ng
+rib_TE_500_slab90|narrow     n_eff rms 1.59 sigma_phase, n_g rms 0.002 sigma_ng
+rib_TE_600_slab90|narrow     n_eff rms 1.13 sigma_phase, n_g rms 0.002 sigma_ng
+strip_TE_450|narrow          n_eff rms 0.03 sigma_phase, n_g rms 0.000 sigma_ng
+strip_TE_500|narrow          n_eff rms 0.33 sigma_phase, n_g rms 0.002 sigma_ng
+strip_TE_550|narrow          n_eff rms 0.31 sigma_phase, n_g rms 0.002 sigma_ng
+rib_TE_300_slab50|narrow     n_eff rms 27.01 sigma_phase, n_g rms 0.247 sigma_ng
+rib_TE_500_slab50|narrow     n_eff rms 1.13 sigma_phase, n_g rms 0.012 sigma_ng
+rib_TE_500_slab50|wide       n_eff rms 4.78 sigma_phase, n_g rms 0.041 sigma_ng
+
+
+### montecarlo.py mc (exit 0, 869 s)
+case a: CRB fd 0.1616, surrogate 0.1461; MC std 0.1635 [0.1548, 0.172], bias +0.009717 +- 0.0037; ok 1989, failed 0, at bound 11, ambiguous 0; chi2 mean 20.15 (dof 20); fit to femwell nominal: a = +0.02142
+case b: CRB fd 0.3668, surrogate 0.372; MC std 0.3742 [0.3626, 0.3853], bias -0.01482 +- 0.0084; ok 2000, failed 0, at bound 0, ambiguous 0; chi2 mean 16.57 (dof 17); fit to femwell nominal: a = +0.004968
+case c: CRB fd 29.44, surrogate 31.96; MC std 2.475 [2.455, 2.493], bias -0.1672 +- 0.055; ok 820, failed 6, at bound 1163, ambiguous 11; chi2 mean 15.06 (dof 14); fit to femwell nominal: a = +0.00141
+
+
+### montecarlo.py mc1pm (exit 0, 234 s)
+case a: CRB fd 0.139, surrogate 0.1249; MC std 0.1323 [0.1253, 0.1396], bias +0.007459 +- 0.003; ok 1996, failed 0, at bound 4, ambiguous 0; chi2 mean 20.22 (dof 20); fit to femwell nominal: a = +0.02217
+case b: CRB fd 0.3891, surrogate 0.3942; MC std 0.3976 [0.385, 0.4096], bias -0.01526 +- 0.0089; ok 2000, failed 0, at bound 0, ambiguous 0; chi2 mean 16.59 (dof 17); fit to femwell nominal: a = +0.004982
+
+
+### montecarlo.py valley (exit 0, 2 s)
+a {'n': 2000, 'corr_w_a': 0.9999952706341051, 'slope_w_per_a_nm_per_deg': 3.8340607951883614, 'expected_slope_strip_symmetry': 3.839724354387525}
+b {'n': 2000, 'corr_w_a': 0.9998892690139232, 'slope_w_per_a_nm_per_deg': 3.8286527933511865, 'expected_slope_strip_symmetry': 3.839724354387525}
+c {'n': 1994, 'corr_w_a': 0.9999975525462572, 'slope_w_per_a_nm_per_deg': 3.8419566318890506, 'expected_slope_strip_symmetry': 3.839724354387525}
+
+
+### robustness_rib300.py (exit 0, 82 s)
+noise placeholder {'SIGMA_NEFF': 6.5e-06, 'SIGMA_NG': 0.001, 'SIGMA_PHASE': 0.001}
+best_one_etch_D_realistic: nominal 0.1616 [0.1184-0.1713]
+  +-0.3%: median 0.1601, 5-95% 0.1277-0.2147 (-21.0% to +32.9%)
+  +-1.0%: median 0.1593, 5-95% 0.08276-0.3569 (-48.8% to +120.9%)
+  +-3.0%: median 0.1111, 5-95% 0.04149-0.3471 (-74.3% to +114.8%)
+  +-5.0%: median 0.07063, 5-95% 0.02668-0.3223 (-83.5% to +99.5%)
+two_width_slab50_D_realistic: nominal 0.3668 [0.3668-0.3768]
+  +-0.3%: median 0.3675, 5-95% 0.343-0.3957 (-6.5% to +7.9%)
+  +-1.0%: median 0.3629, 5-95% 0.293-0.4836 (-20.1% to +31.8%)
+  +-3.0%: median 0.3658, 5-95% 0.215-1.342 (-41.4% to +265.8%)
+  +-5.0%: median 0.3526, 5-95% 0.1673-2.563 (-54.4% to +598.8%)
+best_one_etch_D_realistic: fixed mesh 0.1379 [0.1379-0.1804] (-14.7%)
+    d/dw fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, +0.00%; -0.06%, -0.05%; +0.02%, +0.01%
+    d/dt fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: -0.44%, -0.24%; -0.56%, -0.32%; +0.07%, +0.03%
+    d/da fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: -0.31%, -0.19%; +0.20%, +0.20%; -0.06%, -0.03%
+    d/ds fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, -0.03%; +0.13%, -0.78%; +0.02%, -0.18%
+two_width_slab50_D_realistic: fixed mesh 0.3716 [0.3699-0.3795] (+1.3%)
+    d/dw fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.13%, +0.09%; +0.02%, +0.01%; -0.01%, -0.01%
+    d/dt fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: -0.08%, -0.01%; +0.12%, +0.06%; -0.04%, -0.01%
+    d/da fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.06%, +0.02%; +0.09%, +0.05%; +0.06%, +0.02%
+    d/ds fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, -0.01%; +0.00%, +0.01%; -0.01%, +0.02%
+
+
+### robustness_rib300.py 1pm (exit 0, 73 s)
+noise 1pm {'SIGMA_NEFF': 2.7483870967741936e-06, 'SIGMA_NG': np.float64(0.0010682448301570023), 'SIGMA_PHASE': 0.0011141048661221658}
+best_one_etch_D_realistic: nominal 0.139 [0.1007-0.1473]
+  +-0.3%: median 0.1377, 5-95% 0.1088-0.1885 (-21.7% to +35.6%)
+  +-1.0%: median 0.1371, 5-95% 0.06996-0.354 (-49.7% to +154.7%)
+  +-3.0%: median 0.09469, 5-95% 0.03497-0.3394 (-74.8% to +144.2%)
+  +-5.0%: median 0.05995, 5-95% 0.02248-0.3085 (-83.8% to +121.9%)
+two_width_slab50_D_realistic: nominal 0.3891 [0.3891-0.3997]
+  +-0.3%: median 0.3898, 5-95% 0.3638-0.4198 (-6.5% to +7.9%)
+  +-1.0%: median 0.3849, 5-95% 0.3107-0.5131 (-20.2% to +31.9%)
+  +-3.0%: median 0.388, 5-95% 0.2282-1.424 (-41.4% to +266.0%)
+  +-5.0%: median 0.3743, 5-95% 0.1773-2.718 (-54.4% to +598.6%)
+best_one_etch_D_realistic: fixed mesh 0.1177 [0.1177-0.1556] (-15.3%)
+    d/dw fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, +0.00%; -0.06%, -0.05%; +0.02%, +0.01%
+    d/dt fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: -0.44%, -0.24%; -0.56%, -0.32%; +0.07%, +0.03%
+    d/da fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: -0.31%, -0.19%; +0.20%, +0.20%; -0.06%, -0.03%
+    d/ds fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, -0.03%; +0.13%, -0.78%; +0.02%, -0.18%
+two_width_slab50_D_realistic: fixed mesh 0.3941 [0.3923-0.4026] (+1.3%)
+    d/dw fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.13%, +0.09%; +0.02%, +0.01%; -0.01%, -0.01%
+    d/dt fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: -0.08%, -0.01%; +0.12%, +0.06%; -0.04%, -0.01%
+    d/da fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.06%, +0.02%; +0.09%, +0.05%; +0.06%, +0.02%
+    d/ds fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, -0.01%; +0.00%, +0.01%; -0.01%, +0.02%
+
+
+### noise_sourced.py (exit 0, 2 s)
+placeholder                    sigma_neff 6.5e-06  sigma_ng 0.001  sigma_phase 0.001 rad
+sourced optimistic (0.1 pm)    sigma_neff 2.75e-07  sigma_ng 0.000107  sigma_phase 0.000111 rad
+sourced conservative (1 pm)    sigma_neff 2.75e-06  sigma_ng 0.00107  sigma_phase 0.00111 rad
+best one-etch set (8), D realistic               placeholder                    0.1616 [0.1184-0.1713]
+best one-etch set (8), D realistic               sourced optimistic (0.1 pm)    0.0139 [0.01007-0.01473]
+best one-etch set (8), D realistic               sourced conservative (1 pm)    0.139 [0.1007-0.1473]
+best one-etch set (8), C none                    placeholder                    0.1443 [0.1053-0.1533]
+best one-etch set (8), C none                    sourced optimistic (0.1 pm)    0.01237 [0.00894-0.01314]
+best one-etch set (8), C none                    sourced conservative (1 pm)    0.1237 [0.0894-0.1314]
+two-width rib 300 + 500, slab 50, D realistic    placeholder                    0.3668 [0.3668-0.3768]
+two-width rib 300 + 500, slab 50, D realistic    sourced optimistic (0.1 pm)    0.04077 [0.04077-0.04175]
+two-width rib 300 + 500, slab 50, D realistic    sourced conservative (1 pm)    0.3891 [0.3891-0.3997]
+strip + rib70 500 + 300, E realistic             placeholder                    0.4283 [0.4283-0.4439]
+strip + rib70 500 + 300, E realistic             sourced optimistic (0.1 pm)    0.04792 [0.04792-0.04961]
+strip + rib70 500 + 300, E realistic             sourced conservative (1 pm)    0.4552 [0.4552-0.4718]
+
+
+### crosscheck_fields.py (exit 0, 174 s)
+strip_TE_400 {'n_eff': 2.2296756236144897, 'te_fraction': 0.9659675291980678, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 1.0011, 'without_Ez': 1.0013}
+strip_TE_500 {'n_eff': 2.4487111925482403, 'te_fraction': 0.9834503795076107, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9939, 'without_Ez': 0.992}
+strip_TE_600 {'n_eff': 2.570506742842662, 'te_fraction': 0.9911275220072722, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 69, 'delta_um': 0.006, 'with_Ez': 0.996, 'without_Ez': 0.9946}
+strip_TM_500 {'n_eff': 1.7682365901945514, 'te_fraction': 0.04465673623662128, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9934, 'without_Ez': 0.9922}
+rib_TE_300_slab50 {'n_eff': 2.104432726508586, 'te_fraction': 0.9611985861497759, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.829, 'without_Ez': 0.7071}
+rib_TE_400_slab50 {'n_eff': 2.348998185857924, 'te_fraction': 0.9733287902318651, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8573, 'without_Ez': 0.7291}
+rib_TE_500_slab50 {'n_eff': 2.505826776903502, 'te_fraction': 0.9847749841347109, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8673, 'without_Ez': 0.7383}
+rib_TE_600_slab50 {'n_eff': 2.6020700088080027, 'te_fraction': 0.9910678016290608, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 53, 'delta_um': 0.006, 'with_Ez': 0.8819, 'without_Ez': 0.7583}
+rib_TE_300_slab90 {'n_eff': 2.3273647539735562, 'te_fraction': 0.9743568043190363, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7206, 'without_Ez': 0.6058}
+rib_TE_400_slab90 {'n_eff': 2.467769008130768, 'te_fraction': 0.9791784104857352, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7516, 'without_Ez': 0.6223}
+rib_TE_500_slab90 {'n_eff': 2.570704075000049, 'te_fraction': 0.9861633616721182, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 43, 'delta_um': 0.006, 'with_Ez': 0.8018, 'without_Ez': 0.6689}
+rib_TE_600_slab90 {'n_eff': 2.6405489308520806, 'te_fraction': 0.9910336866714556, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7557, 'without_Ez': 0.6032}
+
+
+### crosschecks.py (exit 0, 1 s)
+1. t tan(1)/1 = 3.84011 nm/deg; femwell 3.8396-3.8725 (max rel dev 0.84%)
+2. closed-form R vs femwell: strips max 0.78%, ribs max 5.38%, median 1.25%
+   strip_TE_400         closed 1.0011  femwell 1.0001  (+0.10%)
+   strip_TE_500         closed 0.9939  femwell 1.0001  (-0.62%)
+   strip_TE_600         closed 0.9960  femwell 0.9999  (-0.39%)
+   strip_TM_500         closed 0.9934  femwell 1.0012  (-0.78%)
+   rib_TE_300_slab50    closed 0.8290  femwell 0.8312  (-0.27%)
+   rib_TE_400_slab50    closed 0.8573  femwell 0.8561  (+0.13%)
+   rib_TE_500_slab50    closed 0.8673  femwell 0.8682  (-0.11%)
+   rib_TE_600_slab50    closed 0.8819  femwell 0.8732  (+1.00%)
+   rib_TE_300_slab90    closed 0.7206  femwell 0.7501  (-3.92%)
+   rib_TE_400_slab90    closed 0.7516  femwell 0.7759  (-3.13%)
+   rib_TE_500_slab90    closed 0.8018  femwell 0.7900  (+1.50%)
+   rib_TE_600_slab90    closed 0.7557  femwell 0.7987  (-5.38%)
+3. impact (placeholder): dw -3.8403 nm, resonance error -710.8 pm
+3. impact (1pm): dw -3.8403 nm, resonance error -710.8 pm
+4. mesh r12 vs r8: max |rel diff| 0.305%
+5. slot R 0.9991-1.0015, SWG 0.9988-1.0005, air strip (r8) [0.9782245025354422, 0.953256463337093]
+
+
+### assumption_sensitivity.py (exit 0, 1 s)
+best: base 0.139
+   sigma_lambda                           0.1 pm (best case)         0.0139 (-90.0%)
+   sigma_lambda                           0.5 pm                     0.06951 (-50.0%)
+   sigma_lambda                           2 pm                       0.2777 (+99.8%)
+   L (sigma_ng, sigma_phase conversion)   50 um                      0.08616 (-38.0%)
+   L (sigma_ng, sigma_phase conversion)   200 um                     0.1795 (+29.2%)
+   n_g in the conversion                  3.37                       0.1078 (-22.5%)
+   MZI fringe precision                   sigma_phase x0.5           0.0898 (-35.4%)
+   MZI fringe precision                   sigma_phase x2             0.1722 (+23.9%)
+   rib noise factor                       0.5                        0.08768 (-36.9%)
+   rib noise factor                       2                          0.2543 (+83.0%)
+   d prior                                1 nm                       0.139 (-0.0%)
+   d prior                                4 nm                       0.139 (+0.0%)
+   n_Si prior                             0.5e-4                     0.1389 (-0.1%)
+   n_Si prior                             2e-4                       0.139 (+0.0%)
+   n_ox prior                             0.5e-3                     0.139 (-0.0%)
+   n_ox prior                             2e-3                       0.139 (+0.0%)
+   derivative step                        h/2                        0.1007 (-27.5%)
+   derivative step                        2h                         0.1473 (+5.9%)
+   strip symmetry                         not imposed (raw femwell)  0.1364 (-1.9%)
+two: base 0.3891
+   sigma_lambda                           0.1 pm (best case)         0.04077 (-89.5%)
+   sigma_lambda                           0.5 pm                     0.1958 (-49.7%)
+   sigma_lambda                           2 pm                       0.7748 (+99.1%)
+   L (sigma_ng, sigma_phase conversion)   50 um                      0.1971 (-49.4%)
+   L (sigma_ng, sigma_phase conversion)   200 um                     0.7698 (+97.8%)
+   n_g in the conversion                  3.37                       0.246 (-36.8%)
+   MZI fringe precision                   sigma_phase x0.5           0.3863 (-0.7%)
+   MZI fringe precision                   sigma_phase x2             0.3917 (+0.7%)
+   rib noise factor                       0.5                        0.2029 (-47.9%)
+   rib noise factor                       2                          0.7684 (+97.5%)
+   d prior                                1 nm                       0.3884 (-0.2%)
+   d prior                                4 nm                       0.3893 (+0.0%)
+   n_Si prior                             0.5e-4                     0.3885 (-0.2%)
+   n_Si prior                             2e-4                       0.3914 (+0.6%)
+   n_ox prior                             0.5e-3                     0.3888 (-0.1%)
+   n_ox prior                             2e-3                       0.3892 (+0.0%)
+   derivative step                        h/2                        0.3997 (+2.7%)
+   derivative step                        2h                         0.3971 (+2.1%)
+   strip symmetry                         not imposed (raw femwell)  0.374 (-3.9%)
+
+
+### claims_checks.py (exit 0, 2 s)
+{
+ "noise": "1pm",
+ "sigma_neff": 2.7483870967741936e-06,
+ "sigma_phase_as_neff": 2.7483870967741928e-06,
+ "combined_sigma_neff": 1.94340315345464e-06,
+ "sets": {
+  "best": {
+   "ring_and_mzi": 0.138992939553791,
+   "ring_only": 0.19005629941888472,
+   "ring_with_combined_neff_noise": 0.1389929395537914,
+   "rel_diff_combined_vs_both": 2.886579864025407e-15
+  },
+  "two": {
+   "ring_and_mzi": 0.38910445940026206,
+   "ring_only": 0.39324669622170144,
+   "ring_with_combined_neff_noise": 0.3891044594003017,
+   "rel_diff_combined_vs_both": 1.0191847366058937e-13
+  }
+ }
+}
+greedy: 32 cases, worse 7, equal 25, max ratio 1.12
+EMpy vs femwell: {'dneff_dw': 0.0582, 'dneff_dt': 0.0474, 'dneff_da': 0.0591, 'dng_dw': 0.133, 'dng_dt': 0.082, 'dng_da': 0.14} {'PASS': 373, 'FAIL': 222, 'PASS_NEAR_ZERO_ABS': 53}
+two-width trend: {'noise': '1pm', 'stage': 'D realistic', 'a_deg_by_slab': {'30': 0.41403086010095796, '40': 0.4027257027535949, '50': 0.38910445940026206, '70': 0.4521460016915199, '90': 0.5972046443308687, '110': 0.8549052259140861, '130': 1.295715157656939, '150': 4.088610030865424}, 'best_slab': 50, 'monotonic_increasing_with_slab': False}
+
+
+### record_environment.py (exit 0, 3 s)
+<!-- generated by src/record_environment.py; do not edit -->
+# Environment
+
+Recorded at git commit `36304e69ce3ecee7838bf1faff82272ff8676628` on `Windows-11-10.0.26200-SP0`.
+
+## Software
+
+| Environment | Python | Packages |
+|---|---|---|
+| main (analysis) | 3.12.4 | numpy 2.2.3, scipy 1.16.2, ElectroMagneticPython 2.2.3, matplotlib 3.10.7 |
+| femwell (solves) | 3.12.4 | femwell 0.1.12, scikit-fem 12.0.2, numpy 2.5.4, scipy 1.18.1, gmsh 4.15.2, shapely 2.2.0, meshio 5.3.5 |
+
+
+
+### make_headline_numbers.py (exit 0, 1 s)
+{'COMPUTED': 114, 'DERIVED': 15, 'CITED': 9, 'ASSUMED': 15} 153 rows; 16 uncommitted files
+
+
+### make_final_docs.py (exit 0, 0 s)
+claims {'SUPPORTED': 10, 'UNSUPPORTED': 1, 'PARTIAL': 1} flagged: ['Air cladding barely matters.', 'A thinner slab is better for a two-width rib set.']
+unverified citations 6
+reproduction None
+
+
