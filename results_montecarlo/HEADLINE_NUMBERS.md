@@ -1,5 +1,8 @@
 # Headline numbers (state as of 2026-10-29)
 
+> **Superseded** by `results_final/HEADLINE_NUMBERS.md` (generated from the data files by
+> `src/make_headline_numbers.py`, primary noise 1 pm). This file is kept as the 2026-10-29 record.
+
 These are the numbers we would currently put in the paper, each with its source file (paths relative
 to the repository root). The strip angle is the full-etch sidewall angle, as a 1-sigma Cramér-Rao bound
 in degrees at derivative step h, with [min–max over h/2, h, 2h].
