@@ -212,15 +212,15 @@ Every value is read from a data file by `src/make_headline_numbers.py`. Strip-an
 
 | Value | Meaning | Category | Source | Commit |
 |---|---|---|---|---|
-| 0.00791 | strips (10): largest relative n_eff difference, EMpy (cell-exact) vs femwell | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_empy.by_geometry.strip.max_abs_rel_diff_neff` | `uncommitted` |
-| 0.00147 | ribs (5): largest relative n_eff difference, EMpy (cell-exact) vs femwell | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_empy.by_geometry.rib.max_abs_rel_diff_neff` | `uncommitted` |
-| 2.5707 | femwell n_eff, rib 500 nm, 90 nm slab | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_published_eim.rib_500_slab90.femwell` | `uncommitted` |
-| -0.012 | Same, relative difference to the published EIM value | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_published_eim.rib_500_slab90.rel_diff` | `uncommitted` |
-| 2.04e-06 | Domain 1.5x larger: largest relative n_eff change (two-width structures) | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_abs_rel_diff_neff` | `uncommitted` |
-| 1.32e-05 | Same: largest relative n_g change | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_abs_rel_diff_ng` | `uncommitted` |
-| 0.00347 | Same: largest relative change of a geometric derivative at h | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_abs_rel_diff_derivative` | `uncommitted` |
-| 0.4093 | Two-width CRB with large-domain geometric derivatives (deg) | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.two_width_crb.large_domain` | `uncommitted` |
-| 0.0519 | Same, relative change of the CRB | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.two_width_crb.rel_change` | `uncommitted` |
+| 0.00791 | strips (10): largest relative n_eff difference, EMpy (cell-exact) vs femwell | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_empy.by_geometry.strip.max_abs_rel_diff_neff` | `2ce4641` |
+| 0.00147 | ribs (5): largest relative n_eff difference, EMpy (cell-exact) vs femwell | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_empy.by_geometry.rib.max_abs_rel_diff_neff` | `2ce4641` |
+| 2.5707 | femwell n_eff, rib 500 nm, 90 nm slab | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_published_eim.rib_500_slab90.femwell` | `2ce4641` |
+| -0.012 | Same, relative difference to the published EIM value | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_vs_published_eim.rib_500_slab90.rel_diff` | `2ce4641` |
+| 2.04e-06 | Domain 1.5x larger: largest relative n_eff change (two-width structures) | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_abs_rel_diff_neff` | `2ce4641` |
+| 1.32e-05 | Same: largest relative n_g change | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_abs_rel_diff_ng` | `2ce4641` |
+| 0.00347 | Same: largest relative change of a geometric derivative at h | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_abs_rel_diff_derivative` | `2ce4641` |
+| 0.4093 | Two-width CRB with large-domain geometric derivatives (deg) | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.two_width_crb.large_domain` | `2ce4641` |
+| 0.0519 | Same, relative change of the CRB | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.two_width_crb.rel_change` | `2ce4641` |
 
 ## J. Assumed inputs (see ASSUMPTIONS.md for their effect)
 
