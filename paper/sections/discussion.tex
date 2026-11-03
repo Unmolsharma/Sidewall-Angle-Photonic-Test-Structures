@@ -5,7 +5,7 @@ For a foundry or a test-chip designer, the practical message is about which stru
 thickness monitors made of strips, however many and in whatever polarization, cannot report the sidewall angle of an
 oxide-clad full etch. Adding one rib from the partial etch does not help when that etch is a separate step with its
 own depth and angle, and better depth metrology does not change this. Adding two or more widths of the same rib does:
-seven rings with a ring and an MZI each, five strips and two ribs on a \qty{50}{nm} slab, bound the strip angle at
+seven structures, five strips and two ribs on a \qty{50}{nm} slab, each read by a ring and an MZI, bound the strip angle at
 \qty{0.39}{\degree} for a \qty{1}{pm} wavelength precision, and the bound is reached by an ordinary nonlinear fit. These
 structures occupy little area and use the same readout as existing ring monitors, so they could sit next to them in
 every reticle field and report the angle where SEM or AFM cross-sections are not taken.
@@ -21,13 +21,15 @@ symmetry argument holds for oxide above and below the core. An air-clad strip is
 angle/width ratio in our solves is 0.9782 rather than 1, but we computed no bound for air-clad sets and make no claim
 about them. The walls are ideal trapezoids tilting about their bottom edge, without corner rounding or roughness; the
 material indices are nominal values without dispersion; and $\ngr$ uses a fixed \qty{5}{nm} wavelength step. None of
-these choices was varied. Rings are assumed to have known resonance orders and lengths, so that each resonance gives $\neff$ directly. The noise
+these choices was varied. All structures in a set are assumed to share the same width offset, thickness and angles, as if placed close enough
+together that variation between them is negligible; local variation within a set was not modeled. Rings are assumed to
+have known resonance orders and lengths, so that each resonance gives $\neff$ directly. The noise
 model starts from a cited wavelength precision, but the step to $\sigma_{\ngr}$ and
 $\sigma_\phi$ is ours and assumes an MZI fringe is located as precisely as a ring resonance. The bounds scale linearly
 with $\sigma_\lambda$ and depend on the other assumptions by tens of percent: halving or doubling the rib noise relative
 to the strips changes the two-width bound by \qty{-47.9}{\percent} and \qty{97.5}{\percent}, and the ring length used in
 the conversion changes it by \qty{-49.4}{\percent} at \qty{50}{\micro m} and \qty{97.8}{\percent} at \qty{200}{\micro m}.
-The priors matter much less, under \qty{0.6}{\percent} for factor-of-two changes. Even the two-width bound carries a numerical uncertainty of about \qty{5}{\percent}, the change when the domain is
+The priors matter much less, at most \qty{0.6}{\percent} for factor-of-two changes. Even the two-width bound carries a numerical uncertainty of about \qty{5}{\percent}, the change when the domain is
 enlarged. The best eight-structure set is limited by derivative accuracy: its bound moves by \qty{-15.3}{\percent} between remeshed and fixed-mesh derivatives
 and by \qty{-27.5}{\percent} at half the derivative step, which is why we quote it as a range. Whether the rib and strip
 angles are independent, partly linked or equal depends on the process; we treat independence as the default because

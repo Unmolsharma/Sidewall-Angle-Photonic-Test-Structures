@@ -148,3 +148,24 @@ slot results themselves are retired and will not be reported.
 6. **Best-set range:** "0.12-0.15 deg" spans the fixed-mesh value 0.1177 and the remeshed 2h value 0.1473; the
    h/2 value 0.1007 and the fixed-mesh 2h value 0.1556 lie outside it. Proposed wording: "0.12-0.14 deg at the
    nominal step (fixed vs remeshed mesh), 0.10-0.16 deg over step sizes".
+
+## 7. Reference verification (2026-11-01/03)
+
+| Key | What it is cited for | Verified how |
+|---|---|---|
+| janz2023 | 1 pm / 0.1 pm wavelength precision, 80 pm/K | arXiv full text read; quotes and pages in `results_final/CITATIONS.md` |
+| frey2006 | n_Si uncertainty 8.67e-5, n_Si 3.48314, dn/dT of Si | arXiv full text (Tables 1, 2, 4); CITATIONS.md |
+| leviton2008 | n of fused silica 1.44502, dn/dT of SiO2 | arXiv full text (Tables 4, 6); CITATIONS.md |
+| johnson2002 | boundary-perturbation formula (method) | APS abstract page + PDF title page; Crossref record |
+| jiao2025 | EIM n_eff 2.602 (validation only) | IntechOpen page, Section 2.3 quoted; Crossref record (book title as in Crossref) |
+| lu2017 | layout-dependent variability models | Crossref record (title-level claim) |
+| orji2018 | cross-sectioning destructive; scatterometry model-dependent, non-unique | PMC author manuscript, Table 1 quoted by fetch agent; DOI confirmed by NIST/imec/PMC listings |
+| raymond2005 | scatterometry in manufacturing (model-based) | Crossref record (title-level) |
+| xing2018 | optical extraction of width/thickness | Crossref record; full text NOT read (TLS error), so the "fixed angle" statement is a \todo |
+| dwivedi2015 | optical extraction of n_eff from interferometers | Crossref record (title-level) |
+| kay1993 | CRLB | library catalogue / publisher listing (ISBN 0133457117) |
+| gustafsson2020, geuzaine2009 | scikit-fem, Gmsh | Crossref records |
+| femwell, empy | software | installed package metadata (version, repository URL) |
+
+Dropped: Selvaraja et al. JSTQE (DOI did not resolve), Chrostowski & Hochberg book and Bogaerts et al. 2012 (verified
+but not needed in the current text; still in refs.bib, not cited, so not printed).
