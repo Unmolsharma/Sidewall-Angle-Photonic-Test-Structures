@@ -1,0 +1,170 @@
+\section{Results}
+\label{sec:results}
+
+Unless stated otherwise, bounds are for stage~D (width, thickness, strip angle, etch depth, rib angle, $\nsi$ and
+$\nox$ unknown) with realistic priors, $\sigma_\lambda=\qty{1}{pm}$, at derivative step $h$, and the bracket gives
+the range over $h/2$, $h$ and $2h$. Table~\ref{tab:summary} collects the main sets.
+
+\begin{table}[!t]
+\caption{Strip sidewall-angle CRLB $\sth$ for the main test-structure sets (stage~D, realistic priors). Ranges are
+over the derivative steps $h/2$, $h$, $2h$; ``MC'' is the standard deviation of 2000 nonlinear fits at
+\qty{1}{pm}.}
+\label{tab:summary}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Set & \multicolumn{2}{c}{$\sth$ at \qty{1}{pm} (\si{\degree})} & \qty{0.1}{pm} & MC \\
+ & $h$ & range & (\si{\degree}) & (\si{\degree}) \\
+\midrule
+Strips only, any number & $\infty$ & -- & $\infty$ & -- \\
+Strips + one rib (\qty{70}{nm} slab) & 25.19 & -- & -- & -- \\
+Strips + rib 300, 500 (\qty{50}{nm}) & 0.3891 & 0.3891--0.3997 & 0.04077 & 0.3976 \\
+Best set of 8 (\qty{90}{nm}) & 0.139 & 0.1007--0.1473 & 0.0139 & 0.1323 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Strips are blind to the angle}
+
+Fig.~\ref{fig:sections} shows the mechanism. For the strip the wall weight $W(y)$ is symmetric about mid-height and
+its centroid sits at $y_c=t/2$; for the rib the weight is concentrated near the slab corner and the centroid lies below
+the middle of the wall. The femwell derivatives follow~\eqref{eq:R}. Over all ten strips, in TE and TM and for both
+$\neff$ and $\ngr$, the ratio $(\partial n/\partial\theta)/(\partial n/\partial w)$ lies between \qty{3.8396}{nm} and
+\qty{3.8725}{nm} per degree, against $t\tan(\qty{1}{\degree})=\qty{3.8401}{nm}$; the largest deviation is
+\qty{0.84}{\percent}. The closed-form $R$ computed from the mode-field centroid matches the femwell ratio within
+\qty{0.79}{\percent} for the strips, a median of \qty{1.25}{\percent} for the ribs, and at worst \qty{5.4}{\percent}.
+For ribs, $R$ lies between 0.831 and 0.873 on the \qty{50}{nm} slab and between 0.750 and 0.799 on the
+\qty{90}{nm} slab, and it falls as the slab thickens (Fig.~\ref{fig:ratio}). With the symmetry imposed, the best set of
+strips of any size from one to eight has an infinite bound: strips alone cannot determine the angle.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics{fig1_sections}
+\caption{Why a strip cannot see its sidewall angle. (a)~Oxide-clad strip, \qty{500}{nm}~$\times$~\qty{220}{nm}, and
+(b)~rib, \qty{500}{nm} wide on a \qty{90}{nm} slab, both TE at $\lambda=\qty{1.55}{\micro m}$, with the transverse
+intensity $|\mathbf{E}_t|^2$, the nominal wall (solid) and a tilted wall (dashed; \qty{8}{\degree}, exaggerated for
+visibility) pivoting about the bottom corner (dot). The femwell angle/width ratio $R$ is printed in each panel.
+(c)~First-order wall-perturbation weight $W$ along the right wall versus height above the pivot, normalized to its
+maximum, with the centroids $y_c$ (dashed). The strip weight is symmetric about mid-height, so a tilt is exactly a width
+change ($R=1$); the rib weight sits low on the wall, so $R<1$.}
+\label{fig:sections}
+\end{figure*}
+
+\begin{figure}[!t]
+\centering
+\includegraphics{fig2_ratio}
+\caption{Angle/width ratio $R$ of the TE ribs versus slab thickness for four rib widths (femwell derivatives at step
+$h$; $\lambda=\qty{1.55}{\micro m}$, $t=\qty{220}{nm}$, oxide-clad). Open symbols: closed form
+$R=(y_c-y_\mathrm{pivot})/(h/2)$ from the mode field at the \qty{50}{nm} and \qty{90}{nm} slabs. The line at $R=1$ is
+the strip value, set by symmetry. Every rib breaks the strip degeneracy, and thinner slabs break it least.}
+\label{fig:ratio}
+\end{figure}
+
+\subsection{One rib against unknown etch parameters}
+
+Fig.~\ref{fig:stages} follows a rib on a \qty{70}{nm} slab through the stages. If the rib shares the strip angle
+(stage~B) and only its depth is unknown, one rib width already gives \qty{0.357}{\degree} and two widths give
+\qty{0.00365}{\degree}. Giving the rib its own angle (stage~C) changes the picture. The single rib then leaves the strip
+angle unidentifiable, as the count in Section~\ref{sec:structures} predicts, while the two-width set loses only part of
+its precision and gives \qty{0.448}{\degree} without priors. Adding $\nsi$, $\nox$ (stage~D) and temperature (stage~E)
+moves the two-width bound to \qty{0.481}{\degree} without priors and to \qty{0.452}{\degree} and \qty{0.455}{\degree}
+with realistic priors.
+
+\begin{figure}[!t]
+\centering
+\includegraphics{fig3_stages}
+\caption{Strip sidewall-angle CRLB as process unknowns are added (B: etch depth, rib angle tied to the strip angle;
+C: separate rib angle; D: silicon and oxide indices; E: temperature), for strips alone (crosses), strips plus one
+\qty{500}{nm} rib (diamonds) and strips plus ribs of \qty{500}{nm} and \qty{300}{nm} (circles), all on a \qty{70}{nm}
+slab, without priors (open) and with realistic priors (filled), at $\sigma_\lambda=\qty{1}{pm}$. Cases with a singular
+Fisher matrix are drawn in the band marked $\infty$. A second width of the same rib is what keeps the angle
+identifiable once the partial etch has its own angle.}
+\label{fig:stages}
+\end{figure}
+
+\subsection{Priors do not rescue a single rib}
+
+With a single rib whose etch angle is independent of the strip's (stage~C, \qty{70}{nm} slab, \qty{1}{pm}), the strip
+angle is unidentifiable without priors. Prior knowledge improves this only partially: realistic priors give
+$\sth=\qty{25.18}{\degree}$, knowing the etch depth to \qty{0.01}{nm} (far beyond what a separate thickness measurement
+provides) gives \qty{5.03}{\degree}, and tying the rib and strip angles to within \qty{1}{\degree} gives \qty{1.25}{\degree}. Two widths of the same rib reach \qty{0.448}{\degree} at the same stage without any of these
+assumptions. In stage~D with realistic priors, the single rib gives between \qty{24.4}{\degree} and \qty{45.4}{\degree}
+depending on the slab; these values are set by the priors, not by the data.
+
+\subsection{Multi-width rib sets}
+
+The two-width set, strip TE rings at the five widths plus ribs of \qty{300}{nm} and \qty{500}{nm} on a \qty{50}{nm} slab,
+gives $\sth=\qty{0.389}{\degree}$ (\qtyrange{0.389}{0.400}{\degree} over steps). It is also insensitive to
+derivative errors: on a fixed mesh the bound is \qty{0.394}{\degree}, a \qty{1.3}{\percent} change, and random errors of
+$\pm\qty{0.3}{\percent}$ on every \qty{300}{nm}-rib derivative spread it only between \qty{0.364}{\degree} and \qty{0.420}{\degree} (5th to 95th percentile).
+
+An exhaustive search over all sets of up to eight structures that use one partial etch finds a lower bound with more
+rib widths and some TM strips. The best set of eight, TE strips of \qty{400}{nm} and \qty{600}{nm}, TM strips of
+\qty{400}{nm} and \qty{600}{nm} and ribs of 300, 400, 500 and \qty{600}{nm} on a \qty{90}{nm} slab, gives
+$\sth=\qty{0.139}{\degree}$ (\qtyrange{0.101}{0.147}{\degree} over steps). The best sets of four to seven structures
+give 0.435, 0.308, 0.153 and \qty{0.145}{\degree}. This set is more sensitive to derivative accuracy than the
+two-width set. With fixed-mesh derivatives for the \qty{300}{nm} rib its bound becomes \qty{0.118}{\degree} (\qty{-15.3}{\percent}), the fixed-mesh and remeshed derivatives differing by at most \qty{0.78}{\percent}, and random
+$\pm\qty{0.3}{\percent}$ errors spread it between \qty{0.109}{\degree} and \qty{0.189}{\degree}. We therefore quote
+\qtyrange{0.12}{0.14}{\degree} for this set, with a derivative-accuracy uncertainty of about \qty{15}{\percent}. Without the
+index unknowns (stage~C, no priors) the best set of eight gives \qty{0.124}{\degree}.
+
+A greedy search that adds one structure at a time reached the exhaustive optimum in 25 of the 32 stage, prior and slab
+cases we compared and fell short in 7, with a bound up to a factor of 1.12 larger. At the best-case \qty{0.1}{pm} wavelength precision
+both bounds shrink tenfold, to \qty{0.0408}{\degree} for the two-width set and \qty{0.0139}{\degree} for the best set;
+they scale linearly with $\sigma_\lambda$ (\qty{0.196}{\degree} and \qty{0.775}{\degree} for the two-width set at 0.5
+and \qty{2}{pm}).
+
+\subsection{Monte Carlo fits reach the bound}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics{fig4_montecarlo}
+\caption{Monte Carlo fits of 2000 simulated noisy measurement sets per set at $\sigma_\lambda=\qty{1}{pm}$
+(stage~D, realistic priors, bounded nonlinear least squares). (a)~Histograms of the fitted strip angle for strip TE
+rings at five widths plus one \qty{500}{nm} rib (grey) and plus ribs of \qty{300}{nm} and \qty{500}{nm} (orange), both on
+a \qty{50}{nm} slab; dotted lines mark the $\pm\qty{3}{\degree}$ fit box. With one rib the fits spread over the whole box
+along the width/angle valley. (b)~Fitted-angle histograms for the two-width set and the best set of eight
+(\qty{90}{nm} slab) with Gaussians of the CRLB width (lines): with two or more rib widths the fit scatter matches the
+bound.}
+\label{fig:mc}
+\end{figure*}
+
+Fig.~\ref{fig:mc} compares the nonlinear fits with the bound. For the two-width set the fitted angles have a standard
+deviation of \qty{0.398}{\degree} (\qtyrange{0.385}{0.410}{\degree}, 95\% bootstrap interval), 1.02 times the CRLB,
+with a bias of \qty{-0.015 \pm 0.0089}{\degree}; none of the 2000 fits failed, ended ambiguous or reached the box edge.
+For the best set the spread is \qty{0.132}{\degree} (\qtyrange{0.125}{0.140}{\degree}), 0.952 times the CRLB, with a
+bias of \qty{0.0075 \pm 0.003}{\degree}; 4 fits ended at the box edge and none failed. The spread is slightly below the
+femwell CRLB because the Monte Carlo uses the surrogate model, whose own bound at nominal is \qty{0.1249}{\degree}: its
+\qty{300}{nm}-rib slopes are a smooth fit through the remeshing scatter. Measured against that bound the fits are
+slightly less efficient than the CRLB, as expected for a nonlinear estimator. With one rib the fits find the valley predicted by the
+symmetry argument. The linearized bound is \qty{29.52}{\degree}, so the fit box of $\pm\qty{3}{\degree}$ confines the
+estimates rather than the data: 1190 of the 2000 fits end at the edge of the box, 12 are ambiguous and 20 fail, and the
+fitted widths and angles lie on a line of slope \qty{3.842}{nm} per degree with a correlation of 0.999998, against
+$t\tan(\qty{1}{\degree})=\qty{3.8401}{nm}$ (Fig.~\ref{fig:mc}(a)).
+
+\subsection{Slab thickness}
+
+For the two-width set the bound depends strongly on the slab (Fig.~\ref{fig:slab}). It is lowest at \qty{50}{nm}
+(\qty{0.389}{\degree}) and rises slowly toward thinner slabs, to \qty{0.403}{\degree} at \qty{40}{nm} and
+\qty{0.414}{\degree} at \qty{30}{nm}, and quickly toward thicker ones, to \qty{0.597}{\degree} at \qty{90}{nm} and
+\qty{4.089}{\degree} at \qty{150}{nm}. Among the slabs simulated the optimum is therefore \qty{50}{nm}, not
+the thinnest slab. Thinner slabs bring $R$ closer to 1 (Fig.~\ref{fig:ratio}), but we have not separated that effect
+from the other ways the slab changes the two rib modes.
+
+\begin{figure}[!t]
+\centering
+\includegraphics{fig5_slab}
+\caption{CRLB of the two-width set (strip TE rings at 400--\qty{600}{nm} plus ribs of \qty{300}{nm} and
+\qty{500}{nm}) versus slab thickness, stage~D, realistic priors, $\sigma_\lambda=\qty{1}{pm}$, $\lambda=\qty{1.55}{\micro m}$.
+Bars span the derivative steps $h/2$, $h$, $2h$. The bound is lowest at \qty{50}{nm} and grows tenfold by
+\qty{150}{nm}.}
+\label{fig:slab}
+\end{figure}
+
+\subsection{Cost of ignoring the angle}
+
+When strip rings are fitted with the angle held at its nominal value, a real \qty{1}{\degree} tilt is absorbed as a width
+change of \qty{-3.84}{nm}. Using that width to predict a \qty{500}{nm} rib ring on a \qty{90}{nm} slab, whose angle
+sensitivity differs ($R<1$), mispredicts its resonance by $\delta\lambda=\lambda\,\delta\neff/\ngr=\qty{-711}{pm}$ per
+degree of unmodeled tilt.

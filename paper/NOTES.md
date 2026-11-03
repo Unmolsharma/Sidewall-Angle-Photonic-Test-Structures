@@ -119,6 +119,7 @@ slot results themselves are retired and will not be reported.
 | 2a. One rib with separate etch angle unidentifiable | C#3 SUPPORTED | ok |
 | 2b. Etch-depth knowledge does not rescue it | C#4 SUPPORTED | ok |
 | 2c. "Only a tight angle link between the etches does" | **not in CLAIMS.md** | evidence: 1 deg link gives 1.247 deg (**H:L47**), which is still well above the two-width set; no claim row says "only". See question 2. |
+| 2c'. Single-rib sentence (replaces "only a tight angle link rescues"; decided 2026-11-03) | not a CLAIMS.md row | All at stage C, 1 pm, strip TE 400-600 + rib 500 nm on the 70 nm slab, from `results_final/sym_search_1pm/data/priors_table.csv` and `d_prior_sweep.json`: no prior: unidentifiable; realistic priors 25.18 deg (H row "Priors table, strip + rib70 (500 nm), stage C, realistic priors"); depth known to 0.01 nm 5.032 deg (**H:L49**); angle link 1 deg 1.247 deg (**H:L47**); two widths of the same rib (500 + 300 nm, same slab), no priors 0.4477 deg (**H:L44**). The user's draft quoted 0.39 deg for two widths, which is the stage D / 50 nm slab value; the stage C / 70 nm value keeps all four numbers at one stage. |
 | 2d. Counting rule | reasoning, not a claims row | consistent with C#3 and the stage table; state as an argument, not a result |
 | 3a. Multi-width sets work | C#5 SUPPORTED | ok |
 | 3b. Monte Carlo matches the CRB | C#8 SUPPORTED | ok |

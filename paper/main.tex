@@ -1,0 +1,60 @@
+\documentclass[journal]{IEEEtran}
+
+% ---------------------------------------------------------------- packages
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{siunitx}
+\sisetup{range-phrase=--, range-units=single, separate-uncertainty=true, group-digits=integer}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+
+% ---------------------------------------------------------------- todo notes
+% Set to true to hide every \todo{} for a clean version.
+\newif\iffinal
+\finalfalse
+\iffinal
+  \newcommand{\todo}[1]{}
+\else
+  \usepackage[colorinlistoftodos,textsize=scriptsize]{todonotes}
+  \setuptodonotes{inline,color=yellow!40}
+\fi
+
+\graphicspath{{figures/}}
+
+% ---------------------------------------------------------------- notation
+\newcommand{\neff}{n_\mathrm{eff}}
+\newcommand{\ngr}{n_\mathrm{g}}
+\newcommand{\nsi}{n_\mathrm{Si}}
+\newcommand{\nox}{n_\mathrm{ox}}
+\newcommand{\sth}{\sigma_\theta}
+
+\begin{document}
+
+\title{Optical Test Structures for Waveguide Sidewall Angle: Why Strips Are Blind and How Rib Width Sets Recover the Angle}
+
+\author{Unmol~Sharma and David~[LAST NAME]%
+\thanks{U.~Sharma is with Vanderbilt University, Nashville, TN, USA (e-mail: \todo{e-mail}).}%
+\thanks{D.~[LAST NAME] is with the SOL Lab, Vanderbilt University, Nashville, TN, USA.}%
+\thanks{\todo{affiliation details, corresponding author, manuscript dates}}}
+
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/theory}
+\input{sections/structures}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\section*{Acknowledgment}
+\todo{acknowledgments: funding, lab, people}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}
