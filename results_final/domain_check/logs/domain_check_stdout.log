@@ -1,0 +1,7 @@
+[2026-11-03 13:56:03] free RAM 9.0 GB, ~2.5 GB per worker -> 2 workers
+[2026-11-03 13:56:03] 53 tasks, 0 cached, 53 to run, 2 workers
+[2026-11-03 13:56:03] on battery (68%): stopping 0 running solve(s) and re-queueing them; re-checking every 5 min
+[2026-11-03 16:49:54] power OK again (50%), resuming
+[2026-11-03 16:55:45] 25 solved, 27 queued, 1 in flight, 179.7 min elapsed, ~194 min left, free RAM 9.5 GB
+[2026-11-03 17:15:26] 50 solved, 2 queued, 1 in flight, 199.4 min elapsed, ~8 min left, free RAM 6.6 GB
+[2026-11-03 17:18:15] finished: 53 solved this run, 0 failed
