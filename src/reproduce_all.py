@@ -26,7 +26,7 @@ VENV = 'C:/Users/unmol/.venvs/femwell/Scripts/python.exe'
 REL_TOL = 1e-9
 CACHES = ['results_femwell/cache/solves_r12.jsonl', 'results_femwell/cache/solves_r8.jsonl',
           'results_etchdepth_femwell/cache/solves_r12.jsonl', 'results_montecarlo/cache/solves_r12.jsonl',
-          'results_montecarlo/fixedmesh/cache/solves_r12.jsonl']
+          'results_montecarlo/fixedmesh/cache/solves_r12.jsonl', 'results_final/domain_check/cache/solves_r12.jsonl']
 FROZEN = {
     'results_priors_search/data/search.json': 'input of strips_angle_info.py; written by the pre-symmetry priors_search.py run, '
         'whose structure pool has since grown, so it cannot be regenerated as committed (its numbers are retired)',
@@ -49,11 +49,13 @@ STEPS = [
     (M, 'montecarlo.py mc', {'MC_NPROC': '4'}),
     (M, 'montecarlo.py mc1pm', {'MC_NPROC': '4'}),
     (M, 'montecarlo.py valley', {}),
+    (M, 'montecarlo.py valley1pm', {}),
     (M, 'robustness_rib300.py', {}),
     (M, 'robustness_rib300.py 1pm', {}),
     (M, 'noise_sourced.py', {}),
     (VENV, 'crosscheck_fields.py', {}),
     (M, 'crosschecks.py', {}),
+    (M, 'validation_checks.py', {}),
     (M, 'assumption_sensitivity.py', {}),
     (M, 'claims_checks.py', {}),
     (M, 'record_environment.py', {}),
@@ -72,6 +74,7 @@ COMPARE = [   # regenerated files compared with the committed ones
     'results_montecarlo/data/surrogate_accuracy_1pm.json',
     'results_montecarlo/data/mc_results.json', 'results_montecarlo/data/mc_fits.csv',
     'results_montecarlo/data/mc_results_1pm.json', 'results_montecarlo/data/mc_fits_1pm.csv', 'results_montecarlo/data/mc_valley.json',
+    'results_montecarlo/data/mc_valley_1pm.json', 'results_final/data/validation.json',
     'results_montecarlo/robustness/data/robustness.json', 'results_montecarlo/robustness/data/robustness_1pm.json',
     'results_montecarlo/noise_sourced/data/noise_sourced.json',
     'results_final/data/crosscheck_fields.json', 'results_final/data/crosschecks.json',

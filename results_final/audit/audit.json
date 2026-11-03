@@ -234,6 +234,46 @@
     },
     {
      "line": 44,
+     "number": "0.3569",
+     "source": "results_final/sym_search_1pm/data/priors_table.csv",
+     "cited": [
+      "results_final/sym_search_1pm/data/priors_table.csv"
+     ],
+     "retired": false,
+     "context": "| 0.3569 | Priors table, strip + rib70 (500 nm), stage B (rib angle = strip angle), no priors: CRB at h (deg) | COMPUTED | `src/sym_search.p"
+    },
+    {
+     "line": 45,
+     "number": "0.00365",
+     "source": "results_final/sym_search_1pm/data/priors_table.csv",
+     "cited": [
+      "results_final/sym_search_1pm/data/priors_table.csv"
+     ],
+     "retired": false,
+     "context": "| 0.00365 | Priors table, strip + rib70 (500 + 300 nm), stage B (rib angle = strip angle), no priors: CRB at h (deg) | COMPUTED | `src/sym_s"
+    },
+    {
+     "line": 46,
+     "number": "25.18",
+     "source": "results_final/sym_search_1pm/data/priors_table.csv",
+     "cited": [
+      "results_final/sym_search_1pm/data/priors_table.csv"
+     ],
+     "retired": false,
+     "context": "| 25.18 | Priors table, strip + rib70 (500 nm), stage C, realistic priors: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `results_fi"
+    },
+    {
+     "line": 47,
+     "number": "0.4809",
+     "source": "results_final/sym_search_1pm/data/priors_table.csv",
+     "cited": [
+      "results_final/sym_search_1pm/data/priors_table.csv"
+     ],
+     "retired": false,
+     "context": "| 0.4809 | Priors table, strip + rib70 (500 + 300 nm), stage D, no priors: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `results_fi"
+    },
+    {
+     "line": 48,
      "number": "0.4477",
      "source": "results_final/sym_search_1pm/data/priors_table.csv",
      "cited": [
@@ -243,7 +283,7 @@
      "context": "| 0.4477 | Priors table, strip + rib70 (500 + 300 nm), stage C, no priors: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `results_fi"
     },
     {
-     "line": 45,
+     "line": 49,
      "number": "0.4521",
      "source": "results_final/sym_search_1pm/data/priors_table.csv",
      "cited": [
@@ -253,7 +293,7 @@
      "context": "| 0.4521 | Priors table, strip + rib70 (500 + 300 nm), stage D, realistic priors: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `res"
     },
     {
-     "line": 46,
+     "line": 50,
      "number": "0.4552",
      "source": "results_final/sym_search_1pm/data/priors_table.csv",
      "cited": [
@@ -263,7 +303,7 @@
      "context": "| 0.4552 | Priors table, strip + rib70 (500 + 300 nm), stage E (+T), realistic priors: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` →"
     },
     {
-     "line": 47,
+     "line": 51,
      "number": "1.247",
      "source": "results_final/sym_search_1pm/data/priors_table.csv",
      "cited": [
@@ -273,7 +313,7 @@
      "context": "| 1.247 | Priors table, strip + rib70 (500 nm), stage C, rib-strip angle link 1 deg: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `"
     },
     {
-     "line": 48,
+     "line": 52,
      "number": "25.19",
      "source": "results_final/sym_search_1pm/data/priors_table.csv",
      "cited": [
@@ -283,7 +323,7 @@
      "context": "| 25.19 | Priors table, strip + rib70 (500 nm), stage D, realistic priors: CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `results_fi"
     },
     {
-     "line": 49,
+     "line": 53,
      "number": "5.032",
      "source": "results_final/sym_search_1pm/data/d_prior_sweep.json",
      "cited": [
@@ -293,7 +333,7 @@
      "context": "| 5.032 | Single rib, stage C, etch depth known to 0.01 nm (prior): CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `results_final/sym"
     },
     {
-     "line": 49,
+     "line": 53,
      "number": "0.01",
      "source": "results_final/sym_search_1pm/data/d_prior_sweep.json",
      "cited": [
@@ -303,7 +343,7 @@
      "context": "| 5.032 | Single rib, stage C, etch depth known to 0.01 nm (prior): CRB at h (deg) | COMPUTED | `src/sym_search.py 1pm` → `results_final/sym"
     },
     {
-     "line": 56,
+     "line": 60,
      "number": "0.139",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -313,7 +353,17 @@
      "context": "| 0.139 | case a (best multi-width set, 90 nm slab): CRB from femwell derivatives (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results_mo"
     },
     {
-     "line": 57,
+     "line": 61,
+     "number": "0.1249",
+     "source": "results_montecarlo/data/mc_results_1pm.json",
+     "cited": [
+      "results_montecarlo/data/mc_results_1pm.json"
+     ],
+     "retired": false,
+     "context": "| 0.1249 | case a (best multi-width set, 90 nm slab): CRB of the Monte Carlo surrogate model at nominal (deg) | COMPUTED | `src/montecarlo.p"
+    },
+    {
+     "line": 62,
      "number": "0.1323",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -323,7 +373,7 @@
      "context": "| 0.1323 | case a (best multi-width set, 90 nm slab): spread (std) of the fitted strip angle (deg) | COMPUTED | `src/montecarlo.py mc1pm` → "
     },
     {
-     "line": 58,
+     "line": 63,
      "number": "0.1253",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -333,7 +383,7 @@
      "context": "| 0.1253 | case a (best multi-width set, 90 nm slab): spread, 95% bootstrap CI low (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results_m"
     },
     {
-     "line": 59,
+     "line": 64,
      "number": "0.1396",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -343,7 +393,7 @@
      "context": "| 0.1396 | case a (best multi-width set, 90 nm slab): spread, 95% bootstrap CI high (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results_"
     },
     {
-     "line": 60,
+     "line": 65,
      "number": "0.952",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -353,7 +403,7 @@
      "context": "| 0.952 | case a (best multi-width set, 90 nm slab): spread / CRB | COMPUTED | `src/montecarlo.py mc1pm` → `results_montecarlo/data/mc_resul"
     },
     {
-     "line": 61,
+     "line": 66,
      "number": "0.0075",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -363,7 +413,7 @@
      "context": "| 0.0075 | case a (best multi-width set, 90 nm slab): bias of the fitted strip angle (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results"
     },
     {
-     "line": 62,
+     "line": 67,
      "number": "0.003",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -373,7 +423,7 @@
      "context": "| 0.003 | case a (best multi-width set, 90 nm slab): standard error of the bias (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results_mont"
     },
     {
-     "line": 67,
+     "line": 72,
      "number": "0.3891",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -383,7 +433,17 @@
      "context": "| 0.3891 | case b (strip + rib 300 + 500 nm, 50 nm slab): CRB from femwell derivatives (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `resul"
     },
     {
-     "line": 68,
+     "line": 73,
+     "number": "0.3942",
+     "source": "results_montecarlo/data/mc_results_1pm.json",
+     "cited": [
+      "results_montecarlo/data/mc_results_1pm.json"
+     ],
+     "retired": false,
+     "context": "| 0.3942 | case b (strip + rib 300 + 500 nm, 50 nm slab): CRB of the Monte Carlo surrogate model at nominal (deg) | COMPUTED | `src/montecar"
+    },
+    {
+     "line": 74,
      "number": "0.3976",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -393,7 +453,7 @@
      "context": "| 0.3976 | case b (strip + rib 300 + 500 nm, 50 nm slab): spread (std) of the fitted strip angle (deg) | COMPUTED | `src/montecarlo.py mc1pm"
     },
     {
-     "line": 69,
+     "line": 75,
      "number": "0.385",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -403,7 +463,7 @@
      "context": "| 0.385 | case b (strip + rib 300 + 500 nm, 50 nm slab): spread, 95% bootstrap CI low (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `result"
     },
     {
-     "line": 70,
+     "line": 76,
      "number": "0.4096",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -413,7 +473,7 @@
      "context": "| 0.4096 | case b (strip + rib 300 + 500 nm, 50 nm slab): spread, 95% bootstrap CI high (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `resu"
     },
     {
-     "line": 71,
+     "line": 77,
      "number": "1.022",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -423,7 +483,7 @@
      "context": "| 1.022 | case b (strip + rib 300 + 500 nm, 50 nm slab): spread / CRB | COMPUTED | `src/montecarlo.py mc1pm` → `results_montecarlo/data/mc_r"
     },
     {
-     "line": 72,
+     "line": 78,
      "number": "-0.015",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -433,7 +493,7 @@
      "context": "| -0.015 | case b (strip + rib 300 + 500 nm, 50 nm slab): bias of the fitted strip angle (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `res"
     },
     {
-     "line": 73,
+     "line": 79,
      "number": "0.0089",
      "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
@@ -443,27 +503,37 @@
      "context": "| 0.0089 | case b (strip + rib 300 + 500 nm, 50 nm slab): standard error of the bias (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results"
     },
     {
-     "line": 77,
-     "number": "29.44",
-     "source": "results_montecarlo/data/mc_results.json",
+     "line": 84,
+     "number": "29.52",
+     "source": "results_montecarlo/data/mc_results_1pm.json",
      "cited": [
-      "results_montecarlo/data/mc_results.json"
+      "results_montecarlo/data/mc_results_1pm.json"
      ],
      "retired": false,
-     "context": "| 29.44 | case c (strip + one rib 500 nm, placeholder noise): CRB (deg) | COMPUTED | `src/montecarlo.py mc` → `results_montecarlo/data/mc_re"
+     "context": "| 29.52 | case c: CRB from femwell derivatives (deg) | COMPUTED | `src/montecarlo.py mc1pm` → `results_montecarlo/data/mc_results_1pm.json` "
     },
     {
-     "line": 79,
+     "line": 89,
      "number": "3.842",
-     "source": "results_montecarlo/data/mc_valley.json",
+     "source": "results_montecarlo/data/mc_valley_1pm.json",
      "cited": [
-      "results_montecarlo/data/mc_valley.json"
+      "results_montecarlo/data/mc_valley_1pm.json"
      ],
      "retired": false,
-     "context": "| 3.842 | case c: slope of fitted width vs fitted angle (nm/deg): the width/angle valley | COMPUTED | `src/montecarlo.py valley` → `results_"
+     "context": "| 3.842 | case c: slope of fitted width vs fitted angle (nm/deg): the width/angle valley | COMPUTED | `src/montecarlo.py valley1pm` → `resul"
     },
     {
-     "line": 86,
+     "line": 90,
+     "number": "0.999998",
+     "source": "results_montecarlo/data/mc_valley_1pm.json",
+     "cited": [
+      "results_montecarlo/data/mc_valley_1pm.json"
+     ],
+     "retired": false,
+     "context": "| 0.999998 | case c: correlation of fitted width and angle | COMPUTED | `src/montecarlo.py valley1pm` → `results_montecarlo/data/mc_valley_1"
+    },
+    {
+     "line": 96,
      "number": "0.139",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -473,7 +543,7 @@
      "context": "| 0.139 | best set (case a): CRB with remeshed derivatives (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/robustnes"
     },
     {
-     "line": 87,
+     "line": 97,
      "number": "0.1177",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -483,7 +553,7 @@
      "context": "| 0.1177 | best set (case a): CRB with fixed-mesh rib 300 nm derivatives (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montec"
     },
     {
-     "line": 88,
+     "line": 98,
      "number": "0.1556",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -493,7 +563,7 @@
      "context": "| 0.1556 | best set (case a): fixed mesh, max over h/2, h, 2h (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/robust"
     },
     {
-     "line": 89,
+     "line": 99,
      "number": "-0.1528",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -503,7 +573,7 @@
      "context": "| -0.1528 | best set (case a): fixed mesh vs remeshed, relative change of the CRB | COMPUTED | `src/robustness_rib300.py 1pm` → `results_mon"
     },
     {
-     "line": 90,
+     "line": 100,
      "number": "0.007753",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -514,7 +584,7 @@
      "context": "| 0.007753 | best set (case a): largest relative difference, fixed-mesh vs remeshed rib 300 nm derivative (any parameter, n_eff or n_g, h/2,"
     },
     {
-     "line": 91,
+     "line": 101,
      "number": "0.1088",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -524,7 +594,7 @@
      "context": "| 0.1088 | best set (case a): random ±0.3% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib300"
     },
     {
-     "line": 91,
+     "line": 101,
      "number": "0.3",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -534,7 +604,7 @@
      "context": "| 0.1088 | best set (case a): random ±0.3% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib300"
     },
     {
-     "line": 92,
+     "line": 102,
      "number": "0.1885",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -544,7 +614,7 @@
      "context": "| 0.1885 | best set (case a): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/robustness/data/"
     },
     {
-     "line": 93,
+     "line": 103,
      "number": "0.06996",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -554,7 +624,7 @@
      "context": "| 0.06996 | best set (case a): random ±1.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib30"
     },
     {
-     "line": 93,
+     "line": 103,
      "number": "1.0",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -564,7 +634,7 @@
      "context": "| 0.06996 | best set (case a): random ±1.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib30"
     },
     {
-     "line": 94,
+     "line": 104,
      "number": "0.354",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -574,7 +644,7 @@
      "context": "| 0.354 | best set (case a): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/robustness/data/r"
     },
     {
-     "line": 95,
+     "line": 105,
      "number": "0.03497",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -584,7 +654,7 @@
      "context": "| 0.03497 | best set (case a): random ±3.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib30"
     },
     {
-     "line": 95,
+     "line": 105,
      "number": "3.0",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -594,7 +664,7 @@
      "context": "| 0.03497 | best set (case a): random ±3.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib30"
     },
     {
-     "line": 96,
+     "line": 106,
      "number": "0.3394",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -604,7 +674,7 @@
      "context": "| 0.3394 | best set (case a): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/robustness/data/"
     },
     {
-     "line": 97,
+     "line": 107,
      "number": "0.02248",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -614,7 +684,7 @@
      "context": "| 0.02248 | best set (case a): random ±5.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib30"
     },
     {
-     "line": 97,
+     "line": 107,
      "number": "5.0",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -624,7 +694,7 @@
      "context": "| 0.02248 | best set (case a): random ±5.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/robustness_rib30"
     },
     {
-     "line": 98,
+     "line": 108,
      "number": "0.3085",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -634,7 +704,7 @@
      "context": "| 0.3085 | best set (case a): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/robustness/data/"
     },
     {
-     "line": 99,
+     "line": 109,
      "number": "0.3891",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -644,7 +714,7 @@
      "context": "| 0.3891 | two-width set, 50 nm slab (case b): CRB with remeshed derivatives (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_mo"
     },
     {
-     "line": 100,
+     "line": 110,
      "number": "0.3941",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -654,7 +724,7 @@
      "context": "| 0.3941 | two-width set, 50 nm slab (case b): CRB with fixed-mesh rib 300 nm derivatives (deg) | COMPUTED | `src/robustness_rib300.py 1pm` "
     },
     {
-     "line": 101,
+     "line": 111,
      "number": "0.4026",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -664,7 +734,7 @@
      "context": "| 0.4026 | two-width set, 50 nm slab (case b): fixed mesh, max over h/2, h, 2h (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_"
     },
     {
-     "line": 102,
+     "line": 112,
      "number": "0.01293",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -674,7 +744,7 @@
      "context": "| 0.01293 | two-width set, 50 nm slab (case b): fixed mesh vs remeshed, relative change of the CRB | COMPUTED | `src/robustness_rib300.py 1p"
     },
     {
-     "line": 103,
+     "line": 113,
      "number": "0.001348",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -685,7 +755,7 @@
      "context": "| 0.001348 | two-width set, 50 nm slab (case b): largest relative difference, fixed-mesh vs remeshed rib 300 nm derivative (any parameter, n"
     },
     {
-     "line": 104,
+     "line": 114,
      "number": "0.3638",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -695,7 +765,7 @@
      "context": "| 0.3638 | two-width set, 50 nm slab (case b): random ±0.3% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 104,
+     "line": 114,
      "number": "0.3",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -705,7 +775,7 @@
      "context": "| 0.3638 | two-width set, 50 nm slab (case b): random ±0.3% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 105,
+     "line": 115,
      "number": "0.4198",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -715,7 +785,7 @@
      "context": "| 0.4198 | two-width set, 50 nm slab (case b): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo"
     },
     {
-     "line": 106,
+     "line": 116,
      "number": "0.3107",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -725,7 +795,7 @@
      "context": "| 0.3107 | two-width set, 50 nm slab (case b): random ±1.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 106,
+     "line": 116,
      "number": "1.0",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -735,7 +805,7 @@
      "context": "| 0.3107 | two-width set, 50 nm slab (case b): random ±1.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 107,
+     "line": 117,
      "number": "0.5131",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -745,7 +815,7 @@
      "context": "| 0.5131 | two-width set, 50 nm slab (case b): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo"
     },
     {
-     "line": 108,
+     "line": 118,
      "number": "0.2282",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -755,7 +825,7 @@
      "context": "| 0.2282 | two-width set, 50 nm slab (case b): random ±3.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 108,
+     "line": 118,
      "number": "3.0",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -765,7 +835,7 @@
      "context": "| 0.2282 | two-width set, 50 nm slab (case b): random ±3.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 109,
+     "line": 119,
      "number": "1.424",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -775,7 +845,7 @@
      "context": "| 1.424 | two-width set, 50 nm slab (case b): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/"
     },
     {
-     "line": 110,
+     "line": 120,
      "number": "0.1773",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -785,7 +855,7 @@
      "context": "| 0.1773 | two-width set, 50 nm slab (case b): random ±5.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 110,
+     "line": 120,
      "number": "5.0",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -795,7 +865,7 @@
      "context": "| 0.1773 | two-width set, 50 nm slab (case b): random ±5.0% rib 300 nm derivative errors, 5th percentile of the CRB (deg) | COMPUTED | `src/"
     },
     {
-     "line": 111,
+     "line": 121,
      "number": "2.718",
      "source": "results_montecarlo/robustness/data/robustness_1pm.json",
      "cited": [
@@ -805,7 +875,7 @@
      "context": "| 2.718 | two-width set, 50 nm slab (case b): same, 95th percentile (deg) | COMPUTED | `src/robustness_rib300.py 1pm` → `results_montecarlo/"
     },
     {
-     "line": 117,
+     "line": 127,
      "number": "0.139",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -815,7 +885,7 @@
      "context": "| 0.139 | best set (1 pm search): CRB at the primary 1 pm, stage D realistic (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_f"
     },
     {
-     "line": 118,
+     "line": 128,
      "number": "0.0139",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -825,7 +895,7 @@
      "context": "| 0.0139 | best set (1 pm search): CRB at sigma_lambda = 0.1 pm (best case) (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_fi"
     },
     {
-     "line": 118,
+     "line": 128,
      "number": "0.1",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -835,7 +905,7 @@
      "context": "| 0.0139 | best set (1 pm search): CRB at sigma_lambda = 0.1 pm (best case) (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_fi"
     },
     {
-     "line": 119,
+     "line": 129,
      "number": "0.06951",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -845,7 +915,7 @@
      "context": "| 0.06951 | best set (1 pm search): CRB at sigma_lambda = 0.5 pm (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_final/data/as"
     },
     {
-     "line": 119,
+     "line": 129,
      "number": "0.5",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -855,7 +925,7 @@
      "context": "| 0.06951 | best set (1 pm search): CRB at sigma_lambda = 0.5 pm (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_final/data/as"
     },
     {
-     "line": 120,
+     "line": 130,
      "number": "0.2777",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -865,7 +935,7 @@
      "context": "| 0.2777 | best set (1 pm search): CRB at sigma_lambda = 2 pm (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_final/data/assum"
     },
     {
-     "line": 121,
+     "line": 131,
      "number": "0.3891",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -875,7 +945,7 @@
      "context": "| 0.3891 | two-width set (1 pm search): CRB at the primary 1 pm, stage D realistic (deg) | COMPUTED | `src/assumption_sensitivity.py` → `res"
     },
     {
-     "line": 122,
+     "line": 132,
      "number": "0.04077",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -885,7 +955,7 @@
      "context": "| 0.04077 | two-width set (1 pm search): CRB at sigma_lambda = 0.1 pm (best case) (deg) | COMPUTED | `src/assumption_sensitivity.py` → `resu"
     },
     {
-     "line": 122,
+     "line": 132,
      "number": "0.1",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -895,7 +965,7 @@
      "context": "| 0.04077 | two-width set (1 pm search): CRB at sigma_lambda = 0.1 pm (best case) (deg) | COMPUTED | `src/assumption_sensitivity.py` → `resu"
     },
     {
-     "line": 123,
+     "line": 133,
      "number": "0.1958",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -905,7 +975,7 @@
      "context": "| 0.1958 | two-width set (1 pm search): CRB at sigma_lambda = 0.5 pm (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_final/dat"
     },
     {
-     "line": 123,
+     "line": 133,
      "number": "0.5",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -915,7 +985,7 @@
      "context": "| 0.1958 | two-width set (1 pm search): CRB at sigma_lambda = 0.5 pm (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_final/dat"
     },
     {
-     "line": 124,
+     "line": 134,
      "number": "0.7748",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -925,7 +995,7 @@
      "context": "| 0.7748 | two-width set (1 pm search): CRB at sigma_lambda = 2 pm (deg) | COMPUTED | `src/assumption_sensitivity.py` → `results_final/data/"
     },
     {
-     "line": 130,
+     "line": 140,
      "number": "2306.15643",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -935,7 +1005,7 @@
      "context": "| 1 pm | Primary resonance-wavelength precision | CITED | S. Janz et al., \"Measurement Accuracy in Silicon Photonic Ring Resonator Thermomet"
     },
     {
-     "line": 130,
+     "line": 140,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -945,7 +1015,7 @@
      "context": "| 1 pm | Primary resonance-wavelength precision | CITED | S. Janz et al., \"Measurement Accuracy in Silicon Photonic Ring Resonator Thermomet"
     },
     {
-     "line": 131,
+     "line": 141,
      "number": "0.1",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -955,7 +1025,7 @@
      "context": "| 0.1 pm | Best-case resonance-wavelength precision (temperature-bath-stabilized ring) | CITED | S. Janz et al., \"Measurement Accuracy in Si"
     },
     {
-     "line": 131,
+     "line": 141,
      "number": "2306.15643",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -965,7 +1035,7 @@
      "context": "| 0.1 pm | Best-case resonance-wavelength precision (temperature-bath-stabilized ring) | CITED | S. Janz et al., \"Measurement Accuracy in Si"
     },
     {
-     "line": 131,
+     "line": 141,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -975,7 +1045,7 @@
      "context": "| 0.1 pm | Best-case resonance-wavelength precision (temperature-bath-stabilized ring) | CITED | S. Janz et al., \"Measurement Accuracy in Si"
     },
     {
-     "line": 131,
+     "line": 141,
      "number": "0.1",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -985,7 +1055,7 @@
      "context": "| 0.1 pm | Best-case resonance-wavelength precision (temperature-bath-stabilized ring) | CITED | S. Janz et al., \"Measurement Accuracy in Si"
     },
     {
-     "line": 131,
+     "line": 141,
      "number": "0.1",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -995,7 +1065,7 @@
      "context": "| 0.1 pm | Best-case resonance-wavelength precision (temperature-bath-stabilized ring) | CITED | S. Janz et al., \"Measurement Accuracy in Si"
     },
     {
-     "line": 132,
+     "line": 142,
      "number": "2.75e-06",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1006,7 +1076,7 @@
      "context": "| 2.75e-06 | SIGMA_NEFF at 1 pm | DERIVED | sigma_neff = n_g sigma_lambda / lambda, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_g 4.26 (i"
     },
     {
-     "line": 132,
+     "line": 142,
      "number": "1.55",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1017,7 +1087,7 @@
      "context": "| 2.75e-06 | SIGMA_NEFF at 1 pm | DERIVED | sigma_neff = n_g sigma_lambda / lambda, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_g 4.26 (i"
     },
     {
-     "line": 132,
+     "line": 142,
      "number": "4.26",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1028,7 +1098,7 @@
      "context": "| 2.75e-06 | SIGMA_NEFF at 1 pm | DERIVED | sigma_neff = n_g sigma_lambda / lambda, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_g 4.26 (i"
     },
     {
-     "line": 133,
+     "line": 143,
      "number": "0.00107",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1039,7 +1109,7 @@
      "context": "| 0.00107 | SIGMA_NG at 1 pm | DERIVED | sigma_ng = sqrt(2) sigma_lambda n_g^2 L / lambda^2, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_"
     },
     {
-     "line": 133,
+     "line": 143,
      "number": "1.55",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1050,7 +1120,7 @@
      "context": "| 0.00107 | SIGMA_NG at 1 pm | DERIVED | sigma_ng = sqrt(2) sigma_lambda n_g^2 L / lambda^2, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_"
     },
     {
-     "line": 133,
+     "line": 143,
      "number": "4.26",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1061,7 +1131,7 @@
      "context": "| 0.00107 | SIGMA_NG at 1 pm | DERIVED | sigma_ng = sqrt(2) sigma_lambda n_g^2 L / lambda^2, sigma_lambda 1 pm, lambda 1.55 um, L 100 um, n_"
     },
     {
-     "line": 134,
+     "line": 144,
      "number": "0.00111",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1072,7 +1142,7 @@
      "context": "| 0.00111 | SIGMA_PHASE at 1 pm | DERIVED | sigma_phase = 2 pi n_g L sigma_lambda / lambda^2 (MZI fringe read like a ring resonance), sigma_"
     },
     {
-     "line": 134,
+     "line": 144,
      "number": "1.55",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1083,7 +1153,7 @@
      "context": "| 0.00111 | SIGMA_PHASE at 1 pm | DERIVED | sigma_phase = 2 pi n_g L sigma_lambda / lambda^2 (MZI fringe read like a ring resonance), sigma_"
     },
     {
-     "line": 134,
+     "line": 144,
      "number": "4.26",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1094,7 +1164,7 @@
      "context": "| 0.00111 | SIGMA_PHASE at 1 pm | DERIVED | sigma_phase = 2 pi n_g L sigma_lambda / lambda^2 (MZI fringe read like a ring resonance), sigma_"
     },
     {
-     "line": 135,
+     "line": 145,
      "number": "2.75e-07",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1105,7 +1175,7 @@
      "context": "| 2.75e-07 | SIGMA_NEFF at 0.1 pm | DERIVED | same formula, sigma_lambda 0.1 pm (inputs: `results_montecarlo/noise_sourced/data/noise_source"
     },
     {
-     "line": 135,
+     "line": 145,
      "number": "0.1",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1116,7 +1186,7 @@
      "context": "| 2.75e-07 | SIGMA_NEFF at 0.1 pm | DERIVED | same formula, sigma_lambda 0.1 pm (inputs: `results_montecarlo/noise_sourced/data/noise_source"
     },
     {
-     "line": 135,
+     "line": 145,
      "number": "0.1",
      "source": "results_montecarlo/noise_sourced/data/noise_sourced.json",
      "cited": [
@@ -1127,7 +1197,7 @@
      "context": "| 2.75e-07 | SIGMA_NEFF at 0.1 pm | DERIVED | same formula, sigma_lambda 0.1 pm (inputs: `results_montecarlo/noise_sourced/data/noise_source"
     },
     {
-     "line": 136,
+     "line": 146,
      "number": "2306.15643",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1137,7 +1207,7 @@
      "context": "| 80 pm/K | Resonance temperature coefficient of Si rings (approximate) | CITED | S. Janz et al., \"Measurement Accuracy in Silicon Photonic "
     },
     {
-     "line": 136,
+     "line": 146,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1147,7 +1217,7 @@
      "context": "| 80 pm/K | Resonance temperature coefficient of Si rings (approximate) | CITED | S. Janz et al., \"Measurement Accuracy in Silicon Photonic "
     },
     {
-     "line": 137,
+     "line": 147,
      "number": "1.25",
      "source": "results_final/data/headline_derived.json",
      "cited": [
@@ -1158,7 +1228,7 @@
      "context": "| 1.25 | Temperature stability needed for the 0.1 pm case (mK) | DERIVED | sigma_lambda / (pm per K), both quoted above (inputs: `results_fi"
     },
     {
-     "line": 137,
+     "line": 147,
      "number": "0.1",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1169,7 +1239,7 @@
      "context": "| 1.25 | Temperature stability needed for the 0.1 pm case (mK) | DERIVED | sigma_lambda / (pm per K), both quoted above (inputs: `results_fi"
     },
     {
-     "line": 143,
+     "line": 153,
      "number": "3.8401",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1180,7 +1250,7 @@
      "context": "| 3.8401 | Strip width equivalent of 1 deg: 220 nm tan(1 deg) / 1 deg (nm) | DERIVED | 220 nm × tan(1°) (inputs: `results_final/data/crossch"
     },
     {
-     "line": 144,
+     "line": 154,
      "number": "3.8396",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1190,7 +1260,7 @@
      "context": "| 3.8396 | femwell (dn/da)/(dn/dw), strips TE/TM 400-600, n_eff and n_g: min (nm/deg) | COMPUTED | `src/crosschecks.py` → `results_final/dat"
     },
     {
-     "line": 145,
+     "line": 155,
      "number": "3.8725",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1200,7 +1270,7 @@
      "context": "| 3.8725 | Same: max (nm/deg) | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `width_angle_equivalence.femwell_m"
     },
     {
-     "line": 146,
+     "line": 156,
      "number": "0.00844",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1210,7 +1280,7 @@
      "context": "| 0.00844 | Largest relative deviation from 220 nm tan(1°) | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `widt"
     },
     {
-     "line": 147,
+     "line": 157,
      "number": "0.0125",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1220,7 +1290,7 @@
      "context": "| 0.0125 | Closed-form R = (y_c - y_pivot)/(h/2) vs femwell R, ribs: median /relative difference/ | COMPUTED | `src/crosschecks.py` → `resul"
     },
     {
-     "line": 148,
+     "line": 158,
      "number": "0.0538",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1230,7 +1300,7 @@
      "context": "| 0.0538 | Same, ribs: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `closed_form_R.rib_max_abs_rel_diff` "
     },
     {
-     "line": 149,
+     "line": 159,
      "number": "0.00785",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1240,7 +1310,47 @@
      "context": "| 0.00785 | Same, strips (exact R = 1): max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `closed_form_R.strip"
     },
     {
-     "line": 150,
+     "line": 160,
+     "number": "0.8312",
+     "source": "results_final/data/crosschecks.json",
+     "cited": [
+      "results_final/data/crosschecks.json"
+     ],
+     "retired": false,
+     "context": "| 0.8312 | femwell R of the ribs 300-600 nm, 50 nm slab: min | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `cl"
+    },
+    {
+     "line": 161,
+     "number": "0.8732",
+     "source": "results_final/data/crosschecks.json",
+     "cited": [
+      "results_final/data/crosschecks.json"
+     ],
+     "retired": false,
+     "context": "| 0.8732 | Same: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `closed_form_R.units[rib_TE_*_slab50].R_fem"
+    },
+    {
+     "line": 162,
+     "number": "0.7501",
+     "source": "results_final/data/crosschecks.json",
+     "cited": [
+      "results_final/data/crosschecks.json"
+     ],
+     "retired": false,
+     "context": "| 0.7501 | femwell R of the ribs 300-600 nm, 90 nm slab: min | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `cl"
+    },
+    {
+     "line": 163,
+     "number": "0.7987",
+     "source": "results_final/data/crosschecks.json",
+     "cited": [
+      "results_final/data/crosschecks.json"
+     ],
+     "retired": false,
+     "context": "| 0.7987 | Same: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `closed_form_R.units[rib_TE_*_slab90].R_fem"
+    },
+    {
+     "line": 164,
      "number": "-710.8",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1250,7 +1360,7 @@
      "context": "| -710.8 | Rib 500 nm resonance error when a 1° strip tilt is fitted as width (pm), d lambda = lambda dn_eff / n_g | COMPUTED | `src/crossch"
     },
     {
-     "line": 151,
+     "line": 165,
      "number": "-3.8403",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1260,7 +1370,7 @@
      "context": "| -3.8403 | Width change that the strip fit assigns to a 1° tilt (nm) | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.js"
     },
     {
-     "line": 152,
+     "line": 166,
      "number": "0.00305",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1270,7 +1380,7 @@
      "context": "| 0.00305 | r12 vs r8 mesh: largest relative difference of any derivative (strip, rib TE 500) | COMPUTED | `src/crosschecks.py` → `results_f"
     },
     {
-     "line": 153,
+     "line": 167,
      "number": "0.99908",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1280,7 +1390,7 @@
      "context": "| 0.99908 | Slot (oxide-clad, mirror-symmetric) R: min | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R."
     },
     {
-     "line": 154,
+     "line": 168,
      "number": "1.0015",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1290,7 +1400,7 @@
      "context": "| 1.0015 | Slot R: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.slot_max` | `6fc942a` |"
     },
     {
-     "line": 155,
+     "line": 169,
      "number": "0.9988",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1300,7 +1410,7 @@
      "context": "| 0.9988 | SWG R: min | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.swg_min` | `6fc942a` |"
     },
     {
-     "line": 156,
+     "line": 170,
      "number": "1.0005",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1310,7 +1420,7 @@
      "context": "| 1.0005 | SWG R: max | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R.swg_max` | `6fc942a` |"
     },
     {
-     "line": 157,
+     "line": 171,
      "number": "0.9782",
      "source": "results_final/data/crosschecks.json",
      "cited": [
@@ -1320,7 +1430,7 @@
      "context": "| 0.9782 | Air-clad strip TE 500 nm R (n_eff), r8 mesh | COMPUTED | `src/crosschecks.py` → `results_final/data/crosschecks.json` : `other_R."
     },
     {
-     "line": 167,
+     "line": 181,
      "number": "0.0225",
      "source": "results_montecarlo/sym_search/data/step_check_all.csv",
      "cited": [
@@ -1331,7 +1441,7 @@
      "context": "| 0.0225 | Largest relative spread among the FAIL rows | DERIVED | max of max_rel_dev over FAIL rows (inputs: `results_montecarlo/sym_search"
     },
     {
-     "line": 173,
+     "line": 187,
      "number": "0.33",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1341,7 +1451,7 @@
      "context": "| 0.33 | Strips: largest held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data/surrogate"
     },
     {
-     "line": 174,
+     "line": 188,
      "number": "7.23",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1351,7 +1461,7 @@
      "context": "| 7.23 | rib_TE_300_slab90/narrow: held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data"
     },
     {
-     "line": 175,
+     "line": 189,
      "number": "2.24",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1361,7 +1471,7 @@
      "context": "| 2.24 | rib_TE_400_slab90/narrow: held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data"
     },
     {
-     "line": 176,
+     "line": 190,
      "number": "1.59",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1371,7 +1481,7 @@
      "context": "| 1.59 | rib_TE_500_slab90/narrow: held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data"
     },
     {
-     "line": 177,
+     "line": 191,
      "number": "1.13",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1381,7 +1491,7 @@
      "context": "| 1.13 | rib_TE_600_slab90/narrow: held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data"
     },
     {
-     "line": 179,
+     "line": 193,
      "number": "1.13",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1391,7 +1501,7 @@
      "context": "| 1.13 | rib_TE_500_slab50/narrow: held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data"
     },
     {
-     "line": 180,
+     "line": 194,
      "number": "4.78",
      "source": "results_montecarlo/data/surrogate_accuracy_1pm.json",
      "cited": [
@@ -1401,7 +1511,7 @@
      "context": "| 4.78 | rib_TE_500_slab50/wide: held-out n_eff RMS (in sigma_phase) | COMPUTED | `src/montecarlo.py surrcheck` → `results_montecarlo/data/s"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "8.67E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1411,7 +1521,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1421,7 +1531,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "1e-4",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1431,7 +1541,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1441,7 +1551,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "10.1117",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1451,7 +1561,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "12.672850",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1461,7 +1571,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1471,7 +1581,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "8.61E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1481,7 +1591,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "1.35E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1491,7 +1601,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "1.20E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1501,7 +1611,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "9.16E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1511,7 +1621,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 186,
+     "line": 200,
      "number": "8.67E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1521,7 +1631,7 @@
      "context": "| 8.67E-05 | n_Si absolute uncertainty, 1.5 um, 295 K (Table 1); basis of the 1e-4 n_Si prior | CITED | Bradley J. Frey et al., \"Temperature"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.87E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1531,7 +1641,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.78E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1541,7 +1651,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1551,7 +1661,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "2.0",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1561,7 +1671,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1571,7 +1681,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "10.1117",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1581,7 +1691,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "12.672850",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1591,7 +1701,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1601,7 +1711,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "5.86E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1611,7 +1721,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.61E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1621,7 +1731,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "2.64E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1631,7 +1741,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "3.67E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1641,7 +1751,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "4.70E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1651,7 +1761,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "5.72E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1661,7 +1771,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "6.75E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1671,7 +1781,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "7.78E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1681,7 +1791,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.19E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1691,7 +1801,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.42E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1701,7 +1811,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.66E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1711,7 +1821,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.87E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1721,7 +1831,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "2.0",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1731,7 +1841,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "5.39E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1741,7 +1851,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.53E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1751,7 +1861,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "2.53E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1761,7 +1871,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "3.52E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1771,7 +1881,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "4.51E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1781,7 +1891,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "5.51E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1791,7 +1901,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "6.50E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1801,7 +1911,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "7.50E-05",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1811,7 +1921,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.14E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1821,7 +1931,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.36E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1831,7 +1941,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.58E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1841,7 +1951,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 187,
+     "line": 201,
      "number": "1.78E-04",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1851,7 +1961,7 @@
      "context": "| 1.87E-04, 1.78E-04 | dn/dT of Si at 1.5 and 2.0 um, 295 K (Table 4) | CITED | Bradley J. Frey et al., \"Temperature dependent refractive in"
     },
     {
-     "line": 188,
+     "line": 202,
      "number": "0.0001861",
      "source": "results_final/data/headline_derived.json",
      "cited": [
@@ -1863,7 +1973,7 @@
      "context": "| 0.0001861 | dn/dT of Si interpolated to the wavelength (code: DNDT_SI) | DERIVED | linear interpolation of the Table 4 values above to lam"
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "8.45E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1873,7 +1983,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "8.29E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1883,7 +1993,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1893,7 +2003,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.6",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1903,7 +2013,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "0805.0091",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1913,7 +2023,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1923,7 +2033,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1933,7 +2043,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "9.92E-07",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1943,7 +2053,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.34E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1953,7 +2063,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.69E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1963,7 +2073,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "2.04E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1973,7 +2083,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "2.73E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1983,7 +2093,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "3.43E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -1993,7 +2103,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "4.19E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2003,7 +2113,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "5.22E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2013,7 +2123,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "6.18E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2023,7 +2133,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "7.13E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2033,7 +2143,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "7.97E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2043,7 +2153,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "8.45E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2053,7 +2163,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "8.57E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2063,7 +2173,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.6",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2073,7 +2183,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "9.31E-07",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2083,7 +2193,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.30E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2093,7 +2203,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "1.66E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2103,7 +2213,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "2.02E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2113,7 +2223,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "2.75E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2123,7 +2233,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "3.48E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2133,7 +2243,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "4.27E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2143,7 +2253,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "5.23E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2153,7 +2263,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "6.14E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2163,7 +2273,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "7.05E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2173,7 +2283,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "7.84E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2183,7 +2293,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "8.29E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2193,7 +2303,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 189,
+     "line": 203,
      "number": "8.41E-06",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2203,7 +2313,7 @@
      "context": "| 8.45E-06, 8.29E-06 | dn/dT of fused silica at 1.5 and 1.6 um, 295 K (Table 6) | CITED | Douglas B. Leviton et al., \"Temperature-dependent "
     },
     {
-     "line": 190,
+     "line": 204,
      "number": "8.37e-06",
      "source": "results_final/data/headline_derived.json",
      "cited": [
@@ -2215,7 +2325,7 @@
      "context": "| 8.37e-06 | dn/dT of SiO2 interpolated to the wavelength (code: DNDT_OX) | DERIVED | linear interpolation of the Table 6 values above to la"
     },
     {
-     "line": 191,
+     "line": 205,
      "number": "0.000186",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2225,7 +2335,7 @@
      "context": "| 0.000186 | DNDT_SI as used in the code (rounded from the interpolation) | COMPUTED | `src/record_environment.py` → `results_final/data/env"
     },
     {
-     "line": 192,
+     "line": 206,
      "number": "8.4e-06",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2235,7 +2345,7 @@
      "context": "| 8.4e-06 | DNDT_OX as used in the code (rounded from the interpolation) | COMPUTED | `src/record_environment.py` → `results_final/data/envi"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.48314",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2245,7 +2355,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2255,7 +2365,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2265,7 +2375,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "10.1117",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2275,7 +2385,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "12.672850",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2285,7 +2395,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2295,7 +2405,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45309",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2305,7 +2415,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45319",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2315,7 +2425,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45340",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2325,7 +2435,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45373",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2335,7 +2445,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45417",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2345,7 +2455,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45471",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2355,7 +2465,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45535",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2365,7 +2475,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.45609",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2375,7 +2485,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.46100",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2385,7 +2495,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.46760",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2395,7 +2505,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.47540",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2405,7 +2515,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 193,
+     "line": 207,
      "number": "3.48314",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2415,7 +2525,7 @@
      "context": "| 3.48314 | n_Si at 1.5 um, 295 K (Table 2); our nominal n_Si is a rounded assumption | CITED | Bradley J. Frey et al., \"Temperature depende"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44502",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2425,7 +2535,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2435,7 +2545,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "0805.0091",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2445,7 +2555,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "10.48550",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2455,7 +2565,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.5",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2465,7 +2575,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44369",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2475,7 +2585,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44370",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2485,7 +2595,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44372",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2495,7 +2605,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44374",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2505,7 +2615,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44379",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2515,7 +2625,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44385",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2525,7 +2635,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44392",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2535,7 +2645,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44411",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2545,7 +2655,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44433",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2555,7 +2665,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44460",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2565,7 +2675,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44486",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2575,7 +2685,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44502",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2585,7 +2695,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 194,
+     "line": 208,
      "number": "1.44507",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2595,7 +2705,7 @@
      "context": "| 1.44502 | n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption | CITED | Douglas B. Leviton et al., \"Tem"
     },
     {
-     "line": 195,
+     "line": 209,
      "number": "2.602",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2605,7 +2715,7 @@
      "context": "| 2.602 | Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only) | CITED | Lihong (Heidi) Jiao et al., \"Silicon Waveguides an"
     },
     {
-     "line": 195,
+     "line": 209,
      "number": "10.5772",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2615,7 +2725,7 @@
      "context": "| 2.602 | Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only) | CITED | Lihong (Heidi) Jiao et al., \"Silicon Waveguides an"
     },
     {
-     "line": 195,
+     "line": 209,
      "number": "2.3",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2625,7 +2735,7 @@
      "context": "| 2.602 | Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only) | CITED | Lihong (Heidi) Jiao et al., \"Silicon Waveguides an"
     },
     {
-     "line": 195,
+     "line": 209,
      "number": "2.602",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2635,7 +2745,7 @@
      "context": "| 2.602 | Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only) | CITED | Lihong (Heidi) Jiao et al., \"Silicon Waveguides an"
     },
     {
-     "line": 195,
+     "line": 209,
      "number": "2.494",
      "source": "results_final/data/citations.json",
      "cited": [
@@ -2645,7 +2755,97 @@
      "context": "| 2.602 | Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only) | CITED | Lihong (Heidi) Jiao et al., \"Silicon Waveguides an"
     },
     {
-     "line": 202,
+     "line": 215,
+     "number": "0.00791",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 0.00791 | strips (10): largest relative n_eff difference, EMpy (cell-exact) vs femwell | COMPUTED | `src/validation_checks.py` → `results_"
+    },
+    {
+     "line": 216,
+     "number": "0.00147",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 0.00147 | ribs (5): largest relative n_eff difference, EMpy (cell-exact) vs femwell | COMPUTED | `src/validation_checks.py` → `results_fin"
+    },
+    {
+     "line": 217,
+     "number": "2.5707",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 2.5707 | femwell n_eff, rib 500 nm, 90 nm slab | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `femwell_v"
+    },
+    {
+     "line": 218,
+     "number": "-0.012",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| -0.012 | Same, relative difference to the published EIM value | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.jso"
+    },
+    {
+     "line": 219,
+     "number": "2.04e-06",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 2.04e-06 | Domain 1.5x larger: largest relative n_eff change (two-width structures) | COMPUTED | `src/validation_checks.py` → `results_fin"
+    },
+    {
+     "line": 220,
+     "number": "1.32e-05",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 1.32e-05 | Same: largest relative n_g change | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.max_"
+    },
+    {
+     "line": 221,
+     "number": "0.00347",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 0.00347 | Same: largest relative change of a geometric derivative at h | COMPUTED | `src/validation_checks.py` → `results_final/data/valid"
+    },
+    {
+     "line": 222,
+     "number": "0.4093",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 0.4093 | Two-width CRB with large-domain geometric derivatives (deg) | COMPUTED | `src/validation_checks.py` → `results_final/data/validat"
+    },
+    {
+     "line": 223,
+     "number": "0.0519",
+     "source": "results_final/data/validation.json",
+     "cited": [
+      "results_final/data/validation.json"
+     ],
+     "retired": false,
+     "context": "| 0.0519 | Same, relative change of the CRB | COMPUTED | `src/validation_checks.py` → `results_final/data/validation.json` : `domain.two_wid"
+    },
+    {
+     "line": 230,
      "number": "0.1",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -2655,7 +2855,7 @@
      "context": "| 0.1 | n_Si prior (units of 1e-3), \"realistic\" | ASSUMED | `src/priors_search.py` PRIORS[\"realistic\"][\"nsi\"] (read back from `results_final"
     },
     {
-     "line": 202,
+     "line": 230,
      "number": "1e-3",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -2665,7 +2865,7 @@
      "context": "| 0.1 | n_Si prior (units of 1e-3), \"realistic\" | ASSUMED | `src/priors_search.py` PRIORS[\"realistic\"][\"nsi\"] (read back from `results_final"
     },
     {
-     "line": 203,
+     "line": 231,
      "number": "1e-3",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -2675,7 +2875,7 @@
      "context": "| 1 | n_ox prior (units of 1e-3), \"realistic\" | ASSUMED | `src/priors_search.py` PRIORS[\"realistic\"][\"nox\"] (read back from `results_final/d"
     },
     {
-     "line": 205,
+     "line": 233,
      "number": "1.0",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -2685,7 +2885,7 @@
      "context": "| 1 | Rib noise factor (1.0 = same noise as strips; conservative) | ASSUMED | `src/priors_search.py` evaluate(rib_mult=1.0) (read back from "
     },
     {
-     "line": 205,
+     "line": 233,
      "number": "1.0",
      "source": "results_final/data/assumption_sensitivity.json",
      "cited": [
@@ -2695,7 +2895,7 @@
      "context": "| 1 | Rib noise factor (1.0 = same noise as strips; conservative) | ASSUMED | `src/priors_search.py` evaluate(rib_mult=1.0) (read back from "
     },
     {
-     "line": 207,
+     "line": 235,
      "number": "4.26",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2705,7 +2905,7 @@
      "context": "| 4.26 | Group index in the noise conversion (largest n_g of the headline structures) | ASSUMED | `src/noise_sourced.py` NG (read back from "
     },
     {
-     "line": 208,
+     "line": 236,
      "number": "3.48",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2715,7 +2915,7 @@
      "context": "| 3.48 | Nominal n_Si | ASSUMED | `src/femwell_batch.py` N_SI (read back from `results_final/data/environment.json` : `femwell_env.constants"
     },
     {
-     "line": 209,
+     "line": 237,
      "number": "1.44",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2725,7 +2925,7 @@
      "context": "| 1.44 | Nominal n_ox (BOX and cladding) | ASSUMED | `src/femwell_batch.py` N_OX (read back from `results_final/data/environment.json` : `fe"
     },
     {
-     "line": 210,
+     "line": 238,
      "number": "1.55",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2735,7 +2935,7 @@
      "context": "| 1.55 | Wavelength (um) | ASSUMED | `src/femwell_batch.py` WL0 (read back from `results_final/data/environment.json` : `femwell_env.constan"
     },
     {
-     "line": 211,
+     "line": 239,
      "number": "0.005",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2745,7 +2945,7 @@
      "context": "| 0.005 | Wavelength step of the n_g central difference (um) | ASSUMED | `src/femwell_batch.py` DLAM (read back from `results_final/data/env"
     },
     {
-     "line": 213,
+     "line": 241,
      "number": "0.012",
      "source": "results_final/data/environment.json",
      "cited": [
@@ -2755,7 +2955,7 @@
      "context": "| 0.012 | Core mesh resolution r12 (um) | ASSUMED | `src/femwell_batch.py` MESH[\"r12\"] (read back from `results_final/data/environment.json`"
     }
    ],
-   "false_match_rate": 0.0419047619047619
+   "false_match_rate": 0.05167235494880546
   },
   "results_final/CLAIMS.md": {
    "rows": [
@@ -3167,7 +3367,7 @@
      "context": "| 12 | A thinner slab is better for a two-width rib set. | two-width set, stage D realistic, 1 pm, CRB by slab (nm: deg): 30: 0.414, 40: 0.4"
     }
    ],
-   "false_match_rate": 0.12153846153846154
+   "false_match_rate": 0.12769230769230772
   }
  },
  "legacy_headline": {

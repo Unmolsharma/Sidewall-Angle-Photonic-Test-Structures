@@ -5,9 +5,9 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 
 ## Strict targets (goal: 0 untraced)
 
-### results_final/HEADLINE_NUMBERS.md: 273 numbers, 273 traced, **0 untraced** (chance-match rate 4%)
+### results_final/HEADLINE_NUMBERS.md: 293 numbers, 293 traced, **0 untraced** (chance-match rate 5%)
 
-### results_final/CLAIMS.md: 39 numbers, 39 traced, **0 untraced** (chance-match rate 12%)
+### results_final/CLAIMS.md: 39 numbers, 39 traced, **0 untraced** (chance-match rate 13%)
 
 
 ## Informational (earlier documents, not regenerated)

@@ -29,6 +29,8 @@ F = dict(
     mc1=('results_montecarlo/data/mc_results_1pm.json', 'src/montecarlo.py mc1pm'),
     mc0=('results_montecarlo/data/mc_results.json', 'src/montecarlo.py mc'),
     val=('results_montecarlo/data/mc_valley.json', 'src/montecarlo.py valley'),
+    val1=('results_montecarlo/data/mc_valley_1pm.json', 'src/montecarlo.py valley1pm'),
+    vc=('results_final/data/validation.json', 'src/validation_checks.py'),
     rob=('results_montecarlo/robustness/data/robustness_1pm.json', 'src/robustness_rib300.py 1pm'),
     ns=('results_montecarlo/noise_sourced/data/noise_sourced.json', 'src/noise_sourced.py'),
     xc=('results_final/data/crosschecks.json', 'src/crosschecks.py'),
@@ -160,7 +162,11 @@ def build():
     computed(sec, 'p1', 'D|realistic.rib_TE_500_slab*.a_deg_h (max)', max(sv), 'Single rib, stage D realistic priors: largest CRB over slabs (deg)')
     so = [v['a_deg_h'] for v in s1['D|realistic']['strips_only'].values()]
     computed(sec, 's1', 'D|realistic.strips_only.*.a_deg_h (min)', min(so), f'Strips only, best set of any size 1-{len(so)}: CRB (∞ = no angle information)')
-    for stage, prior, setname, m in (('C', 'none', 'strip + rib70 (500 + 300 nm)', 'stage C, no priors'),
+    for stage, prior, setname, m in (('B', 'none', 'strip + rib70 (500 nm)', 'stage B (rib angle = strip angle), no priors'),
+                                     ('B', 'none', 'strip + rib70 (500 + 300 nm)', 'stage B (rib angle = strip angle), no priors'),
+                                     ('C', 'realistic', 'strip + rib70 (500 nm)', 'stage C, realistic priors'),
+                                     ('D', 'none', 'strip + rib70 (500 + 300 nm)', 'stage D, no priors'),
+                                     ('C', 'none', 'strip + rib70 (500 + 300 nm)', 'stage C, no priors'),
                                      ('D', 'realistic', 'strip + rib70 (500 + 300 nm)', 'stage D, realistic priors'),
                                      ('E', 'realistic', 'strip + rib70 (500 + 300 nm)', 'stage E (+T), realistic priors'),
                                      ('C', 'ar-a 1 deg', 'strip + rib70 (500 nm)', 'stage C, rib-strip angle link 1 deg'),
@@ -178,6 +184,7 @@ def build():
         r = mc1[case]
         computed(sec, 'mc1', f'{case}.units', len(r['units']), f"{label}: structures: {' + '.join(r['units'])}")
         computed(sec, 'mc1', f'{case}.crb_a_fd', r['crb_a_fd'], f'{label}: CRB from femwell derivatives (deg)')
+        computed(sec, 'mc1', f'{case}.crb_a_surrogate', r['crb_a_surrogate'], f'{label}: CRB of the Monte Carlo surrogate model at nominal (deg)')
         computed(sec, 'mc1', f'{case}.a_std_all', r['a_std_all'], f'{label}: spread (std) of the fitted strip angle (deg)')
         computed(sec, 'mc1', f'{case}.a_std_all_ci95.0', r['a_std_all_ci95'][0], f'{label}: spread, 95% bootstrap CI low (deg)')
         computed(sec, 'mc1', f'{case}.a_std_all_ci95.1', r['a_std_all_ci95'][1], f'{label}: spread, 95% bootstrap CI high (deg)')
@@ -186,12 +193,16 @@ def build():
         computed(sec, 'mc1', f'{case}.a_bias_se', r['a_bias_se'], f'{label}: standard error of the bias (deg)', 2)
         for k in ('n_failed', 'n_ambiguous', 'n_at_bound'):
             computed(sec, 'mc1', f'{case}.{k}', r[k], f'{label}: {k[2:].replace("_", " ")} fits of {r["n_sets"]}')
-    r = mc0['c']
-    computed(sec, 'mc0', 'c.crb_a_fd', r['crb_a_fd'], 'case c (strip + one rib 500 nm, placeholder noise): CRB (deg)')
-    computed(sec, 'mc0', 'c.n_at_bound', r['n_at_bound'], f'case c: fits ending at the ±3 deg box edge, of {r["n_sets"]}')
-    computed(sec, 'val', 'c.slope_w_per_a_nm_per_deg', load('val')['c']['slope_w_per_a_nm_per_deg'],
+    r = mc1['c']
+    computed(sec, 'mc1', 'c.units', len(r['units']), f"case c (strip + one rib 500 nm, 50 nm slab): structures: {' + '.join(r['units'])}")
+    computed(sec, 'mc1', 'c.crb_a_fd', r['crb_a_fd'], 'case c: CRB from femwell derivatives (deg)')
+    for k in ('n_failed', 'n_ambiguous', 'n_at_bound'):
+        computed(sec, 'mc1', f'c.{k}', r[k], f'case c: {k[2:].replace("_", " ")} fits of {r["n_sets"]} (box edge: any parameter at its bound)')
+    computed(sec, 'mc1', 'c.theta_box.a', r['theta_box']['a'], 'case c: half-width of the fit box in the strip angle (deg)')
+    v1 = load('val1')['c']
+    computed(sec, 'val1', 'c.slope_w_per_a_nm_per_deg', v1['slope_w_per_a_nm_per_deg'],
              'case c: slope of fitted width vs fitted angle (nm/deg): the width/angle valley')
-    computed(sec, 'val', 'c.corr_w_a', load('val')['c']['corr_w_a'], 'case c: correlation of fitted width and angle', 5)
+    computed(sec, 'val1', 'c.corr_w_a', v1['corr_w_a'], 'case c: correlation of fitted width and angle', 6)
 
     # --- C. robustness (1 pm)
     rob = load('rob')
@@ -250,6 +261,10 @@ def build():
     computed(sec, 'xc', 'closed_form_R.rib_median_abs_rel_diff', c['rib_median_abs_rel_diff'], 'Closed-form R = (y_c - y_pivot)/(h/2) vs femwell R, ribs: median |relative difference|', 3)
     computed(sec, 'xc', 'closed_form_R.rib_max_abs_rel_diff', c['rib_max_abs_rel_diff'], 'Same, ribs: max', 3)
     computed(sec, 'xc', 'closed_form_R.strip_max_abs_rel_diff', c['strip_max_abs_rel_diff'], 'Same, strips (exact R = 1): max', 3)
+    for slab in (50, 90):
+        rv = [v['R_femwell_neff'] for k, v in c['units'].items() if k.endswith(f'_slab{slab}')]
+        computed(sec, 'xc', f'closed_form_R.units[rib_TE_*_slab{slab}].R_femwell_neff (min)', min(rv), f'femwell R of the ribs 300-600 nm, {slab} nm slab: min', 4)
+        computed(sec, 'xc', f'closed_form_R.units[rib_TE_*_slab{slab}].R_femwell_neff (max)', max(rv), f'Same: max', 4)
     i = xc['impact_1deg']['placeholder']
     computed(sec, 'xc', 'impact_1deg.placeholder.resonance_error_pm', i['resonance_error_pm'], 'Rib 500 nm resonance error when a 1° strip tilt is fitted as width (pm), d lambda = lambda dn_eff / n_g', 4)
     computed(sec, 'xc', 'impact_1deg.placeholder.effective_dw_nm', i['effective_dw_nm'], 'Width change that the strip fit assigns to a 1° tilt (nm)', 5)
@@ -303,6 +318,24 @@ def build():
     n2 = table_value('leviton2008', 1, '1.5 microns', '295 K')
     cited(sec, f'{n2:.5f}', 'n of fused silica at 1.5 um, 295 K (Table 4); our nominal n_ox is a rounded assumption', 'leviton2008', 1)
     cited(sec, '2.602', 'Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only)', 'jiao_pikus2025', 0)
+
+    # --- K. validation
+    vc = load('vc')
+    sec = 'K. Validation of the femwell model'
+    for g in ('strip', 'rib'):
+        b = vc['femwell_vs_empy']['by_geometry'][g]
+        computed(sec, 'vc', f'femwell_vs_empy.by_geometry.{g}.max_abs_rel_diff_neff', b['max_abs_rel_diff_neff'],
+                 f'{g}s ({b["n"]}): largest relative n_eff difference, EMpy (cell-exact) vs femwell', 3)
+    e = vc['femwell_vs_published_eim']['rib_500_slab90']
+    computed(sec, 'vc', 'femwell_vs_published_eim.rib_500_slab90.femwell', e['femwell'], 'femwell n_eff, rib 500 nm, 90 nm slab', 5)
+    computed(sec, 'vc', 'femwell_vs_published_eim.rib_500_slab90.rel_diff', e['rel_diff'], 'Same, relative difference to the published EIM value', 3)
+    if 'domain' in vc and 'two_width_crb' in vc['domain']:
+        d = vc['domain']
+        computed(sec, 'vc', 'domain.max_abs_rel_diff_neff', d['max_abs_rel_diff_neff'], 'Domain 1.5x larger: largest relative n_eff change (two-width structures)', 3)
+        computed(sec, 'vc', 'domain.max_abs_rel_diff_ng', d['max_abs_rel_diff_ng'], 'Same: largest relative n_g change', 3)
+        computed(sec, 'vc', 'domain.max_abs_rel_diff_derivative', d['max_abs_rel_diff_derivative'], 'Same: largest relative change of a geometric derivative at h', 3)
+        computed(sec, 'vc', 'domain.two_width_crb.large_domain', d['two_width_crb']['large_domain'], 'Two-width CRB with large-domain geometric derivatives (deg)', 4)
+        computed(sec, 'vc', 'domain.two_width_crb.rel_change', d['two_width_crb']['rel_change'], 'Same, relative change of the CRB', 3)
 
     # --- J. assumptions
     env = load('env')
