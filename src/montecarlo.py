@@ -6,9 +6,10 @@ Run from src/ (main environment):
     (femwell venv) montecarlo_batch.py   solves the design points
     python montecarlo.py fit      surrogates + held-out accuracy -> data/surrogate_accuracy.{json,csv}
     python montecarlo.py mc       noisy measurement sets and fits -> data/mc_results.json, mc_fits.csv
-    python montecarlo.py mc1pm    cases a, b at the sourced 1 pm noise -> data/mc_results_1pm.json, mc_fits_1pm.csv
+    python montecarlo.py mc1pm    cases a, b, c at the sourced 1 pm noise -> data/mc_results_1pm.json, mc_fits_1pm.csv
+                                  (case c added 2026-11-03; a and b are unchanged, each case and chunk has its own seed)
     python montecarlo.py surrcheck  held-out surrogate error in units of the 1 pm noise -> data/surrogate_accuracy_1pm.json
-    python montecarlo.py valley   fitted width vs angle per case -> data/mc_valley.json
+    python montecarlo.py valley   fitted width vs angle per case -> data/mc_valley.json (valley1pm: _1pm files)
     Environment: MC_NPROC worker processes (default 2).
 Reads   results_montecarlo/sym_search/data/{search.json, slab_pairs.json} (sym_search.py), femwell caches,
         results_montecarlo/cache/solves_r12.jsonl
@@ -534,11 +535,11 @@ def run_mc(noise='placeholder', cases=None, tag=''):
         w.writerows(fits)
 
 
-def valley():
-    """Width/angle relation of the fitted values per case (from data/mc_fits.csv): correlation and slope of
-    fitted width against fitted strip angle. Writes data/mc_valley.json."""
+def valley(tag=''):
+    """Width/angle relation of the fitted values per case (from data/mc_fits<tag>.csv): correlation and slope of
+    fitted width against fitted strip angle. Writes data/mc_valley<tag>.json."""
     out = {}
-    with open(os.path.join(OUT, 'mc_fits.csv'), newline='') as f:
+    with open(os.path.join(OUT, f'mc_fits{tag}.csv'), newline='') as f:
         fits = list(csv.DictReader(f))
     for name in sorted({r['case'] for r in fits}):
         r = [x for x in fits if x['case'] == name and x['a_hat'] and x['hat_w']]
@@ -546,7 +547,7 @@ def valley():
         out[name] = dict(n=len(r), corr_w_a=float(np.corrcoef(w, a)[0, 1]), slope_w_per_a_nm_per_deg=float(np.polyfit(a, w, 1)[0]),
                          expected_slope_strip_symmetry=float(T0 * np.pi / 180))
         print(name, out[name])
-    with open(os.path.join(OUT, 'mc_valley.json'), 'w') as f:
+    with open(os.path.join(OUT, f'mc_valley{tag}.json'), 'w') as f:
         json.dump(out, f, indent=1)
 
 
@@ -568,4 +569,5 @@ def surrogate_check(noise='1pm'):
 
 if __name__ == '__main__':
     {'plan': plan, 'fit': fit_surrogates, 'mc': run_mc, 'valley': valley,
-     'mc1pm': lambda: run_mc('1pm', ('a', 'b'), '_1pm'), 'surrcheck': surrogate_check}[sys.argv[1]]()
+     'mc1pm': lambda: run_mc('1pm', ('a', 'b', 'c'), '_1pm'), 'valley1pm': lambda: valley('_1pm'),
+     'surrcheck': surrogate_check}[sys.argv[1]]()
