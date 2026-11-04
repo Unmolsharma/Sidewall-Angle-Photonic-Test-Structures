@@ -337,7 +337,7 @@ AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/unmol/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/unmol
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/unmol
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 669324 bytes).
+Output written on main.pdf (7 pages, 669522 bytes).
 Transcript written on main.log.
 pdflatex: major issue: So far, you have not checked for MiKTeX updates.
 Latexmk: Getting log file 'main.log'
@@ -681,7 +681,7 @@ AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/unmol/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/unmol
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/unmol
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 669324 bytes).
+Output written on main.pdf (7 pages, 669522 bytes).
 Transcript written on main.log.
 pdflatex: major issue: So far, you have not checked for MiKTeX updates.
 Latexmk: Getting log file 'main.log'

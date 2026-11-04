@@ -3,7 +3,7 @@
 
 Clean rerun by `src/reproduce_all.py` in `results_final/reproduction/tree` (a fresh copy of `src/` plus only the raw solve caches and the declared frozen inputs below), then every regenerated file compared with the committed one.
 
-- Compared files: 44; identical: 40; equal within a relative tolerance of 1e-09: 2; **differing: 2** (`results_montecarlo/data/strips_info.json`, `results_montecarlo/data/strips_info_perturbation.csv`); missing in the rerun: 0.
+- Compared files: 46; identical: 42; equal within a relative tolerance of 1e-09: 2; **differing: 2** (`results_montecarlo/data/strips_info.json`, `results_montecarlo/data/strips_info_perturbation.csv`); missing in the rerun: 0.
 - Monte Carlo seed: 20261027 (noise sets seeded per case and chunk; see ENVIRONMENT.md).
 
 ## Frozen inputs (copied, not regenerated)
@@ -17,26 +17,28 @@ Clean rerun by `src/reproduce_all.py` in `results_final/reproduction/tree` (a fr
 ## Steps
 
 1. `step_check_all.py` — exit 0, 2 s
-2. `SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py` — exit 0, 101 s
-3. `sym_search.py placeholder ../results_final/sym_search_placeholder/data` — exit 0, 131 s
-4. `sym_search.py 1pm ../results_final/sym_search_1pm/data` — exit 0, 127 s
-5. `strips_angle_info.py` — exit 0, 37 s
+2. `SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py` — exit 0, 124 s
+3. `sym_search.py placeholder ../results_final/sym_search_placeholder/data` — exit 0, 138 s
+4. `sym_search.py 1pm ../results_final/sym_search_1pm/data` — exit 0, 87 s
+5. `strips_angle_info.py` — exit 0, 17 s
 6. `montecarlo.py plan` — exit 0, 2 s
 7. `montecarlo.py fit` — exit 0, 2 s
 8. `montecarlo.py surrcheck` — exit 0, 2 s
-9. `montecarlo.py mc` — exit 0, 869 s
-10. `montecarlo.py mc1pm` — exit 0, 234 s
-11. `montecarlo.py valley` — exit 0, 2 s
-12. `robustness_rib300.py` — exit 0, 82 s
-13. `robustness_rib300.py 1pm` — exit 0, 73 s
-14. `noise_sourced.py` — exit 0, 2 s
-15. `crosscheck_fields.py` — exit 0, 174 s
-16. `crosschecks.py` — exit 0, 1 s
-17. `assumption_sensitivity.py` — exit 0, 1 s
-18. `claims_checks.py` — exit 0, 2 s
-19. `record_environment.py` — exit 0, 3 s
-20. `make_headline_numbers.py` — exit 0, 1 s
-21. `make_final_docs.py` — exit 0, 0 s
+9. `montecarlo.py mc` — exit 0, 288 s
+10. `montecarlo.py mc1pm` — exit 0, 1965 s
+11. `montecarlo.py valley` — exit 0, 4 s
+12. `montecarlo.py valley1pm` — exit 0, 4 s
+13. `robustness_rib300.py` — exit 0, 118 s
+14. `robustness_rib300.py 1pm` — exit 0, 113 s
+15. `noise_sourced.py` — exit 0, 3 s
+16. `crosscheck_fields.py` — exit 0, 269 s
+17. `crosschecks.py` — exit 0, 3 s
+18. `validation_checks.py` — exit 0, 3 s
+19. `assumption_sensitivity.py` — exit 0, 3 s
+20. `claims_checks.py` — exit 0, 3 s
+21. `record_environment.py` — exit 0, 8 s
+22. `make_headline_numbers.py` — exit 0, 2 s
+23. `make_final_docs.py` — exit 0, 0 s
 
 ## Files
 
@@ -73,17 +75,19 @@ Clean rerun by `src/reproduce_all.py` in `results_final/reproduction/tree` (a fr
 | `results_montecarlo/data/surrogate_accuracy_1pm.json` | 60 | identical | 0 |
 | `results_montecarlo/data/mc_results.json` | 159 | identical; keys only in rerun: .a.noise.SIGMA_NEFF, .a.noise.SIGMA_NG, .a.noise.SIGMA_PHASE, .b.noise.SIGMA_NEFF, .b.noise.SIGMA_NG, .b.noise.SIGMA_PHASE, .c.noise.SIGMA_NEFF, .c.noise.SIGMA_NG, .c.noise.SIGMA_PHASE | 0 |
 | `results_montecarlo/data/mc_fits.csv` | 65940 | identical | 0 |
-| `results_montecarlo/data/mc_results_1pm.json` | 112 | identical | 0 |
-| `results_montecarlo/data/mc_fits_1pm.csv` | 44000 | identical | 0 |
+| `results_montecarlo/data/mc_results_1pm.json` | 168 | identical | 0 |
+| `results_montecarlo/data/mc_fits_1pm.csv` | 65800 | identical | 0 |
 | `results_montecarlo/data/mc_valley.json` | 12 | identical | 0 |
+| `results_montecarlo/data/mc_valley_1pm.json` | 12 | identical | 0 |
+| `results_final/data/validation.json` | 423 | identical | 0 |
 | `results_montecarlo/robustness/data/robustness.json` | 128 | identical | 0 |
 | `results_montecarlo/robustness/data/robustness_1pm.json` | 128 | identical | 0 |
 | `results_montecarlo/noise_sourced/data/noise_sourced.json` | 52 | identical | 0 |
-| `results_final/data/crosscheck_fields.json` | 120 | within tolerance | 1.27e-13 |
-| `results_final/data/crosschecks.json` | 175 | within tolerance | 3.55e-11 |
+| `results_final/data/crosscheck_fields.json` | 120 | within tolerance | 1.57e-13 |
+| `results_final/data/crosschecks.json` | 175 | within tolerance | 4.16e-11 |
 | `results_final/data/assumption_sensitivity.json` | 120 | identical | 0 |
 | `results_final/data/claims_checks.json` | 355 | identical | 0 |
-| `results_final/HEADLINE_NUMBERS.md` | 645 | identical | 0 |
+| `results_final/HEADLINE_NUMBERS.md` | 691 | identical | 0 |
 | `results_final/CLAIMS.md` | 101 | identical | 0 |
 | `results_final/ASSUMPTIONS.md` | 133 | identical | 0 |
 

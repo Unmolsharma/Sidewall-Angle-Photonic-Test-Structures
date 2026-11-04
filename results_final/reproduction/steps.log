@@ -5,7 +5,7 @@ FAIL rib_TE_300_slab110 s ng: max rel dev 0.0225, 0.143 of largest
 FAIL rib_TE_600_slab110 a ng: max rel dev 0.0204, 0.105 of largest
 
 
-### SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py (exit 0, 101 s)
+### SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py (exit 0, 124 s)
 trip + rib70 (500 + 300 nm)   sigma_d 0.1: 0.004329 [0.004296..0.004329]
   B strip + rib70 (500 + 300 nm)   sigma_d 0.3: 0.00433 [0.004297..0.00433]
   B strip + rib70 (500 + 300 nm)   sigma_d 1.0: 0.004331 [0.004297..0.004331]
@@ -42,7 +42,7 @@ D|none {'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3875, 'rib_TE_300_slab70 + ri
 D|realistic {'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3668, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4253, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.561, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8022, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2152, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.8327}
 
 
-### sym_search.py placeholder ../results_final/sym_search_placeholder/data (exit 0, 131 s)
+### sym_search.py placeholder ../results_final/sym_search_placeholder/data (exit 0, 138 s)
 p + rib70 (500 + 300 nm)   sigma_d None: 0.004331 [0.004297..0.004331]
   C strip + rib70 (500 nm)         sigma_d 0.01: 4.711 [4.6..4.711]
   C strip + rib70 (500 nm)         sigma_d 0.03: 4.723 [4.612..4.723]
@@ -74,7 +74,7 @@ D|none {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.4117, 'rib_TE_300_slab40 + ri
 D|realistic {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.3914, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.3802, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3668, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4253, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.561, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8022, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2152, 'rib_TE_300_slab150 + rib_TE_500_slab150': 3.8327}
 
 
-### sym_search.py 1pm ../results_final/sym_search_1pm/data (exit 0, 127 s)
+### sym_search.py 1pm ../results_final/sym_search_1pm/data (exit 0, 87 s)
 B strip + rib70 (500 + 300 nm)   sigma_d None: 0.00365 [0.003622..0.00365]
   C strip + rib70 (500 nm)         sigma_d 0.01: 5.032 [4.913..5.032]
   C strip + rib70 (500 nm)         sigma_d 0.03: 5.044 [4.925..5.044]
@@ -106,7 +106,7 @@ D|none {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.4379, 'rib_TE_300_slab40 + ri
 D|realistic {'rib_TE_300_slab30 + rib_TE_500_slab30': 0.414, 'rib_TE_300_slab40 + rib_TE_500_slab40': 0.4027, 'rib_TE_300_slab50 + rib_TE_500_slab50': 0.3891, 'rib_TE_300_slab70 + rib_TE_500_slab70': 0.4521, 'rib_TE_300_slab90 + rib_TE_500_slab90': 0.5972, 'rib_TE_300_slab110 + rib_TE_500_slab110': 0.8549, 'rib_TE_300_slab130 + rib_TE_500_slab130': 1.2957, 'rib_TE_300_slab150 + rib_TE_500_slab150': 4.0886}
 
 
-### strips_angle_info.py (exit 0, 37 s)
+### strips_angle_info.py (exit 0, 17 s)
   5-95% 0.00495..0.0239
   strip TE 5 + rib70 500 + 300 (E, realistic) nominal 0.414  median 0.0166  5-95% 0.00714..0.0509
   best one-etch set (C, none, 8)       nominal 0.145  median 0.0123  5-95% 0.00503..0.0418
@@ -176,24 +176,31 @@ rib_TE_500_slab50|narrow     n_eff rms 1.13 sigma_phase, n_g rms 0.012 sigma_ng
 rib_TE_500_slab50|wide       n_eff rms 4.78 sigma_phase, n_g rms 0.041 sigma_ng
 
 
-### montecarlo.py mc (exit 0, 869 s)
+### montecarlo.py mc (exit 0, 288 s)
 case a: CRB fd 0.1616, surrogate 0.1461; MC std 0.1635 [0.1548, 0.172], bias +0.009717 +- 0.0037; ok 1989, failed 0, at bound 11, ambiguous 0; chi2 mean 20.15 (dof 20); fit to femwell nominal: a = +0.02142
 case b: CRB fd 0.3668, surrogate 0.372; MC std 0.3742 [0.3626, 0.3853], bias -0.01482 +- 0.0084; ok 2000, failed 0, at bound 0, ambiguous 0; chi2 mean 16.57 (dof 17); fit to femwell nominal: a = +0.004968
 case c: CRB fd 29.44, surrogate 31.96; MC std 2.475 [2.455, 2.493], bias -0.1672 +- 0.055; ok 820, failed 6, at bound 1163, ambiguous 11; chi2 mean 15.06 (dof 14); fit to femwell nominal: a = +0.00141
 
 
-### montecarlo.py mc1pm (exit 0, 234 s)
+### montecarlo.py mc1pm (exit 0, 1965 s)
 case a: CRB fd 0.139, surrogate 0.1249; MC std 0.1323 [0.1253, 0.1396], bias +0.007459 +- 0.003; ok 1996, failed 0, at bound 4, ambiguous 0; chi2 mean 20.22 (dof 20); fit to femwell nominal: a = +0.02217
 case b: CRB fd 0.3891, surrogate 0.3942; MC std 0.3976 [0.385, 0.4096], bias -0.01526 +- 0.0089; ok 2000, failed 0, at bound 0, ambiguous 0; chi2 mean 16.59 (dof 17); fit to femwell nominal: a = +0.004982
+case c: CRB fd 29.52, surrogate 32.04; MC std 2.479 [2.458, 2.499], bias -0.1749 +- 0.056; ok 778, failed 20, at bound 1190, ambiguous 12; chi2 mean 15.11 (dof 14); fit to femwell nominal: a = +0.001516
 
 
-### montecarlo.py valley (exit 0, 2 s)
+### montecarlo.py valley (exit 0, 4 s)
 a {'n': 2000, 'corr_w_a': 0.9999952706341051, 'slope_w_per_a_nm_per_deg': 3.8340607951883614, 'expected_slope_strip_symmetry': 3.839724354387525}
 b {'n': 2000, 'corr_w_a': 0.9998892690139232, 'slope_w_per_a_nm_per_deg': 3.8286527933511865, 'expected_slope_strip_symmetry': 3.839724354387525}
 c {'n': 1994, 'corr_w_a': 0.9999975525462572, 'slope_w_per_a_nm_per_deg': 3.8419566318890506, 'expected_slope_strip_symmetry': 3.839724354387525}
 
 
-### robustness_rib300.py (exit 0, 82 s)
+### montecarlo.py valley1pm (exit 0, 4 s)
+a {'n': 2000, 'corr_w_a': 0.9999949279752447, 'slope_w_per_a_nm_per_deg': 3.833509052346288, 'expected_slope_strip_symmetry': 3.839724354387525}
+b {'n': 2000, 'corr_w_a': 0.9999270253347161, 'slope_w_per_a_nm_per_deg': 3.8321933935121066, 'expected_slope_strip_symmetry': 3.839724354387525}
+c {'n': 1980, 'corr_w_a': 0.9999982000408942, 'slope_w_per_a_nm_per_deg': 3.842002023344671, 'expected_slope_strip_symmetry': 3.839724354387525}
+
+
+### robustness_rib300.py (exit 0, 118 s)
 noise placeholder {'SIGMA_NEFF': 6.5e-06, 'SIGMA_NG': 0.001, 'SIGMA_PHASE': 0.001}
 best_one_etch_D_realistic: nominal 0.1616 [0.1184-0.1713]
   +-0.3%: median 0.1601, 5-95% 0.1277-0.2147 (-21.0% to +32.9%)
@@ -217,7 +224,7 @@ two_width_slab50_D_realistic: fixed mesh 0.3716 [0.3699-0.3795] (+1.3%)
     d/ds fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, -0.01%; +0.00%, +0.01%; -0.01%, +0.02%
 
 
-### robustness_rib300.py 1pm (exit 0, 73 s)
+### robustness_rib300.py 1pm (exit 0, 113 s)
 noise 1pm {'SIGMA_NEFF': 2.7483870967741936e-06, 'SIGMA_NG': np.float64(0.0010682448301570023), 'SIGMA_PHASE': 0.0011141048661221658}
 best_one_etch_D_realistic: nominal 0.139 [0.1007-0.1473]
   +-0.3%: median 0.1377, 5-95% 0.1088-0.1885 (-21.7% to +35.6%)
@@ -241,7 +248,7 @@ two_width_slab50_D_realistic: fixed mesh 0.3941 [0.3923-0.4026] (+1.3%)
     d/ds fixed vs remeshed (n_eff, n_g) at h/2, h, 2h: +0.02%, -0.01%; +0.00%, +0.01%; -0.01%, +0.02%
 
 
-### noise_sourced.py (exit 0, 2 s)
+### noise_sourced.py (exit 0, 3 s)
 placeholder                    sigma_neff 6.5e-06  sigma_ng 0.001  sigma_phase 0.001 rad
 sourced optimistic (0.1 pm)    sigma_neff 2.75e-07  sigma_ng 0.000107  sigma_phase 0.000111 rad
 sourced conservative (1 pm)    sigma_neff 2.75e-06  sigma_ng 0.00107  sigma_phase 0.00111 rad
@@ -259,22 +266,22 @@ strip + rib70 500 + 300, E realistic             sourced optimistic (0.1 pm)    
 strip + rib70 500 + 300, E realistic             sourced conservative (1 pm)    0.4552 [0.4552-0.4718]
 
 
-### crosscheck_fields.py (exit 0, 174 s)
-strip_TE_400 {'n_eff': 2.2296756236144897, 'te_fraction': 0.9659675291980678, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 1.0011, 'without_Ez': 1.0013}
-strip_TE_500 {'n_eff': 2.4487111925482403, 'te_fraction': 0.9834503795076107, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9939, 'without_Ez': 0.992}
-strip_TE_600 {'n_eff': 2.570506742842662, 'te_fraction': 0.9911275220072722, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 69, 'delta_um': 0.006, 'with_Ez': 0.996, 'without_Ez': 0.9946}
-strip_TM_500 {'n_eff': 1.7682365901945514, 'te_fraction': 0.04465673623662128, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9934, 'without_Ez': 0.9922}
-rib_TE_300_slab50 {'n_eff': 2.104432726508586, 'te_fraction': 0.9611985861497759, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.829, 'without_Ez': 0.7071}
-rib_TE_400_slab50 {'n_eff': 2.348998185857924, 'te_fraction': 0.9733287902318651, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8573, 'without_Ez': 0.7291}
-rib_TE_500_slab50 {'n_eff': 2.505826776903502, 'te_fraction': 0.9847749841347109, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8673, 'without_Ez': 0.7383}
-rib_TE_600_slab50 {'n_eff': 2.6020700088080027, 'te_fraction': 0.9910678016290608, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 53, 'delta_um': 0.006, 'with_Ez': 0.8819, 'without_Ez': 0.7583}
-rib_TE_300_slab90 {'n_eff': 2.3273647539735562, 'te_fraction': 0.9743568043190363, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7206, 'without_Ez': 0.6058}
-rib_TE_400_slab90 {'n_eff': 2.467769008130768, 'te_fraction': 0.9791784104857352, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7516, 'without_Ez': 0.6223}
-rib_TE_500_slab90 {'n_eff': 2.570704075000049, 'te_fraction': 0.9861633616721182, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 43, 'delta_um': 0.006, 'with_Ez': 0.8018, 'without_Ez': 0.6689}
-rib_TE_600_slab90 {'n_eff': 2.6405489308520806, 'te_fraction': 0.9910336866714556, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7557, 'without_Ez': 0.6032}
+### crosscheck_fields.py (exit 0, 269 s)
+strip_TE_400 {'n_eff': 2.2296756236144977, 'te_fraction': 0.9659675291980692, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 1.0011, 'without_Ez': 1.0013}
+strip_TE_500 {'n_eff': 2.4487111925482368, 'te_fraction': 0.9834503795076116, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9939, 'without_Ez': 0.992}
+strip_TE_600 {'n_eff': 2.57050674284267, 'te_fraction': 0.991127522007271, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 69, 'delta_um': 0.006, 'with_Ez': 0.996, 'without_Ez': 0.9946}
+strip_TM_500 {'n_eff': 1.7682365901945516, 'te_fraction': 0.04465673623662314, 'y_pivot_um': 0.0, 'wall_height_um': 0.22, 'n_points': 70, 'delta_um': 0.006, 'with_Ez': 0.9934, 'without_Ez': 0.9922}
+rib_TE_300_slab50 {'n_eff': 2.104432726508629, 'te_fraction': 0.9611985861497966, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.829, 'without_Ez': 0.7071}
+rib_TE_400_slab50 {'n_eff': 2.34899818585792, 'te_fraction': 0.9733287902318523, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8573, 'without_Ez': 0.7291}
+rib_TE_500_slab50 {'n_eff': 2.5058267769035028, 'te_fraction': 0.9847749841347094, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 51, 'delta_um': 0.006, 'with_Ez': 0.8673, 'without_Ez': 0.7383}
+rib_TE_600_slab50 {'n_eff': 2.6020700088079995, 'te_fraction': 0.9910678016290615, 'y_pivot_um': 0.05, 'wall_height_um': 0.16999999999999998, 'n_points': 53, 'delta_um': 0.006, 'with_Ez': 0.8819, 'without_Ez': 0.7583}
+rib_TE_300_slab90 {'n_eff': 2.327364753973549, 'te_fraction': 0.9743568043190357, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7206, 'without_Ez': 0.6058}
+rib_TE_400_slab90 {'n_eff': 2.4677690081307695, 'te_fraction': 0.9791784104857397, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7516, 'without_Ez': 0.6223}
+rib_TE_500_slab90 {'n_eff': 2.570704075000045, 'te_fraction': 0.9861633616721186, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 43, 'delta_um': 0.006, 'with_Ez': 0.8018, 'without_Ez': 0.6689}
+rib_TE_600_slab90 {'n_eff': 2.640548930852084, 'te_fraction': 0.9910336866714552, 'y_pivot_um': 0.09, 'wall_height_um': 0.13, 'n_points': 41, 'delta_um': 0.006, 'with_Ez': 0.7557, 'without_Ez': 0.6032}
 
 
-### crosschecks.py (exit 0, 1 s)
+### crosschecks.py (exit 0, 3 s)
 1. t tan(1)/1 = 3.84011 nm/deg; femwell 3.8396-3.8725 (max rel dev 0.84%)
 2. closed-form R vs femwell: strips max 0.78%, ribs max 5.38%, median 1.25%
    strip_TE_400         closed 1.0011  femwell 1.0001  (+0.10%)
@@ -295,7 +302,38 @@ rib_TE_600_slab90 {'n_eff': 2.6405489308520806, 'te_fraction': 0.991033686671455
 5. slot R 0.9991-1.0015, SWG 0.9988-1.0005, air strip (r8) [0.9782245025354422, 0.953256463337093]
 
 
-### assumption_sensitivity.py (exit 0, 1 s)
+### validation_checks.py (exit 0, 3 s)
+femwell vs EMpy: {
+ "strip": {
+  "n": 10,
+  "max_abs_rel_diff_neff": 0.007906363196985566,
+  "median_abs_rel_diff_neff": 0.0043915841180992565,
+  "max_abs_rel_diff_ng": 0.01566705037803673
+ },
+ "rib": {
+  "n": 5,
+  "max_abs_rel_diff_neff": 0.00147123457003695,
+  "median_abs_rel_diff_neff": 0.0003525963785786512,
+  "max_abs_rel_diff_ng": 0.0036520733502939384
+ },
+ "slot": {
+  "n": 10,
+  "max_abs_rel_diff_neff": 0.035146711219439464,
+  "median_abs_rel_diff_neff": 0.0163418327514393,
+  "max_abs_rel_diff_ng": 0.09682787404342519
+ },
+ "swg": {
+  "n": 5,
+  "max_abs_rel_diff_neff": 0.006045816003612092,
+  "median_abs_rel_diff_neff": 0.004348305984186895,
+  "max_abs_rel_diff_ng": 0.014454085844905151
+ }
+}
+femwell vs EIM: {'rib_500_slab90': {'eim': 2.602, 'femwell': 2.5707040750000383, 'rel_diff': -0.01202764219829422}, 'strip_500': {'eim': 2.494, 'femwell': 2.4487111925482514, 'rel_diff': -0.01815910483229699}, 'note': "EIM values are the chapter authors' own calculation (Section 2.3); not a measurement"}
+domain: {'scale': 1.5, 'standard_um': [1.4, 1.2], 'large_um': [2.1, 1.8], 'max_abs_rel_diff_neff': 2.042850360317594e-06, 'max_abs_rel_diff_ng': 1.3228881427962413e-05, 'max_abs_rel_diff_derivative': 0.003465529057670391, 'two_width_crb': {'standard': 0.38910445940026206, 'large_domain': 0.4092808816061859, 'rel_change': 0.05185348488943653, 'noise': '1pm', 'stage': 'D', 'priors': 'realistic', 'slab_nm': 50}}
+
+
+### assumption_sensitivity.py (exit 0, 3 s)
 best: base 0.139
    sigma_lambda                           0.1 pm (best case)         0.0139 (-90.0%)
    sigma_lambda                           0.5 pm                     0.06951 (-50.0%)
@@ -338,7 +376,7 @@ two: base 0.3891
    strip symmetry                         not imposed (raw femwell)  0.374 (-3.9%)
 
 
-### claims_checks.py (exit 0, 2 s)
+### claims_checks.py (exit 0, 3 s)
 {
  "noise": "1pm",
  "sigma_neff": 2.7483870967741936e-06,
@@ -364,11 +402,11 @@ EMpy vs femwell: {'dneff_dw': 0.0582, 'dneff_dt': 0.0474, 'dneff_da': 0.0591, 'd
 two-width trend: {'noise': '1pm', 'stage': 'D realistic', 'a_deg_by_slab': {'30': 0.41403086010095796, '40': 0.4027257027535949, '50': 0.38910445940026206, '70': 0.4521460016915199, '90': 0.5972046443308687, '110': 0.8549052259140861, '130': 1.295715157656939, '150': 4.088610030865424}, 'best_slab': 50, 'monotonic_increasing_with_slab': False}
 
 
-### record_environment.py (exit 0, 3 s)
+### record_environment.py (exit 0, 8 s)
 <!-- generated by src/record_environment.py; do not edit -->
 # Environment
 
-Recorded at git commit `36304e69ce3ecee7838bf1faff82272ff8676628` on `Windows-11-10.0.26200-SP0`.
+Recorded at git commit `e3074101f151b8110f275ca67e46bf788407d06c` on `Windows-11-10.0.26200-SP0`.
 
 ## Software
 
@@ -379,8 +417,8 @@ Recorded at git commit `36304e69ce3ecee7838bf1faff82272ff8676628` on `Windows-11
 
 
 
-### make_headline_numbers.py (exit 0, 1 s)
-{'COMPUTED': 114, 'DERIVED': 15, 'CITED': 9, 'ASSUMED': 15} 153 rows; 16 uncommitted files
+### make_headline_numbers.py (exit 0, 2 s)
+{'COMPUTED': 137, 'DERIVED': 15, 'CITED': 9, 'ASSUMED': 15} 176 rows; 16 uncommitted files
 
 
 ### make_final_docs.py (exit 0, 0 s)

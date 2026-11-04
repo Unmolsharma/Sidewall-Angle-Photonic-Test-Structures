@@ -1,27 +1,29 @@
-{'cmd': 'step_check_all.py', 'exit': 0, 'seconds': 1.5397558212280273}
-{'cmd': 'SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py', 'exit': 0, 'seconds': 101.03550505638123}
-{'cmd': 'sym_search.py placeholder ../results_final/sym_search_placeholder/data', 'exit': 0, 'seconds': 131.1203978061676}
-{'cmd': 'sym_search.py 1pm ../results_final/sym_search_1pm/data', 'exit': 0, 'seconds': 127.18260860443115}
-{'cmd': 'strips_angle_info.py', 'exit': 0, 'seconds': 36.84684419631958}
-{'cmd': 'montecarlo.py plan', 'exit': 0, 'seconds': 1.7477798461914062}
-{'cmd': 'montecarlo.py fit', 'exit': 0, 'seconds': 1.7955245971679688}
-{'cmd': 'montecarlo.py surrcheck', 'exit': 0, 'seconds': 1.6410408020019531}
-{'cmd': 'montecarlo.py mc', 'exit': 0, 'seconds': 869.0241074562073}
-{'cmd': 'montecarlo.py mc1pm', 'exit': 0, 'seconds': 234.12105131149292}
-{'cmd': 'montecarlo.py valley', 'exit': 0, 'seconds': 1.8178253173828125}
-{'cmd': 'robustness_rib300.py', 'exit': 0, 'seconds': 81.5891478061676}
-{'cmd': 'robustness_rib300.py 1pm', 'exit': 0, 'seconds': 72.67836308479309}
-{'cmd': 'noise_sourced.py', 'exit': 0, 'seconds': 1.7302279472351074}
-{'cmd': 'crosscheck_fields.py', 'exit': 0, 'seconds': 174.30447268486023}
-{'cmd': 'crosschecks.py', 'exit': 0, 'seconds': 1.4048781394958496}
-{'cmd': 'assumption_sensitivity.py', 'exit': 0, 'seconds': 1.373335599899292}
-{'cmd': 'claims_checks.py', 'exit': 0, 'seconds': 1.6677320003509521}
-{'cmd': 'record_environment.py', 'exit': 0, 'seconds': 3.3130507469177246}
-{'cmd': 'make_headline_numbers.py', 'exit': 0, 'seconds': 1.3194513320922852}
-{'cmd': 'make_final_docs.py', 'exit': 0, 'seconds': 0.13180756568908691}
-{'n_files': 44, 'n_exact': 39, 'n_within_tol': 2, 'n_differ': 3, 'n_missing': 0}
+{'cmd': 'step_check_all.py', 'exit': 0, 'seconds': 2.267022132873535}
+{'cmd': 'SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py', 'exit': 0, 'seconds': 123.73374915122986}
+{'cmd': 'sym_search.py placeholder ../results_final/sym_search_placeholder/data', 'exit': 0, 'seconds': 137.58093905448914}
+{'cmd': 'sym_search.py 1pm ../results_final/sym_search_1pm/data', 'exit': 0, 'seconds': 87.29323625564575}
+{'cmd': 'strips_angle_info.py', 'exit': 0, 'seconds': 16.8618483543396}
+{'cmd': 'montecarlo.py plan', 'exit': 0, 'seconds': 2.162273406982422}
+{'cmd': 'montecarlo.py fit', 'exit': 0, 'seconds': 2.1373467445373535}
+{'cmd': 'montecarlo.py surrcheck', 'exit': 0, 'seconds': 2.0589945316314697}
+{'cmd': 'montecarlo.py mc', 'exit': 0, 'seconds': 288.3213849067688}
+{'cmd': 'montecarlo.py mc1pm', 'exit': 0, 'seconds': 1964.5169172286987}
+{'cmd': 'montecarlo.py valley', 'exit': 0, 'seconds': 3.971473217010498}
+{'cmd': 'montecarlo.py valley1pm', 'exit': 0, 'seconds': 3.525728464126587}
+{'cmd': 'robustness_rib300.py', 'exit': 0, 'seconds': 117.58243083953857}
+{'cmd': 'robustness_rib300.py 1pm', 'exit': 0, 'seconds': 113.03215479850769}
+{'cmd': 'noise_sourced.py', 'exit': 0, 'seconds': 2.6417765617370605}
+{'cmd': 'crosscheck_fields.py', 'exit': 0, 'seconds': 269.41428112983704}
+{'cmd': 'crosschecks.py', 'exit': 0, 'seconds': 2.661620616912842}
+{'cmd': 'validation_checks.py', 'exit': 0, 'seconds': 3.1129233837127686}
+{'cmd': 'assumption_sensitivity.py', 'exit': 0, 'seconds': 2.638463020324707}
+{'cmd': 'claims_checks.py', 'exit': 0, 'seconds': 3.116508722305298}
+{'cmd': 'record_environment.py', 'exit': 0, 'seconds': 8.401484727859497}
+{'cmd': 'make_headline_numbers.py', 'exit': 0, 'seconds': 2.3809738159179688}
+{'cmd': 'make_final_docs.py', 'exit': 0, 'seconds': 0.25832033157348633}
+{'n_files': 46, 'n_exact': 42, 'n_within_tol': 2, 'n_differ': 2, 'n_missing': 0}
 {'file': 'results_montecarlo/data/strips_info.json', 'n_numbers': 337, 'max_rel_diff': 0.7149991472410677, 'result': '160 numbers differ'}
 {'file': 'results_montecarlo/data/strips_info_perturbation.csv', 'n_numbers': 264000, 'max_rel_diff': 0.984161704689667, 'result': '55996 numbers differ'}
-{'file': 'results_montecarlo/data/mc_results.json', 'n_numbers': 159, 'result': 'DIFFERENT count (159 vs 168)', 'max_rel_diff': None}
-{'file': 'results_final/data/crosscheck_fields.json', 'n_numbers': 120, 'max_rel_diff': 1.2714852413330364e-13, 'result': 'within tolerance'}
-{'file': 'results_final/data/crosschecks.json', 'n_numbers': 175, 'max_rel_diff': 3.552706903186835e-11, 'result': 'within tolerance'}
+{'file': 'results_montecarlo/data/mc_results.json', 'n_numbers': 159, 'max_rel_diff': 0.0, 'result': 'identical; keys only in rerun: .a.noise.SIGMA_NEFF, .a.noise.SIGMA_NG, .a.noise.SIGMA_PHASE, .b.noise.SIGMA_NEFF, .b.noise.SIGMA_NG, .b.noise.SIGMA_PHASE, .c.noise.SIGMA_NEFF, .c.noise.SIGMA_NG, .c.noise.SIGMA_PHASE'}
+{'file': 'results_final/data/crosscheck_fields.json', 'n_numbers': 120, 'max_rel_diff': 1.5683852472568459e-13, 'result': 'within tolerance'}
+{'file': 'results_final/data/crosschecks.json', 'n_numbers': 175, 'max_rel_diff': 4.1646564176113616e-11, 'result': 'within tolerance'}

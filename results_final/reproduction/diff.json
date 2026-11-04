@@ -14,113 +14,124 @@
   "results_femwell/cache/solves_r8.jsonl",
   "results_etchdepth_femwell/cache/solves_r12.jsonl",
   "results_montecarlo/cache/solves_r12.jsonl",
-  "results_montecarlo/fixedmesh/cache/solves_r12.jsonl"
+  "results_montecarlo/fixedmesh/cache/solves_r12.jsonl",
+  "results_final/domain_check/cache/solves_r12.jsonl"
  ],
  "steps": [
   {
    "cmd": "step_check_all.py",
    "exit": 0,
-   "seconds": 1.5397558212280273
+   "seconds": 2.267022132873535
   },
   {
    "cmd": "SYM_SEARCH_SLABS=50,70,90,110,130,150 sym_search.py",
    "exit": 0,
-   "seconds": 101.03550505638123
+   "seconds": 123.73374915122986
   },
   {
    "cmd": "sym_search.py placeholder ../results_final/sym_search_placeholder/data",
    "exit": 0,
-   "seconds": 131.1203978061676
+   "seconds": 137.58093905448914
   },
   {
    "cmd": "sym_search.py 1pm ../results_final/sym_search_1pm/data",
    "exit": 0,
-   "seconds": 127.18260860443115
+   "seconds": 87.29323625564575
   },
   {
    "cmd": "strips_angle_info.py",
    "exit": 0,
-   "seconds": 36.84684419631958
+   "seconds": 16.8618483543396
   },
   {
    "cmd": "montecarlo.py plan",
    "exit": 0,
-   "seconds": 1.7477798461914062
+   "seconds": 2.162273406982422
   },
   {
    "cmd": "montecarlo.py fit",
    "exit": 0,
-   "seconds": 1.7955245971679688
+   "seconds": 2.1373467445373535
   },
   {
    "cmd": "montecarlo.py surrcheck",
    "exit": 0,
-   "seconds": 1.6410408020019531
+   "seconds": 2.0589945316314697
   },
   {
    "cmd": "montecarlo.py mc",
    "exit": 0,
-   "seconds": 869.0241074562073
+   "seconds": 288.3213849067688
   },
   {
    "cmd": "montecarlo.py mc1pm",
    "exit": 0,
-   "seconds": 234.12105131149292
+   "seconds": 1964.5169172286987
   },
   {
    "cmd": "montecarlo.py valley",
    "exit": 0,
-   "seconds": 1.8178253173828125
+   "seconds": 3.971473217010498
+  },
+  {
+   "cmd": "montecarlo.py valley1pm",
+   "exit": 0,
+   "seconds": 3.525728464126587
   },
   {
    "cmd": "robustness_rib300.py",
    "exit": 0,
-   "seconds": 81.5891478061676
+   "seconds": 117.58243083953857
   },
   {
    "cmd": "robustness_rib300.py 1pm",
    "exit": 0,
-   "seconds": 72.67836308479309
+   "seconds": 113.03215479850769
   },
   {
    "cmd": "noise_sourced.py",
    "exit": 0,
-   "seconds": 1.7302279472351074
+   "seconds": 2.6417765617370605
   },
   {
    "cmd": "crosscheck_fields.py",
    "exit": 0,
-   "seconds": 174.30447268486023
+   "seconds": 269.41428112983704
   },
   {
    "cmd": "crosschecks.py",
    "exit": 0,
-   "seconds": 1.4048781394958496
+   "seconds": 2.661620616912842
+  },
+  {
+   "cmd": "validation_checks.py",
+   "exit": 0,
+   "seconds": 3.1129233837127686
   },
   {
    "cmd": "assumption_sensitivity.py",
    "exit": 0,
-   "seconds": 1.373335599899292
+   "seconds": 2.638463020324707
   },
   {
    "cmd": "claims_checks.py",
    "exit": 0,
-   "seconds": 1.6677320003509521
+   "seconds": 3.116508722305298
   },
   {
    "cmd": "record_environment.py",
    "exit": 0,
-   "seconds": 3.3130507469177246
+   "seconds": 8.401484727859497
   },
   {
    "cmd": "make_headline_numbers.py",
    "exit": 0,
-   "seconds": 1.3194513320922852
+   "seconds": 2.3809738159179688
   },
   {
    "cmd": "make_final_docs.py",
    "exit": 0,
-   "seconds": 0.13180756568908691
+   "seconds": 0.25832033157348633
   }
  ],
  "files": [
@@ -312,19 +323,31 @@
   },
   {
    "file": "results_montecarlo/data/mc_results_1pm.json",
-   "n_numbers": 112,
+   "n_numbers": 168,
    "max_rel_diff": 0.0,
    "result": "identical"
   },
   {
    "file": "results_montecarlo/data/mc_fits_1pm.csv",
-   "n_numbers": 44000,
+   "n_numbers": 65800,
    "max_rel_diff": 0.0,
    "result": "identical"
   },
   {
    "file": "results_montecarlo/data/mc_valley.json",
    "n_numbers": 12,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_montecarlo/data/mc_valley_1pm.json",
+   "n_numbers": 12,
+   "max_rel_diff": 0.0,
+   "result": "identical"
+  },
+  {
+   "file": "results_final/data/validation.json",
+   "n_numbers": 423,
    "max_rel_diff": 0.0,
    "result": "identical"
   },
@@ -349,13 +372,13 @@
   {
    "file": "results_final/data/crosscheck_fields.json",
    "n_numbers": 120,
-   "max_rel_diff": 1.2714852413330364e-13,
+   "max_rel_diff": 1.5683852472568459e-13,
    "result": "within tolerance"
   },
   {
    "file": "results_final/data/crosschecks.json",
    "n_numbers": 175,
-   "max_rel_diff": 3.552706903186835e-11,
+   "max_rel_diff": 4.1646564176113616e-11,
    "result": "within tolerance"
   },
   {
@@ -372,7 +395,7 @@
   },
   {
    "file": "results_final/HEADLINE_NUMBERS.md",
-   "n_numbers": 645,
+   "n_numbers": 691,
    "max_rel_diff": 0.0,
    "result": "identical"
   },
@@ -2551,12 +2574,12 @@
    "rerun": 0.2841367470908365
   }
  ],
- "n_files": 44,
- "n_exact": 40,
+ "n_files": 46,
+ "n_exact": 42,
  "n_within_tol": 2,
  "n_differ": 2,
  "n_missing": 0,
- "minutes": 0.059797823429107666,
+ "minutes": 52.8613335053126,
  "sampling_notes": [
   {
    "file": "results_montecarlo/data/strips_info.json",
