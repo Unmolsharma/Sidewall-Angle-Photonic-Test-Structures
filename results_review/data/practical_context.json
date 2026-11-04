@@ -1,0 +1,20 @@
+{
+ "zortman2010": {
+  "quote": "within 1 THz across a wafer and 105 GHz within a single die",
+  "wafer_THz": 1.0,
+  "die_GHz": 105.0,
+  "wafer_nm_at_1550": 8.013877387135603,
+  "die_pm_at_1550": 841.4571256492383,
+  "note": "microdisks, 6-inch SOI 0.35 um process; frequency spread converted with d lambda = lambda^2 d f / c"
+ },
+ "jayatilleka2021": {
+  "quote": "within ±32 pm of a target wavelength of 1310 nm",
+  "trimmed_to_pm": 32.0,
+  "note": "after post-fabrication trimming, 300 mm SOI wafer"
+ },
+ "selvaraja2010": {
+  "quote": "linewidth control better than 0.6 nm within chip and better than 2 nm chip-to-chip",
+  "within_chip_nm": 0.6,
+  "chip_to_chip_nm": 2.0
+ }
+}
