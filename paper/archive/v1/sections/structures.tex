@@ -1,0 +1,23 @@
+\section{Test Structures}
+\label{sec:structures}
+
+All structures share a \qty{220}{nm} silicon film with oxide below and an oxide cladding above. Strips are fully
+etched, with bottom widths of 400, 450, 500, 550 and \qty{600}{nm} in both TE and TM. Ribs are TE only, with a slab
+of thickness $s$ left by a partial etch of depth $d=t-s$. At $s=70$ and \qty{90}{nm} we simulated rib widths of 300,
+400, 500 and \qty{600}{nm}; at $s=30$, 40, 50, 110, 130 and \qty{150}{nm} we simulated widths of 300 and
+\qty{500}{nm}, which is enough to compare slabs for a two-width set. Each structure is read out by one ring and one
+MZI.
+
+The MZI turns out to be redundant with a ring of the same waveguide. Its phase is proportional to $\neff$, so its row
+in $\mathbf{J}$ is parallel to the ring's $\neff$ row and only lowers the effective $\neff$ noise. For the two sets
+discussed in Section~\ref{sec:results}, the CRLB with ring and MZI equals the CRLB of the ring alone with the combined
+$\neff$ noise to better than one part in $10^{12}$; removing the MZI raises the bound of the best eight-structure set
+from \qty{0.139}{\degree} to \qty{0.190}{\degree} and that of the two-width set from \qty{0.389}{\degree} to \qty{0.393}{\degree}. An MZI is therefore worth adding only as a cheaper way to average down the $\neff$ noise.
+
+Identifiability follows from a simple count. Strips share $w$, $t$ and $\theta$, and every strip adds two observables
+but no unknowns; yet their angle and width columns are parallel (Section~\ref{sec:theory}), so they constrain only
+one combination of the two. A rib from a separate etch adds two observables ($\neff$, $\ngr$) and two unknowns ($d$,
+$\theta_r$). Its observables are used up determining its own etch, and nothing is left over for $\theta$. A second
+width of the same rib adds two observables and no unknowns, and the two widths sense $d$ and $\theta_r$ with
+different weights, which frees the rib's width information to break the strip degeneracy. Stage~B, where the rib
+shares the strip angle, is the exception: there one rib adds only one unknown.

@@ -1,0 +1,95 @@
+\section{Theory}
+\label{sec:theory}
+
+\subsection{Measurement model and Cram\'er--Rao bound}
+
+Each test structure is a waveguide of bottom width $w$ in a silicon film of thickness $t$, read out by a ring
+resonator and a Mach--Zehnder interferometer (MZI). The unknown parameters form a vector $\mathbf{p}$ that always
+contains the strip width offset, the film thickness and the strip sidewall angle $\theta$, measured from vertical
+with the top narrower. A ring gives two observables, the effective index $\neff$ through the resonance position and
+the group index $\ngr$ through the free spectral range; an MZI gives one phase. Reading $\neff$ from a resonance
+position assumes that the resonance order and the ring length are known, so that a wavelength shift maps onto an index
+change; we make this assumption throughout. Stacking all observables into
+$\mathbf{y}=\mathbf{f}(\mathbf{p})+\boldsymbol{\epsilon}$ with independent Gaussian noise of standard deviations
+$\sigma_k$, the Fisher information matrix is
+\begin{equation}
+\mathbf{F}=\mathbf{J}^{\mathsf T}\boldsymbol{\Sigma}^{-1}\mathbf{J}+\boldsymbol{\Lambda},\qquad
+J_{kj}=\frac{\partial f_k}{\partial p_j},
+\label{eq:fisher}
+\end{equation}
+where $\boldsymbol{\Sigma}=\mathrm{diag}(\sigma_k^2)$ and $\boldsymbol{\Lambda}$ is diagonal in the parameters that
+have a Gaussian prior, with entries $1/\sigma_{p,j}^2$ (a prior on a difference of two parameters adds the
+corresponding rank-one term). The CRLB on the angle is~\cite{kay1993}
+\begin{equation}
+\sth\ge\sqrt{\left[\mathbf{F}^{-1}\right]_{\theta\theta}}.
+\label{eq:crlb}
+\end{equation}
+When $\mathbf{F}$ is singular along a direction that has a component on $\theta$, no unbiased estimator has finite
+variance and we call the angle unidentifiable ($\sth=\infty$). Numerically, $\mathbf{J}$ is column-normalized and
+singular values below a fixed small fraction of the largest are treated as zero.
+
+The noise is set by the precision $\sigma_\lambda$ with which a resonance wavelength can be located. Janz
+\textit{et~al.}\ report that wavelength changes of \qty{1}{pm} or less are routinely measured with calibrated tunable
+lasers, and that a temperature-stabilized ring reached a \qty{0.1}{pm} uncertainty set by the laser
+repeatability~\cite{janz2023}. We take \qty{1}{pm} as the primary case and \qty{0.1}{pm} as the best case. The
+conversion to the three observables is ours. A resonance shift obeys
+$\delta\lambda/\lambda=\delta\neff/\ngr$, so $\sigma_{\neff}=\ngr\sigma_\lambda/\lambda$; the group index follows from
+one free spectral range, $\ngr=\lambda^2/(L\,\mathrm{FSR})$, measured with two resonances, so
+$\sigma_{\ngr}=\sqrt2\,\sigma_\lambda\ngr^2L/\lambda^2$; and an MZI fringe read as precisely as a ring resonance gives
+$\sigma_\phi=2\pi\ngr L\sigma_\lambda/\lambda^2$. With $\lambda=\qty{1.55}{\micro m}$, a ring and MZI length
+$L=\qty{100}{\micro m}$ and $\ngr=4.26$, the largest group index among the structures used, $\sigma_\lambda=\qty{1}{pm}$
+gives $\sigma_{\neff}=\num{2.75e-6}$, $\sigma_{\ngr}=\num{1.07e-3}$ and $\sigma_\phi=\qty{1.11e-3}{rad}$. These
+three values are derived, not measured; the MZI value in particular assumes that a broad fringe is located as well
+as a narrow resonance. At \qty{0.1}{pm} the ring must also be held to about \qty{1.25}{mK}, since its resonance moves
+by roughly \qty{80}{pm/K}~\cite{janz2023}.
+
+\subsection{Unknown parameters and priors}
+
+We add process unknowns in stages. Stage~B adds the etch depth $d$ of a partially etched rib, with the rib angle
+taken equal to $\theta$. Stage~C gives the rib its own angle $\theta_r$, as when the partial etch is a separate
+step. Stage~D adds the silicon and oxide indices $\nsi$ and $\nox$, and stage~E the temperature $T$, which enters
+through the thermo-optic coefficients of silicon~\cite{frey2006} and silica~\cite{leviton2008}. Unless stated,
+results are for stage~D. ``Realistic'' priors are $\sigma_d=\qty{2}{nm}$, $\sigma_{\nsi}=10^{-4}$,
+$\sigma_{\nox}=10^{-3}$ and $\sigma_T=\qty{1}{K}$. These are assumptions; the silicon value is close to the
+\num{8.67e-5} absolute index uncertainty measured for bulk silicon at \qty{1.5}{\micro m} and
+\qty{295}{K}~\cite{frey2006}, while device-layer doping, stress and deposited cladding oxides are not covered by any
+source we could verify.
+
+\subsection{Why a strip cannot see its sidewall angle}
+
+Tilting a wall by $\theta$ about its bottom edge at height $y_\mathrm{pivot}$ moves the wall inward by
+$\delta x(y)=(y-y_\mathrm{pivot})\tan\theta$. To first order, the change of $\neff$ caused by moving a dielectric
+boundary is a weighted integral of the displacement over the boundary~\cite{johnson2002},
+\begin{equation}
+\delta\neff\propto-\int_{\mathrm{wall}} W(y)\,\delta x(y)\,dy,
+\label{eq:boundary}
+\end{equation}
+with $W(y)=\Delta\varepsilon\,|\mathbf{E}_\parallel|^2+\Delta\varepsilon\,(\varepsilon_1/\varepsilon_2)\,|E_\perp|^2$
+evaluated on the core side, $\Delta\varepsilon=\varepsilon_1-\varepsilon_2$, and $\varepsilon_1$, $\varepsilon_2$
+the core and cladding permittivities. A uniform width increase $\delta w$ moves both walls outward by $\delta w/2$.
+Comparing the two perturbations for both walls of a symmetric waveguide gives
+\begin{equation}
+\frac{\partial\neff/\partial\theta}{\partial\neff/\partial w}=-h\,R\,\tan(\qty{1}{\degree})\ \text{per degree},
+\label{eq:R}
+\end{equation}
+\begin{equation}
+R=\frac{y_c-y_\mathrm{pivot}}{h/2},
+\label{eq:Rdef}
+\end{equation}
+where $h$ is the height of the tilted wall and $y_c=\int yW\,dy/\int W\,dy$ is the centroid of the wall weight. We
+write~\eqref{eq:R} in the form of a central difference over $\pm\qty{1}{\degree}$, which is how the derivatives are
+computed; the exact derivative has $\pi/180$ in place of $\tan(\qty{1}{\degree})$. A tilt
+therefore acts exactly like a width change of $-2(y_c-y_\mathrm{pivot})\tan\theta$.
+
+For a strip with oxide both below and above, the structure and its mode are mirror-symmetric about mid-height, so
+$y_c=t/2$ and $R=1$ exactly. A \qty{1}{\degree} tilt is then indistinguishable from a width change of
+$t\tan(\qty{1}{\degree})=\qty{3.8401}{nm}$ for $t=\qty{220}{nm}$. The relation holds at every wavelength, so it
+holds for $\ngr$ as well as for $\neff$, for TE and TM, and for every strip width. The angle column of $\mathbf{J}$ is
+then a fixed multiple of the width column for every strip observable, $\mathbf{F}$ is singular, and no set of strips
+determines $\theta$. The rotation of the wall about mid-height that remains after removing the uniform shift is odd
+under the mirror operation and enters only at second order.
+
+A rib breaks the mirror symmetry: the wall is the upper part of the cross-section, its pivot is the slab top, and the
+slab pulls the mode down toward the wall's lower corner. Then $y_c<y_\mathrm{pivot}+h/2$ and $R<1$, and the angle
+column of a rib is no longer parallel to its width column. Whether this new direction survives in a joint fit depends
+on how many unknowns the rib brings, which we count in Section~\ref{sec:structures}.
