@@ -2953,9 +2953,2169 @@
      ],
      "retired": false,
      "context": "| 0.012 | Core mesh resolution r12 (um) | ASSUMED | `src/femwell_batch.py` MESH[\"r12\"] (read back from `results_final/data/environment.json`"
+    },
+    {
+     "line": 249,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3891 | two-width set: baseline CRB (deg), independent errors | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyse"
+    },
+    {
+     "line": 250,
+     "number": "0.3365",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3365 | two-width set: CRB with correlation rho = -0.707 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 250,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3365 | two-width set: CRB with correlation rho = -0.707 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 251,
+     "number": "0.2996",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.2996 | two-width set: CRB with correlation rho = 0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py` "
+    },
+    {
+     "line": 251,
+     "number": "0.900",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.2996 | two-width set: CRB with correlation rho = 0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py` "
+    },
+    {
+     "line": 252,
+     "number": "0.2985",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.2985 | two-width set: CRB with correlation rho = -0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 252,
+     "number": "-0.900",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.2985 | two-width set: CRB with correlation rho = -0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 253,
+     "number": "1.07",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.07 | two-width set: CRB with a common wavelength-calibration offset, prior unknown | COMPUTED | `src/review_analyses.py` → `results_revi"
+    },
+    {
+     "line": 254,
+     "number": "0.3892",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3892 | two-width set: CRB with a common wavelength-calibration offset, prior 10 pm | COMPUTED | `src/review_analyses.py` → `results_revi"
+    },
+    {
+     "line": 255,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3891 | two-width set: CRB with a common wavelength-calibration offset, prior 1 pm | COMPUTED | `src/review_analyses.py` → `results_revie"
+    },
+    {
+     "line": 256,
+     "number": "0.38913",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.38913 | two-width set: CRB with temperature a shared unknown, prior 0.1 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 256,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.38913 | two-width set: CRB with temperature a shared unknown, prior 0.1 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 257,
+     "number": "0.3898",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3898 | two-width set: CRB with temperature a shared unknown, prior 0.5 K | COMPUTED | `src/review_analyses.py` → `results_review/data/re"
+    },
+    {
+     "line": 257,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3898 | two-width set: CRB with temperature a shared unknown, prior 0.5 K | COMPUTED | `src/review_analyses.py` → `results_review/data/re"
+    },
+    {
+     "line": 258,
+     "number": "0.39166",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.39166 | two-width set: CRB with temperature a shared unknown, prior 1.0 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 258,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.39166 | two-width set: CRB with temperature a shared unknown, prior 1.0 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 259,
+     "number": "0.41216",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.41216 | two-width set: CRB with temperature a shared unknown, prior unknown | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 260,
+     "number": "0.3892",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3892 | two-width set: CRB with an independent temperature drift of 1 mK per structure | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 261,
+     "number": "0.3935",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3935 | two-width set: CRB with an independent temperature drift of 10 mK per structure | COMPUTED | `src/review_analyses.py` → `results_"
+    },
+    {
+     "line": 262,
+     "number": "0.4599",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4599 | two-width set: CRB with an independent temperature drift of 100 mK per structure | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 263,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.139 | best set of 8: baseline CRB (deg), independent errors | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses"
+    },
+    {
+     "line": 264,
+     "number": "0.1142",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1142 | best set of 8: CRB with correlation rho = -0.707 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 264,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1142 | best set of 8: CRB with correlation rho = -0.707 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 265,
+     "number": "0.07949",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.07949 | best set of 8: CRB with correlation rho = 0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 265,
+     "number": "0.900",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.07949 | best set of 8: CRB with correlation rho = 0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py`"
+    },
+    {
+     "line": 266,
+     "number": "0.08021",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.08021 | best set of 8: CRB with correlation rho = -0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py"
+    },
+    {
+     "line": 266,
+     "number": "-0.900",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.08021 | best set of 8: CRB with correlation rho = -0.900 between the n_eff and n_g errors of a ring | COMPUTED | `src/review_analyses.py"
+    },
+    {
+     "line": 267,
+     "number": "0.1393",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1393 | best set of 8: CRB with a common wavelength-calibration offset, prior unknown | COMPUTED | `src/review_analyses.py` → `results_re"
+    },
+    {
+     "line": 268,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.139 | best set of 8: CRB with a common wavelength-calibration offset, prior 10 pm | COMPUTED | `src/review_analyses.py` → `results_revie"
+    },
+    {
+     "line": 269,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.139 | best set of 8: CRB with a common wavelength-calibration offset, prior 1 pm | COMPUTED | `src/review_analyses.py` → `results_review"
+    },
+    {
+     "line": 270,
+     "number": "0.13899",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13899 | best set of 8: CRB with temperature a shared unknown, prior 0.1 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 270,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13899 | best set of 8: CRB with temperature a shared unknown, prior 0.1 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 271,
+     "number": "0.13901",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13901 | best set of 8: CRB with temperature a shared unknown, prior 0.5 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 271,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13901 | best set of 8: CRB with temperature a shared unknown, prior 0.5 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 272,
+     "number": "0.13903",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13903 | best set of 8: CRB with temperature a shared unknown, prior 1.0 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 272,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13903 | best set of 8: CRB with temperature a shared unknown, prior 1.0 K | COMPUTED | `src/review_analyses.py` → `results_review/data/r"
+    },
+    {
+     "line": 273,
+     "number": "0.13904",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.13904 | best set of 8: CRB with temperature a shared unknown, prior unknown | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 274,
+     "number": "0.1396",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1396 | best set of 8: CRB with an independent temperature drift of 1 mK per structure | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 275,
+     "number": "0.1877",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1877 | best set of 8: CRB with an independent temperature drift of 10 mK per structure | COMPUTED | `src/review_analyses.py` → `results_"
+    },
+    {
+     "line": 276,
+     "number": "0.4993",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4993 | best set of 8: CRB with an independent temperature drift of 100 mK per structure | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 282,
+     "number": "0.3932",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3932 | two-width set: CRB (deg), rings only (no MZI) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json` "
+    },
+    {
+     "line": 283,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3891 | two-width set: CRB (deg), MZI phase noise as derived | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses"
+    },
+    {
+     "line": 284,
+     "number": "0.3925",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3925 | two-width set: CRB (deg), MZI 3x noisier | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json` : `mz"
+    },
+    {
+     "line": 285,
+     "number": "0.3932",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3932 | two-width set: CRB (deg), MZI 10x noisier | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json` : `m"
+    },
+    {
+     "line": 286,
+     "number": "0.1901",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1901 | best set of 8: CRB (deg), rings only (no MZI) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json` "
+    },
+    {
+     "line": 287,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.139 | best set of 8: CRB (deg), MZI phase noise as derived | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses."
+    },
+    {
+     "line": 288,
+     "number": "0.1815",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1815 | best set of 8: CRB (deg), MZI 3x noisier | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json` : `mz"
+    },
+    {
+     "line": 289,
+     "number": "0.1892",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1892 | best set of 8: CRB (deg), MZI 10x noisier | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json` : `m"
+    },
+    {
+     "line": 290,
+     "number": "0.4356",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4356 | Ring-only exhaustive search, best set of 4: CRB (deg) [strip_TM_400, strip_TM_500, rib_TE_300_slab50, rib_TE_500_slab50] | COMPUT"
+    },
+    {
+     "line": 291,
+     "number": "0.3606",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3606 | Ring-only exhaustive search, best set of 5: CRB (deg) [strip_TE_500, strip_TE_600, rib_TE_300_slab90, rib_TE_400_slab90, rib_TE_5"
+    },
+    {
+     "line": 292,
+     "number": "0.2029",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.2029 | Ring-only exhaustive search, best set of 6: CRB (deg) [strip_TE_400, strip_TE_600, strip_TM_400, rib_TE_300_slab90, rib_TE_400_sl"
+    },
+    {
+     "line": 293,
+     "number": "0.1941",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1941 | Ring-only exhaustive search, best set of 7: CRB (deg) [strip_TE_400, strip_TE_600, strip_TM_400, rib_TE_300_slab90, rib_TE_400_sl"
+    },
+    {
+     "line": 294,
+     "number": "0.1895",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1895 | Ring-only exhaustive search, best set of 8: CRB (deg) [strip_TE_400, strip_TE_550, strip_TE_600, strip_TM_400, rib_TE_300_slab90,"
+    },
+    {
+     "line": 295,
+     "number": "0.4202",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4202 | Ring-only two-width set, 30 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 296,
+     "number": "0.4079",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4079 | Ring-only two-width set, 40 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 297,
+     "number": "0.3932",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3932 | Ring-only two-width set, 50 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 298,
+     "number": "0.4554",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4554 | Ring-only two-width set, 70 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 299,
+     "number": "0.6001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.6001 | Ring-only two-width set, 90 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 300,
+     "number": "0.8576",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.8576 | Ring-only two-width set, 110 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json"
+    },
+    {
+     "line": 301,
+     "number": "1.298",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.298 | Ring-only two-width set, 130 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 302,
+     "number": "4.094",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 4.094 | Ring-only two-width set, 150 nm slab: CRB (deg) | COMPUTED | `src/review_analyses.py` → `results_review/data/review_analyses.json`"
+    },
+    {
+     "line": 308,
+     "number": "219.7",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 219.7 | two-width set: RMS bias gain, deg of strip-angle bias per deg of independent per-structure angle offset | COMPUTED | `src/review_a"
+    },
+    {
+     "line": 309,
+     "number": "57.62",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 57.62 | two-width set: same, per nm of independent per-structure width offset | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 310,
+     "number": "54.92",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 54.92 | two-width set: bias std (deg), independent angle offsets of std 0.25 deg | COMPUTED | `src/review_analyses.py` → `results_review/d"
+    },
+    {
+     "line": 310,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 54.92 | two-width set: bias std (deg), independent angle offsets of std 0.25 deg | COMPUTED | `src/review_analyses.py` → `results_review/d"
+    },
+    {
+     "line": 311,
+     "number": "109.8",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 109.8 | two-width set: bias std (deg), independent angle offsets of std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 311,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 109.8 | two-width set: bias std (deg), independent angle offsets of std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 312,
+     "number": "219.7",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 219.7 | two-width set: bias std (deg), independent angle offsets of std 1.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 312,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 219.7 | two-width set: bias std (deg), independent angle offsets of std 1.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 313,
+     "number": "439.4",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 439.4 | two-width set: bias std (deg), independent angle offsets of std 2.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 313,
+     "number": "2.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 439.4 | two-width set: bias std (deg), independent angle offsets of std 2.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 314,
+     "number": "28.81",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 28.81 | two-width set: bias std (deg), independent width offsets of std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 314,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 28.81 | two-width set: bias std (deg), independent width offsets of std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 315,
+     "number": "57.62",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 57.62 | two-width set: bias std (deg), independent width offsets of std 1.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 315,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 57.62 | two-width set: bias std (deg), independent width offsets of std 1.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 316,
+     "number": "115.2",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 115.2 | two-width set: bias std (deg), independent width offsets of std 2.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 316,
+     "number": "2.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 115.2 | two-width set: bias std (deg), independent width offsets of std 2.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 317,
+     "number": "6.869",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 6.869 | two-width set: bias (deg), angle trend of 0.25 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 317,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 6.869 | two-width set: bias (deg), angle trend of 0.25 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 318,
+     "number": "13.74",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 13.74 | two-width set: bias (deg), angle trend of 0.5 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 318,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 13.74 | two-width set: bias (deg), angle trend of 0.5 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 319,
+     "number": "27.48",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 27.48 | two-width set: bias (deg), angle trend of 1.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 319,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 27.48 | two-width set: bias (deg), angle trend of 1.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 320,
+     "number": "54.95",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 54.95 | two-width set: bias (deg), angle trend of 2.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 320,
+     "number": "2.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 54.95 | two-width set: bias (deg), angle trend of 2.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 321,
+     "number": "0.3897",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3897 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.0001 deg | COMPUTED | `src/review_analyses.py` → `res"
+    },
+    {
+     "line": 321,
+     "number": "0.0001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3897 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.0001 deg | COMPUTED | `src/review_analyses.py` → `res"
+    },
+    {
+     "line": 322,
+     "number": "0.4143",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4143 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.001 deg | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 322,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4143 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.001 deg | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 323,
+     "number": "0.5502",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5502 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.01 deg | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 323,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5502 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.01 deg | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 324,
+     "number": "2.295",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.295 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.1 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 324,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.295 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.1 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 325,
+     "number": "3.812",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.812 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.25 deg | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 325,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.812 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.25 deg | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 326,
+     "number": "4.791",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 4.791 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 326,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 4.791 | two-width set: CRB (deg) with per-structure angle deviations of prior std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 327,
+     "number": "5.238",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 5.238 | two-width set: CRB (deg) with per-structure angle deviations of prior std 1 deg | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 328,
+     "number": "5.425",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 5.425 | two-width set: CRB (deg) with per-structure angle deviations of prior std 2 deg | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 329,
+     "number": "0.3927",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3927 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 329,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3927 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 330,
+     "number": "0.4445",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4445 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 330,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4445 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 331,
+     "number": "1.139",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.139 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `results_"
+    },
+    {
+     "line": 331,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.139 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `results_"
+    },
+    {
+     "line": 332,
+     "number": "3.38",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.38 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 332,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.38 | two-width set: CRB (deg) with per-structure width deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 333,
+     "number": "4.474",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 4.474 | two-width set: CRB (deg) with per-structure width deviations of prior std 1 nm | COMPUTED | `src/review_analyses.py` → `results_re"
+    },
+    {
+     "line": 334,
+     "number": "5.071",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 5.071 | two-width set: CRB (deg) with per-structure width deviations of prior std 2 nm | COMPUTED | `src/review_analyses.py` → `results_re"
+    },
+    {
+     "line": 335,
+     "number": "0.4024",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4024 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `r"
+    },
+    {
+     "line": 335,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4024 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `r"
+    },
+    {
+     "line": 336,
+     "number": "0.5443",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5443 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `re"
+    },
+    {
+     "line": 336,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5443 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `re"
+    },
+    {
+     "line": 337,
+     "number": "2.544",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.544 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 337,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.544 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 338,
+     "number": "7.158",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 7.158 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 338,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 7.158 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 339,
+     "number": "12.14",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 12.14 | two-width set: CRB (deg) with per-structure thickness deviations of prior std 1 nm | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 340,
+     "number": "0.01749",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.01749 | two-width set: per-structure angle spread (deg) that doubles the CRB | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 341,
+     "number": "0.03938",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.03938 | two-width set: per-structure width spread (nm) that doubles the CRB | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 342,
+     "number": "0.01705",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.01705 | two-width set: per-structure thickness spread (nm) that doubles the CRB | COMPUTED | `src/review_analyses.py` → `results_review/"
+    },
+    {
+     "line": 343,
+     "number": "194.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 194.1 | best set of 8: RMS bias gain, deg of strip-angle bias per deg of independent per-structure angle offset | COMPUTED | `src/review_a"
+    },
+    {
+     "line": 344,
+     "number": "74.41",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 74.41 | best set of 8: same, per nm of independent per-structure width offset | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 345,
+     "number": "48.52",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 48.52 | best set of 8: bias std (deg), independent angle offsets of std 0.25 deg | COMPUTED | `src/review_analyses.py` → `results_review/d"
+    },
+    {
+     "line": 345,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 48.52 | best set of 8: bias std (deg), independent angle offsets of std 0.25 deg | COMPUTED | `src/review_analyses.py` → `results_review/d"
+    },
+    {
+     "line": 346,
+     "number": "97.03",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 97.03 | best set of 8: bias std (deg), independent angle offsets of std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 346,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 97.03 | best set of 8: bias std (deg), independent angle offsets of std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 347,
+     "number": "194.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 194.1 | best set of 8: bias std (deg), independent angle offsets of std 1.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 347,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 194.1 | best set of 8: bias std (deg), independent angle offsets of std 1.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 348,
+     "number": "388.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 388.1 | best set of 8: bias std (deg), independent angle offsets of std 2.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 348,
+     "number": "2.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 388.1 | best set of 8: bias std (deg), independent angle offsets of std 2.0 deg | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 349,
+     "number": "37.21",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 37.21 | best set of 8: bias std (deg), independent width offsets of std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 349,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 37.21 | best set of 8: bias std (deg), independent width offsets of std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 350,
+     "number": "74.41",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 74.41 | best set of 8: bias std (deg), independent width offsets of std 1.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 350,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 74.41 | best set of 8: bias std (deg), independent width offsets of std 1.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 351,
+     "number": "148.8",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 148.8 | best set of 8: bias std (deg), independent width offsets of std 2.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 351,
+     "number": "2.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 148.8 | best set of 8: bias std (deg), independent width offsets of std 2.0 nm | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 352,
+     "number": "-36.93",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -36.93 | best set of 8: bias (deg), angle trend of 0.25 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 352,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -36.93 | best set of 8: bias (deg), angle trend of 0.25 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 353,
+     "number": "-73.85",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -73.85 | best set of 8: bias (deg), angle trend of 0.5 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 353,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -73.85 | best set of 8: bias (deg), angle trend of 0.5 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 354,
+     "number": "-147.7",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -147.7 | best set of 8: bias (deg), angle trend of 1.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 354,
+     "number": "1.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -147.7 | best set of 8: bias (deg), angle trend of 1.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 355,
+     "number": "-295.4",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -295.4 | best set of 8: bias (deg), angle trend of 2.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 355,
+     "number": "2.0",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| -295.4 | best set of 8: bias (deg), angle trend of 2.0 deg per 100 nm of width | COMPUTED | `src/review_analyses.py` → `results_review/dat"
+    },
+    {
+     "line": 356,
+     "number": "0.1403",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1403 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.0001 deg | COMPUTED | `src/review_analyses.py` → `res"
+    },
+    {
+     "line": 356,
+     "number": "0.0001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1403 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.0001 deg | COMPUTED | `src/review_analyses.py` → `res"
+    },
+    {
+     "line": 357,
+     "number": "0.228",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.228 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.001 deg | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 357,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.228 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.001 deg | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 358,
+     "number": "0.5204",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5204 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.01 deg | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 358,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5204 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.01 deg | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 359,
+     "number": "1.024",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.024 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.1 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 359,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.024 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.1 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 360,
+     "number": "1.974",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.974 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.25 deg | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 360,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 1.974 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.25 deg | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 361,
+     "number": "3.018",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.018 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 361,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.018 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 0.5 deg | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 362,
+     "number": "3.982",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.982 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 1 deg | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 363,
+     "number": "4.565",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 4.565 | best set of 8: CRB (deg) with per-structure angle deviations of prior std 2 deg | COMPUTED | `src/review_analyses.py` → `results_r"
+    },
+    {
+     "line": 364,
+     "number": "0.1571",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1571 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 364,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.1571 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `resul"
+    },
+    {
+     "line": 365,
+     "number": "0.4334",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4334 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 365,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4334 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 366,
+     "number": "0.7154",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.7154 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 366,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.7154 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `results"
+    },
+    {
+     "line": 367,
+     "number": "2.107",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.107 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_"
+    },
+    {
+     "line": 367,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.107 | best set of 8: CRB (deg) with per-structure width deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `results_"
+    },
+    {
+     "line": 368,
+     "number": "3.17",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.17 | best set of 8: CRB (deg) with per-structure width deviations of prior std 1 nm | COMPUTED | `src/review_analyses.py` → `results_rev"
+    },
+    {
+     "line": 369,
+     "number": "3.975",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 3.975 | best set of 8: CRB (deg) with per-structure width deviations of prior std 2 nm | COMPUTED | `src/review_analyses.py` → `results_re"
+    },
+    {
+     "line": 370,
+     "number": "0.303",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.303 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `re"
+    },
+    {
+     "line": 370,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.303 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.001 nm | COMPUTED | `src/review_analyses.py` → `re"
+    },
+    {
+     "line": 371,
+     "number": "0.5589",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5589 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `re"
+    },
+    {
+     "line": 371,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5589 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.01 nm | COMPUTED | `src/review_analyses.py` → `re"
+    },
+    {
+     "line": 372,
+     "number": "2.047",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.047 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 372,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 2.047 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.1 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 373,
+     "number": "5.263",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 5.263 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 373,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 5.263 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 0.5 nm | COMPUTED | `src/review_analyses.py` → `resu"
+    },
+    {
+     "line": 374,
+     "number": "6.205",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 6.205 | best set of 8: CRB (deg) with per-structure thickness deviations of prior std 1 nm | COMPUTED | `src/review_analyses.py` → `result"
+    },
+    {
+     "line": 375,
+     "number": "0.001739",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.001739 | best set of 8: per-structure angle spread (deg) that doubles the CRB | COMPUTED | `src/review_analyses.py` → `results_review/da"
+    },
+    {
+     "line": 376,
+     "number": "0.00365",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.00365 | best set of 8: per-structure width spread (nm) that doubles the CRB | COMPUTED | `src/review_analyses.py` → `results_review/data"
+    },
+    {
+     "line": 377,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| n/a | best set of 8: per-structure thickness spread (nm) that doubles the CRB (n/a: below the 0.001 nm grid) | COMPUTED | `src/review_anal"
+    },
+    {
+     "line": 383,
+     "number": "0.4569",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4569 | two-width set, 1 pm: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertainties propagated"
+    },
+    {
+     "line": 384,
+     "number": "0.7733",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.7733 | two-width set, 1 pm: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab50 ring, all parameter uncertainties propa"
+    },
+    {
+     "line": 385,
+     "number": "0.3599",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3599 | two-width set, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertaint"
+    },
+    {
+     "line": 385,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.3599 | two-width set, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertaint"
+    },
+    {
+     "line": 386,
+     "number": "0.6412",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.6412 | two-width set, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab50 ring, all parameter uncer"
+    },
+    {
+     "line": 386,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.6412 | two-width set, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab50 ring, all parameter uncer"
+    },
+    {
+     "line": 387,
+     "number": "982.2",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 982.2 | two-width set, 1 pm, unknown calibration offset: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all paramet"
+    },
+    {
+     "line": 388,
+     "number": "982.2",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 982.2 | two-width set, 1 pm, unknown calibration offset: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab50 ring, all pa"
+    },
+    {
+     "line": 389,
+     "number": "0.04631",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.04631 | two-width set, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertainties propaga"
+    },
+    {
+     "line": 389,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.04631 | two-width set, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertainties propaga"
+    },
+    {
+     "line": 390,
+     "number": "0.07733",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.07733 | two-width set, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab50 ring, all parameter uncertainties pr"
+    },
+    {
+     "line": 390,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.07733 | two-width set, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab50 ring, all parameter uncertainties pr"
+    },
+    {
+     "line": 391,
+     "number": "0.5595",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5595 | best set of 8, 1 pm: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertainties propagated"
+    },
+    {
+     "line": 392,
+     "number": "0.5214",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.5214 | best set of 8, 1 pm: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab90 ring, all parameter uncertainties propa"
+    },
+    {
+     "line": 393,
+     "number": "0.4556",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4556 | best set of 8, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertaint"
+    },
+    {
+     "line": 393,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4556 | best set of 8, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertaint"
+    },
+    {
+     "line": 394,
+     "number": "0.4366",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4366 | best set of 8, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab90 ring, all parameter uncer"
+    },
+    {
+     "line": 394,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.4366 | best set of 8, 1 pm, rho = -0.707: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab90 ring, all parameter uncer"
+    },
+    {
+     "line": 395,
+     "number": "39.68",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 39.68 | best set of 8, 1 pm, unknown calibration offset: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all paramet"
+    },
+    {
+     "line": 396,
+     "number": "39.71",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 39.71 | best set of 8, 1 pm, unknown calibration offset: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab90 ring, all pa"
+    },
+    {
+     "line": 397,
+     "number": "0.05597",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.05597 | best set of 8, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertainties propaga"
+    },
+    {
+     "line": 397,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.05597 | best set of 8, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a strip_TE_500 ring, all parameter uncertainties propaga"
+    },
+    {
+     "line": 398,
+     "number": "0.05214",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.05214 | best set of 8, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab90 ring, all parameter uncertainties pr"
+    },
+    {
+     "line": 398,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "cited": [
+      "results_review/data/review_analyses.json"
+     ],
+     "retired": false,
+     "context": "| 0.05214 | best set of 8, 0.1 pm: 1-sigma error (pm) of the predicted resonance of a rib_TE_500_slab90 ring, all parameter uncertainties pr"
+    },
+    {
+     "line": 399,
+     "number": "841.5",
+     "source": "results_review/data/practical_context.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 841.5 | Within-die resonance spread of microdisks, converted to pm at 1550 nm | CITED | William A. Zortman et al., \"Silicon photonics manu"
+    },
+    {
+     "line": 399,
+     "number": "10.1364",
+     "source": "results_review/data/literature_records.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 841.5 | Within-die resonance spread of microdisks, converted to pm at 1550 nm | CITED | William A. Zortman et al., \"Silicon photonics manu"
+    },
+    {
+     "line": 400,
+     "number": "8.014",
+     "source": "results_review/data/practical_context.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 8.014 | Across-wafer resonance spread, converted to nm at 1550 nm | CITED | William A. Zortman et al., \"Silicon photonics manufacturing\", "
+    },
+    {
+     "line": 400,
+     "number": "10.1364",
+     "source": "results_review/data/literature_records.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 8.014 | Across-wafer resonance spread, converted to nm at 1550 nm | CITED | William A. Zortman et al., \"Silicon photonics manufacturing\", "
+    },
+    {
+     "line": 401,
+     "number": "10.1109",
+     "source": "results_review/data/literature_records.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 32 | Resonance accuracy after post-fabrication trimming (± pm) | CITED | Hasitha Jayatilleka et al., \"Post-Fabrication Trimming of Silicon"
+    },
+    {
+     "line": 402,
+     "number": "0.6",
+     "source": "results_review/data/practical_context.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 0.6 | Linewidth control within chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophoto"
+    },
+    {
+     "line": 402,
+     "number": "10.1109",
+     "source": "results_review/data/literature_records.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 0.6 | Linewidth control within chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophoto"
+    },
+    {
+     "line": 402,
+     "number": "0.6",
+     "source": "results_review/data/practical_context.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 0.6 | Linewidth control within chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophoto"
+    },
+    {
+     "line": 403,
+     "number": "10.1109",
+     "source": "results_review/data/literature_records.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 2 | Linewidth control chip-to-chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophoton"
+    },
+    {
+     "line": 403,
+     "number": "0.6",
+     "source": "results_review/data/practical_context.json",
+     "cited": [
+      "results_review/data/practical_context.json",
+      "results_review/data/literature_records.json"
+     ],
+     "retired": false,
+     "context": "| 2 | Linewidth control chip-to-chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophoton"
     }
    ],
-   "false_match_rate": 0.05167235494880546
+   "false_match_rate": 0.054409448818897636
   },
   "results_final/CLAIMS.md": {
    "rows": [
@@ -13741,23 +15901,873 @@
     }
    ],
    "false_match_rate": 0.27933579335793357
+  },
+  "results_review/SUMMARY.md": {
+   "rows": [
+    {
+     "line": 4,
+     "number": "1e-4",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "folder",
+     "context": "n_Si 1e-4, n_ox 1e-3, T 1 K), 1 pm resonance-wavelength precision, ring and MZI per structure unless stated."
+    },
+    {
+     "line": 4,
+     "number": "1e-3",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "folder",
+     "context": "n_Si 1e-4, n_ox 1e-3, T 1 K), 1 pm resonance-wavelength precision, ring and MZI per structure unless stated."
+    },
+    {
+     "line": 18,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Baseline: two-width 0.3891, best 0.139."
+    },
+    {
+     "line": 18,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Baseline: two-width 0.3891, best 0.139."
+    },
+    {
+     "line": 20,
+     "number": "0.3365",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 20,
+     "number": "0.1142",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 20,
+     "number": "0.9",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 20,
+     "number": "0.2996",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 20,
+     "number": "0.0795",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 20,
+     "number": "-0.9",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 20,
+     "number": "0.2985",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "resonances that define the FSR): two-width 0.3365, best 0.1142. rho = 0.9: 0.2996 and 0.0795; rho = -0.9: 0.2985"
+    },
+    {
+     "line": 21,
+     "number": "0.0802",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "and 0.0802. The independent-error baseline is conservative."
+    },
+    {
+     "line": 22,
+     "number": "1.07",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Common wavelength-calibration offset (one extra unknown): unknown, two-width 1.07 and best 0.1393; prior 10 pm,"
+    },
+    {
+     "line": 22,
+     "number": "0.1393",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Common wavelength-calibration offset (one extra unknown): unknown, two-width 1.07 and best 0.1393; prior 10 pm,"
+    },
+    {
+     "line": 23,
+     "number": "0.3892",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.3892 and 0.139; prior 1 pm, 0.3891 and 0.139. The two-width set needs an absolute reference of about 10 pm."
+    },
+    {
+     "line": 23,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.3892 and 0.139; prior 1 pm, 0.3891 and 0.139. The two-width set needs an absolute reference of about 10 pm."
+    },
+    {
+     "line": 23,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.3892 and 0.139; prior 1 pm, 0.3891 and 0.139. The two-width set needs an absolute reference of about 10 pm."
+    },
+    {
+     "line": 23,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.3892 and 0.139; prior 1 pm, 0.3891 and 0.139. The two-width set needs an absolute reference of about 10 pm."
+    },
+    {
+     "line": 24,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Temperature as a shared unknown: prior 0.1 K, two-width 0.3891; 0.5 K, 0.3898; 1 K, 0.3917; unknown, 0.4122. The"
+    },
+    {
+     "line": 24,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Temperature as a shared unknown: prior 0.1 K, two-width 0.3891; 0.5 K, 0.3898; 1 K, 0.3917; unknown, 0.4122. The"
+    },
+    {
+     "line": 24,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Temperature as a shared unknown: prior 0.1 K, two-width 0.3891; 0.5 K, 0.3898; 1 K, 0.3917; unknown, 0.4122. The"
+    },
+    {
+     "line": 24,
+     "number": "0.3898",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Temperature as a shared unknown: prior 0.1 K, two-width 0.3891; 0.5 K, 0.3898; 1 K, 0.3917; unknown, 0.4122. The"
+    },
+    {
+     "line": 24,
+     "number": "0.3917",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Temperature as a shared unknown: prior 0.1 K, two-width 0.3891; 0.5 K, 0.3898; 1 K, 0.3917; unknown, 0.4122. The"
+    },
+    {
+     "line": 24,
+     "number": "0.4122",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Temperature as a shared unknown: prior 0.1 K, two-width 0.3891; 0.5 K, 0.3898; 1 K, 0.3917; unknown, 0.4122. The"
+    },
+    {
+     "line": 25,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "best set stays at 0.139."
+    },
+    {
+     "line": 26,
+     "number": "0.3892",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Independent temperature drift per structure: 1 mK, two-width 0.3892 and best 0.1396; 10 mK, 0.3935 and 0.1877;"
+    },
+    {
+     "line": 26,
+     "number": "0.1396",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Independent temperature drift per structure: 1 mK, two-width 0.3892 and best 0.1396; 10 mK, 0.3935 and 0.1877;"
+    },
+    {
+     "line": 26,
+     "number": "0.3935",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Independent temperature drift per structure: 1 mK, two-width 0.3892 and best 0.1396; 10 mK, 0.3935 and 0.1877;"
+    },
+    {
+     "line": 26,
+     "number": "0.1877",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Independent temperature drift per structure: 1 mK, two-width 0.3892 and best 0.1396; 10 mK, 0.3935 and 0.1877;"
+    },
+    {
+     "line": 27,
+     "number": "0.4599",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "100 mK, 0.4599 and 0.4993."
+    },
+    {
+     "line": 27,
+     "number": "0.4993",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "100 mK, 0.4599 and 0.4993."
+    },
+    {
+     "line": 33,
+     "number": "0.3932",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Two-width set: rings only 0.3932; MZI at the derived noise 0.3891; MZI 3x noisier 0.3925; 10x noisier 0.3932."
+    },
+    {
+     "line": 33,
+     "number": "0.3891",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Two-width set: rings only 0.3932; MZI at the derived noise 0.3891; MZI 3x noisier 0.3925; 10x noisier 0.3932."
+    },
+    {
+     "line": 33,
+     "number": "0.3925",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Two-width set: rings only 0.3932; MZI at the derived noise 0.3891; MZI 3x noisier 0.3925; 10x noisier 0.3932."
+    },
+    {
+     "line": 33,
+     "number": "0.3932",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Two-width set: rings only 0.3932; MZI at the derived noise 0.3891; MZI 3x noisier 0.3925; 10x noisier 0.3932."
+    },
+    {
+     "line": 34,
+     "number": "0.1901",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Best set: rings only 0.1901; MZI 0.139; 3x 0.1815; 10x 0.1892."
+    },
+    {
+     "line": 34,
+     "number": "0.139",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Best set: rings only 0.1901; MZI 0.139; 3x 0.1815; 10x 0.1892."
+    },
+    {
+     "line": 34,
+     "number": "0.1815",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Best set: rings only 0.1901; MZI 0.139; 3x 0.1815; 10x 0.1892."
+    },
+    {
+     "line": 34,
+     "number": "0.1892",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Best set: rings only 0.1901; MZI 0.139; 3x 0.1815; 10x 0.1892."
+    },
+    {
+     "line": 35,
+     "number": "0.4356",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Exhaustive ring-only search (at least one strip and one rib): best sets of 4-8 give 0.4356, 0.3606, 0.2029, 0.1941"
+    },
+    {
+     "line": 35,
+     "number": "0.3606",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Exhaustive ring-only search (at least one strip and one rib): best sets of 4-8 give 0.4356, 0.3606, 0.2029, 0.1941"
+    },
+    {
+     "line": 35,
+     "number": "0.2029",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Exhaustive ring-only search (at least one strip and one rib): best sets of 4-8 give 0.4356, 0.3606, 0.2029, 0.1941"
+    },
+    {
+     "line": 35,
+     "number": "0.1941",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Exhaustive ring-only search (at least one strip and one rib): best sets of 4-8 give 0.4356, 0.3606, 0.2029, 0.1941"
+    },
+    {
+     "line": 36,
+     "number": "0.1895",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "and 0.1895. The best of eight is TE strips 400, 550, 600 nm, TM strip 400 nm and ribs 300-600 nm on a 90 nm slab."
+    },
+    {
+     "line": 37,
+     "number": "0.4202",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Ring-only two-width set by slab: 30 nm 0.4202, 40 nm 0.4079, 50 nm 0.3932, 70 nm 0.4554, 90 nm 0.6001,"
+    },
+    {
+     "line": 37,
+     "number": "0.4079",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Ring-only two-width set by slab: 30 nm 0.4202, 40 nm 0.4079, 50 nm 0.3932, 70 nm 0.4554, 90 nm 0.6001,"
+    },
+    {
+     "line": 37,
+     "number": "0.3932",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Ring-only two-width set by slab: 30 nm 0.4202, 40 nm 0.4079, 50 nm 0.3932, 70 nm 0.4554, 90 nm 0.6001,"
+    },
+    {
+     "line": 37,
+     "number": "0.4554",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Ring-only two-width set by slab: 30 nm 0.4202, 40 nm 0.4079, 50 nm 0.3932, 70 nm 0.4554, 90 nm 0.6001,"
+    },
+    {
+     "line": 37,
+     "number": "0.6001",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Ring-only two-width set by slab: 30 nm 0.4202, 40 nm 0.4079, 50 nm 0.3932, 70 nm 0.4554, 90 nm 0.6001,"
+    },
+    {
+     "line": 38,
+     "number": "0.8576",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "110 nm 0.8576, 130 nm 1.298, 150 nm 4.094."
+    },
+    {
+     "line": 38,
+     "number": "1.298",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "110 nm 0.8576, 130 nm 1.298, 150 nm 4.094."
+    },
+    {
+     "line": 38,
+     "number": "4.094",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "110 nm 0.8576, 130 nm 1.298, 150 nm 4.094."
+    },
+    {
+     "line": 45,
+     "number": "219.7",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Bias gain (RMS strip-angle bias per unit of independent per-structure offset): two-width 219.7 deg/deg and"
+    },
+    {
+     "line": 46,
+     "number": "57.62",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "57.62 deg/nm; best 194.1 deg/deg and 74.41 deg/nm."
+    },
+    {
+     "line": 46,
+     "number": "194.1",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "57.62 deg/nm; best 194.1 deg/deg and 74.41 deg/nm."
+    },
+    {
+     "line": 46,
+     "number": "74.41",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "57.62 deg/nm; best 194.1 deg/deg and 74.41 deg/nm."
+    },
+    {
+     "line": 47,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Random angle offsets of std 0.25 deg: bias std 54.92 (two-width), 48.52 (best). Random width offsets of 0.5 nm:"
+    },
+    {
+     "line": 47,
+     "number": "54.92",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Random angle offsets of std 0.25 deg: bias std 54.92 (two-width), 48.52 (best). Random width offsets of 0.5 nm:"
+    },
+    {
+     "line": 47,
+     "number": "48.52",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Random angle offsets of std 0.25 deg: bias std 54.92 (two-width), 48.52 (best). Random width offsets of 0.5 nm:"
+    },
+    {
+     "line": 47,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Random angle offsets of std 0.25 deg: bias std 54.92 (two-width), 48.52 (best). Random width offsets of 0.5 nm:"
+    },
+    {
+     "line": 48,
+     "number": "28.81",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "28.81 and 37.21."
+    },
+    {
+     "line": 48,
+     "number": "37.21",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "28.81 and 37.21."
+    },
+    {
+     "line": 49,
+     "number": "0.25",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Linear angle trend 0.25 deg per 100 nm of width: bias 6.869 (two-width), -36.93 (best)."
+    },
+    {
+     "line": 49,
+     "number": "6.869",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Linear angle trend 0.25 deg per 100 nm of width: bias 6.869 (two-width), -36.93 (best)."
+    },
+    {
+     "line": 49,
+     "number": "-36.93",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Linear angle trend 0.25 deg per 100 nm of width: bias 6.869 (two-width), -36.93 (best)."
+    },
+    {
+     "line": 51,
+     "number": "0.01",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- angle spread 0.01 deg: two-width 0.5502, best 0.5204; 0.1 deg: 2.295 and 1.024;"
+    },
+    {
+     "line": 51,
+     "number": "0.5502",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- angle spread 0.01 deg: two-width 0.5502, best 0.5204; 0.1 deg: 2.295 and 1.024;"
+    },
+    {
+     "line": 51,
+     "number": "0.5204",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- angle spread 0.01 deg: two-width 0.5502, best 0.5204; 0.1 deg: 2.295 and 1.024;"
+    },
+    {
+     "line": 51,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- angle spread 0.01 deg: two-width 0.5502, best 0.5204; 0.1 deg: 2.295 and 1.024;"
+    },
+    {
+     "line": 51,
+     "number": "2.295",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- angle spread 0.01 deg: two-width 0.5502, best 0.5204; 0.1 deg: 2.295 and 1.024;"
+    },
+    {
+     "line": 51,
+     "number": "1.024",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- angle spread 0.01 deg: two-width 0.5502, best 0.5204; 0.1 deg: 2.295 and 1.024;"
+    },
+    {
+     "line": 52,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- width spread 0.1 nm: 1.139 and 0.7154; 0.5 nm: 3.38 and 2.107;"
+    },
+    {
+     "line": 52,
+     "number": "1.139",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- width spread 0.1 nm: 1.139 and 0.7154; 0.5 nm: 3.38 and 2.107;"
+    },
+    {
+     "line": 52,
+     "number": "0.7154",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- width spread 0.1 nm: 1.139 and 0.7154; 0.5 nm: 3.38 and 2.107;"
+    },
+    {
+     "line": 52,
+     "number": "0.5",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- width spread 0.1 nm: 1.139 and 0.7154; 0.5 nm: 3.38 and 2.107;"
+    },
+    {
+     "line": 52,
+     "number": "3.38",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- width spread 0.1 nm: 1.139 and 0.7154; 0.5 nm: 3.38 and 2.107;"
+    },
+    {
+     "line": 52,
+     "number": "2.107",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- width spread 0.1 nm: 1.139 and 0.7154; 0.5 nm: 3.38 and 2.107;"
+    },
+    {
+     "line": 53,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- thickness spread 0.1 nm: 2.544 and 2.047."
+    },
+    {
+     "line": 53,
+     "number": "2.544",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- thickness spread 0.1 nm: 2.544 and 2.047."
+    },
+    {
+     "line": 53,
+     "number": "2.047",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- thickness spread 0.1 nm: 2.544 and 2.047."
+    },
+    {
+     "line": 54,
+     "number": "0.01749",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Spread that doubles the CRLB: two-width 0.01749 deg (angle), 0.03938 nm (width), 0.01705 nm (thickness); best"
+    },
+    {
+     "line": 54,
+     "number": "0.03938",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Spread that doubles the CRLB: two-width 0.01749 deg (angle), 0.03938 nm (width), 0.01705 nm (thickness); best"
+    },
+    {
+     "line": 54,
+     "number": "0.01705",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- Spread that doubles the CRLB: two-width 0.01749 deg (angle), 0.03938 nm (width), 0.01705 nm (thickness); best"
+    },
+    {
+     "line": 55,
+     "number": "0.001739",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.001739 deg, 0.00365 nm, and below the 0.001 nm grid for thickness."
+    },
+    {
+     "line": 55,
+     "number": "0.00365",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.001739 deg, 0.00365 nm, and below the 0.001 nm grid for thickness."
+    },
+    {
+     "line": 55,
+     "number": "0.001",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.001739 deg, 0.00365 nm, and below the 0.001 nm grid for thickness."
+    },
+    {
+     "line": 64,
+     "number": "0.4569",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "ring 0.4569 pm and rib 500 nm (50 nm slab) 0.7733 pm; best set, strip 0.5595 pm and rib 500 nm (90 nm slab)"
+    },
+    {
+     "line": 64,
+     "number": "0.7733",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "ring 0.4569 pm and rib 500 nm (50 nm slab) 0.7733 pm; best set, strip 0.5595 pm and rib 500 nm (90 nm slab)"
+    },
+    {
+     "line": 64,
+     "number": "0.5595",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "ring 0.4569 pm and rib 500 nm (50 nm slab) 0.7733 pm; best set, strip 0.5595 pm and rib 500 nm (90 nm slab)"
+    },
+    {
+     "line": 65,
+     "number": "0.5214",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "0.5214 pm."
+    },
+    {
+     "line": 66,
+     "number": "-0.707",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- With rho = -0.707: two-width 0.3599 and 0.6412 pm. With an unknown calibration offset: two-width 982.2 pm, best"
+    },
+    {
+     "line": 66,
+     "number": "0.3599",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- With rho = -0.707: two-width 0.3599 and 0.6412 pm. With an unknown calibration offset: two-width 982.2 pm, best"
+    },
+    {
+     "line": 66,
+     "number": "0.6412",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- With rho = -0.707: two-width 0.3599 and 0.6412 pm. With an unknown calibration offset: two-width 982.2 pm, best"
+    },
+    {
+     "line": 66,
+     "number": "982.2",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "- With rho = -0.707: two-width 0.3599 and 0.6412 pm. With an unknown calibration offset: two-width 982.2 pm, best"
+    },
+    {
+     "line": 67,
+     "number": "39.68",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "39.68 pm. At 0.1 pm: two-width 0.04631 and 0.07733 pm."
+    },
+    {
+     "line": 67,
+     "number": "0.1",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "39.68 pm. At 0.1 pm: two-width 0.04631 and 0.07733 pm."
+    },
+    {
+     "line": 67,
+     "number": "0.04631",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "39.68 pm. At 0.1 pm: two-width 0.04631 and 0.07733 pm."
+    },
+    {
+     "line": 67,
+     "number": "0.07733",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "39.68 pm. At 0.1 pm: two-width 0.04631 and 0.07733 pm."
+    },
+    {
+     "line": 68,
+     "number": "841.5",
+     "source": "results_review/data/practical_context.json",
+     "pool": "section",
+     "context": "- Published scale (verified abstracts): Zortman et al. 105 GHz within a die = 841.5 pm at 1550 nm, 1 THz across a"
+    },
+    {
+     "line": 69,
+     "number": "8.014",
+     "source": "results_review/data/practical_context.json",
+     "pool": "section",
+     "context": "wafer = 8.014 nm; Jayatilleka et al. trimming to +-32 pm; Selvaraja et al. linewidth control 0.6 nm within chip,"
+    },
+    {
+     "line": 69,
+     "number": "0.6",
+     "source": "results_review/data/review_analyses.json",
+     "pool": "section",
+     "context": "wafer = 8.014 nm; Jayatilleka et al. trimming to +-32 pm; Selvaraja et al. linewidth control 0.6 nm within chip,"
+    }
+   ],
+   "false_match_rate": 0.06198019801980198
   }
  },
  "citations": [
   {
+   "id": "10.1002/lpor.201100017",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1002/lpor.201700237",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1002/nme.2579",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1016/0025-5564(70",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1017/CBO9781316084168",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1021/acsphotonics.2c01194",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1038/s41928-018-0150-9",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1063/1.2062993",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1063/5.0173914",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1093/bioinformatics/btp358",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
    "id": "10.1103/PhysRevE.65.066611",
    "files": [
     "results_final/CITATIONS.md",
-    "src/citations_extract.py"
+    "src/citations_extract.py",
+    "src/literature_verify.py"
    ],
    "status": "VERIFIED",
    "note": "johnson2002: VERIFIED bibliographically (APS page and PDF page 1); used only as the method behind the field-centroid cross-check, no number taken from it"
   },
   {
+   "id": "10.1103/PhysRevE.77.036611",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1103/PhysRevLett.104.033902",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1109/JLT.2008.923643",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
    "id": "10.1109/JLT.2015.2476603",
    "files": [
     "results_final/CITATIONS.md",
-    "src/citations_extract.py"
+    "src/citations_extract.py",
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1109/JSTQE.2009.2026550",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1109/jlt.2021.3079801",
+   "files": [
+    "results_final/HEADLINE_NUMBERS.md"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1109/jstqe.2009.2026550",
+   "files": [
+    "results_final/HEADLINE_NUMBERS.md"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1117/12.3051113",
+   "files": [
+    "src/literature_verify.py"
    ],
    "status": "UNVERIFIED",
    "note": ""
@@ -13767,16 +16777,162 @@
    "files": [
     "results_final/CITATIONS.md",
     "results_final/HEADLINE_NUMBERS.md",
-    "src/citations_extract.py"
+    "src/citations_extract.py",
+    "src/literature_verify.py"
    ],
    "status": "VERIFIED",
    "note": "frey2006: VERIFIED (full text read; page numbers are PDF pages)"
   },
   {
+   "id": "10.1137/1.9780898719109",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1186/s42649-022-00070-5",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.18.023598",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.19.010940",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.20.026969",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.23.032452",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.25.009712",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.534015",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.558406",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OE.577064",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OL.31.002972",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/OL.37.004236",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
    "id": "10.1364/PRJ.6.001008",
    "files": [
     "results_final/CITATIONS.md",
-    "src/citations_extract.py"
+    "src/citations_extract.py",
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1364/oe.18.023598",
+   "files": [
+    "results_final/HEADLINE_NUMBERS.md"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.1515/nanoph-2013-0013",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.21105/joss.02369",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.3390/app11052366",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.3390/photonics12030234",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
+  },
+  {
+   "id": "10.48550/arXiv",
+   "files": [
+    "src/literature_verify.py"
    ],
    "status": "UNVERIFIED",
    "note": ""
@@ -13786,7 +16942,8 @@
    "files": [
     "results_final/CITATIONS.md",
     "results_final/HEADLINE_NUMBERS.md",
-    "src/citations_extract.py"
+    "src/citations_extract.py",
+    "src/make_literature.py"
    ],
    "status": "VERIFIED",
    "note": "leviton2008: VERIFIED (full text read; page numbers are PDF pages)"
@@ -13798,6 +16955,7 @@
     "results_final/HEADLINE_NUMBERS.md",
     "results_montecarlo/HEADLINE_NUMBERS.md",
     "src/citations_extract.py",
+    "src/make_literature.py",
     "src/noise_sourced.py",
     "src/provenance_audit.py"
    ],
@@ -13819,7 +16977,8 @@
    "files": [
     "results_final/CITATIONS.md",
     "results_final/HEADLINE_NUMBERS.md",
-    "src/citations_extract.py"
+    "src/citations_extract.py",
+    "src/literature_verify.py"
    ],
    "status": "VERIFIED",
    "note": "jiao_pikus2025: VERIFIED (HTML page read by a fetch agent, Section 2.3 quoted verbatim); values are the authors' own EIM calculation, not a measurement"
@@ -13832,10 +16991,20 @@
     "results_final/HEADLINE_NUMBERS.md",
     "results_priors_search/SUMMARY.md",
     "src/citations_extract.py",
-    "src/etchdepth_femwell_analysis.py"
+    "src/etchdepth_femwell_analysis.py",
+    "src/literature_verify.py",
+    "src/make_literature.py"
    ],
    "status": "VERIFIED",
    "note": "leviton2008: VERIFIED (full text read; page numbers are PDF pages)"
+  },
+  {
+   "id": "arXiv:2204.03591",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
   },
   {
    "id": "arXiv:2306.15643",
@@ -13845,11 +17014,21 @@
     "results_montecarlo/HEADLINE_NUMBERS.md",
     "results_montecarlo/SUMMARY.md",
     "src/citations_extract.py",
+    "src/literature_verify.py",
+    "src/make_literature.py",
     "src/noise_sourced.py",
     "src/provenance_audit.py"
    ],
    "status": "VERIFIED",
    "note": "janz2023: VERIFIED (full text read)"
+  },
+  {
+   "id": "arXiv:2504.12133",
+   "files": [
+    "src/literature_verify.py"
+   ],
+   "status": "UNVERIFIED",
+   "note": ""
   },
   {
    "id": "arXiv:physics/0606168",
@@ -13935,6 +17114,26 @@
    "line": "| 2.602 | Published EIM n_eff, rib 500 nm, 220 nm, 90 nm slab (validation only) | CITED | Lihong (Heidi) Jiao et al., \"Silicon Waveguides and Temperat"
   },
   {
+   "file": "results_final/HEADLINE_NUMBERS.md",
+   "line": "| 841.5 | Within-die resonance spread of microdisks, converted to pm at 1550 nm | CITED | William A. Zortman et al., \"Silicon photonics manufacturing\""
+  },
+  {
+   "file": "results_final/HEADLINE_NUMBERS.md",
+   "line": "| 8.014 | Across-wafer resonance spread, converted to nm at 1550 nm | CITED | William A. Zortman et al., \"Silicon photonics manufacturing\", Optics Exp"
+  },
+  {
+   "file": "results_final/HEADLINE_NUMBERS.md",
+   "line": "| 32 | Resonance accuracy after post-fabrication trimming (± pm) | CITED | Hasitha Jayatilleka et al., \"Post-Fabrication Trimming of Silicon Photonic "
+  },
+  {
+   "file": "results_final/HEADLINE_NUMBERS.md",
+   "line": "| 0.6 | Linewidth control within chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophotonic Wavegu"
+  },
+  {
+   "file": "results_final/HEADLINE_NUMBERS.md",
+   "line": "| 2 | Linewidth control chip-to-chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophotonic Wavegui"
+  },
+  {
    "file": "results_montecarlo/HEADLINE_NUMBERS.md",
    "line": "then demand about 1 mK temperature stability (Janz et al. quote ~80 pm/K) and derivatives accurate far"
   },
@@ -13945,6 +17144,18 @@
   {
    "file": "results_priors_search/SUMMARY.md",
    "line": "| n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madison, Proc. S"
+  },
+  {
+   "file": "results_review/SUMMARY.md",
+   "line": "- Published scale (verified abstracts): Zortman et al. 105 GHz within a die = 841.5 pm at 1550 nm, 1 THz across a"
+  },
+  {
+   "file": "results_review/SUMMARY.md",
+   "line": "wafer = 8.014 nm; Jayatilleka et al. trimming to +-32 pm; Selvaraja et al. linewidth control 0.6 nm within chip,"
+  },
+  {
+   "file": "results_review/SUMMARY.md",
+   "line": "and not cited: the arXiv version of Klein et al. and an electrical sidewall-angle inference preprint (arXiv lookups"
   },
   {
    "file": "src/anisotropic_averaging.py",
@@ -13989,6 +17200,18 @@
   {
    "file": "src/make_headline_numbers.py",
    "line": "f\"{c['authors'].split(',')[0]} et al., \\\"{c['title']}\\\", {c['venue']}, DOI {c['doi']}, {where}: “{q['text']}” \""
+  },
+  {
+   "file": "src/make_headline_numbers.py",
+   "line": "f\"{r['authors'][0]} et al., \\\"{r['title']}\\\", {r['venue']}, DOI {r['doi']}, abstract: “{pc['quote']}”{unit_note} \""
+  },
+  {
+   "file": "src/make_literature.py",
+   "line": "a = ', '.join(au[:6]) + (' et al.' if len(au) > 6 else '')"
+  },
+  {
+   "file": "src/make_literature.py",
+   "line": "L += ['', 'All five extract width, thickness (and, in Butt et al., material indices) from rings or interferometers and hold the '"
   },
   {
    "file": "src/noise_sourced.py",

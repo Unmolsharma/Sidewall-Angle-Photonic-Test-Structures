@@ -39,6 +39,10 @@ F = dict(
     asn=('results_final/data/assumption_sensitivity.json', 'src/assumption_sensitivity.py'),
     cit=('results_final/data/citations.json', 'src/citations_extract.py'),
     env=('results_final/data/environment.json', 'src/record_environment.py'),
+    rv=('results_review/data/review_analyses.json', 'src/review_analyses.py'),
+    pc=('results_review/data/practical_context.json', 'src/review_practical_context.py'),
+    lit=('results_review/data/literature_records.json', 'src/literature_verify.py'),
+    srv=('results_review/data/surrogate_check.json', 'src/review_surrogate_check.py analyze'),
 )
 _cache = {}
 
@@ -358,6 +362,95 @@ def build():
     assumed(sec, fe['MESH']['r12'][0], 'Core mesh resolution r12 (um)', '`src/femwell_batch.py` MESH["r12"]', 'femwell_env.constants.MESH.r12')
     assumed(sec, a['montecarlo']['K_BOX'], 'Monte Carlo box half-width (marginal CRB sigmas)', '`src/montecarlo.py` K_BOX', 'analysis_constants.montecarlo.K_BOX')
     assumed(sec, a['montecarlo']['NSTART'], 'Monte Carlo starts per fit', '`src/montecarlo.py` NSTART', 'analysis_constants.montecarlo.NSTART')
+
+    review_rows()
+
+
+def cited_abstract(sec, value, meaning, src, unit_note, path):
+    """A number read from a verified abstract (results_review/data/practical_context.json), with its quote."""
+    pc = load('pc')[src]
+    r = load('lit')[src]
+    ROWS.append((sec, fmt(value, 4), meaning, 'CITED',
+                 f"{r['authors'][0]} et al., \"{r['title']}\", {r['venue']}, DOI {r['doi']}, abstract: “{pc['quote']}”{unit_note} "
+                 f"(`{F['pc'][0]}` : `{src}.{path}`; record in `{F['lit'][0]}`)", [F['pc'][0], F['lit'][0]]))
+
+
+SRV_KEYS = [('n_truths', 'number of perturbed geometries (truths drawn from the CRB covariance)'), ('n_solves', 'femwell solves'),
+            ('neff_err_rms_sigma_phase', 'RMS surrogate error of n_eff, in MZI-phase noise sigmas'),
+            ('neff_err_max_sigma_phase', 'largest surrogate error of n_eff, in MZI-phase noise sigmas'),
+            ('ng_err_rms_sigma_ng', 'RMS surrogate error of n_g, in n_g noise sigmas'), ('ng_err_max_sigma_ng', 'largest surrogate error of n_g, in n_g noise sigmas'),
+            ('n_fits', 'Monte Carlo fits on femwell data'), ('angle_error_std', 'Monte Carlo std of the strip-angle error (deg)'),
+            ('angle_error_mean', 'Monte Carlo mean strip-angle error (deg)'), ('angle_error_mean_se', 'standard error of that mean (deg)'),
+            ('crb_a_fd', 'CRB at the nominal point (deg)'), ('std_over_crb_fd', 'Monte Carlo std / CRB')]
+
+
+def review_rows():
+    rv = load('rv')
+    N = rv['noise']
+    lab = dict(best='best set of 8', two='two-width set')
+    sec = 'L. Review: measurement-model variants (stage D, realistic priors, 1 pm; src/review_analyses.py)'
+    for n in ('two', 'best'):
+        computed(sec, 'rv', f'noise.{n}.base', N[n]['base'], f'{lab[n]}: baseline CRB (deg), independent errors')
+        for r in ('-0.707', '0.900', '-0.900'):
+            computed(sec, 'rv', f'noise.{n}.rho.{r}', N[n]['rho'][r], f'{lab[n]}: CRB with correlation rho = {r} between the n_eff and n_g errors of a ring')
+        for c in ('unknown', '10 pm', '1 pm'):
+            computed(sec, 'rv', f'noise.{n}.calibration.{c}', N[n]['calibration'][c], f'{lab[n]}: CRB with a common wavelength-calibration offset, prior {c}')
+        for t in ('0.1 K', '0.5 K', '1.0 K', 'unknown'):
+            computed(sec, 'rv', f'noise.{n}.temperature_shared.{t}', N[n]['temperature_shared'][t], f'{lab[n]}: CRB with temperature a shared unknown, prior {t}', 5)
+        for t in ('1 mK', '10 mK', '100 mK'):
+            computed(sec, 'rv', f'noise.{n}.temperature_drift_independent.{t}', N[n]['temperature_drift_independent'][t],
+                     f'{lab[n]}: CRB with an independent temperature drift of {t} per structure')
+    M = rv['mzi']
+    sec = 'M. Review: MZI readout and ring-only sets (stage D, realistic priors, 1 pm)'
+    for n in ('two', 'best'):
+        for k, m in (('ring_only', 'rings only (no MZI)'), ('mzi_x1', 'MZI phase noise as derived'), ('mzi_x3', 'MZI 3x noisier'), ('mzi_x10', 'MZI 10x noisier')):
+            computed(sec, 'rv', f'mzi.{n}.{k}', M[n][k], f'{lab[n]}: CRB (deg), {m}')
+    for k, v in M['ring_only_search']['best'].items():
+        computed(sec, 'rv', f'mzi.ring_only_search.best.{k}.a_deg', v['a_deg'], f'Ring-only exhaustive search, best set of {k}: CRB (deg) [' + ', '.join(v['set']) + ']')
+    for k, v in M['ring_only_two_width_by_slab'].items():
+        computed(sec, 'rv', f'mzi.ring_only_two_width_by_slab.{k}', v, f'Ring-only two-width set, {k} nm slab: CRB (deg)')
+    V = rv['variation']
+    sec = 'N. Review: per-structure departures from the shared parameters (stage D, realistic priors, 1 pm)'
+    for n in ('two', 'best'):
+        v = V[n]
+        computed(sec, 'rv', f'variation.{n}.bias_gain_angle_deg_per_deg', v['bias_gain_angle_deg_per_deg'],
+                 f'{lab[n]}: RMS bias gain, deg of strip-angle bias per deg of independent per-structure angle offset')
+        computed(sec, 'rv', f'variation.{n}.bias_gain_angle_deg_per_nm', v['bias_gain_angle_deg_per_nm'], f'{lab[n]}: same, per nm of independent per-structure width offset')
+        for k in v['random_angle']:
+            computed(sec, 'rv', f'variation.{n}.random_angle.{k}.bias_std', v['random_angle'][k]['bias_std'], f'{lab[n]}: bias std (deg), independent angle offsets of std {k}')
+        for k in v['random_width']:
+            computed(sec, 'rv', f'variation.{n}.random_width.{k}.bias_std', v['random_width'][k]['bias_std'], f'{lab[n]}: bias std (deg), independent width offsets of std {k}')
+        for k in v['linear_angle_trend']:
+            computed(sec, 'rv', f'variation.{n}.linear_angle_trend.{k}.bias', v['linear_angle_trend'][k]['bias'], f'{lab[n]}: bias (deg), angle trend of {k} of width')
+        for key, what, u in (('random_effects_crb', 'angle', 'deg'), ('random_effects_crb_w', 'width', 'nm'), ('random_effects_crb_t', 'thickness', 'nm')):
+            for k, x in v[key].items():
+                computed(sec, 'rv', f'variation.{n}.{key}.{k}', x, f'{lab[n]}: CRB (deg) with per-structure {what} deviations of prior std {k} {u}')
+        for key, what, u in (('doubling_spread_angle', 'angle', 'deg'), ('doubling_spread_w', 'width', 'nm'), ('doubling_spread_t', 'thickness', 'nm')):
+            computed(sec, 'rv', f'variation.{n}.{key}', v[key], f'{lab[n]}: per-structure {what} spread ({u}) that doubles the CRB' +
+                     (' (n/a: below the 0.001 nm grid)' if v[key] is None else ''))
+    P = rv['practical']
+    sec = 'O. Review: resonance-prediction error after extraction, and published variation'
+    for n in ('two', 'best'):
+        for case, d in P[n].items():
+            for dev, x in d['devices'].items():
+                computed(sec, 'rv', f'practical.{n}.{case}.devices.{dev}.sigma_resonance_pm', x['sigma_resonance_pm'],
+                         f'{lab[n]}, {case}: 1-sigma error (pm) of the predicted resonance of a {dev} ring, all parameter uncertainties propagated')
+    pc = load('pc')
+    cited_abstract(sec, pc['zortman2010']['die_pm_at_1550'], 'Within-die resonance spread of microdisks, converted to pm at 1550 nm',
+                   'zortman2010', ' (105 GHz converted with dλ = λ² df / c)', 'die_pm_at_1550')
+    cited_abstract(sec, pc['zortman2010']['wafer_nm_at_1550'], 'Across-wafer resonance spread, converted to nm at 1550 nm',
+                   'zortman2010', ' (1 THz converted with dλ = λ² df / c)', 'wafer_nm_at_1550')
+    cited_abstract(sec, pc['jayatilleka2021']['trimmed_to_pm'], 'Resonance accuracy after post-fabrication trimming (± pm)', 'jayatilleka2021', '', 'trimmed_to_pm')
+    cited_abstract(sec, pc['selvaraja2010']['within_chip_nm'], 'Linewidth control within chip (nm)', 'selvaraja2010', '', 'within_chip_nm')
+    cited_abstract(sec, pc['selvaraja2010']['chip_to_chip_nm'], 'Linewidth control chip-to-chip (nm)', 'selvaraja2010', '', 'chip_to_chip_nm')
+    if os.path.exists(os.path.join(REPO, F['srv'][0])):
+        S = load('srv')
+        sec = 'P. Review: femwell solves at perturbed geometries versus the surrogate, and a Monte Carlo on femwell data'
+        for c, d in S.items():
+            for k, m in SRV_KEYS:
+                computed(sec, 'srv', f'{c}.{k}', d[k], f'case {c}: {m}')
+            for k in ('ok', 'at_bound', 'failed'):
+                computed(sec, 'srv', f'{c}.status.{k}', d['status'][k], f'case {c}: fits {k}')
 
 
 def write():

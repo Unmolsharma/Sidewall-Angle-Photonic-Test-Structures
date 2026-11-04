@@ -1,11 +1,11 @@
 {
  "counts": {
-  "COMPUTED": 137,
+  "COMPUTED": 272,
   "DERIVED": 15,
-  "CITED": 9,
+  "CITED": 14,
   "ASSUMED": 15
  },
- "n_rows": 176,
+ "n_rows": 316,
  "commits": {
   "results_final/data/assumption_sensitivity.json": "6fc942a",
   "results_final/data/citations.json": "6fc942a",
@@ -22,6 +22,9 @@
   "results_montecarlo/data/surrogate_accuracy_1pm.json": "897ce21",
   "results_montecarlo/noise_sourced/data/noise_sourced.json": "14404c1",
   "results_montecarlo/robustness/data/robustness_1pm.json": "897ce21",
-  "results_montecarlo/sym_search/data/step_check_all.csv": "897ce21"
+  "results_montecarlo/sym_search/data/step_check_all.csv": "897ce21",
+  "results_review/data/literature_records.json": "uncommitted",
+  "results_review/data/practical_context.json": "uncommitted",
+  "results_review/data/review_analyses.json": "uncommitted"
  }
 }
