@@ -1,42 +1,74 @@
 \section{Discussion}
 \label{sec:discussion}
 
-For a foundry or a test-chip designer, the practical message is about which structures to place. Width and
-thickness monitors made of strips, however many and in whatever polarization, cannot report the sidewall angle of an
-oxide-clad full etch. Adding one rib from the partial etch does not help when that etch is a separate step with its
-own depth and angle, and better depth metrology does not change this. Adding two or more widths of the same rib does:
-seven structures, five strips and two ribs on a \qty{50}{nm} slab, each read by a ring and an MZI, bound the strip angle at
-\qty{0.39}{\degree} for a \qty{1}{pm} wavelength precision, and the bound is reached by an ordinary nonlinear fit. These
-structures occupy little area and use the same readout as existing ring monitors, so they could sit next to them in
-every reticle field and report the angle where SEM or AFM cross-sections are not taken.
+\subsection{What the numbers mean for a foundry}
 
-We see this as a complement to dimensional metrology rather than a replacement. Cross-sections and AFM measure the
-profile directly at a few sites and remain the reference for calibrating any optical extraction; scatterometry is fast
-but model-based~\cite{orji2018,raymond2005}. The optical structures measure the quantity that matters to the circuit,
-the effect of the angle on the guided modes, over the whole wafer, and they need a calibrated model of the
-cross-section to convert that effect into degrees.
+Width and thickness monitors made of strips cannot report the sidewall angle of an oxide-clad full etch, however
+many they are and in whichever polarization. The cost of that blindness is a misprediction of rib devices of
+\qty{710.8}{pm} per degree of tilt. That is comparable to the \qty{841.5}{pm} within-die spread that Zortman \textit{et~al.}\
+reported for microdisks, whose across-wafer spread was \qty{8.014}{nm}~\cite{zortman2010}, and well above the
+\qty{\pm 32}{pm} accuracy reached by trimming~\cite{jayatilleka2021}. A bound of
+\qty{0.39}{\degree} on the angle sounds coarse next to these numbers. What a designer uses, however, is the predicted
+resonance of other devices, and within the shared-parameter model the two-width set predicts a strip ring to
+\qty{0.457}{pm} and a rib ring to \qty{0.773}{pm} at a \qty{1}{pm} readout (Section~\ref{sec:prediction}). The angle
+is uncertain, but the combination of angle, width and thickness that sets each resonance is not. That prediction
+needs an absolute wavelength reference to about \qty{10}{pm}; without one it degrades to \qty{982.2}{pm}.
 
-Several limitations bound the conclusions. The results are simulations; no device was fabricated or measured. The
-symmetry argument holds for oxide above and below the core. An air-clad strip is not mirror-symmetric, and its
-angle/width ratio in our solves is 0.9782 rather than 1, but we computed no bound for air-clad sets and make no claim
-about them. The walls are ideal trapezoids tilting about their bottom edge, without corner rounding or roughness; the
-material indices are nominal values without dispersion; and $\ngr$ uses a fixed \qty{5}{nm} wavelength step. None of
-these choices was varied. All structures in a set are assumed to share the same width offset, thickness and angles, as if placed close enough
-together that variation between them is negligible; local variation within a set was not modeled. Rings are assumed to
-have known resonance orders and lengths, so that each resonance gives $\neff$ directly. The noise
-model starts from a cited wavelength precision, but the step to $\sigma_{\ngr}$ and
-$\sigma_\phi$ is ours and assumes an MZI fringe is located as precisely as a ring resonance. The bounds scale linearly
-with $\sigma_\lambda$ and depend on the other assumptions by tens of percent: halving or doubling the rib noise relative
-to the strips changes the two-width bound by \qty{-47.9}{\percent} and \qty{97.5}{\percent}, and the ring length used in
-the conversion changes it by \qty{-49.4}{\percent} at \qty{50}{\micro m} and \qty{97.8}{\percent} at \qty{200}{\micro m}.
-The priors matter much less, at most \qty{0.6}{\percent} for factor-of-two changes. Even the two-width bound carries a numerical uncertainty of about \qty{5}{\percent}, the change when the domain is
-enlarged. The best eight-structure set is limited by derivative accuracy: its bound moves by \qty{-15.3}{\percent} between remeshed and fixed-mesh derivatives
-and by \qty{-27.5}{\percent} at half the derivative step, which is why we quote it as a range. Whether the rib and strip
-angles are independent, partly linked or equal depends on the process; we treat independence as the default because
-the two etches are separate steps, and show in Section~\ref{sec:results} how much a link would help. Finally, the
-analysis covers TE ribs only and the \qty{1.55}{\micro m} band.
+\subsection{When the shared-parameter assumption breaks}
 
-The next step is a test chip that carries the two-width set and the best set next to conventional width monitors,
-measured at controlled temperature and compared with SEM and AFM cross-sections of the same dies. On the modeling side,
-TM ribs, air cladding and other platforms such as silicon nitride and thin-film lithium niobate, where the cladding
-and the etch profile differ, are open.
+The central limitation is the assumption, shared by every multi-device extraction~\cite{nrc2026}, that all
+structures of a set see the same process. Section~\ref{sec:variation} shows that the angle extraction is far more
+sensitive to it than a width or thickness extraction. The bound of the two-width set doubles once the structures'
+widths differ by \qty{0.03938}{nm} or their angles by \qty{0.01749}{\degree}, and uncorrected offsets of
+\qty{0.25}{\degree} produce biases of tens of degrees. For comparison, the best linewidth control reported for a
+CMOS line is \qty{0.6}{nm} within a chip~\cite{selvaraja2010}, and the mismatch between identical rings grows with
+their separation~\cite{chrostowski2014}, with layout-dependent systematic components~\cite{xing2023}. We found no
+published value for the width or angle difference between adjacent waveguides of different widths, which is the
+quantity that matters here.
+
+A working angle test structure therefore has to meet a consistency requirement that width monitors do not face. Its
+members must be close enough, and similar enough in local pattern density, that their departures from one another
+stay below a few hundredths of a nanometre, or the design must measure those departures. Two consequences follow for
+design. First, the two-width set tolerates about ten times larger departures than the best set of eight, so the
+smaller set is the better proposal even though its shared-parameter bound is higher. Second, linewidth depends on local pattern density~\cite{xing2023}, and if the angle does too it can
+change systematically with waveguide width; a trend of \qty{0.25}{\degree} per
+\qty{100}{nm} biases the two-width estimate by \qty{6.869}{\degree}. Width ranges should therefore be kept narrow, or
+the trend added to the model as one more parameter.
+
+\subsection{Relation to physical metrology}
+
+Cross-sections and AFM measure the profile directly at a few sites and remain the reference for calibrating any
+optical extraction~\cite{orji2018,yoo2022}. Scatterometry is fast but model-based~\cite{raymond2005}, and its targets
+are designed with the same Fisher-information tools we use here~\cite{klein2025,silver2007}. The optical structures
+studied here measure the effect of the angle on the guided modes, which is the quantity a circuit depends on, at
+every place where rings can be placed. They need a calibrated cross-section model to turn that effect into degrees,
+and the co-location requirement above to make the conversion meaningful.
+
+\subsection{Limitations}
+
+The results are simulations, and no device was fabricated or measured. The symmetry argument is first-order and holds
+for oxide above and below the core. An air-clad strip is not mirror-symmetric (its angle/width ratio in our solves is
+0.9782), and we computed no bound for air-clad sets. The walls are ideal trapezoids tilting about their bottom edge,
+without corner rounding or roughness, the material indices are nominal values without dispersion, and $\ngr$ uses a fixed
+\qty{5}{nm} wavelength step; none of these choices was varied. Rings are assumed to have known resonance orders and
+lengths, so that each resonance gives $\neff$ directly. Only a common calibration offset was tested, and an unknown
+length per ring was not. The bounds scale linearly with $\sigma_\lambda$ and depend on the noise conversion by tens of
+percent. Halving or doubling the rib noise relative to the strips changes the two-width bound by
+\qty{-47.9}{\percent} and \qty{97.5}{\percent}, and the ring length used in the conversion changes it by
+\qty{-49.4}{\percent} at \qty{50}{\micro m} and \qty{97.8}{\percent} at \qty{200}{\micro m}. The priors matter much
+less, at most \qty{0.6}{\percent} for factor-of-two changes. The two-width bound carries a numerical uncertainty of
+about \qty{5}{\percent}, the change when the domain is enlarged. The best set of eight is limited by derivative accuracy,
+moving by \qty{-15.3}{\percent} between remeshed and fixed-mesh derivatives and by \qty{-27.5}{\percent} at half the
+derivative step. We treat the rib and strip angles as independent because the two etches are separate steps, and
+Section~\ref{sec:results} shows how much a link would help. The analysis covers TE ribs only and the
+\qty{1.55}{\micro m} band.
+
+\subsection{Next steps}
+
+The decisive experiment is a test chip that carries the two-width set in a compact layout next to conventional width
+monitors, measured at controlled temperature against an absolute wavelength reference and compared with
+cross-sections of the same dies. Repeating the set at several separations on the chip would measure the local
+departures that Section~\ref{sec:variation} identifies as the limit. On the modeling side, per-structure departures
+could be absorbed by structures whose members share most of their waveguide, or by the single-ring, many-resonance
+approach of~\cite{nrc2026} extended to a rib. TM ribs, air cladding and other platforms such as silicon nitride, where
+the cladding and etch profile differ, remain open.

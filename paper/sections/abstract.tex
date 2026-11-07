@@ -1,20 +1,19 @@
 \begin{abstract}
-The sidewall angle of etched silicon waveguides changes the effective index of every guided mode, yet the optical
-test structures used to monitor fabrication do not report it. We analyze which test structures can determine the
-angle, using full-vector finite-element mode solutions and the Cram\'er--Rao lower bound (CRLB) of a joint fit of
-ring and interferometer readouts. For an oxide-clad strip the mode is mirror-symmetric about mid-height, so to first
-order a wall tilt $\theta$ about the bottom edge is exactly a width change of $t\tan\theta$, \qty{3.84}{nm} per degree
-for a \qty{220}{nm} film: sets of strips carry no angle information at any size. A partially etched rib breaks the
-symmetry, with an angle/width ratio of \numrange{0.75}{0.87} instead of 1, but a rib made by a separate etch brings
-its own depth and angle, and one rib width then leaves the strip angle unidentifiable. Two widths of the same rib
-resolve it. With strip rings at five widths and ribs of \qty{300}{nm} and \qty{500}{nm} on a \qty{50}{nm} slab, the
-CRLB on the strip sidewall angle is \qty{0.39}{\degree} for a \qty{1}{pm} resonance-wavelength precision, with etch
-depth, rib angle and both material indices unknown; the best eight-structure set reaches about
-\qtyrange{0.12}{0.14}{\degree}, with a \qty{15}{\percent} uncertainty from derivative accuracy. Nonlinear fits of
-2000 simulated noisy measurement sets reproduce these bounds to within \qty{5}{\percent}. Treating a \qty{1}{\degree}
-tilt as a width error mispredicts a rib ring resonance by \qty{711}{pm}. The results are from simulations only.
+Ring and interferometer test structures monitor the width and thickness of silicon waveguides across a wafer, but
+none reports the sidewall angle, and a tilt that a width fit absorbs mispredicts rib devices by hundreds of
+picometres. We ask which test structures make the angle identifiable. For an oxide-clad strip the mode is
+mirror-symmetric, so to first order a wall tilt is exactly a width change, and no set of strips can
+separate the two. A partially etched rib breaks the symmetry, but a rib from a
+separate etch brings its own depth and angle, and one rib width then leaves the strip angle unidentifiable even when
+the depth is known. Two widths of the same rib restore identifiability. With rings on several strip widths and two
+rib widths, the Cram\'er--Rao bound on the strip angle is \qty{0.39}{\degree} at a \qty{1}{pm} resonance-wavelength
+precision, with the etch parameters and material indices unknown. The bound assumes that all structures share one
+set of process parameters. It doubles once their widths differ by \qty{0.039}{nm}, so a working test structure must
+co-locate its members or measure their differences. Results come from finite-element mode solutions, Fisher
+information and nonlinear fits to simulated data.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Silicon photonics, sidewall angle, process monitoring, test structures, Cram\'er--Rao bound, ring resonators.
+Silicon photonics, sidewall angle, test structures, identifiability, Fisher information, Cram\'er--Rao bound, ring
+resonators, process monitoring.
 \end{IEEEkeywords}

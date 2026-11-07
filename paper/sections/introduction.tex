@@ -1,44 +1,88 @@
 \section{Introduction}
 \label{sec:intro}
 
-Silicon photonic circuits are designed around nominal waveguide cross-sections, and their behavior follows the
-fabricated ones. Width and thickness variations across a wafer shift ring resonances and interferometer phases, and
-models of layout-dependent variability are now used to predict circuit yield~\cite{lu2017}. The sidewall angle is
-the least monitored of these parameters. Plasma etching leaves walls that lean away from vertical, the lean varies
-with etch chemistry, pattern density and position on the wafer \todo{cite: measured sidewall-angle variation in
-silicon photonic etch processes}, and it moves the effective index of every mode that touches the wall. Circuits
-that mix fully etched strips with partially etched ribs see two different angles from two different etch steps, so
-a component designed for one cross-section can sit off resonance when either angle drifts.
+Suppose the fully etched strips of a silicon photonic process come out with walls tilted by \qty{1}{\degree} and the
+monitor rings are fitted with vertical walls. In our simulations the fit absorbs the tilt as a width change of
+\qty{-3.8403}{nm}, and a ring made of a \qty{500}{nm} rib on a \qty{90}{nm} slab, predicted from that width, lands
+\qty{710.8}{pm} away from where it actually resonates. For comparison, Zortman \textit{et~al.}\ held microdisk resonances to within
+\qty{105}{GHz} inside a die~\cite{zortman2010}, which is \qty{841.5}{pm} at \qty{1550}{nm}. Post-fabrication trimming
+sets rings to within \qty{\pm 32}{pm} of target~\cite{jayatilleka2021}. An unmonitored degree of sidewall angle is therefore
+an error of the same size as the within-die spread that process monitoring is meant to explain. It arises because a
+rib's resonance responds to wall tilt differently from a strip's, so a width that matches the strips is wrong for
+the ribs.
 
-Dimensional metrology measures the angle directly but sparsely. Cross-sectional electron microscopy requires cutting
-the sample and is destructive~\cite{orji2018}; atomic force microscopy needs specialized tips and scans to reach a
-wall \todo{cite: 3D/CD-AFM sidewall metrology on Si waveguides}; optical scatterometry is fast and non-destructive but infers the profile through a parametrized model whose
-parameters can be correlated and whose inverse problem need not have a unique solution~\cite{orji2018,raymond2005}.
-All of these measure shape at a few sites. What a circuit designer needs is the optical consequence of the shape
-across the wafer, which suggests measuring the angle with the same ring and interferometer test structures that
-already monitor width and thickness. Such optical extraction methods recover width and thickness from measured
-effective and group indices~\cite{xing2018,dwivedi2015}, but they hold the sidewall angle at an assumed value
-\todo{verify in the full text of Xing et al.\ 2018 that the extraction fixes the sidewall angle (search snippet: 85$^\circ$ from a foundry handbook)}.
+The optical test structures that foundries and designers use measure the effective and group indices of a few
+waveguides and convert them into a width and a thickness~\cite{xing2018,zortman2010,lu2017}. The sidewall angle is
+left out of that conversion. In this paper we show that, for oxide-clad strips, the omission is forced by the
+structures. To first order the angle cannot be separated from the width for any number of strips, widths,
+polarizations or readouts. We then work out which additional structures make the angle identifiable, how much prior
+process knowledge they need, and what precision they reach under a measurement model built from published ring
+metrology~\cite{janz2023}. We also find out how far the result depends on the assumption, common to all multi-device
+extraction, that the structures share one set of process parameters.
 
-The reason the angle is usually fixed is not a lack of data but a property of the structures. This paper shows that
-for oxide-clad strip waveguides the angle is not merely hard to separate from the width: to first order it cannot be
-separated at all, for any number of strips, polarizations or readouts. We then ask which structures restore the
-missing information, how much prior knowledge of the process they need, and what precision they reach under a
-measurement noise taken from published ring-resonator metrology~\cite{janz2023}. The answers come from full-vector
-finite-element mode solutions and from the Cram\'er--Rao lower bound (CRLB) of a joint fit, checked by nonlinear
-fits of simulated noisy data. No devices were fabricated; every number below is a simulation result or an input
-taken from the cited literature.
+This is a computational study of test-structure design and identifiability. Every number comes from full-vector
+finite-element mode solutions, Fisher information or nonlinear fits of simulated data, and no device was fabricated.
+The strip result is first-order and holds for the symmetric oxide-clad cross-section under the measurement model of
+Section~\ref{sec:theory}.
 
-The contributions are:
+\subsection{Related work}
+
+\textit{Optical extraction of waveguide geometry.} Xing \textit{et~al.}\ extracted the linewidth and thickness of SOI
+strips from measured effective and group indices with errors of a fraction of a nanometre, and analysed how the index
+ranges must be bounded for the inversion to be correct~\cite{xing2018}. Later work extracted the same two dimensions
+from a single high-order MZI~\cite{liu2025}, from racetrack resonators feeding a layout-aware variability
+model~\cite{lu2017}, from ring biosensors read in TE and TM~\cite{atsumi2012}, and from microdisks read in both
+polarizations~\cite{zortman2010}. MZI sets have mapped the effective index and its thermo-optic coefficient across
+wafers~\cite{dwivedi2015}. For silicon nitride, unbalanced MZIs determined thickness, width offset and both material
+indices across a \qty{300}{mm} wafer~\cite{butt2024}. Rib waveguides have been characterized with two racetracks of
+different perimeter, with a cross-section estimate checked against STEM~\cite{zhang2024}. A recent patent
+application determines the geometry from many resonances of one ring. In its background, it states that methods
+using several devices must assume that the devices share the same width and thickness variations, and that this
+condition ``is recognized as often not satisfied''~\cite{nrc2026}. None of these works extracts the sidewall angle.
+
+\textit{Fabrication variability.} Width and thickness vary systematically with layout and position. Hierarchical
+models separate layout-dependent from random contributions and tie die-scale linewidth variation to pattern
+density~\cite{xing2023}, and the resonance mismatch between identical rings grows linearly with their
+separation~\cite{chrostowski2014}. CMOS-line fabrication has reached linewidth control better than \qty{0.6}{nm}
+within a chip and \qty{2}{nm} chip-to-chip~\cite{selvaraja2010}. Wafer-scale resonator statistics~\cite{robinson2025,mdpi2025,aim2023}
+and variability-aware design flows~\cite{bogaerts2018} show why such numbers matter for yield. Ring basics,
+including the relation between resonance, free spectral range and group index, are reviewed
+in~\cite{bogaerts2012,chrostowski2015}.
+
+\textit{Sidewall angle and physical metrology.} Angled sidewalls break the vertical symmetry of a waveguide and cause
+TM-to-TE hybridization and conversion in tapers~\cite{dai2015,mdpi2021}, the mechanism behind some polarization
+rotators~\cite{dai2011}. Sidewall roughness causes backscattering and polarization rotation~\cite{morichetti2010}
+and sets the loss floor of high-Q rings~\cite{biberman2012}. Dimensional metrology measures the profile directly.
+Cross-sectional TEM is destructive and AFM and SEM are local~\cite{orji2018}. 3D-AFM resolves sidewalls of vertical and
+undercut structures with die-level reproducibility better than \qty{2}{\percent}~\cite{yoo2022}. Scatterometry is
+fast but model-based, and its inverse problem can have correlated parameters and non-unique
+solutions~\cite{raymond2005,orji2018}.
+
+\textit{Experiment design and identifiability.} The Cram\'er--Rao lower bound (CRLB) and Fisher information are the
+standard tools for asking how well a parameter can be estimated from a measurement~\cite{kay1993}, and optimal
+experiment design chooses measurements to improve them~\cite{pukelsheim2006}. A parameter is structurally
+unidentifiable when the model output cannot distinguish it from others for any data~\cite{bellman1970}, and
+practically unidentifiable when finite, noisy data leave it unbounded~\cite{raue2009}. In dimensional metrology the
+Fisher matrix has been used to choose the wavelength and angles of EUV scatterometry so as to break parameter
+correlations~\cite{klein2025}, and simulation studies have mapped the sensitivity limits of optical CD
+metrology~\cite{silver2007}. Offset and model errors in inverse scatterometry have been propagated to the fitted
+profile~\cite{alassaad2007} and estimated jointly with it~\cite{henn2012}. In optics more broadly, Fisher
+information has guided the design of maximally informative illumination~\cite{bouchet2021}.
+
+\subsection{Contribution}
+
+Previous optical extraction leaves the sidewall angle out. Previous identifiability-driven metrology design chooses how
+to measure one fixed structure. Here we choose which waveguides to measure, and we show that the choice decides
+whether the angle is identifiable at all. Specifically:
 \begin{itemize}
-\item a first-order proof, confirmed numerically, that oxide-clad strips are exactly blind to the sidewall angle,
-with the angle/width ratio $R=(y_c-y_\mathrm{pivot})/(h/2)$ set by the wall-perturbation centroid of the mode;
-\item an identifiability analysis showing that one rib made by a separate etch cannot determine the strip angle,
-and that prior knowledge of the etch depth does not change this;
-\item test-structure sets built from several widths of the same rib that reach \qty{0.39}{\degree} (two rib widths)
-and \qtyrange{0.12}{0.14}{\degree} (best set of eight) at a \qty{1}{pm} wavelength precision, with the bound confirmed
-by Monte Carlo fits;
-\item a methods comparison showing that finite-difference derivatives from a grid-based solver were not accurate
-enough for this analysis, and that small derivative errors in any solver create false angle information unless the
-strip symmetry is imposed.
+\item We show, to first order and confirm with mode solutions, that oxide-clad strips are exactly blind to the
+sidewall angle, with the angle/width ratio $R=(y_c-y_\mathrm{pivot})/(h/2)$ set by the centroid of the
+wall-perturbation weight.
+\item We give a counting argument, confirmed by the Fisher matrix and by nonlinear fits, that one rib from a separate
+etch leaves the strip angle unidentifiable, and that a known etch depth does not change this.
+\item We find that two widths of the same rib restore identifiability. An exhaustive search shows that a ring-only set
+of five strips and two ribs bounds the strip angle at \qty{0.393}{\degree} at a \qty{1}{pm} precision, and we test this
+bound against correlated noise, calibration offsets, temperature and the readout.
+\item We quantify the shared-parameter assumption. Departures of a few hundredths of a nanometre or degree between
+structures double the bound, which turns co-location into a design requirement for any angle test structure.
 \end{itemize}

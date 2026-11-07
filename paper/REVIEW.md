@@ -1,83 +1,66 @@
-# Review of the draft (step 4)
+# Review of the draft
 
-Reread as a skeptical reviewer on 2026-11-03. Numbers checked by `python src/provenance_audit.py --paper`
-(report: `results_final/audit/PAPER_AUDIT.md`).
+v1 (reviewed 2026-11-03) is archived in `paper/archive/v1/`. This file covers v2, the rewrite after the external
+critique of 2026-11-03. Numbers are checked by `python src/provenance_audit.py --paper` (report:
+`results_final/audit/PAPER_AUDIT.md`); the review analyses are summarized in `results_review/SUMMARY.md` and are rows
+L-P of `results_final/HEADLINE_NUMBERS.md`.
 
-## Audit result
+## Audit result (v2)
 
-- 164 numbers with a decimal point or exponent in `main.tex` and `sections/*.tex` (comments, `\todo` notes, labels,
-  references and file names excluded): **0 untraced, 0 mismatches**, traced against `results_final/HEADLINE_NUMBERS.md`,
-  `CLAIMS.md`, `ASSUMPTIONS.md`, `CITATIONS.md` and `results_final/data/validation.json`.
-- Caveat: the chance-match rate of this pool is 28% (a random 3-digit number would "trace" that often), so the
-  audit proves that every number exists in a source file at the shown precision, not that it was taken from the
-  intended row. Each number was placed by hand from the row noted in `paper/NOTES.md`.
-- Integers (counts such as 1190 of 2000, 7 of 32, widths, slabs) are not audited by the script; they were checked
-  by hand against HEADLINE_NUMBERS.md and CLAIMS.md.
-- Figures read the same data files as HEADLINE_NUMBERS.md. Fig. 1 asserts that its recomputed centroids equal
-  `crosscheck_fields.json` to 1e-9 um; Fig. 4 prints the Monte Carlo and CRLB values from `mc_results_1pm.json`.
-- Compilation: `latexmk -pdf main.tex` runs without errors, undefined references or undefined citations. Five overfull
-  boxes of 0.94-1.45 pt remain; they come from empty boxes (not text) and stay with `\finaltrue`.
+- Paper: 230 numbers with a decimal point or exponent, **0 untraced, 0 mismatches**. Chance-match rate 34%, so
+  every new number was also placed by hand from its row (sections L-P of HEADLINE_NUMBERS.md).
+- HEADLINE_NUMBERS.md: 508 numbers, 0 untraced; results_review/SUMMARY.md: 101 numbers, 0 untraced.
+- Compilation: `latexmk -pdf main.tex` runs without errors, undefined references or citations; seven overfull boxes of
+  0.94-1.45 pt remain (empty boxes, as in v1).
+- Framing decision (2026-11-03, "Reframe"): lead with identifiability. 0.39 deg is the bound under a shared-parameter
+  model, and the sensitivity to local variation is a central result that sets a co-location requirement.
 
-## Claims vs evidence
+## Reviewer points
 
-- No claim is stronger than its CLAIMS.md status. "Air cladding barely matters" (UNSUPPORTED) is not claimed; air
-  cladding is a stated limitation. "Thinner slab is better" (PARTIAL) is written as "the optimum among the slabs
-  simulated is 50 nm".
-- Wording follows the decisions of 2026-11-03: the EMpy lesson is split (EMpy derivatives disagree and fail step
-  checks; derivative noise in any solver fakes strip information), and the single-rib priors sentence uses four numbers
-  at one stage and noise level (stage C, 1 pm, 70 nm slab), without "rescue".
-- Simulation-only language throughout ("simulations indicate", no "we demonstrate").
+| # | Point | Status | Where |
+|---|---|---|---|
+| 1 | Monte Carlo not independent of the surrogate | partly addressed | Sec. "Monte Carlo on femwell data"; 20 femwell-perturbed geometries per set, 500 fits on femwell data. See the status line below. |
+| 2 | Noise model optimistic: correlated errors | addressed | Sec. "Measurement-model variants", Fig. 7: rho sweep, derived rho = -1/sqrt(2); correlation lowers the bound |
+| 2 | MZI precision separate from ring | addressed | Sec. "Ring and MZI readout": MZI 3x and 10x noisier, ring-only search; proposal is ring-only |
+| 2 | Calibration | addressed | common offset: unknown 1.07 deg (two-width), 10 pm prior recovers the baseline |
+| 2 | Temperature | addressed | shared unknown (0.1-1 K, unknown) and independent drift per structure (1-100 mK) |
+| 2 | Lab vs production noise; 0.1 pm idealized | partly addressed | 1 pm is primary; linear scaling stated; no production-tester noise source found |
+| 3 | Assumed uniformity; width-dependent etch / loading | addressed (analysis), open (data) | Sec. "Departures from shared process parameters", Fig. 6; bias gains, linear trend, random-effects bounds, doubling spreads. No published value for adjacent-structure differences was found. |
+| 4 | Identifiability, not practical metrology | addressed | title, abstract, intro paragraph 3 ("computational study of test-structure design and identifiability") |
+| 5 | Practical value of 0.39 deg | addressed | Sec. "Resonance prediction" and Discussion A: 0.457 / 0.773 pm predicted resonance vs 710.8 pm/deg, Zortman 841.5 pm, trimming +-32 pm |
+| s | Literature positioning, novelty | addressed | Related work (4 paragraphs, 50 verified references), Contribution subsection; `paper/LITERATURE.md` lists the 5 closest papers |
+| s | Explain the search | addressed | Sec. "Test Structures and Design Search": candidates, one-etch constraint, size <= 8, objective, exhaustive + greedy check |
+| s | Material assumptions | partly addressed | n_Si, n_ox unknown with priors (stage D); dispersion and doping still not modeled |
+| s | Ring geometry (known lengths and orders) | partly addressed | stated; common calibration offset tested; unknown length per ring not modeled |
+| s | Width dependence | addressed | linear angle trend vs width (6.869 deg bias per 0.25 deg/100 nm, two-width) |
+| s | Temperature excluded from primary results | addressed | temperature variants in Sec. "Measurement-model variants"; stage E in Fig. 3 |
+| s | Generalizability | open | air cladding (R = 0.9782, no bound), TM ribs, other platforms listed as limitations/next steps |
+| s | MZI redundancy | addressed | ring-only proposal |
+| w | Weak literature review | addressed | see above |
+| w | Bring the motivation and 711 pm forward | addressed | first paragraph of the introduction |
+| w | Overly definitive language | addressed | "to first order", "for the oxide-clad cross-section", "simulations indicate", shared-parameter qualifier on every headline bound |
+| w | Abstract too numeric | addressed | under 200 words, three numbers (0.39 deg, 1 pm, 0.039 nm), order problem, discovery, one rib, fix, precision and meaning, method |
+| w | Placeholders | addressed | all `\todo` removed except e-mail, affiliation details and acknowledgments; co-author surname still `[LAST NAME]` |
 
-## Weakest points (what a reviewer will push on)
+Status of point 1: see `results_review/SUMMARY.md` section 6.
 
-1. **No measurement.** Everything is simulation; the noise model is cited only for the resonance wavelength
-   (Janz et al.), and the n_g and MZI phase noise are our derivation. The bounds scale linearly with
-   sigma_lambda and move by tens of percent with the rib noise factor, the ring length and the n_g used in the
-   conversion (ASSUMPTIONS.md).
-2. **Numerical uncertainty of the headline numbers.** The two-width bound moves +5.2% when the domain is enlarged
-   (derivatives change by <= 0.35%); the best set moves -15.3% with fixed-mesh rib derivatives and -27.5% at half
-   the step. A reviewer may ask for a second, independent solver for the derivatives, or a mesh/domain refinement
-   study of the bound itself rather than of individual derivatives.
-3. **Observation model.** We treat each ring as an absolute n_eff measurement (known resonance order and ring
-   length) and every structure in a set as sharing the same width offset, thickness and angles. Real dies have
-   local variation between structures and unknown ring lengths; both would add unknowns. Now stated as
-   limitations, but not quantified.
-4. **Monte Carlo surrogate.** The Monte Carlo fits a smooth surrogate, not femwell itself. For the 300 nm ribs the
-   surrogate misses held-out femwell solves by up to 27 sigma_phase (femwell remeshing scatter). The estimator is
-   therefore tested on a smoothed model; the best-set spread is 0.952 of the femwell CRLB because the surrogate's
-   own bound is 0.1249 deg. A check with a handful of direct femwell fits would close this.
-5. **Untested modeling choices:** ideal trapezoid walls, pivot at the bottom of the wall, nominal indices without
-   dispersion, the 5 nm wavelength step for n_g, TE ribs only, 1.55 um only (NOT EVALUATED in ASSUMPTIONS.md).
-6. **Validation.** Only against the earlier EMpy solutions (n_eff within 0.79%/0.15%) and one published EIM value
-   (2.602; femwell 1.2% lower). The "2.44-2.45 published" strip value was dropped because no source could be found.
-7. **Literature coverage is thin.** Three `\todo{cite}` remain in the introduction; the sidewall-angle variability
-   and AFM sidewall-metrology statements need verified references, and the claim that optical extraction fixes the
-   angle needs the full text of Xing et al. (2018) (our fetch failed on a TLS error).
+## Sections you should rewrite yourself
 
-## Open TODOs in the source
+1. **Introduction, paragraph 1** (the concrete problem). It is the reader's first contact; make it sound like your
+   lab's motivation. Keep the three numbers (710.8 pm, 841.5 pm, +-32 pm) and the sources.
+2. **Related work.** I wrote it from the verified abstracts only. Read at least Xing 2018, Lu 2017, Butt 2024, Zhang
+   2024 and the NRC patent in full and correct anything the abstract-level summary gets wrong; add anything your
+   advisor considers standard.
+3. **Contribution list.** Decide how strongly you want to claim the co-location result; it is the part most likely to
+   draw a reviewer's objection, because it argues against the practicality of the proposal.
+4. **Discussion A and B** (foundry meaning, shared-parameter breakdown). These carry the paper's argument for a real
+   test chip; your judgement of what a foundry would actually place is better than mine. Check the sentence that no
+   published value for adjacent-structure differences exists.
+5. **Next steps.** Replace with the experiment you can actually do (chip, process, metrology access).
 
-- `introduction.tex`: cite measured sidewall-angle variation in Si photonic etch processes; cite 3D/CD-AFM sidewall
-  metrology on Si waveguides; verify that Xing et al. 2018 fix the angle (search snippet: 85 deg from a foundry
-  handbook).
-- `main.tex`: e-mail, affiliation details / corresponding author / dates, co-author last name, acknowledgments.
+## Still open
 
-## What would make it stronger before arXiv
-
-1. Close the three citation TODOs with verified sources.
-2. A direct femwell Monte Carlo check (e.g. 50-100 sets fitted with femwell in the loop) for the two-width set.
-3. A domain + mesh refinement of the two-width bound itself (not only derivatives), to state a numerical error bar.
-4. An observation model with unknown ring length (or relative resonance shifts) and a local-variation term, to show
-   the two-width conclusion survives.
-5. Air-clad sets: compute the bound instead of only R (would decide whether the oxide-clad restriction matters).
-6. Wall-shape sensitivity (corner rounding, pivot at mid-height or top) for the two-width set.
-7. An independent derivative check with a second full-vector solver on two or three structures.
-
-## A 2-page CLEO 2027 summary (due 23 Nov 2026)
-
-Keep: the symmetry result with Fig. 1 (cut to panels a and c, or a two-panel single-column version), the counting
-rule in one paragraph, the single-rib sentence (stage C numbers), the two-width set (0.39 deg at 1 pm, 0.0408 deg
-at 0.1 pm) with the Monte Carlo agreement (Fig. 4b), and the 711 pm cost of ignoring the angle. Mention the best set
-(0.12-0.14 deg) in one sentence with its caveat.
-Cut: the EMpy comparison, the full stage-by-stage discussion (keep one sentence and maybe Fig. 3 as the second
-figure instead of Fig. 4), the slab study (one sentence: optimum at 50 nm), the priors sensitivity table, the fixed-mesh
-and domain checks (one sentence), the surrogate details. Two figures maximum; about 8-10 references.
+- No measurement; no air-clad bound; TM ribs; wall-shape sensitivity; unknown length per ring; a second full-vector
+  solver for derivatives; a mesh/domain refinement of the bound itself (the domain check moves the two-width bound
+  by 5.2%).
+- Two candidate references could not be verified (arXiv rate limits) and are not cited.

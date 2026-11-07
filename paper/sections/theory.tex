@@ -4,20 +4,21 @@
 \subsection{Measurement model and Cram\'er--Rao bound}
 
 Each test structure is a waveguide of bottom width $w$ in a silicon film of thickness $t$, read out by a ring
-resonator and a Mach--Zehnder interferometer (MZI). The unknown parameters form a vector $\mathbf{p}$ that always
+resonator and, in some of the sets we compare, also by a Mach--Zehnder interferometer (MZI). The unknown parameters form a vector $\mathbf{p}$ that always
 contains the strip width offset, the film thickness and the strip sidewall angle $\theta$, measured from vertical
 with the top narrower. A ring gives two observables, the effective index $\neff$ through the resonance position and
 the group index $\ngr$ through the free spectral range; an MZI gives one phase. Reading $\neff$ from a resonance
 position assumes that the resonance order and the ring length are known, so that a wavelength shift maps onto an index
 change; we make this assumption throughout. Stacking all observables into
-$\mathbf{y}=\mathbf{f}(\mathbf{p})+\boldsymbol{\epsilon}$ with independent Gaussian noise of standard deviations
-$\sigma_k$, the Fisher information matrix is
+$\mathbf{y}=\mathbf{f}(\mathbf{p})+\boldsymbol{\epsilon}$ with Gaussian noise of covariance
+$\boldsymbol{\Sigma}$, the Fisher information matrix is
 \begin{equation}
 \mathbf{F}=\mathbf{J}^{\mathsf T}\boldsymbol{\Sigma}^{-1}\mathbf{J}+\boldsymbol{\Lambda},\qquad
 J_{kj}=\frac{\partial f_k}{\partial p_j},
 \label{eq:fisher}
 \end{equation}
-where $\boldsymbol{\Sigma}=\mathrm{diag}(\sigma_k^2)$ and $\boldsymbol{\Lambda}$ is diagonal in the parameters that
+where $\boldsymbol{\Sigma}=\mathrm{diag}(\sigma_k^2)$ in the baseline model (Section~\ref{sec:noise}
+relaxes this) and $\boldsymbol{\Lambda}$ is diagonal in the parameters that
 have a Gaussian prior, with entries $1/\sigma_{p,j}^2$ (a prior on a difference of two parameters adds the
 corresponding rank-one term). The CRLB on the angle is~\cite{kay1993}
 \begin{equation}
@@ -39,8 +40,11 @@ $\sigma_{\ngr}=\sqrt2\,\sigma_\lambda\ngr^2L/\lambda^2$; and an MZI fringe read 
 $\sigma_\phi=2\pi\ngr L\sigma_\lambda/\lambda^2$. With $\lambda=\qty{1.55}{\micro m}$, a ring and MZI length
 $L=\qty{100}{\micro m}$ and $\ngr=4.26$, the largest group index among the structures used, $\sigma_\lambda=\qty{1}{pm}$
 gives $\sigma_{\neff}=\num{2.75e-6}$, $\sigma_{\ngr}=\num{1.07e-3}$ and $\sigma_\phi=\qty{1.11e-3}{rad}$. These
-three values are derived, not measured; the MZI value in particular assumes that a broad fringe is located as well
-as a narrow resonance. At \qty{0.1}{pm} the ring must also be held to about \qty{1.25}{mK}, since its resonance moves
+three values are derived, not measured. The MZI value assumes that a broad fringe is located as well as a narrow
+resonance, and the baseline treats the three errors as independent. If $\neff$ is read from one of the two
+resonances that define the FSR, the $\neff$ and $\ngr$ errors of a ring are correlated with $\rho=-1/\sqrt2$; with
+the mean of the two resonances they are uncorrelated. Section~\ref{sec:noise} evaluates both cases, a common
+calibration offset and temperature drift. At \qty{0.1}{pm} the ring must also be held to about \qty{1.25}{mK}, since its resonance moves
 by roughly \qty{80}{pm/K}~\cite{janz2023}.
 
 \subsection{Unknown parameters and priors}
@@ -89,7 +93,7 @@ then a fixed multiple of the width column for every strip observable, $\mathbf{F
 determines $\theta$. The rotation of the wall about mid-height that remains after removing the uniform shift is odd
 under the mirror operation and enters only at second order.
 
-A rib breaks the mirror symmetry: the wall is the upper part of the cross-section, its pivot is the slab top, and the
+A rib breaks the mirror symmetry. Its wall is the upper part of the cross-section, its pivot is the slab top, and the
 slab pulls the mode down toward the wall's lower corner. Then $y_c<y_\mathrm{pivot}+h/2$ and $R<1$, and the angle
 column of a rib is no longer parallel to its width column. Whether this new direction survives in a joint fit depends
 on how many unknowns the rib brings, which we count in Section~\ref{sec:structures}.
