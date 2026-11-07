@@ -1,3 +1,25 @@
-% filled from results_review/data/surrogate_check.json
+% numbers from results_review/data/surrogate_check.json (HEADLINE_NUMBERS.md section P)
 \subsection{Monte Carlo on femwell data}
 \label{sec:surrcheck}
+
+The fits above take both the data and the model from the surrogate, so they cannot show what the surrogate's own
+errors do to the estimate. For each of the two sets we drew 20 parameter vectors from the CRLB covariance, solved
+every structure at each of them with femwell on the r12 mesh (160 solves for the best set, 140 for the two-width set),
+and used these mode indices as noiseless data. Each data set received 25 noise realizations at
+\qty{1}{pm}, giving 500 fits per set, all made with the surrogate as the model and the settings above.
+
+At these geometries the surrogate follows the strips to within $0.8627\,\sigma_\phi$ in $\neff$, and its $\ngr$ errors
+stay below $0.0524\,\sigma_{\ngr}$. The \qty{300}{nm} ribs are again the weak point. On the \qty{50}{nm} slab their
+$\neff$ misses femwell by $5.166\,\sigma_\phi$ RMS and by $12.42\,\sigma_\phi$ at worst, and on the \qty{90}{nm} slab
+by $1.519\,\sigma_\phi$ and $3.366\,\sigma_\phi$.
+
+The two-width set does not pass these errors on to the angle. Its fitted angles scatter by \qty{0.4034}{\degree}
+(\qtyrange{0.3781}{0.4273}{\degree}, 95\% bootstrap interval), 1.037 times the CRLB, with a mean error of
+\qty{0.02463 \pm 0.01804}{\degree}, and all 500 fits converge inside the box. The best set of eight does not reach its
+bound on femwell data. Its spread is \qty{0.2067}{\degree} (\qtyrange{0.1859}{0.2253}{\degree}), 1.487 times the
+CRLB of \qty{0.139}{\degree}, and 14 fits end at the box edge, even though the surrogate errors on its
+\qty{300}{nm} rib are the smaller of the two. Its bound rests on small differences between four rib widths, and model
+errors of about one noise standard deviation in one of them are enough to widen the estimate. The derivative checks
+of Section~\ref{sec:multi} and the variation analysis of Section~\ref{sec:variation} show the same sensitivity. We
+take \qty{0.39}{\degree} for the two-width set as the result that holds with an independent forward model, and the
+\qty{0.139}{\degree} of the best set as the bound of a model accurate to better than the noise.

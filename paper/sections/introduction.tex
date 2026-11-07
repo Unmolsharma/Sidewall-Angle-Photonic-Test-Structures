@@ -12,8 +12,10 @@ rib's resonance responds to wall tilt differently from a strip's, so a width tha
 the ribs.
 
 The optical test structures that foundries and designers use measure the effective and group indices of a few
-waveguides and convert them into a width and a thickness~\cite{xing2018,zortman2010,lu2017}. The sidewall angle is
-left out of that conversion. In this paper we show that, for oxide-clad strips, the omission is forced by the
+waveguides and convert them into a width and a thickness~\cite{xing2018,zortman2010,lu2017}. The sidewall angle
+enters that conversion as a fixed input. Xing \textit{et~al.}\ took the \qty{85}{\degree} of the foundry handbook and
+noted that the error from the unknown wall shape is very hard to compensate, so that some extracted parameters are
+only relative~\cite{xing2018}. In this paper we show that, for oxide-clad strips, the omission is forced by the
 structures. To first order the angle cannot be separated from the width for any number of strips, widths,
 polarizations or readouts. We then work out which additional structures make the angle identifiable, how much prior
 process knowledge they need, and what precision they reach under a measurement model built from published ring
@@ -27,9 +29,10 @@ Section~\ref{sec:theory}.
 
 \subsection{Related work}
 
-\textit{Optical extraction of waveguide geometry.} Xing \textit{et~al.}\ extracted the linewidth and thickness of SOI
-strips from measured effective and group indices with errors of a fraction of a nanometre, and analysed how the index
-ranges must be bounded for the inversion to be correct~\cite{xing2018}. Later work extracted the same two dimensions
+\textit{Optical extraction of waveguide geometry.} Xing \textit{et~al.}\ fitted the effective and group indices of a
+low-order and a high-order MZI, mapped them to linewidth and thickness with a third-order polynomial, and reached
+total errors of \qty{0.37}{nm} and \qty{0.26}{nm} on 44 sites of an MPW die; they also showed how the index range
+must be bounded for the inversion to pick the right interference order~\cite{xing2018}. Later work extracted the same two dimensions
 from a single high-order MZI~\cite{liu2025}, from racetrack resonators feeding a layout-aware variability
 model~\cite{lu2017}, from ring biosensors read in TE and TM~\cite{atsumi2012}, and from microdisks read in both
 polarizations~\cite{zortman2010}. MZI sets have mapped the effective index and its thermo-optic coefficient across
@@ -82,7 +85,8 @@ wall-perturbation weight.
 etch leaves the strip angle unidentifiable, and that a known etch depth does not change this.
 \item We find that two widths of the same rib restore identifiability. An exhaustive search shows that a ring-only set
 of five strips and two ribs bounds the strip angle at \qty{0.393}{\degree} at a \qty{1}{pm} precision, and we test this
-bound against correlated noise, calibration offsets, temperature and the readout.
+bound against correlated noise, calibration offsets, temperature and the readout. Nonlinear fits of data from
+direct femwell solves reach 1.037 times the bound of the two-width set.
 \item We quantify the shared-parameter assumption. Departures of a few hundredths of a nanometre or degree between
 structures double the bound, which turns co-location into a design requirement for any angle test structure.
 \end{itemize}

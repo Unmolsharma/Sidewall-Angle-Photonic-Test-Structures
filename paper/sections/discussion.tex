@@ -22,9 +22,15 @@ sensitive to it than a width or thickness extraction. The bound of the two-width
 widths differ by \qty{0.03938}{nm} or their angles by \qty{0.01749}{\degree}, and uncorrected offsets of
 \qty{0.25}{\degree} produce biases of tens of degrees. For comparison, the best linewidth control reported for a
 CMOS line is \qty{0.6}{nm} within a chip~\cite{selvaraja2010}, and the mismatch between identical rings grows with
-their separation~\cite{chrostowski2014}, with layout-dependent systematic components~\cite{xing2023}. We found no
-published value for the width or angle difference between adjacent waveguides of different widths, which is the
-quantity that matters here.
+their separation~\cite{chrostowski2014}, with layout-dependent systematic components~\cite{xing2023}. The closest
+measured number is from Xing \textit{et~al.}, who extracted nominally identical waveguides at 44 sites on one die. Their width
+had a standard deviation of \qty{1.26}{nm}, and after removing a linear trend across the die the local variation
+between nearby devices still reached \qty{3}{nm}, against \qty{0.5}{nm} for the thickness, with an extraction error of
+\qty{0.37}{nm} in width~\cite{xing2018}. These
+are differences between copies of one design, and the quantity that matters here, the difference between adjacent
+waveguides of different widths after the shared offset is removed, has not been reported. If it is of the size Xing
+\textit{et~al.}\ measured, the shared-parameter bound is not reachable. A per-structure width spread of
+\qty{0.5}{nm} already raises the two-width bound to \qty{3.38}{\degree} (Fig.~\ref{fig:variation}(b)).
 
 A working angle test structure therefore has to meet a consistency requirement that width monitors do not face. Its
 members must be close enough, and similar enough in local pattern density, that their departures from one another
@@ -52,14 +58,16 @@ for oxide above and below the core. An air-clad strip is not mirror-symmetric (i
 without corner rounding or roughness, the material indices are nominal values without dispersion, and $\ngr$ uses a fixed
 \qty{5}{nm} wavelength step; none of these choices was varied. Rings are assumed to have known resonance orders and
 lengths, so that each resonance gives $\neff$ directly. Only a common calibration offset was tested, and an unknown
-length per ring was not. The bounds scale linearly with $\sigma_\lambda$ and depend on the noise conversion by tens of
+length per ring was not. Our $\neff$ noise at \qty{1}{pm} is below the fitting error of measured MZIs
+(Section~\ref{sec:theory}), so the measurement model may be optimistic for $\neff$. The bounds scale linearly with
+$\sigma_\lambda$ and depend on the noise conversion by tens of
 percent. Halving or doubling the rib noise relative to the strips changes the two-width bound by
 \qty{-47.9}{\percent} and \qty{97.5}{\percent}, and the ring length used in the conversion changes it by
 \qty{-49.4}{\percent} at \qty{50}{\micro m} and \qty{97.8}{\percent} at \qty{200}{\micro m}. The priors matter much
 less, at most \qty{0.6}{\percent} for factor-of-two changes. The two-width bound carries a numerical uncertainty of
 about \qty{5}{\percent}, the change when the domain is enlarged. The best set of eight is limited by derivative accuracy,
 moving by \qty{-15.3}{\percent} between remeshed and fixed-mesh derivatives and by \qty{-27.5}{\percent} at half the
-derivative step. We treat the rib and strip angles as independent because the two etches are separate steps, and
+derivative step, and fits of femwell data spread 1.487 times its bound (Section~\ref{sec:surrcheck}). We treat the rib and strip angles as independent because the two etches are separate steps, and
 Section~\ref{sec:results} shows how much a link would help. The analysis covers TE ribs only and the
 \qty{1.55}{\micro m} band.
 

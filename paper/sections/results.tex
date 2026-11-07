@@ -8,22 +8,22 @@ collects the main sets.
 
 \begin{table}[!t]
 \caption{Strip sidewall-angle CRLB $\sth$ for the main test-structure sets (stage~D, realistic priors). Ranges are
-over the derivative steps $h/2$, $h$, $2h$; ``MC'' is the standard deviation of 2000 nonlinear fits at
-\qty{1}{pm} (ring and MZI, surrogate model). One rib: strip TE rings at five widths plus a \qty{500}{nm} rib; two-width: the same strips plus ribs of \qty{300}{nm} and \qty{500}{nm}. The ring-only best set of eight has a different composition from the
+over the derivative steps $h/2$, $h$, $2h$. MC: standard deviation of the fitted angle at \qty{1}{pm} (ring and
+MZI), for 2000 fits with surrogate data (sur.) and 500 fits with femwell data (fw., Section~\ref{sec:surrcheck}). One rib: strip TE rings at five widths plus a \qty{500}{nm} rib; two-width: the same strips plus ribs of \qty{300}{nm} and \qty{500}{nm}. The ring-only best set of eight has a different composition from the
 ring-and-MZI one (Section~\ref{sec:multi}).}
 \label{tab:summary}
 \centering
-\setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{@{}lccccc@{}}
+\setlength{\tabcolsep}{1.5pt}
+\begin{tabular}{@{}lcccccc@{}}
 \toprule
-Set & \multicolumn{3}{c}{$\sth$ at \qty{1}{pm} (\si{\degree})} & \qty{0.1}{pm} & MC \\
- & ring & \multicolumn{2}{c}{ring and MZI} & (\si{\degree}) & (\si{\degree}) \\
- & only & $h$ & range & & \\
+Set & \multicolumn{3}{c}{$\sth$ at \qty{1}{pm} (\si{\degree})} & \qty{0.1}{pm} & \multicolumn{2}{c}{MC (\si{\degree})} \\
+ & ring & \multicolumn{2}{c}{ring and MZI} & (\si{\degree}) & sur. & fw. \\
+ & only & $h$ & range & & & \\
 \midrule
-Strips only (any) & $\infty$ & $\infty$ & -- & $\infty$ & -- \\
-One rib (\qty{70}{nm}) & -- & 25.19 & -- & -- & -- \\
-Two-width (\qty{50}{nm}) & 0.3932 & 0.3891 & 0.3891--0.3997 & 0.04077 & 0.3976 \\
-Best set of 8 (\qty{90}{nm}) & 0.1895 & 0.139 & 0.1007--0.1473 & 0.0139 & 0.1323 \\
+Strips only & $\infty$ & $\infty$ & -- & $\infty$ & -- & -- \\
+One rib (\qty{70}{nm}) & -- & 25.19 & -- & -- & -- & -- \\
+Two-width (\qty{50}{nm}) & 0.3932 & 0.3891 & 0.3891--0.3997 & 0.04077 & 0.3976 & 0.4034 \\
+Best 8 (\qty{90}{nm}) & 0.1895 & 0.139 & 0.1007--0.1473 & 0.0139 & 0.1323 & 0.2067 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -130,7 +130,7 @@ MZI matters more, \qty{0.1901}{\degree} without it and \qty{0.1390}{\degree} wit
 already gives \qty{0.1815}{\degree}. The MZI gain therefore depends on locating a broad fringe as precisely as a narrow
 resonance, an assumption we cannot support from the literature, and we base the proposal on rings.
 
-\subsection{Monte Carlo fits reach the bound}
+\subsection{Monte Carlo fits on the surrogate model}
 
 \begin{figure*}[!t]
 \centering
