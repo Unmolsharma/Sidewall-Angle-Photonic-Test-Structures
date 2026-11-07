@@ -71,6 +71,30 @@ Every literature value used, with the exact quoted sentence or table row and its
 | geometry of the 2.602 value | Sect. 2.3 | “shows the effective index for a rib waveguide with the following parameters: total height (H) = 220 nm, slab height (h) = 90 nm, width (W) = 500 nm.” |
 | material indices of the EIM calculation | Sect. 2.3 | “For these calculations, the material indices used are n1 = 3.48, n2 = n3 = 1.44 at wavelength of 1.55 μm.” |
 
+## Yufei Xing, Jiaxing Dong, Sarvagya Dwivedi, Umar Khan, Wim Bogaerts, "Accurate extraction of fabricated geometry using optical measurement"
+
+- Venue: Photonics Research 6(11), 1008-1020 (2018)
+- DOI: 10.1364/PRJ.6.001008
+- URL: https://doi.org/10.1364/PRJ.6.001008
+- Status: **VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007)**
+
+| Used for | Where | Exact quote |
+|---|---|---|
+| sidewall angle assumed from the foundry handbook, not measured (journal p. 1010) | p. 3 | “According to the IMEC technology handbook, a fabricated strip waveguide has a sidewall angle of 85°, so we simulated the waveguide with an 85° sidewall angle. The waveguide width is the bottom width of the trapezoid.” |
+| error from the unknown wall shape is not compensated (journal p. 1010) | p. 3 | “Using a simulated model can introduce a simulation error, coming from a difference between the actual waveguide geometry (both dimensions, shape, and material properties) and the trapezoidal geometry model we used in the mode solver. We have considered the sidewall angle in our model, but still we do not know the actual geometry, so it is very hard to compensate for this error. This means that some parameters will be only relative.” |
+| 85 deg restated for the measured 450 nm waveguides (journal p. 1017) | p. 10 | “According to the technology handbook, the fabricated waveguide has a sidewall angle of 85°.” |
+| meaning of the quoted fitting errors: 1.96 sigma (journal p. 1013) | p. 6 | “The fitting error we presented is the estimate of 1.96 times standard deviations of each of the parameters, which provides confidence limits of approxi- mately 95%.” |
+| Table 3, order-150 MZI: n_g error and propagated w, t errors (nm), 1.96 sigma (journal p. 1013) | p. 6 | “150 2.339729 4.288448 470.0189 214.9829 0.000460 0.172499 0.090586” |
+| simulated measurement noise of the fit study (journal p. 1012) | p. 5 | “0.2 dBm to the spectrum to emulate the typical measurement noise.” (a symbol before "0.2" (probably ±) is lost in the PDF text extraction) |
+| measured fitting errors of n_eff and n_g and their width/thickness equivalents (journal p. 1018) | p. 11 | “The average fitting error for neff is 1.1 × 10−5, and the average fitting error for ng is 1.0 × 10−3. These fitting errors propagate to fitting errors of 0.33 nm in width and 0.18 nm in thickness.” |
+| total extraction error = fitting + mapping (journal p. 1018) | p. 11 | “Errorw  0.31  0.06  0.37 nm, Errort  0.18  0.08  0.26 nm” (the "=" and "+" signs are lost in the PDF text extraction; the equations read Error_w = 0.31 + 0.06 = 0.37 nm and Error_t = 0.18 + 0.08 = 0.26 nm (the text above says 0.33 nm)) |
+| per-die width and thickness spread over 44 MZI pairs (journal p. 1018) | p. 11 | “The standard deviations are 1.26 nm and 0.30 nm, respectively (Table 4).” |
+| local width and thickness variation between nearby devices (journal p. 1019) | p. 12 | “We did observe a systematic trend for width w on this die, but the trend is quite flat on each die, which is less than 1 nm. Meanwhile, the width w shows an obvious local variation with a maximum of 3 nm. For thickness t, both dies exhibit location dependency, which might be the result of slow-varying systematic variation over the wafer. Local variation has a maximum of 0.5 nm, well below the local variation range we set in the extraction.” |
+| arms of one MZI assumed to share n_eff (journal p. 1011) | p. 4 | “since the distance between waveguides within an MZI compact is within 100 μm, we can safely assume that the error will be much smaller than the device-to-device variation.” |
+| measurement temperature (journal p. 1018) | p. 11 | “The optical measurement was conducted in our clean room with the room temperature controlled at 20°C.” |
+| wavelength calibration in the procedure (journal p. 1019) | p. 12 | “1. Calibrate the laser before the measurement to assure the wavelength accuracy of the measurement spectrum. 2. Calibrate the laser after the entire measurement to assure the stability of the laser.” |
+| reference [11], Dwivedi et al. 2015 (journal p. 1020) | p. 13 | “11. S. Dwivedi, A. Ruocco, M. Vanslembrouck, T. Spuesens, P. Bienstman, P. Dumon, T. Van Vaerenbergh, and W. Bogaerts, “Experimental extraction of effective refractive index and thermo-optic coefficients of silicon-on-insulator waveguides using interferometers,” J. Lightwave Technol. 33, 4471–4477 (2015).” |
+
 ## UNVERIFIED (not used for any headline number)
 
 | Item | Where | Status |
@@ -79,5 +103,4 @@ Every literature value used, with the exact quoted sentence or table row and its
 | Baehr-Jones et al., Opt. Express 19, 11529 (2011) and "Low-loss silicon slot waveguides and couplers ..." Opt. Express 19, 26275 (2011): slot/strip loss ratio | src/noise_sourcing.py | UNVERIFIED (not fetched); only used for slot results, which are dropped |
 | "Record low-loss hybrid rib/wire waveguides for silicon photonic circuits" (rib/strip loss ratio 0.2x) | src/noise_sourcing.py | UNVERIFIED (no full citation in the repo; not fetched); the 0.2x optimistic rib noise factor is therefore treated as an ASSUMPTION |
 | Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603 | searched 2026-10-29 | UNVERIFIED (full text not readable: HTTP 403); no value taken |
-| Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008 | searched 2026-10-29 | UNVERIFIED (full text not readable); no value taken |
 | Farjadpour et al., Opt. Lett. 31, 2972 (2006); Kottke et al., PRE 77, 036611 (2008); Fallahkhair & Li (2008) | src/anisotropic_averaging.py, notes | UNVERIFIED (method references of the retired EMpy work; not fetched) |

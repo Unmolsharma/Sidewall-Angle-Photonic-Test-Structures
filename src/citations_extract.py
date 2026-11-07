@@ -20,8 +20,18 @@ def page(f, p):
     return open(os.path.join(C, f'{f}_p{p}.txt'), encoding='utf-8', errors='replace').read()
 
 
+MISSING = '<page file missing>'
+
+
+def have(f, p):
+    """Sources whose page files are not in the folder keep their entry from the existing citations.json."""
+    return os.path.exists(os.path.join(C, f'{f}_p{p}.txt'))
+
+
 def quote(f, p, start, end):
     """Verbatim text from the first occurrence of `start` through `end` on that page, whitespace collapsed."""
+    if not have(f, p):
+        return MISSING
     t = re.sub(r'\s+', ' ', page(f, p)).replace('\ufffd', '±')
     i = t.index(start)
     j = t.index(end, i) + len(end)
@@ -30,6 +40,8 @@ def quote(f, p, start, end):
 
 def row(f, p, label):
     """A table row: the line starting with `label` (whitespace collapsed)."""
+    if not have(f, p):
+        return MISSING
     for line in page(f, p).splitlines():
         if line.strip().startswith(label):
             return re.sub(r'\s+', ' ', line.strip()).replace('�', '–')
@@ -37,6 +49,8 @@ def row(f, p, label):
 
 
 def header(f, p, startswith):
+    if not have(f, p):
+        return MISSING
     for line in page(f, p).splitlines():
         if startswith in line:
             return re.sub(r'\s+', ' ', line.strip()).replace('�', '–')
@@ -124,6 +138,48 @@ cites = {
             dict(use='material indices of the EIM calculation', section='2.3',
                  text='For these calculations, the material indices used are n1 = 3.48, n2 = n3 = 1.44 at wavelength of 1.55 μm.'),
         ]),
+    # Full text supplied by the author (2026-11-06), kept outside git in literature_pdfs/xing2018_photonres.pdf. Pages are
+    # PDF pages; journal page = PDF page + 1007 (the article spans pp. 1008-1020). Text pages extracted with
+    # `pdftotext -enc UTF-8 -f P -l P` (reading order); xing2018L_p6.txt is the same page with -layout, for Table 3.
+    'xing2018': dict(
+        authors='Yufei Xing, Jiaxing Dong, Sarvagya Dwivedi, Umar Khan, Wim Bogaerts',
+        title='Accurate extraction of fabricated geometry using optical measurement',
+        venue='Photonics Research 6(11), 1008-1020 (2018)', doi='10.1364/PRJ.6.001008',
+        url='https://doi.org/10.1364/PRJ.6.001008',
+        status='VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007)',
+        quotes=[
+            dict(use='sidewall angle assumed from the foundry handbook, not measured (journal p. 1010)', page=3,
+                 text=quote('xing2018', 3, 'According to the IMEC technology handbook', 'bottom width of the trapezoid.')),
+            dict(use='error from the unknown wall shape is not compensated (journal p. 1010)', page=3,
+                 text=quote('xing2018', 3, 'Using a simulated model can introduce a simulation error', 'some parameters will be only relative.')),
+            dict(use='85 deg restated for the measured 450 nm waveguides (journal p. 1017)', page=10,
+                 text=quote('xing2018', 10, 'According to the technology handbook', 'sidewall angle of 85°.')),
+            dict(use='meaning of the quoted fitting errors: 1.96 sigma (journal p. 1013)', page=6,
+                 text=quote('xing2018', 6, 'The fitting error we presented', 'mately 95%.')),
+            dict(use='Table 3, order-150 MZI: n_g error and propagated w, t errors (nm), 1.96 sigma (journal p. 1013)', page=6,
+                 text=row('xing2018L', 6, '150 ')),
+            dict(use='simulated measurement noise of the fit study (journal p. 1012)', page=5,
+                 text=quote('xing2018', 5, '0.2 dBm to the spectrum', 'typical measurement noise.'),
+                 note='a symbol before "0.2" (probably ±) is lost in the PDF text extraction'),
+            dict(use='measured fitting errors of n_eff and n_g and their width/thickness equivalents (journal p. 1018)', page=11,
+                 text=quote('xing2018', 11, 'The average fitting error for neff is', '0.18 nm in thickness.')),
+            dict(use='total extraction error = fitting + mapping (journal p. 1018)', page=11,
+                 text=quote('xing2018', 11, 'Errorw', '0.26 nm'),
+                 note='the "=" and "+" signs are lost in the PDF text extraction; the equations read '
+                      'Error_w = 0.31 + 0.06 = 0.37 nm and Error_t = 0.18 + 0.08 = 0.26 nm (the text above says 0.33 nm)'),
+            dict(use='per-die width and thickness spread over 44 MZI pairs (journal p. 1018)', page=11,
+                 text=quote('xing2018', 11, 'The standard deviations are 1.26 nm', 'respectively (Table 4).')),
+            dict(use='local width and thickness variation between nearby devices (journal p. 1019)', page=12,
+                 text=quote('xing2018', 12, 'We did observe a systematic trend', 'local variation range we set in the extraction.')),
+            dict(use='arms of one MZI assumed to share n_eff (journal p. 1011)', page=4,
+                 text=quote('xing2018', 4, 'since the distance between waveguides', 'device-to-device variation.')),
+            dict(use='measurement temperature (journal p. 1018)', page=11,
+                 text=quote('xing2018', 11, 'The optical measurement was conducted', 'controlled at 20°C.')),
+            dict(use='wavelength calibration in the procedure (journal p. 1019)', page=12,
+                 text=quote('xing2018', 12, '1. Calibrate the laser', 'stability of the laser.')),
+            dict(use='reference [11], Dwivedi et al. 2015 (journal p. 1020)', page=13,
+                 text=quote('xing2018', 13, '11. S. Dwivedi', '4471–4477 (2015).')),
+        ]),
 }
 unverified = [
     dict(item='published strip n_eff ~2.44-2.45 (500 x 220 nm, TE)', where='src/fullvector_sensitivity.py, src/validate_*.py, '
@@ -136,12 +192,17 @@ unverified = [
          'rib noise factor is therefore treated as an ASSUMPTION'),
     dict(item='Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603', where='searched 2026-10-29',
          status='UNVERIFIED (full text not readable: HTTP 403); no value taken'),
-    dict(item='Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008', where='searched 2026-10-29',
-         status='UNVERIFIED (full text not readable); no value taken'),
     dict(item='Farjadpour et al., Opt. Lett. 31, 2972 (2006); Kottke et al., PRE 77, 036611 (2008); Fallahkhair & Li (2008)',
          where='src/anisotropic_averaging.py, notes', status='UNVERIFIED (method references of the retired EMpy work; not fetched)'),
 ]
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
+old = json.load(open(OUT, encoding='utf-8'))['sources'] if os.path.exists(OUT) else {}
+for k, v in cites.items():
+    if any(MISSING in (q.get('text') or '') for q in v['quotes']):
+        if k not in old:
+            raise SystemExit(f'{k}: page files missing from {C} and no earlier entry in {OUT}')
+        cites[k] = old[k]
+        print(k, 'page files not in the folder: kept from the existing citations.json')
 json.dump(dict(sources=cites, unverified=unverified), open(OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 for k, v in cites.items():
     for q in v['quotes']:

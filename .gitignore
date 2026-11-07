@@ -19,3 +19,6 @@ paper/*.out
 paper/*.synctex.gz
 paper/main.pdf
 paper_overleaf.zip
+
+# full-text PDFs of cited papers (never committed)
+literature_pdfs/

@@ -5,7 +5,7 @@
 
 ## The five papers closest to our contribution
 
-- **xing2018**: Yufei Xing, Jiaxing Dong, Sarvagya Dwivedi, Umar Khan, Wim Bogaerts, "Accurate extraction of fabricated geometry using optical measurement", Photonics Research, vol. 6, no. 11, 1008, 2018, doi:10.1364/prj.6.001008. *How ours differs:* Extracts width and thickness only; the sidewall angle is not among the extracted parameters. Our work asks whether it can be.
+- **xing2018**: Yufei Xing, Jiaxing Dong, Sarvagya Dwivedi, Umar Khan, Wim Bogaerts, "Accurate extraction of fabricated geometry using optical measurement", Photonics Research, vol. 6, no. 11, 1008-1020, 2018, doi:10.1364/prj.6.001008. *How ours differs:* Extracts width and thickness with the angle fixed at an assumed 85 deg; we ask whether the angle itself can be extracted. Its measured local width variation is the scale against which our co-location requirement must be read.
 - **lu2017**: Zeqin Lu, Jaspreet Jhoja, Jackson Klein, Xu Wang, Amy Liu, Jonas Flueckiger et al., "Performance prediction for silicon photonics integrated circuits with layout-dependent correlated manufacturing variability", Optics Express, vol. 25, no. 9, 9712, 2017, doi:10.1364/oe.25.009712. *How ours differs:* One of the closest: extraction from resonators assuming the structures share the extracted parameters. We show the angle is invisible to such strips and quantify how the shared-parameter assumption limits an angle extraction.
 - **butt2024**: Jordan N. Butt, Nathan F. Tyndall, Marcel W. Pruessner, Kyle J. Walsh, Benjamin L. Miller, Nicholas M. Fahrenkopf et al., "Optical and geometric parameter extraction across 300-mm photonic integrated circuit wafers", APL Photonics, vol. 9, no. 1, 016104, 2024, doi:10.1063/5.0173914. *How ours differs:* Closest in spirit to our parameter set (geometry plus indices); four parameters, no sidewall angle, SiN rather than SOI.
 - **nrc2026**: Dan-Xia Xu, Pavel Cheben, Sergey Dedyulin, Siegfried Janz, Jens Schmid, "High accuracy determination of optical waveguide geometry using a single spectral measurement of a dispersive device", WIPO PCT application WO2026097166A1 (National Research Council Canada), 2026, https://patents.google.com/patent/WO2026097166A1/en. *How ours differs:* Closest to our finding on local variation: it avoids multi-device fitting for the same reason our variation analysis exposes. It does not extract the angle.
@@ -17,11 +17,11 @@ All five extract width, thickness (and, in Butt et al., material indices) from r
 
 ### xing2018
 
-- **Citation:** Yufei Xing, Jiaxing Dong, Sarvagya Dwivedi, Umar Khan, Wim Bogaerts, "Accurate extraction of fabricated geometry using optical measurement", Photonics Research, vol. 6, no. 11, 1008, 2018, doi:10.1364/prj.6.001008
-- **Verified:** VERIFIED (registry record) (abstract from OpenAlex)
-- **Summary:** Extracts the linewidth and thickness of SOI strip waveguides from measured effective and group indices, using an accurate geometry-to-index model, with errors of 0.37 nm and 0.26 nm on an imec MPW die; it analyses how to bound the index ranges for a correct extraction.
-- **Cite for:** state of the art of optical geometry extraction from test structures
-- **Relation to our work:** Extracts width and thickness only; the sidewall angle is not among the extracted parameters. Our work asks whether it can be.
+- **Citation:** Yufei Xing, Jiaxing Dong, Sarvagya Dwivedi, Umar Khan, Wim Bogaerts, "Accurate extraction of fabricated geometry using optical measurement", Photonics Research, vol. 6, no. 11, 1008-1020, 2018, doi:10.1364/prj.6.001008
+- **Verified:** VERIFIED (full text read, pp. 1008-1020; quotes with pages in results_final/CITATIONS.md)
+- **Summary:** Extracts the linewidth and thickness of SOI strip waveguides from n_eff and n_g fitted to a low-order (m ~ 15) and a high-order (m ~ 150) MZI, through a third-order polynomial map from (w, t) to (n_eff, n_g), with total errors of 0.37 nm and 0.26 nm on an imec MPW die. The sidewall angle is fixed at 85 deg, taken from the foundry handbook, and the authors state that the error from the unknown wall shape cannot be compensated, so some extracted parameters are only relative.
+- **Cite for:** state of the art of optical geometry extraction; the angle held at a handbook value; measured fitting errors (n_eff 1.1e-5, n_g 1.0e-3); local width variation up to 3 nm between nearby devices
+- **Relation to our work:** Extracts width and thickness with the angle fixed at an assumed 85 deg; we ask whether the angle itself can be extracted. Its measured local width variation is the scale against which our co-location requirement must be read.
 
 ### liu2025
 
