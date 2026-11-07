@@ -451,6 +451,13 @@ def review_rows():
                 computed(sec, 'srv', f'{c}.{k}', d[k], f'case {c}: {m}')
             for k in ('ok', 'at_bound', 'failed'):
                 computed(sec, 'srv', f'{c}.status.{k}', d['status'][k], f'case {c}: fits {k}')
+            for i, lim in enumerate(('lower', 'upper')):
+                computed(sec, 'srv', f'{c}.angle_error_std_ci95[{i}]', d['angle_error_std_ci95'][i],
+                         f'case {c}: 95% bootstrap interval of the Monte Carlo std, {lim} end (deg)')
+            computed(sec, 'srv', f'{c}.crb_a_surrogate', d['crb_a_surrogate'], f'case {c}: CRB of the surrogate model at nominal (deg)')
+            for u, pu in d.get('per_unit', {}).items():
+                for k, m in (('neff_err_rms_sigma_phase', 'RMS'), ('neff_err_max_sigma_phase', 'largest')):
+                    computed(sec, 'srv', f'{c}.per_unit.{u}.{k}', pu[k], f'case {c}, {u}: {m} surrogate error of n_eff, in MZI-phase noise sigmas')
 
 
 def write():

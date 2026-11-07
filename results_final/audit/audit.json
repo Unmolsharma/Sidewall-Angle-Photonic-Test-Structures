@@ -5113,9 +5113,549 @@
      ],
      "retired": false,
      "context": "| 2 | Linewidth control chip-to-chip (nm) | CITED | Shankar Kumar Selvaraja et al., \"Subnanometer Linewidth Uniformity in Silicon Nanophoton"
+    },
+    {
+     "line": 411,
+     "number": "0.6036",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.6036 | case a: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `results_r"
+    },
+    {
+     "line": 412,
+     "number": "3.366",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 3.366 | case a: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `result"
+    },
+    {
+     "line": 413,
+     "number": "0.002144",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.002144 | case a: RMS surrogate error of n_g, in n_g noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/"
+    },
+    {
+     "line": 414,
+     "number": "0.01313",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.01313 | case a: largest surrogate error of n_g, in n_g noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `results_revi"
+    },
+    {
+     "line": 416,
+     "number": "0.2067",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.2067 | case a: Monte Carlo std of the strip-angle error (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/dat"
+    },
+    {
+     "line": 417,
+     "number": "-0.0007169",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| -0.0007169 | case a: Monte Carlo mean strip-angle error (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/"
+    },
+    {
+     "line": 418,
+     "number": "0.009245",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.009245 | case a: standard error of that mean (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/surrogate"
+    },
+    {
+     "line": 419,
+     "number": "0.139",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.139 | case a: CRB at the nominal point (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/surrogate_check"
+    },
+    {
+     "line": 420,
+     "number": "1.487",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 1.487 | case a: Monte Carlo std / CRB | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/surrogate_check.json` : "
+    },
+    {
+     "line": 424,
+     "number": "0.1859",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.1859 | case a: 95% bootstrap interval of the Monte Carlo std, lower end (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `re"
+    },
+    {
+     "line": 425,
+     "number": "0.2253",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.2253 | case a: 95% bootstrap interval of the Monte Carlo std, upper end (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `re"
+    },
+    {
+     "line": 426,
+     "number": "0.1249",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.1249 | case a: CRB of the surrogate model at nominal (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/s"
+    },
+    {
+     "line": 427,
+     "number": "0.02178",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.02178 | case a, strip_TE_400: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyz"
+    },
+    {
+     "line": 428,
+     "number": "0.02273",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.02273 | case a, strip_TE_400: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 429,
+     "number": "0.01167",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.01167 | case a, strip_TE_600: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyz"
+    },
+    {
+     "line": 430,
+     "number": "0.01595",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.01595 | case a, strip_TE_600: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 431,
+     "number": "0.002322",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.002322 | case a, strip_TM_400: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analy"
+    },
+    {
+     "line": 432,
+     "number": "0.005176",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.005176 | case a, strip_TM_400: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py a"
+    },
+    {
+     "line": 433,
+     "number": "0.0896",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.0896 | case a, strip_TM_600: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze"
+    },
+    {
+     "line": 434,
+     "number": "0.1126",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.1126 | case a, strip_TM_600: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py ana"
+    },
+    {
+     "line": 435,
+     "number": "1.519",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 1.519 | case a, rib_TE_300_slab90: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py ana"
+    },
+    {
+     "line": 436,
+     "number": "3.366",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 3.366 | case a, rib_TE_300_slab90: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py"
+    },
+    {
+     "line": 437,
+     "number": "0.3392",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.3392 | case a, rib_TE_400_slab90: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 438,
+     "number": "0.5918",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.5918 | case a, rib_TE_400_slab90: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.p"
+    },
+    {
+     "line": 439,
+     "number": "0.6133",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.6133 | case a, rib_TE_500_slab90: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 440,
+     "number": "1.164",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 1.164 | case a, rib_TE_500_slab90: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py"
+    },
+    {
+     "line": 441,
+     "number": "0.329",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.329 | case a, rib_TE_600_slab90: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py ana"
+    },
+    {
+     "line": 442,
+     "number": "0.5602",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.5602 | case a, rib_TE_600_slab90: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.p"
+    },
+    {
+     "line": 445,
+     "number": "1.972",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 1.972 | case b: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `results_re"
+    },
+    {
+     "line": 446,
+     "number": "12.42",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 12.42 | case b: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `result"
+    },
+    {
+     "line": 447,
+     "number": "0.009335",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.009335 | case b: RMS surrogate error of n_g, in n_g noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/"
+    },
+    {
+     "line": 448,
+     "number": "0.0524",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.0524 | case b: largest surrogate error of n_g, in n_g noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze` → `results_revie"
+    },
+    {
+     "line": 450,
+     "number": "0.4034",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.4034 | case b: Monte Carlo std of the strip-angle error (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/dat"
+    },
+    {
+     "line": 451,
+     "number": "0.02463",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.02463 | case b: Monte Carlo mean strip-angle error (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/sur"
+    },
+    {
+     "line": 452,
+     "number": "0.01804",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.01804 | case b: standard error of that mean (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/surrogate_"
+    },
+    {
+     "line": 453,
+     "number": "0.3891",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.3891 | case b: CRB at the nominal point (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/surrogate_chec"
+    },
+    {
+     "line": 454,
+     "number": "1.037",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 1.037 | case b: Monte Carlo std / CRB | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/surrogate_check.json` : "
+    },
+    {
+     "line": 458,
+     "number": "0.3781",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.3781 | case b: 95% bootstrap interval of the Monte Carlo std, lower end (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `re"
+    },
+    {
+     "line": 459,
+     "number": "0.4273",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.4273 | case b: 95% bootstrap interval of the Monte Carlo std, upper end (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `re"
+    },
+    {
+     "line": 460,
+     "number": "0.3942",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.3942 | case b: CRB of the surrogate model at nominal (deg) | COMPUTED | `src/review_surrogate_check.py analyze` → `results_review/data/s"
+    },
+    {
+     "line": 461,
+     "number": "0.02285",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.02285 | case b, strip_TE_400: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyz"
+    },
+    {
+     "line": 462,
+     "number": "0.03569",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.03569 | case b, strip_TE_400: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 463,
+     "number": "0.02554",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.02554 | case b, strip_TE_450: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyz"
+    },
+    {
+     "line": 464,
+     "number": "0.03086",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.03086 | case b, strip_TE_450: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 465,
+     "number": "0.5066",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.5066 | case b, strip_TE_500: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze"
+    },
+    {
+     "line": 466,
+     "number": "0.8627",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.8627 | case b, strip_TE_500: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py ana"
+    },
+    {
+     "line": 467,
+     "number": "0.3861",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.3861 | case b, strip_TE_550: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyze"
+    },
+    {
+     "line": 468,
+     "number": "0.6013",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.6013 | case b, strip_TE_550: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py ana"
+    },
+    {
+     "line": 469,
+     "number": "0.01295",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.01295 | case b, strip_TE_600: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py analyz"
+    },
+    {
+     "line": 470,
+     "number": "0.01988",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.01988 | case b, strip_TE_600: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 471,
+     "number": "5.166",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 5.166 | case b, rib_TE_300_slab50: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py ana"
+    },
+    {
+     "line": 472,
+     "number": "12.42",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 12.42 | case b, rib_TE_300_slab50: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py"
+    },
+    {
+     "line": 473,
+     "number": "0.3692",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.3692 | case b, rib_TE_500_slab50: RMS surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.py an"
+    },
+    {
+     "line": 474,
+     "number": "0.7482",
+     "source": "results_review/data/surrogate_check.json",
+     "cited": [
+      "results_review/data/surrogate_check.json"
+     ],
+     "retired": false,
+     "context": "| 0.7482 | case b, rib_TE_500_slab50: largest surrogate error of n_eff, in MZI-phase noise sigmas | COMPUTED | `src/review_surrogate_check.p"
     }
    ],
-   "false_match_rate": 0.054409448818897636
+   "false_match_rate": 0.05302491103202847
   },
   "results_final/CLAIMS.md": {
    "rows": [
@@ -16610,9 +17150,135 @@
      "source": "results_review/data/review_analyses.json",
      "pool": "section",
      "context": "wafer = 8.014 nm; Jayatilleka et al. trimming to +-32 pm; Selvaraja et al. linewidth control 0.6 nm within chip,"
+    },
+    {
+     "line": 88,
+     "number": "5.166",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Surrogate vs femwell, n_eff in MZI-phase noise sigmas: two-width set, rib 300 nm (50 nm slab) RMS 5.166, largest"
+    },
+    {
+     "line": 89,
+     "number": "12.42",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "12.42; strips largest 0.8627; n_g largest 0.0524 n_g sigmas. Best set, rib 300 nm (90 nm slab) RMS 1.519, largest"
+    },
+    {
+     "line": 89,
+     "number": "0.8627",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "12.42; strips largest 0.8627; n_g largest 0.0524 n_g sigmas. Best set, rib 300 nm (90 nm slab) RMS 1.519, largest"
+    },
+    {
+     "line": 89,
+     "number": "0.0524",
+     "source": "results_review/data/surrogate_check_design.json",
+     "pool": "section",
+     "context": "12.42; strips largest 0.8627; n_g largest 0.0524 n_g sigmas. Best set, rib 300 nm (90 nm slab) RMS 1.519, largest"
+    },
+    {
+     "line": 89,
+     "number": "1.519",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "12.42; strips largest 0.8627; n_g largest 0.0524 n_g sigmas. Best set, rib 300 nm (90 nm slab) RMS 1.519, largest"
+    },
+    {
+     "line": 90,
+     "number": "3.366",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "3.366."
+    },
+    {
+     "line": 91,
+     "number": "0.4034",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 91,
+     "number": "0.3781",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 91,
+     "number": "0.4273",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 91,
+     "number": "1.037",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 91,
+     "number": "0.3891",
+     "source": "results_review/data/surrogate_check_design.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 91,
+     "number": "0.02463",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 91,
+     "number": "0.01804",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok."
+    },
+    {
+     "line": 92,
+     "number": "0.2067",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed."
+    },
+    {
+     "line": 92,
+     "number": "0.1859",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed."
+    },
+    {
+     "line": 92,
+     "number": "0.2253",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed."
+    },
+    {
+     "line": 92,
+     "number": "1.487",
+     "source": "results_review/data/surrogate_check.json",
+     "pool": "section",
+     "context": "- Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed."
+    },
+    {
+     "line": 92,
+     "number": "0.139",
+     "source": "results_review/data/surrogate_check_design.json",
+     "pool": "section",
+     "context": "- Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed."
     }
    ],
-   "false_match_rate": 0.06198019801980198
+   "false_match_rate": 0.07445378151260505
   }
  },
  "citations": [
@@ -16886,8 +17552,8 @@
     "src/citations_extract.py",
     "src/literature_verify.py"
    ],
-   "status": "UNVERIFIED",
-   "note": ""
+   "status": "VERIFIED",
+   "note": "xing2018: VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007)"
   },
   {
    "id": "10.1364/oe.18.023598",
@@ -17063,15 +17729,19 @@
   },
   {
    "file": "results_final/CITATIONS.md",
+   "line": "- Venue: Photonics Research 6(11), 1008-1020 (2018)"
+  },
+  {
+   "file": "results_final/CITATIONS.md",
+   "line": "| reference [11], Dwivedi et al. 2015 (journal p. 1020) | p. 13 | “11. S. Dwivedi, A. Ruocco, M. Vanslembrouck, T. Spuesens, P. Bienstman, P. Dumon, T"
+  },
+  {
+   "file": "results_final/CITATIONS.md",
    "line": "| Baehr-Jones et al., Opt. Express 19, 11529 (2011) and \"Low-loss silicon slot waveguides and couplers ...\" Opt. Express 19, 26275 (2011): slot/strip "
   },
   {
    "file": "results_final/CITATIONS.md",
    "line": "| Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603 | searched 2026-10-29 | UNVERIFIED (full text not readable: "
-  },
-  {
-   "file": "results_final/CITATIONS.md",
-   "line": "| Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008 | searched 2026-10-29 | UNVERIFIED (full text not readable); no value t"
   },
   {
    "file": "results_final/CITATIONS.md",
@@ -17171,6 +17841,14 @@
   },
   {
    "file": "src/citations_extract.py",
+   "line": "venue='Photonics Research 6(11), 1008-1020 (2018)', doi='10.1364/PRJ.6.001008',"
+  },
+  {
+   "file": "src/citations_extract.py",
+   "line": "dict(use='reference [11], Dwivedi et al. 2015 (journal p. 1020)', page=13,"
+  },
+  {
+   "file": "src/citations_extract.py",
    "line": "dict(item='Baehr-Jones et al., Opt. Express 19, 11529 (2011) and \"Low-loss silicon slot waveguides and couplers ...\" '"
   },
   {
@@ -17180,10 +17858,6 @@
   {
    "file": "src/citations_extract.py",
    "line": "dict(item='Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603', where='searched 2026-10-29',"
-  },
-  {
-   "file": "src/citations_extract.py",
-   "line": "dict(item='Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008', where='searched 2026-10-29',"
   },
   {
    "file": "src/citations_extract.py",

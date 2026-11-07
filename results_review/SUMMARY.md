@@ -83,4 +83,12 @@ Data: `results_review/data/surrogate_check_design.json`, `results_review/cache/s
 `results_review/data/surrogate_check.json`.
 
 - Design: 20 truths per set drawn from the CRLB covariance; 160 solves for the best set, 140 for the two-width set.
-- Status: see the paper section "Monte Carlo on femwell data" and `paper/REVIEW.md`.
+  All 300 solved (r12 mesh, 0 failed; battery-paused runs resumed from the cache on 2026-11-06/07). 500 fits per set:
+  25 noise draws at 1 pm per truth, data = femwell values, model = surrogate, ring and MZI.
+- Surrogate vs femwell, n_eff in MZI-phase noise sigmas: two-width set, rib 300 nm (50 nm slab) RMS 5.166, largest
+  12.42; strips largest 0.8627; n_g largest 0.0524 n_g sigmas. Best set, rib 300 nm (90 nm slab) RMS 1.519, largest
+  3.366.
+- Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok.
+- Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed.
+- Reading: the two-width bound holds with an independent forward model; the best set does not reach its bound when
+  the model is off by about one noise sigma in one rib, consistent with its derivative sensitivity.

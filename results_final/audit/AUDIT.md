@@ -5,7 +5,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 
 ## Strict targets (goal: 0 untraced)
 
-### results_final/HEADLINE_NUMBERS.md: 508 numbers, 508 traced, **0 untraced** (chance-match rate 5%)
+### results_final/HEADLINE_NUMBERS.md: 562 numbers, 562 traced, **0 untraced** (chance-match rate 5%)
 
 ### results_final/CLAIMS.md: 39 numbers, 39 traced, **0 untraced** (chance-match rate 13%)
 
@@ -17,7 +17,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `results_femwell/SUMMARY.md`: 334 numbers, 60 untraced (chance-match rate 20%).
 - `results_montecarlo/SUMMARY.md`: 311 numbers, 1 untraced (chance-match rate 22%).
 - `results_priors_search/SUMMARY.md`: 271 numbers, 3 untraced (chance-match rate 28%).
-- `results_review/SUMMARY.md`: 101 numbers, 0 untraced (chance-match rate 6%).
+- `results_review/SUMMARY.md`: 119 numbers, 0 untraced (chance-match rate 7%).
 
 ## Citations (DOI / arXiv identifiers found in results*/*.md and src/*.py)
 
@@ -55,7 +55,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 | 10.1364/OE.577064 | UNVERIFIED | src/literature_verify.py |  |
 | 10.1364/OL.31.002972 | UNVERIFIED | src/literature_verify.py |  |
 | 10.1364/OL.37.004236 | UNVERIFIED | src/literature_verify.py |  |
-| 10.1364/PRJ.6.001008 | UNVERIFIED | results_final/CITATIONS.md, src/citations_extract.py, src/literature_verify.py |  |
+| 10.1364/PRJ.6.001008 | VERIFIED | results_final/CITATIONS.md, src/citations_extract.py, src/literature_verify.py | xing2018: VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007) |
 | 10.1364/oe.18.023598 | UNVERIFIED | results_final/HEADLINE_NUMBERS.md |  |
 | 10.1515/nanoph-2013-0013 | UNVERIFIED | src/literature_verify.py |  |
 | 10.21105/joss.02369 | UNVERIFIED | src/literature_verify.py |  |
@@ -78,9 +78,10 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `results_etchdepth_femwell/SUMMARY.md`: Proc. SPIE 6273, 62732J (2006), arXiv:physics/0606168, Table 4.
 - `results_etch_depth/STOP_REPORT.md`: | Slot noise multiplier | 4× | `noise_sourcing.py` | Baehr-Jones et al., Opt. Express 19, 11529 (2011); Opt. Express 19, 26275 (2011) |
 - `results_final/CITATIONS.md`: - Venue: arXiv:physics/0606168 (to be published in Proc. SPIE 6273, per the arXiv comments)
+- `results_final/CITATIONS.md`: - Venue: Photonics Research 6(11), 1008-1020 (2018)
+- `results_final/CITATIONS.md`: | reference [11], Dwivedi et al. 2015 (journal p. 1020) | p. 13 | “11. S. Dwivedi, A. Ruocco, M. Vanslembrouck, T. Spuesens, P. Bienstman, P. Dumon, T
 - `results_final/CITATIONS.md`: | Baehr-Jones et al., Opt. Express 19, 11529 (2011) and "Low-loss silicon slot waveguides and couplers ..." Opt. Express 19, 26275 (2011): slot/strip 
 - `results_final/CITATIONS.md`: | Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603 | searched 2026-10-29 | UNVERIFIED (full text not readable: 
-- `results_final/CITATIONS.md`: | Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008 | searched 2026-10-29 | UNVERIFIED (full text not readable); no value t
 - `results_final/CITATIONS.md`: | Farjadpour et al., Opt. Lett. 31, 2972 (2006); Kottke et al., PRE 77, 036611 (2008); Fallahkhair & Li (2008) | src/anisotropic_averaging.py, notes |
 - `results_final/HEADLINE_NUMBERS.md`: | 1 pm | Primary resonance-wavelength precision | CITED | S. Janz et al., "Measurement Accuracy in Silicon Photonic Ring Resonator Thermometers: Ident
 - `results_final/HEADLINE_NUMBERS.md`: | 0.1 pm | Best-case resonance-wavelength precision (temperature-bath-stabilized ring) | CITED | S. Janz et al., "Measurement Accuracy in Silicon Phot
@@ -105,10 +106,11 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `src/anisotropic_averaging.py`: What this module does (Farjadpour et al., Opt. Lett. 31, 2972 (2006);
 - `src/anisotropic_averaging.py`: Kottke et al., PRE 77, 036611 (2008); the Meep scheme):
 - `src/citations_extract.py`: venue='arXiv:physics/0606168 (to be published in Proc. SPIE 6273, per the arXiv comments)',
+- `src/citations_extract.py`: venue='Photonics Research 6(11), 1008-1020 (2018)', doi='10.1364/PRJ.6.001008',
+- `src/citations_extract.py`: dict(use='reference [11], Dwivedi et al. 2015 (journal p. 1020)', page=13,
 - `src/citations_extract.py`: dict(item='Baehr-Jones et al., Opt. Express 19, 11529 (2011) and "Low-loss silicon slot waveguides and couplers ..." '
 - `src/citations_extract.py`: 'Opt. Express 19, 26275 (2011): slot/strip loss ratio', where='src/noise_sourcing.py',
 - `src/citations_extract.py`: dict(item='Dwivedi et al., J. Lightwave Technol. 33(21), 4471 (2015), DOI 10.1109/JLT.2015.2476603', where='searched 2026-10-29',
-- `src/citations_extract.py`: dict(item='Xing et al., Photonics Research 6(11), 1008 (2018), DOI 10.1364/PRJ.6.001008', where='searched 2026-10-29',
 - `src/citations_extract.py`: dict(item='Farjadpour et al., Opt. Lett. 31, 2972 (2006); Kottke et al., PRE 77, 036611 (2008); Fallahkhair & Li (2008)',
 - `src/crosscheck_fields.py`: weight along the wall. The weight is the standard boundary-perturbation integrand (Johnson et al., PRE 65,
 - `src/etchdepth_femwell_analysis.py`: DNDT_SI = 1.86e-4   # 1.87e-4 (1.5 um), 1.78e-4 (2.0 um): Frey, Leviton, Madison, Proc. SPIE 6273, 62732J (2006), Table 4

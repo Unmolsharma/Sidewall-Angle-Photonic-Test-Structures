@@ -3,7 +3,7 @@
 
 Every number with a decimal point or exponent in `paper/main.tex` and `paper/sections/*.tex` (comments, \todo notes, labels, references and file names removed) is traced against `results_final/HEADLINE_NUMBERS.md`, `results_final/CLAIMS.md`, `results_final/ASSUMPTIONS.md`, `results_final/CITATIONS.md`, `results_final/data/validation.json`. TRACED = a value in these files rounds to the number at the precision shown. Chance-match rate of this pool: 34%.
 
-**230 numbers, 230 traced, 0 untraced.**
+**262 numbers, 262 traced, 0 untraced.**
 
 
 ## All numbers
@@ -24,22 +24,31 @@ Every number with a decimal point or exponent in `paper/main.tex` and `paper/sec
 | `paper/sections/discussion.tex` | 22 | 0.01749 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/discussion.tex` | 23 | 0.25 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/discussion.tex` | 24 | 0.6 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 34 | 0.25 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 35 | 6.869 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 51 | 0.9782 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 57 | -47.9% | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 57 | 97.5% | results_final/ASSUMPTIONS.md |
-| `paper/sections/discussion.tex` | 58 | -49.4% | results_final/ASSUMPTIONS.md |
-| `paper/sections/discussion.tex` | 58 | 97.8% | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 59 | 0.6% | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 61 | -15.3% | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 61 | -27.5% | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/discussion.tex` | 64 | 1.55 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 27 | 1.26 | results_final/CITATIONS.md |
+| `paper/sections/discussion.tex` | 28 | 0.5 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 29 | 0.37 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 33 | 0.5 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 33 | 3.38 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 40 | 0.25 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 41 | 6.869 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 57 | 0.9782 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 65 | -47.9% | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 65 | 97.5% | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 66 | -49.4% | results_final/ASSUMPTIONS.md |
+| `paper/sections/discussion.tex` | 66 | 97.8% | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 67 | 0.6% | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 69 | -15.3% | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 69 | -27.5% | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 70 | 1.487 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/discussion.tex` | 72 | 1.55 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/introduction.tex` | 6 | -3.8403 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/introduction.tex` | 7 | 710.8 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/introduction.tex` | 8 | 841.5 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/introduction.tex` | 46 | 0.6 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/introduction.tex` | 84 | 0.393 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/introduction.tex` | 34 | 0.37 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/introduction.tex` | 34 | 0.26 | results_final/CITATIONS.md |
+| `paper/sections/introduction.tex` | 49 | 0.6 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/introduction.tex` | 87 | 0.393 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/introduction.tex` | 89 | 1.037 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/methods.tex` | 10 | 1.4 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/methods.tex` | 10 | 1.2 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/methods.tex` | 10 | 3.48 | results_final/HEADLINE_NUMBERS.md |
@@ -81,12 +90,14 @@ Every number with a decimal point or exponent in `paper/main.tex` and `paper/sec
 | `paper/sections/results.tex` | 25 | -0.3997 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 25 | 0.04077 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 25 | 0.3976 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/results.tex` | 25 | 0.4034 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 26 | 0.1895 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 26 | 0.139 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 26 | 0.1007 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 26 | -0.1473 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 26 | 0.0139 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 26 | 0.1323 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/results.tex` | 26 | 0.2067 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 36 | 3.8396 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 37 | 3.8725 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 37 | 3.8401 | results_final/HEADLINE_NUMBERS.md |
@@ -228,6 +239,25 @@ Every number with a decimal point or exponent in `paper/main.tex` and `paper/sec
 | `paper/sections/results.tex` | 264 | 0.559 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 265 | 0.521 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/results.tex` | 265 | 39.68 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 11 | 0.8627 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 12 | 0.0524 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 13 | 5.166 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 13 | 12.42 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 14 | 1.519 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 14 | 3.366 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 16 | 0.4034 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 17 | 0.3781 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 17 | 0.4273 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 17 | 1.037 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 18 | 0.02463 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 18 | 0.01804 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 19 | 0.2067 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 19 | 0.1859 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 19 | 0.2253 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 19 | 1.487 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 20 | 0.139 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 24 | 0.39 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/surrcheck.tex` | 25 | 0.139 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/theory.tex` | 34 | 0.1 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/theory.tex` | 35 | 0.1 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/theory.tex` | 40 | 1.55 | results_final/HEADLINE_NUMBERS.md |
@@ -235,8 +265,10 @@ Every number with a decimal point or exponent in `paper/main.tex` and `paper/sec
 | `paper/sections/theory.tex` | 42 | 2.75e-6 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/theory.tex` | 42 | 1.07e-3 | results_final/HEADLINE_NUMBERS.md |
 | `paper/sections/theory.tex` | 42 | 1.11e-3 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/theory.tex` | 47 | 0.1 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/theory.tex` | 47 | 1.25 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/theory.tex` | 58 | 8.67e-5 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/theory.tex` | 58 | 1.5 | results_final/HEADLINE_NUMBERS.md |
-| `paper/sections/theory.tex` | 90 | 3.8401 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/theory.tex` | 44 | 1.1e-5 | results_final/CITATIONS.md |
+| `paper/sections/theory.tex` | 44 | 1.0e-3 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/theory.tex` | 50 | 0.1 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/theory.tex` | 50 | 1.25 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/theory.tex` | 61 | 8.67e-5 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/theory.tex` | 61 | 1.5 | results_final/HEADLINE_NUMBERS.md |
+| `paper/sections/theory.tex` | 93 | 3.8401 | results_final/HEADLINE_NUMBERS.md |

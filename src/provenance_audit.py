@@ -83,8 +83,12 @@ def to_float(tok):
     return float(tok.replace(',', '').replace('−', '-'))
 
 
+SCI = re.compile(r'(\d+(?:\.\d+)?)\s?[×x]\s?10\s?([-−]?\d{1,2})(?!\d)')     # "1.1 × 10−5" as printed in quoted papers
+
+
 def numbers_in_text(s):
-    return [float(m.replace(',', '').replace('−', '-')) for m in NUM.findall(s) if m.strip('+-−')]
+    sci = [float(a) * 10 ** int(b.replace('−', '-')) for a, b in SCI.findall(s)]
+    return sci + [float(m.replace(',', '').replace('−', '-')) for m in NUM.findall(s) if m.strip('+-−')]
 
 
 def file_values(path, _cache={}):
