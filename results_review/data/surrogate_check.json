@@ -1,0 +1,148 @@
+{
+ "a": {
+  "units": [
+   "strip_TE_400",
+   "strip_TE_600",
+   "strip_TM_400",
+   "strip_TM_600",
+   "rib_TE_300_slab90",
+   "rib_TE_400_slab90",
+   "rib_TE_500_slab90",
+   "rib_TE_600_slab90"
+  ],
+  "n_truths": 20,
+  "n_solves": 160,
+  "neff_err_rms_sigma_phase": 0.6036273591580826,
+  "neff_err_max_sigma_phase": 3.3662310981762813,
+  "ng_err_rms_sigma_ng": 0.0021437385479492195,
+  "ng_err_max_sigma_ng": 0.013130141603734305,
+  "per_unit": {
+   "strip_TE_400": {
+    "neff_err_rms_sigma_phase": 0.02177505871362721,
+    "neff_err_max_sigma_phase": 0.022729085129402384,
+    "ng_err_rms_sigma_ng": 0.0001483428961538473
+   },
+   "strip_TE_600": {
+    "neff_err_rms_sigma_phase": 0.011665275931623796,
+    "neff_err_max_sigma_phase": 0.015945273578297208,
+    "ng_err_rms_sigma_ng": 5.31953381598666e-05
+   },
+   "strip_TM_400": {
+    "neff_err_rms_sigma_phase": 0.002322414081496495,
+    "neff_err_max_sigma_phase": 0.005176277734558938,
+    "ng_err_rms_sigma_ng": 0.00015414583013495365
+   },
+   "strip_TM_600": {
+    "neff_err_rms_sigma_phase": 0.08960410414992954,
+    "neff_err_max_sigma_phase": 0.11258111644025702,
+    "ng_err_rms_sigma_ng": 0.00020176322302035437
+   },
+   "rib_TE_300_slab90": {
+    "neff_err_rms_sigma_phase": 1.518829319826731,
+    "neff_err_max_sigma_phase": 3.3662310981762813,
+    "ng_err_rms_sigma_ng": 0.005823214894147219
+   },
+   "rib_TE_400_slab90": {
+    "neff_err_rms_sigma_phase": 0.33921784494483154,
+    "neff_err_max_sigma_phase": 0.5918454003462014,
+    "ng_err_rms_sigma_ng": 0.0009054221149910823
+   },
+   "rib_TE_500_slab90": {
+    "neff_err_rms_sigma_phase": 0.6132992473235848,
+    "neff_err_max_sigma_phase": 1.1638600188088113,
+    "ng_err_rms_sigma_ng": 0.0012996846679383216
+   },
+   "rib_TE_600_slab90": {
+    "neff_err_rms_sigma_phase": 0.32899266405050087,
+    "neff_err_max_sigma_phase": 0.5602300931664788,
+    "ng_err_rms_sigma_ng": 0.0005067680494543127
+   }
+  },
+  "n_fits": 500,
+  "status": {
+   "ok": 486,
+   "at_bound": 14,
+   "failed": 0
+  },
+  "angle_error_std": 0.20673350079621636,
+  "angle_error_std_ci95": [
+   0.1858962295192745,
+   0.22532901531191374
+  ],
+  "angle_error_mean": -0.0007168596587290602,
+  "angle_error_mean_se": 0.009245403220136932,
+  "crb_a_fd": 0.138992939553791,
+  "crb_a_surrogate": 0.12488672752565914,
+  "std_over_crb_fd": 1.487366922808402
+ },
+ "b": {
+  "units": [
+   "strip_TE_400",
+   "strip_TE_450",
+   "strip_TE_500",
+   "strip_TE_550",
+   "strip_TE_600",
+   "rib_TE_300_slab50",
+   "rib_TE_500_slab50"
+  ],
+  "n_truths": 20,
+  "n_solves": 140,
+  "neff_err_rms_sigma_phase": 1.972252601232472,
+  "neff_err_max_sigma_phase": 12.415508635501585,
+  "ng_err_rms_sigma_ng": 0.00933506647618847,
+  "ng_err_max_sigma_ng": 0.052400047574113186,
+  "per_unit": {
+   "strip_TE_400": {
+    "neff_err_rms_sigma_phase": 0.022853237682469316,
+    "neff_err_max_sigma_phase": 0.035689744143858636,
+    "ng_err_rms_sigma_ng": 0.00014172470261985084
+   },
+   "strip_TE_450": {
+    "neff_err_rms_sigma_phase": 0.02554104888920336,
+    "neff_err_max_sigma_phase": 0.030860333558283562,
+    "ng_err_rms_sigma_ng": 0.00018067177608647227
+   },
+   "strip_TE_500": {
+    "neff_err_rms_sigma_phase": 0.506641325502082,
+    "neff_err_max_sigma_phase": 0.8626557937364906,
+    "ng_err_rms_sigma_ng": 0.0032097720466505966
+   },
+   "strip_TE_550": {
+    "neff_err_rms_sigma_phase": 0.3861276889270285,
+    "neff_err_max_sigma_phase": 0.6013210325656024,
+    "ng_err_rms_sigma_ng": 0.002756963046975242
+   },
+   "strip_TE_600": {
+    "neff_err_rms_sigma_phase": 0.012946501332884115,
+    "neff_err_max_sigma_phase": 0.019882671601987402,
+    "ng_err_rms_sigma_ng": 5.8161686171625474e-05
+   },
+   "rib_TE_300_slab50": {
+    "neff_err_rms_sigma_phase": 5.16575572155226,
+    "neff_err_max_sigma_phase": 12.415508635501585,
+    "ng_err_rms_sigma_ng": 0.024320528433753413
+   },
+   "rib_TE_500_slab50": {
+    "neff_err_rms_sigma_phase": 0.369198908879121,
+    "neff_err_max_sigma_phase": 0.7482169073098738,
+    "ng_err_rms_sigma_ng": 0.0007460339867624178
+   }
+  },
+  "n_fits": 500,
+  "status": {
+   "ok": 500,
+   "at_bound": 0,
+   "failed": 0
+  },
+  "angle_error_std": 0.40344136943910336,
+  "angle_error_std_ci95": [
+   0.3781081526538969,
+   0.4273408905037146
+  ],
+  "angle_error_mean": 0.02463209975985239,
+  "angle_error_mean_se": 0.018042446540028824,
+  "crb_a_fd": 0.38910445940026206,
+  "crb_a_surrogate": 0.3941605193505177,
+  "std_over_crb_fd": 1.0368459155182626
+ }
+}

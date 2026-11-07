@@ -1,0 +1,23 @@
+[2026-11-03 22:13:24] free RAM 8.1 GB, ~2.0 GB per worker -> 2 workers
+[2026-11-03 22:13:24] 300 tasks, 0 cached, 300 to run, 2 workers
+[2026-11-03 22:22:31] 25 solved, 274 queued, 1 in flight, 9.1 min elapsed, ~100 min left, free RAM 5.9 GB
+[2026-11-03 22:32:23] 50 solved, 249 queued, 1 in flight, 19.0 min elapsed, ~95 min left, free RAM 10.6 GB
+[2026-11-03 22:41:20] 75 solved, 224 queued, 1 in flight, 27.9 min elapsed, ~83 min left, free RAM 10.2 GB
+[2026-11-03 22:48:54] 100 solved, 199 queued, 1 in flight, 35.5 min elapsed, ~71 min left, free RAM 9.5 GB
+[2026-11-03 22:55:14] on battery (99%): stopping 2 running solve(s) and re-queueing them; re-checking every 5 min
+[2026-11-04 11:44:25] free RAM 9.2 GB, ~2.0 GB per worker -> 2 workers
+[2026-11-04 11:44:25] 300 tasks, 121 cached, 179 to run, 2 workers
+[2026-11-04 11:44:25] on battery (88%): stopping 0 running solve(s) and re-queueing them; re-checking every 5 min
+[2026-11-06 21:41:29] free RAM 8.7 GB, ~2.0 GB per worker -> 2 workers
+[2026-11-06 21:41:29] 300 tasks, 121 cached, 179 to run, 2 workers
+[2026-11-06 21:41:29] on battery (51%): stopping 0 running solve(s) and re-queueing them; re-checking every 5 min
+[2026-11-06 21:58:46] free RAM 8.8 GB, ~2.0 GB per worker -> 2 workers
+[2026-11-06 21:58:46] 300 tasks, 121 cached, 179 to run, 2 workers
+[2026-11-06 22:29:01] 25 solved, 153 queued, 1 in flight, 30.2 min elapsed, ~185 min left, free RAM 9.2 GB
+[2026-11-07 00:23:17] 50 solved, 128 queued, 1 in flight, 144.5 min elapsed, ~370 min left, free RAM 8.0 GB
+[2026-11-07 00:33:08] 75 solved, 103 queued, 1 in flight, 154.4 min elapsed, ~212 min left, free RAM 8.4 GB
+[2026-11-07 00:45:24] 100 solved, 78 queued, 1 in flight, 166.6 min elapsed, ~130 min left, free RAM 7.6 GB
+[2026-11-07 00:56:42] 125 solved, 53 queued, 1 in flight, 177.9 min elapsed, ~75 min left, free RAM 7.6 GB
+[2026-11-07 01:07:58] 150 solved, 28 queued, 1 in flight, 189.2 min elapsed, ~35 min left, free RAM 7.3 GB
+[2026-11-07 01:18:23] 175 solved, 3 queued, 1 in flight, 199.6 min elapsed, ~3 min left, free RAM 8.7 GB
+[2026-11-07 01:20:40] finished: 179 solved this run, 0 failed

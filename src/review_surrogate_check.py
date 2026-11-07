@@ -78,7 +78,7 @@ def analyze():
         d = D['cases'][name]
         c = case(name)
         s_ph = mc.fv.SIGMA_PHASE / mc.KPH
-        err_neff, err_ng, femwell_y = [], [], {}
+        err_neff, err_ng, femwell_y, unit_of = [], [], {}, []
         for j, t in enumerate(d['truths']):
             pred = c.M.predict(np.array(t))
             Y = []
@@ -88,8 +88,14 @@ def analyze():
                 Y.append(y)
                 err_neff.append((pred[k][0] - y[0]) / s_ph)
                 err_ng.append((pred[k][1] - y[1]) / mc.fv.SIGMA_NG)
+                unit_of.append(str(u))
             femwell_y[j] = np.array(Y)
         e1, e2 = np.array(err_neff), np.array(err_ng)
+        uo = np.array(unit_of)
+        per_unit = {u: dict(neff_err_rms_sigma_phase=float(np.sqrt(np.mean(e1[uo == u] ** 2))),
+                            neff_err_max_sigma_phase=float(np.max(np.abs(e1[uo == u]))),
+                            ng_err_rms_sigma_ng=float(np.sqrt(np.mean(e2[uo == u] ** 2))))
+                    for u in dict.fromkeys(unit_of)}
         rng = np.random.default_rng([SEED, ord(name), 1])
         errs, status = [], {'ok': 0, 'at_bound': 0, 'failed': 0}
         for j, t in enumerate(d['truths']):
@@ -111,7 +117,7 @@ def analyze():
         res[name] = dict(units=c.units, n_truths=len(d['truths']), n_solves=len(d['points']),
                          neff_err_rms_sigma_phase=float(np.sqrt(np.mean(e1 ** 2))), neff_err_max_sigma_phase=float(np.max(np.abs(e1))),
                          ng_err_rms_sigma_ng=float(np.sqrt(np.mean(e2 ** 2))), ng_err_max_sigma_ng=float(np.max(np.abs(e2))),
-                         n_fits=int(len(errs) + status['failed']), status=status,
+                         per_unit=per_unit, n_fits=int(len(errs) + status['failed']), status=status,
                          angle_error_std=float(errs.std(ddof=1)), angle_error_std_ci95=[float(np.percentile(boot, 2.5)), float(np.percentile(boot, 97.5))],
                          angle_error_mean=float(errs.mean()), angle_error_mean_se=float(errs.std(ddof=1) / np.sqrt(len(errs))),
                          crb_a_fd=c.crb_fd, crb_a_surrogate=c.crb_sur, std_over_crb_fd=float(errs.std(ddof=1) / c.crb_fd))
