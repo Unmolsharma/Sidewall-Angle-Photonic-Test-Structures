@@ -302,11 +302,46 @@ derivative accuracy (Section~\ref{sec:surrcheck}).}
 \label{fig:replication}
 \end{figure*}
 
-Replication averages only the part of an offset that differs between copies. An offset common to all copies of one design, such as an etch bias that
-depends on the drawn width, stays. If that part is a tenth of the local spread (\qty{0.03}{nm}, \qty{0.03}{\degree}, \qty{0.01}{nm}, at the spreads above) the two-width
-bound tends to \qty{0.176}{\degree} as $N$ grows, and is \qty{0.366}{\degree} at $N=256$. At three tenths it tends to \qty{0.493}{\degree}, and at the
-spreads of \qty{0.6}{nm}, \qty{0.5}{\degree} and \qty{0.3}{nm} it tends to \qty{1.349}{\degree}, so that no number of copies reaches twice the shared
-bound. The tolerances of Section~\ref{sec:variation} therefore still apply to per-design differences. Replication relaxes them only for the random part.
+\input{sections/tab_correlation}
+
+These numbers assume that the offsets of different copies are independent. Real variation is spatially correlated: the wavelength mismatch between
+identical rings grows with their separation~\cite{chrostowski2014}, and layout-aware models simulate correlated variation on a spatial
+grid~\cite{lu2017}. We found no published correlation length, so we assumed lengths $L$ of 0.05 to \qty{5}{mm} and correlated the offsets as
+$\exp(-d/L)$, with the copies placed in cells of pitch $s$, each cell holding one copy of every design. Two limiting models bracket the
+result (Table~\ref{tab:correlation}). If one random field acts on all structures, neighbouring designs share most of their offset, the fit
+absorbs the shared part, and fewer copies are needed: 8 for twice the bound at $L=\qty{1}{mm}$ and $s=\qty{0.15}{mm}$, against 34 for
+independent offsets. If instead only copies of the same design are correlated, nearby copies repeat one another, and more copies are
+needed unless they are spread out: at $L=\qty{1}{mm}$, 99 copies at $s=\qty{0.5}{mm}$ and more than 256 at $s=\qty{0.15}{mm}$. The
+first model favours compact cells, the second favours copies spaced by more than $L$. Which one applies depends on how much of the local
+variation is common to different designs at one place, which is the quantity that Section~\ref{sec:systematic} shows to be critical.
+
+\subsection{Random and systematic offsets}
+\label{sec:systematic}
+
+Replication works only for the random part of an offset. The fit sees the copies of design $i$ only through their mean,
+$\bar{\mathbf{y}}_i=\mathbf{f}_i(\mathbf{p})+\mathbf{D}_i\mathbf{s}_i+\mathbf{D}_i\bar{\mathbf{r}}_i+\bar{\boldsymbol{\epsilon}}_i$, where
+$\mathbf{r}_{ij}$ is the random offset of copy $j$ and $\mathbf{s}_i$ a systematic offset that every copy of the design shares, for example an
+etch bias that depends on the drawn width. The mean of the random offsets has covariance $\mathbf{R}/N$ and vanishes as $N$ grows; $\mathbf{s}_i$
+does not change with $N$. Unless the model contains it, a systematic offset acts as a fixed error that no number of copies removes. If it is a
+tenth of the local spread above, the two-width bound tends to \qty{0.176}{\degree} as $N$ grows, and if it is three tenths of the spreads of
+\qty{0.6}{nm}, \qty{0.5}{\degree} and \qty{0.3}{nm}, to \qty{1.349}{\degree}, so that no number of copies reaches twice the shared bound.
+
+\input{sections/tab_systematic}
+
+A systematic offset with a known form can instead be fitted. Table~\ref{tab:systematic} adds width offsets that depend on the drawn width,
+linear or quadratic in $(W-\bar W)/\qty{100}{nm}$, as nuisance parameters. Smooth offsets shared by strips and ribs are absorbed at a modest cost.
+Fitted without a prior, a linear term raises the bound from \qty{0.389}{\degree} to \qty{0.452}{\degree} and a quadratic one to
+\qty{0.675}{\degree}, and a linear term on the strips alone costs nothing (\qty{0.390}{\degree}). Offsets that separate the ribs from the strips are
+different. A width offset of the ribs relative to the strips makes the angle unidentifiable without a prior, because the strip angle reaches the
+fit only through the strips, where it equals a width change of $t\tan\theta$, and only the shared width offset ties the strip width to the ribs.
+With a prior $\sigma_\Delta$ on that offset the bound is $\sth=(\sigma_0^2+(\sigma_\Delta/\kappa)^2)^{1/2}$, with $\sigma_0$ the bound without
+the offset and $\kappa=t\tan\qty{1}{\degree}=\qty{3.8401}{nm}$ per degree, which is
+\qty{0.397}{\degree} for $\sigma_\Delta=\qty{0.3}{nm}$ and \qty{0.468}{\degree} for \qty{1}{nm}. An offset that differs between the two rib widths
+is the most damaging: a prior of \qty{0.03}{nm} gives \qty{0.549}{\degree} and \qty{0.1}{nm} gives \qty{1.31}{\degree}, because the
+difference between the two ribs is what separates the rib's etch depth from its angle. Combined with random offsets of \qty{0.3}{nm},
+\qty{0.3}{\degree} and \qty{0.1}{nm}, a fitted linear term raises the copies needed for twice the shared bound from 34 to 48, and a
+fitted quadratic one to 56. Systematic offsets shared by strips and ribs and smooth in width can therefore be absorbed, while offsets of the
+ribs, and above all a difference between the two rib widths, must be measured independently or kept to hundredths of a nanometre.
 
 \subsection{Placement on the chip}
 \label{sec:layout}
@@ -335,9 +370,14 @@ degree of unmodeled tilt.
 With the angle in the model, the question becomes how well the extracted parameters predict other devices on the same
 chip. We propagate the full parameter covariance of the two-width set to the resonance of a ring, using
 $\sigma_{\lambda,\mathrm{pred}}=\lambda\sqrt{\mathbf{g}^{\mathsf T}\mathbf{C}\mathbf{g}}/\ngr$, where $\mathbf{g}$ is the
-gradient of the device's $\neff$ and $\mathbf{C}$ is the inverse Fisher matrix. At \qty{1}{pm}, a strip TE ring of
-\qty{500}{nm} is predicted to \qty{0.457}{pm} and a rib ring of \qty{500}{nm} on the \qty{50}{nm} slab to
-\qty{0.773}{pm}. The angle uncertainty alone would give hundreds of picometres, but it is correlated with the width and
+gradient of the device's $\neff$ and $\mathbf{C}$ is the inverse Fisher matrix. In the ideal case of shared parameters and no local
+offsets, a strip TE ring of \qty{500}{nm} is predicted to \qty{0.457}{pm} and a rib ring of \qty{500}{nm} on the \qty{50}{nm} slab to
+\qty{0.773}{pm} at \qty{1}{pm}. With local offsets of \qty{0.3}{nm}, \qty{0.3}{\degree} and \qty{0.1}{nm}, two terms enter. The fitted process
+mean at the array is uncertain by \qty{329}{pm} for the strip ring with one copy, \qty{56.5}{pm} with 34 copies and \qty{20.6}{pm} with
+256. A new device also carries its own local offsets, which no fit of other structures can know: \qty{735}{pm} for the strip ring,
+\qty{697}{pm} of it from the angle, and \qty{440}{pm} for the rib ring. Its predicted resonance is therefore uncertain by \qty{737}{pm}
+(strip) and \qty{445}{pm} (rib) with 34 copies. At such levels of local variation the extraction determines the local process mean well,
+but the resonance of an individual device is set by its own offsets. The angle uncertainty alone would give hundreds of picometres, but it is correlated with the width and
 thickness uncertainties, and the combination that sets the resonance is well determined. With an unknown calibration
 offset the predicted true wavelength degrades to \qty{982.2}{pm}, because the two-width set cannot separate the offset
 from the process parameters. An absolute reference passes its own error to the prediction: the strip ring is predicted to

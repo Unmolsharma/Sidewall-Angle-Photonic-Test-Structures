@@ -8,8 +8,8 @@ angle, in degrees.
 
 Scripts (main environment unless stated): `src/review_analyses.py`, `src/review_practical_context.py`,
 `src/literature_verify.py`, `src/make_literature.py`, `src/review_surrogate_check.py` (design / analyze),
-`src/review_surrogate_batch.py` (femwell environment), `src/review_feasibility.py`. All rows are also in `results_final/HEADLINE_NUMBERS.md`
-sections L-V.
+`src/review_surrogate_batch.py` (femwell environment), `src/review_feasibility.py`, `src/review_systematic.py`. All rows are also in `results_final/HEADLINE_NUMBERS.md`
+sections L-Z.
 
 ## 1. Correlated noise, calibration offset, temperature
 
@@ -182,3 +182,71 @@ Data: `results_review/data/feasibility_ablation.json`.
 | surrogate, all structures | 0.1689 [0.1469-0.1886] | 1.215 | 0.4022 | 1.034 |
 
 Reading: the 300 nm rib data do not explain the gap. Part of it is present with surrogate data everywhere (perturbed truths), the rest needs femwell data for the other structures. The test does not cover the effect of the 300 nm rib derivatives on the bound itself.
+
+## 12. Systematic width offsets (third review)
+
+Data: `results_review/data/systematic.json` (key `systematic`). Script: `src/review_systematic.py`.
+
+Two-width set, ring and MZI. Width offset as a function of drawn width, x = (W - mean W)/100 nm, coefficients fitted with no prior or the prior std shown (nm). CRLB (deg):
+
+| model | none | 0.01 | 0.03 | 0.1 | 0.3 | 1 |
+|---|---|---|---|---|---|---|
+| lin_all | 0.4518 | 0.4029 | 0.434 | 0.4496 | 0.4516 | 0.4518 |
+| quad_all | 0.6747 | 0.4741 | 0.4971 | 0.5602 | 0.6463 | 0.6717 |
+| lin_strip | 0.3899 | 0.3893 | 0.3896 | 0.3898 | 0.3899 | 0.3899 |
+| quad_strip | 1.5 | 0.4436 | 0.5509 | 1.001 | 1.397 | 1.49 |
+| rib_offset | ∞ | 0.3891 | 0.3892 | 0.39 | 0.3969 | 0.4682 |
+| rib_offset_lin | ∞ | 0.4101 | 0.5494 | 1.315 | 3.105 | 4.724 |
+| separate_lin | ∞ | 0.4103 | 0.5497 | 1.315 | 3.109 | 4.741 |
+| per_design | ∞ | 0.4445 | 0.5481 | 1.139 | 2.512 | 4.474 |
+
+Reading: smooth offsets shared by strips and ribs, or on the strips alone, are absorbed; a rib-only offset (relative to the strips, or between the two rib widths) or a free offset per design makes the angle unidentifiable without a prior.
+
+Fitted systematic term plus random offsets 0.3 nm / 0.3 deg / 0.1 nm, copies needed for 2x (1.5x) of the shared bound:
+
+- none: N = 1 4.419 deg; N = 34 0.7686 deg; 34 (61) copies.
+- lin_all: N = 1 5.154 deg; N = 34 0.9163 deg; 48 (85) copies.
+- quad_all: N = 1 5.544 deg; N = 34 0.9934 deg; 56 (100) copies.
+- quad_strip: N = 1 4.426 deg; N = 34 0.7694 deg; 34 (61) copies.
+
+## 13. Replication with spatially correlated offsets
+
+Data: `results_review/data/systematic.json` (key `correlation`).
+
+rho(d) = exp(-d/L), L ASSUMED (no published correlation length found); cells of pitch s, one copy of each design per cell. Copies needed for 2x (1.5x); bound at N = 256 (deg):
+
+| model | L mm | s mm | copies | N = 256 |
+|---|---|---|---|---|
+| field | 0.05 | 0.15 | 29 (51) | 0.2801 |
+| field | 0.05 | 0.5 | 33 (60) | 0.2973 |
+| field | 0.05 | 1.5 | 34 (61) | 0.2978 |
+| field | 0.2 | 0.15 | 17 (31) | 0.2287 |
+| field | 0.2 | 0.5 | 27 (49) | 0.2745 |
+| field | 0.2 | 1.5 | 33 (59) | 0.2961 |
+| field | 1 | 0.15 | 8 (15) | 0.2027 |
+| field | 1 | 0.5 | 15 (26) | 0.2139 |
+| field | 1 | 1.5 | 23 (41) | 0.2563 |
+| field | 5 | 0.15 | 3 (6) | 0.2579 |
+| field | 5 | 0.5 | 7 (12) | 0.2135 |
+| field | 5 | 1.5 | 12 (21) | 0.2013 |
+| same_design | 0.05 | 0.15 | 36 (66) | 0.3089 |
+| same_design | 0.05 | 0.5 | 34 (61) | 0.2978 |
+| same_design | 0.05 | 1.5 | 34 (61) | 0.2978 |
+| same_design | 0.2 | 0.15 | 71 (136) | 0.4387 |
+| same_design | 0.2 | 0.5 | 38 (69) | 0.3165 |
+| same_design | 0.2 | 1.5 | 34 (61) | 0.2979 |
+| same_design | 1 | 0.15 | >256 (>256) | 0.914 |
+| same_design | 1 | 0.5 | 99 (197) | 0.5225 |
+| same_design | 1 | 1.5 | 47 (87) | 0.3515 |
+| same_design | 5 | 0.15 | >256 (>256) | 1.392 |
+| same_design | 5 | 0.5 | >256 (>256) | 1.061 |
+| same_design | 5 | 1.5 | 169 (>256) | 0.6681 |
+
+Check: L = 0, N = 16 gives 1.113 deg, the independent-offset value.
+
+## 14. Resonance prediction under local variation
+
+Data: `results_review/data/systematic.json` (key `prediction`).
+
+- strip_TE_500: ideal case 0.4569 pm; own local offsets 734.5 pm; process mean at N = 1, 34, 256: 329.3, 56.5, 20.61 pm; new device at N = 34: 736.7 pm.
+- rib_TE_500_slab50: ideal case 0.7733 pm; own local offsets 440.3 pm; process mean at N = 1, 34, 256: 356.6, 63.15, 23.17 pm; new device at N = 34: 444.8 pm.

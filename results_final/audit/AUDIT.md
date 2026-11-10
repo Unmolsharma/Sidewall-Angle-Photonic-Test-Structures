@@ -5,7 +5,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 
 ## Strict targets (goal: 0 untraced)
 
-### results_final/HEADLINE_NUMBERS.md: 3123 numbers, 3123 traced, **0 untraced** (chance-match rate 33%)
+### results_final/HEADLINE_NUMBERS.md: 3964 numbers, 3964 traced, **0 untraced** (chance-match rate 31%)
 
 ### results_final/CLAIMS.md: 39 numbers, 39 traced, **0 untraced** (chance-match rate 13%)
 
@@ -17,7 +17,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `results_femwell/SUMMARY.md`: 334 numbers, 60 untraced (chance-match rate 20%).
 - `results_montecarlo/SUMMARY.md`: 311 numbers, 1 untraced (chance-match rate 22%).
 - `results_priors_search/SUMMARY.md`: 271 numbers, 3 untraced (chance-match rate 28%).
-- `results_review/SUMMARY.md`: 342 numbers, 0 untraced (chance-match rate 26%).
+- `results_review/SUMMARY.md`: 474 numbers, 0 untraced (chance-match rate 26%).
 
 ## Citations (DOI / arXiv identifiers found in results*/*.md and src/*.py)
 
@@ -57,6 +57,8 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 | 10.1364/OL.37.004236 | UNVERIFIED | src/literature_verify.py |  |
 | 10.1364/PRJ.6.001008 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, src/citations_extract.py | xing2018: VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007) |
 | 10.1364/oe.18.023598 | UNVERIFIED | results_final/HEADLINE_NUMBERS.md |  |
+| 10.1364/oe.25.009712 | UNVERIFIED | results_final/HEADLINE_NUMBERS.md |  |
+| 10.1364/ofc.2014.th2a.37 | UNVERIFIED | results_final/HEADLINE_NUMBERS.md |  |
 | 10.1515/nanoph-2013-0013 | UNVERIFIED | src/literature_verify.py |  |
 | 10.21105/joss.02369 | UNVERIFIED | src/literature_verify.py |  |
 | 10.3390/app11052366 | UNVERIFIED | src/literature_verify.py |  |
@@ -105,6 +107,8 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `results_final/HEADLINE_NUMBERS.md`: | 3, 0.5 | Largest local variation of width and thickness between nearby devices (maxima, not stds) (nm) | CITED | Yufei Xing et al., "Accurate extrac
 - `results_final/HEADLINE_NUMBERS.md`: | a few hundred microns | Separation below which Xing et al. call a variation local | CITED | Yufei Xing et al., "Accurate extraction of fabricated ge
 - `results_final/HEADLINE_NUMBERS.md`: | 0.4, 1.5 | Largest location-dependent thickness difference on the two dies (nm) | CITED | Yufei Xing et al., "Accurate extraction of fabricated geom
+- `results_final/HEADLINE_NUMBERS.md`: | qualitative | chrostowski2014: spatially correlated variation, no correlation length quoted | CITED | L. Chrostowski et al., "Impact of Fabrication 
+- `results_final/HEADLINE_NUMBERS.md`: | qualitative | lu2017: spatially correlated variation, no correlation length quoted | CITED | Zeqin Lu et al., "Performance prediction for silicon ph
 - `results_montecarlo/HEADLINE_NUMBERS.md`: then demand about 1 mK temperature stability (Janz et al. quote ~80 pm/K) and derivatives accurate far
 - `results_montecarlo/SUMMARY.md`: - One verified source: Janz et al., arXiv:2306.15643, with 0.1 pm (laser repeatability) and 1 pm
 - `results_priors_search/SUMMARY.md`: | n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madison, Proc. S
@@ -126,6 +130,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `src/make_headline_numbers.py`: f"{c['authors'].split(',')[0]} et al., \"{c['title']}\", {c['venue']}, DOI {c['doi']}, {where}: “{q['text']}” "
 - `src/make_headline_numbers.py`: f"{r['authors'][0]} et al., \"{r['title']}\", {r['venue']}, DOI {r['doi']}, abstract: “{pc['quote']}”{unit_note} "
 - `src/make_headline_numbers.py`: cited(sec, 'a few hundred microns', 'Separation below which Xing et al. call a variation local', 'xing2018', idx_of('definition of local variatio'))
+- `src/make_headline_numbers.py`: f"{r['authors'][0]} et al., \"{r['title']}\", {r['venue']}, DOI {r['doi']}, abstract (record in `{F['lit'][0]}` : `{k}.abstract`)", [F['lit'][0]]))
 - `src/make_literature.py`: a = ', '.join(au[:6]) + (' et al.' if len(au) > 6 else '')
 - `src/make_literature.py`: L += ['', 'All five extract width, thickness (and, in Butt et al., material indices) from rings or interferometers and hold the '
 - `src/noise_sourced.py`: with lambda = 1.55 um, L = 100 um (the length already used for the MZI; also the ring length in Janz et al.)

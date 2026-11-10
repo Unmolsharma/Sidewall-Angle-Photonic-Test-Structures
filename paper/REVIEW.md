@@ -1,19 +1,40 @@
 # Review of the draft
 
 v1 (reviewed 2026-11-03) is archived in `paper/archive/v1/`. This file covers v2 and the changes after the external
-review of the 2026-11-08 draft. Numbers are checked by `python src/provenance_audit.py --paper` (report:
-`results_final/audit/PAPER_AUDIT.md`); the review analyses are summarized in `results_review/SUMMARY.md` and are rows
-L-V of `results_final/HEADLINE_NUMBERS.md`.
+reviews of the 2026-11-08 and 2026-11-10 drafts. Numbers are checked by `python src/provenance_audit.py --paper`
+(report: `results_final/audit/PAPER_AUDIT.md`); the review analyses are summarized in `results_review/SUMMARY.md` and
+are rows L-Z of `results_final/HEADLINE_NUMBERS.md`.
 
-## Audit result (2026-11-09)
+## Audit result (2026-11-10)
 
-- Paper: 509 numbers with a decimal point or exponent, **0 untraced**. The pool now holds so many values that its
-  chance-match rate is 55%, so a TRACED verdict alone is weak evidence. The 67 numbers newly written into the prose were
-  therefore also checked one by one against their own JSON paths: **0 mismatches**.
-- HEADLINE_NUMBERS.md: 3123 numbers, 0 untraced; CLAIMS.md: 39, 0 untraced; results_review/SUMMARY.md: 342, 0 untraced.
-- Compilation: `latexmk -pdf main.tex` runs without errors, undefined references or citations (13 pages); eight overfull
-  boxes of 0.94-1.45 pt remain (empty boxes, as before).
-- References: 46 cited, from the 51 verified entries of refs.bib (new: NIST SRM 2519a, read from the certificate).
+- Paper: 594 numbers with a decimal point or exponent, **0 untraced**. The pool's chance-match rate is 62%, so a TRACED
+  verdict alone is weak evidence; the numbers written in the last two rounds (67 + 30) were also checked one by one
+  against their own JSON paths: **0 mismatches**.
+- HEADLINE_NUMBERS.md: 3964 numbers, 0 untraced; CLAIMS.md: 39, 0 untraced; results_review/SUMMARY.md: 474, 0 untraced.
+- Compilation: `latexmk -pdf main.tex` runs without errors, undefined references or citations (14 pages); eight overfull
+  boxes of 0.94-1.45 pt remain (empty boxes, as before). Placeholders are yellow `	odo` boxes (set `inaltrue` in
+  main.tex to hide them).
+- References: 46 cited, from the 51 verified entries of refs.bib.
+
+## Points of the 2026-11-10 review (third round)
+
+| # | Request | Status | Where |
+|---|---|---|---|
+| 1 | Systematic vs random variation | done | Sec. "Random and systematic offsets", Table V. Smooth width-dependent offsets shared by strips and ribs are absorbed (linear 0.452 deg, quadratic 0.675 deg, no prior); a width offset of the ribs relative to the strips, or between the two rib widths, makes the angle unidentifiable without a prior (1 nm prior on the rib-strip offset: 0.468 deg; 0.03 nm on the rib-rib difference: 0.549 deg). Why replication averages one and not the other is stated with the copy-mean equation. |
+| 2 | Spatial correlation | done | Table IV: exp(-d/L), L = 0.05-5 mm ASSUMED (Chrostowski 2014 and Lu 2017 describe correlated variation but give no length), copy spacing 0.15-1.5 mm, two limiting models. Shared field: 3-34 copies for 2x; same-design correlation: 34 to more than 256. |
+| 3 | Prediction under realistic variation | done | Sec. "Resonance prediction": 0.457 / 0.773 pm labelled ideal case; process mean 329 pm (N = 1), 56.5 pm (N = 34); a new device's own offsets add 735 pm (strip) and 440 pm (rib) |
+| 4 | Pair 0.39 deg with the realistic result | done | abstract and conclusion: ideal 0.39 deg, 4.42 deg for one copy, 34 / 61 copies, random-vs-systematic caveat; conclusion keeps the best set secondary with 0.2067 deg |
+| 5 | Placeholders as 	odo | done | author names, dates, affiliations and e-mails, corresponding author, acknowledgments |
+| r4 | Independent expert check of the perturbation argument and Fisher implementation | open | not something this repo can do; see open issues |
+
+### Decisions left to you
+
+- The abstract is now 231 words: within the IEEE limit of 250 but above the earlier 200-word target, because of the pairing
+  and caveat you asked for. Cut the first sentence's second clause or the etch-bias sentence if you want it shorter.
+- The rib-to-strip width offset is the new weak point. The model has always assumed that strips and ribs share one width
+  offset; the analysis shows the angle depends on that assumption. Decide how prominently to state it (now: Results K,
+  Discussion B and C, abstract).
+- Which correlation model to lead with. The paper presents both as bounds; a test chip would decide.
 
 ## Points of the 2026-11-08 review
 
@@ -96,9 +117,24 @@ The manuscript is 13 pages in IEEEtran two-column format.
 4. **Monte Carlo on femwell data.** Decide whether to keep the best set of eight in Table I and Fig. 8, given the unresolved gap.
 5. **Next steps.** Replace with the experiment you can actually do.
 
-## Still open
+## Final open-issues list
 
-- No measurement; no measured per-design offset between adjacent waveguides of different widths; no measured local angle spread.
-- No air-clad bound; TM ribs; wall-shape sensitivity; unknown length per ring; a second full-vector solver for derivatives; the bound's domain dependence (5.2% for the two-width set).
-- The cause of the best set's femwell gap is only partly located. A smoother forward model and more truths would be needed to resolve it.
-- Layout model: linear gradients only; no curvature, short-range correlation or pattern density.
+**Physics and model**
+1. The angle's identifiability rests on strips and ribs sharing one width offset. A rib-to-strip offset must be known to about 1 nm, and a difference between the two rib widths to a few hundredths of a nanometre. No source gives either.
+2. No measured local spread of the sidewall angle and no correlation length were found, so both are ASSUMED. The difference between adjacent waveguides of different widths has not been reported.
+3. Per-structure etch-depth offsets, non-Gaussian offsets, curvature and pattern-density effects in the layout model, and the unknown length of each ring are not modeled.
+4. The best set of eight: the gap between 0.139 and 0.2067 deg is only partly located.
+5. Air cladding, TM ribs, wall shape, dispersion, doping and other platforms remain open.
+
+**Numerics**
+6. There is no second full-vector solver for the derivatives, and the bound's domain dependence is 5.2% for the two-width set.
+7. An independent expert should check the perturbation argument and the Fisher implementation, especially the observables (n_eff from the resonance with known order and length; n_g from one FSR) and the noise covariance (a 1 pm resonance precision converted with n_g = 4.26 and L = 100 um).
+
+**Experiment**
+8. No device was fabricated or measured. The decisive test is a chip with the two-width set replicated and interleaved, adjacent and separated copies, cross-sections of the same dies, and a gas-cell reference.
+
+**Manuscript**
+9. Fill the `	odo` placeholders: co-author surname, dates, affiliations, e-mails, corresponding author and acknowledgments.
+10. Venue formatting: JLT allows 8 pages before overlength charges, and the paper is now 14. The Optics Express limits are still unverified (see above).
+11. The sections listed under "Sections you should rewrite yourself" are yours to rewrite. "What it would take" and "Random and systematic offsets" are new.
+12. Commits are on branch `practical-feasibility`; `main` does not have the last two review rounds until you merge.

@@ -9,9 +9,11 @@ many they are and in whichever polarization. The cost of that blindness is a mis
 reported for microdisks, whose across-wafer spread was \qty{8.014}{nm}~\cite{zortman2010}, and well above the
 \qty{\pm 32}{pm} accuracy reached by trimming~\cite{jayatilleka2021}. A bound of
 \qty{0.39}{\degree} on the angle sounds coarse next to these numbers. What a designer uses, however, is the predicted
-resonance of other devices, and within the shared-parameter model the two-width set predicts a strip ring to
+resonance of other devices, and in the ideal case of shared parameters the two-width set predicts a strip ring to
 \qty{0.457}{pm} and a rib ring to \qty{0.773}{pm} at a \qty{1}{pm} readout (Section~\ref{sec:prediction}). The angle
-is uncertain, but the combination of angle, width and thickness that sets each resonance is not. The predicted true wavelength
+is uncertain, but the combination of angle, width and thickness that sets each resonance is not. These are ideal-case values. With local
+offsets of \qty{0.3}{nm}, \qty{0.3}{\degree} and \qty{0.1}{nm}, the extraction still pins the local process mean, to \qty{56.5}{pm} for the
+strip ring with 34 copies, but an individual new ring differs from that mean by its own offsets, \qty{735}{pm} for the strip ring. The predicted true wavelength
 inherits the error of the absolute reference, for example \qty{10.01}{pm} with a \qty{10}{pm} reference, and degrades to \qty{982.2}{pm} without one. What the same
 instrument reads for another device stays at \qty{0.458}{pm} in either case.
 
@@ -33,12 +35,14 @@ waveguides of different widths after the shared offset is removed, has not been 
 \textit{et~al.}\ measured, the shared-parameter bound is not reachable with one copy of each structure. A per-structure width spread of
 \qty{0.5}{nm} already raises the two-width bound to \qty{3.38}{\degree} (Fig.~\ref{fig:variation}(b)).
 
-A working angle test structure therefore has to meet a consistency requirement that width monitors do not face. Random
-differences between copies can be averaged by replication (Section~\ref{sec:replication}), but offsets that follow a design, for
-example through its width or surrounding pattern density, cannot, and the tolerance of a few hundredths of a nanometre
-applies to them. Linewidth depends on local pattern density~\cite{xing2023}, and if the angle does too it can change
-systematically with waveguide width; a trend of \qty{0.25}{\degree} per \qty{100}{nm} biases the two-width estimate by
-\qty{6.869}{\degree}. Width ranges should therefore be kept narrow, or the trend added to the model as one more parameter.
+A working angle test structure therefore has to meet a consistency requirement that width monitors do not face, and
+the requirement differs for random and systematic offsets. Random differences between copies can be averaged by
+replication (Section~\ref{sec:replication}). Systematic offsets that follow a design, for example through its width or
+surrounding pattern density~\cite{xing2023}, cannot be averaged. If they are smooth in width and shared by strips and ribs
+they can be fitted (Section~\ref{sec:systematic}); an uncorrected angle trend of \qty{0.25}{\degree} per \qty{100}{nm}, by contrast,
+biases the two-width estimate by \qty{6.869}{\degree}. Offsets of the ribs relative to the strips, and above all between
+the two rib widths, cannot be fitted and must be known independently. Because the ribs and strips come from different
+etch steps, such offsets are plausible, and their size is the first thing a test chip should measure.
 
 We keep the two-width set as the proposal because it is the set whose bound has been reached with an independent forward model
 (Section~\ref{sec:surrcheck}). Its advantage in tolerance appears only at the small spreads that double each bound. At the spreads reported for real processes
@@ -48,12 +52,15 @@ the best set has the lower bound (Table~\ref{tab:local}), with the numerical cav
 
 A chip that delivers an angle near \qty{0.39}{\degree} needs four things, and the simulations here can only state them. First, a measurement of the quantity
 that is missing from the literature, the difference between adjacent waveguides of different widths, separated into a part that averages between copies and a part
-that follows the design. Second, enough copies: tens per structure if the random local spreads are near \qty{0.3}{nm} and \qty{0.3}{\degree}, which
-for the two-width set means a few hundred rings, in interleaved or mirrored placement so that gradients do not reach the fit. Third, per-design offsets near a few
-hundredths of a nanometre, or structures and models that absorb them; we do not know whether a process can meet this. Fourth, an absolute wavelength reference, for
-which a gas cell is more than sufficient for the angle bound, and a stable chip temperature. If the per-design offsets turn out larger, the structures described here can still
-report the angle, but only to the floors computed in Section~\ref{sec:replication}, and optical sidewall-angle extraction would be limited by consistency rather
-than by readout precision.
+that follows the design, together with its correlation length. Second, enough copies: about 34 per structure if the random local spreads are near
+\qty{0.3}{nm} and \qty{0.3}{\degree} and independent, which for the two-width set means a few hundred rings, in interleaved or mirrored placement
+so that gradients do not reach the fit. Correlation changes this number in either direction (Table~\ref{tab:correlation}). Third, systematic
+offsets that are smooth in width, so that they can be fitted, and a rib-to-strip width offset known to about a nanometre and a difference
+between the two rib widths known to a few hundredths of a nanometre, from cross-sections or a separate measurement; we do not know whether a
+process or a metrology step can provide the latter. Fourth, an absolute wavelength reference, for which a gas cell is more than sufficient for
+the angle bound, and a stable chip temperature. If the systematic offsets turn out larger, the structures described here can still report the
+angle, but only to the floors computed in Section~\ref{sec:systematic}, and optical sidewall-angle extraction would be limited by consistency
+rather than by readout precision. Even then, an individual device's resonance would remain limited by its own local offsets.
 
 \subsection{Relation to physical metrology}
 
@@ -72,8 +79,8 @@ for oxide above and below the core. An air-clad strip is not mirror-symmetric (i
 without corner rounding or roughness, the material indices are nominal values without dispersion, and $\ngr$ uses a fixed
 \qty{5}{nm} wavelength step; none of these choices was varied. Rings are assumed to have known resonance orders and
 lengths, so that each resonance gives $\neff$ directly. A calibration offset was tested as common to all rings and as independent per structure, and an unknown
-length per ring was not. The replication results assume Gaussian offsets that are independent between copies; neighbouring copies that share an offset would count as fewer copies, and
-per-structure offsets of the etch depth were not modeled. Our $\neff$ noise at \qty{1}{pm} is below the fitting error of measured MZIs
+length per ring was not. The replication results assume Gaussian offsets; spatial correlation was modeled only as $\exp(-d/L)$ with assumed lengths and in two limiting
+forms, systematic offsets only as width offsets, and per-structure offsets of the etch depth were not modeled. Our $\neff$ noise at \qty{1}{pm} is below the fitting error of measured MZIs
 (Section~\ref{sec:theory}), so the measurement model may be optimistic for $\neff$. The bounds scale linearly with
 $\sigma_\lambda$ and depend on the noise conversion by tens of
 percent. Halving or doubling the rib noise relative to the strips changes the two-width bound by
