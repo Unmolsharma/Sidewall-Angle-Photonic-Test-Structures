@@ -8,8 +8,8 @@ angle, in degrees.
 
 Scripts (main environment unless stated): `src/review_analyses.py`, `src/review_practical_context.py`,
 `src/literature_verify.py`, `src/make_literature.py`, `src/review_surrogate_check.py` (design / analyze),
-`src/review_surrogate_batch.py` (femwell environment). All rows are also in `results_final/HEADLINE_NUMBERS.md`
-sections L-P.
+`src/review_surrogate_batch.py` (femwell environment), `src/review_feasibility.py`. All rows are also in `results_final/HEADLINE_NUMBERS.md`
+sections L-V.
 
 ## 1. Correlated noise, calibration offset, temperature
 
@@ -90,5 +90,95 @@ Data: `results_review/data/surrogate_check_design.json`, `results_review/cache/s
   3.366.
 - Two-width set: std 0.4034 deg (95% bootstrap 0.3781-0.4273), 1.037 x CRB 0.3891; mean 0.02463 +- 0.01804; 500 ok.
 - Best set: std 0.2067 deg (0.1859-0.2253), 1.487 x CRB 0.139; 14 fits at the box edge, 0 failed.
-- Reading: the two-width bound holds with an independent forward model; the best set does not reach its bound when
-  the model is off by about one noise sigma in one rib, consistent with its derivative sensitivity.
+- Reading: the two-width bound holds with an independent forward model; the best set does not reach its bound. Section
+  11 shows that the 300 nm rib data alone do not explain that gap.
+
+## 7. Realistic local variation (one copy of each structure)
+
+Data: `results_review/data/feasibility.json` (key `variation`). Script: `src/review_feasibility.py`. Literature inputs: `results_final/data/citations.json`, `results_review/data/practical_context.json`.
+
+Sources: width within-chip control better than 0.6 nm (Selvaraja et al., abstract); per-die std of width and thickness 1.26 and 0.30 nm and local maxima 3 and 0.5 nm between devices less than a few hundred microns apart (Xing et al., full text). These describe copies of one design. No verified measurement of a local sidewall-angle spread was found: **all angle levels are ASSUMED**; width levels below 0.6 nm and thickness 0.1 nm are ASSUMED.
+
+Two-width set, ring and MZI, shared-parameter bound 0.3891 deg. CRLB (deg):
+
+| width (nm) | t 0.1: angle 0.1 | 0.3 | 0.5 | 1 | t 0.3: angle 0.1 | 0.3 | 0.5 | 1 |
+|---|---|---|---|---|---|---|---|---|
+| 0.1 | 3.067 | 4.333 | 4.958 | 5.421 | 5.16 | 5.624 | 6.079 | 6.636 |
+| 0.3 | 3.419 | 4.419 | 4.98 | 5.423 | 5.249 | 5.673 | 6.1 | 6.639 |
+| 0.6 | 4.081 | 4.634 | 5.042 | 5.429 | 5.491 | 5.812 | 6.163 | 6.648 |
+| 1 | 4.687 | 4.915 | 5.146 | 5.441 | 5.851 | 6.042 | 6.279 | 6.668 |
+
+Best set of 8, ring and MZI, shared-parameter bound 0.139 deg. CRLB (deg):
+
+| width (nm) | t 0.1: angle 0.1 | 0.3 | 0.5 | 1 | t 0.3: angle 0.1 | 0.3 | 0.5 | 1 |
+|---|---|---|---|---|---|---|---|---|
+| 0.1 | 2.23 | 2.832 | 3.407 | 4.318 | 4.282 | 4.524 | 4.843 | 5.593 |
+| 0.3 | 2.468 | 2.953 | 3.467 | 4.331 | 4.371 | 4.586 | 4.882 | 5.607 |
+| 0.6 | 2.967 | 3.261 | 3.637 | 4.37 | 4.598 | 4.755 | 4.997 | 5.653 |
+| 1 | 3.544 | 3.69 | 3.914 | 4.448 | 4.932 | 5.034 | 5.209 | 5.748 |
+
+## 8. Replication: N copies of each structure, fitted jointly
+
+Data: `results_review/data/feasibility.json` (key `replication`).
+
+Shared process parameters, Gaussian offsets independent between copies. N for 1.5x and 2x refers to the shared-parameter bound of one copy.
+
+Two-width set, ring and MZI (rings only in parentheses):
+
+| width nm, angle deg, thickness nm | N=1 | 4 | 16 | 64 | 256 | N for 1.5x | N for 2x |
+|---|---|---|---|---|---|---|---|
+| 0.1, 0.1, 0.1 | 3.067 | 1.556 | 0.7911 | 0.4086 | 0.2177 | 31 (30) | 17 (17) |
+| 0.3, 0.3, 0.1 | 4.419 | 2.215 | 1.113 | 0.5659 | 0.2978 | 61 (59) | 34 (33) |
+| 0.6, 0.5, 0.3 | 6.163 | 3.119 | 1.581 | 0.8001 | 0.409 | 123 (120) | 68 (67) |
+| 1, 1, 0.3 | 6.668 | 3.404 | 1.745 | 0.8864 | 0.4499 | 151 (147) | 84 (82) |
+
+Best set of 8, ring and MZI (rings only in parentheses):
+
+| width nm, angle deg, thickness nm | N=1 | 4 | 16 | 64 | 256 | N for 1.5x | N for 2x |
+|---|---|---|---|---|---|---|---|
+| 0.1, 0.1, 0.1 | 2.23 | 1.116 | 0.559 | 0.2799 | 0.1401 | 116 (62) | 65 (35) |
+| 0.3, 0.3, 0.1 | 2.953 | 1.485 | 0.752 | 0.3816 | 0.1924 | 218 (116) | 122 (65) |
+| 0.6, 0.5, 0.3 | 4.997 | 2.528 | 1.285 | 0.6652 | 0.346 | 730 (384) | 404 (211) |
+| 1, 1, 0.3 | 5.748 | 2.918 | 1.482 | 0.7663 | 0.4004 | 995 (522) | 550 (286) |
+
+A part of each offset common to all copies of a design does not average. Two-width set, ring and MZI, offsets 0.3 nm, 0.3 deg, 0.1 nm: per-design fraction, bound at N = 256, limit as N grows:
+
+- 0.01: 0.299, 0.02536.
+- 0.03: 0.3079, 0.06685.
+- 0.1: 0.3662, 0.1758.
+- 0.3: 0.5963, 0.4926.
+
+## 9. Layout (linear gradient, ring pitch 50 um ASSUMED)
+
+Data: `results_review/data/feasibility.json` (key `layout`).
+
+Two-width set, offsets 0.3 nm, 0.3 deg, 0.1 nm, N = 16: angle bias per nm/mm of thickness gradient and bound with the gradients fitted:
+
+- blocked: 2.337 deg; 1.205 deg.
+- interleaved: 0.5842 deg; 1.114 deg.
+- mirrored: 0 deg; 1.113 deg.
+
+## 10. Common wavelength offset
+
+Data: `results_review/data/feasibility.json` (key `calibration`).
+
+- Two-width set, ring and MZI: no offset 0.3891; unknown offset 1.0697; differential formulation 1.0697. Rings only: 0.39325; 1.0846; 1.0846.
+- The differential formulation equals the unknown-offset bound: differencing removes the same information.
+- Absolute reference, ring and MZI: 0.1 pm 0.3891; 1 pm 0.38911; 5 pm 0.38914; 10 pm 0.38924; 20 pm 0.38963; 50 pm 0.39239; 100 pm 0.40198; 200 pm 0.43695; 500 pm 0.59644.
+- Reference std at which the bound is 1.1x, 1.5x, 2x: 178.6 pm, 476.7 pm, 902 pm.
+- Independent reference error per structure: 0.1 pm 0.3892; 1 pm 0.3963; 5 pm 0.4411.
+
+## 11. Which structure causes the femwell gap of the best set
+
+Data: `results_review/data/feasibility_ablation.json`.
+
+500 fits per variant, same noise draws as section 6; intervals are 95% bootstrap.
+
+| data | best set std (deg) | std/CRB | two-width std (deg) | std/CRB |
+|---|---|---|---|---|
+| femwell, all structures | 0.2067 [0.1859-0.2253] | 1.487 | 0.4034 | 1.037 |
+| surrogate for the 300 nm rib | 0.1988 [0.1785-0.218] | 1.43 | 0.4023 | 1.034 |
+| femwell for the 300 nm rib only | 0.1664 [0.1453-0.1857] | 1.197 | 0.4034 | 1.037 |
+| surrogate, all structures | 0.1689 [0.1469-0.1886] | 1.215 | 0.4022 | 1.034 |
+
+Reading: the 300 nm rib data do not explain the gap. Part of it is present with surrogate data everywhere (perturbed truths), the rest needs femwell data for the other structures. The test does not cover the effect of the 300 nm rib derivatives on the bound itself.

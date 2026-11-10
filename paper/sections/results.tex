@@ -111,8 +111,9 @@ of eight (TE strips of 400, 550 and \qty{600}{nm}, a TM strip of \qty{400}{nm}, 
 (\qtyrange{0.101}{0.147}{\degree} over steps). This set is more sensitive to derivative accuracy than the two-width
 set. With fixed-mesh derivatives for the \qty{300}{nm} rib its bound becomes \qty{0.118}{\degree}
 (\qty{-15.3}{\percent}), the fixed-mesh and remeshed derivatives differing by at most \qty{0.78}{\percent}, and random
-$\pm\qty{0.3}{\percent}$ errors spread it between \qty{0.109}{\degree} and \qty{0.189}{\degree}. We therefore quote
-\qtyrange{0.12}{0.14}{\degree} for it, with a derivative-accuracy uncertainty of about \qty{15}{\percent}.
+$\pm\qty{0.3}{\percent}$ errors spread it between \qty{0.109}{\degree} and \qty{0.189}{\degree}. Its CRLB therefore carries a
+derivative-accuracy uncertainty of about \qty{15}{\percent}, and on data from direct femwell solves its fits spread by \qty{0.2067}{\degree}, above
+the bound (Section~\ref{sec:surrcheck}). We treat it as a numerical optimum and keep the two-width set as the result of this paper.
 
 A greedy search that adds one structure at a time reached the exhaustive optimum in 25 of the 32 stage, prior and slab
 cases we compared and fell short in 7, with a bound up to a factor of 1.12 larger. At the best-case \qty{0.1}{pm}
@@ -189,9 +190,21 @@ $\rho=0.9$ they give \qty{0.2996}{\degree} and \qty{0.0795}{\degree}. Treating t
 conservative.
 
 A wavelength-calibration offset common to all rings matters for the two-width set. Left unknown, it raises the
-two-width bound to \qty{1.070}{\degree}; known to \qty{10}{pm}, it gives \qty{0.3892}{\degree}, the baseline. The best
-set barely notices the offset (\qty{0.1393}{\degree} unknown). The two-width set therefore needs an absolute
-wavelength reference good to about \qty{10}{pm}.
+two-width bound to \qty{1.070}{\degree}, against \qty{0.1393}{\degree} for the best set, which barely notices it. A
+differential formulation does not recover the loss. With the resonances replaced by their differences from one
+reference structure and $\ngr$ taken from the free spectral range, which an offset does not change, the two-width bound
+is \qty{1.070}{\degree} (\qty{1.085}{\degree} for rings alone), identical to the unknown-offset value, because
+differencing removes exactly the information that an unknown offset removes. An absolute reference does recover it. For a
+common reference error of \qty{0.1}{pm}, \qty{1}{pm} or \qty{5}{pm} the two-width bound stays at \qty{0.3891}{\degree}
+(rings alone, 0.3932, 0.3932 and \qty{0.3933}{\degree}). It rises by \qty{10}{\percent} only at a reference error of
+\qty{179}{pm} and doubles at \qty{902}{pm}. These requirements are loose compared with a gas-cell reference: the line centres of
+the NIST H$^{13}$C$^{14}$N cell SRM~2519a are certified to expanded uncertainties ($k=2$) of \qtyrange{0.04}{0.24}{pm},
+and NIST describes procedures for calibration uncertainties below \qty{3}{pm} and from 3 to
+\qty{30}{pm}~\cite{nist2519a}. A cell fixes the laser at its lines; it does not remove the shift of the rings themselves
+with chip temperature, which the temperature results below address. If the reference error is instead independent for each structure,
+as for rings read in separate uncalibrated sweeps, the two-width bound is \qty{0.3892}{\degree}, \qty{0.3963}{\degree} and
+\qty{0.4411}{\degree} at 0.1, 1 and \qty{5}{pm}, and the best set gives \qty{0.1400}{\degree},
+\qty{0.2120}{\degree} and \qty{0.4590}{\degree}.
 
 Temperature as a shared unknown changes little. With a prior of \qty{1}{K} the two-width bound is
 \qty{0.3917}{\degree}, and with no prior \qty{0.4122}{\degree}; the best set stays at \qty{0.1390}{\degree}. An
@@ -245,6 +258,72 @@ the best set.}
 \label{fig:variation}
 \end{figure*}
 
+\input{sections/tab_local}
+\input{sections/tab_replication}
+
+\subsection{Realistic local variation and replication}
+\label{sec:replication}
+
+The spreads that double the bound are far below reported process control. Selvaraja \textit{et~al.}\ reported
+linewidth control better than \qty{0.6}{nm} within a chip~\cite{selvaraja2010}. Xing \textit{et~al.}\ extracted width and thickness
+standard deviations of \qty{1.26}{nm} and \qty{0.30}{nm} over 44 nominally identical sites of a die, and local variations
+of up to \qty{3}{nm} and \qty{0.5}{nm} between devices less than a few hundred microns apart~\cite{xing2018}. These values describe
+copies of one design, and the local values are maxima rather than standard deviations. None describes adjacent waveguides of
+different widths. We found no measured local spread of the sidewall angle, so the angle levels below are assumed.
+Table~\ref{tab:local} gives the bound for width spreads of 0.1 to \qty{1}{nm}, angle spreads of 0.1 to \qty{1}{\degree} and
+thickness spreads of 0.1 and \qty{0.3}{nm}. One copy of the two-width set gives between \qty{3.07}{\degree} and
+\qty{6.67}{\degree}, and one copy of the best set between \qty{2.23}{\degree} and \qty{5.75}{\degree}. The readout no longer
+matters at these levels, since rings alone give the same bounds to three digits. The tenfold difference
+between the doubling spreads of the two sets does not carry over to these levels either: at \qty{0.3}{nm},
+\qty{0.3}{\degree} and \qty{0.1}{nm} the best set gives \qty{2.95}{\degree} and the two-width set \qty{4.42}{\degree}.
+
+Local offsets that differ between copies of a structure can be averaged. Suppose each structure is repeated $N$ times and all copies are
+fitted jointly, with shared process parameters and independent offsets $\mathbf{r}_{ij}$ of covariance $\mathbf{R}$. The copies of
+structure $i$ then enter only through their mean, whose covariance is
+$(\mathbf{S}_i+\mathbf{D}_i\mathbf{R}\mathbf{D}_i^{\mathsf T})/N$, where $\mathbf{S}_i$ is the readout noise and $\mathbf{D}_i$ holds the
+sensitivities to the structure's own width, thickness and angle. We confirmed this form against the Fisher matrix with every offset an
+explicit unknown. Table~\ref{tab:replication} and Fig.~\ref{fig:replication} give the result. For the two-width set the bound falls from
+\qty{4.42}{\degree} at $N=1$ to \qty{0.566}{\degree} at $N=64$ for spreads of \qty{0.3}{nm}, \qty{0.3}{\degree} and
+\qty{0.1}{nm}. Returning to twice the shared-parameter bound of one copy (\qty{0.778}{\degree}) takes $N=34$, and to 1.5 times
+(\qty{0.584}{\degree}) takes $N=61$. The requirements span $N=17$ at the smallest spreads to $N=84$ at the largest for twice the bound. The rule is
+$N\approx(\sigma_1/k\sigma_0)^2$, where $\sigma_1$ is the bound of one copy with variation, $\sigma_0$ the shared-parameter bound and
+$k$ the factor allowed. The same replication also lowers the shared-parameter bound, to \qty{0.0994}{\degree} at $N=16$, so the replicated bound
+remains roughly ten times above the noise limit of the same array. Relative to its own, lower shared-parameter bound the best set needs
+more copies, $N=122$ for twice \qty{0.139}{\degree} at the same spreads, although its absolute bound at equal $N$ is lower. Fig.~\ref{fig:replication}
+shows how close the two sets are at large $N$.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics{fig8_replication}
+\caption{Strip-angle CRLB versus the number of copies $N$ of each structure for (a)~the two-width set and (b)~the best set of eight, for four levels
+of independent local offsets, stage~D, realistic priors, \qty{1}{pm}, ring and MZI. Crosses: shared-parameter bound at the same $N$. Horizontal lines:
+shared-parameter bound of one copy (solid) and 1.5 times (dashed) and 2 times (dotted) that bound. The best set's values are Cram\'er--Rao bounds and rest on
+derivative accuracy (Section~\ref{sec:surrcheck}).}
+\label{fig:replication}
+\end{figure*}
+
+Replication averages only the part of an offset that differs between copies. An offset common to all copies of one design, such as an etch bias that
+depends on the drawn width, stays. If that part is a tenth of the local spread (\qty{0.03}{nm}, \qty{0.03}{\degree}, \qty{0.01}{nm}, at the spreads above) the two-width
+bound tends to \qty{0.176}{\degree} as $N$ grows, and is \qty{0.366}{\degree} at $N=256$. At three tenths it tends to \qty{0.493}{\degree}, and at the
+spreads of \qty{0.6}{nm}, \qty{0.5}{\degree} and \qty{0.3}{nm} it tends to \qty{1.349}{\degree}, so that no number of copies reaches twice the shared
+bound. The tolerances of Section~\ref{sec:variation} therefore still apply to per-design differences. Replication relaxes them only for the random part.
+
+\subsection{Placement on the chip}
+\label{sec:layout}
+
+Larger arrays also span process gradients. In the joint fit a linear gradient acts through the mean position of each design, so placement sets its effect.
+We modeled three placements in a rectangular array of $n\sqrt{N}$ columns and $\sqrt{N}$ rows at an assumed \qty{50}{\micro m} pitch, with $n$ the number
+of designs and the gradient along the columns: blocked (all copies of a design together), interleaved (one of each design repeated) and mirrored
+(interleaved cells in alternating order). For the two-width set at $N=16$, with spreads of \qty{0.3}{nm}, \qty{0.3}{\degree} and \qty{0.1}{nm}, the angle bias is
+\qty{2.337}{\degree} per nm/mm of thickness gradient when blocked, \qty{0.584}{\degree} when interleaved and zero when mirrored; per nm/mm of width gradient the values
+are \qty{-0.31}{\degree}, \qty{-0.077}{\degree} and zero. For the blocked array the bias grows with $N$ (\qty{4.712}{\degree} at $N=64$), because the design centroids move
+apart, while for the interleaved array it does not (\qty{0.589}{\degree}). Fitting the gradient instead raises the bound by little for the interleaved
+and mirrored arrays (\qty{1.114}{\degree} and \qty{1.113}{\degree}, against \qty{1.113}{\degree} without a gradient) and more for the blocked array (\qty{1.205}{\degree}). The best set
+behaves in the same way, with a blocked thickness bias of \qty{-6.49}{\degree} and an interleaved one of \qty{-1.623}{\degree}. Xing \textit{et~al.}\ report a width trend below
+\qty{1}{nm} across a die and location-dependent thickness differences of \qty{0.4}{nm} and \qty{1.5}{nm} on two dies~\cite{xing2018}, without giving a die size, so we
+quote the gain per unit gradient. The model covers linear gradients only. It does not include curvature, short-range correlation or differences in
+local pattern density, and mirrored placement cancels the first order only.
+
 \subsection{Resonance prediction}
 \label{sec:prediction}
 
@@ -260,6 +339,8 @@ gradient of the device's $\neff$ and $\mathbf{C}$ is the inverse Fisher matrix. 
 \qty{500}{nm} is predicted to \qty{0.457}{pm} and a rib ring of \qty{500}{nm} on the \qty{50}{nm} slab to
 \qty{0.773}{pm}. The angle uncertainty alone would give hundreds of picometres, but it is correlated with the width and
 thickness uncertainties, and the combination that sets the resonance is well determined. With an unknown calibration
-offset the prediction degrades to \qty{982.2}{pm}, because the two-width set cannot separate the offset from the
-process parameters. For the best set the two devices are predicted to \qty{0.559}{pm} and, for the rib on its
+offset the predicted true wavelength degrades to \qty{982.2}{pm}, because the two-width set cannot separate the offset
+from the process parameters. An absolute reference passes its own error to the prediction: the strip ring is predicted to
+\qty{1.099}{pm} with a \qty{1}{pm} reference and to \qty{10.01}{pm} with a \qty{10}{pm} reference. What the same instrument will read
+for another device does not depend on the offset, and stays at \qty{0.458}{pm} when the offset is unknown. For the best set the two devices are predicted to \qty{0.559}{pm} and, for the rib on its
 \qty{90}{nm} slab, \qty{0.521}{pm}; with the offset unknown the strip ring is predicted to \qty{39.68}{pm}.

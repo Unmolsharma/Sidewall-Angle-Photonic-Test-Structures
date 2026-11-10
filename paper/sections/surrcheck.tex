@@ -18,8 +18,16 @@ The two-width set does not pass these errors on to the angle. Its fitted angles 
 \qty{0.02463 \pm 0.01804}{\degree}, and all 500 fits converge inside the box. The best set of eight does not reach its
 bound on femwell data. Its spread is \qty{0.2067}{\degree} (\qtyrange{0.1859}{0.2253}{\degree}), 1.487 times the
 CRLB of \qty{0.139}{\degree}, and 14 fits end at the box edge, even though the surrogate errors on its
-\qty{300}{nm} rib are the smaller of the two. Its bound rests on small differences between four rib widths, and model
-errors of about one noise standard deviation in one of them are enough to widen the estimate. The derivative checks
-of Section~\ref{sec:multi} and the variation analysis of Section~\ref{sec:variation} show the same sensitivity. We
-take \qty{0.39}{\degree} for the two-width set as the result that holds with an independent forward model, and the
-\qty{0.139}{\degree} of the best set as the bound of a model accurate to better than the noise.
+\qty{300}{nm} rib are the smaller of the two.
+
+To locate this gap we repeated the 500 fits with the same noise draws and the data of some structures taken from the surrogate.
+Replacing only the \qty{300}{nm} rib with surrogate data leaves the spread at \qty{0.1988}{\degree}
+(\qtyrange{0.1785}{0.218}{\degree}), and keeping femwell data for that rib alone gives \qty{0.1664}{\degree}, no more than the
+\qty{0.1689}{\degree} obtained with surrogate data everywhere. The data error of the \qty{300}{nm} rib therefore does not explain the gap, and for the two-width set
+the much larger error of its \qty{300}{nm} rib has no effect either (\qty{0.4023}{\degree} against \qty{0.4034}{\degree}). Two other contributions remain. With surrogate data
+everywhere the spread is already 1.215 times the CRLB at these perturbed truths, against 0.952 times at the nominal point, so part of the gap appears without any
+model error, away from the nominal parameters. The rest, from \qty{0.1689}{\degree} to \qty{0.2067}{\degree}, requires femwell data for the other structures, among which
+the 400 to \qty{600}{nm} ribs have the largest surrogate errors, 0.329 to $0.613\,\sigma_\phi$ RMS. With 500 fits these intervals overlap, so the split between the two is approximate.
+This test does not address the effect of the \qty{300}{nm} rib derivatives on the bound itself, which moves by \qty{-15.3}{\percent} with fixed-mesh
+derivatives (Section~\ref{sec:multi}). We take \qty{0.39}{\degree} for the two-width set as the result that holds with an independent forward model, and
+report the best set as a CRLB of \qty{0.139}{\degree} shown beside its \qty{0.2067}{\degree} spread on femwell data.

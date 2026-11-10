@@ -19,8 +19,9 @@ only relative~\cite{xing2018}. In this paper we show that, for oxide-clad strips
 structures. To first order the angle cannot be separated from the width for any number of strips, widths,
 polarizations or readouts. We then work out which additional structures make the angle identifiable, how much prior
 process knowledge they need, and what precision they reach under a measurement model built from published ring
-metrology~\cite{janz2023}. We also find out how far the result depends on the assumption, common to all multi-device
-extraction, that the structures share one set of process parameters.
+metrology~\cite{janz2023}. We then ask what the practical limit is. The result depends on the assumption, common to all multi-device
+extraction, that the structures share one set of process parameters, and most of the paper's practical conclusions concern what
+happens when they do not.
 
 This is a computational study of test-structure design and identifiability. Every number comes from full-vector
 finite-element mode solutions, Fisher information or nonlinear fits of simulated data, and no device was fabricated.
@@ -83,10 +84,15 @@ sidewall angle, with the angle/width ratio $R=(y_c-y_\mathrm{pivot})/(h/2)$ set 
 wall-perturbation weight.
 \item We give a counting argument, confirmed by the Fisher matrix and by nonlinear fits, that one rib from a separate
 etch leaves the strip angle unidentifiable, and that a known etch depth does not change this.
-\item We find that two widths of the same rib restore identifiability. An exhaustive search shows that a ring-only set
-of five strips and two ribs bounds the strip angle at \qty{0.393}{\degree} at a \qty{1}{pm} precision, and we test this
-bound against correlated noise, calibration offsets, temperature and the readout. Nonlinear fits of data from
-direct femwell solves reach 1.037 times the bound of the two-width set.
-\item We quantify the shared-parameter assumption. Departures of a few hundredths of a nanometre or degree between
-structures double the bound, which turns co-location into a design requirement for any angle test structure.
+\item We find that two widths of the same rib restore identifiability. A ring-only set of five strips and two ribs
+bounds the strip angle at \qty{0.393}{\degree} at a \qty{1}{pm} precision, and we test this bound against correlated
+noise, calibration offsets, temperature and the readout. Nonlinear fits of data from direct femwell solves reach 1.037
+times the bound.
+\item We show that fabrication consistency, not readout precision, is the practical limit. Departures of a few
+hundredths of a nanometre or degree between structures double the bound. At reported levels of local variation one copy of the
+set gives several degrees, and we give the replication rule that recovers the bound, the layouts that keep process
+gradients out of the fit, and the wavelength reference it needs.
 \end{itemize}
+
+An exhaustive search also finds larger sets with lower Cram\'er--Rao bounds. We report the best set of eight as a bound, beside its
+result on femwell data, and do not build the proposal on it.

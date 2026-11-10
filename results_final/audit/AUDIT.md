@@ -5,7 +5,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 
 ## Strict targets (goal: 0 untraced)
 
-### results_final/HEADLINE_NUMBERS.md: 562 numbers, 562 traced, **0 untraced** (chance-match rate 5%)
+### results_final/HEADLINE_NUMBERS.md: 3123 numbers, 3123 traced, **0 untraced** (chance-match rate 33%)
 
 ### results_final/CLAIMS.md: 39 numbers, 39 traced, **0 untraced** (chance-match rate 13%)
 
@@ -17,7 +17,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `results_femwell/SUMMARY.md`: 334 numbers, 60 untraced (chance-match rate 20%).
 - `results_montecarlo/SUMMARY.md`: 311 numbers, 1 untraced (chance-match rate 22%).
 - `results_priors_search/SUMMARY.md`: 271 numbers, 3 untraced (chance-match rate 28%).
-- `results_review/SUMMARY.md`: 119 numbers, 0 untraced (chance-match rate 7%).
+- `results_review/SUMMARY.md`: 342 numbers, 0 untraced (chance-match rate 26%).
 
 ## Citations (DOI / arXiv identifiers found in results*/*.md and src/*.py)
 
@@ -55,7 +55,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 | 10.1364/OE.577064 | UNVERIFIED | src/literature_verify.py |  |
 | 10.1364/OL.31.002972 | UNVERIFIED | src/literature_verify.py |  |
 | 10.1364/OL.37.004236 | UNVERIFIED | src/literature_verify.py |  |
-| 10.1364/PRJ.6.001008 | VERIFIED | results_final/CITATIONS.md, src/citations_extract.py, src/literature_verify.py | xing2018: VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007) |
+| 10.1364/PRJ.6.001008 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, src/citations_extract.py | xing2018: VERIFIED (full text read, all 13 pages; page numbers are PDF pages, journal page = PDF page + 1007) |
 | 10.1364/oe.18.023598 | UNVERIFIED | results_final/HEADLINE_NUMBERS.md |  |
 | 10.1515/nanoph-2013-0013 | UNVERIFIED | src/literature_verify.py |  |
 | 10.21105/joss.02369 | UNVERIFIED | src/literature_verify.py |  |
@@ -66,6 +66,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 | 10.48550/arXiv.2306.15643 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, results_montecarlo/HEADLINE_NUMBERS.md | janz2023: VERIFIED (full text read) |
 | 10.48550/arXiv.physics/0606168 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, src/citations_extract.py | frey2006: VERIFIED (full text read; page numbers are PDF pages) |
 | 10.5772/intechopen.1011647 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, src/citations_extract.py | jiao_pikus2025: VERIFIED (HTML page read by a fetch agent, Section 2.3 quoted verbatim); values are the authors' own EIM |
+| 10.6028/NIST.SP.260-137 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, src/citations_extract.py | nist2519a: VERIFIED (NIST certificate and SP 260-137 read; page numbers are certificate pages) |
 | arXiv:0805.0091 | VERIFIED | results_etchdepth_femwell/SUMMARY.md, results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md | leviton2008: VERIFIED (full text read; page numbers are PDF pages) |
 | arXiv:2204.03591 | UNVERIFIED | src/literature_verify.py |  |
 | arXiv:2306.15643 | VERIFIED | results_final/CITATIONS.md, results_final/HEADLINE_NUMBERS.md, results_montecarlo/HEADLINE_NUMBERS.md | janz2023: VERIFIED (full text read) |
@@ -97,12 +98,20 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `results_final/HEADLINE_NUMBERS.md`: | 32 | Resonance accuracy after post-fabrication trimming (± pm) | CITED | Hasitha Jayatilleka et al., "Post-Fabrication Trimming of Silicon Photonic 
 - `results_final/HEADLINE_NUMBERS.md`: | 0.6 | Linewidth control within chip (nm) | CITED | Shankar Kumar Selvaraja et al., "Subnanometer Linewidth Uniformity in Silicon Nanophotonic Wavegu
 - `results_final/HEADLINE_NUMBERS.md`: | 2 | Linewidth control chip-to-chip (nm) | CITED | Shankar Kumar Selvaraja et al., "Subnanometer Linewidth Uniformity in Silicon Nanophotonic Wavegui
+- `results_final/HEADLINE_NUMBERS.md`: | 0.04 - 0.24 | Certified line-centre uncertainty of the NIST H13C14N gas cell SRM 2519a, expanded, k = 2 (pm) | CITED | Sarah L. Gilbert et al., "Hyd
+- `results_final/HEADLINE_NUMBERS.md`: | 3 to 30 | Calibration uncertainty range (pm) of the suggested moderate-accuracy procedure | CITED | Sarah L. Gilbert et al., "Hydrogen cyanide H13C1
+- `results_final/HEADLINE_NUMBERS.md`: | < 3 | Calibration uncertainty (pm) of the suggested high-accuracy procedure | CITED | Sarah L. Gilbert et al., "Hydrogen cyanide H13C14N absorption 
+- `results_final/HEADLINE_NUMBERS.md`: | 1.26, 0.30 | Per-die std of extracted width and thickness over 44 nominally identical sites, die (0,0) (nm) | CITED | Yufei Xing et al., "Accurate e
+- `results_final/HEADLINE_NUMBERS.md`: | 3, 0.5 | Largest local variation of width and thickness between nearby devices (maxima, not stds) (nm) | CITED | Yufei Xing et al., "Accurate extrac
+- `results_final/HEADLINE_NUMBERS.md`: | a few hundred microns | Separation below which Xing et al. call a variation local | CITED | Yufei Xing et al., "Accurate extraction of fabricated ge
+- `results_final/HEADLINE_NUMBERS.md`: | 0.4, 1.5 | Largest location-dependent thickness difference on the two dies (nm) | CITED | Yufei Xing et al., "Accurate extraction of fabricated geom
 - `results_montecarlo/HEADLINE_NUMBERS.md`: then demand about 1 mK temperature stability (Janz et al. quote ~80 pm/K) and derivatives accurate far
 - `results_montecarlo/SUMMARY.md`: - One verified source: Janz et al., arXiv:2306.15643, with 0.1 pm (laser repeatability) and 1 pm
 - `results_priors_search/SUMMARY.md`: | n_Si | 1e-3, 1e-4 | 1e-4 | **sourced for bulk crystalline Si:** absolute index uncertainty 8.67e-5 at 1.5 µm, 295 K (Frey, Leviton, Madison, Proc. S
 - `results_review/SUMMARY.md`: - Published scale (verified abstracts): Zortman et al. 105 GHz within a die = 841.5 pm at 1550 nm, 1 THz across a
 - `results_review/SUMMARY.md`: wafer = 8.014 nm; Jayatilleka et al. trimming to +-32 pm; Selvaraja et al. linewidth control 0.6 nm within chip,
 - `results_review/SUMMARY.md`: and not cited: the arXiv version of Klein et al. and an electrical sidewall-angle inference preprint (arXiv lookups
+- `results_review/SUMMARY.md`: Sources: width within-chip control better than 0.6 nm (Selvaraja et al., abstract); per-die std of width and thickness 1.26 and 0.30 nm and local maxi
 - `src/anisotropic_averaging.py`: What this module does (Farjadpour et al., Opt. Lett. 31, 2972 (2006);
 - `src/anisotropic_averaging.py`: Kottke et al., PRE 77, 036611 (2008); the Meep scheme):
 - `src/citations_extract.py`: venue='arXiv:physics/0606168 (to be published in Proc. SPIE 6273, per the arXiv comments)',
@@ -116,6 +125,7 @@ TRACED = a value in the files cited on that row (or in its section) rounds to th
 - `src/etchdepth_femwell_analysis.py`: DNDT_SI = 1.86e-4   # 1.87e-4 (1.5 um), 1.78e-4 (2.0 um): Frey, Leviton, Madison, Proc. SPIE 6273, 62732J (2006), Table 4
 - `src/make_headline_numbers.py`: f"{c['authors'].split(',')[0]} et al., \"{c['title']}\", {c['venue']}, DOI {c['doi']}, {where}: “{q['text']}” "
 - `src/make_headline_numbers.py`: f"{r['authors'][0]} et al., \"{r['title']}\", {r['venue']}, DOI {r['doi']}, abstract: “{pc['quote']}”{unit_note} "
+- `src/make_headline_numbers.py`: cited(sec, 'a few hundred microns', 'Separation below which Xing et al. call a variation local', 'xing2018', idx_of('definition of local variatio'))
 - `src/make_literature.py`: a = ', '.join(au[:6]) + (' et al.' if len(au) > 6 else '')
 - `src/make_literature.py`: L += ['', 'All five extract width, thickness (and, in Butt et al., material indices) from rings or interferometers and hold the '
 - `src/noise_sourced.py`: with lambda = 1.55 um, L = 100 um (the length already used for the MZI; also the ring length in Janz et al.)

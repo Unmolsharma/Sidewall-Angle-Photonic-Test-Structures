@@ -1,14 +1,14 @@
 {
  "counts": {
-  "COMPUTED": 338,
+  "COMPUTED": 1705,
   "DERIVED": 15,
-  "CITED": 14,
-  "ASSUMED": 15
+  "CITED": 21,
+  "ASSUMED": 27
  },
- "n_rows": 382,
+ "n_rows": 1768,
  "commits": {
   "results_final/data/assumption_sensitivity.json": "6fc942a",
-  "results_final/data/citations.json": "e67a823",
+  "results_final/data/citations.json": "04b1de5",
   "results_final/data/crosschecks.json": "6fc942a",
   "results_final/data/environment.json": "36304e6",
   "results_final/data/headline_derived.json": "6fc942a",
@@ -23,6 +23,8 @@
   "results_montecarlo/noise_sourced/data/noise_sourced.json": "14404c1",
   "results_montecarlo/robustness/data/robustness_1pm.json": "897ce21",
   "results_montecarlo/sym_search/data/step_check_all.csv": "897ce21",
+  "results_review/data/feasibility.json": "04b1de5",
+  "results_review/data/feasibility_ablation.json": "04b1de5",
   "results_review/data/literature_records.json": "5293d6d",
   "results_review/data/practical_context.json": "ac6de79",
   "results_review/data/review_analyses.json": "ac6de79",
