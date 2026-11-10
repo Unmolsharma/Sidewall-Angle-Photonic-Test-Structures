@@ -45,6 +45,7 @@ F = dict(
     srv=('results_review/data/surrogate_check.json', 'src/review_surrogate_check.py analyze'),
     fs=('results_review/data/feasibility.json', 'src/review_feasibility.py'),
     fa=('results_review/data/feasibility_ablation.json', 'src/review_feasibility.py ablation'),
+    sy=('results_review/data/systematic.json', 'src/review_systematic.py'),
 )
 _cache = {}
 
@@ -568,9 +569,69 @@ def feasibility_rows():
             ROWS.append((sec, fmt(d[k], 4), f'scenario {s}: per-structure std of {u}', 'ASSUMED', f"{status} (`{F['fs'][0]}` : `scenarios.{s}.{k}`)", [F['fs'][0]]))
 
 
+MODEL_TEXT = dict(lin_all='width offset linear in drawn width, common to strips and ribs', quad_all='linear and quadratic in drawn width, common to strips and ribs',
+                  lin_strip='linear in drawn width, strips only', quad_strip='linear and quadratic in drawn width, strips only',
+                  rib_offset='constant width offset of the ribs relative to the strips', rib_offset_lin='own width offset for each rib width (constant and linear over the ribs)',
+                  separate_lin='strips linear; ribs constant and linear', per_design='free width offset for every design')
+
+
+def third_review_rows():
+    """Sections W-Y: systematic width offsets, spatially correlated replication, resonance prediction (src/review_systematic.py)."""
+    if not os.path.exists(os.path.join(REPO, F['sy'][0])):
+        return
+    Y = load('sy')
+    rlab = {'ring_mzi': 'ring and MZI', 'ring': 'rings only'}
+    sec = 'W. Systematic width offsets as fitted nuisance parameters (two-width set; x = (W - mean W)/100 nm)'
+    for ro in ('ring_mzi', 'ring'):
+        r = Y['systematic'][ro]
+        computed(sec, 'sy', f'systematic.{ro}.shared', r['shared'], f'two-width set, {rlab[ro]}: no systematic term (deg)')
+        computed(sec, 'sy', f'systematic.{ro}.centre_nm', r['centre_nm'], 'mean drawn width of the set (nm), centre of x')
+        for m, d in r['models'].items():
+            for p, x in d.items():
+                pr = 'no prior' if p == 'none' else f'prior std {p} nm per coefficient'
+                computed(sec, 'sy', f'systematic.{ro}.models.{m}.{p}', x, f'two-width set, {rlab[ro]}, {MODEL_TEXT[m]}, {pr}: CRB (deg)')
+        for m, d in r['with_random'].items():
+            for N, x in d.items():
+                if N in ('N_2', 'N_1p5'):
+                    computed(sec, 'sy', f'systematic.{ro}.with_random.{m}.{N}', x if x is not None else 'not reachable',
+                             f"two-width set, {rlab[ro]}, systematic term {m} fitted, random offsets 0.3 nm / 0.3 deg / 0.1 nm: copies needed for {'2x' if N == 'N_2' else '1.5x'} of the shared bound")
+                else:
+                    computed(sec, 'sy', f'systematic.{ro}.with_random.{m}.{N}', x,
+                             f'two-width set, {rlab[ro]}, systematic term {m} fitted, random offsets 0.3 nm / 0.3 deg / 0.1 nm, N = {N}: CRB (deg)')
+    C = Y['correlation']
+    sec = 'X. Replication with spatially correlated local offsets, rho(d) = exp(-d/L) (two-width set, ring and MZI, offsets 0.3 nm / 0.3 deg / 0.1 nm)'
+    computed(sec, 'sy', 'correlation.check_independent_N16', C['check_independent_N16'], 'check: L = 0, N = 16 (deg); equals the independent-offset value of section R')
+    for k in ('target_2', 'target_1p5'):
+        computed(sec, 'sy', f'correlation.{k}', C[k], f"{'2x' if k == 'target_2' else '1.5x'} the shared bound (deg)")
+    for key, c in C['cases'].items():
+        lab = ('one field shared by all structures' if c['mode'] == 'field' else 'correlation among copies of the same design only') + f", L = {c['L_mm']:g} mm (ASSUMED), copy spacing {c['s_mm']:g} mm"
+        for N, x in c['bound'].items():
+            computed(sec, 'sy', f'correlation.cases.{key}.bound.{N}', x, f'{lab}: CRB (deg) at N = {N}')
+        for k in ('N_2', 'N_1p5'):
+            computed(sec, 'sy', f'correlation.cases.{key}.{k}', c[k] if c[k] is not None else 'more than 256',
+                     f"{lab}: copies needed for {'2x' if k == 'N_2' else '1.5x'} the shared bound")
+    P = Y['prediction']
+    sec = 'Y. Resonance prediction under local variation (two-width set, ring and MZI, offsets 0.3 nm / 0.3 deg / 0.1 nm)'
+    for dev, r in P.items():
+        computed(sec, 'sy', f'prediction.{dev}.shared_ideal_pm', r['shared_ideal_pm'], f'{dev}: ideal case, shared parameters, no local offsets (pm)')
+        computed(sec, 'sy', f'prediction.{dev}.own_offsets_pm', r['own_offsets_pm'], f"{dev}: the new device's own local offsets alone (pm)")
+        for k, x in r['own_by_param_pm'].items():
+            computed(sec, 'sy', f'prediction.{dev}.own_by_param_pm.{k}', x, f"{dev}: own-offset part from its {k} (pm)")
+        for N, d in r['by_N'].items():
+            computed(sec, 'sy', f'prediction.{dev}.by_N.{N}.process_mean_pm', d['process_mean_pm'], f'{dev}, N = {N}: process mean at the array (pm)')
+            computed(sec, 'sy', f'prediction.{dev}.by_N.{N}.new_device_pm', d['new_device_pm'], f'{dev}, N = {N}: new device including its own offsets (pm)')
+    sec = 'Z. Literature on spatial correlation (no correlation length given; L values are ASSUMED)'
+    cited_abstract_text = load('lit')
+    for k in ('chrostowski2014', 'lu2017'):
+        r = cited_abstract_text[k]
+        ROWS.append((sec, 'qualitative', f'{k}: spatially correlated variation, no correlation length quoted', 'CITED',
+                     f"{r['authors'][0]} et al., \"{r['title']}\", {r['venue']}, DOI {r['doi']}, abstract (record in `{F['lit'][0]}` : `{k}.abstract`)", [F['lit'][0]]))
+
+
 def write():
     build()
     feasibility_rows()
+    third_review_rows()
     with open(os.path.join(REPO, DERIVED_FILE), 'w', encoding='utf-8') as f:
         json.dump(DERIVED_VALUES, f, indent=1)
     files = sorted({f for r in ROWS for f in r[5]})
