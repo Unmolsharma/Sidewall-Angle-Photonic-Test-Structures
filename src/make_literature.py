@@ -27,6 +27,10 @@ MANUAL = {
                         title='Temperature-dependent absolute refractive index measurements of synthetic fused silica',
                         venue='arXiv:0805.0091', year=2008, doi='10.48550/arXiv.0805.0091',
                         status='VERIFIED (full text read; quotes in results_final/CITATIONS.md)', topic='noise'),
+    'nist2519a': dict(type='report', authors=['Sarah L. Gilbert', 'William C. Swann', 'Chih-Ming Wang'],
+                      title='Hydrogen cyanide H13C14N absorption reference for 1530 nm to 1565 nm wavelength calibration - SRM 2519a',
+                      venue='NIST Special Publication 260-137, Gaithersburg, MD', year=2005, doi='10.6028/NIST.SP.260-137',
+                      status='VERIFIED (NIST certificate and SP 260-137 read; quotes in results_final/CITATIONS.md)', topic='noise'),
     'femwell': dict(type='software', authors=['Helge Gehring'], title='femwell: mode solver for photonic and electric waveguides based on FEM, version 0.1.12',
                     venue='https://github.com/HelgeGehring/femwell', year=None, doi=None, status='VERIFIED (installed package metadata)', topic='solver'),
     'empy': dict(type='software', authors=[], title='EMpy (ElectroMagneticPython), version 2.2.3', venue='https://github.com/lbolla/EMpy',
@@ -163,6 +167,10 @@ A = {
     'geuzaine2009': ('Gmsh, an open-source finite-element mesh generator.', 'software used', 'Methods.'),
     'femwell': ('FEM mode solver for photonic waveguides (software).', 'software used', 'Methods.'),
     'empy': ('Python electromagnetics package with a finite-difference mode solver (software).', 'software of the earlier comparison', 'Methods comparison.'),
+    'nist2519a': ('NIST standard reference gas cell for the 1530-1565 nm band: 54 H13C14N line centres certified with expanded (k = 2) '
+                  'uncertainties of 0.04-0.24 pm, with suggested calibration procedures for accuracies below 3 pm and from 3 to 30 pm.',
+                  'accuracy attainable for an absolute wavelength reference',
+                  'Sets the scale of the absolute reference that the two-width set needs; our reference sweep (0.1, 1 and 5 pm) brackets the certified lines and the two suggested procedures.'),
     'janz2023': ('Accuracy of silicon ring thermometers: resonance wavelengths located to +-0.1 pm with a calibrated laser in a stable bath; '
                  'changes of 1 pm or less routinely measured.', 'wavelength precision for the noise model', 'Source of our 1 pm and 0.1 pm levels.'),
     'frey2006': ('Absolute refractive index and dn/dT of silicon and germanium from cryogenic to room temperature.', 'n_Si, dn/dT of Si', 'Material inputs.'),

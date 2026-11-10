@@ -212,6 +212,41 @@
      "use": "reference [11], Dwivedi et al. 2015 (journal p. 1020)",
      "page": 13,
      "text": "11. S. Dwivedi, A. Ruocco, M. Vanslembrouck, T. Spuesens, P. Bienstman, P. Dumon, T. Van Vaerenbergh, and W. Bogaerts, “Experimental extraction of effective refractive index and thermo-optic coefficients of silicon-on-insulator waveguides using interferometers,” J. Lightwave Technol. 33, 4471–4477 (2015)."
+    },
+    {
+     "use": "definition of local variation: devices less than a few hundred microns apart (journal p. 1015)",
+     "page": 8,
+     "text": "On the other hand, the local variation we define here induces local disparities between devices placed close together (less than a few hundred microns apart)."
+    },
+    {
+     "use": "location-dependent thickness difference on the two dies (journal p. 1019)",
+     "page": 12,
+     "text": "dependent difference in thickness on the die (X  0, Y  0) is 0.4 nm while on the die (X  −2, Y  2) is 1.5 nm."
+    }
+   ]
+  },
+  "nist2519a": {
+   "authors": "Sarah L. Gilbert, William C. Swann, Chih-Ming Wang",
+   "title": "Hydrogen cyanide H13C14N absorption reference for 1530 nm to 1565 nm wavelength calibration - SRM 2519a",
+   "venue": "NIST Special Publication 260-137 (2005); Certificate of Analysis, SRM 2519a",
+   "doi": "10.6028/NIST.SP.260-137",
+   "url": "https://tsapps.nist.gov/srmext/certificates/archives/2519a.pdf",
+   "status": "VERIFIED (NIST certificate and SP 260-137 read; page numbers are certificate pages)",
+   "quotes": [
+    {
+     "use": "certified line-centre uncertainty and coverage factor",
+     "page": 1,
+     "text": "The center wavelengths of the lines listed in Table 1 are certified with uncertainties ranging from 0.04 pm to 0.24 pm. These uncertainties are the expanded uncertainties using a coverage factor k = 2"
+    },
+    {
+     "use": "suggested procedure, 3 pm to 30 pm",
+     "page": 4,
+     "text": "Suggested Procedure for Moderate-Accuracy Requirements – Calibration Uncertainty in the Approximate Range of 3 pm to 30 pm: If the source power varies significantly with wavelength, divide the SRM transmission spectrum by the source spectrum to obtain a normalized trace. After identifying a particular absorption line by comparing to the spectrum in Figure 1, make a high resolution scan of the line. If calibrating an instrument using a broadband source, use an instrument resolution of ≤ 0.05 nm. If using a tunable source, use a data point density of at least one point every 0.002 nm (2 pm). Find the wavelength readings on both sides of the line where the absorption is 50 % of the maximum; the line center is half way between these two wavelength readings. For higher accuracy results, repeat this procedure five times and take the average of the measurements. Calibrate the instrument to the center wavelength of this line (from Table 1) using the calibration procedure specified by the instrument manufacturer. The instrument’s linearity can be checked by repeating the procedure for a different absorption line and comparing it to the value listed in Table 1."
+    },
+    {
+     "use": "suggested procedure, below 3 pm",
+     "page": 4,
+     "text": "Suggested Procedure for High-Accuracy Requirements – Calibration Uncertainty < 3 pm: Connect a narrowband tunable light source (source bandwidth ≤ 1 pm) to one of the fiber connectors on the SRM unit. After identifying a particular absorption line by comparing to the spectrum in Figure 1, make a high resolution scan of the line. To minimize polarization-dependent transmittance changes, avoid movement of the connecting fiber patchcords during the measurement. Use a data point density of at least one point every 1 pm and divide the SRM transmission spectrum by the source spectrum to obtain a normalized trace. Using a fitting technique such as the least squares technique, fit the absorption data to a Lorentzian or Voigt lineshape. Details of a line fitting procedure and potential errors sources can be found in reference 1, which is also included as an appendix in reference 2. Calibrate the instrument to the center wavelength of this line (from Table 1) using the calibration procedure specified by the instrument manufacturer. The instrument’s linearity can be checked by repeating the procedure for a different absorption line and comparing it to the value listed in Table 1. Contact NIST if the width of line P16 differs by more than 25 % from the width shown in Figure 2, when measured using comparable resolution. A large change in linewidth could indicate cell leakage."
     }
    ]
   }

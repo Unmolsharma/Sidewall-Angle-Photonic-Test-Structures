@@ -179,6 +179,25 @@ cites = {
                  text=quote('xing2018', 12, '1. Calibrate the laser', 'stability of the laser.')),
             dict(use='reference [11], Dwivedi et al. 2015 (journal p. 1020)', page=13,
                  text=quote('xing2018', 13, '11. S. Dwivedi', '4471–4477 (2015).')),
+            dict(use='definition of local variation: devices less than a few hundred microns apart (journal p. 1015)', page=8,
+                 text=quote('xing2018', 8, 'On the other hand, the local', 'few hundred microns apart).')),
+            dict(use='location-dependent thickness difference on the two dies (journal p. 1019)', page=12,
+                 text=quote('xing2018', 12, 'dependent difference in thickness', '1.5 nm.')),
+        ]),
+    # NIST certificate fetched 2026-11-09 from the URL below; PDF pages extracted with `pdftotext -enc UTF-8 -f P -l P`
+    'nist2519a': dict(
+        authors='Sarah L. Gilbert, William C. Swann, Chih-Ming Wang',
+        title='Hydrogen cyanide H13C14N absorption reference for 1530 nm to 1565 nm wavelength calibration - SRM 2519a',
+        venue='NIST Special Publication 260-137 (2005); Certificate of Analysis, SRM 2519a', doi='10.6028/NIST.SP.260-137',
+        url='https://tsapps.nist.gov/srmext/certificates/archives/2519a.pdf',
+        status='VERIFIED (NIST certificate and SP 260-137 read; page numbers are certificate pages)',
+        quotes=[
+            dict(use='certified line-centre uncertainty and coverage factor', page=1,
+                 text=quote('nist2519a', 1, 'The center wavelengths of the lines listed', 'coverage factor k = 2')),
+            dict(use='suggested procedure, 3 pm to 30 pm', page=4,
+                 text=header('nist2519a', 4, 'Suggested Procedure for Moderate-Accuracy')),
+            dict(use='suggested procedure, below 3 pm', page=4,
+                 text=header('nist2519a', 4, 'Suggested Procedure for High-Accuracy')),
         ]),
 }
 unverified = [

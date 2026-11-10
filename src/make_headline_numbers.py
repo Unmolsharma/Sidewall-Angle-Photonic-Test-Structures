@@ -43,6 +43,8 @@ F = dict(
     pc=('results_review/data/practical_context.json', 'src/review_practical_context.py'),
     lit=('results_review/data/literature_records.json', 'src/literature_verify.py'),
     srv=('results_review/data/surrogate_check.json', 'src/review_surrogate_check.py analyze'),
+    fs=('results_review/data/feasibility.json', 'src/review_feasibility.py'),
+    fa=('results_review/data/feasibility_ablation.json', 'src/review_feasibility.py ablation'),
 )
 _cache = {}
 
@@ -460,8 +462,115 @@ def review_rows():
                     computed(sec, 'srv', f'{c}.per_unit.{u}.{k}', pu[k], f'case {c}, {u}: {m} surrogate error of n_eff, in MZI-phase noise sigmas')
 
 
+def feasibility_rows():
+    """Sections Q-V: practical-feasibility analyses (src/review_feasibility.py) and their literature inputs."""
+    if not os.path.exists(os.path.join(REPO, F['fs'][0])):
+        return
+    R = load('fs')
+    lab = {'two': 'two-width set', 'best': 'best set of 8'}
+    rlab = {'ring_mzi': 'ring and MZI', 'ring': 'rings only'}
+    sec = 'Q. Practical feasibility: bound with independent per-structure offsets of width, thickness and angle (N = 1)'
+    for n in ('two', 'best'):
+        for ro in ('ring_mzi', 'ring'):
+            v = R['variation'][n][ro]
+            base = f'variation.{n}.{ro}'
+            computed(sec, 'fs', f'{base}.shared', v['shared'], f'{lab[n]}, {rlab[ro]}: shared-parameter CRB (deg)')
+            for what, unit in (('width', 'nm'), ('angle', 'deg'), ('thickness', 'nm')):
+                for k, x in v['single'][what].items():
+                    computed(sec, 'fs', f'{base}.single.{what}.{k}', x, f'{lab[n]}, {rlab[ro]}: CRB (deg), only the {what} varies, per-structure std {k} {unit}')
+            for i, g in enumerate(v['grid']):
+                computed(sec, 'fs', f'{base}.grid[{i}].bound_deg', g['bound_deg'],
+                         f"{lab[n]}, {rlab[ro]}: CRB (deg), per-structure std: width {g['width_nm']:g} nm, angle {g['angle_deg']:g} deg, thickness {g['thickness_nm']:g} nm")
+    sec = 'R. Practical feasibility: replication, N copies of each structure fitted jointly'
+    for n in ('two', 'best'):
+        for ro in ('ring_mzi', 'ring'):
+            r = R['replication'][n][ro]
+            base = f'replication.{n}.{ro}'
+            computed(sec, 'fs', f'{base}.target_1p5', r['target_1p5'], f'{lab[n]}, {rlab[ro]}: 1.5x the shared-parameter CRB of one copy (deg)')
+            computed(sec, 'fs', f'{base}.target_2', r['target_2'], f'{lab[n]}, {rlab[ro]}: 2x the shared-parameter CRB of one copy (deg)')
+            for N, x in r['shared_same_N'].items():
+                computed(sec, 'fs', f'{base}.shared_same_N.{N}', x, f'{lab[n]}, {rlab[ro]}: shared-parameter CRB (deg) with N = {N} copies')
+            for s, d in r['scenarios'].items():
+                t = f"{s} (width {d['width_nm']:g} nm, angle {d['angle_deg']:g} deg, thickness {d['thickness_nm']:g} nm)"
+                for N, x in d['bound'].items():
+                    computed(sec, 'fs', f'{base}.scenarios.{s}.bound.{N}', x, f'{lab[n]}, {rlab[ro]}, {t}: CRB (deg) with N = {N} copies')
+                computed(sec, 'fs', f'{base}.scenarios.{s}.N_1p5', d['N_1p5'], f'{lab[n]}, {rlab[ro]}, {t}: N needed for 1.5x of the shared-parameter CRB')
+                computed(sec, 'fs', f'{base}.scenarios.{s}.N_2', d['N_2'], f'{lab[n]}, {rlab[ro]}, {t}: N needed for 2x of the shared-parameter CRB')
+                for f, p in d['per_design'].items():
+                    computed(sec, 'fs', f'{base}.scenarios.{s}.per_design.{f}.bound_N256', p['bound_N256'],
+                             f'{lab[n]}, {rlab[ro]}, {t}, per-design offset (common to all copies) of {f} of the local std: CRB (deg) at N = 256')
+                    computed(sec, 'fs', f'{base}.scenarios.{s}.per_design.{f}.floor', p['floor'],
+                             f'{lab[n]}, {rlab[ro]}, {t}, per-design offset of {f} of the local std: CRB (deg) as N grows without limit')
+                    computed(sec, 'fs', f'{base}.scenarios.{s}.per_design.{f}.N_2', p['N_2'] if p['N_2'] is not None else 'not reachable',
+                             f'{lab[n]}, {rlab[ro]}, {t}, per-design offset of {f} of the local std: N needed for 2x of the shared-parameter CRB')
+    sec = 'S. Practical feasibility: layout (linear gradient along the array, ring and MZI)'
+    computed(sec, 'fs', 'layout.pitch_mm', R['layout']['pitch_mm'], 'Ring pitch (mm), ASSUMED; used only for the layout positions')
+    for n in ('two', 'best'):
+        for sc in ('shared', 'moderate', 'high'):
+            for lay, d in R['layout'][n][sc].items():
+                for N, x in d.items():
+                    base = f'layout.{n}.{sc}.{lay}.{N}'
+                    for k, m in (('width_deg_per_nm_per_mm', 'angle bias (deg) per nm/mm of width gradient'), ('thickness_deg_per_nm_per_mm', 'angle bias (deg) per nm/mm of thickness gradient'),
+                                 ('angle_deg_per_deg_per_mm', 'angle bias (deg) per deg/mm of angle gradient'), ('bound_gradient_fitted', 'CRB (deg) with the three gradients fitted'),
+                                 ('bound_no_gradient', 'CRB (deg) without a gradient'), ('centroid_span_mm', 'largest difference between design centroids (mm)'), ('footprint_x_mm', 'array length (mm)')):
+                        computed(sec, 'fs', f'{base}.{k}', x[k], f'{lab[n]}, offsets {sc}, {lay}, N = {N}: {m}')
+    sec = 'T. Practical feasibility: common wavelength offset, differential formulation and absolute reference'
+    for n in ('two', 'best'):
+        for ro in ('ring_mzi', 'ring'):
+            c = R['calibration'][n][ro]
+            base = f'calibration.{n}.{ro}'
+            computed(sec, 'fs', f'{base}.no_offset', c['no_offset'], f'{lab[n]}, {rlab[ro]}: CRB (deg) with no offset', sig=5)
+            computed(sec, 'fs', f'{base}.offset_unknown', c['offset_unknown'], f'{lab[n]}, {rlab[ro]}: CRB (deg) with the offset an unknown', sig=5)
+            computed(sec, 'fs', f'{base}.differential', c['differential'], f'{lab[n]}, {rlab[ro]}: CRB (deg), differential formulation (resonance differences and FSR-based n_g)', sig=5)
+            for k, x in c['reference'].items():
+                computed(sec, 'fs', f'{base}.reference.{k}.bound', x['bound'], f'{lab[n]}, {rlab[ro]}: CRB (deg), absolute reference of std {k} pm', sig=5)
+                for d, p in x['pred'].items():
+                    for fr in ('true', 'instrument'):
+                        computed(sec, 'fs', f'{base}.reference.{k}.pred.{d}.{fr}', p[fr], f'{lab[n]}, {rlab[ro]}, reference {k} pm: predicted resonance of {d}, {fr} frame, 1-sigma (pm)')
+            for d, p in c['unknown_pred'].items():
+                for fr in ('true', 'instrument'):
+                    computed(sec, 'fs', f'{base}.unknown_pred.{d}.{fr}', p[fr], f'{lab[n]}, {rlab[ro]}, offset unknown: predicted resonance of {d}, {fr} frame, 1-sigma (pm)')
+            for k, x in c['reference_for_ratio'].items():
+                computed(sec, 'fs', f'{base}.reference_for_ratio.{k}', x if x is not None else 'never reached', f'{lab[n]}, {rlab[ro]}: reference std (pm) at which the CRB is {k}x the no-offset value')
+            for k, x in c['independent_reference'].items():
+                computed(sec, 'fs', f'{base}.independent_reference.{k}', x, f'{lab[n]}, {rlab[ro]}: CRB (deg), reference error of {k} pm independent per structure')
+    if os.path.exists(os.path.join(REPO, F['fa'][0])):
+        A = load('fa')
+        sec = 'U. Practical feasibility: which structure causes the gap on femwell data (500 fits per variant, same noise draws)'
+        vl = dict(all_femwell='femwell data for every structure', rib300_surrogate='surrogate data for the 300 nm rib, femwell for the rest',
+                  only_rib300_femwell='femwell data for the 300 nm rib only, surrogate for the rest', all_surrogate='surrogate data for every structure')
+        for n, c in (('a', 'best'), ('b', 'two')):
+            computed(sec, 'fa', f'{n}.crb_a_fd', A[n]['crb_a_fd'], f'{lab[c]}: CRB at nominal (deg)')
+            for v, m in vl.items():
+                d = A[n][v]
+                computed(sec, 'fa', f'{n}.{v}.angle_error_std', d['angle_error_std'], f'{lab[c]}, {m}: Monte Carlo std of the angle (deg)')
+                computed(sec, 'fa', f'{n}.{v}.std_over_crb_fd', d['std_over_crb_fd'], f'{lab[c]}, {m}: std / CRB')
+                for i, e in enumerate(('lower', 'upper')):
+                    computed(sec, 'fa', f'{n}.{v}.std_ci95[{i}]', d['std_ci95'][i], f'{lab[c]}, {m}: 95% bootstrap interval of the std, {e} end (deg)')
+                computed(sec, 'fa', f'{n}.{v}.status.at_bound', d['status']['at_bound'], f'{lab[c]}, {m}: fits at the box edge')
+    sec = 'V. Practical feasibility: literature inputs for the variation levels and the wavelength reference'
+    cited(sec, '0.04 - 0.24', 'Certified line-centre uncertainty of the NIST H13C14N gas cell SRM 2519a, expanded, k = 2 (pm)', 'nist2519a', 0)
+    cited(sec, '3 to 30', 'Calibration uncertainty range (pm) of the suggested moderate-accuracy procedure', 'nist2519a', 1)
+    cited(sec, '< 3', 'Calibration uncertainty (pm) of the suggested high-accuracy procedure', 'nist2519a', 2)
+    xq = load('cit')['sources']['xing2018']['quotes']
+    def idx_of(prefix):
+        return next(i for i, q in enumerate(xq) if q['use'].startswith(prefix))
+    cited(sec, '1.26, 0.30', 'Per-die std of extracted width and thickness over 44 nominally identical sites, die (0,0) (nm)', 'xing2018', idx_of('per-die width and thickness s'))
+    cited(sec, '3, 0.5', 'Largest local variation of width and thickness between nearby devices (maxima, not stds) (nm)', 'xing2018', idx_of('local width and thickness va'))
+    cited(sec, 'a few hundred microns', 'Separation below which Xing et al. call a variation local', 'xing2018', idx_of('definition of local variatio'))
+    cited(sec, '0.4, 1.5', 'Largest location-dependent thickness difference on the two dies (nm)', 'xing2018', idx_of('location-dependent thickness'))
+    S = R['scenarios']
+    for s, d in S.items():
+        for k, u in (('width_nm', 'width (nm)'), ('angle_deg', 'angle (deg)'), ('thickness_nm', 'thickness (nm)')):
+            status = {'width_nm': 'upper levels bracketed by the cited within-chip control and per-die std of section O and this section; lower levels ASSUMED',
+                      'angle_deg': 'ASSUMED: no measured local spread of the sidewall angle found',
+                      'thickness_nm': 'upper level matches the cited per-die std of this section; lower level ASSUMED'}[k]
+            ROWS.append((sec, fmt(d[k], 4), f'scenario {s}: per-structure std of {u}', 'ASSUMED', f"{status} (`{F['fs'][0]}` : `scenarios.{s}.{k}`)", [F['fs'][0]]))
+
+
 def write():
     build()
+    feasibility_rows()
     with open(os.path.join(REPO, DERIVED_FILE), 'w', encoding='utf-8') as f:
         json.dump(DERIVED_VALUES, f, indent=1)
     files = sorted({f for r in ROWS for f in r[5]})

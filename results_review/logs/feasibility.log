@@ -1,0 +1,30 @@
+{
+"best": {
+"shared": 0.13899293955379394,
+"shared_ref": 0.13899293955379358,
+"width_0p1": 0.7153922909111877,
+"width_0p1_ref": 0.7153922909113102,
+"thickness_0p1": 2.0469251015319205,
+"thickness_0p1_ref": 2.0469251015320222,
+"angle_0p1": 1.0243030673103648,
+"angle_0p1_ref": 1.0243030673104747,
+"combined_N4": 1.485351993943245,
+"combined_N4_explicit": 1.48535199394279
+},
+"two": {
+"shared": 0.3891044594002595,
+"shared_ref": 0.3891044594002595,
+"width_0p1": 1.1388379236399158,
+"width_0p1_ref": 1.1388379236400865,
+"thickness_0p1": 2.543876898071016,
+"thickness_0p1_ref": 2.5438768980706077,
+"angle_0p1": 2.294923979872206,
+"angle_0p1_ref": 2.2949239798730514,
+"combined_N4": 2.214558826850632,
+"combined_N4_explicit": 2.214558826854342
+}
+}
+done variation
+done replication
+done layout
+done calibration
